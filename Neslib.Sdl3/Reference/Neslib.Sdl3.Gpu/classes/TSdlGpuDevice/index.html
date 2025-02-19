@@ -1,0 +1,3626 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuDevice/">
+      
+      
+        <link rel="prev" href="../TSdlGpuDepthStencilTargetInfo/">
+      
+      
+        <link rel="next" href="../TSdlGpuDriver/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.48">
+    
+    
+      
+        <title>TSdlGpuDevice - Neslib.Sdl3</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tsdlgpudevice" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Neslib.Sdl3" class="md-header__button md-logo" aria-label="Neslib.Sdl3" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Neslib.Sdl3
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              TSdlGpuDevice
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/neslib/Neslib.Sdl3" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Neslib.Sdl3
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../.." class="md-tabs__link">
+          
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../Neslib.Sdl3.Additional/" class="md-tabs__link">
+          
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Neslib.Sdl3" class="md-nav__button md-logo" aria-label="Neslib.Sdl3" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Neslib.Sdl3
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/neslib/Neslib.Sdl3" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Neslib.Sdl3
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../.." class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Additional/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Additional
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Audio/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Audio
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Basics/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Basics
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Events/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Events
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Gpu
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Neslib.Sdl3.Gpu
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_5_2" id="__nav_2_5_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Classes & Records
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_5_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_5_2">
+            <span class="md-nav__icon md-icon"></span>
+            Classes & Records
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuBlitInfo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuBlitInfo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuBlitRegion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuBlitRegion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuBuffer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuBuffer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuBufferBinding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuBufferBinding
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuBufferCreateInfo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuBufferCreateInfo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuBufferLocation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuBufferLocation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuBufferRegion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuBufferRegion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuColorTargetBlendState/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuColorTargetBlendState
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuColorTargetDescription/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuColorTargetDescription
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuColorTargetInfo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuColorTargetInfo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuCommandBuffer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuCommandBuffer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuComputePass/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuComputePass
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuComputePipeline/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuComputePipeline
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuComputePipelineCreateInfo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuComputePipelineCreateInfo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuCopyPass/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuCopyPass
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuDepthStencilState/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuDepthStencilState
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuDepthStencilTargetInfo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuDepthStencilTargetInfo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    TSdlGpuDevice
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuDevice
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constructors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operators
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#property-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Property Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructor-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constructor Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operator-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operator Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#method-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuDriver/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuDriver
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuFence/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuFence
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuGraphicsPipeline/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuGraphicsPipeline
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuGraphicsPipelineCreateInfo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuGraphicsPipelineCreateInfo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuGraphicsPipelineTargetInfo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuGraphicsPipelineTargetInfo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuIndexedIndirectDrawCommand/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuIndexedIndirectDrawCommand
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuIndirectDispatchCommand/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuIndirectDispatchCommand
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuIndirectDrawCommand/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuIndirectDrawCommand
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuMultisampleState/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuMultisampleState
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuRasterizerState/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuRasterizerState
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuRenderPass/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuRenderPass
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuSampler/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuSampler
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuSamplerCreateInfo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuSamplerCreateInfo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuShader/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuShader
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuShaderCreateInfo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuShaderCreateInfo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuStencilOpState/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuStencilOpState
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuStorageBufferReadWriteBinding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuStorageBufferReadWriteBinding
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuStorageTextureReadWriteBinding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuStorageTextureReadWriteBinding
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuTexture/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuTexture
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuTextureCreateInfo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuTextureCreateInfo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuTextureLocation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuTextureLocation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuTextureRegion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuTextureRegion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuTextureSamplerBinding/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuTextureSamplerBinding
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuTextureTransferInfo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuTextureTransferInfo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuTransferBuffer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuTransferBuffer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuTransferBufferCreateInfo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuTransferBufferCreateInfo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuTransferBufferLocation/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuTransferBufferLocation
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuVertexAttribute/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuVertexAttribute
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuVertexBufferDescription/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuVertexBufferDescription
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuVertexInputState/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuVertexInputState
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuViewport/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuViewport
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../types/PSdlGpuBlitRegion/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Types
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Haptic/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Haptic
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Input/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Input
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.IO/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.IO
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Time/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Time
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Video/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Video
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constructors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operators
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#property-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Property Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructor-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constructor Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operator-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operator Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#method-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="tsdlgpudevice">TSdlGpuDevice</h1>
+<p>The SDL_GPU context. </p>
+<h2 id="definition">Definition</h2>
+<p>Unit: <a href="../../">Neslib.Sdl3.Gpu</a></p>
+<div class="language-delphi highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">type</span><span class="w"> </span><span class="n">TSdlGpuDevice</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">record</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="k">end</span><span class="o">;</span>
+</span></code></pre></div>
+<h2 id="properties">Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Driver">Driver</a></td>
+<td>The backend driver used to create this GPU context.</td>
+</tr>
+<tr>
+<td><a href="#Formats">Formats</a></td>
+<td>The supported shader formats for this GPU context.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="constructors">Constructors</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Create_0">Create(TSdlProperties)</a></td>
+<td>Creates a GPU context.</td>
+</tr>
+<tr>
+<td><a href="#Create_1">Create(TSdlGpuShaderFormats, TSdlGpuDriver, Boolean)</a></td>
+<td>Creates a GPU context.</td>
+</tr>
+<tr>
+<td><a href="#Create_2">Create(TSdlGpuShaderFormats, Boolean)</a></td>
+<td>Creates a GPU context.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="operators">Operators</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Equal">Equal</a></td>
+<td>Used to compare against <code>nil</code>.</td>
+</tr>
+<tr>
+<td><a href="#Implicit">Implicit</a></td>
+<td>Used to set the value to <code>nil</code>.</td>
+</tr>
+<tr>
+<td><a href="#NotEqual">NotEqual</a></td>
+<td>Used to compare against <code>nil</code>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="methods">Methods</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#AcquireCommandBuffer">AcquireCommandBuffer</a></td>
+<td>Acquire a command buffer.</td>
+</tr>
+<tr>
+<td><a href="#ClaimWindow">ClaimWindow</a></td>
+<td>Claims a window, creating a swapchain structure for it.</td>
+</tr>
+<tr>
+<td><a href="#CreateBuffer">CreateBuffer</a></td>
+<td>Creates a buffer object to be used in graphics or compute workflows.</td>
+</tr>
+<tr>
+<td><a href="#CreateComputePipeline">CreateComputePipeline</a></td>
+<td>Creates a pipeline object to be used in a compute workflow.</td>
+</tr>
+<tr>
+<td><a href="#CreateGraphicsPipeline">CreateGraphicsPipeline</a></td>
+<td>Creates a pipeline object to be used in a graphics workflow.</td>
+</tr>
+<tr>
+<td><a href="#CreateSampler">CreateSampler</a></td>
+<td>Creates a sampler object to be used when binding textures in a graphics workflow.</td>
+</tr>
+<tr>
+<td><a href="#CreateShader">CreateShader</a></td>
+<td>Creates a shader to be used when creating a graphics pipeline.</td>
+</tr>
+<tr>
+<td><a href="#CreateTexture">CreateTexture</a></td>
+<td>Creates a texture object to be used in graphics or compute workflows.</td>
+</tr>
+<tr>
+<td><a href="#CreateTransferBuffer">CreateTransferBuffer</a></td>
+<td>Creates a transfer buffer to be used when uploading to or downloading from graphics resources.</td>
+</tr>
+<tr>
+<td><a href="#Free">Free</a></td>
+<td>Destroys the GPU context.</td>
+</tr>
+<tr>
+<td><a href="#GetSwapchainTextureFormat">GetSwapchainTextureFormat</a></td>
+<td>Obtains the texture format of the swapchain for the given window.</td>
+</tr>
+<tr>
+<td><a href="#MapTransferBuffer">MapTransferBuffer</a></td>
+<td>Maps a transfer buffer into application address space.</td>
+</tr>
+<tr>
+<td><a href="#QueryFence">QueryFence</a></td>
+<td>Checks the status of a fence.</td>
+</tr>
+<tr>
+<td><a href="#ReleaseBuffer">ReleaseBuffer</a></td>
+<td>Frees the given buffer as soon as it is safe to do so.</td>
+</tr>
+<tr>
+<td><a href="#ReleaseComputePipeline">ReleaseComputePipeline</a></td>
+<td>Frees the given compute pipeline as soon as it is safe to do so.</td>
+</tr>
+<tr>
+<td><a href="#ReleaseFence">ReleaseFence</a></td>
+<td>Releases a fence obtained from TSdlGpuCommandBuffer.SubmitAndAcquireFence.</td>
+</tr>
+<tr>
+<td><a href="#ReleaseGraphicsPipeline">ReleaseGraphicsPipeline</a></td>
+<td>Frees the given graphics pipeline as soon as it is safe to do so.</td>
+</tr>
+<tr>
+<td><a href="#ReleaseSampler">ReleaseSampler</a></td>
+<td>Frees the given sampler as soon as it is safe to do so.</td>
+</tr>
+<tr>
+<td><a href="#ReleaseShader">ReleaseShader</a></td>
+<td>Frees the given shader as soon as it is safe to do so.</td>
+</tr>
+<tr>
+<td><a href="#ReleaseTexture">ReleaseTexture</a></td>
+<td>Frees the given texture as soon as it is safe to do so.</td>
+</tr>
+<tr>
+<td><a href="#ReleaseTransferBuffer">ReleaseTransferBuffer</a></td>
+<td>Frees the given transfer buffer as soon as it is safe to do so.</td>
+</tr>
+<tr>
+<td><a href="#ReleaseWindow">ReleaseWindow</a></td>
+<td>Unclaims a window, destroying its swapchain structure.</td>
+</tr>
+<tr>
+<td><a href="#SetAllowedFramesInFlight">SetAllowedFramesInFlight</a></td>
+<td>Configures the maximum allowed number of frames in flight.</td>
+</tr>
+<tr>
+<td><a href="#SetBufferName">SetBufferName</a></td>
+<td>Sets an arbitrary string constant to label a buffer.</td>
+</tr>
+<tr>
+<td><a href="#SetSwapchainParameters">SetSwapchainParameters</a></td>
+<td>Changes the swapchain parameters for the given claimed window.</td>
+</tr>
+<tr>
+<td><a href="#SetTextureName">SetTextureName</a></td>
+<td>Sets an arbitrary string constant to label a texture.</td>
+</tr>
+<tr>
+<td><a href="#TextureSupportsFormat">TextureSupportsFormat</a></td>
+<td>Determines whether a texture format is supported for a given type and usage.</td>
+</tr>
+<tr>
+<td><a href="#TextureSupportsSampleCount">TextureSupportsSampleCount</a></td>
+<td>Determines if a sample count for a texture format is supported.</td>
+</tr>
+<tr>
+<td><a href="#UnmapTransferBuffer">UnmapTransferBuffer</a></td>
+<td>Unmaps a previously mapped transfer buffer.</td>
+</tr>
+<tr>
+<td><a href="#WaitForFences">WaitForFences</a></td>
+<td>Blocks the thread until the given fences are signaled.</td>
+</tr>
+<tr>
+<td><a href="#WaitForIdle">WaitForIdle</a></td>
+<td>Blocks the thread until the GPU is completely idle.</td>
+</tr>
+<tr>
+<td><a href="#WaitForSwapchain">WaitForSwapchain</a></td>
+<td>Blocks the thread until a swapchain texture is available to be acquired.</td>
+</tr>
+<tr>
+<td><a href="#WindowSupportsPresentMode">WindowSupportsPresentMode</a></td>
+<td>Determines whether a presentation mode is supported by the window.</td>
+</tr>
+<tr>
+<td><a href="#WindowSupportsSwapchainComposition">WindowSupportsSwapchainComposition</a></td>
+<td>Determines whether a swapchain composition is supported by the window.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="property-descriptions">Property Descriptions</h2>
+<h3 id="Driver"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Driver</h3>
+<p>The backend driver used to create this GPU context. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Driver</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuDriver</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetDriver</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlGpuDriver</span></code></p>
+<h4 id="exceptions">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<hr />
+<h3 id="Formats"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Formats</h3>
+<p>The supported shader formats for this GPU context. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Formats</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuShaderFormats</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetFormats</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlGpuShaderFormats</span></code></p>
+<hr />
+<h2 id="constructor-descriptions">Constructor Descriptions</h2>
+<h3 id="Create_0"><span class="twemoji" title="Constructor"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23 12-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68z"/></svg></span> <code class="language-delphi highlight"><span class="n">Create</span></code></h3>
+<p>Creates a GPU context.</p>
+<p>These are the supported properties:</p>
+<ul>
+<li><code>TSdlProperty.GpuDeviceCreateDebugMode</code>: enable debug mode properties and validations, defaults to True.</li>
+<li><code>TSdlProperty.GpuDeviceCreatePreferLowPower</code>: enable to prefer energy efficiency over maximum GPU performance, defaults to False.</li>
+<li><code>TSdlProperty.GpuDeviceCreateName</code>: the name of the GPU driver to use, if a specific one is desired.</li>
+</ul>
+<p>These are the current shader format properties:</p>
+<ul>
+<li><code>TSdlProperty.GpuDeviceCreateShadersPrivate</code>: The app is able to provide shaders for an NDA platform.</li>
+<li><code>TSdlProperty.GpuDeviceCreateShadersSpirV</code>: The app is able to provide SPIR-V shaders if applicable.</li>
+<li><code>TSdlProperty.GpuDeviceCreateShadersDxbc</code>: The app is able to provide DXBC shaders if applicable</li>
+<li><code>TSdlProperty.GpuDeviceCreateShadersDxil</code>: The app is able to provide DXIL shaders if applicable.</li>
+<li><code>TSdlProperty.GpuDeviceCreateShadersMsl</code>: The app is able to provide MSL shaders if applicable.</li>
+<li><code>TSdlProperty.GpuDeviceCreateShadersMetalLib</code>: The app is able to provide Metal shader libraries if applicable.</li>
+</ul>
+<p>With the D3D12 renderer:</p>
+<ul>
+<li><code>TSdlProperty.GpuDeviceCreateD3D12SemanticName</code>: the prefix to use for all vertex semantics, default is 'TEXCOORD'. </li>
+</ul>
+<p><code class="language-delphi highlight"><span class="k">constructor</span><span class="w"> </span><span class="nf">Create</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AProps</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlProperties</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
+<h4 id="parameters">Parameters</h4>
+<p><strong><code>AProps</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlProperties</span></code>
+: The properties to use.</p>
+<h4 id="exceptions_1">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="see-also">See Also</h4>
+<ul>
+<li>ShaderFormats</li>
+<li><a href="./#Driver">Driver</a></li>
+<li>TSdlGpuDriver.SupportsPropertes</li>
+</ul>
+<hr />
+<h3 id="Create_1"><span class="twemoji" title="Constructor"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23 12-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68z"/></svg></span> <code class="language-delphi highlight"><span class="n">Create</span></code></h3>
+<p>Creates a GPU context. </p>
+<p><code class="language-delphi highlight"><span class="k">constructor</span><span class="w"> </span><span class="nf">Create</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFormats</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuShaderFormats</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ADriver</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuDriver</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ADebugMode</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">False</span><span class="cm">{$ENDIF}</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
+<h4 id="parameters_1">Parameters</h4>
+<p><strong><code>AFormats</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuShaderFormats</span></code>
+: Which shader formats the app is able to provide.</p>
+<p><strong><code>ADriver</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuDriver</span></code>
+: The preferred GPU driver to use.</p>
+<p><strong><code>ADebugMode</code></strong>: <code class="language-delphi highlight"><span class="kt">Boolean</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">False</span><span class="cm">{$ENDIF}</span></code>
+: (Optional) True to enable debug mode properties and validations. If not given, this will be True in when the app is compiled in DEBUG mode, or False otherwise</p>
+<h4 id="exceptions_2">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="see-also_1">See Also</h4>
+<ul>
+<li>ShaderFormats</li>
+<li><a href="./#Driver">Driver</a></li>
+<li><a href="../TSdlGpuDriver/#SupportsFormats">TSdlGpuDriver.SupportsFormats</a></li>
+</ul>
+<hr />
+<h3 id="Create_2"><span class="twemoji" title="Constructor"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23 12-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68z"/></svg></span> <code class="language-delphi highlight"><span class="n">Create</span></code></h3>
+<p>Creates a GPU context. </p>
+<p><code class="language-delphi highlight"><span class="k">constructor</span><span class="w"> </span><span class="nf">Create</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFormats</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuShaderFormats</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ADebugMode</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">False</span><span class="cm">{$ENDIF}</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
+<h4 id="parameters_2">Parameters</h4>
+<p><strong><code>AFormats</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuShaderFormats</span></code>
+: Which shader formats the app is able to provide.</p>
+<p><strong><code>ADebugMode</code></strong>: <code class="language-delphi highlight"><span class="kt">Boolean</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">False</span><span class="cm">{$ENDIF}</span></code>
+: (Optional) True to enable debug mode properties and validations. If not given, this will be True in when the app is compiled in DEBUG mode, or False otherwise</p>
+<h4 id="exceptions_3">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="see-also_2">See Also</h4>
+<ul>
+<li>ShaderFormats</li>
+<li><a href="./#Driver">Driver</a></li>
+<li><a href="../TSdlGpuDriver/#SupportsFormats">TSdlGpuDriver.SupportsFormats</a></li>
+</ul>
+<hr />
+<h2 id="operator-descriptions">Operator Descriptions</h2>
+<h3 id="Equal"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Equal(TSdlGpuDevice, Pointer)</h3>
+<p>Used to compare against <code>nil</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuDevice</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h4 id="parameters_3">Parameters</h4>
+<p><strong><code>ALeft</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuDevice</span></code></p>
+<p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
+<h4 id="returns">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<hr />
+<h3 id="Implicit"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Implicit(Pointer)</h3>
+<p>Used to set the value to <code>nil</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Implicit</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AValue</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuDevice</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h4 id="parameters_4">Parameters</h4>
+<p><strong><code>AValue</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
+<h4 id="returns_1">Returns</h4>
+<p><code class="language-delphi highlight"><span class="n">TSdlGpuDevice</span></code></p>
+<hr />
+<h3 id="NotEqual"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlGpuDevice, Pointer)</h3>
+<p>Used to compare against <code>nil</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuDevice</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h4 id="parameters_5">Parameters</h4>
+<p><strong><code>ALeft</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuDevice</span></code></p>
+<p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
+<h4 id="returns_2">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<hr />
+<h2 id="method-descriptions">Method Descriptions</h2>
+<h3 id="AcquireCommandBuffer"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> AcquireCommandBuffer</h3>
+<p>Acquire a command buffer.</p>
+<p>This command buffer is managed by the implementation and should not be freed by the user. The command buffer may only be used on the thread it was acquired on. The command buffer should be submitted on the thread it was acquired on.</p>
+<p>It is valid to acquire multiple command buffers on the same thread at once. In fact a common design pattern is to acquire two command buffers per frame where one is dedicated to render and compute passes and the other is dedicated to copy passes and other preparatory work such as generating mipmaps. Interleaving commands between the two command buffers reduces the total amount of passes overall which improves rendering performance. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">AcquireCommandBuffer</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuCommandBuffer</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_4">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="returns_3">Returns</h4>
+<p><code class="language-delphi highlight"><span class="n">TSdlGpuCommandBuffer</span></code>: A command buffer.</p>
+<h4 id="see-also_3">See Also</h4>
+<ul>
+<li><a href="../TSdlGpuCommandBuffer/#Submit">TSdlGpuCommandBuffer.Submit</a></li>
+<li><a href="../TSdlGpuCommandBuffer/#SubmitAndAcquireFence">TSdlGpuCommandBuffer.SubmitAndAcquireFence</a></li>
+</ul>
+<hr />
+<h3 id="ClaimWindow"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> ClaimWindow(TSdlWindow)</h3>
+<p>Claims a window, creating a swapchain structure for it.</p>
+<p>This must be called before TSdlGpuCommandBuffer.AcquireSwapchainTexture is called using the window. You should only call this method from the thread that created the window.</p>
+<p>The swapchain will be created with TSdlGpuSwapchainComposition.Sdr and TSdlGpuPresentMode.VSync. If you want to have different swapchain parameters, you must call SetSwapchainParameters after claiming the window. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">ClaimWindow</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AWindow</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlWindow</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_5">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_6">Parameters</h4>
+<p><strong><code>AWindow</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlWindow</span></code>
+: A TSdlWindow.</p>
+<h4 id="see-also_4">See Also</h4>
+<ul>
+<li>TSdlGpuCommandBuffer.WaitWaitAndAcquireSwapchainTexture</li>
+<li><a href="./#ReleaseWindow">ReleaseWindow</a></li>
+<li><a href="./#WindowSupportsPresentMode">WindowSupportsPresentMode</a></li>
+<li><a href="./#WindowSupportsSwapchainComposition">WindowSupportsSwapchainComposition</a></li>
+</ul>
+<h4 id="remarks">Remarks</h4>
+<p>This method should only be called from the thread that created the window. </p>
+<hr />
+<h3 id="CreateBuffer"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> CreateBuffer(TSdlGpuBufferCreateInfo)</h3>
+<p>Creates a buffer object to be used in graphics or compute workflows.</p>
+<p>The contents of this buffer are undefined until data is written to the buffer.</p>
+<p>Note that certain combinations of usage flags are invalid. For example, a buffer cannot have both the Vertex and Index flags.</p>
+<p>For better understanding of underlying concepts and memory management with SDL GPU API, you may refer <a href="https://moonside.games/posts/sdl-gpu-concepts-cycling/">this blog post</a>.</p>
+<p>There are optional properties that can be provided through <code>Props</code>. These are the supported properties:</p>
+<ul>
+<li><code>TSdlProperty.GpuBufferCreateName</code>: a name that can be displayed in debugging tools. </li>
+</ul>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">CreateBuffer</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ACreateInfo</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuBufferCreateInfo</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuBuffer</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_6">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_7">Parameters</h4>
+<p><strong><code>ACreateInfo</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuBufferCreateInfo</span></code>
+: A record describing the state of the buffer to create.</p>
+<h4 id="returns_4">Returns</h4>
+<p><code class="language-delphi highlight"><span class="n">TSdlGpuBuffer</span></code>: A buffer object.</p>
+<h4 id="see-also_5">See Also</h4>
+<ul>
+<li><a href="../TSdlGpuCopyPass/#UploadToBuffer">TSdlGpuCopyPass.UploadToBuffer</a></li>
+<li><a href="../TSdlGpuCopyPass/#DownloadFromBuffer">TSdlGpuCopyPass.DownloadFromBuffer</a></li>
+<li><a href="../TSdlGpuCopyPass/#CopyBufferToBuffer">TSdlGpuCopyPass.CopyBufferToBuffer</a></li>
+<li>TSdlGpuRenderPass.BindBuffer</li>
+<li><a href="../TSdlGpuRenderPass/#DrawPrimitives_0">TSdlGpuRenderPass.DrawPrimitives</a></li>
+<li>TSdlGpuComputePass.Bind</li>
+<li><a href="../TSdlGpuComputePass/#Dispatch_0">TSdlGpuComputePass.Dispatch</a></li>
+<li><a href="./#ReleaseBuffer">ReleaseBuffer</a></li>
+</ul>
+<hr />
+<h3 id="CreateComputePipeline"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> CreateComputePipeline(TSdlGpuComputePipelineCreateInfo)</h3>
+<p>Creates a pipeline object to be used in a compute workflow.</p>
+<p>Shader resource bindings must be authored to follow a particular order depending on the shader format.</p>
+<p>For SPIR-V shaders, use the following resource sets:</p>
+<ul>
+<li>0: Sampled textures, followed by read-only storage textures, followed by read-only storage buffers</li>
+<li>1: Read-write storage textures, followed by read-write storage buffers</li>
+<li>2: Uniform buffers</li>
+</ul>
+<p>For DXBC and DXIL shaders, use the following register order:</p>
+<ul>
+<li>(t[n], space0): Sampled textures, followed by read-only storage textures, followed by read-only storage buffers</li>
+<li>(u[n], space1): Read-write storage textures, followed by read-write storage buffers</li>
+<li>(b[n], space2): Uniform buffers</li>
+</ul>
+<p>For MSL/metallib, use the following order:</p>
+<ul>
+<li>[[buffer]]: Uniform buffers, followed by read-only storage buffers, followed by read-write storage buffers</li>
+<li>[[texture]]: Sampled textures, followed by read-only storage textures, followed by read-write storage textures</li>
+</ul>
+<p>There are optional properties that can be provided through <code>Props</code>. These are the supported properties:</p>
+<ul>
+<li><code>TSdlProperty.GpuComputePipelineCreateName</code>: a name that can be displayed in debugging tools. </li>
+</ul>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">CreateComputePipeline</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ACreateInfo</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuComputePipelineCreateInfo</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuComputePipeline</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_7">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_8">Parameters</h4>
+<p><strong><code>ACreateInfo</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuComputePipelineCreateInfo</span></code>
+: A record describing the state of the compute pipeline to create.</p>
+<h4 id="returns_5">Returns</h4>
+<p><code class="language-delphi highlight"><span class="n">TSdlGpuComputePipeline</span></code>: A compute pipeline object.</p>
+<h4 id="see-also_6">See Also</h4>
+<ul>
+<li>TSdlGpuComputePass.Bind</li>
+<li><a href="./#ReleaseComputePipeline">ReleaseComputePipeline</a></li>
+</ul>
+<hr />
+<h3 id="CreateGraphicsPipeline"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> CreateGraphicsPipeline(TSdlGpuGraphicsPipelineCreateInfo)</h3>
+<p>Creates a pipeline object to be used in a graphics workflow.</p>
+<p>There are optional properties that can be provided through <code>Props</code>. These are the supported properties:</p>
+<ul>
+<li><code>TSdlProperty.GpuGraphicsPipelineCreateName</code>: a name that can be displayed in debugging tools. </li>
+</ul>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">CreateGraphicsPipeline</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ACreateInfo</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuGraphicsPipelineCreateInfo</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuGraphicsPipeline</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_8">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_9">Parameters</h4>
+<p><strong><code>ACreateInfo</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuGraphicsPipelineCreateInfo</span></code>
+: A record describing the state of the graphics pipeline to create.</p>
+<h4 id="returns_6">Returns</h4>
+<p><code class="language-delphi highlight"><span class="n">TSdlGpuGraphicsPipeline</span></code>: A graphics pipeline object.</p>
+<h4 id="see-also_7">See Also</h4>
+<ul>
+<li><a href="../TSdlGpuShader/">TSdlGpuShader</a></li>
+<li>TSdlGpuRenderPass.BindGraphicsPipeline</li>
+<li><a href="./#ReleaseGraphicsPipeline">ReleaseGraphicsPipeline</a></li>
+</ul>
+<hr />
+<h3 id="CreateSampler"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> CreateSampler(TSdlGpuSamplerCreateInfo)</h3>
+<p>Creates a sampler object to be used when binding textures in a graphics workflow.</p>
+<p>There are optional properties that can be provided through <code>Props</code>. These are the supported properties:</p>
+<ul>
+<li><code>TSdlProperty.GpuSamplerCreateName</code>: a name that can be displayed in debugging tools. </li>
+</ul>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">CreateSampler</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ACreateInfo</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuSamplerCreateInfo</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuSampler</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_9">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_10">Parameters</h4>
+<p><strong><code>ACreateInfo</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuSamplerCreateInfo</span></code>
+: A record describing the state of the sampler to create.</p>
+<h4 id="returns_7">Returns</h4>
+<p><code class="language-delphi highlight"><span class="n">TSdlGpuSampler</span></code>: A sampler object.</p>
+<h4 id="see-also_8">See Also</h4>
+<ul>
+<li>TSdlGpuRenderPass.BindSampler</li>
+<li><a href="./#ReleaseSampler">ReleaseSampler</a></li>
+</ul>
+<hr />
+<h3 id="CreateShader"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> CreateShader(TSdlGpuShaderCreateInfo)</h3>
+<p>Creates a shader to be used when creating a graphics pipeline.</p>
+<p>Shader resource bindings must be authored to follow a particular order depending on the shader format.</p>
+<p>For SPIR-V shaders, use the following resource sets:</p>
+<p>For vertex shaders:</p>
+<ul>
+<li>0: Sampled textures, followed by storage textures, followed by storage buffers</li>
+<li>1: Uniform buffers</li>
+</ul>
+<p>For fragment shaders:</p>
+<ul>
+<li>2: Sampled textures, followed by storage textures, followed by storage buffers</li>
+<li>3: Uniform buffers</li>
+</ul>
+<p>For DXBC and DXIL shaders, use the following register order:</p>
+<p>For vertex shaders:</p>
+<ul>
+<li>(t[n], space0): Sampled textures, followed by storage textures, followed by storage buffers</li>
+<li>(s[n], space0): Samplers with indices corresponding to the sampled textures</li>
+<li>(b[n], space1): Uniform buffers</li>
+</ul>
+<p>For pixel shaders:</p>
+<ul>
+<li>(t[n], space2): Sampled textures, followed by storage textures, followed by storage buffers</li>
+<li>(s[n], space2): Samplers with indices corresponding to the sampled textures</li>
+<li>(b[n], space3): Uniform buffers</li>
+</ul>
+<p>For MSL/metallib, use the following order:</p>
+<ul>
+<li>[[texture]]: Sampled textures, followed by storage textures</li>
+<li>[[sampler]]: Samplers with indices corresponding to the sampled textures</li>
+<li>[[buffer]]: Uniform buffers, followed by storage buffers. Vertex buffer 0 is bound at [[buffer(14)]], vertex buffer 1 at [[buffer(15)]], and so on. Rather than manually authoring vertex buffer indices, use the [[stage_in]] attribute which will automatically use the vertex input information from the SDL_GPUGraphicsPipeline.</li>
+</ul>
+<p>Shader semantics other than system-value semantics do not matter in D3D12 and for ease of use the SDL implementation assumes that non system-value semantics will all be TEXCOORD. If you are using HLSL as the shader source language, your vertex semantics should start at TEXCOORD0 and increment like so: TEXCOORD1, TEXCOORD2, etc. If you wish to change the semantic prefix to something other than TEXCOORD you can use TSdlProperty.GpuDeviceCreateD3D12SemanticName with TSdlGpuDevice.Create.</p>
+<p>There are optional properties that can be provided through <code>Props</code>. These are the supported properties:</p>
+<ul>
+<li><code>TSdlProperty.GpuShaderCreateName</code>: a name that can be displayed in debugging tools. </li>
+</ul>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">CreateShader</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ACreateInfo</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuShaderCreateInfo</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuShader</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_10">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_11">Parameters</h4>
+<p><strong><code>ACreateInfo</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuShaderCreateInfo</span></code>
+: A record describing the state of the shader to create.</p>
+<h4 id="returns_8">Returns</h4>
+<p><code class="language-delphi highlight"><span class="n">TSdlGpuShader</span></code>: A shader object.</p>
+<h4 id="see-also_9">See Also</h4>
+<ul>
+<li><a href="../TSdlGpuGraphicsPipeline/">TSdlGpuGraphicsPipeline</a></li>
+<li><a href="./#ReleaseShader">ReleaseShader</a></li>
+</ul>
+<hr />
+<h3 id="CreateTexture"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> CreateTexture(TSdlGpuTextureCreateInfo)</h3>
+<p>Creates a texture object to be used in graphics or compute workflows.</p>
+<p>The contents of this texture are undefined until data is written to the texture.</p>
+<p>Note that certain combinations of usage flags are invalid. For example, a texture cannot have both the Sampler and GraphicsStorageRead flags.</p>
+<p>If you request a sample count higher than the hardware supports, the implementation will automatically fall back to the highest available sample count.</p>
+<p>There are optional properties that can be provided through TSdlGpuTextureCreateInfo's <code>Props</code>. These are the supported properties:</p>
+<ul>
+<li><code>TSdlProperty.GpuTextureCreateD3D12ClearR</code>: (Direct3D 12 only) if the texture usage is TSdlGpuTextureUsage.ColorTarget, clear the texture to a color with this red intensity. Defaults to zero.</li>
+<li><code>TSdlProperty.GpuTextureCreateD3D12ClearG</code>: (Direct3D 12 only) if the texture usage is TSdlGpuTextureUsage.ColorTarget, clear the texture to a color with this green intensity. Defaults to zero.</li>
+<li><code>TSdlProperty.GpuTextureCreateD3D12ClearB</code>: (Direct3D 12 only) if the texture usage is TSdlGpuTextureUsage.ColorTarget, clear the texture to a color with this blue intensity. Defaults to zero.</li>
+<li><code>TSdlProperty.GpuTextureCreateD3D12ClearA</code>: (Direct3D 12 only) if the texture usage is TSdlGpuTextureUsage.ColorTarget, clear the texture to a color with this alpha intensity. Defaults to zero.</li>
+<li><code>TSdlProperty.GpuTextureCreateD3D12ClearDepth</code>: (Direct3D 12 only) if the texture usage is TSdlGpuTextureUsage.DepthStencilTarget, clear the texture to a depth of this value. Defaults to zero.</li>
+<li><code>TSdlProperty.GpuTextureCreateD3D12ClearStencil</code>: (Direct3D 12 only) if the texture usage is TSdlGpuTextureUsage.DepthStencilTarget, clear the texture to a stencil of this value. Defaults to zero.</li>
+<li><code>TSdlProperty.GpuTextureCreateName</code>: a name that can be displayed in debugging tools. </li>
+</ul>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">CreateTexture</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ACreateInfo</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuTextureCreateInfo</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuTexture</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_11">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_12">Parameters</h4>
+<p><strong><code>ACreateInfo</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuTextureCreateInfo</span></code>
+: A record describing the state of the texture to create.</p>
+<h4 id="returns_9">Returns</h4>
+<p><code class="language-delphi highlight"><span class="n">TSdlGpuTexture</span></code></p>
+<h4 id="see-also_10">See Also</h4>
+<ul>
+<li><a href="../TSdlGpuCopyPass/#UploadToTexture">TSdlGpuCopyPass.UploadToTexture</a></li>
+<li><a href="../TSdlGpuCopyPass/#DownloadFromTexture">TSdlGpuCopyPass.DownloadFromTexture</a></li>
+<li>TSdlGpuRenderPass.BindTexture</li>
+<li>TSdlGpuComputePass.BindTexture</li>
+<li><a href="../TSdlGpuCommandBuffer/#Blit">TSdlGpuCommandBuffer.Blit</a></li>
+<li><a href="./#ReleaseTexture">ReleaseTexture</a></li>
+<li>SupportsTextureFormat</li>
+</ul>
+<hr />
+<h3 id="CreateTransferBuffer"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> CreateTransferBuffer(TSdlGpuTransferBufferCreateInfo)</h3>
+<p>Creates a transfer buffer to be used when uploading to or downloading from graphics resources.</p>
+<p>Download buffers can be particularly expensive to create, so it is good practice to reuse them if data will be downloaded regularly.</p>
+<p>There are optional properties that can be provided through <code>Props</code>. These are the supported properties:</p>
+<ul>
+<li><code>TSdlProperty.GpuTransferBufferCreateName</code>: a name that can be displayed in debugging tools. </li>
+</ul>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">CreateTransferBuffer</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ACreateInfo</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuTransferBufferCreateInfo</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuTransferBuffer</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_12">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_13">Parameters</h4>
+<p><strong><code>ACreateInfo</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuTransferBufferCreateInfo</span></code>
+: A record describing the state of the transfer buffer to create.</p>
+<h4 id="returns_10">Returns</h4>
+<p><code class="language-delphi highlight"><span class="n">TSdlGpuTransferBuffer</span></code>: A transfer buffer.</p>
+<h4 id="see-also_11">See Also</h4>
+<ul>
+<li><a href="../TSdlGpuCopyPass/#UploadToBuffer">TSdlGpuCopyPass.UploadToBuffer</a></li>
+<li><a href="../TSdlGpuCopyPass/#DownloadFromBuffer">TSdlGpuCopyPass.DownloadFromBuffer</a></li>
+<li><a href="../TSdlGpuCopyPass/#UploadToTexture">TSdlGpuCopyPass.UploadToTexture</a></li>
+<li><a href="../TSdlGpuCopyPass/#DownloadFromTexture">TSdlGpuCopyPass.DownloadFromTexture</a></li>
+<li><a href="./#ReleaseTransferBuffer">ReleaseTransferBuffer</a></li>
+</ul>
+<hr />
+<h3 id="Free"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Free</h3>
+<p>Destroys the GPU context. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Free</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<hr />
+<h3 id="GetSwapchainTextureFormat"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> GetSwapchainTextureFormat(TSdlWindow)</h3>
+<p>Obtains the texture format of the swapchain for the given window.</p>
+<p>Note that this format can change if the swapchain parameters change. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">GetSwapchainTextureFormat</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AWindow</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlWindow</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuTextureFormat</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="parameters_14">Parameters</h4>
+<p><strong><code>AWindow</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlWindow</span></code>
+: A TSdlWindow that has been claimed.</p>
+<h4 id="returns_11">Returns</h4>
+<p><code class="language-delphi highlight"><span class="n">TSdlGpuTextureFormat</span></code>: The texture format of the swapchain.</p>
+<hr />
+<h3 id="MapTransferBuffer"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> MapTransferBuffer(TSdlGpuTransferBuffer, Boolean)</h3>
+<p>Maps a transfer buffer into application address space.</p>
+<p>You must unmap the transfer buffer before encoding upload commands. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">MapTransferBuffer</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ATransferBuffer</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuTransferBuffer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ACycle</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_13">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_15">Parameters</h4>
+<p><strong><code>ATransferBuffer</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuTransferBuffer</span></code>
+: A transfer buffer.</p>
+<p><strong><code>ACycle</code></strong>: <code class="language-delphi highlight"><span class="kt">Boolean</span></code>
+: If True, cycles the transfer buffer if it is already bound.</p>
+<h4 id="returns_12">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Pointer</span></code>: The address of the mapped transfer buffer memory.</p>
+<hr />
+<h3 id="QueryFence"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> QueryFence(TSdlGpuFence)</h3>
+<p>Checks the status of a fence. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">QueryFence</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFence</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuFence</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="parameters_16">Parameters</h4>
+<p><strong><code>AFence</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuFence</span></code>
+: A fence.</p>
+<h4 id="returns_13">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True if the fence is signaled, False if it is not.</p>
+<h4 id="see-also_12">See Also</h4>
+<ul>
+<li><a href="../TSdlGpuCommandBuffer/#SubmitAndAcquireFence">TSdlGpuCommandBuffer.SubmitAndAcquireFence</a></li>
+</ul>
+<hr />
+<h3 id="ReleaseBuffer"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> ReleaseBuffer(TSdlGpuBuffer)</h3>
+<p>Frees the given buffer as soon as it is safe to do so.</p>
+<p>You must not reference the buffer after calling this method. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">ReleaseBuffer</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ABuffer</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuBuffer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="parameters_17">Parameters</h4>
+<p><strong><code>ABuffer</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuBuffer</span></code>
+: A buffer to be destroyed.</p>
+<hr />
+<h3 id="ReleaseComputePipeline"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> ReleaseComputePipeline(TSdlGpuComputePipeline)</h3>
+<p>Frees the given compute pipeline as soon as it is safe to do so.</p>
+<p>You must not reference the compute pipeline after calling this method. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">ReleaseComputePipeline</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AComputePipeline</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuComputePipeline</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="parameters_18">Parameters</h4>
+<p><strong><code>AComputePipeline</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuComputePipeline</span></code>
+: A compute pipeline to be destroyed.</p>
+<hr />
+<h3 id="ReleaseFence"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> ReleaseFence(TSdlGpuFence)</h3>
+<p>Releases a fence obtained from TSdlGpuCommandBuffer.SubmitAndAcquireFence. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">ReleaseFence</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFence</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuFence</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="parameters_19">Parameters</h4>
+<p><strong><code>AFence</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuFence</span></code>
+: A fence.</p>
+<h4 id="see-also_13">See Also</h4>
+<ul>
+<li><a href="../TSdlGpuCommandBuffer/#SubmitAndAcquireFence">TSdlGpuCommandBuffer.SubmitAndAcquireFence</a></li>
+</ul>
+<hr />
+<h3 id="ReleaseGraphicsPipeline"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> ReleaseGraphicsPipeline(TSdlGpuGraphicsPipeline)</h3>
+<p>Frees the given graphics pipeline as soon as it is safe to do so.</p>
+<p>You must not reference the graphics pipeline after calling this method. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">ReleaseGraphicsPipeline</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AGraphicsPipeline</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuGraphicsPipeline</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="parameters_20">Parameters</h4>
+<p><strong><code>AGraphicsPipeline</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuGraphicsPipeline</span></code>
+: a graphics pipeline to be destroyed.</p>
+<hr />
+<h3 id="ReleaseSampler"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> ReleaseSampler(TSdlGpuSampler)</h3>
+<p>Frees the given sampler as soon as it is safe to do so.</p>
+<p>You must not reference the sampler after calling this method. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">ReleaseSampler</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ASampler</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuSampler</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="parameters_21">Parameters</h4>
+<p><strong><code>ASampler</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuSampler</span></code>
+: A sampler to be destroyed.</p>
+<hr />
+<h3 id="ReleaseShader"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> ReleaseShader(TSdlGpuShader)</h3>
+<p>Frees the given shader as soon as it is safe to do so.</p>
+<p>You must not reference the shader after calling this method. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">ReleaseShader</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AShader</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuShader</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="parameters_22">Parameters</h4>
+<p><strong><code>AShader</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuShader</span></code>
+: A shader to be destroyed.</p>
+<hr />
+<h3 id="ReleaseTexture"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> ReleaseTexture(TSdlGpuTexture)</h3>
+<p>Frees the given texture as soon as it is safe to do so.</p>
+<p>You must not reference the texture after calling this method. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">ReleaseTexture</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ATexture</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuTexture</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="parameters_23">Parameters</h4>
+<p><strong><code>ATexture</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuTexture</span></code>
+: A texture to be destroyed.</p>
+<hr />
+<h3 id="ReleaseTransferBuffer"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> ReleaseTransferBuffer(TSdlGpuTransferBuffer)</h3>
+<p>Frees the given transfer buffer as soon as it is safe to do so.</p>
+<p>You must not reference the transfer buffer after calling this methpd. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">ReleaseTransferBuffer</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ATransferBuffer</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuTransferBuffer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="parameters_24">Parameters</h4>
+<p><strong><code>ATransferBuffer</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuTransferBuffer</span></code>
+: a transfer buffer to be destroyed.</p>
+<hr />
+<h3 id="ReleaseWindow"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> ReleaseWindow(TSdlWindow)</h3>
+<p>Unclaims a window, destroying its swapchain structure. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">ReleaseWindow</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AWindow</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlWindow</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="parameters_25">Parameters</h4>
+<p><strong><code>AWindow</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlWindow</span></code>
+: A TSdlWindow that has been claimed.</p>
+<h4 id="see-also_14">See Also</h4>
+<ul>
+<li><a href="./#ClaimWindow">ClaimWindow</a></li>
+</ul>
+<hr />
+<h3 id="SetAllowedFramesInFlight"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> SetAllowedFramesInFlight(Integer)</h3>
+<p>Configures the maximum allowed number of frames in flight.</p>
+<p>The default value when the device is created is 2. This means that after you have submitted 2 frames for presentation, if the GPU has not finished working on the first frame, TSdlGpuCommandBuffer.AcquireSwapchainTexture will fill the swapchain texture pointer with nil, and TSdlGpuCommandBuffer.WaitAndAcquireSwapchainTexture will block.</p>
+<p>Higher values increase throughput at the expense of visual latency. Lower values decrease visual latency at the expense of throughput.</p>
+<p>Note that calling this function will stall and flush the command queue to prevent synchronization issues.</p>
+<p>The minimum value of allowed frames in flight is 1, and the maximum is 3. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetAllowedFramesInFlight</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AAllowedFramesInFlight</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_14">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_26">Parameters</h4>
+<p><strong><code>AAllowedFramesInFlight</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
+: The maximum number of frames that can be pending on the GPU.</p>
+<hr />
+<h3 id="SetBufferName"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> SetBufferName(TSdlGpuBuffer, String)</h3>
+<p>Sets an arbitrary string constant to label a buffer.</p>
+<p>You should use TSdlProperty.GpuBufferCreateName with CreateBuffer instead of this method to avoid thread safety issues. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetBufferName</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ABuffer</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuBuffer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AName</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="parameters_27">Parameters</h4>
+<p><strong><code>ABuffer</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuBuffer</span></code>
+: A buffer to attach the name to.</p>
+<p><strong><code>AName</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
+: A string constant to mark as the name of the buffer.</p>
+<h4 id="see-also_15">See Also</h4>
+<ul>
+<li><a href="./#CreateBuffer">CreateBuffer</a></li>
+</ul>
+<h4 id="remarks_1">Remarks</h4>
+<p>This method is not thread safe, you must make sure the buffer is not simultaneously used by any other thread. </p>
+<hr />
+<h3 id="SetSwapchainParameters"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> SetSwapchainParameters(TSdlWindow, TSdlGpuSwapchainComposition, TSdlGpuPresentMode)</h3>
+<p>Changes the swapchain parameters for the given claimed window.</p>
+<p>This method will fail if the requested present mode or swapchain composition are unsupported by the device. Check if the parameters are supported via WindowSupportsPresentMode / WindowSupportsSwapchainComposition prior to calling this method.</p>
+<p>TSdlGpuPresentMode.VSync and TSdlGpuSwapchainComposition.Sdr are always supported. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetSwapchainParameters</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AWindow</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlWindow</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ASwapchainComposition</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuSwapchainComposition</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">APresentMode</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuPresentMode</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_15">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_28">Parameters</h4>
+<p><strong><code>AWindow</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlWindow</span></code>
+: A TSdlWindow that has been claimed.</p>
+<p><strong><code>ASwapchainComposition</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuSwapchainComposition</span></code>
+: The desired composition of the swapchain.</p>
+<p><strong><code>APresentMode</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuPresentMode</span></code>
+: The desired present mode for the swapchain.</p>
+<h4 id="see-also_16">See Also</h4>
+<ul>
+<li><a href="./#WindowSupportsPresentMode">WindowSupportsPresentMode</a></li>
+<li><a href="./#WindowSupportsSwapchainComposition">WindowSupportsSwapchainComposition</a></li>
+</ul>
+<hr />
+<h3 id="SetTextureName"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> SetTextureName(TSdlGpuTexture, String)</h3>
+<p>Sets an arbitrary string constant to label a texture.</p>
+<p>You should use TSdlProperty.GpuTextureCreateName with CreateTexture instead of this method to avoid thread safety issues. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetTextureName</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ATexture</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuTexture</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AName</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="parameters_29">Parameters</h4>
+<p><strong><code>ATexture</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuTexture</span></code>
+: A texture to attach the name to.</p>
+<p><strong><code>AName</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
+: A string constant to mark as the name of the texture.</p>
+<h4 id="see-also_17">See Also</h4>
+<ul>
+<li><a href="./#CreateTexture">CreateTexture</a></li>
+</ul>
+<h4 id="remarks_2">Remarks</h4>
+<p>This method is not thread safe, you must make sure the texture is not simultaneously used by any other thread. </p>
+<hr />
+<h3 id="TextureSupportsFormat"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> TextureSupportsFormat(TSdlGpuTextureFormat, TSdlGpuTextureKind, TSdlGpuTextureUsageFlags)</h3>
+<p>Determines whether a texture format is supported for a given type and usage. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">TextureSupportsFormat</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFormat</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuTextureFormat</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AKind</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuTextureKind</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AUsages</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuTextureUsageFlags</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="parameters_30">Parameters</h4>
+<p><strong><code>AFormat</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuTextureFormat</span></code>
+: The texture format to check.</p>
+<p><strong><code>AKind</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuTextureKind</span></code>
+: The type of texture (2D, 3D, Cube).</p>
+<p><strong><code>AUsages</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuTextureUsageFlags</span></code>
+: The usage scenarios to check.</p>
+<h4 id="returns_14">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: Whether the texture format is supported for this type and usage.</p>
+<hr />
+<h3 id="TextureSupportsSampleCount"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> TextureSupportsSampleCount(TSdlGpuTextureFormat, TSdlGpuSampleCount)</h3>
+<p>Determines if a sample count for a texture format is supported. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">TextureSupportsSampleCount</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFormat</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuTextureFormat</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ASampleCount</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuSampleCount</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="parameters_31">Parameters</h4>
+<p><strong><code>AFormat</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuTextureFormat</span></code>
+: The texture format to check.</p>
+<p><strong><code>ASampleCount</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuSampleCount</span></code>
+: The sample count to check.</p>
+<h4 id="returns_15">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: A hardware-specific version of min(preferred, possible).</p>
+<hr />
+<h3 id="UnmapTransferBuffer"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> UnmapTransferBuffer(TSdlGpuTransferBuffer)</h3>
+<p>Unmaps a previously mapped transfer buffer. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">UnmapTransferBuffer</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ATransferBuffer</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuTransferBuffer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="parameters_32">Parameters</h4>
+<p><strong><code>ATransferBuffer</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuTransferBuffer</span></code>
+: A previously mapped transfer buffer.</p>
+<hr />
+<h3 id="WaitForFences"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> WaitForFences(Boolean, TArray&lt;TSdlGpuFence&gt;)</h3>
+<p>Blocks the thread until the given fences are signaled. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">WaitForFences</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AWaitAll</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AFences</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuFence</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_16">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_33">Parameters</h4>
+<p><strong><code>AWaitAll</code></strong>: <code class="language-delphi highlight"><span class="kt">Boolean</span></code>
+: If False, wait for any fence to be signaled, if True, wait for all fences to be signaled.</p>
+<p><strong><code>AFences</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuFence</span><span class="o">&gt;</span></code>
+: An array of fences to wait on.</p>
+<h4 id="see-also_18">See Also</h4>
+<ul>
+<li><a href="../TSdlGpuCommandBuffer/#SubmitAndAcquireFence">TSdlGpuCommandBuffer.SubmitAndAcquireFence</a></li>
+<li><a href="./#WaitForIdle">WaitForIdle</a></li>
+</ul>
+<hr />
+<h3 id="WaitForIdle"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> WaitForIdle</h3>
+<p>Blocks the thread until the GPU is completely idle. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">WaitForIdle</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_17">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="see-also_19">See Also</h4>
+<ul>
+<li><a href="./#WaitForFences">WaitForFences</a></li>
+</ul>
+<hr />
+<h3 id="WaitForSwapchain"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> WaitForSwapchain(TSdlWindow)</h3>
+<p>Blocks the thread until a swapchain texture is available to be acquired. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">WaitForSwapchain</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AWindow</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlWindow</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_18">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_34">Parameters</h4>
+<p><strong><code>AWindow</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlWindow</span></code>
+: A window that has been claimed.</p>
+<h4 id="see-also_20">See Also</h4>
+<ul>
+<li><a href="../TSdlGpuCommandBuffer/#AcquireSwapchainTexture">TSdlGpuCommandBuffer.AcquireSwapchainTexture</a></li>
+<li><a href="../TSdlGpuCommandBuffer/#WaitAndAcquireSwapchainTexture">TSdlGpuCommandBuffer.WaitAndAcquireSwapchainTexture</a></li>
+<li><a href="./#SetAllowedFramesInFlight">SetAllowedFramesInFlight</a></li>
+</ul>
+<h4 id="remarks_3">Remarks</h4>
+<p>This method should only be called from the thread that created the window. </p>
+<hr />
+<h3 id="WindowSupportsPresentMode"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> WindowSupportsPresentMode(TSdlWindow, TSdlGpuPresentMode)</h3>
+<p>Determines whether a presentation mode is supported by the window.</p>
+<p>The window must be claimed before calling this function. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">WindowSupportsPresentMode</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AWindow</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlWindow</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">APresentMode</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuPresentMode</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="parameters_35">Parameters</h4>
+<p><strong><code>AWindow</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlWindow</span></code>
+: A TSdlWindow.</p>
+<p><strong><code>APresentMode</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuPresentMode</span></code>
+: The presentation mode to check.</p>
+<h4 id="returns_16">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True if supported, False if unsupported.</p>
+<h4 id="see-also_21">See Also</h4>
+<ul>
+<li><a href="./#ClaimWindow">ClaimWindow</a></li>
+</ul>
+<hr />
+<h3 id="WindowSupportsSwapchainComposition"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> WindowSupportsSwapchainComposition(TSdlWindow, TSdlGpuSwapchainComposition)</h3>
+<p>Determines whether a swapchain composition is supported by the window.</p>
+<p>The window must be claimed before calling this method. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">WindowSupportsSwapchainComposition</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AWindow</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlWindow</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ASwapchainComposition</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuSwapchainComposition</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="parameters_36">Parameters</h4>
+<p><strong><code>AWindow</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlWindow</span></code>
+: A TSdlWindow.</p>
+<p><strong><code>ASwapchainComposition</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuSwapchainComposition</span></code>
+: The swapchain composition to check.</p>
+<h4 id="returns_17">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True if supported, False if unsupported.</p>
+<h4 id="see-also_22">See Also</h4>
+<ul>
+<li><a href="./#ClaimWindow">ClaimWindow</a></li>
+</ul>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../TSdlGpuDepthStencilTargetInfo/" class="md-footer__link md-footer__link--prev" aria-label="Previous: TSdlGpuDepthStencilTargetInfo">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                TSdlGpuDepthStencilTargetInfo
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../TSdlGpuDriver/" class="md-footer__link md-footer__link--next" aria-label="Next: TSdlGpuDriver">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                TSdlGpuDriver
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Erik van Bilsen
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/neslib/Neslib.Sdl3" target="_blank" rel="noopener" title="GitHub neslib" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://blog.grijjy.com/author/erikvanbilsen/" target="_blank" rel="noopener" title="Blog" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="m61.7 169.4 101.5 278C92.2 413 43.3 340.2 43.3 256c0-30.9 6.6-60.1 18.4-86.6m337.9 75.9c0-26.3-9.4-44.5-17.5-58.7-10.8-17.5-20.9-32.4-20.9-49.9 0-19.6 14.8-37.8 35.7-37.8.9 0 1.8.1 2.8.2-37.9-34.7-88.3-55.9-143.7-55.9-74.3 0-139.7 38.1-177.8 95.9 5 .2 9.7.3 13.7.3 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l77.5 230.4L249.8 247l-33.1-90.8c-11.5-.7-22.3-2-22.3-2-11.5-.7-10.1-18.2 1.3-17.5 0 0 35.1 2.7 56 2.7 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l76.9 228.7 21.2-70.9c9-29.4 16-50.5 16-68.7m-139.9 29.3-63.8 185.5c19.1 5.6 39.2 8.7 60.1 8.7 24.8 0 48.5-4.3 70.6-12.1-.6-.9-1.1-1.9-1.5-2.9zm183-120.7c.9 6.8 1.4 14 1.4 21.9 0 21.6-4 45.8-16.2 76.2l-65 187.9C426.2 403 468.7 334.5 468.7 256c0-37-9.4-71.8-26-102.1M504 256c0 136.8-111.3 248-248 248C119.2 504 8 392.7 8 256 8 119.2 119.2 8 256 8c136.7 0 248 111.2 248 248m-11.4 0c0-130.5-106.2-236.6-236.6-236.6C125.5 19.4 19.4 125.5 19.4 256S125.6 492.6 256 492.6c130.5 0 236.6-106.1 236.6-236.6"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.code.copy", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.prune", "navigation.top", "navigation.footer", "navigation.indexes", "search.suggest", "search.share"], "search": "../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>

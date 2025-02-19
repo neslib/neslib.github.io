@@ -1,0 +1,3101 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/classes/TSdlProperty/">
+      
+      
+        <link rel="prev" href="../TSdlProperties/">
+      
+      
+        <link rel="next" href="../TSdlVersion/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.48">
+    
+    
+      
+        <title>TSdlProperty - Neslib.Sdl3</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tsdlproperty" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Neslib.Sdl3" class="md-header__button md-logo" aria-label="Neslib.Sdl3" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Neslib.Sdl3
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              TSdlProperty
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/neslib/Neslib.Sdl3" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Neslib.Sdl3
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../.." class="md-tabs__link">
+          
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../Neslib.Sdl3.Additional/" class="md-tabs__link">
+          
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Neslib.Sdl3" class="md-nav__button md-logo" aria-label="Neslib.Sdl3" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Neslib.Sdl3
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/neslib/Neslib.Sdl3" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Neslib.Sdl3
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../.." class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Additional/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Additional
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Audio/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Audio
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Basics
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            Neslib.Sdl3.Basics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_2" id="__nav_2_3_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Classes & Records
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            Classes & Records
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../ESdlError/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ESdlError
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlHints/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlHints
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlLog/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlLog
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlProperties/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlProperties
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    TSdlProperty
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    TSdlProperty
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constants" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constants
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constant-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constant Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlVersion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlVersion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../types/TSdlEnumeratePropertiesCallback/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Types
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../routines/SdlCheck_0/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Routines
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Events/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Events
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Gpu/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Gpu
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Haptic/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Haptic
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Input/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Input
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.IO/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.IO
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Time/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Time
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Video/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Video
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constants" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constants
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constant-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constant Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="tsdlproperty">TSdlProperty</h1>
+<p>Standard SDL properties </p>
+<h2 id="definition">Definition</h2>
+<p>Unit: <a href="../../">Neslib.Sdl3.Basics</a></p>
+<div class="language-delphi highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">type</span><span class="w"> </span><span class="n">TSdlProperty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">record</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="k">end</span><span class="o">;</span>
+</span></code></pre></div>
+<h2 id="constants">Constants</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#AppMetadataCopyright">AppMetadataCopyright</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#AppMetadataCreator">AppMetadataCreator</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#AppMetadataIdentifier">AppMetadataIdentifier</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#AppMetadataName">AppMetadataName</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#AppMetadataType">AppMetadataType</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#AppMetadataUrl">AppMetadataUrl</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#AppMetadataVersion">AppMetadataVersion</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#GamepadCapMonoLed">GamepadCapMonoLed</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#GamepadCapPlayerLed">GamepadCapPlayerLed</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#GamepadCapRgbLed">GamepadCapRgbLed</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#GamepadCapRumble">GamepadCapRumble</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#GamepadCapTriggerRumble">GamepadCapTriggerRumble</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#GpuBufferCreateName">GpuBufferCreateName</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#GpuComputePipelineCreateName">GpuComputePipelineCreateName</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#GpuDeviceCreateD3D12SemanticName">GpuDeviceCreateD3D12SemanticName</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#GpuDeviceCreateDebugMode">GpuDeviceCreateDebugMode</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#GpuDeviceCreateName">GpuDeviceCreateName</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#GpuDeviceCreatePreferLowPower">GpuDeviceCreatePreferLowPower</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#GpuDeviceCreateShadersDxbc">GpuDeviceCreateShadersDxbc</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#GpuDeviceCreateShadersDxil">GpuDeviceCreateShadersDxil</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#GpuDeviceCreateShadersMetalLib">GpuDeviceCreateShadersMetalLib</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#GpuDeviceCreateShadersMsl">GpuDeviceCreateShadersMsl</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#GpuDeviceCreateShadersPrivate">GpuDeviceCreateShadersPrivate</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#GpuDeviceCreateShadersSpirV">GpuDeviceCreateShadersSpirV</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#GpuGraphicsPipelineCreateName">GpuGraphicsPipelineCreateName</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#GpuSamplerCreateName">GpuSamplerCreateName</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#GpuShaderCreateName">GpuShaderCreateName</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#GpuTextureCreateD3D12ClearA">GpuTextureCreateD3D12ClearA</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#GpuTextureCreateD3D12ClearB">GpuTextureCreateD3D12ClearB</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#GpuTextureCreateD3D12ClearDepth">GpuTextureCreateD3D12ClearDepth</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#GpuTextureCreateD3D12ClearG">GpuTextureCreateD3D12ClearG</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#GpuTextureCreateD3D12ClearR">GpuTextureCreateD3D12ClearR</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#GpuTextureCreateD3D12ClearStencil">GpuTextureCreateD3D12ClearStencil</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#GpuTextureCreateName">GpuTextureCreateName</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#GpuTransferBufferCreateName">GpuTransferBufferCreateName</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#IOStreamAndroidAAsset">IOStreamAndroidAAsset</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#IOStreamDynamicChunkSize">IOStreamDynamicChunkSize</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#IOStreamDynamicMemory">IOStreamDynamicMemory</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#IOStreamFileDescriptor">IOStreamFileDescriptor</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#IOStreamMemory">IOStreamMemory</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#IOStreamMemorySize">IOStreamMemorySize</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#IOStreamWindowHandle">IOStreamWindowHandle</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#JoystickCapMonoLed">JoystickCapMonoLed</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#JoystickCapPlayerLed">JoystickCapPlayerLed</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#JoystickCapRgbLed">JoystickCapRgbLed</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#JoystickCapRumble">JoystickCapRumble</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#JoystickCapTriggerRumble">JoystickCapTriggerRumble</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#ProcessBackground">ProcessBackground</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#ProcessCreateArgs">ProcessCreateArgs</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#ProcessCreateBackground">ProcessCreateBackground</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#ProcessCreateEnvironment">ProcessCreateEnvironment</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#ProcessCreateStdErr">ProcessCreateStdErr</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#ProcessCreateStdErrStream">ProcessCreateStdErrStream</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#ProcessCreateStdErrToStdOut">ProcessCreateStdErrToStdOut</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#ProcessCreateStdIn">ProcessCreateStdIn</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#ProcessCreateStdInStream">ProcessCreateStdInStream</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#ProcessCreateStdOut">ProcessCreateStdOut</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#ProcessCreateStdOutStream">ProcessCreateStdOutStream</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#ProcessPid">ProcessPid</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#ProcessStdErr">ProcessStdErr</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#ProcessStdIn">ProcessStdIn</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#ProcessStdOut">ProcessStdOut</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererCreateName">RendererCreateName</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererCreateOutputColorspace">RendererCreateOutputColorspace</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererCreatePresentVSync">RendererCreatePresentVSync</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererCreateSurface">RendererCreateSurface</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererCreateVulkanDevice">RendererCreateVulkanDevice</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererCreateVulkanGraphicsQueueFamilyIndex">RendererCreateVulkanGraphicsQueueFamilyIndex</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererCreateVulkanInstance">RendererCreateVulkanInstance</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererCreateVulkanPhysicalDevice">RendererCreateVulkanPhysicalDevice</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererCreateVulkanPresentQueueFamilyIndex">RendererCreateVulkanPresentQueueFamilyIndex</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererCreateVulkanSurface">RendererCreateVulkanSurface</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererCreateWindow">RendererCreateWindow</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererD3D11Device">RendererD3D11Device</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererD3D11SwapChain">RendererD3D11SwapChain</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererD3D12CommandQueue">RendererD3D12CommandQueue</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererD3D12Device">RendererD3D12Device</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererD3D12SwapChain">RendererD3D12SwapChain</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererD3D9Device">RendererD3D9Device</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererGpuDevice">RendererGpuDevice</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererHdrEnabled">RendererHdrEnabled</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererHdrHeadroom">RendererHdrHeadroom</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererMaxTextureSize">RendererMaxTextureSize</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererName">RendererName</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererOutputColorspace">RendererOutputColorspace</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererSdrWhitePoint">RendererSdrWhitePoint</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererSurface">RendererSurface</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererTextureFormats">RendererTextureFormats</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererVSync">RendererVSync</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererVulkanDevice">RendererVulkanDevice</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererVulkanGraphicsQueueFamilyIndex">RendererVulkanGraphicsQueueFamilyIndex</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererVulkanInstance">RendererVulkanInstance</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererVulkanPhysicalDevice">RendererVulkanPhysicalDevice</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererVulkanPresentQueueFamilyIndex">RendererVulkanPresentQueueFamilyIndex</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererVulkanSurface">RendererVulkanSurface</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererVulkanSwapChainImageCount">RendererVulkanSwapChainImageCount</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RendererWindow">RendererWindow</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#SurfaceHdrHeadroom">SurfaceHdrHeadroom</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#SurfaceSdrWhitePoint">SurfaceSdrWhitePoint</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#SurfaceTonemapOperator">SurfaceTonemapOperator</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextInputAndroidInputType">TextInputAndroidInputType</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextInputAutoCorrect">TextInputAutoCorrect</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextInputCapitalization">TextInputCapitalization</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextInputMultiLine">TextInputMultiLine</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextInputType">TextInputType</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureAccess">TextureAccess</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureColorspace">TextureColorspace</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureCreateAccess">TextureCreateAccess</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureCreateColorspace">TextureCreateColorspace</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureCreateD3D11Texture">TextureCreateD3D11Texture</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureCreateD3D11TextureU">TextureCreateD3D11TextureU</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureCreateD3D11TextureV">TextureCreateD3D11TextureV</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureCreateD3D12Texture">TextureCreateD3D12Texture</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureCreateD3D12TextureU">TextureCreateD3D12TextureU</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureCreateD3D12TextureV">TextureCreateD3D12TextureV</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureCreateFormat">TextureCreateFormat</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureCreateHdrHeadroom">TextureCreateHdrHeadroom</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureCreateHeight">TextureCreateHeight</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureCreateMetalPixelBuffer">TextureCreateMetalPixelBuffer</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureCreateOpenGles2Texture">TextureCreateOpenGles2Texture</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureCreateOpenGles2TextureU">TextureCreateOpenGles2TextureU</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureCreateOpenGles2TextureUV">TextureCreateOpenGles2TextureUV</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureCreateOpenGles2TextureV">TextureCreateOpenGles2TextureV</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureCreateOpenGLTexture">TextureCreateOpenGLTexture</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureCreateOpenGLTextureU">TextureCreateOpenGLTextureU</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureCreateOpenGLTextureUV">TextureCreateOpenGLTextureUV</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureCreateOpenGLTextureV">TextureCreateOpenGLTextureV</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureCreateSdrWhitePoint">TextureCreateSdrWhitePoint</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureCreateVulkanTexture">TextureCreateVulkanTexture</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureCreateWidth">TextureCreateWidth</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureD3D11Texture">TextureD3D11Texture</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureD3D11TextureU">TextureD3D11TextureU</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureD3D11TextureV">TextureD3D11TextureV</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureD3D12Texture">TextureD3D12Texture</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureD3D12TextureU">TextureD3D12TextureU</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureD3D12TextureV">TextureD3D12TextureV</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureFormat">TextureFormat</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureHdrHeadroom">TextureHdrHeadroom</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureHeight">TextureHeight</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureOpenGles2Texture">TextureOpenGles2Texture</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureOpenGles2TextureTarget">TextureOpenGles2TextureTarget</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureOpenGles2TextureU">TextureOpenGles2TextureU</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureOpenGles2TextureUV">TextureOpenGles2TextureUV</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureOpenGles2TextureV">TextureOpenGles2TextureV</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureOpenGLTexH">TextureOpenGLTexH</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureOpenGLTexture">TextureOpenGLTexture</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureOpenGLTextureTarget">TextureOpenGLTextureTarget</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureOpenGLTextureU">TextureOpenGLTextureU</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureOpenGLTextureUV">TextureOpenGLTextureUV</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureOpenGLTextureV">TextureOpenGLTextureV</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureOpenGLTexW">TextureOpenGLTexW</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureSdrWhitePoint">TextureSdrWhitePoint</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureVulkanTexture">TextureVulkanTexture</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#TextureWidth">TextureWidth</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowAndroidSurface">WindowAndroidSurface</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowAndroidWindow">WindowAndroidWindow</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowCocoaMetalViewTag">WindowCocoaMetalViewTag</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowCocoaWindow">WindowCocoaWindow</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowCreateAlwaysOnTop">WindowCreateAlwaysOnTop</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowCreateBorderless">WindowCreateBorderless</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowCreateCocoaView">WindowCreateCocoaView</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowCreateCocoaWindow">WindowCreateCocoaWindow</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowCreateExternalGraphicsContext">WindowCreateExternalGraphicsContext</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowCreateFlags">WindowCreateFlags</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowCreateFocusable">WindowCreateFocusable</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowCreateFullscreen">WindowCreateFullscreen</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowCreateHeight">WindowCreateHeight</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowCreateHidden">WindowCreateHidden</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowCreateHighPixelDensity">WindowCreateHighPixelDensity</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowCreateMaximized">WindowCreateMaximized</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowCreateMenu">WindowCreateMenu</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowCreateMetal">WindowCreateMetal</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowCreateMinimized">WindowCreateMinimized</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowCreateModal">WindowCreateModal</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowCreateMouseGrabbed">WindowCreateMouseGrabbed</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowCreateOpenGL">WindowCreateOpenGL</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowCreateParent">WindowCreateParent</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowCreateResizable">WindowCreateResizable</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowCreateTitle">WindowCreateTitle</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowCreateTooltip">WindowCreateTooltip</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowCreateTransparent">WindowCreateTransparent</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowCreateUtility">WindowCreateUtility</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowCreateVulkan">WindowCreateVulkan</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowCreateWidth">WindowCreateWidth</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowCreateWin32HWnd">WindowCreateWin32HWnd</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowCreateWin32PixelFormatHWnd">WindowCreateWin32PixelFormatHWnd</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowCreateX">WindowCreateX</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowCreateY">WindowCreateY</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowHdrEnabled">WindowHdrEnabled</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowHdrHeadroom">WindowHdrHeadroom</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowSdrWhiteLevel">WindowSdrWhiteLevel</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowShape">WindowShape</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowUIKitMetalViewTag">WindowUIKitMetalViewTag</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowUIKitOpenGLFramebuffer">WindowUIKitOpenGLFramebuffer</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowUIKitOpenGLRenderbuffer">WindowUIKitOpenGLRenderbuffer</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowUIKitOpenGLResolveFramebuffer">WindowUIKitOpenGLResolveFramebuffer</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowUIKitWindow">WindowUIKitWindow</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowWin32Hdc">WindowWin32Hdc</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowWin32Hwnd">WindowWin32Hwnd</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#WindowWin32Instance">WindowWin32Instance</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h2 id="constant-descriptions">Constant Descriptions</h2>
+<h3 id="AppMetadataCopyright"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> AppMetadataCopyright</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">AppMetadataCopyright</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_APP_METADATA_COPYRIGHT_STRING</span></code></p>
+<hr />
+<h3 id="AppMetadataCreator"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> AppMetadataCreator</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">AppMetadataCreator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_APP_METADATA_CREATOR_STRING</span></code></p>
+<hr />
+<h3 id="AppMetadataIdentifier"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> AppMetadataIdentifier</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">AppMetadataIdentifier</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_APP_METADATA_IDENTIFIER_STRING</span></code></p>
+<hr />
+<h3 id="AppMetadataName"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> AppMetadataName</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">AppMetadataName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_APP_METADATA_NAME_STRING</span></code></p>
+<hr />
+<h3 id="AppMetadataType"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> AppMetadataType</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">AppMetadataType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_APP_METADATA_TYPE_STRING</span></code></p>
+<hr />
+<h3 id="AppMetadataUrl"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> AppMetadataUrl</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">AppMetadataUrl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_APP_METADATA_URL_STRING</span></code></p>
+<hr />
+<h3 id="AppMetadataVersion"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> AppMetadataVersion</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">AppMetadataVersion</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_APP_METADATA_VERSION_STRING</span></code></p>
+<hr />
+<h3 id="GamepadCapMonoLed"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> GamepadCapMonoLed</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">GamepadCapMonoLed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_GAMEPAD_CAP_MONO_LED_BOOLEAN</span></code></p>
+<hr />
+<h3 id="GamepadCapPlayerLed"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> GamepadCapPlayerLed</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">GamepadCapPlayerLed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_GAMEPAD_CAP_PLAYER_LED_BOOLEAN</span></code></p>
+<hr />
+<h3 id="GamepadCapRgbLed"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> GamepadCapRgbLed</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">GamepadCapRgbLed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_GAMEPAD_CAP_RGB_LED_BOOLEAN</span></code></p>
+<hr />
+<h3 id="GamepadCapRumble"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> GamepadCapRumble</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">GamepadCapRumble</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_GAMEPAD_CAP_RUMBLE_BOOLEAN</span></code></p>
+<hr />
+<h3 id="GamepadCapTriggerRumble"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> GamepadCapTriggerRumble</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">GamepadCapTriggerRumble</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_GAMEPAD_CAP_TRIGGER_RUMBLE_BOOLEAN</span></code></p>
+<hr />
+<h3 id="GpuBufferCreateName"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> GpuBufferCreateName</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">GpuBufferCreateName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_GPU_BUFFER_CREATE_NAME_STRING</span></code></p>
+<hr />
+<h3 id="GpuComputePipelineCreateName"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> GpuComputePipelineCreateName</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">GpuComputePipelineCreateName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_GPU_COMPUTEPIPELINE_CREATE_NAME_STRING</span></code></p>
+<hr />
+<h3 id="GpuDeviceCreateD3D12SemanticName"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> GpuDeviceCreateD3D12SemanticName</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">GpuDeviceCreateD3D12SemanticName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_GPU_DEVICE_CREATE_D3D12_SEMANTIC_NAME_STRING</span></code></p>
+<hr />
+<h3 id="GpuDeviceCreateDebugMode"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> GpuDeviceCreateDebugMode</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">GpuDeviceCreateDebugMode</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_GPU_DEVICE_CREATE_DEBUGMODE_BOOLEAN</span></code></p>
+<hr />
+<h3 id="GpuDeviceCreateName"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> GpuDeviceCreateName</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">GpuDeviceCreateName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_GPU_DEVICE_CREATE_NAME_STRING</span></code></p>
+<hr />
+<h3 id="GpuDeviceCreatePreferLowPower"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> GpuDeviceCreatePreferLowPower</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">GpuDeviceCreatePreferLowPower</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_GPU_DEVICE_CREATE_PREFERLOWPOWER_BOOLEAN</span></code></p>
+<hr />
+<h3 id="GpuDeviceCreateShadersDxbc"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> GpuDeviceCreateShadersDxbc</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">GpuDeviceCreateShadersDxbc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_GPU_DEVICE_CREATE_SHADERS_DXBC_BOOLEAN</span></code></p>
+<hr />
+<h3 id="GpuDeviceCreateShadersDxil"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> GpuDeviceCreateShadersDxil</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">GpuDeviceCreateShadersDxil</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_GPU_DEVICE_CREATE_SHADERS_DXIL_BOOLEAN</span></code></p>
+<hr />
+<h3 id="GpuDeviceCreateShadersMetalLib"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> GpuDeviceCreateShadersMetalLib</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">GpuDeviceCreateShadersMetalLib</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_GPU_DEVICE_CREATE_SHADERS_METALLIB_BOOLEAN</span></code></p>
+<hr />
+<h3 id="GpuDeviceCreateShadersMsl"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> GpuDeviceCreateShadersMsl</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">GpuDeviceCreateShadersMsl</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_GPU_DEVICE_CREATE_SHADERS_MSL_BOOLEAN</span></code></p>
+<hr />
+<h3 id="GpuDeviceCreateShadersPrivate"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> GpuDeviceCreateShadersPrivate</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">GpuDeviceCreateShadersPrivate</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_GPU_DEVICE_CREATE_SHADERS_PRIVATE_BOOLEAN</span></code></p>
+<hr />
+<h3 id="GpuDeviceCreateShadersSpirV"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> GpuDeviceCreateShadersSpirV</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">GpuDeviceCreateShadersSpirV</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_GPU_DEVICE_CREATE_SHADERS_SPIRV_BOOLEAN</span></code></p>
+<hr />
+<h3 id="GpuGraphicsPipelineCreateName"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> GpuGraphicsPipelineCreateName</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">GpuGraphicsPipelineCreateName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_GPU_GRAPHICSPIPELINE_CREATE_NAME_STRING</span></code></p>
+<hr />
+<h3 id="GpuSamplerCreateName"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> GpuSamplerCreateName</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">GpuSamplerCreateName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_GPU_SAMPLER_CREATE_NAME_STRING</span></code></p>
+<hr />
+<h3 id="GpuShaderCreateName"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> GpuShaderCreateName</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">GpuShaderCreateName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_GPU_SHADER_CREATE_NAME_STRING</span></code></p>
+<hr />
+<h3 id="GpuTextureCreateD3D12ClearA"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> GpuTextureCreateD3D12ClearA</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">GpuTextureCreateD3D12ClearA</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_GPU_TEXTURE_CREATE_D3D12_CLEAR_A_FLOAT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;SDL.gpu.texture.create.d3d12.clear.a&#39;</span></code></p>
+<hr />
+<h3 id="GpuTextureCreateD3D12ClearB"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> GpuTextureCreateD3D12ClearB</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">GpuTextureCreateD3D12ClearB</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_GPU_TEXTURE_CREATE_D3D12_CLEAR_B_FLOAT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;SDL.gpu.texture.create.d3d12.clear.b&#39;</span></code></p>
+<hr />
+<h3 id="GpuTextureCreateD3D12ClearDepth"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> GpuTextureCreateD3D12ClearDepth</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">GpuTextureCreateD3D12ClearDepth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_GPU_TEXTURE_CREATE_D3D12_CLEAR_DEPTH_FLOAT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;SDL.gpu.texture.create.d3d12.clear.depth&#39;</span></code></p>
+<hr />
+<h3 id="GpuTextureCreateD3D12ClearG"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> GpuTextureCreateD3D12ClearG</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">GpuTextureCreateD3D12ClearG</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_GPU_TEXTURE_CREATE_D3D12_CLEAR_G_FLOAT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;SDL.gpu.texture.create.d3d12.clear.g&#39;</span></code></p>
+<hr />
+<h3 id="GpuTextureCreateD3D12ClearR"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> GpuTextureCreateD3D12ClearR</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">GpuTextureCreateD3D12ClearR</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_GPU_TEXTURE_CREATE_D3D12_CLEAR_R_FLOAT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;SDL.gpu.texture.create.d3d12.clear.r&#39;</span></code></p>
+<hr />
+<h3 id="GpuTextureCreateD3D12ClearStencil"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> GpuTextureCreateD3D12ClearStencil</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">GpuTextureCreateD3D12ClearStencil</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_GPU_TEXTURE_CREATE_D3D12_CLEAR_STENCIL_UINT8</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;SDL.gpu.texture.create.d3d12.clear.stencil&#39;</span></code></p>
+<hr />
+<h3 id="GpuTextureCreateName"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> GpuTextureCreateName</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">GpuTextureCreateName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_GPU_TEXTURE_CREATE_NAME_STRING</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;SDL.gpu.texture.create.name&#39;</span></code></p>
+<hr />
+<h3 id="GpuTransferBufferCreateName"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> GpuTransferBufferCreateName</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">GpuTransferBufferCreateName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_GPU_TRANSFERBUFFER_CREATE_NAME_STRING</span></code></p>
+<hr />
+<h3 id="IOStreamAndroidAAsset"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> IOStreamAndroidAAsset</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">IOStreamAndroidAAsset</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_IOSTREAM_ANDROID_AASSET_POINTER</span></code></p>
+<hr />
+<h3 id="IOStreamDynamicChunkSize"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> IOStreamDynamicChunkSize</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">IOStreamDynamicChunkSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_IOSTREAM_DYNAMIC_CHUNKSIZE_NUMBER</span></code></p>
+<hr />
+<h3 id="IOStreamDynamicMemory"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> IOStreamDynamicMemory</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">IOStreamDynamicMemory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_IOSTREAM_DYNAMIC_MEMORY_POINTER</span></code></p>
+<hr />
+<h3 id="IOStreamFileDescriptor"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> IOStreamFileDescriptor</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">IOStreamFileDescriptor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_IOSTREAM_FILE_DESCRIPTOR_NUMBER</span></code></p>
+<hr />
+<h3 id="IOStreamMemory"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> IOStreamMemory</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">IOStreamMemory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_IOSTREAM_MEMORY_POINTER</span></code></p>
+<hr />
+<h3 id="IOStreamMemorySize"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> IOStreamMemorySize</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">IOStreamMemorySize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_IOSTREAM_MEMORY_SIZE_NUMBER</span></code></p>
+<hr />
+<h3 id="IOStreamWindowHandle"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> IOStreamWindowHandle</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">IOStreamWindowHandle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_IOSTREAM_WINDOWS_HANDLE_POINTER</span></code></p>
+<hr />
+<h3 id="JoystickCapMonoLed"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> JoystickCapMonoLed</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">JoystickCapMonoLed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_JOYSTICK_CAP_MONO_LED_BOOLEAN</span></code></p>
+<hr />
+<h3 id="JoystickCapPlayerLed"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> JoystickCapPlayerLed</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">JoystickCapPlayerLed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_JOYSTICK_CAP_PLAYER_LED_BOOLEAN</span></code></p>
+<hr />
+<h3 id="JoystickCapRgbLed"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> JoystickCapRgbLed</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">JoystickCapRgbLed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_JOYSTICK_CAP_RGB_LED_BOOLEAN</span></code></p>
+<hr />
+<h3 id="JoystickCapRumble"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> JoystickCapRumble</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">JoystickCapRumble</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_JOYSTICK_CAP_RUMBLE_BOOLEAN</span></code></p>
+<hr />
+<h3 id="JoystickCapTriggerRumble"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> JoystickCapTriggerRumble</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">JoystickCapTriggerRumble</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_JOYSTICK_CAP_TRIGGER_RUMBLE_BOOLEAN</span></code></p>
+<hr />
+<h3 id="ProcessBackground"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> ProcessBackground</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">ProcessBackground</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_PROCESS_BACKGROUND_BOOLEAN</span></code></p>
+<hr />
+<h3 id="ProcessCreateArgs"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> ProcessCreateArgs</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">ProcessCreateArgs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_PROCESS_CREATE_ARGS_POINTER</span></code></p>
+<hr />
+<h3 id="ProcessCreateBackground"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> ProcessCreateBackground</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">ProcessCreateBackground</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_PROCESS_CREATE_BACKGROUND_BOOLEAN</span></code></p>
+<hr />
+<h3 id="ProcessCreateEnvironment"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> ProcessCreateEnvironment</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">ProcessCreateEnvironment</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_PROCESS_CREATE_ENVIRONMENT_POINTER</span></code></p>
+<hr />
+<h3 id="ProcessCreateStdErr"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> ProcessCreateStdErr</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">ProcessCreateStdErr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_PROCESS_CREATE_STDERR_NUMBER</span></code></p>
+<hr />
+<h3 id="ProcessCreateStdErrStream"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> ProcessCreateStdErrStream</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">ProcessCreateStdErrStream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_PROCESS_CREATE_STDERR_POINTER</span></code></p>
+<hr />
+<h3 id="ProcessCreateStdErrToStdOut"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> ProcessCreateStdErrToStdOut</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">ProcessCreateStdErrToStdOut</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_PROCESS_CREATE_STDERR_TO_STDOUT_BOOLEAN</span></code></p>
+<hr />
+<h3 id="ProcessCreateStdIn"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> ProcessCreateStdIn</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">ProcessCreateStdIn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_PROCESS_CREATE_STDIN_NUMBER</span></code></p>
+<hr />
+<h3 id="ProcessCreateStdInStream"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> ProcessCreateStdInStream</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">ProcessCreateStdInStream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_PROCESS_CREATE_STDIN_POINTER</span></code></p>
+<hr />
+<h3 id="ProcessCreateStdOut"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> ProcessCreateStdOut</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">ProcessCreateStdOut</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_PROCESS_CREATE_STDOUT_NUMBER</span></code></p>
+<hr />
+<h3 id="ProcessCreateStdOutStream"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> ProcessCreateStdOutStream</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">ProcessCreateStdOutStream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_PROCESS_CREATE_STDOUT_POINTER</span></code></p>
+<hr />
+<h3 id="ProcessPid"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> ProcessPid</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">ProcessPid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_PROCESS_PID_NUMBER</span></code></p>
+<hr />
+<h3 id="ProcessStdErr"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> ProcessStdErr</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">ProcessStdErr</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_PROCESS_STDERR_POINTER</span></code></p>
+<hr />
+<h3 id="ProcessStdIn"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> ProcessStdIn</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">ProcessStdIn</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_PROCESS_STDIN_POINTER</span></code></p>
+<hr />
+<h3 id="ProcessStdOut"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> ProcessStdOut</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">ProcessStdOut</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_PROCESS_STDOUT_POINTER</span></code></p>
+<hr />
+<h3 id="RendererCreateName"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererCreateName</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererCreateName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_CREATE_NAME_STRING</span></code></p>
+<hr />
+<h3 id="RendererCreateOutputColorspace"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererCreateOutputColorspace</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererCreateOutputColorspace</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_CREATE_OUTPUT_COLORSPACE_NUMBER</span></code></p>
+<hr />
+<h3 id="RendererCreatePresentVSync"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererCreatePresentVSync</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererCreatePresentVSync</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_CREATE_PRESENT_VSYNC_NUMBER</span></code></p>
+<hr />
+<h3 id="RendererCreateSurface"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererCreateSurface</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererCreateSurface</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_CREATE_SURFACE_POINTER</span></code></p>
+<hr />
+<h3 id="RendererCreateVulkanDevice"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererCreateVulkanDevice</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererCreateVulkanDevice</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_CREATE_VULKAN_DEVICE_POINTER</span></code></p>
+<hr />
+<h3 id="RendererCreateVulkanGraphicsQueueFamilyIndex"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererCreateVulkanGraphicsQueueFamilyIndex</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererCreateVulkanGraphicsQueueFamilyIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_CREATE_VULKAN_GRAPHICS_QUEUE_FAMILY_INDEX_NUMBER</span></code></p>
+<hr />
+<h3 id="RendererCreateVulkanInstance"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererCreateVulkanInstance</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererCreateVulkanInstance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_CREATE_VULKAN_INSTANCE_POINTER</span></code></p>
+<hr />
+<h3 id="RendererCreateVulkanPhysicalDevice"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererCreateVulkanPhysicalDevice</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererCreateVulkanPhysicalDevice</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_CREATE_VULKAN_PHYSICAL_DEVICE_POINTER</span></code></p>
+<hr />
+<h3 id="RendererCreateVulkanPresentQueueFamilyIndex"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererCreateVulkanPresentQueueFamilyIndex</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererCreateVulkanPresentQueueFamilyIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_CREATE_VULKAN_PRESENT_QUEUE_FAMILY_INDEX_NUMBER</span></code></p>
+<hr />
+<h3 id="RendererCreateVulkanSurface"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererCreateVulkanSurface</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererCreateVulkanSurface</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_CREATE_VULKAN_SURFACE_NUMBER</span></code></p>
+<hr />
+<h3 id="RendererCreateWindow"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererCreateWindow</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererCreateWindow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_CREATE_WINDOW_POINTER</span></code></p>
+<hr />
+<h3 id="RendererD3D11Device"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererD3D11Device</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererD3D11Device</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_D3D11_DEVICE_POINTER</span></code></p>
+<hr />
+<h3 id="RendererD3D11SwapChain"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererD3D11SwapChain</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererD3D11SwapChain</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_D3D11_SWAPCHAIN_POINTER</span></code></p>
+<hr />
+<h3 id="RendererD3D12CommandQueue"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererD3D12CommandQueue</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererD3D12CommandQueue</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_D3D12_COMMAND_QUEUE_POINTER</span></code></p>
+<hr />
+<h3 id="RendererD3D12Device"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererD3D12Device</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererD3D12Device</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_D3D12_DEVICE_POINTER</span></code></p>
+<hr />
+<h3 id="RendererD3D12SwapChain"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererD3D12SwapChain</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererD3D12SwapChain</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_D3D12_SWAPCHAIN_POINTER</span></code></p>
+<hr />
+<h3 id="RendererD3D9Device"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererD3D9Device</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererD3D9Device</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_D3D9_DEVICE_POINTER</span></code></p>
+<hr />
+<h3 id="RendererGpuDevice"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererGpuDevice</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererGpuDevice</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_GPU_DEVICE_POINTER</span></code></p>
+<hr />
+<h3 id="RendererHdrEnabled"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererHdrEnabled</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererHdrEnabled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_HDR_ENABLED_BOOLEAN</span></code></p>
+<hr />
+<h3 id="RendererHdrHeadroom"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererHdrHeadroom</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererHdrHeadroom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_HDR_HEADROOM_FLOAT</span></code></p>
+<hr />
+<h3 id="RendererMaxTextureSize"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererMaxTextureSize</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererMaxTextureSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_MAX_TEXTURE_SIZE_NUMBER</span></code></p>
+<hr />
+<h3 id="RendererName"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererName</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_NAME_STRING</span></code></p>
+<hr />
+<h3 id="RendererOutputColorspace"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererOutputColorspace</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererOutputColorspace</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_OUTPUT_COLORSPACE_NUMBER</span></code></p>
+<hr />
+<h3 id="RendererSdrWhitePoint"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererSdrWhitePoint</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererSdrWhitePoint</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_SDR_WHITE_POINT_FLOAT</span></code></p>
+<hr />
+<h3 id="RendererSurface"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererSurface</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererSurface</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_SURFACE_POINTER</span></code></p>
+<hr />
+<h3 id="RendererTextureFormats"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererTextureFormats</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererTextureFormats</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_TEXTURE_FORMATS_POINTER</span></code></p>
+<hr />
+<h3 id="RendererVSync"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererVSync</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererVSync</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_VSYNC_NUMBER</span></code></p>
+<hr />
+<h3 id="RendererVulkanDevice"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererVulkanDevice</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererVulkanDevice</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_VULKAN_DEVICE_POINTER</span></code></p>
+<hr />
+<h3 id="RendererVulkanGraphicsQueueFamilyIndex"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererVulkanGraphicsQueueFamilyIndex</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererVulkanGraphicsQueueFamilyIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_VULKAN_GRAPHICS_QUEUE_FAMILY_INDEX_NUMBER</span></code></p>
+<hr />
+<h3 id="RendererVulkanInstance"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererVulkanInstance</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererVulkanInstance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_VULKAN_INSTANCE_POINTER</span></code></p>
+<hr />
+<h3 id="RendererVulkanPhysicalDevice"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererVulkanPhysicalDevice</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererVulkanPhysicalDevice</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_VULKAN_PHYSICAL_DEVICE_POINTER</span></code></p>
+<hr />
+<h3 id="RendererVulkanPresentQueueFamilyIndex"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererVulkanPresentQueueFamilyIndex</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererVulkanPresentQueueFamilyIndex</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_VULKAN_PRESENT_QUEUE_FAMILY_INDEX_NUMBER</span></code></p>
+<hr />
+<h3 id="RendererVulkanSurface"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererVulkanSurface</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererVulkanSurface</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_VULKAN_SURFACE_NUMBER</span></code></p>
+<hr />
+<h3 id="RendererVulkanSwapChainImageCount"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererVulkanSwapChainImageCount</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererVulkanSwapChainImageCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_VULKAN_SWAPCHAIN_IMAGE_COUNT_NUMBER</span></code></p>
+<hr />
+<h3 id="RendererWindow"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> RendererWindow</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">RendererWindow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_RENDERER_WINDOW_POINTER</span></code></p>
+<hr />
+<h3 id="SurfaceHdrHeadroom"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> SurfaceHdrHeadroom</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">SurfaceHdrHeadroom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_SURFACE_HDR_HEADROOM_FLOAT</span></code></p>
+<hr />
+<h3 id="SurfaceSdrWhitePoint"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> SurfaceSdrWhitePoint</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">SurfaceSdrWhitePoint</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_SURFACE_SDR_WHITE_POINT_FLOAT</span></code></p>
+<hr />
+<h3 id="SurfaceTonemapOperator"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> SurfaceTonemapOperator</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">SurfaceTonemapOperator</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_SURFACE_TONEMAP_OPERATOR_STRING</span></code></p>
+<hr />
+<h3 id="TextInputAndroidInputType"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextInputAndroidInputType</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextInputAndroidInputType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTINPUT_ANDROID_INPUTTYPE_NUMBER</span></code></p>
+<hr />
+<h3 id="TextInputAutoCorrect"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextInputAutoCorrect</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextInputAutoCorrect</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTINPUT_AUTOCORRECT_BOOLEAN</span></code></p>
+<hr />
+<h3 id="TextInputCapitalization"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextInputCapitalization</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextInputCapitalization</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTINPUT_CAPITALIZATION_NUMBER</span></code></p>
+<hr />
+<h3 id="TextInputMultiLine"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextInputMultiLine</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextInputMultiLine</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTINPUT_MULTILINE_BOOLEAN</span></code></p>
+<hr />
+<h3 id="TextInputType"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextInputType</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextInputType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTINPUT_TYPE_NUMBER</span></code></p>
+<hr />
+<h3 id="TextureAccess"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureAccess</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureAccess</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_ACCESS_NUMBER</span></code></p>
+<hr />
+<h3 id="TextureColorspace"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureColorspace</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureColorspace</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_COLORSPACE_NUMBER</span></code></p>
+<hr />
+<h3 id="TextureCreateAccess"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureCreateAccess</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureCreateAccess</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_CREATE_ACCESS_NUMBER</span></code></p>
+<hr />
+<h3 id="TextureCreateColorspace"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureCreateColorspace</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureCreateColorspace</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_CREATE_COLORSPACE_NUMBER</span></code></p>
+<hr />
+<h3 id="TextureCreateD3D11Texture"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureCreateD3D11Texture</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureCreateD3D11Texture</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_CREATE_D3D11_TEXTURE_POINTER</span></code></p>
+<hr />
+<h3 id="TextureCreateD3D11TextureU"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureCreateD3D11TextureU</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureCreateD3D11TextureU</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_CREATE_D3D11_TEXTURE_U_POINTER</span></code></p>
+<hr />
+<h3 id="TextureCreateD3D11TextureV"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureCreateD3D11TextureV</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureCreateD3D11TextureV</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_CREATE_D3D11_TEXTURE_V_POINTER</span></code></p>
+<hr />
+<h3 id="TextureCreateD3D12Texture"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureCreateD3D12Texture</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureCreateD3D12Texture</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_CREATE_D3D12_TEXTURE_POINTER</span></code></p>
+<hr />
+<h3 id="TextureCreateD3D12TextureU"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureCreateD3D12TextureU</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureCreateD3D12TextureU</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_CREATE_D3D12_TEXTURE_U_POINTER</span></code></p>
+<hr />
+<h3 id="TextureCreateD3D12TextureV"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureCreateD3D12TextureV</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureCreateD3D12TextureV</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_CREATE_D3D12_TEXTURE_V_POINTER</span></code></p>
+<hr />
+<h3 id="TextureCreateFormat"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureCreateFormat</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureCreateFormat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_CREATE_FORMAT_NUMBER</span></code></p>
+<hr />
+<h3 id="TextureCreateHdrHeadroom"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureCreateHdrHeadroom</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureCreateHdrHeadroom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_CREATE_HDR_HEADROOM_FLOAT</span></code></p>
+<hr />
+<h3 id="TextureCreateHeight"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureCreateHeight</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureCreateHeight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_CREATE_HEIGHT_NUMBER</span></code></p>
+<hr />
+<h3 id="TextureCreateMetalPixelBuffer"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureCreateMetalPixelBuffer</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureCreateMetalPixelBuffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_CREATE_METAL_PIXELBUFFER_POINTER</span></code></p>
+<hr />
+<h3 id="TextureCreateOpenGles2Texture"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureCreateOpenGles2Texture</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureCreateOpenGles2Texture</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_CREATE_OPENGLES2_TEXTURE_NUMBER</span></code></p>
+<hr />
+<h3 id="TextureCreateOpenGles2TextureU"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureCreateOpenGles2TextureU</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureCreateOpenGles2TextureU</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_CREATE_OPENGLES2_TEXTURE_U_NUMBER</span></code></p>
+<hr />
+<h3 id="TextureCreateOpenGles2TextureUV"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureCreateOpenGles2TextureUV</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureCreateOpenGles2TextureUV</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_CREATE_OPENGLES2_TEXTURE_UV_NUMBER</span></code></p>
+<hr />
+<h3 id="TextureCreateOpenGles2TextureV"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureCreateOpenGles2TextureV</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureCreateOpenGles2TextureV</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_CREATE_OPENGLES2_TEXTURE_V_NUMBER</span></code></p>
+<hr />
+<h3 id="TextureCreateOpenGLTexture"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureCreateOpenGLTexture</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureCreateOpenGLTexture</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_CREATE_OPENGL_TEXTURE_NUMBER</span></code></p>
+<hr />
+<h3 id="TextureCreateOpenGLTextureU"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureCreateOpenGLTextureU</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureCreateOpenGLTextureU</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_CREATE_OPENGL_TEXTURE_U_NUMBER</span></code></p>
+<hr />
+<h3 id="TextureCreateOpenGLTextureUV"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureCreateOpenGLTextureUV</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureCreateOpenGLTextureUV</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_CREATE_OPENGL_TEXTURE_UV_NUMBER</span></code></p>
+<hr />
+<h3 id="TextureCreateOpenGLTextureV"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureCreateOpenGLTextureV</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureCreateOpenGLTextureV</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_CREATE_OPENGL_TEXTURE_V_NUMBER</span></code></p>
+<hr />
+<h3 id="TextureCreateSdrWhitePoint"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureCreateSdrWhitePoint</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureCreateSdrWhitePoint</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_CREATE_SDR_WHITE_POINT_FLOAT</span></code></p>
+<hr />
+<h3 id="TextureCreateVulkanTexture"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureCreateVulkanTexture</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureCreateVulkanTexture</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_CREATE_VULKAN_TEXTURE_NUMBER</span></code></p>
+<hr />
+<h3 id="TextureCreateWidth"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureCreateWidth</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureCreateWidth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_CREATE_WIDTH_NUMBER</span></code></p>
+<hr />
+<h3 id="TextureD3D11Texture"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureD3D11Texture</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureD3D11Texture</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_D3D11_TEXTURE_POINTER</span></code></p>
+<hr />
+<h3 id="TextureD3D11TextureU"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureD3D11TextureU</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureD3D11TextureU</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_D3D11_TEXTURE_U_POINTER</span></code></p>
+<hr />
+<h3 id="TextureD3D11TextureV"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureD3D11TextureV</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureD3D11TextureV</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_D3D11_TEXTURE_V_POINTER</span></code></p>
+<hr />
+<h3 id="TextureD3D12Texture"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureD3D12Texture</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureD3D12Texture</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_D3D12_TEXTURE_POINTER</span></code></p>
+<hr />
+<h3 id="TextureD3D12TextureU"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureD3D12TextureU</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureD3D12TextureU</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_D3D12_TEXTURE_U_POINTER</span></code></p>
+<hr />
+<h3 id="TextureD3D12TextureV"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureD3D12TextureV</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureD3D12TextureV</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_D3D12_TEXTURE_V_POINTER</span></code></p>
+<hr />
+<h3 id="TextureFormat"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureFormat</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureFormat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_FORMAT_NUMBER</span></code></p>
+<hr />
+<h3 id="TextureHdrHeadroom"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureHdrHeadroom</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureHdrHeadroom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_HDR_HEADROOM_FLOAT</span></code></p>
+<hr />
+<h3 id="TextureHeight"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureHeight</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureHeight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_HEIGHT_NUMBER</span></code></p>
+<hr />
+<h3 id="TextureOpenGles2Texture"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureOpenGles2Texture</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureOpenGles2Texture</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_OPENGLES2_TEXTURE_NUMBER</span></code></p>
+<hr />
+<h3 id="TextureOpenGles2TextureTarget"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureOpenGles2TextureTarget</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureOpenGles2TextureTarget</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_OPENGLES2_TEXTURE_TARGET_NUMBER</span></code></p>
+<hr />
+<h3 id="TextureOpenGles2TextureU"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureOpenGles2TextureU</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureOpenGles2TextureU</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_OPENGLES2_TEXTURE_U_NUMBER</span></code></p>
+<hr />
+<h3 id="TextureOpenGles2TextureUV"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureOpenGles2TextureUV</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureOpenGles2TextureUV</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_OPENGLES2_TEXTURE_UV_NUMBER</span></code></p>
+<hr />
+<h3 id="TextureOpenGles2TextureV"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureOpenGles2TextureV</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureOpenGles2TextureV</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_OPENGLES2_TEXTURE_V_NUMBER</span></code></p>
+<hr />
+<h3 id="TextureOpenGLTexH"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureOpenGLTexH</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureOpenGLTexH</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_OPENGL_TEX_H_FLOAT</span></code></p>
+<hr />
+<h3 id="TextureOpenGLTexture"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureOpenGLTexture</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureOpenGLTexture</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_OPENGL_TEXTURE_NUMBER</span></code></p>
+<hr />
+<h3 id="TextureOpenGLTextureTarget"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureOpenGLTextureTarget</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureOpenGLTextureTarget</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_OPENGL_TEXTURE_TARGET_NUMBER</span></code></p>
+<hr />
+<h3 id="TextureOpenGLTextureU"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureOpenGLTextureU</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureOpenGLTextureU</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_OPENGL_TEXTURE_U_NUMBER</span></code></p>
+<hr />
+<h3 id="TextureOpenGLTextureUV"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureOpenGLTextureUV</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureOpenGLTextureUV</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_OPENGL_TEXTURE_UV_NUMBER</span></code></p>
+<hr />
+<h3 id="TextureOpenGLTextureV"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureOpenGLTextureV</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureOpenGLTextureV</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_OPENGL_TEXTURE_V_NUMBER</span></code></p>
+<hr />
+<h3 id="TextureOpenGLTexW"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureOpenGLTexW</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureOpenGLTexW</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_OPENGL_TEX_W_FLOAT</span></code></p>
+<hr />
+<h3 id="TextureSdrWhitePoint"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureSdrWhitePoint</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureSdrWhitePoint</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_SDR_WHITE_POINT_FLOAT</span></code></p>
+<hr />
+<h3 id="TextureVulkanTexture"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureVulkanTexture</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureVulkanTexture</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_VULKAN_TEXTURE_NUMBER</span></code></p>
+<hr />
+<h3 id="TextureWidth"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> TextureWidth</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">TextureWidth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_TEXTURE_WIDTH_NUMBER</span></code></p>
+<hr />
+<h3 id="WindowAndroidSurface"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowAndroidSurface</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowAndroidSurface</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_ANDROID_SURFACE_POINTER</span></code></p>
+<hr />
+<h3 id="WindowAndroidWindow"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowAndroidWindow</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowAndroidWindow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_ANDROID_WINDOW_POINTER</span></code></p>
+<hr />
+<h3 id="WindowCocoaMetalViewTag"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowCocoaMetalViewTag</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowCocoaMetalViewTag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_COCOA_METAL_VIEW_TAG_NUMBER</span></code></p>
+<hr />
+<h3 id="WindowCocoaWindow"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowCocoaWindow</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowCocoaWindow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_COCOA_WINDOW_POINTER</span></code></p>
+<hr />
+<h3 id="WindowCreateAlwaysOnTop"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowCreateAlwaysOnTop</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowCreateAlwaysOnTop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_CREATE_ALWAYS_ON_TOP_BOOLEAN</span></code></p>
+<hr />
+<h3 id="WindowCreateBorderless"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowCreateBorderless</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowCreateBorderless</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_CREATE_BORDERLESS_BOOLEAN</span></code></p>
+<hr />
+<h3 id="WindowCreateCocoaView"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowCreateCocoaView</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowCreateCocoaView</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_CREATE_COCOA_VIEW_POINTER</span></code></p>
+<hr />
+<h3 id="WindowCreateCocoaWindow"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowCreateCocoaWindow</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowCreateCocoaWindow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_CREATE_COCOA_WINDOW_POINTER</span></code></p>
+<hr />
+<h3 id="WindowCreateExternalGraphicsContext"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowCreateExternalGraphicsContext</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowCreateExternalGraphicsContext</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_CREATE_EXTERNAL_GRAPHICS_CONTEXT_BOOLEAN</span></code></p>
+<hr />
+<h3 id="WindowCreateFlags"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowCreateFlags</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowCreateFlags</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_CREATE_FLAGS_NUMBER</span></code></p>
+<hr />
+<h3 id="WindowCreateFocusable"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowCreateFocusable</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowCreateFocusable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_CREATE_FOCUSABLE_BOOLEAN</span></code></p>
+<hr />
+<h3 id="WindowCreateFullscreen"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowCreateFullscreen</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowCreateFullscreen</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_CREATE_FULLSCREEN_BOOLEAN</span></code></p>
+<hr />
+<h3 id="WindowCreateHeight"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowCreateHeight</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowCreateHeight</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_CREATE_HEIGHT_NUMBER</span></code></p>
+<hr />
+<h3 id="WindowCreateHidden"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowCreateHidden</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowCreateHidden</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_CREATE_HIDDEN_BOOLEAN</span></code></p>
+<hr />
+<h3 id="WindowCreateHighPixelDensity"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowCreateHighPixelDensity</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowCreateHighPixelDensity</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_CREATE_HIGH_PIXEL_DENSITY_BOOLEAN</span></code></p>
+<hr />
+<h3 id="WindowCreateMaximized"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowCreateMaximized</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowCreateMaximized</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_CREATE_MAXIMIZED_BOOLEAN</span></code></p>
+<hr />
+<h3 id="WindowCreateMenu"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowCreateMenu</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowCreateMenu</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_CREATE_MENU_BOOLEAN</span></code></p>
+<hr />
+<h3 id="WindowCreateMetal"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowCreateMetal</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowCreateMetal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_CREATE_METAL_BOOLEAN</span></code></p>
+<hr />
+<h3 id="WindowCreateMinimized"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowCreateMinimized</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowCreateMinimized</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_CREATE_MINIMIZED_BOOLEAN</span></code></p>
+<hr />
+<h3 id="WindowCreateModal"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowCreateModal</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowCreateModal</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_CREATE_MODAL_BOOLEAN</span></code></p>
+<hr />
+<h3 id="WindowCreateMouseGrabbed"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowCreateMouseGrabbed</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowCreateMouseGrabbed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_CREATE_MOUSE_GRABBED_BOOLEAN</span></code></p>
+<hr />
+<h3 id="WindowCreateOpenGL"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowCreateOpenGL</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowCreateOpenGL</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_CREATE_OPENGL_BOOLEAN</span></code></p>
+<hr />
+<h3 id="WindowCreateParent"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowCreateParent</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowCreateParent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_CREATE_PARENT_POINTER</span></code></p>
+<hr />
+<h3 id="WindowCreateResizable"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowCreateResizable</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowCreateResizable</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_CREATE_RESIZABLE_BOOLEAN</span></code></p>
+<hr />
+<h3 id="WindowCreateTitle"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowCreateTitle</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowCreateTitle</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_CREATE_TITLE_STRING</span></code></p>
+<hr />
+<h3 id="WindowCreateTooltip"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowCreateTooltip</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowCreateTooltip</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_CREATE_TOOLTIP_BOOLEAN</span></code></p>
+<hr />
+<h3 id="WindowCreateTransparent"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowCreateTransparent</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowCreateTransparent</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_CREATE_TRANSPARENT_BOOLEAN</span></code></p>
+<hr />
+<h3 id="WindowCreateUtility"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowCreateUtility</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowCreateUtility</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_CREATE_UTILITY_BOOLEAN</span></code></p>
+<hr />
+<h3 id="WindowCreateVulkan"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowCreateVulkan</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowCreateVulkan</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_CREATE_VULKAN_BOOLEAN</span></code></p>
+<hr />
+<h3 id="WindowCreateWidth"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowCreateWidth</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowCreateWidth</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_CREATE_WIDTH_NUMBER</span></code></p>
+<hr />
+<h3 id="WindowCreateWin32HWnd"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowCreateWin32HWnd</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowCreateWin32HWnd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_CREATE_WIN32_HWND_POINTER</span></code></p>
+<hr />
+<h3 id="WindowCreateWin32PixelFormatHWnd"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowCreateWin32PixelFormatHWnd</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowCreateWin32PixelFormatHWnd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_CREATE_WIN32_PIXEL_FORMAT_HWND_POINTER</span></code></p>
+<hr />
+<h3 id="WindowCreateX"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowCreateX</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowCreateX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_CREATE_X_NUMBER</span></code></p>
+<hr />
+<h3 id="WindowCreateY"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowCreateY</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowCreateY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_CREATE_Y_NUMBER</span></code></p>
+<hr />
+<h3 id="WindowHdrEnabled"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowHdrEnabled</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowHdrEnabled</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_HDR_ENABLED_BOOLEAN</span></code></p>
+<hr />
+<h3 id="WindowHdrHeadroom"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowHdrHeadroom</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowHdrHeadroom</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_HDR_HEADROOM_FLOAT</span></code></p>
+<hr />
+<h3 id="WindowSdrWhiteLevel"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowSdrWhiteLevel</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowSdrWhiteLevel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_SDR_WHITE_LEVEL_FLOAT</span></code></p>
+<hr />
+<h3 id="WindowShape"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowShape</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowShape</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_SHAPE_POINTER</span></code></p>
+<hr />
+<h3 id="WindowUIKitMetalViewTag"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowUIKitMetalViewTag</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowUIKitMetalViewTag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_UIKIT_METAL_VIEW_TAG_NUMBER</span></code></p>
+<hr />
+<h3 id="WindowUIKitOpenGLFramebuffer"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowUIKitOpenGLFramebuffer</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowUIKitOpenGLFramebuffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_UIKIT_OPENGL_FRAMEBUFFER_NUMBER</span></code></p>
+<hr />
+<h3 id="WindowUIKitOpenGLRenderbuffer"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowUIKitOpenGLRenderbuffer</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowUIKitOpenGLRenderbuffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_UIKIT_OPENGL_RENDERBUFFER_NUMBER</span></code></p>
+<hr />
+<h3 id="WindowUIKitOpenGLResolveFramebuffer"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowUIKitOpenGLResolveFramebuffer</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowUIKitOpenGLResolveFramebuffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_UIKIT_OPENGL_RESOLVE_FRAMEBUFFER_NUMBER</span></code></p>
+<hr />
+<h3 id="WindowUIKitWindow"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowUIKitWindow</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowUIKitWindow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_UIKIT_WINDOW_POINTER</span></code></p>
+<hr />
+<h3 id="WindowWin32Hdc"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowWin32Hdc</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowWin32Hdc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_WIN32_HDC_POINTER</span></code></p>
+<hr />
+<h3 id="WindowWin32Hwnd"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowWin32Hwnd</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowWin32Hwnd</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_WIN32_HWND_POINTER</span></code></p>
+<hr />
+<h3 id="WindowWin32Instance"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> WindowWin32Instance</h3>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">WindowWin32Instance</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_PROP_WINDOW_WIN32_INSTANCE_POINTER</span></code></p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../TSdlProperties/" class="md-footer__link md-footer__link--prev" aria-label="Previous: TSdlProperties">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                TSdlProperties
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../TSdlVersion/" class="md-footer__link md-footer__link--next" aria-label="Next: TSdlVersion">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                TSdlVersion
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Erik van Bilsen
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/neslib/Neslib.Sdl3" target="_blank" rel="noopener" title="GitHub neslib" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://blog.grijjy.com/author/erikvanbilsen/" target="_blank" rel="noopener" title="Blog" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="m61.7 169.4 101.5 278C92.2 413 43.3 340.2 43.3 256c0-30.9 6.6-60.1 18.4-86.6m337.9 75.9c0-26.3-9.4-44.5-17.5-58.7-10.8-17.5-20.9-32.4-20.9-49.9 0-19.6 14.8-37.8 35.7-37.8.9 0 1.8.1 2.8.2-37.9-34.7-88.3-55.9-143.7-55.9-74.3 0-139.7 38.1-177.8 95.9 5 .2 9.7.3 13.7.3 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l77.5 230.4L249.8 247l-33.1-90.8c-11.5-.7-22.3-2-22.3-2-11.5-.7-10.1-18.2 1.3-17.5 0 0 35.1 2.7 56 2.7 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l76.9 228.7 21.2-70.9c9-29.4 16-50.5 16-68.7m-139.9 29.3-63.8 185.5c19.1 5.6 39.2 8.7 60.1 8.7 24.8 0 48.5-4.3 70.6-12.1-.6-.9-1.1-1.9-1.5-2.9zm183-120.7c.9 6.8 1.4 14 1.4 21.9 0 21.6-4 45.8-16.2 76.2l-65 187.9C426.2 403 468.7 334.5 468.7 256c0-37-9.4-71.8-26-102.1M504 256c0 136.8-111.3 248-248 248C119.2 504 8 392.7 8 256 8 119.2 119.2 8 256 8c136.7 0 248 111.2 248 248m-11.4 0c0-130.5-106.2-236.6-236.6-236.6C125.5 19.4 19.4 125.5 19.4 256S125.6 492.6 256 492.6c130.5 0 236.6-106.1 236.6-236.6"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.code.copy", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.prune", "navigation.top", "navigation.footer", "navigation.indexes", "search.suggest", "search.share"], "search": "../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1240 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/neslib/Neslib.Sdl3/APIByCategory/Neslib.Sdl3.Gpu/">
+      
+      
+        <link rel="prev" href="../Neslib.Sdl3.Audio/">
+      
+      
+        <link rel="next" href="../Neslib.Sdl3.Time/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.48">
+    
+    
+      
+        <title>Neslib.Sdl3.Gpu - Neslib.Sdl3</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#neslibsdl3gpu" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="Neslib.Sdl3" class="md-header__button md-logo" aria-label="Neslib.Sdl3" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Neslib.Sdl3
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Neslib.Sdl3.Gpu
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/neslib/Neslib.Sdl3" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Neslib.Sdl3
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../.." class="md-tabs__link">
+          
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+    
+      
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../Reference/Neslib.Sdl3.Additional/" class="md-tabs__link">
+          
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="Neslib.Sdl3" class="md-nav__button md-logo" aria-label="Neslib.Sdl3" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Neslib.Sdl3
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/neslib/Neslib.Sdl3" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Neslib.Sdl3
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../.." class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1" id="__nav_1_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            Home
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    API by Category
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_1_2" id="__nav_1_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_1_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            API by Category
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Neslib.Sdl3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Neslib.Sdl3.Basics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Basics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Neslib.Sdl3.Video/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Video
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Neslib.Sdl3.Input/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Input
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Neslib.Sdl3.Events/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Events
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Neslib.Sdl3.Haptic/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Haptic
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Neslib.Sdl3.Audio/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Audio
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Gpu
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Gpu
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#performance-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance considerations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faq" class="md-nav__link">
+    <span class="md-ellipsis">
+      FAQ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Requirements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uniform-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uniform Data
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-note-on-cycling" class="md-nav__link">
+    <span class="md-ellipsis">
+      A Note On Cycling
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Neslib.Sdl3.Time/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Time
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Neslib.Sdl3.IO/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.IO
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Neslib.Sdl3.Additional/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Additional
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../Misc/KeyboardBestPractices/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Useful Information
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    
+  
+  
+    <a href="../../Reference/Neslib.Sdl3.Additional/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+  
+
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#performance-considerations" class="md-nav__link">
+    <span class="md-ellipsis">
+      Performance considerations
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#faq" class="md-nav__link">
+    <span class="md-ellipsis">
+      FAQ
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#system-requirements" class="md-nav__link">
+    <span class="md-ellipsis">
+      System Requirements
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#uniform-data" class="md-nav__link">
+    <span class="md-ellipsis">
+      Uniform Data
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-note-on-cycling" class="md-nav__link">
+    <span class="md-ellipsis">
+      A Note On Cycling
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="neslibsdl3gpu">Neslib.Sdl3.Gpu</h1>
+<div class="admonition abstract">
+<p class="admonition-title">Reference</p>
+<p><a href="../../Reference/Neslib.Sdl3.Gpu/">Neslib.Sdl3.Gpu</a></p>
+</div>
+<p>The GPU API offers a cross-platform way for apps to talk to modern graphics hardware. It offers both 3D graphics and compute support, in the style of Metal, Vulkan, and Direct3D 12.</p>
+<p>A basic workflow might be something like this:</p>
+<p>The app creates a <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuDevice/">TSdlGpuDevice</a> and assigns it to a window with <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuDevice/#ClaimWindow">TSdlGpuDevice.ClaimWindow</a>--although strictly speaking you can render offscreen entirely, perhaps for image processing, and not use a window at all.</p>
+<p>Next the app prepares static data (things that are created once and used over and over). For example:</p>
+<ul>
+<li>Shaders (programs that run on the GPU): use <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuShader/">TSdlGpuShader</a>.</li>
+<li>Vertex buffers (arrays of geometry data) and other data rendering will need: use <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuCopyPass/#UploadToBuffer">TSdlGpuCopyPass.UploadToBuffer</a>.</li>
+<li>Textures (images): use <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuCopyPass/#UploadToTexture">TSdlGpuCopyPass.UploadToTexture</a>.</li>
+<li>Samplers (how textures should be read from): use <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuSampler/">TSdlGpuSampler</a>.</li>
+<li>Render pipelines (precalculated rendering state): use <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuGraphicsPipeline/">TSdlGpuGraphicsPipeline</a>.</li>
+</ul>
+<p>To render, the app creates one or more command buffers, with <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuDevice/#AcquireCommandBuffer">TSdlGpuDevice.AcquireCommandBuffer</a>. Command buffers collect rendering instructions that will be submitted to the GPU in batch. Complex scenes can use multiple command buffers, maybe configured across multiple threads in parallel, as long as they are submitted in the correct order, but many apps will just need one command buffer per frame.</p>
+<p>Rendering can happen to a texture (what other APIs call a "render target") or it can happen to the swapchain texture (which is just a special texture that represents a window's contents). The app can use <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuCommandBuffer/#WaitAndAcquireSwapchainTexture">TSdlGpuCommandBuffer.WaitAndAcquireSwapchainTexture</a> to render to the window.</p>
+<p>Rendering actually happens in a Render Pass, which is encoded into a command buffer. One can encode multiple render passes (or alternate between render and compute passes) in a single command buffer, but many apps might simply need a single render pass in a single command buffer. Render Passes can render to up to four color textures and one depth texture simultaneously. If the set of textures being rendered to needs to change, the Render Pass must be ended and a new one must be begun.</p>
+<p>The app calls <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuCommandBuffer/#BeginRenderPass_0">TSdlGpuCommandBuffer.BeginRenderPass</a>. Then it sets states it needs for each draw:</p>
+<ul>
+<li><a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuRenderPass/#BindPipeline">TSdlGpuRenderPass.BindPipeline</a></li>
+<li><a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuRenderPass/#SetViewport">TSdlGpuRenderPass.SetViewport</a></li>
+<li><a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuRenderPass/#BindVertexBuffers">TSdlGpuRenderPass.BindVertexBuffers</a></li>
+<li><a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuRenderPass/#BindVertexSamplers">TSdlGpuRenderPass.BindVertexSamplers</a></li>
+<li>etc</li>
+</ul>
+<p>Then, make the actual draw commands with these states:</p>
+<ul>
+<li><a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuRenderPass/#DrawPrimitives_0">TSdlGpuRenderPass.DrawPrimitives</a></li>
+<li><a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuRenderPass/#DrawIndexedPrimitives_1">TSdlGpuRenderPass.DrawIndexedPrimitives</a></li>
+<li>etc</li>
+</ul>
+<p>After all the drawing commands for a pass are complete, the app should call <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuRenderPass/#Finish">TSdlGpuRenderPass.Finish</a>. Once a render pass ends all render-related state is reset.</p>
+<p>The app can begin new Render Passes and make new draws in the same command buffer until the entire scene is rendered.</p>
+<p>Once all of the render commands for the scene are complete, the app calls <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuCommandBuffer/#Submit">TSdlGpuCommandBuffer.Submit</a> to send it to the GPU for processing.</p>
+<p>If the app needs to read back data from texture or buffers, the API has an efficient way of doing this, provided that the app is willing to tolerate some latency. When the app uses <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuCopyPass/#DownloadFromTexture">TSdlGpuCopyPass.DownloadFromTexture</a> or <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuCopyPass/#DownloadFromBuffer">TSdlGpuCopyPass.DownloadFromBuffer</a>, submitting the command buffer with <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuCommandBuffer/#SubmitAndAcquireFence">TSdlGpuCommandBuffer.SubmitAndAcquireFence</a> will return a fence handle that the app can poll or wait on in a thread. Once the fence indicates that the command buffer is done processing, it is safe to read the downloaded data. Make sure to call <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuDevice/#ReleaseFence">TSdlGpuDevice.ReleaseFence</a> when done with the fence.</p>
+<p>The API also has "compute" support. The app calls <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuCommandBuffer/#BeginComputePass">TSdlGpuCommandBuffer.BeginComputePass</a> with compute-writeable textures and/or buffers, which can be written to in a compute shader. Then it sets states it needs for the compute dispatches:</p>
+<ul>
+<li><a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuComputePass/#BindPipeline">TSdlGpuComputePass.BindPipeline</a></li>
+<li><a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuComputePass/#BindStorageBuffers">TSdlGpuComputePass.BindStorageBuffers</a></li>
+<li><a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuComputePass/#BindStorageTextures">TSdlGpuComputePass.BindStorageTextures</a></li>
+</ul>
+<p>Then, dispatch compute work:</p>
+<ul>
+<li><a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuComputePass/#Dispatch_0">TSdlGpuComputePass.Dispatch</a></li>
+</ul>
+<p>For advanced users, this opens up powerful GPU-driven workflows.</p>
+<p>Graphics and compute pipelines require the use of shaders, which as mentioned above are small programs executed on the GPU. Each backend (Vulkan, Metal, D3D12) requires a different shader format. When the app creates the GPU device, the app lets the device know which shader formats the app can provide. It will then select the appropriate backend depending on the available shader formats and the backends available on the platform. When creating shaders, the app must provide the correct shader format for the selected backend. If you would like to learn more about why the API works this way, there is a detailed <a href="https://moonside.games/posts/layers-all-the-way-down/">blog post</a> explaining this situation.</p>
+<p>It is optimal for apps to pre-compile the shader formats they might use, but for ease of use SDL provides a separate project, <a href="https://wiki.libsdl.org/SDL3/SDL_shadercross">SDL_shadercross</a> (<a href="https://github.com/libsdl-org/SDL_shadercross">Github</a>), for performing runtime shader cross-compilation. It also has a CLI interface for offline precompilation as well.</p>
+<p>This is an extremely quick overview that leaves out several important details. Already, though, one can see that GPU programming can be quite complex! If you just need simple 2D graphics, the <a href="../Neslib.Sdl3.Video/">Render API</a> is much easier to use but still hardware-accelerated. That said, even for 2D applications the performance benefits and expressiveness of the GPU API are significant.</p>
+<p>The GPU API targets a feature set with a wide range of hardware support and ease of portability. It is designed so that the app won't have to branch itself by querying feature support. If you need cutting-edge features with limited hardware support, this API is probably not for you.</p>
+<p>Examples demonstrating proper usage of this API can be found <a href="https://github.com/TheSpydog/SDL_gpu_examples">here</a> .</p>
+<h2 id="performance-considerations">Performance considerations</h2>
+<p>Here are some basic tips for maximizing your rendering performance.</p>
+<ul>
+<li>Beginning a new render pass is relatively expensive. Use as few render passes as you can.</li>
+<li>Minimize the amount of state changes. For example, binding a pipeline is relatively cheap, but doing it hundreds of times when you don't need to will slow the performance significantly.</li>
+<li>Perform your data uploads as early as possible in the frame.</li>
+<li>Don't churn resources. Creating and releasing resources is expensive. It's better to create what you need up front and cache it.</li>
+<li>Don't use uniform buffers for large amounts of data (more than a matrix or so). Use a storage buffer instead.</li>
+<li>Use cycling correctly. There is a detailed explanation of cycling further below.</li>
+<li>Use culling techniques to minimize pixel writes. The less writing the GPU has to do the better. Culling can be a very advanced topic but even simple culling techniques can boost performance significantly.</li>
+</ul>
+<p>In general try to remember the golden rule of performance: doing things is more expensive than not doing things. Don't Touch The Driver!</p>
+<h2 id="faq">FAQ</h2>
+<p><strong>Question: When are you adding more advanced features, like ray tracing or mesh shaders?</strong></p>
+<p>Answer: We don't have immediate plans to add more bleeding-edge features, but we certainly might in the future, when these features prove worthwhile, and reasonable to implement across several platforms and underlying APIs. So while these things are not in the "never" category, they are definitely not "near future" items either.</p>
+<p><strong>Question: Why is my shader not working?</strong></p>
+<p>Answer: A common oversight when using shaders is not properly laying out the shader resources/registers correctly. The GPU API is very strict with how it wants resources to be laid out and it's difficult for the API to automatically validate shaders to see if they have a compatible layout. See the documentation for <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuShader/">TSdlGpuShader</a> and <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuComputePipeline/">TSdlGpuComputePipeline</a> for information on the expected layout.</p>
+<p>Another common issue is not setting the correct number of samplers, textures, and buffers in <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuShaderCreateInfo/">TSdlGpuShaderCreateInfo</a>. If possible use shader reflection to extract the required information from the shader automatically instead of manually filling in the record's values.</p>
+<p><strong>Question: My application isn't performing very well. Is this the GPU API's fault?</strong></p>
+<p>Answer: No. Long answer: The GPU API is a relatively thin layer over the underlying graphics API. While it's possible that we have done something inefficiently, it's very unlikely especially if you are relatively inexperienced with GPU rendering. Please see the performance tips above and make sure you are following them. Additionally, tools like RenderDoc can be very helpful for diagnosing incorrect behavior and performance issues.</p>
+<h2 id="system-requirements">System Requirements</h2>
+<p><strong>Vulkan:</strong> Supported on Windows, Linux and certain Android devices. Requires Vulkan 1.0 with the following extensions and device features:</p>
+<ul>
+<li><code>VK_KHR_swapchain</code></li>
+<li><code>VK_KHR_maintenance1</code></li>
+<li><code>independentBlend</code></li>
+<li><code>imageCubeArray</code></li>
+<li><code>depthClamp</code></li>
+<li><code>shaderClipDistance</code></li>
+<li><code>drawIndirectFirstInstance</code></li>
+</ul>
+<p><strong>D3D12:</strong> Supported on Windows 10 or newer. Requires a GPU that supports DirectX 12 Feature Level 11_1.</p>
+<p><strong>Metal:</strong> Supported on macOS 10.14+ and iOS/tvOS 13.0+. Hardware requirements vary by operating system:</p>
+<ul>
+<li>iOS/tvOS requires an A9 GPU or newer</li>
+<li>iOS Simulator and tvOS Simulator are unsupported</li>
+</ul>
+<h2 id="uniform-data">Uniform Data</h2>
+<p>Uniforms are for passing data to shaders. The uniform data will be constant across all executions of the shader.</p>
+<p>There are 4 available uniform slots per shader stage (where the stages are vertex, fragment, and compute). Uniform data pushed to a slot on a stage keeps its value throughout the command buffer until you call the relevant Push function on that slot again.</p>
+<p>For example, you could write your vertex shaders to read a camera matrix from uniform binding slot 0, push the camera matrix at the start of the command buffer, and that data will be used for every subsequent draw call.</p>
+<p>It is valid to push uniform data during a render or compute pass.</p>
+<p>Uniforms are best for pushing small amounts of data. If you are pushing more than a matrix or two per call you should consider using a storage buffer instead.</p>
+<h2 id="a-note-on-cycling">A Note On Cycling</h2>
+<p>When using a command buffer, operations do not occur immediately - they occur some time after the command buffer is submitted.</p>
+<p>When a resource is used in a pending or active command buffer, it is considered to be "bound". When a resource is no longer used in any pending or active command buffers, it is considered to be "unbound".</p>
+<p>If data resources are bound, it is unspecified when that data will be unbound unless you acquire a fence when submitting the command buffer and wait on it. However, this doesn't mean you need to track resource usage manually.</p>
+<p>All of the functions and records that involve writing to a resource have a <code>ACycle</code> boolean. <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuTransferBuffer/">TSdlGpuTransferBuffer</a>, <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuBuffer/">TSdlGpuBuffer</a>, and <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuTexture/">TSdlGpuTexture</a> all effectively function as ring buffers on internal resources. When <code>ACycle</code> is True, if the resource is bound, the cycle rotates to the next unbound internal resource, or if none are available, a new one is created. This means you don't have to worry about complex state tracking and synchronization as long as cycling is correctly employed.</p>
+<p>For example: you can call <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuDevice/#MapTransferBuffer">TSdlGpuDevice.MapTransferBuffer</a>, write texture data, <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuDevice/#UnmapTransferBuffer">TSdlGpuDevice.UnmapTransferBuffer</a>, and then <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuCopyPass/#UploadToTexture">TSdlGpuCopyPass.UploadToTexture</a>. The next time you write texture data to the transfer buffer, if you set the <code>ACycle</code> param to True, you don't have to worry about overwriting any data that is not yet uploaded.</p>
+<p>Another example: If you are using a texture in a render pass every frame, this can cause a data dependency between frames. If you set <code>Cycle</code> to True in the <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuColorTargetInfo/">TSdlGpuColorTargetInfo</a> record, you can prevent this data dependency.</p>
+<p>Cycling will never undefine already bound data. When cycling, all data in the resource is considered to be undefined for subsequent commands until that data is written again. You must take care not to read undefined data.</p>
+<p>Note that when cycling a texture, the entire texture will be cycled, even if only part of the texture is used in the call, so you must consider the entire texture to contain undefined data after cycling.</p>
+<p>You must also take care not to overwrite a section of data that has been referenced in a command without cycling first. It is OK to overwrite unreferenced data in a bound resource without cycling, but overwriting a section of data that has already been referenced will produce unexpected results.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../Neslib.Sdl3.Audio/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Neslib.Sdl3.Audio">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Neslib.Sdl3.Audio
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../Neslib.Sdl3.Time/" class="md-footer__link md-footer__link--next" aria-label="Next: Neslib.Sdl3.Time">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Neslib.Sdl3.Time
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Erik van Bilsen
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/neslib/Neslib.Sdl3" target="_blank" rel="noopener" title="GitHub neslib" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://blog.grijjy.com/author/erikvanbilsen/" target="_blank" rel="noopener" title="Blog" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="m61.7 169.4 101.5 278C92.2 413 43.3 340.2 43.3 256c0-30.9 6.6-60.1 18.4-86.6m337.9 75.9c0-26.3-9.4-44.5-17.5-58.7-10.8-17.5-20.9-32.4-20.9-49.9 0-19.6 14.8-37.8 35.7-37.8.9 0 1.8.1 2.8.2-37.9-34.7-88.3-55.9-143.7-55.9-74.3 0-139.7 38.1-177.8 95.9 5 .2 9.7.3 13.7.3 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l77.5 230.4L249.8 247l-33.1-90.8c-11.5-.7-22.3-2-22.3-2-11.5-.7-10.1-18.2 1.3-17.5 0 0 35.1 2.7 56 2.7 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l76.9 228.7 21.2-70.9c9-29.4 16-50.5 16-68.7m-139.9 29.3-63.8 185.5c19.1 5.6 39.2 8.7 60.1 8.7 24.8 0 48.5-4.3 70.6-12.1-.6-.9-1.1-1.9-1.5-2.9zm183-120.7c.9 6.8 1.4 14 1.4 21.9 0 21.6-4 45.8-16.2 76.2l-65 187.9C426.2 403 468.7 334.5 468.7 256c0-37-9.4-71.8-26-102.1M504 256c0 136.8-111.3 248-248 248C119.2 504 8 392.7 8 256 8 119.2 119.2 8 256 8c136.7 0 248 111.2 248 248m-11.4 0c0-130.5-106.2-236.6-236.6-236.6C125.5 19.4 19.4 125.5 19.4 256S125.6 492.6 256 492.6c130.5 0 236.6-106.1 236.6-236.6"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.prune", "navigation.top", "navigation.footer", "navigation.indexes", "search.suggest", "search.share"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>

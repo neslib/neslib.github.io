@@ -1,0 +1,2339 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Audio/classes/TSdlAudioStream/">
+      
+      
+        <link rel="prev" href="../TSdlAudioSpec/">
+      
+      
+        <link rel="next" href="../../types/PSdlAudioSpec/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.48">
+    
+    
+      
+        <title>TSdlAudioStream - Neslib.Sdl3</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tsdlaudiostream" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Neslib.Sdl3" class="md-header__button md-logo" aria-label="Neslib.Sdl3" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Neslib.Sdl3
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              TSdlAudioStream
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/neslib/Neslib.Sdl3" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Neslib.Sdl3
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../.." class="md-tabs__link">
+          
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../Neslib.Sdl3.Additional/" class="md-tabs__link">
+          
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Neslib.Sdl3" class="md-nav__button md-logo" aria-label="Neslib.Sdl3" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Neslib.Sdl3
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/neslib/Neslib.Sdl3" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Neslib.Sdl3
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../.." class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Additional/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Additional
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Audio
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Neslib.Sdl3.Audio
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_2_2" id="__nav_2_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Classes & Records
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_2_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            Classes & Records
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlAudioBuffer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlAudioBuffer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlAudioDevice/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlAudioDevice
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlAudioDeviceID/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlAudioDeviceID
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlAudioDriver/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlAudioDriver
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlAudioSpec/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlAudioSpec
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    TSdlAudioStream
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    TSdlAudioStream
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constructors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operators
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#property-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Property Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructor-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constructor Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operator-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operator Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#method-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../types/PSdlAudioSpec/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Types
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Basics/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Basics
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Events/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Events
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Gpu/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Gpu
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Haptic/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Haptic
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Input/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Input
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.IO/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.IO
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Time/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Time
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Video/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Video
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constructors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operators
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#property-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Property Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructor-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constructor Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operator-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operator Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#method-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="tsdlaudiostream">TSdlAudioStream</h1>
+<p>Represents an audio stream.</p>
+<p>TSdlAudioStream is an audio conversion interface.</p>
+<ul>
+<li>It can handle resampling data in chunks without generating artifacts, when it doesn't have the complete buffer available.</li>
+<li>It can handle incoming data in any variable size.</li>
+<li>It can handle input/output format changes on the fly.</li>
+<li>It can remap audio channels between inputs and outputs.</li>
+<li>You push data as you have it, and pull it when you need it</li>
+<li>It can also function as a basic audio data queue even if you just have sound that needs to pass from one place to another.</li>
+<li>You can hook callbacks up to them when more data is added or requested, to manage data on-the-fly.</li>
+</ul>
+<p>Audio streams are the core of the SDL3 audio interface. You create one or more of them, bind them to an opened audio device, and feed data to them (or for recording, consume data from them). </p>
+<h2 id="definition">Definition</h2>
+<p>Unit: <a href="../../">Neslib.Sdl3.Audio</a></p>
+<div class="language-delphi highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">type</span><span class="w"> </span><span class="n">TSdlAudioStream</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">record</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="k">end</span><span class="o">;</span>
+</span></code></pre></div>
+<h2 id="properties">Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Available">Available</a></td>
+<td>The number of converted/resampled bytes available.</td>
+</tr>
+<tr>
+<td><a href="#Device">Device</a> <span class="twemoji" title="From helper _TSdlAudioStreamHelper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c-.5 0-1 .19-1.41.59l-8 8c-.79.78-.79 2.04 0 2.82l8 8c.78.79 2.04.79 2.82 0l8-8c.79-.78.79-2.04 0-2.82l-8-8C13 2.19 12.5 2 12 2m0 4.95c2.7.11 3.87 2.83 2.28 4.86-.42.5-1.09.83-1.43 1.26-.35.43-.35.93-.35 1.43H11c0-.85 0-1.56.35-2.06.33-.5 1-.8 1.42-1.13 1.23-1.13.91-2.72-.77-2.85-.82 0-1.5.67-1.5 1.51H9c0-1.67 1.35-3.02 3-3.02m-1 8.55h1.5V17H11z"/></svg></span></td>
+<td>The currently-bound device of the stream</td>
+</tr>
+<tr>
+<td><a href="#FrequencyRatio">FrequencyRatio</a></td>
+<td>The frequency ratio of the audio stream.</td>
+</tr>
+<tr>
+<td><a href="#Gain">Gain</a></td>
+<td>The gain of an audio stream.</td>
+</tr>
+<tr>
+<td><a href="#InputChannelMap">InputChannelMap</a></td>
+<td>Get the current input channel map of the audio stream.</td>
+</tr>
+<tr>
+<td><a href="#IsPaused">IsPaused</a></td>
+<td>Whether the audio device associated with a stream is paused.</td>
+</tr>
+<tr>
+<td><a href="#OutputChannelMap">OutputChannelMap</a></td>
+<td>Get the current output channel map of the audio stream.</td>
+</tr>
+<tr>
+<td><a href="#Properties">Properties</a></td>
+<td>The properties associated with an audio stream.</td>
+</tr>
+<tr>
+<td><a href="#Queued">Queued</a></td>
+<td>Get the number of bytes currently queued.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="constructors">Constructors</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Create_0">Create(TSdlAudioDeviceID, PSdlAudioSpec, TSdlAudioStreamCallback, Pointer)</a> <span class="twemoji" title="From helper _TSdlAudioStreamHelper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c-.5 0-1 .19-1.41.59l-8 8c-.79.78-.79 2.04 0 2.82l8 8c.78.79 2.04.79 2.82 0l8-8c.79-.78.79-2.04 0-2.82l-8-8C13 2.19 12.5 2 12 2m0 4.95c2.7.11 3.87 2.83 2.28 4.86-.42.5-1.09.83-1.43 1.26-.35.43-.35.93-.35 1.43H11c0-.85 0-1.56.35-2.06.33-.5 1-.8 1.42-1.13 1.23-1.13.91-2.72-.77-2.85-.82 0-1.5.67-1.5 1.51H9c0-1.67 1.35-3.02 3-3.02m-1 8.55h1.5V17H11z"/></svg></span></td>
+<td>Convenience constructor for straightforward audio init for the common case.</td>
+</tr>
+<tr>
+<td><a href="#Create_1">Create(TSdlAudioSpec, TSdlAudioSpec)</a></td>
+<td>Create a new audio stream.</td>
+</tr>
+<tr>
+<td><a href="#Create_2">Create(TSdlAudioSpec)</a></td>
+<td>Create a new audio stream.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="operators">Operators</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Equal">Equal</a></td>
+<td>Used to compare against <code>nil</code>.</td>
+</tr>
+<tr>
+<td><a href="#Implicit">Implicit</a></td>
+<td>Used to set the value to <code>nil</code>.</td>
+</tr>
+<tr>
+<td><a href="#NotEqual">NotEqual</a></td>
+<td>Used to compare against <code>nil</code>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="methods">Methods</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Clear">Clear</a></td>
+<td>Clear any pending data in the stream.</td>
+</tr>
+<tr>
+<td><a href="#Flush">Flush</a></td>
+<td>Tell the stream that you're done sending data, and anything being buffered should be converted/resampled and made available immediately.</td>
+</tr>
+<tr>
+<td><a href="#Free">Free</a></td>
+<td>Free the audio stream.</td>
+</tr>
+<tr>
+<td><a href="#GetData">GetData</a></td>
+<td>Get converted/resampled data from the stream.</td>
+</tr>
+<tr>
+<td><a href="#GetFormat">GetFormat</a></td>
+<td>Query the current format of the stream.</td>
+</tr>
+<tr>
+<td><a href="#Lock">Lock</a></td>
+<td>Lock the audio stream for serialized access.</td>
+</tr>
+<tr>
+<td><a href="#Pause">Pause</a></td>
+<td>Pause audio playback on the audio device associated with this audio stream.</td>
+</tr>
+<tr>
+<td><a href="#PutData">PutData</a></td>
+<td>Add data to the stream.</td>
+</tr>
+<tr>
+<td><a href="#Resume">Resume</a></td>
+<td>Unpause audio playback on the audio device associated with this audio stream.</td>
+</tr>
+<tr>
+<td><a href="#SetFormat">SetFormat</a></td>
+<td>Change the input and output formats of the audio stream.</td>
+</tr>
+<tr>
+<td><a href="#SetGetCallback">SetGetCallback</a> <span class="twemoji" title="From helper _TSdlAudioStreamHelper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c-.5 0-1 .19-1.41.59l-8 8c-.79.78-.79 2.04 0 2.82l8 8c.78.79 2.04.79 2.82 0l8-8c.79-.78.79-2.04 0-2.82l-8-8C13 2.19 12.5 2 12 2m0 4.95c2.7.11 3.87 2.83 2.28 4.86-.42.5-1.09.83-1.43 1.26-.35.43-.35.93-.35 1.43H11c0-.85 0-1.56.35-2.06.33-.5 1-.8 1.42-1.13 1.23-1.13.91-2.72-.77-2.85-.82 0-1.5.67-1.5 1.51H9c0-1.67 1.35-3.02 3-3.02m-1 8.55h1.5V17H11z"/></svg></span></td>
+<td>Set a callback that runs when data is requested from an audio stream.</td>
+</tr>
+<tr>
+<td><a href="#SetPutCallback">SetPutCallback</a> <span class="twemoji" title="From helper _TSdlAudioStreamHelper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c-.5 0-1 .19-1.41.59l-8 8c-.79.78-.79 2.04 0 2.82l8 8c.78.79 2.04.79 2.82 0l8-8c.79-.78.79-2.04 0-2.82l-8-8C13 2.19 12.5 2 12 2m0 4.95c2.7.11 3.87 2.83 2.28 4.86-.42.5-1.09.83-1.43 1.26-.35.43-.35.93-.35 1.43H11c0-.85 0-1.56.35-2.06.33-.5 1-.8 1.42-1.13 1.23-1.13.91-2.72-.77-2.85-.82 0-1.5.67-1.5 1.51H9c0-1.67 1.35-3.02 3-3.02m-1 8.55h1.5V17H11z"/></svg></span></td>
+<td>Set a callback that runs when data is added to an audio stream.</td>
+</tr>
+<tr>
+<td><a href="#Unbind">Unbind</a></td>
+<td>Unbinds this audio stream from its audio device.</td>
+</tr>
+<tr>
+<td><a href="#Unlock">Unlock</a></td>
+<td>Unlock the audio stream for serialized access.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="property-descriptions">Property Descriptions</h2>
+<h3 id="Available"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Available</h3>
+<p>The number of converted/resampled bytes available.</p>
+<p>The stream may be buffering data behind the scenes until it has enough to resample correctly, so this number might be lower than what you expect, or even be zero. Add more data or flush the stream if you need the data now.</p>
+<p>If the stream has so much data that it would overflow an int, the return value is clamped to a maximum value, but no queued data is lost; if there are gigabytes of data queued, the app might need to read some of it with GetData before this function's return value is no longer clamped. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Available</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetAvailable</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Integer</span></code></p>
+<h4 id="exceptions">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="see-also">See Also</h4>
+<ul>
+<li><a href="./#GetData">GetData</a></li>
+<li><a href="./#PutData">PutData</a></li>
+</ul>
+<h4 id="remarks">Remarks</h4>
+<p>It is safe to use this property from any thread </p>
+<hr />
+<h3 id="Device"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span>  <span class="twemoji" title="From helper _TSdlAudioStreamHelper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c-.5 0-1 .19-1.41.59l-8 8c-.79.78-.79 2.04 0 2.82l8 8c.78.79 2.04.79 2.82 0l8-8c.79-.78.79-2.04 0-2.82l-8-8C13 2.19 12.5 2 12 2m0 4.95c2.7.11 3.87 2.83 2.28 4.86-.42.5-1.09.83-1.43 1.26-.35.43-.35.93-.35 1.43H11c0-.85 0-1.56.35-2.06.33-.5 1-.8 1.42-1.13 1.23-1.13.91-2.72-.77-2.85-.82 0-1.5.67-1.5 1.51H9c0-1.67 1.35-3.02 3-3.02m-1 8.55h1.5V17H11z"/></svg></span> Device</h3>
+<p>The currently-bound device of the stream</p>
+<p>This reports the audio device that an audio stream is currently bound to.</p>
+<p>If not bound, or invalid, this returns zero, which is not a valid device ID. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Device</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioDevice</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetDevice</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlAudioDevice</span></code></p>
+<h4 id="see-also_1">See Also</h4>
+<ul>
+<li><a href="../TSdlAudioDevice/#Bind_0">TSdlAudioDevice.Bind</a></li>
+</ul>
+<h4 id="remarks_1">Remarks</h4>
+<p>It is safe to use this property from any thread </p>
+<hr />
+<h3 id="FrequencyRatio"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> FrequencyRatio</h3>
+<p>The frequency ratio of the audio stream.</p>
+<p>The frequency ratio is used to adjust the rate at which input data is consumed. Changing this effectively modifies the speed and pitch of the audio. A value greater than 1.0 will play the audio faster, and at a higher pitch. A value less than 1.0 will play the audio slower, and at a lower pitch.</p>
+<p>This is applied during GetData, and can be continuously changed to create various effects. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">FrequencyRatio</span><span class="o">:</span><span class="w"> </span><span class="kt">Single</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetFrequencyRatio</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetFrequencyRatio</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Single</span></code></p>
+<h4 id="exceptions_1">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="remarks_2">Remarks</h4>
+<p>It is safe to use this property from any thread </p>
+<hr />
+<h3 id="Gain"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Gain</h3>
+<p>The gain of an audio stream.</p>
+<p>The gain of a stream is its volume; a larger gain means a louder output, with a gain of zero being silence.</p>
+<p>Audio streams default to a gain of 1.0 (no change in output).</p>
+<p>This is applied during GetData, and can be continuously changed to create various effects. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Gain</span><span class="o">:</span><span class="w"> </span><span class="kt">Single</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetGain</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetGain</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Single</span></code></p>
+<h4 id="exceptions_2">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="remarks_3">Remarks</h4>
+<p>It is safe to use this property from any thread </p>
+<hr />
+<h3 id="InputChannelMap"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> InputChannelMap</h3>
+<p>Get the current input channel map of the audio stream.</p>
+<p>Channel maps are optional; most things do not need them, instead passing data in the order that SDL expects.</p>
+<p>Audio streams default to no remapping applied. This is represented by returning nil, and does not signify an error.</p>
+<p>The input channel map reorders data that is added to a stream via PutData. Future calls to PutData must provide data in the new channel order.</p>
+<p>Each item in the array represents an input channel, and its value is the channel that it should be remapped to. To reverse a stereo signal's left and right values, you'd have an array of <code>{ 1, 0 }</code>. It is legal to remap multiple channels to the same thing, so <code>{ 1, 1 }</code> would duplicate the right channel to both channels of a stereo signal. An element in the channel map set to -1 instead of a valid channel will mute that channel, setting it to a silence value.</p>
+<p>You cannot change the number of channels through a channel map, just reorder/mute them.</p>
+<p>Data that was previously queued in the stream will still be operated on in the order that was current when it was added, which is to say you can put the end of a sound file in one order to a stream, change orders for the next sound file, and start putting that new data while the previous sound file is still queued, and everything will still play back correctly.</p>
+<p>Audio streams default to no remapping applied. Passing a nil channel map is legal, and turns off remapping.</p>
+<p>If the length of the array is not equal to the current number of channels in the audio stream's format, this will fail. This is a safety measure to make sure a race condition hasn't changed the format while this call is setting the channel map.</p>
+<p>Unlike attempting to change the stream's format, the input channel map on a stream bound to a recording device is permitted to change at any time; any data added to the stream from the device after this call will have the new mapping, but previously-added data will still have the prior mapping. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">InputChannelMap</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetInputChannelMap</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetInputChannelMap</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TArray</span></code></p>
+<h4 id="remarks_4">Remarks</h4>
+<p>It is safe to use this property from any thread </p>
+<hr />
+<h3 id="IsPaused"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> IsPaused</h3>
+<p>Whether the audio device associated with a stream is paused.</p>
+<p>Unlike in SDL2, audio devices start in an <em>unpaused</em> state, since an app has to bind a stream before any audio will flow.</p>
+<p>You can also set this property to pause/unpause the stream. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">IsPaused</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetIsPaused</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetIsPaused</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<h4 id="exceptions_3">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="see-also_2">See Also</h4>
+<ul>
+<li><a href="./#Pause">Pause</a></li>
+<li><a href="./#Resume">Resume</a></li>
+</ul>
+<h4 id="remarks_5">Remarks</h4>
+<p>It is safe to use this property from any thread </p>
+<hr />
+<h3 id="OutputChannelMap"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> OutputChannelMap</h3>
+<p>Get the current output channel map of the audio stream.</p>
+<p>Channel maps are optional; most things do not need them, instead passing data in the order that SDL expects.</p>
+<p>Audio streams default to no remapping applied. This is represented by returning nil, and does not signify an error.</p>
+<p>The output channel map reorders data that leaving a stream via GetData.</p>
+<p>Each item in the array represents an input channel, and its value is the channel that it should be remapped to. To reverse a stereo signal's left and right values, you'd have an array of <code>{ 1, 0 }</code>. It is legal to remap multiple channels to the same thing, so <code>{ 1, 1 }</code> would duplicate the right channel to both channels of a stereo signal. An element in the channel map set to -1 instead of a valid channel will mute that channel, setting it to a silence value.</p>
+<p>You cannot change the number of channels through a channel map, just reorder/mute them.</p>
+<p>The output channel map can be changed at any time, as output remapping is applied during GetData.</p>
+<p>Audio streams default to no remapping applied. Passing a nil channel map is legal, and turns off remapping.</p>
+<p>If the length of the array is not equal to the current number of channels in the audio stream's format, this will fail. This is a safety measure to make sure a race condition hasn't changed the format while this call is setting the channel map.</p>
+<p>Unlike attempting to change the stream's format, the output channel map on a stream bound to a recording device is permitted to change at any time; any data added to the stream after this call will have the new mapping, but previously-added data will still have the prior mapping. When the channel map doesn't match the hardware's channel layout, SDL will convert the data before feeding it to the device for playback. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">OutputChannelMap</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetOutputChannelMap</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetOutputChannelMap</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TArray</span></code></p>
+<h4 id="remarks_6">Remarks</h4>
+<p>It is safe to use this property from any thread </p>
+<hr />
+<h3 id="Properties"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Properties</h3>
+<p>The properties associated with an audio stream. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Properties</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlProperties</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetProperties</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlProperties</span></code></p>
+<h4 id="exceptions_4">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="remarks_7">Remarks</h4>
+<p>It is safe to use this property from any thread </p>
+<hr />
+<h3 id="Queued"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Queued</h3>
+<p>Get the number of bytes currently queued.</p>
+<p>This is the number of bytes put into a stream as input, not the number that can be retrieved as output. Because of several details, it's not possible to calculate one number directly from the other. If you need to know how much usable data can be retrieved right now, you should use Available.</p>
+<p>Note that audio streams can change their input format at any time, even if there is still data queued in a different format, so the returned byte count will not necessarily match the number of <em>sample frames</em> available. Users of this API should be aware of format changes they make when feeding a stream and plan accordingly.</p>
+<p>Queued data is not converted until it is consumed by GetData, so this value should be representative of the exact data that was put into the stream.</p>
+<p>If the stream has so much data that it would overflow an int, the return value is clamped to a maximum value, but no queued data is lost; if there are gigabytes of data queued, the app might need to read some of it with GetData before this function's return value is no longer clamped. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Queued</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetQueued</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Integer</span></code></p>
+<h4 id="exceptions_5">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="see-also_3">See Also</h4>
+<ul>
+<li><a href="./#PutData">PutData</a></li>
+<li><a href="./#Clear">Clear</a></li>
+</ul>
+<h4 id="remarks_8">Remarks</h4>
+<p>It is safe to use this property from any thread </p>
+<hr />
+<h2 id="constructor-descriptions">Constructor Descriptions</h2>
+<h3 id="Create_0"><span class="twemoji" title="Constructor"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23 12-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68z"/></svg></span>  <span class="twemoji" title="From helper _TSdlAudioStreamHelper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c-.5 0-1 .19-1.41.59l-8 8c-.79.78-.79 2.04 0 2.82l8 8c.78.79 2.04.79 2.82 0l8-8c.79-.78.79-2.04 0-2.82l-8-8C13 2.19 12.5 2 12 2m0 4.95c2.7.11 3.87 2.83 2.28 4.86-.42.5-1.09.83-1.43 1.26-.35.43-.35.93-.35 1.43H11c0-.85 0-1.56.35-2.06.33-.5 1-.8 1.42-1.13 1.23-1.13.91-2.72-.77-2.85-.82 0-1.5.67-1.5 1.51H9c0-1.67 1.35-3.02 3-3.02m-1 8.55h1.5V17H11z"/></svg></span> <code class="language-delphi highlight"><span class="n">Create</span></code></h3>
+<p>Convenience constructor for straightforward audio init for the common case.</p>
+<p>If all your app intends to do is provide a single source of PCM audio, this constructor allows you to do all your audio setup in a single call.</p>
+<p>This is also intended to be a clean means to migrate apps from SDL2.</p>
+<p>This constructor will open an audio device, create a stream and bind it. Unlike other methods of setup, the audio device will be closed when this stream is destroyed, so the app can treat the returned stream as the only object needed to manage audio playback.</p>
+<p>Also unlike other functions, the audio device begins paused. This is to map more closely to SDL2-style behavior, since there is no extra step here to bind a stream to begin audio flowing. The audio device should be resumed with <code>Resume</code>.</p>
+<p>This constructor works with both playback and recording devices.</p>
+<p>The <code>ASpec</code> parameter represents the app's side of the audio stream. That is, for recording audio, this will be the output format, and for playing audio, this will be the input format. If spec is nil, the system will choose the format, and the app can use GetFormat to obtain this information later.</p>
+<p>If you don't care about opening a specific audio device, you can (and probably <em>should</em>), use TSdlAudioDeviceID.DefaultPlaybackDevice for playback and TSdlAudioDeviceID.DefaultRecordingDevice for recording.</p>
+<p>One can optionally provide a callback function; if nil, the app is expected to queue audio data for playback (or unqueue audio data if capturing). Otherwise, the callback will begin to fire once the device is unpaused.</p>
+<p>Destroying the returned stream with Free will also close the audio device associated with this stream. </p>
+<p><code class="language-delphi highlight"><span class="k">constructor</span><span class="w"> </span><span class="nf">Create</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ADeviceID</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioDeviceID</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ASpec</span><span class="o">:</span><span class="w"> </span><span class="n">PSdlAudioSpec</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nil</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ACallback</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioStreamCallback</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nil</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AUserData</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nil</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
+<h4 id="parameters">Parameters</h4>
+<p><strong><code>ADeviceID</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlAudioDeviceID</span></code>
+: An audio device to open, or TSdlAudioDeviceID.DefaultPlaybackDevice or TSdlAudioDeviceID.DefaultRecordingDevice.</p>
+<p><strong><code>ASpec</code></strong>: <code class="language-delphi highlight"><span class="n">PSdlAudioSpec</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nil</span></code>
+: (Optional) Audio stream's data format. Can be nil.</p>
+<p><strong><code>ACallback</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlAudioStreamCallback</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nil</span></code>
+: (Optional) Callback where the app will provide new data for playback, or receive new data for recording. Can be nil, in which case the app will need to call PutData or GetData as necessary.</p>
+<p><strong><code>AUserData</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nil</span></code>
+: (Optional) App-controlled pointer passed to callback. Can be nil. Ignored if callback is nil.</p>
+<h4 id="exceptions_6">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="see-also_4">See Also</h4>
+<ul>
+<li>Resume</li>
+</ul>
+<h4 id="remarks_9">Remarks</h4>
+<p>It is safe to call this constructor from any thread </p>
+<hr />
+<h3 id="Create_1"><span class="twemoji" title="Constructor"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23 12-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68z"/></svg></span> <code class="language-delphi highlight"><span class="n">Create</span></code></h3>
+<p>Create a new audio stream. </p>
+<p><code class="language-delphi highlight"><span class="k">constructor</span><span class="w"> </span><span class="nf">Create</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ASrcSpec</span><span class="o">,</span><span class="w"> </span><span class="n">ADstSpec</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioSpec</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
+<h4 id="parameters_1">Parameters</h4>
+<p><strong><code>ASrcSpec</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlAudioSpec</span></code>
+: The format details of the input audio.</p>
+<p><strong><code>ADstSpec</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlAudioSpec</span></code>
+: The format details of the output audio.</p>
+<h4 id="exceptions_7">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="see-also_5">See Also</h4>
+<ul>
+<li><a href="./#PutData">PutData</a></li>
+<li><a href="./#GetData">GetData</a></li>
+<li><a href="./#Available">Available</a></li>
+<li><a href="./#Flush">Flush</a></li>
+<li><a href="./#Clear">Clear</a></li>
+<li><a href="./#SetFormat">SetFormat</a></li>
+<li><a href="./#Free">Free</a></li>
+</ul>
+<h4 id="remarks_10">Remarks</h4>
+<p>It is safe to call this constructor from any thread </p>
+<hr />
+<h3 id="Create_2"><span class="twemoji" title="Constructor"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23 12-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68z"/></svg></span> <code class="language-delphi highlight"><span class="n">Create</span></code></h3>
+<p>Create a new audio stream. </p>
+<p><code class="language-delphi highlight"><span class="k">constructor</span><span class="w"> </span><span class="nf">Create</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ASpec</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioSpec</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
+<h4 id="parameters_2">Parameters</h4>
+<p><strong><code>ASpec</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlAudioSpec</span></code>
+: The format details of the (input) audio.</p>
+<h4 id="exceptions_8">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="see-also_6">See Also</h4>
+<ul>
+<li><a href="./#PutData">PutData</a></li>
+<li><a href="./#GetData">GetData</a></li>
+<li><a href="./#Available">Available</a></li>
+<li><a href="./#Flush">Flush</a></li>
+<li><a href="./#Clear">Clear</a></li>
+<li><a href="./#SetFormat">SetFormat</a></li>
+<li><a href="./#Free">Free</a></li>
+</ul>
+<h4 id="remarks_11">Remarks</h4>
+<p>It is safe to call this constructor from any thread </p>
+<hr />
+<h2 id="operator-descriptions">Operator Descriptions</h2>
+<h3 id="Equal"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Equal(TSdlAudioStream, Pointer)</h3>
+<p>Used to compare against <code>nil</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioStream</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h4 id="parameters_3">Parameters</h4>
+<p><strong><code>ALeft</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlAudioStream</span></code></p>
+<p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
+<h4 id="returns">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<hr />
+<h3 id="Implicit"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Implicit(Pointer)</h3>
+<p>Used to set the value to <code>nil</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Implicit</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AValue</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioStream</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h4 id="parameters_4">Parameters</h4>
+<p><strong><code>AValue</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
+<h4 id="returns_1">Returns</h4>
+<p><code class="language-delphi highlight"><span class="n">TSdlAudioStream</span></code></p>
+<hr />
+<h3 id="NotEqual"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlAudioStream, Pointer)</h3>
+<p>Used to compare against <code>nil</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioStream</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h4 id="parameters_5">Parameters</h4>
+<p><strong><code>ALeft</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlAudioStream</span></code></p>
+<p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
+<h4 id="returns_2">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<hr />
+<h2 id="method-descriptions">Method Descriptions</h2>
+<h3 id="Clear"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Clear</h3>
+<p>Clear any pending data in the stream.</p>
+<p>This drops any queued data, so there will be nothing to read from the stream until more is added. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Clear</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_9">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="see-also_7">See Also</h4>
+<ul>
+<li><a href="./#Available">Available</a></li>
+<li><a href="./#GetData">GetData</a></li>
+<li><a href="./#Queued">Queued</a></li>
+<li><a href="./#PutData">PutData</a></li>
+</ul>
+<h4 id="remarks_12">Remarks</h4>
+<p>It is safe to call this method from any thread </p>
+<hr />
+<h3 id="Flush"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Flush</h3>
+<p>Tell the stream that you're done sending data, and anything being buffered should be converted/resampled and made available immediately.</p>
+<p>It is legal to add more data to a stream after flushing, but there may be audio gaps in the output. Generally this is intended to signal the end of input, so the complete output becomes available. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Flush</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_10">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="see-also_8">See Also</h4>
+<ul>
+<li><a href="./#PutData">PutData</a></li>
+</ul>
+<h4 id="remarks_13">Remarks</h4>
+<p>It is safe to call this method from any thread </p>
+<hr />
+<h3 id="Free"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Free</h3>
+<p>Free the audio stream.</p>
+<p>This will release all allocated data, including any audio that is still queued. You do not need to manually clear the stream first.</p>
+<p>If this stream was bound to an audio device, it is unbound during this call. If this stream was created using a device, the audio device that was opened alongside this stream's creation will be closed, too. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Free</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="see-also_9">See Also</h4>
+<ul>
+<li><a href="./#Create_1">Create</a></li>
+</ul>
+<h4 id="remarks_14">Remarks</h4>
+<p>It is safe to call this method from any thread </p>
+<hr />
+<h3 id="GetData"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> GetData(Pointer, Integer)</h3>
+<p>Get converted/resampled data from the stream.</p>
+<p>The input/output data format/channels/samplerate is specified when creating the stream, and can be changed after creation by setting calling SetFormat.</p>
+<p>Note that any conversion and resampling necessary is done during this call, and PutData simply queues unconverted data for later. This is different than SDL2, where that work was done while inputting new data to the stream and requesting the output just copied the converted data. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">GetData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ABuffer</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ASize</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_11">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_6">Parameters</h4>
+<p><strong><code>ABuffer</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code>
+: A buffer to fill with audio data.</p>
+<p><strong><code>ASize</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
+: The maximum number of bytes to fill.</p>
+<h4 id="returns_3">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Integer</span></code>: The number of bytes read from the stream.</p>
+<h4 id="see-also_10">See Also</h4>
+<ul>
+<li><a href="./#Clear">Clear</a></li>
+<li><a href="./#Available">Available</a></li>
+<li><a href="./#PutData">PutData</a></li>
+</ul>
+<h4 id="remarks_15">Remarks</h4>
+<p>It is safe to call this method from any thread, but if the stream has a callback set, the caller might need to manage extra locking. </p>
+<hr />
+<h3 id="GetFormat"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> GetFormat(PSdlAudioSpec, PSdlAudioSpec)</h3>
+<p>Query the current format of the stream. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">GetFormat</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ASrcSpec</span><span class="o">,</span><span class="w"> </span><span class="n">ADstSpec</span><span class="o">:</span><span class="w"> </span><span class="n">PSdlAudioSpec</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_12">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_7">Parameters</h4>
+<p><strong><code>ASrcSpec</code></strong>: <code class="language-delphi highlight"><span class="n">PSdlAudioSpec</span></code>
+: Where to store the input audio format, or nil if not needed.</p>
+<p><strong><code>ADstSpec</code></strong>: <code class="language-delphi highlight"><span class="n">PSdlAudioSpec</span></code>
+: Where to store the output audio format, or nil if not needed.</p>
+<h4 id="see-also_11">See Also</h4>
+<ul>
+<li><a href="./#SetFormat">SetFormat</a></li>
+</ul>
+<h4 id="remarks_16">Remarks</h4>
+<p>It is safe to call this method from any thread </p>
+<hr />
+<h3 id="Lock"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Lock</h3>
+<p>Lock the audio stream for serialized access.</p>
+<p>Each audio stream has an internal mutex it uses to protect its data structures from threading conflicts. This function allows an app to lock that mutex, which could be useful if registering callbacks on this stream.</p>
+<p>One does not need to lock a stream to use in it most cases, as the stream manages this lock internally. However, this lock is held during callbacks, which may run from arbitrary threads at any time, so if an app needs to protect shared data during those callbacks, locking the stream guarantees that the callback is not running while the lock is held. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Lock</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_13">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="see-also_12">See Also</h4>
+<ul>
+<li><a href="./#Unlock">Unlock</a></li>
+</ul>
+<h4 id="remarks_17">Remarks</h4>
+<p>It is safe to call this method from any thread </p>
+<hr />
+<h3 id="Pause"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Pause</h3>
+<p>Pause audio playback on the audio device associated with this audio stream.</p>
+<p>This method pauses audio processing for a given device. Any bound audio streams will not progress, and no audio will be generated. Pausing one device does not prevent other unpaused devices from running.</p>
+<p>Pausing a device can be useful to halt all audio without unbinding all the audio streams. This might be useful while a game is paused, or a level is loading, etc. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Pause</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_14">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="see-also_13">See Also</h4>
+<ul>
+<li><a href="./#Resume">Resume</a></li>
+</ul>
+<h4 id="remarks_18">Remarks</h4>
+<p>It is safe to call this method from any thread </p>
+<hr />
+<h3 id="PutData"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> PutData(Pointer, Integer)</h3>
+<p>Add data to the stream.</p>
+<p>This data must match the format/channels/samplerate specified in the latest call to SetFormat, or the format specified when creating the stream if it hasn't been changed.</p>
+<p>Note that this call simply copies the unconverted data for later. This is different than SDL2, where data was converted during the Put call and the Get call would just dequeue the previously-converted data. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">PutData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ABuffer</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ASize</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_15">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_8">Parameters</h4>
+<p><strong><code>ABuffer</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code>
+: A pointer to the audio data to add.</p>
+<p><strong><code>ASize</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
+: The number of bytes to write to the stream.</p>
+<h4 id="see-also_14">See Also</h4>
+<ul>
+<li><a href="./#Clear">Clear</a></li>
+<li><a href="./#Flush">Flush</a></li>
+<li><a href="./#GetData">GetData</a></li>
+<li><a href="./#Queued">Queued</a></li>
+</ul>
+<h4 id="remarks_19">Remarks</h4>
+<p>It is safe to call this method from any thread, but if the stream has a callback set, the caller might need to manage extra locking. </p>
+<hr />
+<h3 id="Resume"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Resume</h3>
+<p>Unpause audio playback on the audio device associated with this audio stream.</p>
+<p>This method unpauses audio processing for a given device that has previously been paused. Once unpaused, any bound audio streams will begin to progress again, and audio can be generated. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Resume</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_16">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="see-also_15">See Also</h4>
+<ul>
+<li><a href="./#Pause">Pause</a></li>
+</ul>
+<h4 id="remarks_20">Remarks</h4>
+<p>It is safe to call this method from any thread </p>
+<hr />
+<h3 id="SetFormat"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> SetFormat(PSdlAudioSpec, PSdlAudioSpec)</h3>
+<p>Change the input and output formats of the audio stream.</p>
+<p>Future calls to and Available and GetData will reflect the new format, and future calls to PutData must provide data in the new input formats.</p>
+<p>Data that was previously queued in the stream will still be operated on in the format that was current when it was added, which is to say you can put the end of a sound file in one format to a stream, change formats for the next sound file, and start putting that new data while the previous sound file is still queued, and everything will still play back correctly.</p>
+<p>If a stream is bound to a device, then the format of the side of the stream bound to a device cannot be changed (ASrcSpec for recording devices, ADstSpec for playback devices). Attempts to make a change to this side will be ignored, but this will not report an error. The other side's format can be changed. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetFormat</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ASrcSpec</span><span class="o">,</span><span class="w"> </span><span class="n">ADstSpec</span><span class="o">:</span><span class="w"> </span><span class="n">PSdlAudioSpec</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_17">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_9">Parameters</h4>
+<p><strong><code>ASrcSpec</code></strong>: <code class="language-delphi highlight"><span class="n">PSdlAudioSpec</span></code>
+: The new format of the audio input or nil to leave it unchanged.</p>
+<p><strong><code>ADstSpec</code></strong>: <code class="language-delphi highlight"><span class="n">PSdlAudioSpec</span></code>
+: The new format of the audio output or nil to leave it unchanged.</p>
+<h4 id="see-also_16">See Also</h4>
+<ul>
+<li><a href="./#GetFormat">GetFormat</a></li>
+<li><a href="./#FrequencyRatio">FrequencyRatio</a></li>
+</ul>
+<h4 id="remarks_21">Remarks</h4>
+<p>It is safe to call this method from any thread </p>
+<hr />
+<h3 id="SetGetCallback"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span>  <span class="twemoji" title="From helper _TSdlAudioStreamHelper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c-.5 0-1 .19-1.41.59l-8 8c-.79.78-.79 2.04 0 2.82l8 8c.78.79 2.04.79 2.82 0l8-8c.79-.78.79-2.04 0-2.82l-8-8C13 2.19 12.5 2 12 2m0 4.95c2.7.11 3.87 2.83 2.28 4.86-.42.5-1.09.83-1.43 1.26-.35.43-.35.93-.35 1.43H11c0-.85 0-1.56.35-2.06.33-.5 1-.8 1.42-1.13 1.23-1.13.91-2.72-.77-2.85-.82 0-1.5.67-1.5 1.51H9c0-1.67 1.35-3.02 3-3.02m-1 8.55h1.5V17H11z"/></svg></span> SetGetCallback(TSdlAudioStreamCallback, Pointer)</h3>
+<p>Set a callback that runs when data is requested from an audio stream.</p>
+<p>This callback is called <em>before</em> data is obtained from the stream, giving the callback the chance to add more on-demand.</p>
+<p>The callback can (optionally) call PutData to add more audio to the stream during this call; if needed, the request that triggered this callback will obtain the new data immediately.</p>
+<p>The callback's <code>AAdditionalAmount</code> argument is roughly how many bytes of <em>unconverted</em> data (in the stream's input format) is needed by the caller, although this may overestimate a little for safety. This takes into account how much is already in the stream and only asks for any extra necessary to resolve the request, which means the callback may be asked for zero bytes, and a different amount on each call.</p>
+<p>The callback is not required to supply exact amounts; it is allowed to supply too much or too little or none at all. The caller will get what's available, up to the amount they requested, regardless of this callback's outcome.</p>
+<p>Clearing or flushing an audio stream does not call this callback.</p>
+<p>This function obtains the stream's lock, which means any existing callback (get or put) in progress will finish running before setting the new callback.</p>
+<p>Setting a nil function turns off the callback. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetGetCallback</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ACallback</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioStreamCallback</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AUserData</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_18">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_10">Parameters</h4>
+<p><strong><code>ACallback</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlAudioStreamCallback</span></code>
+: The new callback function to call when data is requested from the stream.</p>
+<p><strong><code>AUserData</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code>
+: An opaque pointer provided to the callback for its own personal use.</p>
+<h4 id="see-also_17">See Also</h4>
+<ul>
+<li><a href="./#SetPutCallback">SetPutCallback</a></li>
+</ul>
+<h4 id="remarks_22">Remarks</h4>
+<p>It is safe to call this method from any thread </p>
+<hr />
+<h3 id="SetPutCallback"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span>  <span class="twemoji" title="From helper _TSdlAudioStreamHelper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c-.5 0-1 .19-1.41.59l-8 8c-.79.78-.79 2.04 0 2.82l8 8c.78.79 2.04.79 2.82 0l8-8c.79-.78.79-2.04 0-2.82l-8-8C13 2.19 12.5 2 12 2m0 4.95c2.7.11 3.87 2.83 2.28 4.86-.42.5-1.09.83-1.43 1.26-.35.43-.35.93-.35 1.43H11c0-.85 0-1.56.35-2.06.33-.5 1-.8 1.42-1.13 1.23-1.13.91-2.72-.77-2.85-.82 0-1.5.67-1.5 1.51H9c0-1.67 1.35-3.02 3-3.02m-1 8.55h1.5V17H11z"/></svg></span> SetPutCallback(TSdlAudioStreamCallback, Pointer)</h3>
+<p>Set a callback that runs when data is added to an audio stream.</p>
+<p>This callback is called <em>after</em> the data is added to the stream, giving the callback the chance to obtain it immediately.</p>
+<p>The callback can (optionally) call GetData to obtain audio from the stream during this call.</p>
+<p>The callback's <code>AAdditionalAmount</code> argument is how many bytes of <em>converted</em> data (in the stream's output format) was provided by the caller, although this may underestimate a little for safety. This value might be less than what is currently available in the stream, if data was already there, and might be less than the caller provided if the stream needs to keep a buffer to aid in resampling. Which means the callback may be provided with zero bytes, and a different amount on each call.</p>
+<p>The callback may use Available to see the total amount currently available to read from the stream, instead of the total provided by the current call.</p>
+<p>The callback is not required to obtain all data. It is allowed to read less or none at all. Anything not read now simply remains in the stream for later access.</p>
+<p>Clearing or flushing an audio stream does not call this callback.</p>
+<p>This function obtains the stream's lock, which means any existing callback (get or put) in progress will finish running before setting the new callback.</p>
+<p>Setting a nil function turns off the callback. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetPutCallback</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ACallback</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioStreamCallback</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AUserData</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_19">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_11">Parameters</h4>
+<p><strong><code>ACallback</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlAudioStreamCallback</span></code>
+: The new callback function to call when data is added to the stream.</p>
+<p><strong><code>AUserData</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code>
+: an opaque pointer provided to the callback for its own personal use.</p>
+<h4 id="see-also_18">See Also</h4>
+<ul>
+<li><a href="./#SetGetCallback">SetGetCallback</a></li>
+</ul>
+<h4 id="remarks_23">Remarks</h4>
+<p>It is safe to call this method from any thread </p>
+<hr />
+<h3 id="Unbind"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Unbind</h3>
+<p>Unbinds this audio stream from its audio device. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Unbind</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="see-also_19">See Also</h4>
+<ul>
+<li><a href="../TSdlAudioDevice/#Bind_0">TSdlAudioDevice.Bind</a></li>
+</ul>
+<h4 id="remarks_24">Remarks</h4>
+<p>It is safe to call this method from any thread </p>
+<hr />
+<h3 id="Unlock"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Unlock</h3>
+<p>Unlock the audio stream for serialized access.</p>
+<p>This unlocks an audio stream after a call to Lock. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Unlock</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_20">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="see-also_20">See Also</h4>
+<ul>
+<li><a href="./#Lock">Lock</a></li>
+</ul>
+<h4 id="remarks_25">Remarks</h4>
+<p>You should only call this from the same thread that previously called Lock. </p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../TSdlAudioSpec/" class="md-footer__link md-footer__link--prev" aria-label="Previous: TSdlAudioSpec">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                TSdlAudioSpec
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../../types/PSdlAudioSpec/" class="md-footer__link md-footer__link--next" aria-label="Next: PSdlAudioSpec">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                PSdlAudioSpec
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Erik van Bilsen
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/neslib/Neslib.Sdl3" target="_blank" rel="noopener" title="GitHub neslib" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://blog.grijjy.com/author/erikvanbilsen/" target="_blank" rel="noopener" title="Blog" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="m61.7 169.4 101.5 278C92.2 413 43.3 340.2 43.3 256c0-30.9 6.6-60.1 18.4-86.6m337.9 75.9c0-26.3-9.4-44.5-17.5-58.7-10.8-17.5-20.9-32.4-20.9-49.9 0-19.6 14.8-37.8 35.7-37.8.9 0 1.8.1 2.8.2-37.9-34.7-88.3-55.9-143.7-55.9-74.3 0-139.7 38.1-177.8 95.9 5 .2 9.7.3 13.7.3 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l77.5 230.4L249.8 247l-33.1-90.8c-11.5-.7-22.3-2-22.3-2-11.5-.7-10.1-18.2 1.3-17.5 0 0 35.1 2.7 56 2.7 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l76.9 228.7 21.2-70.9c9-29.4 16-50.5 16-68.7m-139.9 29.3-63.8 185.5c19.1 5.6 39.2 8.7 60.1 8.7 24.8 0 48.5-4.3 70.6-12.1-.6-.9-1.1-1.9-1.5-2.9zm183-120.7c.9 6.8 1.4 14 1.4 21.9 0 21.6-4 45.8-16.2 76.2l-65 187.9C426.2 403 468.7 334.5 468.7 256c0-37-9.4-71.8-26-102.1M504 256c0 136.8-111.3 248-248 248C119.2 504 8 392.7 8 256 8 119.2 119.2 8 256 8c136.7 0 248 111.2 248 248m-11.4 0c0-130.5-106.2-236.6-236.6-236.6C125.5 19.4 19.4 125.5 19.4 256S125.6 492.6 256 492.6c130.5 0 236.6-106.1 236.6-236.6"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.code.copy", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.prune", "navigation.top", "navigation.footer", "navigation.indexes", "search.suggest", "search.share"], "search": "../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>

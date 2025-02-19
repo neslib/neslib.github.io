@@ -1,0 +1,2851 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuTextureFormat/">
+      
+      
+        <link rel="prev" href="../TSdlGpuSwapchainComposition/">
+      
+      
+        <link rel="next" href="../TSdlGpuTextureKind/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.48">
+    
+    
+      
+        <title>TSdlGpuTextureFormat - Neslib.Sdl3</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tsdlgputextureformat" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Neslib.Sdl3" class="md-header__button md-logo" aria-label="Neslib.Sdl3" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Neslib.Sdl3
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              TSdlGpuTextureFormat
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/neslib/Neslib.Sdl3" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Neslib.Sdl3
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../.." class="md-tabs__link">
+          
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../Neslib.Sdl3.Additional/" class="md-tabs__link">
+          
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Neslib.Sdl3" class="md-nav__button md-logo" aria-label="Neslib.Sdl3" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Neslib.Sdl3
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/neslib/Neslib.Sdl3" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Neslib.Sdl3
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../.." class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Additional/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Additional
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Audio/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Audio
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Basics/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Basics
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Events/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Events
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Gpu
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_5" id="__nav_2_5_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_5_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_5">
+            <span class="md-nav__icon md-icon"></span>
+            Neslib.Sdl3.Gpu
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../classes/TSdlGpuBlitInfo/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Classes & Records
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_5_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_5_3" id="__nav_2_5_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Types
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_5_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_5_3">
+            <span class="md-nav__icon md-icon"></span>
+            Types
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PSdlGpuBlitRegion/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PSdlGpuBlitRegion
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PSdlGpuColorTargetBlendState/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PSdlGpuColorTargetBlendState
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PSdlGpuDepthStencilState/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PSdlGpuDepthStencilState
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PSdlGpuMultisampleState/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PSdlGpuMultisampleState
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PSdlGpuRasterizerState/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PSdlGpuRasterizerState
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PSdlGpuStencilOpState/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PSdlGpuStencilOpState
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../PSDL_GPUGraphicsPipelineCreateInfo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    PSDL_GPUGraphicsPipelineCreateInfo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuBlendFactor/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuBlendFactor
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuBlendOp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuBlendOp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuBufferUsageFlag/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuBufferUsageFlag
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuBufferUsageFlags/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuBufferUsageFlags
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuColorComponentFlag/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuColorComponentFlag
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuColorComponentFlags/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuColorComponentFlags
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuCompareOp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuCompareOp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuCubeMapFace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuCubeMapFace
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuCullMode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuCullMode
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuFillMode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuFillMode
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuFilter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuFilter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuFrontFace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuFrontFace
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuIndexElementSize/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuIndexElementSize
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuLoadOp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuLoadOp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuPresentMode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuPresentMode
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuPrimitiveType/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuPrimitiveType
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuSampleCount/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuSampleCount
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuSamplerAddressMode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuSamplerAddressMode
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuSamplerMipmapMode/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuSamplerMipmapMode
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuShaderFormat/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuShaderFormat
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuShaderFormats/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuShaderFormats
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuShaderStage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuShaderStage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuStencilOp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuStencilOp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuStoreOp/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuStoreOp
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuSwapchainComposition/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuSwapchainComposition
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    TSdlGpuTextureFormat
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuTextureFormat
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    <span class="md-ellipsis">
+      See Also
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enumeration-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enumeration Values
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#property-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Property Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#method-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuTextureKind/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuTextureKind
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuTextureUsageFlag/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuTextureUsageFlag
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuTextureUsageFlags/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuTextureUsageFlags
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuTransferBufferUsage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuTransferBufferUsage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuVertexElementFormat/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuVertexElementFormat
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlGpuVertexInputRate/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlGpuVertexInputRate
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Haptic/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Haptic
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Input/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Input
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.IO/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.IO
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Time/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Time
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Video/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Video
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    <span class="md-ellipsis">
+      See Also
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#enumeration-values" class="md-nav__link">
+    <span class="md-ellipsis">
+      Enumeration Values
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#property-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Property Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#method-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="tsdlgputextureformat">TSdlGpuTextureFormat</h1>
+<p>Specifies the pixel format of a texture.</p>
+<p>Texture format support varies depending on driver, hardware, and usage flags. In general, you should use TSdlGpuDevice.SupportedTextureFormats to query if a format is supported before using it. However, there are a few guaranteed formats.</p>
+<p>For Sampler usage, the following formats are universally supported:</p>
+<ul>
+<li>R8G8B8A8UNorm</li>
+<li>B8G8R8A8UNorm</li>
+<li>R8UNorm</li>
+<li>R8SNorm</li>
+<li>R8G8UNorm</li>
+<li>R8G8SNorm</li>
+<li>R8G8B8A8SNorm</li>
+<li>R16Float</li>
+<li>R16G16Float</li>
+<li>R16G16B16A16Float</li>
+<li>R32Float</li>
+<li>R32G32Float</li>
+<li>R32G32B32A32Float</li>
+<li>R11G11B10Float</li>
+<li>R8G8B8A8UNormSrgb</li>
+<li>B8G8R8A8UNormSrgb</li>
+<li>D16UNorm</li>
+</ul>
+<p>For ColorTarget usage, the following formats are universally supported:</p>
+<ul>
+<li>R8G8B8A8UNorm</li>
+<li>B8G8R8A8UNorm</li>
+<li>R8UNorm</li>
+<li>R16Float</li>
+<li>R16G16Float</li>
+<li>R16G16B16A16Float</li>
+<li>R32Float</li>
+<li>R32G32Float</li>
+<li>R32G32B32A32Float</li>
+<li>R11G11B10Float</li>
+<li>R8UInt</li>
+<li>R8G8UInt</li>
+<li>R8G8B8A8UInt</li>
+<li>R16UInt</li>
+<li>R16G16UInt</li>
+<li>R16G16B16A16UInt</li>
+<li>R8Int</li>
+<li>R8G8Int</li>
+<li>R8G8B8A8Int</li>
+<li>R16Int</li>
+<li>R16G16Int</li>
+<li>R16G16B16A16Int</li>
+<li>R8G8B8A8UNormSrgb</li>
+<li>B8G8R8A8UNormSrgb</li>
+</ul>
+<p>For Storage usages, the following formats are universally supported:</p>
+<ul>
+<li>R8G8B8A8UNorm</li>
+<li>R8G8B8A8SNorm</li>
+<li>R16G16B16A16Float</li>
+<li>R32Float</li>
+<li>R32G32Float</li>
+<li>R32G32B32A32Float</li>
+<li>R8G8B8A8UInt</li>
+<li>R16G16B16A16UInt</li>
+<li>R8G8B8A8OInt</li>
+<li>R16G16B16A16Int</li>
+</ul>
+<p>For DepthStencilTarget usage, the following formats are universally supported:</p>
+<ul>
+<li>D16UNorm</li>
+<li>Either (but not necessarily both!) D24UNorm or D32Float</li>
+<li>Either (but not necessarily both!) D24UNormS8UInt or D32FloatS8UInt</li>
+</ul>
+<p>Unless D16UNorm is sufficient for your purposes, always check which of D24/D32 is supported before creating a depth-stencil texture! </p>
+<h2 id="definition">Definition</h2>
+<p>Unit: <a href="../../">Neslib.Sdl3.Gpu</a></p>
+<div class="language-delphi highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">type</span><span class="w"> </span><span class="n">TSdlGpuTextureFormat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">Invalid</span><span class="o">,</span><span class="w"> </span><span class="n">A8UNorm</span><span class="o">,</span><span class="w"> </span><span class="n">R8UNorm</span><span class="o">,</span><span class="w"> </span><span class="n">R8G8UNorm</span><span class="o">,</span><span class="w"> </span><span class="n">R8G8B8A8UNorm</span><span class="o">,</span><span class="w"> </span><span class="n">R16UNorm</span><span class="o">,</span><span class="w"> </span><span class="n">R16G16UNorm</span><span class="o">,</span><span class="w"> </span><span class="n">R16G16B16A16UNorm</span><span class="o">,</span><span class="w"> </span><span class="n">R10G10B10A2UNorm</span><span class="o">,</span><span class="w"> </span><span class="n">B5G6R5UNorm</span><span class="o">,</span><span class="w"> </span><span class="n">B5G5R5A1UNorm</span><span class="o">,</span><span class="w"> </span><span class="n">B4G4R4A4UNorm</span><span class="o">,</span><span class="w"> </span><span class="n">B8G8R8A8UNorm</span><span class="o">,</span><span class="w"> </span><span class="n">BC1RgbaUNorm</span><span class="o">,</span><span class="w"> </span><span class="n">BC2RgbaUNorm</span><span class="o">...</span><span class="p">)</span>
+</span></code></pre></div>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../../classes/TSdlGpuTexture/">TSdlGpuTexture</a></li>
+<li>TSdlGpuDevice.SupportedTextureFormats</li>
+</ul>
+<h2 id="enumeration-values">Enumeration Values</h2>
+<h3 id="invalid-sdl_gpu_textureformat_invalid"><code class="language-delphi highlight"><span class="n">Invalid</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_INVALID</span></code></h3>
+<hr />
+<h3 id="a8unorm-sdl_gpu_textureformat_a8_unorm"><code class="language-delphi highlight"><span class="n">A8UNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_A8_UNORM</span></code></h3>
+<hr />
+<h3 id="r8unorm-sdl_gpu_textureformat_r8_unorm"><code class="language-delphi highlight"><span class="n">R8UNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R8_UNORM</span></code></h3>
+<hr />
+<h3 id="r8g8unorm-sdl_gpu_textureformat_r8g8_unorm"><code class="language-delphi highlight"><span class="n">R8G8UNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R8G8_UNORM</span></code></h3>
+<hr />
+<h3 id="r8g8b8a8unorm-sdl_gpu_textureformat_r8g8b8a8_unorm"><code class="language-delphi highlight"><span class="n">R8G8B8A8UNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R8G8B8A8_UNORM</span></code></h3>
+<hr />
+<h3 id="r16unorm-sdl_gpu_textureformat_r16_unorm"><code class="language-delphi highlight"><span class="n">R16UNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R16_UNORM</span></code></h3>
+<hr />
+<h3 id="r16g16unorm-sdl_gpu_textureformat_r16g16_unorm"><code class="language-delphi highlight"><span class="n">R16G16UNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R16G16_UNORM</span></code></h3>
+<hr />
+<h3 id="r16g16b16a16unorm-sdl_gpu_textureformat_r16g16b16a16_unorm"><code class="language-delphi highlight"><span class="n">R16G16B16A16UNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R16G16B16A16_UNORM</span></code></h3>
+<hr />
+<h3 id="r10g10b10a2unorm-sdl_gpu_textureformat_r10g10b10a2_unorm"><code class="language-delphi highlight"><span class="n">R10G10B10A2UNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R10G10B10A2_UNORM</span></code></h3>
+<hr />
+<h3 id="b5g6r5unorm-sdl_gpu_textureformat_b5g6r5_unorm"><code class="language-delphi highlight"><span class="n">B5G6R5UNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_B5G6R5_UNORM</span></code></h3>
+<hr />
+<h3 id="b5g5r5a1unorm-sdl_gpu_textureformat_b5g5r5a1_unorm"><code class="language-delphi highlight"><span class="n">B5G5R5A1UNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_B5G5R5A1_UNORM</span></code></h3>
+<hr />
+<h3 id="b4g4r4a4unorm-sdl_gpu_textureformat_b4g4r4a4_unorm"><code class="language-delphi highlight"><span class="n">B4G4R4A4UNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_B4G4R4A4_UNORM</span></code></h3>
+<hr />
+<h3 id="b8g8r8a8unorm-sdl_gpu_textureformat_b8g8r8a8_unorm"><code class="language-delphi highlight"><span class="n">B8G8R8A8UNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_B8G8R8A8_UNORM</span></code></h3>
+<hr />
+<h3 id="bc1rgbaunorm-sdl_gpu_textureformat_bc1_rgba_unorm"><code class="language-delphi highlight"><span class="n">BC1RgbaUNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_BC1_RGBA_UNORM</span></code></h3>
+<hr />
+<h3 id="bc2rgbaunorm-sdl_gpu_textureformat_bc2_rgba_unorm"><code class="language-delphi highlight"><span class="n">BC2RgbaUNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_BC2_RGBA_UNORM</span></code></h3>
+<hr />
+<h3 id="bc3rgbaunorm-sdl_gpu_textureformat_bc3_rgba_unorm"><code class="language-delphi highlight"><span class="n">BC3RgbaUNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_BC3_RGBA_UNORM</span></code></h3>
+<hr />
+<h3 id="bc4runorm-sdl_gpu_textureformat_bc4_r_unorm"><code class="language-delphi highlight"><span class="n">BC4RUNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_BC4_R_UNORM</span></code></h3>
+<hr />
+<h3 id="bc5rgunorm-sdl_gpu_textureformat_bc5_rg_unorm"><code class="language-delphi highlight"><span class="n">BC5RGUNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_BC5_RG_UNORM</span></code></h3>
+<hr />
+<h3 id="bc7rgbaunorm-sdl_gpu_textureformat_bc7_rgba_unorm"><code class="language-delphi highlight"><span class="n">BC7RgbaUNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_BC7_RGBA_UNORM</span></code></h3>
+<hr />
+<h3 id="bc6hrgbfloat-sdl_gpu_textureformat_bc6h_rgb_float"><code class="language-delphi highlight"><span class="n">BC6HRgbFloat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_BC6H_RGB_FLOAT</span></code></h3>
+<hr />
+<h3 id="bc6hrgbufloat-sdl_gpu_textureformat_bc6h_rgb_ufloat"><code class="language-delphi highlight"><span class="n">BC6HRgbUFloat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_BC6H_RGB_UFLOAT</span></code></h3>
+<hr />
+<h3 id="r8snorm-sdl_gpu_textureformat_r8_snorm"><code class="language-delphi highlight"><span class="n">R8SNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R8_SNORM</span></code></h3>
+<hr />
+<h3 id="r8g8snorm-sdl_gpu_textureformat_r8g8_snorm"><code class="language-delphi highlight"><span class="n">R8G8SNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R8G8_SNORM</span></code></h3>
+<hr />
+<h3 id="r8g8b8a8snorm-sdl_gpu_textureformat_r8g8b8a8_snorm"><code class="language-delphi highlight"><span class="n">R8G8B8A8SNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R8G8B8A8_SNORM</span></code></h3>
+<hr />
+<h3 id="r16snorm-sdl_gpu_textureformat_r16_snorm"><code class="language-delphi highlight"><span class="n">R16SNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R16_SNORM</span></code></h3>
+<hr />
+<h3 id="r16g16snorm-sdl_gpu_textureformat_r16g16_snorm"><code class="language-delphi highlight"><span class="n">R16G16SNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R16G16_SNORM</span></code></h3>
+<hr />
+<h3 id="r16g16b16a16snorm-sdl_gpu_textureformat_r16g16b16a16_snorm"><code class="language-delphi highlight"><span class="n">R16G16B16A16SNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R16G16B16A16_SNORM</span></code></h3>
+<hr />
+<h3 id="r16float-sdl_gpu_textureformat_r16_float"><code class="language-delphi highlight"><span class="n">R16Float</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R16_FLOAT</span></code></h3>
+<hr />
+<h3 id="r16g16float-sdl_gpu_textureformat_r16g16_float"><code class="language-delphi highlight"><span class="n">R16G16Float</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R16G16_FLOAT</span></code></h3>
+<hr />
+<h3 id="r16g16b16a16float-sdl_gpu_textureformat_r16g16b16a16_float"><code class="language-delphi highlight"><span class="n">R16G16B16A16Float</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R16G16B16A16_FLOAT</span></code></h3>
+<hr />
+<h3 id="r32float-sdl_gpu_textureformat_r32_float"><code class="language-delphi highlight"><span class="n">R32Float</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R32_FLOAT</span></code></h3>
+<hr />
+<h3 id="r32g32float-sdl_gpu_textureformat_r32g32_float"><code class="language-delphi highlight"><span class="n">R32G32Float</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R32G32_FLOAT</span></code></h3>
+<hr />
+<h3 id="r32g32b32a32float-sdl_gpu_textureformat_r32g32b32a32_float"><code class="language-delphi highlight"><span class="n">R32G32B32A32Float</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R32G32B32A32_FLOAT</span></code></h3>
+<hr />
+<h3 id="r11g11b10ufloat-sdl_gpu_textureformat_r11g11b10_ufloat"><code class="language-delphi highlight"><span class="n">R11G11B10UFloat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R11G11B10_UFLOAT</span></code></h3>
+<hr />
+<h3 id="r8uint-sdl_gpu_textureformat_r8_uint"><code class="language-delphi highlight"><span class="n">R8UInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R8_UINT</span></code></h3>
+<hr />
+<h3 id="r8g8uint-sdl_gpu_textureformat_r8g8_uint"><code class="language-delphi highlight"><span class="n">R8G8UInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R8G8_UINT</span></code></h3>
+<hr />
+<h3 id="r8g8b8a8uint-sdl_gpu_textureformat_r8g8b8a8_uint"><code class="language-delphi highlight"><span class="n">R8G8B8A8UInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R8G8B8A8_UINT</span></code></h3>
+<hr />
+<h3 id="r16uint-sdl_gpu_textureformat_r16_uint"><code class="language-delphi highlight"><span class="n">R16UInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R16_UINT</span></code></h3>
+<hr />
+<h3 id="r16g16uint-sdl_gpu_textureformat_r16g16_uint"><code class="language-delphi highlight"><span class="n">R16G16UInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R16G16_UINT</span></code></h3>
+<hr />
+<h3 id="r16g16b16a16uint-sdl_gpu_textureformat_r16g16b16a16_uint"><code class="language-delphi highlight"><span class="n">R16G16B16A16UInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R16G16B16A16_UINT</span></code></h3>
+<hr />
+<h3 id="r32uint-sdl_gpu_textureformat_r32_uint"><code class="language-delphi highlight"><span class="n">R32UInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R32_UINT</span></code></h3>
+<hr />
+<h3 id="r32g32uint-sdl_gpu_textureformat_r32g32_uint"><code class="language-delphi highlight"><span class="n">R32G32UInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R32G32_UINT</span></code></h3>
+<hr />
+<h3 id="r32g32b32a32uint-sdl_gpu_textureformat_r32g32b32a32_uint"><code class="language-delphi highlight"><span class="n">R32G32B32A32UInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R32G32B32A32_UINT</span></code></h3>
+<hr />
+<h3 id="r8int-sdl_gpu_textureformat_r8_int"><code class="language-delphi highlight"><span class="n">R8Int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R8_INT</span></code></h3>
+<hr />
+<h3 id="r8g8int-sdl_gpu_textureformat_r8g8_int"><code class="language-delphi highlight"><span class="n">R8G8Int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R8G8_INT</span></code></h3>
+<hr />
+<h3 id="r8g8b8a8int-sdl_gpu_textureformat_r8g8b8a8_int"><code class="language-delphi highlight"><span class="n">R8G8B8A8Int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R8G8B8A8_INT</span></code></h3>
+<hr />
+<h3 id="r16int-sdl_gpu_textureformat_r16_int"><code class="language-delphi highlight"><span class="n">R16Int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R16_INT</span></code></h3>
+<hr />
+<h3 id="r16g16int-sdl_gpu_textureformat_r16g16_int"><code class="language-delphi highlight"><span class="n">R16G16Int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R16G16_INT</span></code></h3>
+<hr />
+<h3 id="r16g16b16a16int-sdl_gpu_textureformat_r16g16b16a16_int"><code class="language-delphi highlight"><span class="n">R16G16B16A16Int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R16G16B16A16_INT</span></code></h3>
+<hr />
+<h3 id="r32int-sdl_gpu_textureformat_r32_int"><code class="language-delphi highlight"><span class="n">R32Int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R32_INT</span></code></h3>
+<hr />
+<h3 id="r32g32int-sdl_gpu_textureformat_r32g32_int"><code class="language-delphi highlight"><span class="n">R32G32Int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R32G32_INT</span></code></h3>
+<hr />
+<h3 id="r32g32b32a32int-sdl_gpu_textureformat_r32g32b32a32_int"><code class="language-delphi highlight"><span class="n">R32G32B32A32Int</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R32G32B32A32_INT</span></code></h3>
+<hr />
+<h3 id="r8g8b8a8unormsrgb-sdl_gpu_textureformat_r8g8b8a8_unorm_srgb"><code class="language-delphi highlight"><span class="n">R8G8B8A8UNormSrgb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_R8G8B8A8_UNORM_SRGB</span></code></h3>
+<hr />
+<h3 id="b8g8r8a8unormsrgb-sdl_gpu_textureformat_b8g8r8a8_unorm_srgb"><code class="language-delphi highlight"><span class="n">B8G8R8A8UNormSrgb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_B8G8R8A8_UNORM_SRGB</span></code></h3>
+<hr />
+<h3 id="bc1rgbaunormsrgb-sdl_gpu_textureformat_bc1_rgba_unorm_srgb"><code class="language-delphi highlight"><span class="n">BC1RgbaUNormSrgb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_BC1_RGBA_UNORM_SRGB</span></code></h3>
+<hr />
+<h3 id="bc2rgbaunormsrgb-sdl_gpu_textureformat_bc2_rgba_unorm_srgb"><code class="language-delphi highlight"><span class="n">BC2RgbaUNormSrgb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_BC2_RGBA_UNORM_SRGB</span></code></h3>
+<hr />
+<h3 id="bc3rgbaunormsrgb-sdl_gpu_textureformat_bc3_rgba_unorm_srgb"><code class="language-delphi highlight"><span class="n">BC3RgbaUNormSrgb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_BC3_RGBA_UNORM_SRGB</span></code></h3>
+<hr />
+<h3 id="bc7rgbaunormsrgb-sdl_gpu_textureformat_bc7_rgba_unorm_srgb"><code class="language-delphi highlight"><span class="n">BC7RgbaUNormSrgb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_BC7_RGBA_UNORM_SRGB</span></code></h3>
+<hr />
+<h3 id="d16unorm-sdl_gpu_textureformat_d16_unorm"><code class="language-delphi highlight"><span class="n">D16UNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_D16_UNORM</span></code></h3>
+<hr />
+<h3 id="d24unorm-sdl_gpu_textureformat_d24_unorm"><code class="language-delphi highlight"><span class="n">D24UNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_D24_UNORM</span></code></h3>
+<hr />
+<h3 id="d32float-sdl_gpu_textureformat_d32_float"><code class="language-delphi highlight"><span class="n">D32Float</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_D32_FLOAT</span></code></h3>
+<hr />
+<h3 id="d24unorms8uint-sdl_gpu_textureformat_d24_unorm_s8_uint"><code class="language-delphi highlight"><span class="n">D24UNormS8UInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_D24_UNORM_S8_UINT</span></code></h3>
+<hr />
+<h3 id="d32floats8uint-sdl_gpu_textureformat_d32_float_s8_uint"><code class="language-delphi highlight"><span class="n">D32FloatS8UInt</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_D32_FLOAT_S8_UINT</span></code></h3>
+<hr />
+<h3 id="astc4x4unorm-sdl_gpu_textureformat_astc_4x4_unorm"><code class="language-delphi highlight"><span class="n">Astc4x4UNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_4x4_UNORM</span></code></h3>
+<hr />
+<h3 id="astc5x4unorm-sdl_gpu_textureformat_astc_5x4_unorm"><code class="language-delphi highlight"><span class="n">Astc5x4UNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_5x4_UNORM</span></code></h3>
+<hr />
+<h3 id="astc5x5unorm-sdl_gpu_textureformat_astc_5x5_unorm"><code class="language-delphi highlight"><span class="n">Astc5x5UNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_5x5_UNORM</span></code></h3>
+<hr />
+<h3 id="astc6x5unorm-sdl_gpu_textureformat_astc_6x5_unorm"><code class="language-delphi highlight"><span class="n">Astc6x5UNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_6x5_UNORM</span></code></h3>
+<hr />
+<h3 id="astc6x6unorm-sdl_gpu_textureformat_astc_6x6_unorm"><code class="language-delphi highlight"><span class="n">Astc6x6UNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_6x6_UNORM</span></code></h3>
+<hr />
+<h3 id="astc8x5unorm-sdl_gpu_textureformat_astc_8x5_unorm"><code class="language-delphi highlight"><span class="n">Astc8x5UNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_8x5_UNORM</span></code></h3>
+<hr />
+<h3 id="astc8x6unorm-sdl_gpu_textureformat_astc_8x6_unorm"><code class="language-delphi highlight"><span class="n">Astc8x6UNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_8x6_UNORM</span></code></h3>
+<hr />
+<h3 id="astc8x8unorm-sdl_gpu_textureformat_astc_8x8_unorm"><code class="language-delphi highlight"><span class="n">Astc8x8UNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_8x8_UNORM</span></code></h3>
+<hr />
+<h3 id="astc10x5unorm-sdl_gpu_textureformat_astc_10x5_unorm"><code class="language-delphi highlight"><span class="n">Astc10x5UNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_10x5_UNORM</span></code></h3>
+<hr />
+<h3 id="astc10x6unorm-sdl_gpu_textureformat_astc_10x6_unorm"><code class="language-delphi highlight"><span class="n">Astc10x6UNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_10x6_UNORM</span></code></h3>
+<hr />
+<h3 id="astc10x8unorm-sdl_gpu_textureformat_astc_10x8_unorm"><code class="language-delphi highlight"><span class="n">Astc10x8UNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_10x8_UNORM</span></code></h3>
+<hr />
+<h3 id="astc10x10unorm-sdl_gpu_textureformat_astc_10x10_unorm"><code class="language-delphi highlight"><span class="n">Astc10x10UNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_10x10_UNORM</span></code></h3>
+<hr />
+<h3 id="astc12x10unorm-sdl_gpu_textureformat_astc_12x10_unorm"><code class="language-delphi highlight"><span class="n">Astc12x10UNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_12x10_UNORM</span></code></h3>
+<hr />
+<h3 id="astc12x12unorm-sdl_gpu_textureformat_astc_12x12_unorm"><code class="language-delphi highlight"><span class="n">Astc12x12UNorm</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_12x12_UNORM</span></code></h3>
+<hr />
+<h3 id="astc4x4unormsrgb-sdl_gpu_textureformat_astc_4x4_unorm_srgb"><code class="language-delphi highlight"><span class="n">Astc4x4UNormSrgb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_4x4_UNORM_SRGB</span></code></h3>
+<hr />
+<h3 id="astc5x4unormsrgb-sdl_gpu_textureformat_astc_5x4_unorm_srgb"><code class="language-delphi highlight"><span class="n">Astc5x4UNormSrgb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_5x4_UNORM_SRGB</span></code></h3>
+<hr />
+<h3 id="astc5x5unormsrgb-sdl_gpu_textureformat_astc_5x5_unorm_srgb"><code class="language-delphi highlight"><span class="n">Astc5x5UNormSrgb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_5x5_UNORM_SRGB</span></code></h3>
+<hr />
+<h3 id="astc6x5unormsrgb-sdl_gpu_textureformat_astc_6x5_unorm_srgb"><code class="language-delphi highlight"><span class="n">Astc6x5UNormSrgb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_6x5_UNORM_SRGB</span></code></h3>
+<hr />
+<h3 id="astc6x6unormsrgb-sdl_gpu_textureformat_astc_6x6_unorm_srgb"><code class="language-delphi highlight"><span class="n">Astc6x6UNormSrgb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_6x6_UNORM_SRGB</span></code></h3>
+<hr />
+<h3 id="astc8x5unormsrgb-sdl_gpu_textureformat_astc_8x5_unorm_srgb"><code class="language-delphi highlight"><span class="n">Astc8x5UNormSrgb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_8x5_UNORM_SRGB</span></code></h3>
+<hr />
+<h3 id="astc8x6unormsrgb-sdl_gpu_textureformat_astc_8x6_unorm_srgb"><code class="language-delphi highlight"><span class="n">Astc8x6UNormSrgb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_8x6_UNORM_SRGB</span></code></h3>
+<hr />
+<h3 id="astc8x8unormsrgb-sdl_gpu_textureformat_astc_8x8_unorm_srgb"><code class="language-delphi highlight"><span class="n">Astc8x8UNormSrgb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_8x8_UNORM_SRGB</span></code></h3>
+<hr />
+<h3 id="astc10x5unormsrgb-sdl_gpu_textureformat_astc_10x5_unorm_srgb"><code class="language-delphi highlight"><span class="n">Astc10x5UNormSrgb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_10x5_UNORM_SRGB</span></code></h3>
+<hr />
+<h3 id="astc10x6unormsrgb-sdl_gpu_textureformat_astc_10x6_unorm_srgb"><code class="language-delphi highlight"><span class="n">Astc10x6UNormSrgb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_10x6_UNORM_SRGB</span></code></h3>
+<hr />
+<h3 id="astc10x8unormsrgb-sdl_gpu_textureformat_astc_10x8_unorm_srgb"><code class="language-delphi highlight"><span class="n">Astc10x8UNormSrgb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_10x8_UNORM_SRGB</span></code></h3>
+<hr />
+<h3 id="astc10x10unormsrgb-sdl_gpu_textureformat_astc_10x10_unorm_srgb"><code class="language-delphi highlight"><span class="n">Astc10x10UNormSrgb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_10x10_UNORM_SRGB</span></code></h3>
+<hr />
+<h3 id="astc12x10unormsrgb-sdl_gpu_textureformat_astc_12x10_unorm_srgb"><code class="language-delphi highlight"><span class="n">Astc12x10UNormSrgb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_12x10_UNORM_SRGB</span></code></h3>
+<hr />
+<h3 id="astc12x12unormsrgb-sdl_gpu_textureformat_astc_12x12_unorm_srgb"><code class="language-delphi highlight"><span class="n">Astc12x12UNormSrgb</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_12x12_UNORM_SRGB</span></code></h3>
+<hr />
+<h3 id="astc4x4float-sdl_gpu_textureformat_astc_4x4_float"><code class="language-delphi highlight"><span class="n">Astc4x4Float</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_4x4_FLOAT</span></code></h3>
+<hr />
+<h3 id="astc5x4float-sdl_gpu_textureformat_astc_5x4_float"><code class="language-delphi highlight"><span class="n">Astc5x4Float</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_5x4_FLOAT</span></code></h3>
+<hr />
+<h3 id="astc5x5float-sdl_gpu_textureformat_astc_5x5_float"><code class="language-delphi highlight"><span class="n">Astc5x5Float</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_5x5_FLOAT</span></code></h3>
+<hr />
+<h3 id="astc6x5float-sdl_gpu_textureformat_astc_6x5_float"><code class="language-delphi highlight"><span class="n">Astc6x5Float</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_6x5_FLOAT</span></code></h3>
+<hr />
+<h3 id="astc6x6float-sdl_gpu_textureformat_astc_6x6_float"><code class="language-delphi highlight"><span class="n">Astc6x6Float</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_6x6_FLOAT</span></code></h3>
+<hr />
+<h3 id="astc8x5float-sdl_gpu_textureformat_astc_8x5_float"><code class="language-delphi highlight"><span class="n">Astc8x5Float</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_8x5_FLOAT</span></code></h3>
+<hr />
+<h3 id="astc8x6float-sdl_gpu_textureformat_astc_8x6_float"><code class="language-delphi highlight"><span class="n">Astc8x6Float</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_8x6_FLOAT</span></code></h3>
+<hr />
+<h3 id="astc8x8float-sdl_gpu_textureformat_astc_8x8_float"><code class="language-delphi highlight"><span class="n">Astc8x8Float</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_8x8_FLOAT</span></code></h3>
+<hr />
+<h3 id="astc10x5float-sdl_gpu_textureformat_astc_10x5_float"><code class="language-delphi highlight"><span class="n">Astc10x5Float</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_10x5_FLOAT</span></code></h3>
+<hr />
+<h3 id="astc10x6float-sdl_gpu_textureformat_astc_10x6_float"><code class="language-delphi highlight"><span class="n">Astc10x6Float</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_10x6_FLOAT</span></code></h3>
+<hr />
+<h3 id="astc10x8float-sdl_gpu_textureformat_astc_10x8_float"><code class="language-delphi highlight"><span class="n">Astc10x8Float</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_10x8_FLOAT</span></code></h3>
+<hr />
+<h3 id="astc10x10float-sdl_gpu_textureformat_astc_10x10_float"><code class="language-delphi highlight"><span class="n">Astc10x10Float</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_10x10_FLOAT</span></code></h3>
+<hr />
+<h3 id="astc12x10float-sdl_gpu_textureformat_astc_12x10_float"><code class="language-delphi highlight"><span class="n">Astc12x10Float</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_12x10_FLOAT</span></code></h3>
+<hr />
+<h3 id="astc12x12float-sdl_gpu_textureformat_astc_12x12_float"><code class="language-delphi highlight"><span class="n">Astc12x12Float</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_GPU_TEXTUREFORMAT_ASTC_12x12_FLOAT</span></code></h3>
+<hr />
+<h2 id="properties">Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#TexelBlockSize">TexelBlockSize</a> <span class="twemoji" title="From helper _TSdlGpuTextureFormatHelper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c-.5 0-1 .19-1.41.59l-8 8c-.79.78-.79 2.04 0 2.82l8 8c.78.79 2.04.79 2.82 0l8-8c.79-.78.79-2.04 0-2.82l-8-8C13 2.19 12.5 2 12 2m0 4.95c2.7.11 3.87 2.83 2.28 4.86-.42.5-1.09.83-1.43 1.26-.35.43-.35.93-.35 1.43H11c0-.85 0-1.56.35-2.06.33-.5 1-.8 1.42-1.13 1.23-1.13.91-2.72-.77-2.85-.82 0-1.5.67-1.5 1.51H9c0-1.67 1.35-3.02 3-3.02m-1 8.55h1.5V17H11z"/></svg></span></td>
+<td>The texel block size for the texture format.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="methods">Methods</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#CalculateSize">CalculateSize</a> <span class="twemoji" title="From helper _TSdlGpuTextureFormatHelper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c-.5 0-1 .19-1.41.59l-8 8c-.79.78-.79 2.04 0 2.82l8 8c.78.79 2.04.79 2.82 0l8-8c.79-.78.79-2.04 0-2.82l-8-8C13 2.19 12.5 2 12 2m0 4.95c2.7.11 3.87 2.83 2.28 4.86-.42.5-1.09.83-1.43 1.26-.35.43-.35.93-.35 1.43H11c0-.85 0-1.56.35-2.06.33-.5 1-.8 1.42-1.13 1.23-1.13.91-2.72-.77-2.85-.82 0-1.5.67-1.5 1.51H9c0-1.67 1.35-3.02 3-3.02m-1 8.55h1.5V17H11z"/></svg></span></td>
+<td>Calculate the size in bytes of a texture format with dimensions.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="property-descriptions">Property Descriptions</h2>
+<h3 id="TexelBlockSize"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span>  <span class="twemoji" title="From helper _TSdlGpuTextureFormatHelper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c-.5 0-1 .19-1.41.59l-8 8c-.79.78-.79 2.04 0 2.82l8 8c.78.79 2.04.79 2.82 0l8-8c.79-.78.79-2.04 0-2.82l-8-8C13 2.19 12.5 2 12 2m0 4.95c2.7.11 3.87 2.83 2.28 4.86-.42.5-1.09.83-1.43 1.26-.35.43-.35.93-.35 1.43H11c0-.85 0-1.56.35-2.06.33-.5 1-.8 1.42-1.13 1.23-1.13.91-2.72-.77-2.85-.82 0-1.5.67-1.5 1.51H9c0-1.67 1.35-3.02 3-3.02m-1 8.55h1.5V17H11z"/></svg></span> TexelBlockSize</h3>
+<p>The texel block size for the texture format. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">TexelBlockSize</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetTexelBlockSize</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Integer</span></code></p>
+<h4 id="see-also_1">See Also</h4>
+<ul>
+<li><a href="../../classes/TSdlGpuCopyPass/#UploadToTexture">TSdlGpuCopyPass.UploadToTexture</a></li>
+</ul>
+<hr />
+<h2 id="method-descriptions">Method Descriptions</h2>
+<h3 id="CalculateSize"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span>  <span class="twemoji" title="From helper _TSdlGpuTextureFormatHelper"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2c-.5 0-1 .19-1.41.59l-8 8c-.79.78-.79 2.04 0 2.82l8 8c.78.79 2.04.79 2.82 0l8-8c.79-.78.79-2.04 0-2.82l-8-8C13 2.19 12.5 2 12 2m0 4.95c2.7.11 3.87 2.83 2.28 4.86-.42.5-1.09.83-1.43 1.26-.35.43-.35.93-.35 1.43H11c0-.85 0-1.56.35-2.06.33-.5 1-.8 1.42-1.13 1.23-1.13.91-2.72-.77-2.85-.82 0-1.5.67-1.5 1.51H9c0-1.67 1.35-3.02 3-3.02m-1 8.55h1.5V17H11z"/></svg></span> CalculateSize(Integer, Integer, Integer)</h3>
+<p>Calculate the size in bytes of a texture format with dimensions. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">CalculateSize</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AWidth</span><span class="o">,</span><span class="w"> </span><span class="n">AHeight</span><span class="o">,</span><span class="w"> </span><span class="n">ADepthOrLayerCount</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="parameters">Parameters</h4>
+<p><strong><code>AWidth</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
+: Width in pixels.</p>
+<p><strong><code>AHeight</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
+: Height in pixels.</p>
+<p><strong><code>ADepthOrLayerCount</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
+: Depth for 3D textures or layer count otherwise.</p>
+<h4 id="returns">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Integer</span></code>: The size of a texture with this format and dimensions.</p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../TSdlGpuSwapchainComposition/" class="md-footer__link md-footer__link--prev" aria-label="Previous: TSdlGpuSwapchainComposition">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                TSdlGpuSwapchainComposition
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../TSdlGpuTextureKind/" class="md-footer__link md-footer__link--next" aria-label="Next: TSdlGpuTextureKind">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                TSdlGpuTextureKind
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Erik van Bilsen
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/neslib/Neslib.Sdl3" target="_blank" rel="noopener" title="GitHub neslib" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://blog.grijjy.com/author/erikvanbilsen/" target="_blank" rel="noopener" title="Blog" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="m61.7 169.4 101.5 278C92.2 413 43.3 340.2 43.3 256c0-30.9 6.6-60.1 18.4-86.6m337.9 75.9c0-26.3-9.4-44.5-17.5-58.7-10.8-17.5-20.9-32.4-20.9-49.9 0-19.6 14.8-37.8 35.7-37.8.9 0 1.8.1 2.8.2-37.9-34.7-88.3-55.9-143.7-55.9-74.3 0-139.7 38.1-177.8 95.9 5 .2 9.7.3 13.7.3 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l77.5 230.4L249.8 247l-33.1-90.8c-11.5-.7-22.3-2-22.3-2-11.5-.7-10.1-18.2 1.3-17.5 0 0 35.1 2.7 56 2.7 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l76.9 228.7 21.2-70.9c9-29.4 16-50.5 16-68.7m-139.9 29.3-63.8 185.5c19.1 5.6 39.2 8.7 60.1 8.7 24.8 0 48.5-4.3 70.6-12.1-.6-.9-1.1-1.9-1.5-2.9zm183-120.7c.9 6.8 1.4 14 1.4 21.9 0 21.6-4 45.8-16.2 76.2l-65 187.9C426.2 403 468.7 334.5 468.7 256c0-37-9.4-71.8-26-102.1M504 256c0 136.8-111.3 248-248 248C119.2 504 8 392.7 8 256 8 119.2 119.2 8 256 8c136.7 0 248 111.2 248 248m-11.4 0c0-130.5-106.2-236.6-236.6-236.6C125.5 19.4 19.4 125.5 19.4 256S125.6 492.6 256 492.6c130.5 0 236.6-106.1 236.6-236.6"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.code.copy", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.prune", "navigation.top", "navigation.footer", "navigation.indexes", "search.suggest", "search.share"], "search": "../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
