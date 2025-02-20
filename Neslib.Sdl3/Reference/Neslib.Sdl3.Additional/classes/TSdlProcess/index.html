@@ -2147,9 +2147,9 @@
 <li><code>TSdlProperty.ProcessCreateEnvironment</code>: a TSdlEnvironment pointer. If this property is set, it will be the entire environment for the process, otherwise the current environment is used.</li>
 <li><code>TSdlProperty.ProcessCreateStdIn</code>: a TSdlProcessIO value describing where standard input for the process comes from, defaults to <code>TSdlProcessStdIO.Null</code>.</li>
 <li><code>TSdlProperty.ProcessCreateStdInStream</code>: a TSdlIOStream pointer used for standard input when <code>TSdlProperty.ProcessCreateStdIn</code> is set to <code>TSdlProcessStdIO.Redirect</code>.</li>
-<li><code>TSdlProperty.ProcessCreateStdOut</code>: a TSdlProcessIO value describing where standard output for the process goes go, defaults to <code>TSdlProcessStdIO.Inherited</code>.</li>
+<li><code>TSdlProperty.ProcessCreateStdOut</code>: a TSdlProcessIO value describing where standard output for the process goes to, defaults to <code>TSdlProcessStdIO.Inherited</code>.</li>
 <li><code>TSdlProperty.ProcessCreateStdOutStream</code>: a TSdlIOStream pointer used for standard output when <code>TSdlProperty.ProcessCreateStdOut</code> is set <code>TSdlProcessStdIO.Redirect</code>.</li>
-<li><code>TSdlProperty.ProcessCreateStdErr</code>: a TSdlProcessIO value describing where standard error for the process goes go, defaults to <code>TSdlProcessStdIO.Inherited</code>.</li>
+<li><code>TSdlProperty.ProcessCreateStdErr</code>: a TSdlProcessIO value describing where standard error for the process goes to, defaults to <code>TSdlProcessStdIO.Inherited</code>.</li>
 <li><code>TSdlProperty.ProcessCreateStdErrStream</code>: a TSdlIOStream pointer used for standard error when <code>TSdlProperty.ProcessCreateStdErr</code> is set to <code>TSdlProcessStdIO.Redirect</code>.</li>
 <li><code>TSdlProperty.ProcessCreateStdErrToStdOut</code>: True if the error output of the process should be redirected into the standard output of the process. This property has no effect if <code>TSdlProperty.ProcessCreateStdErr</code> is set.</li>
 <li><code>TSdlProperty.ProcessCreateBackground</code>: True if the process should run in the background. In this case the default input and output is <code>TSdlProcessStdIO.Null</code> and the exitcode of the process is not available, and will always be 0.</li>

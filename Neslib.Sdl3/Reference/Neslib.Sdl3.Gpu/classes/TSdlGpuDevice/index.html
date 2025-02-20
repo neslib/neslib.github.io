@@ -2994,6 +2994,7 @@
 <p>Creates a buffer object to be used in graphics or compute workflows.</p>
 <p>The contents of this buffer are undefined until data is written to the buffer.</p>
 <p>Note that certain combinations of usage flags are invalid. For example, a buffer cannot have both the Vertex and Index flags.</p>
+<p>If you use a Storage flag, the data in the buffer must respect std140 layout conventions. In practical terms this means you must ensure that vec3 and vec4 fields are 16-byte aligned.</p>
 <p>For better understanding of underlying concepts and memory management with SDL GPU API, you may refer <a href="https://moonside.games/posts/sdl-gpu-concepts-cycling/">this blog post</a>.</p>
 <p>There are optional properties that can be provided through <code>Props</code>. These are the supported properties:</p>
 <ul>
@@ -3231,7 +3232,7 @@
 <hr />
 <h3 id="MapTransferBuffer"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> MapTransferBuffer(TSdlGpuTransferBuffer, Boolean)</h3>
 <p>Maps a transfer buffer into application address space.</p>
-<p>You must unmap the transfer buffer before encoding upload commands. </p>
+<p>You must unmap the transfer buffer before encoding upload commands. The memory is owned by the graphics driver - do NOT call SdlFree on the returned pointer. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">MapTransferBuffer</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ATransferBuffer</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuTransferBuffer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ACycle</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_13">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
@@ -3273,7 +3274,8 @@
 : A compute pipeline to be destroyed.</p>
 <hr />
 <h3 id="ReleaseFence"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> ReleaseFence(TSdlGpuFence)</h3>
-<p>Releases a fence obtained from TSdlGpuCommandBuffer.SubmitAndAcquireFence. </p>
+<p>Releases a fence obtained from TSdlGpuCommandBuffer.SubmitAndAcquireFence.</p>
+<p>You must not reference the fence after calling this method. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">ReleaseFence</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFence</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuFence</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_19">Parameters</h4>
 <p><strong><code>AFence</code></strong>: <a href="../TSdlGpuFence/"><code>TSdlGpuFence</code></a>

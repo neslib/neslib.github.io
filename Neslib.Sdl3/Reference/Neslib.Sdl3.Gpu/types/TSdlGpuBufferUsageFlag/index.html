@@ -2310,7 +2310,8 @@
 <h1 id="tsdlgpubufferusageflag">TSdlGpuBufferUsageFlag</h1>
 <p>Specifies how a buffer is intended to be used by the client.</p>
 <p>A buffer must have at least one usage flag. Note that some usage flag combinations are invalid.</p>
-<p>Unlike textures, [Read, Write] can be used for simultaneous read-write usage. The same data synchronization concerns as textures apply. </p>
+<p>Unlike textures, [Read, Write] can be used for simultaneous read-write usage. The same data synchronization concerns as textures apply.</p>
+<p>If you use a Storage flag, the data in the buffer must respect std140 layout conventions. In practical terms this means you must ensure that vec3 and vec4 fields are 16-byte aligned. </p>
 <h2 id="definition">Definition</h2>
 <p>Unit: <a href="../../">Neslib.Sdl3.Gpu</a></p>
 <div class="language-delphi highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">type</span><span class="w"> </span><span class="n">TSdlGpuBufferUsageFlag</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="n">Vertex</span><span class="o">,</span><span class="w"> </span><span class="kp">Index</span><span class="o">,</span><span class="w"> </span><span class="n">Indirect</span><span class="o">,</span><span class="w"> </span><span class="n">GraphicsStorageRead</span><span class="o">,</span><span class="w"> </span><span class="n">ComputeStorageRead</span><span class="o">,</span><span class="w"> </span><span class="n">ComputeStorageWrite</span><span class="p">)</span>

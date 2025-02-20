@@ -2684,6 +2684,10 @@
 <td>Creates a new surface identical to the existing surface, scaled to the desired size.</td>
 </tr>
 <tr>
+<td><a href="#Stretch">Stretch</a></td>
+<td>Perform a stretched pixel copy from this surface surface to another.</td>
+</tr>
+<tr>
 <td><a href="#Unlock">Unlock</a></td>
 <td>Release the surface after directly accessing the pixels.</td>
 </tr>
@@ -3080,6 +3084,8 @@
 <p>Perform low-level surface scaled blitting only.</p>
 <p>This is a semi-private function and it performs low-level surface blitting, assuming the input rectangles have already been clipped. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">BlitScaledUnchecked</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ASrcRect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRect</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ADst</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSurface</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ADstRect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRect</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AScaleMode</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlScaleMode</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_17">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_11">Parameters</h4>
 <p><strong><code>ASrcRect</code></strong>: <a href="../TSdlRect/"><code>TSdlRect</code></a>
 : The rectangle to be copied.</p>
@@ -3088,7 +3094,7 @@
 <p><strong><code>ADstRect</code></strong>: <a href="../TSdlRect/"><code>TSdlRect</code></a>
 : The target rectangle in the destination surface.</p>
 <p><strong><code>AScaleMode</code></strong>: <a href="../../types/TSdlScaleMode/"><code>TSdlScaleMode</code></a>
-: the SDL_ScaleMode to be used.</p>
+: The TSdlScaleMode to be used.</p>
 <h4 id="see-also_16">See Also</h4>
 <ul>
 <li><a href="./#BlitScaled">BlitScaled</a></li>
@@ -3100,7 +3106,7 @@
 <p>Perform a scaled and tiled blit to a destination surface, which may be of a different format.</p>
 <p>The pixels in <code>ASrcRect</code> will be repeated as many times as needed to completely fill <code>ADstRect</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">BlitTiled</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ASrcRect</span><span class="o">:</span><span class="w"> </span><span class="n">PSdlRect</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AScale</span><span class="o">:</span><span class="w"> </span><span class="kt">Single</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AScaleMode</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlScaleMode</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ADst</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSurface</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ADstRect</span><span class="o">:</span><span class="w"> </span><span class="n">PSdlRect</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_17">Exceptions</h4>
+<h4 id="exceptions_18">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_12">Parameters</h4>
 <p><strong><code>ASrcRect</code></strong>: <a href="../../types/PSdlRect/"><code>PSdlRect</code></a>
@@ -3124,7 +3130,7 @@
 <p>Perform a tiled blit to a destination surface, which may be of a different format.</p>
 <p>The pixels in <code>ASrcRect</code> will be repeated as many times as needed to completely fill <code>ADstRect</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">BlitTiled</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ASrcRect</span><span class="o">:</span><span class="w"> </span><span class="n">PSdlRect</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ADst</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSurface</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ADstRect</span><span class="o">:</span><span class="w"> </span><span class="n">PSdlRect</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_18">Exceptions</h4>
+<h4 id="exceptions_19">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_13">Parameters</h4>
 <p><strong><code>ASrcRect</code></strong>: <a href="../../types/PSdlRect/"><code>PSdlRect</code></a>
@@ -3144,7 +3150,7 @@
 <p>Perform low-level surface blitting only.</p>
 <p>This is a semi-private blit function and it performs low-level surface blitting, assuming the input rectangles have already been clipped. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">BlitUnchecked</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ASrcRect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRect</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ADst</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSurface</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ADstRect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRect</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_19">Exceptions</h4>
+<h4 id="exceptions_20">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_14">Parameters</h4>
 <p><strong><code>ASrcRect</code></strong>: <a href="../TSdlRect/"><code>TSdlRect</code></a>
@@ -3165,7 +3171,7 @@
 <p>This function handles all surface formats, and ignores any clip rectangle.</p>
 <p>If the surface is YUV, the color is assumed to be in the sRGB colorspace, otherwise the color is assumed to be in the colorspace of the suface. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Clear</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AColor</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlColorF</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_20">Exceptions</h4>
+<h4 id="exceptions_21">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_15">Parameters</h4>
 <p><strong><code>AColor</code></strong>: <a href="../TSdlColorF/"><code>TSdlColorF</code></a>
@@ -3180,7 +3186,7 @@
 <p>This function handles all surface formats, and ignores any clip rectangle.</p>
 <p>If the surface is YUV, the color is assumed to be in the sRGB colorspace, otherwise the color is assumed to be in the colorspace of the suface. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Clear</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AR</span><span class="o">,</span><span class="w"> </span><span class="n">AG</span><span class="o">,</span><span class="w"> </span><span class="n">AB</span><span class="o">:</span><span class="w"> </span><span class="kt">Single</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AA</span><span class="o">:</span><span class="w"> </span><span class="kt">Single</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_21">Exceptions</h4>
+<h4 id="exceptions_22">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_16">Parameters</h4>
 <p><strong><code>AR</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>
@@ -3201,7 +3207,7 @@
 <p>This function converts an existing surface to a new format and colorspace and returns the new surface. This will perform any pixel format and colorspace conversion needed.</p>
 <p>If the original surface has alternate images, the new surface will have a reference to them as well. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">Convert</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFormat</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPixelFormat</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">APalette</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPalette</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AColorspace</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlColorspace</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AProps</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlProperties</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSurface</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_22">Exceptions</h4>
+<h4 id="exceptions_23">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_17">Parameters</h4>
 <p><strong><code>AFormat</code></strong>: <a href="../../types/TSdlPixelFormat/"><code>TSdlPixelFormat</code></a>
@@ -3220,7 +3226,7 @@
 <p>This function converts an existing surface to a new format and colorspace and returns the new surface. This will perform any pixel format and colorspace conversion needed.</p>
 <p>If the original surface has alternate images, the new surface will have a reference to them as well. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">Convert</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFormat</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPixelFormat</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AColorspace</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlColorspace</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSurface</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_23">Exceptions</h4>
+<h4 id="exceptions_24">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_18">Parameters</h4>
 <p><strong><code>AFormat</code></strong>: <a href="../../types/TSdlPixelFormat/"><code>TSdlPixelFormat</code></a>
@@ -3235,7 +3241,7 @@
 <p>This function is used to optimize images for faster <em>repeat</em> blitting. This is accomplished by converting the original and storing the result as a new surface. The new, optimized surface can then be used as the source for future blits, making them faster.</p>
 <p>If the original surface has alternate images, the new surface will have a reference to them as well. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">Convert</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFormat</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPixelFormat</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSurface</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_24">Exceptions</h4>
+<h4 id="exceptions_25">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_19">Parameters</h4>
 <p><strong><code>AFormat</code></strong>: <a href="../../types/TSdlPixelFormat/"><code>TSdlPixelFormat</code></a>
@@ -3249,7 +3255,7 @@
 <p>Bitmap surfaces (with format TSdlPixelFormat.Index1Lsb or TSdlPixelFormat.Index1Msb) will have the palette initialized with 0 as white and 1 as black. Other surfaces will get a palette initialized with white in every entry.</p>
 <p>If this function is called for a surface that already has a palette, a new palette will be created to replace it. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">CreatePalette</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPalette</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_25">Exceptions</h4>
+<h4 id="exceptions_26">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure (e.g. if the surface didn't have an index format).</p>
 <h4 id="returns_6">Returns</h4>
 <p><a href="../TSdlPalette/"><code>TSdlPalette</code></a>: A new palette.</p>
@@ -3267,7 +3273,7 @@
 <p>If the original surface has alternate images, the new surface will have a reference to them as well.</p>
 <p>The returned surface should be freed with Free. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">Duplicate</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSurface</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_26">Exceptions</h4>
+<h4 id="exceptions_27">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="returns_7">Returns</h4>
 <p><a href="./"><code>TSdlSurface</code></a>: A copy of the surface.</p>
@@ -3281,7 +3287,7 @@
 <p><code>AColor</code> should be a pixel of the format used by the surface, and can be generated by TSdlPixelFormatDetails.MapRgb or TSdlPixelFormatDetails.MapRgba. If the color value contains an alpha component then the destination is simply filled with that alpha information, no blending takes place.</p>
 <p>If there is a clip rectangle set on the destination (set via ClipRect), then this function will fill the clip rectangle. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Fill</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AColor</span><span class="o">:</span><span class="w"> </span><span class="kt">Cardinal</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_27">Exceptions</h4>
+<h4 id="exceptions_28">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_20">Parameters</h4>
 <p><strong><code>AColor</code></strong>: <code class="language-delphi highlight"><span class="kt">Cardinal</span></code>
@@ -3297,7 +3303,7 @@
 <p><code>AColor</code> should be a pixel of the format used by the surface, and can be generated by TSdlPixelFormatDetails.MapRgb or TSdlPixelFormatDetails.MapRgba. If the color value contains an alpha component then the destination is simply filled with that alpha information, no blending takes place.</p>
 <p>If there is a clip rectangle set on the destination (set via ClipRect), then this function will fill based on the intersection of the clip rectangle and <code>ARect</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">FillRect</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ARect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRect</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AColor</span><span class="o">:</span><span class="w"> </span><span class="kt">Cardinal</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_28">Exceptions</h4>
+<h4 id="exceptions_29">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_21">Parameters</h4>
 <p><strong><code>ARect</code></strong>: <a href="../TSdlRect/"><code>TSdlRect</code></a>
@@ -3314,7 +3320,7 @@
 <p><code>AColor</code> should be a pixel of the format used by the surface, and can be generated by TSdlPixelFormatDetails.MapRgb or TSdlPixelFormatDetails.MapRgba. If the color value contains an alpha component then the destination is simply filled with that alpha information, no blending takes place.</p>
 <p>If there is a clip rectangle set on the destination (set via ClipRect), then this function will fill based on the intersection of the clip rectangle and the given rectangles. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">FillRects</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ARects</span><span class="o">:</span><span class="w"> </span><span class="k">array</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">TSdlRect</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AColor</span><span class="o">:</span><span class="w"> </span><span class="kt">Cardinal</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
-<h4 id="exceptions_29">Exceptions</h4>
+<h4 id="exceptions_30">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_22">Parameters</h4>
 <p><strong><code>ARects</code></strong>: <a href="../TSdlRect/"><code>array of TSdlRect</code></a>
@@ -3331,7 +3337,7 @@
 <p><code>AColor</code> should be a pixel of the format used by the surface, and can be generated by TSdlPixelFormatDetails.MapRgb or TSdlPixelFormatDetails.MapRgba. If the color value contains an alpha component then the destination is simply filled with that alpha information, no blending takes place.</p>
 <p>If there is a clip rectangle set on the destination (set via ClipRect), then this function will fill based on the intersection of the clip rectangle and the given rectangles. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">FillRects</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ARects</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlRect</span><span class="o">&gt;;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AColor</span><span class="o">:</span><span class="w"> </span><span class="kt">Cardinal</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_30">Exceptions</h4>
+<h4 id="exceptions_31">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_23">Parameters</h4>
 <p><strong><code>ARects</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlRect</span><span class="o">&gt;</span></code>
@@ -3346,7 +3352,7 @@
 <h3 id="Flip"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Flip(TSdlFlipMode)</h3>
 <p>Flip the surface vertically or horizontally. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Flip</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFlip</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlFlipMode</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_31">Exceptions</h4>
+<h4 id="exceptions_32">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_24">Parameters</h4>
 <p><strong><code>AFlip</code></strong>: <a href="../../types/TSdlFlipMode/"><code>TSdlFlipMode</code></a>
@@ -3361,7 +3367,7 @@
 <p>Between calls to Lock / Unlock, you can write to and read from <code>Pixels</code>, using the pixel format in <code>Format</code>. Once you are done accessing the surface, you should use Unlock to release it.</p>
 <p>Not all surfaces require locking. If <code>MustLock</code> returns False, then you can read and write to the surface at any time, and the pixel format of the surface will not change. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Lock</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_32">Exceptions</h4>
+<h4 id="exceptions_33">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="see-also_28">See Also</h4>
 <ul>
@@ -3416,7 +3422,7 @@
 <h3 id="PremultiplyAlpha"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> PremultiplyAlpha(Boolean)</h3>
 <p>Premultiply the alpha. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">PremultiplyAlpha</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALinear</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_33">Exceptions</h4>
+<h4 id="exceptions_34">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_27">Parameters</h4>
 <p><strong><code>ALinear</code></strong>: <code class="language-delphi highlight"><span class="kt">Boolean</span></code>
@@ -3437,7 +3443,7 @@
 <p>Save the surface to a file in BMP format.</p>
 <p>Surfaces with a 24-bit, 32-bit and paletted 8-bit format get saved in the BMP directly. Other RGB formats with 8-bit or higher get converted to a 24-bit surface or, if they have an alpha mask or a colorkey, to a 32-bit surface before they are saved. YUV and paletted 1-bit and 4-bit formats are not supported. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SaveBmp</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFilename</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_34">Exceptions</h4>
+<h4 id="exceptions_35">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_28">Parameters</h4>
 <p><strong><code>AFilename</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
@@ -3451,7 +3457,7 @@
 <p>Save the surface to a seekable SDL data stream in BMP format.</p>
 <p>Surfaces with a 24-bit, 32-bit and paletted 8-bit format get saved in the BMP directly. Other RGB formats with 8-bit or higher get converted to a 24-bit surface or, if they have an alpha mask or a colorkey, to a 32-bit surface before they are saved. YUV and paletted 1-bit and 4-bit formats are not supported. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SaveBmp</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ADst</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlIOStream</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ACloseIO</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_35">Exceptions</h4>
+<h4 id="exceptions_36">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_29">Parameters</h4>
 <p><strong><code>ADst</code></strong>: <a href="../../../Neslib.Sdl3.IO/classes/TSdlIOStream/"><code>TSdlIOStream</code></a>
@@ -3467,7 +3473,7 @@
 <p>Creates a new surface identical to the existing surface, scaled to the desired size.</p>
 <p>The returned surface should be freed with Free. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">Scale</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AWidth</span><span class="o">,</span><span class="w"> </span><span class="n">AHeight</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AScaleMode</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlScaleMode</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSurface</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_36">Exceptions</h4>
+<h4 id="exceptions_37">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_30">Parameters</h4>
 <p><strong><code>AWidth</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
@@ -3483,10 +3489,31 @@
 <li><a href="./#Free">Free</a></li>
 </ul>
 <hr />
+<h3 id="Stretch"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Stretch(TSdlRect, TSdlSurface, TSdlRect, TSdlScaleMode)</h3>
+<p>Perform a stretched pixel copy from this surface surface to another. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Stretch</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ASrcRect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRect</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ADst</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSurface</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ADstRect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRect</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AScaleMode</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlScaleMode</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_38">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_31">Parameters</h4>
+<p><strong><code>ASrcRect</code></strong>: <a href="../TSdlRect/"><code>TSdlRect</code></a>
+: The rectangle to be copied.</p>
+<p><strong><code>ADst</code></strong>: <a href="./"><code>TSdlSurface</code></a>
+: The blit target surface.</p>
+<p><strong><code>ADstRect</code></strong>: <a href="../TSdlRect/"><code>TSdlRect</code></a>
+: The target rectangle in the destination surface.</p>
+<p><strong><code>AScaleMode</code></strong>: <a href="../../types/TSdlScaleMode/"><code>TSdlScaleMode</code></a>
+: The TSdlScaleMode to be used.</p>
+<h4 id="see-also_35">See Also</h4>
+<ul>
+<li><a href="./#BlitScaled">BlitScaled</a></li>
+</ul>
+<h4 id="remarks_7">Remarks</h4>
+<p>The same destination surface should not be used from two threads at once. It is safe to use the same source surface from multiple threads. </p>
+<hr />
 <h3 id="Unlock"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Unlock</h3>
 <p>Release the surface after directly accessing the pixels. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Unlock</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="see-also_35">See Also</h4>
+<h4 id="see-also_36">See Also</h4>
 <ul>
 <li><a href="./#Lock">Lock</a></li>
 </ul>

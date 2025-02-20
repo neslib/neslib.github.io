@@ -2718,33 +2718,48 @@
 <h2 id="method-descriptions">Method Descriptions</h2>
 <h3 id="BindFragmentSamplers"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> BindFragmentSamplers(Integer, TArray&lt;TSdlGpuTextureSamplerBinding&gt;)</h3>
 <p>Binds texture-sampler pairs for use on the fragment shader.</p>
-<p>The textures must have been created with TSdlGpuTextureUsage.Sampler. </p>
+<p>The textures must have been created with TSdlGpuTextureUsage.Sampler.</p>
+<p>Be sure your shader is set up according to the requirements documented TSdlGpuShader. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">BindFragmentSamplers</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFirstSlot</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ATextureSamplerBindings</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuTextureSamplerBinding</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_3">Parameters</h4>
 <p><strong><code>AFirstSlot</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The fragment sampler slot to begin binding from.</p>
 <p><strong><code>ATextureSamplerBindings</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuTextureSamplerBinding</span><span class="o">&gt;</span></code>
 : An array of texture-sampler binding records.</p>
+<h4 id="see-also_1">See Also</h4>
+<ul>
+<li><a href="../TSdlGpuShader/">TSdlGpuShader</a></li>
+</ul>
 <hr />
 <h3 id="BindFragmentStorageBuffers"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> BindFragmentStorageBuffers(Integer, TArray&lt;TSdlGpuBuffer&gt;)</h3>
 <p>Binds storage buffers for use on the fragment shader.</p>
-<p>These buffers must have been created with TSdlGpuBufferUsage.GraphicsStorageRead. </p>
+<p>These buffers must have been created with TSdlGpuBufferUsage.GraphicsStorageRead.</p>
+<p>Be sure your shader is set up according to the requirements documented TSdlGpuShader. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">BindFragmentStorageBuffers</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFirstSlot</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AStorageBuffers</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuBuffer</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_4">Parameters</h4>
 <p><strong><code>AFirstSlot</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The fragment storage buffer slot to begin binding from.</p>
 <p><strong><code>AStorageBuffers</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuBuffer</span><span class="o">&gt;</span></code>
 : An array of storage buffers.</p>
+<h4 id="see-also_2">See Also</h4>
+<ul>
+<li><a href="../TSdlGpuShader/">TSdlGpuShader</a></li>
+</ul>
 <hr />
 <h3 id="BindFragmentStorageTextures"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> BindFragmentStorageTextures(Integer, TArray&lt;TSdlGpuTexture&gt;)</h3>
 <p>Binds storage textures for use on the fragment shader.</p>
-<p>These textures must have been created with TSdlGpuTextureUsage.GraphicsStorageRead. </p>
+<p>These textures must have been created with TSdlGpuTextureUsage.GraphicsStorageRead.</p>
+<p>Be sure your shader is set up according to the requirements documented TSdlGpuShader. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">BindFragmentStorageTextures</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFirstSlot</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AStorageTextures</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuTexture</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_5">Parameters</h4>
 <p><strong><code>AFirstSlot</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The fragment storage texture slot to begin binding from.</p>
 <p><strong><code>AStorageTextures</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuTexture</span><span class="o">&gt;</span></code>
 : An array of storage textures.</p>
+<h4 id="see-also_3">See Also</h4>
+<ul>
+<li><a href="../TSdlGpuShader/">TSdlGpuShader</a></li>
+</ul>
 <hr />
 <h3 id="BindIndexBuffer"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> BindIndexBuffer(TSdlGpuBufferBinding, TSdlGpuIndexElementSize)</h3>
 <p>Binds an index buffer on a command buffer for use with subsequent draw calls. </p>
@@ -2774,33 +2789,48 @@
 <hr />
 <h3 id="BindVertexSamplers"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> BindVertexSamplers(Integer, TArray&lt;TSdlGpuTextureSamplerBinding&gt;)</h3>
 <p>Binds texture-sampler pairs for use on the vertex shader.</p>
-<p>The textures must have been created with TSdlGpuTextureUsage.Sampler. </p>
+<p>The textures must have been created with TSdlGpuTextureUsage.Sampler.</p>
+<p>Be sure your shader is set up according to the requirements documented TSdlGpuShader. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">BindVertexSamplers</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFirstSlot</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ATextureSamplerBindings</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuTextureSamplerBinding</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_9">Parameters</h4>
 <p><strong><code>AFirstSlot</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The vertex sampler slot to begin binding from.</p>
 <p><strong><code>ATextureSamplerBindings</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuTextureSamplerBinding</span><span class="o">&gt;</span></code>
 : An array of texture-sampler binding records.</p>
+<h4 id="see-also_4">See Also</h4>
+<ul>
+<li><a href="../TSdlGpuShader/">TSdlGpuShader</a></li>
+</ul>
 <hr />
 <h3 id="BindVertexStorageBuffers"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> BindVertexStorageBuffers(Integer, TArray&lt;TSdlGpuBuffer&gt;)</h3>
 <p>Binds storage buffers for use on the vertex shader.</p>
-<p>These buffers must have been created with TSdlGpuBufferUsage.GraphicsStorageRead. </p>
+<p>These buffers must have been created with TSdlGpuBufferUsage.GraphicsStorageRead.</p>
+<p>Be sure your shader is set up according to the requirements documented TSdlGpuShader. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">BindVertexStorageBuffers</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFirstSlot</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AStorageBuffers</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuBuffer</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_10">Parameters</h4>
 <p><strong><code>AFirstSlot</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The vertex storage buffer slot to begin binding from.</p>
 <p><strong><code>AStorageBuffers</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuBuffer</span><span class="o">&gt;</span></code>
 : An array of buffers.</p>
+<h4 id="see-also_5">See Also</h4>
+<ul>
+<li><a href="../TSdlGpuShader/">TSdlGpuShader</a></li>
+</ul>
 <hr />
 <h3 id="BindVertexStorageTextures"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> BindVertexStorageTextures(Integer, TArray&lt;TSdlGpuTexture&gt;)</h3>
 <p>Binds storage textures for use on the vertex shader.</p>
-<p>These textures must have been created with TSdlGpuTextureUsage.GraphicsStorageRead. </p>
+<p>These textures must have been created with TSdlGpuTextureUsage.GraphicsStorageRead.</p>
+<p>Be sure your shader is set up according to the requirements documented TSdlGpuShader. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">BindVertexStorageTextures</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFirstSlot</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AStorageTextures</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuTexture</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_11">Parameters</h4>
 <p><strong><code>AFirstSlot</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The vertex storage texture slot to begin binding from.</p>
 <p><strong><code>AStorageTextures</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuTexture</span><span class="o">&gt;</span></code>
 : An array of storage textures.</p>
+<h4 id="see-also_6">See Also</h4>
+<ul>
+<li><a href="../TSdlGpuShader/">TSdlGpuShader</a></li>
+</ul>
 <hr />
 <h3 id="DrawIndexedPrimitives_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> DrawIndexedPrimitives(TSdlGpuBuffer, Integer, Integer)</h3>
 <p>Draws data using bound graphics state with an index buffer enabled and with draw parameters set from a buffer.</p>
@@ -2871,7 +2901,7 @@
 <h4 id="parameters_16">Parameters</h4>
 <p><strong><code>ABlendConstants</code></strong>: <a href="../../../Neslib.Sdl3.Video/classes/TSdlColorF/"><code>TSdlColorF</code></a>
 : The blend constant color.</p>
-<h4 id="see-also_1">See Also</h4>
+<h4 id="see-also_7">See Also</h4>
 <ul>
 <li><a href="../../types/TSdlGpuBlendFactor/">TSdlGpuBlendFactor</a></li>
 </ul>

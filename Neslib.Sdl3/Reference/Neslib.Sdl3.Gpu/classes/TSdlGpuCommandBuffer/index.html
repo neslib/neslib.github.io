@@ -2865,7 +2865,8 @@
 <hr />
 <h3 id="PushComputeUniformData_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> PushComputeUniformData(Integer, Pointer, Integer)</h3>
 <p>Pushes data to a uniform slot on the command buffer.</p>
-<p>Subsequent draw calls will use this uniform data. </p>
+<p>Subsequent draw calls will use this uniform data.</p>
+<p>The data being pushed must respect std140 layout conventions. In practical terms this means you must ensure that vec3 and vec4 fields are 16-byte aligned. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">PushComputeUniformData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ASlotIndex</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AData</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ASize</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_10">Parameters</h4>
 <p><strong><code>ASlotIndex</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
@@ -2877,7 +2878,8 @@
 <hr />
 <h3 id="PushComputeUniformData_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> PushComputeUniformData(Integer, TBytes)</h3>
 <p>Pushes data to a uniform slot on the command buffer.</p>
-<p>Subsequent draw calls will use this uniform data. </p>
+<p>Subsequent draw calls will use this uniform data.</p>
+<p>The data being pushed must respect std140 layout conventions. In practical terms this means you must ensure that vec3 and vec4 fields are 16-byte aligned. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">PushComputeUniformData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ASlotIndex</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AData</span><span class="o">:</span><span class="w"> </span><span class="n">TBytes</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_11">Parameters</h4>
 <p><strong><code>ASlotIndex</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
@@ -2901,7 +2903,8 @@
 <hr />
 <h3 id="PushFragmentUniformData_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> PushFragmentUniformData(Integer, Pointer, Integer)</h3>
 <p>Pushes data to a fragment uniform slot on the command buffer.</p>
-<p>Subsequent draw calls will use this uniform data. </p>
+<p>Subsequent draw calls will use this uniform data.</p>
+<p>The data being pushed must respect std140 layout conventions. In practical terms this means you must ensure that vec3 and vec4 fields are 16-byte aligned. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">PushFragmentUniformData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ASlotIndex</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AData</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ASize</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_13">Parameters</h4>
 <p><strong><code>ASlotIndex</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
@@ -2913,7 +2916,8 @@
 <hr />
 <h3 id="PushFragmentUniformData_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> PushFragmentUniformData(Integer, TBytes)</h3>
 <p>Pushes data to a fragment uniform slot on the command buffer.</p>
-<p>Subsequent draw calls will use this uniform data. </p>
+<p>Subsequent draw calls will use this uniform data.</p>
+<p>The data being pushed must respect std140 layout conventions. In practical terms this means you must ensure that vec3 and vec4 fields are 16-byte aligned. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">PushFragmentUniformData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ASlotIndex</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AData</span><span class="o">:</span><span class="w"> </span><span class="n">TBytes</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_14">Parameters</h4>
 <p><strong><code>ASlotIndex</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
@@ -2923,7 +2927,8 @@
 <hr />
 <h3 id="PushVertexUniformData_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> PushVertexUniformData(Integer, Pointer, Integer)</h3>
 <p>Pushes data to a vertex uniform slot on the command buffer.</p>
-<p>Subsequent draw calls will use this uniform data. </p>
+<p>Subsequent draw calls will use this uniform data.</p>
+<p>The data being pushed must respect std140 layout conventions. In practical terms this means you must ensure that vec3 and vec4 fields are 16-byte aligned. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">PushVertexUniformData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ASlotIndex</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AData</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ASize</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_15">Parameters</h4>
 <p><strong><code>ASlotIndex</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
@@ -2935,7 +2940,8 @@
 <hr />
 <h3 id="PushVertexUniformData_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> PushVertexUniformData(Integer, TBytes)</h3>
 <p>Pushes data to a vertex uniform slot on the command buffer.</p>
-<p>Subsequent draw calls will use this uniform data. </p>
+<p>Subsequent draw calls will use this uniform data.</p>
+<p>The data being pushed must respect std140 layout conventions. In practical terms this means you must ensure that vec3 and vec4 fields are 16-byte aligned. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">PushVertexUniformData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ASlotIndex</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AData</span><span class="o">:</span><span class="w"> </span><span class="n">TBytes</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_16">Parameters</h4>
 <p><strong><code>ASlotIndex</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
