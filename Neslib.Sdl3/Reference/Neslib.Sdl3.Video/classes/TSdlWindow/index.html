@@ -2811,7 +2811,7 @@
 <h3 id="Display"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Display</h3>
 <p>The display associated with this window (that is, the display containing the center of this window). </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Display</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlDisplay</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetDisplay</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlDisplay</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlDisplay/"><code>TSdlDisplay</code></a></p>
 <h4 id="exceptions_2">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="see-also_2">See Also</h4>
@@ -2835,7 +2835,7 @@
 <h3 id="Flags"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Flags</h3>
 <p>The window flags. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Flags</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlWindowFlags</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetFlags</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlWindowFlags</span></code></p>
+<p><strong>Type: </strong><a href="../../types/TSdlWindowFlags/"><code>TSdlWindowFlags</code></a></p>
 <h4 id="see-also_3">See Also</h4>
 <ul>
 <li><a href="./#Create_0">Create</a></li>
@@ -2871,7 +2871,7 @@
 <ul>
 <li><a href="./#FullscreenMode">FullscreenMode</a></li>
 <li><a href="./#Sync">Sync</a></li>
-<li>TSdlWindowFlag.Fullscreen</li>
+<li><a href="../../types/TSdlWindowFlag/">TSdlWindowFlag</a></li>
 </ul>
 <h4 id="remarks_6">Remarks</h4>
 <p>This property should only be used on the main thread. </p>
@@ -2882,7 +2882,7 @@
 <p>If the window is currently in the fullscreen state, this request is asynchronous on some windowing systems and the new mode dimensions may not be applied immediately upon the return of this function. If an immediate change is required, call Sync to block until the changes have taken effect.</p>
 <p>When the new mode takes effect, an TSdlEventKind.WindowResized and/or an TSdlEventKind.WindowPixelSizeChanged event will be emitted with the new mode dimensions. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">FullscreenMode</span><span class="o">:</span><span class="w"> </span><span class="n">PSdlDisplayMode</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetFullscreenMode</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetFullscreenMode</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">PSdlDisplayMode</span></code></p>
+<p><strong>Type: </strong><a href="../../types/PSdlDisplayMode/"><code>PSdlDisplayMode</code></a></p>
 <h4 id="exceptions_6">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised when setting the mode failed.</p>
 <h4 id="see-also_5">See Also</h4>
@@ -2896,7 +2896,7 @@
 <h3 id="GrabbedWindow"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span>  <span class="twemoji" title="Class property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg></span> GrabbedWindow</h3>
 <p>The window that currently has an input grab enabled, or nil otherwise. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">property</span><span class="w"> </span><span class="py">GrabbedWindow</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlWindow</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetGrabbedWindow</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlWindow</span></code></p>
+<p><strong>Type: </strong><a href="./"><code>TSdlWindow</code></a></p>
 <h4 id="see-also_6">See Also</h4>
 <ul>
 <li><a href="./#MouseGrab">MouseGrab</a></li>
@@ -2929,7 +2929,7 @@
 <p>Set the icon for the window.</p>
 <p>If this property is a surface with alternate representations, the surface will be interpreted as the content to be used for 100% display scale, and the alternate representations will be used for high DPI situations. For example, if the original surface is 32x32, then on a 2x macOS display or 200% display scale on Windows, a 64x64 version of the image will be used, if available. If a matching version of the image isn't available, the closest larger size image will be downscaled to the appropriate size and be used instead, if available. Otherwise, the closest smaller image will be upscaled and be used instead. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Icon</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSurface</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetIcon</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlSurface</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlSurface/"><code>TSdlSurface</code></a></p>
 <h4 id="exceptions_8">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="remarks_11">Remarks</h4>
@@ -2939,12 +2939,12 @@
 <p>The numeric ID of the window.</p>
 <p>The numeric ID is what TSdlWindowEvent references, and is necessary to map these events to specific TSdlWindow objects. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">ID</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlWindowID</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetID</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlWindowID</span></code></p>
+<p><strong>Type: </strong><a href="../../types/TSdlWindowID/"><code>TSdlWindowID</code></a></p>
 <h4 id="exceptions_9">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="see-also_8">See Also</h4>
 <ul>
-<li>SDL_GetWindowFromID</li>
+<li><a href="./#FromID">FromID</a></li>
 </ul>
 <h4 id="remarks_12">Remarks</h4>
 <p>This property should only be used on the main thread. </p>
@@ -2992,12 +2992,12 @@
 <h3 id="MaximumSize"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> MaximumSize</h3>
 <p>The maximum size of the window's client area. See GetMaximumSize and SetMaximumSize for more information. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">MaximumSize</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPoint</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetMaximumSizePoint</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetMaximumSizePoint</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlPoint</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlPoint/"><code>TSdlPoint</code></a></p>
 <hr />
 <h3 id="MinimumSize"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> MinimumSize</h3>
 <p>The minimum size of the window's client area. See GetMinimumSize and SetMinimumSize for more information. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">MinimumSize</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPoint</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetMinimumSizePoint</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetMinimumSizePoint</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlPoint</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlPoint/"><code>TSdlPoint</code></a></p>
 <hr />
 <h3 id="Modal"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Modal</h3>
 <p>The modal state of the window.</p>
@@ -3009,7 +3009,6 @@
 <h4 id="see-also_11">See Also</h4>
 <ul>
 <li><a href="./#Parent">Parent</a></li>
-<li>TSdlWindowFlag.Modal</li>
 </ul>
 <h4 id="remarks_16">Remarks</h4>
 <p>This property should only be used on the main thread. </p>
@@ -3034,7 +3033,7 @@
 <p>Note that setting this does NOT grab the cursor, it only defines the area a cursor is restricted to when the window has mouse focus.</p>
 <p>This property is a pointer to a rectangle in window-relative coordinates, or nil if there isn't a confinement rectangle. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">MouseRect</span><span class="o">:</span><span class="w"> </span><span class="n">PSdlRect</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetMouseRect</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetMouseRect</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">PSdlRect</span></code></p>
+<p><strong>Type: </strong><a href="../../types/PSdlRect/"><code>PSdlRect</code></a></p>
 <h4 id="exceptions_14">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="see-also_13">See Also</h4>
@@ -3061,7 +3060,7 @@
 <p>Popup windows cannot change parents and attempts to do so will fail.</p>
 <p>Setting a parent window that is currently the sibling or descendent of the child window results in undefined behavior. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Parent</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlWindow</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetParent</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetParent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlWindow</span></code></p>
+<p><strong>Type: </strong><a href="./"><code>TSdlWindow</code></a></p>
 <h4 id="exceptions_16">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="remarks_20">Remarks</h4>
@@ -3084,7 +3083,7 @@
 <h3 id="PixelFormat"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> PixelFormat</h3>
 <p>The pixel format associated with the window. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">PixelFormat</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPixelFormat</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetPixelFormat</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlPixelFormat</span></code></p>
+<p><strong>Type: </strong><a href="../../types/TSdlPixelFormat/"><code>TSdlPixelFormat</code></a></p>
 <h4 id="exceptions_18">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="remarks_22">Remarks</h4>
@@ -3093,7 +3092,7 @@
 <h3 id="Position"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Position</h3>
 <p>The position of the window. See SetPosition and GetPosition for more information. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Position</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPoint</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetPositionPoint</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetPositionPoint</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlPoint</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlPoint/"><code>TSdlPoint</code></a></p>
 <h4 id="exceptions_19">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="remarks_23">Remarks</h4>
@@ -3133,7 +3132,7 @@
 <li><code>TSdlProperty.WindowWin32Instance</code>: the HINSTANCE associated with the window </li>
 </ul>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Properties</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlProperties</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetProperties</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlProperties</span></code></p>
+<p><strong>Type: </strong><a href="../../../Neslib.Sdl3.Basics/classes/TSdlProperties/"><code>TSdlProperties</code></a></p>
 <h4 id="exceptions_20">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="remarks_24">Remarks</h4>
@@ -3158,7 +3157,7 @@
 <p>The safe area for this window.</p>
 <p>Some devices have portions of the screen which are partially obscured or not interactive, possibly due to on-screen controls, curved edges, camera notches, TV overscan, etc. This function provides the area of the window which is safe to have interactable content. You should continue rendering into the rest of the window, but it should not contain visually important or interactible content. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">SafeArea</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRect</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetSafeArea</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlRect</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlRect/"><code>TSdlRect</code></a></p>
 <h4 id="exceptions_22">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="remarks_26">Remarks</h4>
@@ -3170,7 +3169,7 @@
 <p>The shape is copied inside this function, so you can free it afterwards. If your shape surface changes, you should set this property again to update the window. This is an expensive operation, so should be done sparingly.</p>
 <p>The window must have been created with the TSdlWindowFlag.Transparent flag. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Shape</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSurface</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetShape</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetShape</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlSurface</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlSurface/"><code>TSdlSurface</code></a></p>
 <h4 id="exceptions_23">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="remarks_27">Remarks</h4>
@@ -3179,7 +3178,7 @@
 <h3 id="Size"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Size</h3>
 <p>The size of the window. See SetSize and GetSize for more information. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Size</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPoint</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetSizePoint</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetSizePoint</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlPoint</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlPoint/"><code>TSdlPoint</code></a></p>
 <h4 id="exceptions_24">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="remarks_28">Remarks</h4>
@@ -3188,7 +3187,7 @@
 <h3 id="SizeInPixels"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> SizeInPixels</h3>
 <p>The size of the window in pixels. See GetSizeInPixels for more information. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">SizeInPixels</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPoint</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetSizeInPixelsPoint</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlPoint</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlPoint/"><code>TSdlPoint</code></a></p>
 <h4 id="exceptions_25">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="remarks_29">Remarks</h4>
@@ -3201,7 +3200,7 @@
 <p>You may not combine this with 3D or the rendering API on this window.</p>
 <p>This function is affected by <code>TSdlHints.FramebufferAcceleration</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Surface</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSurface</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetSurface</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlSurface</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlSurface/"><code>TSdlSurface</code></a></p>
 <h4 id="exceptions_26">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="see-also_16">See Also</h4>
@@ -3218,7 +3217,7 @@
 <p>When a window surface is created, vsync defaults to TSdlWindowSurfaceVsync.Disabled.</p>
 <p>The property can be 1 to synchronize present with every vertical refresh, 2 to synchronize present with every second vertical refresh, etc., TSdlWindowSurfaceVsync.Adaptive for late swap tearing (adaptive vsync), or TSdlWindowSurfaceVsync.Disabled to disable. Not every value is supported by every driver, so you should check the return value to see whether the requested setting is supported. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">SurfaceVSync</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlWindowSurfaceVsync</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetSurfaceVSync</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetSurfaceVSync</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlWindowSurfaceVsync</span></code></p>
+<p><strong>Type: </strong><a href="../../types/TSdlWindowSurfaceVsync/"><code>TSdlWindowSurfaceVsync</code></a></p>
 <h4 id="exceptions_27">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="remarks_31">Remarks</h4>
@@ -3241,24 +3240,20 @@
 <p><strong>Type: </strong><code class="language-delphi highlight"><span class="k">String</span></code></p>
 <h4 id="exceptions_28">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="see-also_18">See Also</h4>
-<ul>
-<li>SDL_GetWindowTitle</li>
-</ul>
 <h4 id="remarks_33">Remarks</h4>
 <p>This property should only be used on the main thread. </p>
 <hr />
 <h3 id="Windows"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span>  <span class="twemoji" title="Class property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg></span> Windows</h3>
 <p>A list of valid windows. </p>
-<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">property</span><span class="w"> </span><span class="py">Windows</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetWindows</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TArray</span></code></p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">property</span><span class="w"> </span><span class="py">Windows</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlWindow</span><span class="o">&gt;</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetWindows</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlWindow</span><span class="o">&gt;</span></code></p>
 <h4 id="remarks_34">Remarks</h4>
 <p>This property should only be used on the main thread. </p>
 <hr />
 <h3 id="WithKeyboardFocus"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span>  <span class="twemoji" title="Class property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg></span> WithKeyboardFocus</h3>
 <p>The window which currently has keyboard focus. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">property</span><span class="w"> </span><span class="py">WithKeyboardFocus</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlWindow</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetWithKeyboardFocus</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlWindow</span></code></p>
+<p><strong>Type: </strong><a href="./"><code>TSdlWindow</code></a></p>
 <h4 id="remarks_35">Remarks</h4>
 <p>This property should only be used on the main thread. </p>
 <hr />
@@ -3308,10 +3303,10 @@
 <p>If this window is being created to be used with an TSdlRenderer, you should not add a graphics API specific property (<code>TSdlProperty.WindowCreateOpenGL</code>, etc), as SDL will handle that internally when it chooses a renderer. However, SDL might need to recreate your window at that point, which may cause the window to appear briefly, and then flicker as it is recreated. The correct approach to this is to create the window with the <code>TSdlProperty.WindowCreateHidden</code> property set to True, then create the renderer, then show the window with Show. </p>
 <p><code class="language-delphi highlight"><span class="k">constructor</span><span class="w"> </span><span class="nf">Create</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AProperties</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlProperties</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
 <h4 id="parameters">Parameters</h4>
-<p><strong><code>AProperties</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlProperties</span></code></p>
+<p><strong><code>AProperties</code></strong>: <a href="../../../Neslib.Sdl3.Basics/classes/TSdlProperties/"><code>TSdlProperties</code></a></p>
 <h4 id="exceptions_29">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="see-also_19">See Also</h4>
+<h4 id="see-also_18">See Also</h4>
 <ul>
 <li><a href="../../../Neslib.Sdl3.Basics/classes/TSdlProperty/">TSdlProperty</a></li>
 <li><a href="../../../Neslib.Sdl3.Basics/classes/TSdlProperties/">TSdlProperties</a></li>
@@ -3345,7 +3340,7 @@
 <p>If a parent window is hidden or destroyed, any child popup windows will be recursively hidden or destroyed as well. Child popup windows not explicitly hidden will be restored when the parent is shown. </p>
 <p><code class="language-delphi highlight"><span class="k">constructor</span><span class="w"> </span><span class="nf">Create</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AParent</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlWindow</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AOffsetX</span><span class="o">,</span><span class="w"> </span><span class="w">  </span><span class="n">AOffsetY</span><span class="o">,</span><span class="w"> </span><span class="n">AW</span><span class="o">,</span><span class="w"> </span><span class="n">AH</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AFlags</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlWindowFlags</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
 <h4 id="parameters_1">Parameters</h4>
-<p><strong><code>AParent</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlWindow</span></code>
+<p><strong><code>AParent</code></strong>: <a href="./"><code>TSdlWindow</code></a>
 : The parent of the window.</p>
 <p><strong><code>AOffsetX</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The X position of the popup window relative to the origin of the parent.</p>
@@ -3355,11 +3350,11 @@
 : The width of the window.</p>
 <p><strong><code>AH</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The height of the window.</p>
-<p><strong><code>AFlags</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlWindowFlags</span></code>
+<p><strong><code>AFlags</code></strong>: <a href="../../types/TSdlWindowFlags/"><code>TSdlWindowFlags</code></a>
 : TSdlWindowFlag.Tooltip or TSdlWindowFlag.PopupMenu, and zero or more additional flags.</p>
 <h4 id="exceptions_30">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="see-also_20">See Also</h4>
+<h4 id="see-also_19">See Also</h4>
 <ul>
 <li><a href="./#Free">Free</a></li>
 <li><a href="./#Parent">Parent</a></li>
@@ -3412,11 +3407,11 @@
 : The width of the window.</p>
 <p><strong><code>AH</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The height of the window.</p>
-<p><strong><code>AFlags</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlWindowFlags</span></code>
+<p><strong><code>AFlags</code></strong>: <a href="../../types/TSdlWindowFlags/"><code>TSdlWindowFlags</code></a>
 : Zero or more TSdlWindowFlag's.</p>
 <h4 id="exceptions_31">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="see-also_21">See Also</h4>
+<h4 id="see-also_20">See Also</h4>
 <ul>
 <li><a href="./#Free">Free</a></li>
 <li><a href="../TSdlRenderer/">TSdlRenderer</a></li>
@@ -3432,7 +3427,7 @@
 <p>Used to compare against <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlWindow</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_3">Parameters</h4>
-<p><strong><code>ALeft</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlWindow</span></code></p>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlWindow</code></a></p>
 <p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
@@ -3443,13 +3438,13 @@
 <h4 id="parameters_4">Parameters</h4>
 <p><strong><code>AValue</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns_1">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlWindow</span></code></p>
+<p><a href="./"><code>TSdlWindow</code></a></p>
 <hr />
 <h3 id="NotEqual"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlWindow, Pointer)</h3>
 <p>Used to compare against <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlWindow</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_5">Parameters</h4>
-<p><strong><code>ALeft</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlWindow</span></code></p>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlWindow</code></a></p>
 <p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns_2">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
@@ -3460,7 +3455,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">ClearComposition</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_32">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="see-also_22">See Also</h4>
+<h4 id="see-also_21">See Also</h4>
 <ul>
 <li><a href="./#StartTextInput_0">StartTextInput</a></li>
 <li><a href="./#StopTextInput">StopTextInput</a></li>
@@ -3477,7 +3472,7 @@
 <h4 id="parameters_6">Parameters</h4>
 <p><strong><code>ACursor</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The offset of the current cursor location relative to left position of the window, in window coordinates.</p>
-<h4 id="see-also_23">See Also</h4>
+<h4 id="see-also_22">See Also</h4>
 <ul>
 <li><a href="./#GetTextInputArea">GetTextInputArea</a></li>
 <li><a href="./#SetTextInputArea">SetTextInputArea</a></li>
@@ -3492,7 +3487,7 @@
 <h4 id="exceptions_34">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_7">Parameters</h4>
-<p><strong><code>AOperation</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlFlashOperation</span></code>
+<p><strong><code>AOperation</code></strong>: <a href="../../types/TSdlFlashOperation/"><code>TSdlFlashOperation</code></a>
 : The operation to perform.</p>
 <h4 id="remarks_41">Remarks</h4>
 <p>This function should only be called on the main thread. </p>
@@ -3510,7 +3505,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">FreeSurface</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_35">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="see-also_24">See Also</h4>
+<h4 id="see-also_23">See Also</h4>
 <ul>
 <li><a href="./#Surface">Surface</a></li>
 <li><a href="./#HasSurface">HasSurface</a></li>
@@ -3525,11 +3520,11 @@
 <h4 id="exceptions_36">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure or if the window does not exist.</p>
 <h4 id="parameters_8">Parameters</h4>
-<p><strong><code>AId</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlWindowID</span></code>
+<p><strong><code>AId</code></strong>: <a href="../../types/TSdlWindowID/"><code>TSdlWindowID</code></a>
 : The ID of the window.</p>
 <h4 id="returns_3">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlWindow</span></code>: The window associated with <code>AId</code>.</p>
-<h4 id="see-also_25">See Also</h4>
+<p><a href="./"><code>TSdlWindow</code></a>: The window associated with <code>AId</code>.</p>
+<h4 id="see-also_24">See Also</h4>
 <ul>
 <li><a href="./#ID">ID</a></li>
 </ul>
@@ -3546,7 +3541,7 @@
 : Is set to the minimum aspect ratio of the window.</p>
 <p><strong><code>AMaxAspect</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>
 : Is set to the maximum aspect ratio of the window.</p>
-<h4 id="see-also_26">See Also</h4>
+<h4 id="see-also_25">See Also</h4>
 <ul>
 <li><a href="./#SetAspectRatio">SetAspectRatio</a></li>
 </ul>
@@ -3568,7 +3563,7 @@
 : Set to size of the bottom border.</p>
 <p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : Set to size of the right border.</p>
-<h4 id="see-also_27">See Also</h4>
+<h4 id="see-also_26">See Also</h4>
 <ul>
 <li><a href="./#GetSize">GetSize</a></li>
 </ul>
@@ -3583,7 +3578,7 @@
 <h4 id="parameters_11">Parameters</h4>
 <p><strong><code>AMaxW</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code></p>
 <p><strong><code>AMaxH</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code></p>
-<h4 id="see-also_28">See Also</h4>
+<h4 id="see-also_27">See Also</h4>
 <ul>
 <li><a href="./#GetMinimumSize">GetMinimumSize</a></li>
 <li><a href="./#SetMaximumSize">SetMaximumSize</a></li>
@@ -3601,7 +3596,7 @@
 : Is set to the minimum width of the window.</p>
 <p><strong><code>AMinH</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : Is set to the minimum height of the window.</p>
-<h4 id="see-also_29">See Also</h4>
+<h4 id="see-also_28">See Also</h4>
 <ul>
 <li><a href="./#GetMaximumSize">GetMaximumSize</a></li>
 <li><a href="./#SetMinimumSize">SetMinimumSize</a></li>
@@ -3616,11 +3611,11 @@
 <h4 id="exceptions_41">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_13">Parameters</h4>
-<p><strong><code>AX</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlWindowPos</span></code>
+<p><strong><code>AX</code></strong>: <a href="../../types/TSdlWindowPos/"><code>TSdlWindowPos</code></a>
 : Set to the X position of the window.</p>
-<p><strong><code>AY</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlWindowPos</span></code>
+<p><strong><code>AY</code></strong>: <a href="../../types/TSdlWindowPos/"><code>TSdlWindowPos</code></a>
 : Set to the Y position of the window.</p>
-<h4 id="see-also_30">See Also</h4>
+<h4 id="see-also_29">See Also</h4>
 <ul>
 <li><a href="./#SetPosition">SetPosition</a></li>
 </ul>
@@ -3638,9 +3633,9 @@
 : Is set to the width of the window.</p>
 <p><strong><code>AH</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : a pointer filled in with the height of the window, may be NULL.</p>
-<h4 id="see-also_31">See Also</h4>
+<h4 id="see-also_30">See Also</h4>
 <ul>
-<li>TSdlRenderer.OutputSize</li>
+<li><a href="../TSdlRenderer/#OutputSize">TSdlRenderer.OutputSize</a></li>
 <li><a href="./#GetSizeInPixels">GetSizeInPixels</a></li>
 <li><a href="./#SetSize">SetSize</a></li>
 </ul>
@@ -3657,7 +3652,7 @@
 : Is set to the width in pixels.</p>
 <p><strong><code>AH</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : Is set to the height in pixels.</p>
-<h4 id="see-also_32">See Also</h4>
+<h4 id="see-also_31">See Also</h4>
 <ul>
 <li><a href="./#Create_0">Create</a></li>
 <li><a href="./#GetSize">GetSize</a></li>
@@ -3672,11 +3667,11 @@
 <h4 id="exceptions_44">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_16">Parameters</h4>
-<p><strong><code>ARect</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlRect</span></code>
+<p><strong><code>ARect</code></strong>: <a href="../TSdlRect/"><code>TSdlRect</code></a>
 : Is set to the text input area.</p>
 <p><strong><code>ACursor</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : Is set to the current cursor location relative to <code>ARect.X</code>.</p>
-<h4 id="see-also_33">See Also</h4>
+<h4 id="see-also_32">See Also</h4>
 <ul>
 <li><a href="./#SetTextInputArea">SetTextInputArea</a></li>
 </ul>
@@ -3688,10 +3683,9 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Hide</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_45">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="see-also_34">See Also</h4>
+<h4 id="see-also_33">See Also</h4>
 <ul>
 <li><a href="./#Show">Show</a></li>
-<li>TSdlWindowFlag.Hidden</li>
 </ul>
 <h4 id="remarks_53">Remarks</h4>
 <p>This method should only be called on the main thread. </p>
@@ -3705,7 +3699,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Maximize</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_46">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="see-also_35">See Also</h4>
+<h4 id="see-also_34">See Also</h4>
 <ul>
 <li><a href="./#Minimize">Minimize</a></li>
 <li><a href="./#Restore">Restore</a></li>
@@ -3722,7 +3716,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Minimize</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_47">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="see-also_36">See Also</h4>
+<h4 id="see-also_35">See Also</h4>
 <ul>
 <li><a href="./#Maximize">Maximize</a></li>
 <li><a href="./#Restore">Restore</a></li>
@@ -3748,7 +3742,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Restore</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_49">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="see-also_37">See Also</h4>
+<h4 id="see-also_36">See Also</h4>
 <ul>
 <li><a href="./#Maximize">Maximize</a></li>
 <li><a href="./#Minimize">Minimize</a></li>
@@ -3771,7 +3765,7 @@
 : The minimum aspect ratio of the window, or 0.0 for no limit.</p>
 <p><strong><code>AMaxAspect</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>
 : The maximum aspect ratio of the window, or 0.0 for no limit.</p>
-<h4 id="see-also_38">See Also</h4>
+<h4 id="see-also_37">See Also</h4>
 <ul>
 <li><a href="./#GetAspectRatio">GetAspectRatio</a></li>
 <li><a href="./#Sync">Sync</a></li>
@@ -3789,7 +3783,7 @@
 <p>Your callback may fire at any time, and its firing does not indicate any specific behavior (for example, on Windows, this certainly might fire when the OS is deciding whether to drag your window, but it fires for lots of other reasons, too, some unrelated to anything you probably care about <em>and when the mouse isn't actually at the location it is testing</em>). Since this can fire at any time, you should try to keep your callback efficient, devoid of allocations, etc. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">SetHitTestCallback</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ACallback</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlHitTestCallback</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span></code></p>
 <h4 id="parameters_18">Parameters</h4>
-<p><strong><code>ACallback</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlHitTestCallback</span></code>
+<p><strong><code>ACallback</code></strong>: <a href="../../types/TSdlHitTestCallback/"><code>TSdlHitTestCallback</code></a>
 : The function to call when doing a hit-test.</p>
 <h4 id="returns_4">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True on success or False on failure (eg. when the platform does not support hit-testing.</p>
@@ -3806,7 +3800,7 @@
 : The maximum width of the window, or 0 for no limit.</p>
 <p><strong><code>AMaxH</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The maximum height of the window, or 0 for no limit.</p>
-<h4 id="see-also_39">See Also</h4>
+<h4 id="see-also_38">See Also</h4>
 <ul>
 <li><a href="./#GetMaximumSize">GetMaximumSize</a></li>
 <li><a href="./#SetMinimumSize">SetMinimumSize</a></li>
@@ -3824,7 +3818,7 @@
 : The minimum width of the window, or 0 for no limit.</p>
 <p><strong><code>AMinH</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The minimum height of the window, or 0 for no limit.</p>
-<h4 id="see-also_40">See Also</h4>
+<h4 id="see-also_39">See Also</h4>
 <ul>
 <li><a href="./#GetMinimumSize">GetMinimumSize</a></li>
 <li><a href="./#SetMaximumSize">SetMaximumSize</a></li>
@@ -3840,9 +3834,9 @@
 <p>When the window position changes, an TSdlEventKind.WindowMoved event will be emitted with the window's new coordinates. Note that the new coordinates may not match the exact coordinates requested, as some windowing systems can restrict the position of the window in certain scenarios (e.g. constraining the position so the window is always within desktop bounds). Additionally, as this is just a request, it can be denied by the windowing system. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetPosition</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AX</span><span class="o">,</span><span class="w"> </span><span class="n">AY</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlWindowPos</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_21">Parameters</h4>
-<p><strong><code>AX</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlWindowPos</span></code>
+<p><strong><code>AX</code></strong>: <a href="../../types/TSdlWindowPos/"><code>TSdlWindowPos</code></a>
 : The X coordinate of the window, or <code>TSdlWindowPos.Centered</code> <param>The Y coordinate of the window, or <code>TSdlWindowPos.Centered</code> <exception>Raised on failure.</exception><seealso/><seealso/><remarks>This method should only be called on the main thread. </remarks></param></p>
-<p><strong><code>AY</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlWindowPos</span></code></p>
+<p><strong><code>AY</code></strong>: <a href="../../types/TSdlWindowPos/"><code>TSdlWindowPos</code></a></p>
 <hr />
 <h3 id="SetSize"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> SetSize(Integer, Integer)</h3>
 <p>Request that the size of a window's client area be set.</p>
@@ -3858,7 +3852,7 @@
 : The height of the window, must be &gt; 0.</p>
 <h4 id="returns_5">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True on success, False on failure.</p>
-<h4 id="see-also_41">See Also</h4>
+<h4 id="see-also_40">See Also</h4>
 <ul>
 <li><a href="./#GetSize">GetSize</a></li>
 <li><a href="./#FullscreenMode">FullscreenMode</a></li>
@@ -3874,11 +3868,11 @@
 <h4 id="exceptions_53">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_23">Parameters</h4>
-<p><strong><code>ARect</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlRect</span></code>
+<p><strong><code>ARect</code></strong>: <a href="../TSdlRect/"><code>TSdlRect</code></a>
 : The text input area, in window coordinates.</p>
 <p><strong><code>ACursor</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The offset of the current cursor location relative to <code>ARect.X</code>, in window coordinates.</p>
-<h4 id="see-also_42">See Also</h4>
+<h4 id="see-also_41">See Also</h4>
 <ul>
 <li><a href="./#GetTextInputArea">GetTextInputArea</a></li>
 <li><a href="./#ClearTextInputArea">ClearTextInputArea</a></li>
@@ -3892,10 +3886,10 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Show</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_54">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="see-also_43">See Also</h4>
+<h4 id="see-also_42">See Also</h4>
 <ul>
 <li><a href="./#Hide">Hide</a></li>
-<li>Raise</li>
+<li><a href="./#RaiseAndFocus">RaiseAndFocus</a></li>
 </ul>
 <h4 id="remarks_64">Remarks</h4>
 <p>This method should only be called on the main thread. </p>
@@ -3935,9 +3929,9 @@
 <h4 id="exceptions_56">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_25">Parameters</h4>
-<p><strong><code>AProps</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlProperties</span></code>
+<p><strong><code>AProps</code></strong>: <a href="../../../Neslib.Sdl3.Basics/classes/TSdlProperties/"><code>TSdlProperties</code></a>
 : The properties to use.</p>
-<h4 id="see-also_44">See Also</h4>
+<h4 id="see-also_43">See Also</h4>
 <ul>
 <li><a href="./#SetTextInputArea">SetTextInputArea</a></li>
 <li><a href="./#StopTextInput">StopTextInput</a></li>
@@ -3954,7 +3948,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">StartTextInput</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_57">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="see-also_45">See Also</h4>
+<h4 id="see-also_44">See Also</h4>
 <ul>
 <li><a href="./#SetTextInputArea">SetTextInputArea</a></li>
 <li><a href="./#StopTextInput">StopTextInput</a></li>
@@ -3969,7 +3963,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">StopTextInput</span></code></p>
 <h4 id="exceptions_58">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="see-also_46">See Also</h4>
+<h4 id="see-also_45">See Also</h4>
 <ul>
 <li><a href="./#StartTextInput_0">StartTextInput</a></li>
 </ul>
@@ -3983,7 +3977,7 @@
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">Sync</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="returns_6">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True on success or False if the operation timed out before the window was in the requested state.</p>
-<h4 id="see-also_47">See Also</h4>
+<h4 id="see-also_46">See Also</h4>
 <ul>
 <li><a href="./#SetSize">SetSize</a></li>
 <li><a href="./#SetPosition">SetPosition</a></li>
@@ -4004,9 +3998,9 @@
 <h4 id="exceptions_59">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_26">Parameters</h4>
-<p><strong><code>ARects</code></strong>: <code class="language-delphi highlight"><span class="k">array</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">TSdlRect</span></code>
+<p><strong><code>ARects</code></strong>: <a href="../TSdlRect/"><code>array of TSdlRect</code></a>
 : An array of TSdlRect records representing areas of the surface to copy, in pixels.</p>
-<h4 id="see-also_48">See Also</h4>
+<h4 id="see-also_47">See Also</h4>
 <ul>
 <li><a href="./#Surface">Surface</a></li>
 </ul>
@@ -4023,7 +4017,7 @@
 <h4 id="parameters_27">Parameters</h4>
 <p><strong><code>ARects</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlRect</span><span class="o">&gt;</span></code>
 : An array of TSdlRect records representing areas of the surface to copy, in pixels.</p>
-<h4 id="see-also_49">See Also</h4>
+<h4 id="see-also_48">See Also</h4>
 <ul>
 <li><a href="./#Surface">Surface</a></li>
 </ul>
@@ -4036,7 +4030,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">UpdateSurface</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_61">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="see-also_50">See Also</h4>
+<h4 id="see-also_49">See Also</h4>
 <ul>
 <li><a href="./#Surface">Surface</a></li>
 </ul>
@@ -4049,9 +4043,9 @@
 <p>Note that this function will appear to succeed, but not actually move the mouse when used over Microsoft Remote Desktop. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">WarpMouse</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APosition</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPointF</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_28">Parameters</h4>
-<p><strong><code>APosition</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlPointF</span></code>
+<p><strong><code>APosition</code></strong>: <a href="../TSdlPointF/"><code>TSdlPointF</code></a>
 : The coordinate within the window.</p>
-<h4 id="see-also_51">See Also</h4>
+<h4 id="see-also_50">See Also</h4>
 <ul>
 <li><a href="../../../Neslib.Sdl3.Input/classes/TSdlMouse/#WarpGlobal_0">TSdlMouse.WarpGlobal</a></li>
 </ul>
@@ -4068,7 +4062,7 @@
 : The X coordinate within the window.</p>
 <p><strong><code>AY</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>
 : The Y coordinate within the window.</p>
-<h4 id="see-also_52">See Also</h4>
+<h4 id="see-also_51">See Also</h4>
 <ul>
 <li><a href="../../../Neslib.Sdl3.Input/classes/TSdlMouse/#WarpGlobal_0">TSdlMouse.WarpGlobal</a></li>
 </ul>

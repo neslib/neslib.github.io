@@ -2329,7 +2329,7 @@
 <p><code class="language-delphi highlight"><span class="kt">Pointer</span></code>: A pointer to the named EGL function. The returned pointer should be cast to the appropriate function signature.</p>
 <h4 id="see-also">See Also</h4>
 <ul>
-<li>CurrentDisplay</li>
+<li><a href="../TSdlEglDisplay/#Current">TSdlEglDisplay.Current</a></li>
 </ul>
 <h4 id="remarks">Remarks</h4>
 <p>This method should only be called on the main thread. </p>
@@ -2340,11 +2340,11 @@
 <p>NOTE: These callback pointers will be reset after TSdlGL.ResetAttributes. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">procedure</span><span class="w"> </span><span class="nf">SetAttributeCallbacks</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APlatformAttribCallback</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlEglAttribArrayCallback</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ASurfaceAttribCallback</span><span class="o">,</span><span class="w"> </span><span class="n">AContextAttribCallback</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlEglIntArrayCallback</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_1">Parameters</h4>
-<p><strong><code>APlatformAttribCallback</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlEglAttribArrayCallback</span></code>
+<p><strong><code>APlatformAttribCallback</code></strong>: <a href="../../types/TSdlEglAttribArrayCallback/"><code>TSdlEglAttribArrayCallback</code></a>
 : Callback for attributes to pass to eglGetPlatformDisplay. May be nil.</p>
-<p><strong><code>ASurfaceAttribCallback</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlEglIntArrayCallback</span></code>
+<p><strong><code>ASurfaceAttribCallback</code></strong>: <a href="../../types/TSdlEglIntArrayCallback/"><code>TSdlEglIntArrayCallback</code></a>
 : Callback for attributes to pass to eglCreateSurface. May be nil.</p>
-<p><strong><code>AContextAttribCallback</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlEglIntArrayCallback</span></code>
+<p><strong><code>AContextAttribCallback</code></strong>: <a href="../../types/TSdlEglIntArrayCallback/"><code>TSdlEglIntArrayCallback</code></a>
 : Callback for attributes to pass to eglCreateContext. May be nil.</p>
 <h4 id="remarks_1">Remarks</h4>
 <p>This method should only be called on the main thread. </p>

@@ -2141,8 +2141,8 @@
 <hr />
 <h3 id="Bindings"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Bindings</h3>
 <p>Get the SDL joystick layer bindings for a gamepad. </p>
-<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Bindings</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetBindings</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TArray</span></code></p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Bindings</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGamepadBinding</span><span class="o">&gt;</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetBindings</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGamepadBinding</span><span class="o">&gt;</span></code></p>
 <h4 id="exceptions">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <hr />
@@ -2160,7 +2160,7 @@
 <h3 id="ConnectionState"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> ConnectionState</h3>
 <p>The connection state of a gamepad. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">ConnectionState</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGamepadConnectionState</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetConnectionState</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlGamepadConnectionState</span></code></p>
+<p><strong>Type: </strong><a href="../../types/TSdlGamepadConnectionState/"><code>TSdlGamepadConnectionState</code></a></p>
 <h4 id="exceptions_1">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <hr />
@@ -2182,8 +2182,8 @@
 <hr />
 <h3 id="Gamepads"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span>  <span class="twemoji" title="Class property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg></span> Gamepads</h3>
 <p>A list of currently connected gamepads. </p>
-<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">property</span><span class="w"> </span><span class="py">Gamepads</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetGamepads</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TArray</span></code></p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">property</span><span class="w"> </span><span class="py">Gamepads</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGamepadID</span><span class="o">&gt;</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetGamepads</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGamepadID</span><span class="o">&gt;</span></code></p>
 <h4 id="exceptions_2">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="see-also_3">See Also</h4>
@@ -2204,7 +2204,7 @@
 <h3 id="ID"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> ID</h3>
 <p>The instance ID of this opened gamepad. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">ID</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGamepadID</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetID</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlGamepadID</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlGamepadID/"><code>TSdlGamepadID</code></a></p>
 <h4 id="exceptions_3">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <hr />
@@ -2216,7 +2216,7 @@
 <h3 id="Kind"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Kind</h3>
 <p>The type of this opened gamepad. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Kind</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGamepadKind</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetKind</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlGamepadKind</span></code></p>
+<p><strong>Type: </strong><a href="../../types/TSdlGamepadKind/"><code>TSdlGamepadKind</code></a></p>
 <h4 id="see-also_5">See Also</h4>
 <ul>
 <li><a href="../TSdlGamepadID/#Kind">TSdlGamepadID.Kind</a></li>
@@ -2232,14 +2232,14 @@
 <h4 id="see-also_6">See Also</h4>
 <ul>
 <li><a href="./#AddMapping">AddMapping</a></li>
-<li>TSdlJoystickID.Mapping</li>
+<li><a href="../TSdlGamepadID/#Mapping">TSdlGamepadID.Mapping</a></li>
 <li><a href="./#MappingForGuid">MappingForGuid</a></li>
 </ul>
 <hr />
 <h3 id="Mappings"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span>  <span class="twemoji" title="Class property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg></span> Mappings</h3>
 <p>The current gamepad mappings. </p>
-<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">property</span><span class="w"> </span><span class="py">Mappings</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetMappings</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TArray</span></code></p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">property</span><span class="w"> </span><span class="py">Mappings</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="k">String</span><span class="o">&gt;</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetMappings</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="k">String</span><span class="o">&gt;</span></code></p>
 <h4 id="exceptions_5">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <hr />
@@ -2317,14 +2317,14 @@
 <li><code>TSdlProperty.GamepadCapTriggerRumble</code>: True if this gamepad has simple trigger rumble </li>
 </ul>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Properties</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlProperties</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetProperties</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlProperties</span></code></p>
+<p><strong>Type: </strong><a href="../../../Neslib.Sdl3.Basics/classes/TSdlProperties/"><code>TSdlProperties</code></a></p>
 <h4 id="exceptions_7">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <hr />
 <h3 id="RealKind"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> RealKind</h3>
 <p>The type of this opened gamepad, ignoring any mapping override. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">RealKind</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGamepadKind</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetRealKind</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlGamepadKind</span></code></p>
+<p><strong>Type: </strong><a href="../../types/TSdlGamepadKind/"><code>TSdlGamepadKind</code></a></p>
 <h4 id="see-also_12">See Also</h4>
 <ul>
 <li><a href="../TSdlGamepadID/#RealKind">TSdlGamepadID.RealKind</a></li>
@@ -2372,7 +2372,7 @@
 <p>Used to compare against <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGamepad</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters">Parameters</h4>
-<p><strong><code>ALeft</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGamepad</span></code></p>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlGamepad</code></a></p>
 <p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
@@ -2383,13 +2383,13 @@
 <h4 id="parameters_1">Parameters</h4>
 <p><strong><code>AValue</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns_1">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlGamepad</span></code></p>
+<p><a href="./"><code>TSdlGamepad</code></a></p>
 <hr />
 <h3 id="NotEqual"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlGamepad, Pointer)</h3>
 <p>Used to compare against <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGamepad</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_2">Parameters</h4>
-<p><strong><code>ALeft</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGamepad</span></code></p>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlGamepad</code></a></p>
 <p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns_2">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
@@ -2412,7 +2412,12 @@
 <p>Buttons can be used as a gamepad axes and vice versa.</p>
 <p>If a device with this GUID is already plugged in, SDL will generate an TSdlEventKind.GamepadAdded event.</p>
 <p>This string shows an example of a valid mapping for a gamepad:</p>
-<p><code>'341a3608000000000000504944564944,Afterglow PS3 Controller,'+ 'a:b1,b:b2,y:b3,x:b0,start:b9,guide:b12,back:b8,dpup:h0.1,dpleft:h0.8,'+ 'dpdown:h0.4,dpright:h0.2,leftshoulder:b4,rightshoulder:b5,'+ 'leftstick:b10,rightstick:b11,leftx:a0,lefty:a1,rightx:a2,righty:a3,'+ 'lefttrigger:b6,righttrigger:b7'</code> </p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>  &#39;341a3608000000000000504944564944,Afterglow PS3 Controller,&#39;+
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  &#39;a:b1,b:b2,y:b3,x:b0,start:b9,guide:b12,back:b8,dpup:h0.1,dpleft:h0.8,&#39;+
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  &#39;dpdown:h0.4,dpright:h0.2,leftshoulder:b4,rightshoulder:b5,&#39;+
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  &#39;leftstick:b10,rightstick:b11,leftx:a0,lefty:a1,rightx:a2,righty:a3,&#39;+
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  &#39;lefttrigger:b6,righttrigger:b7&#39;
+</span></code></pre></div>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="nf">AddMapping</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AMapping</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="exceptions_9">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
@@ -2428,7 +2433,6 @@
 <li><a href="./#MappingForGuid">MappingForGuid</a></li>
 <li><a href="../../../Neslib.Sdl3.Basics/classes/TSdlHints/#GameControllerConfig">TSdlHints.GameControllerConfig</a></li>
 <li><a href="../../../Neslib.Sdl3.Basics/classes/TSdlHints/#GameControllerConfigFile">TSdlHints.GameControllerConfigFile</a></li>
-<li>TSdlEventKind.GamepadAdded</li>
 </ul>
 <h4 id="remarks">Remarks</h4>
 <p>It is safe to call this method from any thread. </p>
@@ -2454,7 +2458,6 @@
 <li><a href="./#MappingForGuid">MappingForGuid</a></li>
 <li><a href="../../../Neslib.Sdl3.Basics/classes/TSdlHints/#GameControllerConfig">TSdlHints.GameControllerConfig</a></li>
 <li><a href="../../../Neslib.Sdl3.Basics/classes/TSdlHints/#GameControllerConfigFile">TSdlHints.GameControllerConfigFile</a></li>
-<li>TSdlEventKind.GamepadAdded</li>
 </ul>
 <h4 id="remarks_1">Remarks</h4>
 <p>It is safe to call this method from any thread. </p>
@@ -2470,7 +2473,7 @@
 <h4 id="exceptions_11">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_5">Parameters</h4>
-<p><strong><code>ASrc</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlIOStream</span></code>
+<p><strong><code>ASrc</code></strong>: <a href="../../../Neslib.Sdl3.IO/classes/TSdlIOStream/"><code>TSdlIOStream</code></a>
 : The data stream for the mappings to be added.</p>
 <p><strong><code>ACloseIO</code></strong>: <code class="language-delphi highlight"><span class="kt">Boolean</span></code>
 : If true, calls TSdlIOStream.Close on <code>ASrc</code> before returning, even in the case of an error.</p>
@@ -2483,7 +2486,6 @@
 <li><a href="./#MappingForGuid">MappingForGuid</a></li>
 <li><a href="../../../Neslib.Sdl3.Basics/classes/TSdlHints/#GameControllerConfig">TSdlHints.GameControllerConfig</a></li>
 <li><a href="../../../Neslib.Sdl3.Basics/classes/TSdlHints/#GameControllerConfigFile">TSdlHints.GameControllerConfigFile</a></li>
-<li>TSdlEventKind.GamepadAdded</li>
 </ul>
 <h4 id="remarks_2">Remarks</h4>
 <p>It is safe to call this method from any thread. </p>
@@ -2492,7 +2494,7 @@
 <p>The sfSymbolsName for a given axis on a gamepad on Apple platforms, or an empty string if not found. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">AppleSFSymbolsNameFor</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AAxis</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGamepadAxis</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_6">Parameters</h4>
-<p><strong><code>AAxis</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGamepadAxis</span></code>
+<p><strong><code>AAxis</code></strong>: <a href="../../types/TSdlGamepadAxis/"><code>TSdlGamepadAxis</code></a>
 : A button on the gamepad.</p>
 <h4 id="returns_6">Returns</h4>
 <p><code class="language-delphi highlight"><span class="k">String</span></code></p>
@@ -2501,7 +2503,7 @@
 <p>The sfSymbolsName for a given button on a gamepad on Apple platforms, or an empty string if not found. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">AppleSFSymbolsNameFor</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AButton</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGamepadButton</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_7">Parameters</h4>
-<p><strong><code>AButton</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGamepadButton</span></code>
+<p><strong><code>AButton</code></strong>: <a href="../../types/TSdlGamepadButton/"><code>TSdlGamepadButton</code></a>
 : A button on the gamepad.</p>
 <h4 id="returns_7">Returns</h4>
 <p><code class="language-delphi highlight"><span class="k">String</span></code></p>
@@ -2520,10 +2522,10 @@
 <h4 id="exceptions_12">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure (eg. when the gamepad has not been opened).</p>
 <h4 id="parameters_8">Parameters</h4>
-<p><strong><code>AInstanceID</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGamepadID</span></code>
+<p><strong><code>AInstanceID</code></strong>: <a href="../TSdlGamepadID/"><code>TSdlGamepadID</code></a>
 : The gamepad instance ID.</p>
 <h4 id="returns_8">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlGamepad</span></code>: The gamepad.</p>
+<p><a href="./"><code>TSdlGamepad</code></a>: The gamepad.</p>
 <hr />
 <h3 id="FromPlayerIndex"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span>  <span class="twemoji" title="Class method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg></span> FromPlayerIndex(Integer)</h3>
 <p>Get the gamepad associated with a player index. </p>
@@ -2534,7 +2536,7 @@
 <p><strong><code>APlayerIndex</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The player index.</p>
 <h4 id="returns_9">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlGamepad</span></code>: The gamepad.</p>
+<p><a href="./"><code>TSdlGamepad</code></a>: The gamepad.</p>
 <h4 id="see-also_19">See Also</h4>
 <ul>
 <li><a href="./#PlayerIndex">PlayerIndex</a></li>
@@ -2544,13 +2546,13 @@
 <p>Get the label of a button on the gamepad. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">GetButtonLabel</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AButton</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGamepadButton</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGamepadButtonLabel</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_10">Parameters</h4>
-<p><strong><code>AButton</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGamepadButton</span></code>
+<p><strong><code>AButton</code></strong>: <a href="../../types/TSdlGamepadButton/"><code>TSdlGamepadButton</code></a>
 : The button.</p>
 <h4 id="returns_10">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlGamepadButtonLabel</span></code>: The TSdlGamepadButtonLabel enum corresponding to the button label.</p>
+<p><a href="../../types/TSdlGamepadButtonLabel/"><code>TSdlGamepadButtonLabel</code></a>: The TSdlGamepadButtonLabel enum corresponding to the button label.</p>
 <h4 id="see-also_20">See Also</h4>
 <ul>
-<li>TSdlGamepadKind.GetButtonLabel</li>
+<li><a href="../../types/TSdlGamepadKind/#GetButtonLabel">TSdlGamepadKind.GetButtonLabel</a></li>
 </ul>
 <hr />
 <h3 id="GetPowerInfo"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> GetPowerInfo(Integer)</h3>
@@ -2563,7 +2565,7 @@
 <p><strong><code>APercent</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : Set to the percentage of battery life left, between 0 and 100. Will be set to  -1 if we can't determine a value or there is no battery.</p>
 <h4 id="returns_11">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlPowerState</span></code>: The current battery state.</p>
+<p><a href="../../../Neslib.Sdl3.Additional/types/TSdlPowerState/"><code>TSdlPowerState</code></a>: The current battery state.</p>
 <hr />
 <h3 id="GetSensorData"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> GetSensorData(TSdlSensorKind, TArray&lt;Single&gt;)</h3>
 <p>Get the current state of the gamepad sensor.</p>
@@ -2572,7 +2574,7 @@
 <h4 id="exceptions_15">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_12">Parameters</h4>
-<p><strong><code>AKind</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlSensorKind</span></code>
+<p><strong><code>AKind</code></strong>: <a href="../../types/TSdlSensorKind/"><code>TSdlSensorKind</code></a>
 : The type of sensor to query.</p>
 <p><strong><code>AData</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="kt">Single</span><span class="o">&gt;</span></code>
 : An array filled with the current sensor state.</p>
@@ -2605,7 +2607,7 @@
 <p>This merely reports whether the gamepad's mapping defined this axis, as that is all the information SDL has about the physical device. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">HasAxis</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AAxis</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGamepadAxis</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_14">Parameters</h4>
-<p><strong><code>AAxis</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGamepadAxis</span></code>
+<p><strong><code>AAxis</code></strong>: <a href="../../types/TSdlGamepadAxis/"><code>TSdlGamepadAxis</code></a>
 : The axis enum value.</p>
 <h4 id="returns_12">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True if the gamepad has this axis, False otherwise.</p>
@@ -2620,7 +2622,7 @@
 <p>This merely reports whether the gamepad's mapping defined this button, as that is all the information SDL has about the physical device. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">HasButton</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AButton</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGamepadButton</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_15">Parameters</h4>
-<p><strong><code>AButton</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGamepadButton</span></code>
+<p><strong><code>AButton</code></strong>: <a href="../../types/TSdlGamepadButton/"><code>TSdlGamepadButton</code></a>
 : The button enum value.</p>
 <h4 id="returns_13">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True if the gamepad has this button, False otherwise.</p>
@@ -2634,7 +2636,7 @@
 <p>Whether a gamepad has a particular sensor. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">HasSensor</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AKind</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSensorKind</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_16">Parameters</h4>
-<p><strong><code>AKind</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlSensorKind</span></code>
+<p><strong><code>AKind</code></strong>: <a href="../../types/TSdlSensorKind/"><code>TSdlSensorKind</code></a>
 : The type of sensor to query.</p>
 <h4 id="returns_14">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True if the sensor exists, False otherwise.</p>
@@ -2669,10 +2671,10 @@
 <h4 id="exceptions_18">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_18">Parameters</h4>
-<p><strong><code>AInstanceID</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGamepadID</span></code>
+<p><strong><code>AInstanceID</code></strong>: <a href="../TSdlGamepadID/"><code>TSdlGamepadID</code></a>
 : The gamepad instance ID.</p>
 <h4 id="returns_16">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlGamepad</span></code>: The gamepad.</p>
+<p><a href="./"><code>TSdlGamepad</code></a>: The gamepad.</p>
 <h4 id="see-also_26">See Also</h4>
 <ul>
 <li><a href="./#Close">Close</a></li>

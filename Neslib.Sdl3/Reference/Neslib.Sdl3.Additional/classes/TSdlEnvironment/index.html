@@ -2091,7 +2091,7 @@
 <p>The process environment.</p>
 <p>This is initialized at application start and is not affected by any changes to the environment variables after that point. Use SetVariable and UnsetVariable if you want to modify this environment, or SetUnsafe UnsetUnsafe if you want changes to persist to the runtime environment after SdlQuit. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">property</span><span class="w"> </span><span class="py">Process</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlEnvironment</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetProcess</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlEnvironment</span></code></p>
+<p><strong>Type: </strong><a href="./"><code>TSdlEnvironment</code></a></p>
 <h4 id="exceptions">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="remarks">Remarks</h4>
@@ -2116,7 +2116,7 @@
 <p>Used to compare against <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlEnvironment</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_1">Parameters</h4>
-<p><strong><code>ALeft</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlEnvironment</span></code></p>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlEnvironment</code></a></p>
 <p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
@@ -2127,13 +2127,13 @@
 <h4 id="parameters_2">Parameters</h4>
 <p><strong><code>AValue</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns_1">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlEnvironment</span></code></p>
+<p><a href="./"><code>TSdlEnvironment</code></a></p>
 <hr />
 <h3 id="NotEqual"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlEnvironment, Pointer)</h3>
 <p>Used to compare against <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlEnvironment</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_3">Parameters</h4>
-<p><strong><code>ALeft</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlEnvironment</span></code></p>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlEnvironment</code></a></p>
 <p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns_2">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
@@ -2189,12 +2189,12 @@
 <h4 id="exceptions_1">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="returns_5">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TArray</span></code>: An array of pointers to environment variables in the form 'variable=value'.</p>
+<p><code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="k">String</span><span class="o">&gt;</span></code>: An array of pointers to environment variables in the form 'variable=value'.</p>
 <h4 id="see-also_4">See Also</h4>
 <ul>
-<li>SDL_GetVariable</li>
-<li>SDL_SetVariable</li>
-<li>SDL_UnsetVariable</li>
+<li><a href="./#GetVariable">GetVariable</a></li>
+<li><a href="./#SetVariable">SetVariable</a></li>
+<li><a href="./#UnsetVariable">UnsetVariable</a></li>
 </ul>
 <h4 id="remarks_5">Remarks</h4>
 <p>It is safe to call this method from any thread </p>
@@ -2233,9 +2233,9 @@
 : True to overwrite the variable if it exists, False to return success without setting the variable if it already exists.</p>
 <h4 id="see-also_6">See Also</h4>
 <ul>
-<li>SDL_GetVariable</li>
-<li>SDL_GetVariables</li>
-<li>SDL_UnsetVariable</li>
+<li><a href="./#GetVariable">GetVariable</a></li>
+<li><a href="./#GetVariables">GetVariables</a></li>
+<li><a href="./#UnsetVariable">UnsetVariable</a></li>
 </ul>
 <h4 id="remarks_7">Remarks</h4>
 <p>It is safe to call this method from any thread </p>
@@ -2265,9 +2265,9 @@
 : The name of the variable to unset.</p>
 <h4 id="see-also_8">See Also</h4>
 <ul>
-<li>SDL_GetVariable</li>
-<li>SDL_GetVariables</li>
-<li>SDL_SetVariable</li>
+<li><a href="./#GetVariable">GetVariable</a></li>
+<li><a href="./#GetVariables">GetVariables</a></li>
+<li><a href="./#SetVariable">SetVariable</a></li>
 </ul>
 <h4 id="remarks_9">Remarks</h4>
 <p>It is safe to call this method from any thread </p>

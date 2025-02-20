@@ -1903,27 +1903,27 @@
 <h3 id="Devices"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span>  <span class="twemoji" title="Class property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg></span> Devices</h3>
 <p>A list of registered touch devices.</p>
 <p>On some platforms SDL first sees the touch device if it was actually used. Therefore the returned list might be empty, although devices are available. After using all devices at least once the number will be correct. </p>
-<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">property</span><span class="w"> </span><span class="py">Devices</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetDevices</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TArray</span></code></p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">property</span><span class="w"> </span><span class="py">Devices</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlTouch</span><span class="o">&gt;</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetDevices</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlTouch</span><span class="o">&gt;</span></code></p>
 <h4 id="exceptions">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <hr />
 <h3 id="DeviceType"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> DeviceType</h3>
 <p>The type of the given touch device. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">DeviceType</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTouchDeviceType</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetDeviceType</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlTouchDeviceType</span></code></p>
+<p><strong>Type: </strong><a href="../../types/TSdlTouchDeviceType/"><code>TSdlTouchDeviceType</code></a></p>
 <hr />
 <h3 id="Fingers"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Fingers</h3>
 <p>A list of active fingers for a given touch device. </p>
-<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Fingers</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetFingers</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TArray</span></code></p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Fingers</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlFinger</span><span class="o">&gt;</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetFingers</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlFinger</span><span class="o">&gt;</span></code></p>
 <h4 id="exceptions_1">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <hr />
 <h3 id="Mouse"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span>  <span class="twemoji" title="Class property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg></span> Mouse</h3>
 <p>A virtual touch device used for touch events simulated with mouse input. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">property</span><span class="w"> </span><span class="py">Mouse</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTouch</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetMouse</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlTouch</span></code></p>
+<p><strong>Type: </strong><a href="./"><code>TSdlTouch</code></a></p>
 <hr />
 <h3 id="Name"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Name</h3>
 <p>The touch device name as reported from the driver. </p>
@@ -1937,7 +1937,7 @@
 <p>Used to compare against <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTouch</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters">Parameters</h4>
-<p><strong><code>ALeft</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlTouch</span></code></p>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlTouch</code></a></p>
 <p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
@@ -1948,13 +1948,13 @@
 <h4 id="parameters_1">Parameters</h4>
 <p><strong><code>AValue</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns_1">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlTouch</span></code></p>
+<p><a href="./"><code>TSdlTouch</code></a></p>
 <hr />
 <h3 id="NotEqual"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlTouch, Pointer)</h3>
 <p>Used to compare against <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTouch</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_2">Parameters</h4>
-<p><strong><code>ALeft</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlTouch</span></code></p>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlTouch</code></a></p>
 <p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns_2">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>

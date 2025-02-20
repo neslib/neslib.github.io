@@ -2337,7 +2337,7 @@
 <h4 id="exceptions">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters">Parameters</h4>
-<p><strong><code>AFilter</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlEventFilter</span></code>
+<p><strong><code>AFilter</code></strong>: <a href="../../types/TSdlEventFilter/"><code>TSdlEventFilter</code></a>
 : Function to call when an event happens.</p>
 <h4 id="see-also">See Also</h4>
 <ul>
@@ -2352,7 +2352,7 @@
 <p>See SetFilter for more information. Unlike SetFilter, this method does not change the filter permanently, it only uses the supplied filter until this function returns. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">procedure</span><span class="w"> </span><span class="nf">Filter</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFilter</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlEventFilter</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_1">Parameters</h4>
-<p><strong><code>AFilter</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlEventFilter</span></code>
+<p><strong><code>AFilter</code></strong>: <a href="../../types/TSdlEventFilter/"><code>TSdlEventFilter</code></a>
 : The function to call when an event happens.</p>
 <h4 id="see-also_1">See Also</h4>
 <ul>
@@ -2369,9 +2369,9 @@
 <p>This function only affects currently queued events. If you want to make sure that all pending OS events are flushed, you can call Pump on the main thread immediately before the flush call. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">procedure</span><span class="w"> </span><span class="nf">Flush</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AMinKind</span><span class="o">,</span><span class="w"> </span><span class="n">AMaxKind</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlEventKind</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_2">Parameters</h4>
-<p><strong><code>AMinKind</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlEventKind</span></code>
+<p><strong><code>AMinKind</code></strong>: <a href="../../types/TSdlEventKind/"><code>TSdlEventKind</code></a>
 : The low end of event kind to be cleared.</p>
-<p><strong><code>AMaxKind</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlEventKind</span></code>
+<p><strong><code>AMaxKind</code></strong>: <a href="../../types/TSdlEventKind/"><code>TSdlEventKind</code></a>
 : The high end of event kind to be cleared, inclusive.</p>
 <h4 id="remarks_2">Remarks</h4>
 <p>This function is available since SDL 3.2.0. </p>
@@ -2384,12 +2384,8 @@
 <p>If you have user events with custom data that needs to be freed, you should use Peep to remove and clean up those events before calling this function. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">procedure</span><span class="w"> </span><span class="nf">Flush</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AKind</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlEventKind</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_3">Parameters</h4>
-<p><strong><code>AKind</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlEventKind</span></code>
+<p><strong><code>AKind</code></strong>: <a href="../../types/TSdlEventKind/"><code>TSdlEventKind</code></a>
 : The kind of event to be cleared.</p>
-<h4 id="see-also_2">See Also</h4>
-<ul>
-<li>FlushEvents</li>
-</ul>
 <h4 id="remarks_3">Remarks</h4>
 <p>It is safe to call this function from any thread. </p>
 <hr />
@@ -2398,11 +2394,11 @@
 <p>This function can be used to "chain" filters, by saving the existing filter before replacing it with a function that will call that saved filter. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="nf">GetFilter</span><span class="p">(</span><span class="n">out</span><span class="w"> </span><span class="n">AFilter</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlEventFilter</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_4">Parameters</h4>
-<p><strong><code>AFilter</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlEventFilter</span></code>
+<p><strong><code>AFilter</code></strong>: <a href="../../types/TSdlEventFilter/"><code>TSdlEventFilter</code></a>
 : The current callback function will be stored here.</p>
 <h4 id="returns">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True on success or False if there is no event filter set.</p>
-<h4 id="see-also_3">See Also</h4>
+<h4 id="see-also_2">See Also</h4>
 <ul>
 <li><a href="./#SetFilter">SetFilter</a></li>
 </ul>
@@ -2414,9 +2410,9 @@
 <p>If you need to check for a single event kind, use the other overload instead. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="nf">Has</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AMinKind</span><span class="o">,</span><span class="w"> </span><span class="n">AMaxKind</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlEventKind</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_5">Parameters</h4>
-<p><strong><code>AMinKind</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlEventKind</span></code>
+<p><strong><code>AMinKind</code></strong>: <a href="../../types/TSdlEventKind/"><code>TSdlEventKind</code></a>
 : The low end of event kind to be queried, inclusive.</p>
-<p><strong><code>AMaxKind</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlEventKind</span></code></p>
+<p><strong><code>AMaxKind</code></strong>: <a href="../../types/TSdlEventKind/"><code>TSdlEventKind</code></a></p>
 <h4 id="returns_1">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True if events with type &gt;= <code>AMinKind</code> and <true if events with type >= <code>aminkind</code> and &gt;are present, or False if not.</true if events with type >= <code>aminkind</code> and &gt;<remarks>It is safe to call this function from any thread. </remarks></p>
 <hr />
@@ -2425,7 +2421,7 @@
 <p>If you need to check for a range of event types, use the other overload instead. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="nf">Has</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AKind</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlEventKind</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_6">Parameters</h4>
-<p><strong><code>AKind</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlEventKind</span></code>
+<p><strong><code>AKind</code></strong>: <a href="../../types/TSdlEventKind/"><code>TSdlEventKind</code></a>
 : The kind of event to be queried.</p>
 <h4 id="returns_2">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True if events matching <code>AKind</code> are present, or False if events matching <code>AKind</code> are not present.</p>
@@ -2436,11 +2432,11 @@
 <p>Query the state of processing events by kind. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="nf">IsEnabled</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AKind</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlEventKind</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_7">Parameters</h4>
-<p><strong><code>AKind</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlEventKind</span></code>
+<p><strong><code>AKind</code></strong>: <a href="../../types/TSdlEventKind/"><code>TSdlEventKind</code></a>
 : The kind of event.</p>
 <h4 id="returns_3">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True if the event is being processed, False otherwise.</p>
-<h4 id="see-also_4">See Also</h4>
+<h4 id="see-also_3">See Also</h4>
 <ul>
 <li><a href="./#SetEnabled">SetEnabled</a></li>
 </ul>
@@ -2460,18 +2456,18 @@
 <h4 id="exceptions_1">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_8">Parameters</h4>
-<p><strong><code>AEvents</code></strong>: <code class="language-delphi highlight"><span class="n">PSdlEvent</span></code>
+<p><strong><code>AEvents</code></strong>: <a href="../../types/PSdlEvent/"><code>PSdlEvent</code></a>
 : Destination buffer for the retrieved events, may be nil to leave the events in the queue and return the number of events that would have been stored.</p>
 <p><strong><code>ANumEvents</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : If action is TSdlEventAction.Add, the number of events to add back to the event queue; if action is TSdlEventAction.Peek or TSdlEventAction.Get, the maximum number of events to retrieve.</p>
-<p><strong><code>AAction</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlEventAction</span></code>
+<p><strong><code>AAction</code></strong>: <a href="../../types/TSdlEventAction/"><code>TSdlEventAction</code></a>
 : Action to take.</p>
-<p><strong><code>AMinKind</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlEventKind</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TSdlEventKind</span><span class="o">.</span><span class="n">First</span></code>
+<p><strong><code>AMinKind</code></strong>: <a href="../../types/TSdlEventKind/"><code>TSdlEventKind = TSdlEventKind.First</code></a>
 : (Optional) Minimum value of the event kind to be considered; TSdlEventKind.First is a safe choice.</p>
-<p><strong><code>AMaxKind</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlEventKind</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TSdlEventKind</span><span class="o">.</span><span class="n">Last</span></code></p>
+<p><strong><code>AMaxKind</code></strong>: <a href="../../types/TSdlEventKind/"><code>TSdlEventKind = TSdlEventKind.Last</code></a></p>
 <h4 id="returns_4">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Integer</span></code>: The number of events actually stored.</p>
-<h4 id="see-also_5">See Also</h4>
+<h4 id="see-also_4">See Also</h4>
 <ul>
 <li><a href="./#Poll_0">Poll</a></li>
 <li><a href="./#Pump">Pump</a></li>
@@ -2495,14 +2491,14 @@
 <h4 id="parameters_9">Parameters</h4>
 <p><strong><code>AEvents</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlEvent</span><span class="o">&gt;</span></code>
 : Destination buffer for the retrieved events, may be nil to leave the events in the queue and return the number of events that would have been stored.</p>
-<p><strong><code>AAction</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlEventAction</span></code>
+<p><strong><code>AAction</code></strong>: <a href="../../types/TSdlEventAction/"><code>TSdlEventAction</code></a>
 : Action to take.</p>
-<p><strong><code>AMinKind</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlEventKind</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TSdlEventKind</span><span class="o">.</span><span class="n">First</span></code>
+<p><strong><code>AMinKind</code></strong>: <a href="../../types/TSdlEventKind/"><code>TSdlEventKind = TSdlEventKind.First</code></a>
 : (Optional) Minimum value of the event kind to be considered; TSdlEventKind.First is a safe choice.</p>
-<p><strong><code>AMaxKind</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlEventKind</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TSdlEventKind</span><span class="o">.</span><span class="n">Last</span></code></p>
+<p><strong><code>AMaxKind</code></strong>: <a href="../../types/TSdlEventKind/"><code>TSdlEventKind = TSdlEventKind.Last</code></a></p>
 <h4 id="returns_5">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Integer</span></code>: The number of events actually stored.</p>
-<h4 id="see-also_6">See Also</h4>
+<h4 id="see-also_5">See Also</h4>
 <ul>
 <li><a href="./#Poll_0">Poll</a></li>
 <li><a href="./#Pump">Pump</a></li>
@@ -2514,7 +2510,7 @@
 <h3 id="Poll_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span>  <span class="twemoji" title="Class method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg></span> Poll(TSdlEvent)</h3>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="nf">Poll</span><span class="p">(</span><span class="n">out</span><span class="w"> </span><span class="n">AEvent</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlEvent</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_10">Parameters</h4>
-<p><strong><code>AEvent</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlEvent</span></code></p>
+<p><strong><code>AEvent</code></strong>: <a href="../TSdlEvent/"><code>TSdlEvent</code></a></p>
 <h4 id="returns_6">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
 <hr />
@@ -2528,7 +2524,7 @@
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="nf">Poll</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="returns_7">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True if this got an event or False if there are none available.</p>
-<h4 id="see-also_7">See Also</h4>
+<h4 id="see-also_6">See Also</h4>
 <ul>
 <li><a href="./#Push">Push</a></li>
 <li><a href="./#Wait_0">Wait</a></li>
@@ -2541,7 +2537,7 @@
 <p>This function updates the event queue and internal input device state.</p>
 <p>Pump gathers all the pending input information from devices and places it in the event queue. Without calls to Pump no events would ever be placed on the queue. Often the need for calls to Pump is hidden from the user since TSdlApp.Event, Poll and Wait implicitly call Pump. However, if you are not polling or waiting for events (e.g. you are filtering them), then you must call Pump to force an event queue update. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">procedure</span><span class="w"> </span><span class="nf">Pump</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
-<h4 id="see-also_8">See Also</h4>
+<h4 id="see-also_7">See Also</h4>
 <ul>
 <li><a href="./#Poll_0">Poll</a></li>
 <li><a href="./#Wait_0">Wait</a></li>
@@ -2559,11 +2555,11 @@
 <h4 id="exceptions_3">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_11">Parameters</h4>
-<p><strong><code>AEvent</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlEvent</span></code>
+<p><strong><code>AEvent</code></strong>: <a href="../TSdlEvent/"><code>TSdlEvent</code></a>
 : The event to be added to the queue.</p>
 <h4 id="returns_8">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True on success, False if the event was filtered.</p>
-<h4 id="see-also_9">See Also</h4>
+<h4 id="see-also_8">See Also</h4>
 <ul>
 <li><a href="./#Peep_0">Peep</a></li>
 <li><a href="./#Poll_0">Poll</a></li>
@@ -2576,8 +2572,8 @@
 <p>Registers a user-defined events. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="kp">Register</span><span class="o">:</span><span class="w"> </span><span class="nf">TSdlEventKind</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="returns_9">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlEventKind</span></code>: A new TSdlEventKind value, or TSdlEventKind.First if there are not enough user-defined events left.</p>
-<h4 id="see-also_10">See Also</h4>
+<p><a href="../../types/TSdlEventKind/"><code>TSdlEventKind</code></a>: A new TSdlEventKind value, or TSdlEventKind.First if there are not enough user-defined events left.</p>
+<h4 id="see-also_9">See Also</h4>
 <ul>
 <li><a href="./#Push">Push</a></li>
 </ul>
@@ -2590,9 +2586,9 @@
 <p>This function takes the same input as AddWatch to identify and delete the corresponding callback. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">procedure</span><span class="w"> </span><span class="nf">RemoveWatch</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFilter</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlEventFilter</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_12">Parameters</h4>
-<p><strong><code>AFilter</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlEventFilter</span></code>
+<p><strong><code>AFilter</code></strong>: <a href="../../types/TSdlEventFilter/"><code>TSdlEventFilter</code></a>
 : The function originally passed to AddWatch.</p>
-<h4 id="see-also_11">See Also</h4>
+<h4 id="see-also_10">See Also</h4>
 <ul>
 <li><a href="./#AddWatch">AddWatch</a></li>
 </ul>
@@ -2603,11 +2599,11 @@
 <p>Set the state of processing events by kind. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">procedure</span><span class="w"> </span><span class="nf">SetEnabled</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AKind</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlEventKind</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AEnabled</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_13">Parameters</h4>
-<p><strong><code>AKind</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlEventKind</span></code>
+<p><strong><code>AKind</code></strong>: <a href="../../types/TSdlEventKind/"><code>TSdlEventKind</code></a>
 : The kind of event.</p>
 <p><strong><code>AEnabled</code></strong>: <code class="language-delphi highlight"><span class="kt">Boolean</span></code>
 : Whether to process the event or not.</p>
-<h4 id="see-also_12">See Also</h4>
+<h4 id="see-also_11">See Also</h4>
 <ul>
 <li><a href="./#IsEnabled">IsEnabled</a></li>
 </ul>
@@ -2624,9 +2620,9 @@
 <p>Note: Events pushed onto the queue with Push get passed through the event filter, but events pushed onto the queue with Peep do not. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">procedure</span><span class="w"> </span><span class="nf">SetFilter</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFilter</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlEventFilter</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_14">Parameters</h4>
-<p><strong><code>AFilter</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlEventFilter</span></code>
+<p><strong><code>AFilter</code></strong>: <a href="../../types/TSdlEventFilter/"><code>TSdlEventFilter</code></a>
 : Filter function to call when an event happens.</p>
-<h4 id="see-also_13">See Also</h4>
+<h4 id="see-also_12">See Also</h4>
 <ul>
 <li><a href="./#AddWatch">AddWatch</a></li>
 <li><a href="./#SetEnabled">SetEnabled</a></li>
@@ -2641,7 +2637,7 @@
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="nf">Wait</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ATimeoutMS</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="n">out</span><span class="w"> </span><span class="n">AEvent</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlEvent</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_15">Parameters</h4>
 <p><strong><code>ATimeoutMS</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code></p>
-<p><strong><code>AEvent</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlEvent</span></code></p>
+<p><strong><code>AEvent</code></strong>: <a href="../TSdlEvent/"><code>TSdlEvent</code></a></p>
 <h4 id="returns_10">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
 <hr />
@@ -2656,7 +2652,7 @@
 : the maximum number of milliseconds to wait for the next available event.</p>
 <h4 id="returns_11">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True if this got an event or False if the timeout elapsed without any events available.</p>
-<h4 id="see-also_14">See Also</h4>
+<h4 id="see-also_13">See Also</h4>
 <ul>
 <li><a href="./#Poll_0">Poll</a></li>
 <li><a href="./#Push">Push</a></li>
@@ -2667,7 +2663,7 @@
 <h3 id="Wait_2"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span>  <span class="twemoji" title="Class method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg></span> Wait(TSdlEvent)</h3>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">procedure</span><span class="w"> </span><span class="nf">Wait</span><span class="p">(</span><span class="n">out</span><span class="w"> </span><span class="n">AEvent</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlEvent</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_17">Parameters</h4>
-<p><strong><code>AEvent</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlEvent</span></code></p>
+<p><strong><code>AEvent</code></strong>: <a href="../TSdlEvent/"><code>TSdlEvent</code></a></p>
 <hr />
 <h3 id="Wait_3"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span>  <span class="twemoji" title="Class method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg></span> Wait</h3>
 <p>Wait indefinitely for the next available event.</p>
@@ -2676,7 +2672,7 @@
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">procedure</span><span class="w"> </span><span class="nf">Wait</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="exceptions_4">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>If there was an error while waiting for events.</p>
-<h4 id="see-also_15">See Also</h4>
+<h4 id="see-also_14">See Also</h4>
 <ul>
 <li><a href="./#Poll_0">Poll</a></li>
 <li><a href="./#Push">Push</a></li>

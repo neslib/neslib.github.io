@@ -2707,7 +2707,7 @@
 <p>The blend mode used for blit operations.</p>
 <p>To copy a surface to another surface (or texture) without blending with the existing data, the blendmode of the <em>source</em> surface should be set to <code>TSdlBlendMode.None</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">BlendMode</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlBlendMode</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetBlendMode</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetBlendMode</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlBlendMode</span></code></p>
+<p><strong>Type: </strong><a href="../../types/TSdlBlendMode/"><code>TSdlBlendMode</code></a></p>
 <h4 id="exceptions_1">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <hr />
@@ -2716,7 +2716,7 @@
 <p>When the surface is the destination of a blit, only the area within the clip rectangle is drawn into.</p>
 <p>Note that blits are automatically clipped to the edges of the source and destination surfaces. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">ClipRect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRect</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetClipRect</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetClipRect</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlRect</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlRect/"><code>TSdlRect</code></a></p>
 <h4 id="exceptions_2">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="see-also_1">See Also</h4>
@@ -2745,7 +2745,7 @@
 <p><code>SrcC := SrcC * (Color div 255)</code></p>
 <p>The Alpha value of the color is ignored. Use AlphaMod for alpha modulation. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">ColorMod</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlColor</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetColorMod</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetColorMod</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlColor</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlColor/"><code>TSdlColor</code></a></p>
 <h4 id="exceptions_4">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="see-also_3">See Also</h4>
@@ -2758,19 +2758,19 @@
 <p>The colorspace defaults to TSdlColorspace.SrgbLinear for floating point formats, TSdlColorspace.Hdr10 for 10-bit formats, TSdlColorspace.Srgb for other RGB surfaces and TSdlColorspace.BT709Full for YUV textures.</p>
 <p>Setting the colorspace doesn't change the pixels, only how they are interpreted in color operations. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Colorspace</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlColorspace</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetColorspace</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetColorspace</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlColorspace</span></code></p>
+<p><strong>Type: </strong><a href="../../types/TSdlColorspace/"><code>TSdlColorspace</code></a></p>
 <h4 id="exceptions_5">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <hr />
 <h3 id="Flags"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Flags</h3>
 <p>The flags of the surface, read-only </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Flags</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSurfaceFlags</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetFlags</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlSurfaceFlags</span></code></p>
+<p><strong>Type: </strong><a href="../../types/TSdlSurfaceFlags/"><code>TSdlSurfaceFlags</code></a></p>
 <hr />
 <h3 id="Format"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Format</h3>
 <p>The format of the surface, read-only </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Format</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPixelFormat</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetFormat</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlPixelFormat</span></code></p>
+<p><strong>Type: </strong><a href="../../types/TSdlPixelFormat/"><code>TSdlPixelFormat</code></a></p>
 <hr />
 <h3 id="H"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> H</h3>
 <p>The height of the surface, read-only. </p>
@@ -2783,7 +2783,7 @@
 <p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
 <h4 id="see-also_4">See Also</h4>
 <ul>
-<li>AddlternateImage</li>
+<li><a href="./#AddAlternateImage">AddAlternateImage</a></li>
 <li><a href="./#RemoveAlternateImages">RemoveAlternateImages</a></li>
 <li><a href="./#Images">Images</a></li>
 </ul>
@@ -2800,8 +2800,8 @@
 <h3 id="Images"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Images</h3>
 <p>Get an array including all versions of this surface.</p>
 <p>This returns all versions of a surface, with this surface as the first element in the returned array. </p>
-<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Images</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetImages</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TArray</span></code></p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Images</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlSurface</span><span class="o">&gt;</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetImages</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlSurface</span><span class="o">&gt;</span></code></p>
 <h4 id="see-also_6">See Also</h4>
 <ul>
 <li><a href="./#AddAlternateImage">AddAlternateImage</a></li>
@@ -2818,7 +2818,7 @@
 <p>The palette used by a surface, or nil if there is no palette used.</p>
 <p>A single palette can be shared with many surfaces. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Palette</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPalette</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetPalette</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetPalette</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlPalette</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlPalette/"><code>TSdlPalette</code></a></p>
 <h4 id="exceptions_6">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <hr />
@@ -2832,14 +2832,14 @@
 <p>This function prioritizes correctness over speed: it is suitable for unit tests, but is not intended for use in a game engine.</p>
 <p>This uses the entire 0..255 range when converting color components from pixel formats with less than 8 bits per RGB component. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Pixel</span><span class="p">[</span><span class="k">const</span><span class="w"> </span><span class="n">AX</span><span class="o">,</span><span class="w"> </span><span class="n">AY</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlColor</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetPixel</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetPixel</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlColor</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlColor/"><code>TSdlColor</code></a></p>
 <hr />
 <h3 id="PixelFloat"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> PixelFloat</h3>
 <p>The pixels of the surface, as floating-point colors.</p>
 <p>This function prioritizes correctness over speed: it is suitable for unit tests, but is not intended for use in a game engine.</p>
 <p>This uses the entire 0..1 range when converting color components from pixel formats with less than 8 bits per RGB component. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">PixelFloat</span><span class="p">[</span><span class="k">const</span><span class="w"> </span><span class="n">AX</span><span class="o">,</span><span class="w"> </span><span class="n">AY</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlColorF</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetPixelFloat</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetPixelFloat</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlColorF</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlColorF/"><code>TSdlColorF</code></a></p>
 <hr />
 <h3 id="Pixels"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Pixels</h3>
 <p>A pointer to the pixels of the surface, the pixels are writeable if non-nil </p>
@@ -2855,7 +2855,7 @@
 <li><code>TSdlProperty.SurfaceTonemapOperator</code>: the tone mapping operator used when compressing from a surface with high dynamic range to another with lower dynamic range. Currently this supports 'chrome', which uses the same tone mapping that Chrome uses for HDR content, the form '*=N', where N is a floating point scale factor applied in linear space, and 'none', which disables tone mapping. This defaults to 'chrome'. </li>
 </ul>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Properties</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlProperties</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetProperties</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlProperties</span></code></p>
+<p><strong>Type: </strong><a href="../../../Neslib.Sdl3.Basics/classes/TSdlProperties/"><code>TSdlProperties</code></a></p>
 <h4 id="exceptions_7">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <hr />
@@ -2890,7 +2890,7 @@
 : The width of the surface.</p>
 <p><strong><code>AHeight</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The height of the surface.</p>
-<p><strong><code>AFormat</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlPixelFormat</span></code>
+<p><strong><code>AFormat</code></strong>: <a href="../../types/TSdlPixelFormat/"><code>TSdlPixelFormat</code></a>
 : The pixel format for the new surface.</p>
 <p><strong><code>APixels</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code>
 : A pointer to existing pixel data.</p>
@@ -2912,7 +2912,7 @@
 : The width of the surface.</p>
 <p><strong><code>AHeight</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The height of the surface.</p>
-<p><strong><code>AFormat</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlPixelFormat</span></code>
+<p><strong><code>AFormat</code></strong>: <a href="../../types/TSdlPixelFormat/"><code>TSdlPixelFormat</code></a>
 : The pixel format for the new surface.</p>
 <h4 id="exceptions_10">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
@@ -2939,7 +2939,7 @@
 <p>Create a surface from a BMP image from a seekable SDL data stream. </p>
 <p><code class="language-delphi highlight"><span class="k">constructor</span><span class="w"> </span><span class="nf">LoadBmp</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ASrc</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlIOStream</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ACloseIO</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
 <h4 id="parameters_3">Parameters</h4>
-<p><strong><code>ASrc</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlIOStream</span></code>
+<p><strong><code>ASrc</code></strong>: <a href="../../../Neslib.Sdl3.IO/classes/TSdlIOStream/"><code>TSdlIOStream</code></a>
 : The data stream for the surface.</p>
 <p><strong><code>ACloseIO</code></strong>: <code class="language-delphi highlight"><span class="kt">Boolean</span></code>
 : If True, calls ASrc.Close before returning, even in the case of an error.</p>
@@ -2956,7 +2956,7 @@
 <p>Used to compare against <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSurface</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_4">Parameters</h4>
-<p><strong><code>ALeft</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlSurface</span></code></p>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlSurface</code></a></p>
 <p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
@@ -2967,13 +2967,13 @@
 <h4 id="parameters_5">Parameters</h4>
 <p><strong><code>AValue</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns_1">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlSurface</span></code></p>
+<p><a href="./"><code>TSdlSurface</code></a></p>
 <hr />
 <h3 id="NotEqual"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlSurface, Pointer)</h3>
 <p>Used to compare against <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSurface</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_6">Parameters</h4>
-<p><strong><code>ALeft</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlSurface</span></code></p>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlSurface</code></a></p>
 <p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns_2">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
@@ -2987,7 +2987,7 @@
 <h4 id="exceptions_13">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_7">Parameters</h4>
-<p><strong><code>AImage</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlSurface</span></code>
+<p><strong><code>AImage</code></strong>: <a href="./"><code>TSdlSurface</code></a>
 : The alternate surface to associate with this surface.</p>
 <h4 id="see-also_12">See Also</h4>
 <ul>
@@ -3010,11 +3010,11 @@
 <h4 id="exceptions_14">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_8">Parameters</h4>
-<p><strong><code>ASrcRect</code></strong>: <code class="language-delphi highlight"><span class="n">PSdlRect</span></code>
+<p><strong><code>ASrcRect</code></strong>: <a href="../../types/PSdlRect/"><code>PSdlRect</code></a>
 : The rectangle to be copied, or nil to copy the entire surface.</p>
-<p><strong><code>ADst</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlSurface</span></code>
+<p><strong><code>ADst</code></strong>: <a href="./"><code>TSdlSurface</code></a>
 : The blit target surface.</p>
-<p><strong><code>ADstRect</code></strong>: <code class="language-delphi highlight"><span class="n">PSdlRect</span></code>
+<p><strong><code>ADstRect</code></strong>: <a href="../../types/PSdlRect/"><code>PSdlRect</code></a>
 : The rectangle representing the X and Y position in the destination surface, or nil for (0,0). The width and height are ignored, and are copied from <code>ASrcRect</code>. If you want a specific width and height, you should use BlitScaled.</p>
 <h4 id="see-also_13">See Also</h4>
 <ul>
@@ -3030,7 +3030,7 @@
 <h4 id="exceptions_15">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_9">Parameters</h4>
-<p><strong><code>ASrcRect</code></strong>: <code class="language-delphi highlight"><span class="n">PSdlRect</span></code>
+<p><strong><code>ASrcRect</code></strong>: <a href="../../types/PSdlRect/"><code>PSdlRect</code></a>
 : The rectangle to be used for the 9-grid, or nil to use the entire surface.</p>
 <p><strong><code>ALeftWidth</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The width, in pixels, of the left corners in <code>ASrcRect</code>.</p>
@@ -3042,11 +3042,11 @@
 : The height, in pixels, of the bottom corners in <code>ASrcRect</code>.</p>
 <p><strong><code>AScale</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>
 : The scale used to transform the corner of <code>ASrcRect</code> into the corner of <code>ADstRect</code>, or 0.0 for an unscaled blit.</p>
-<p><strong><code>AScaleMode</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlScaleMode</span></code>
+<p><strong><code>AScaleMode</code></strong>: <a href="../../types/TSdlScaleMode/"><code>TSdlScaleMode</code></a>
 : Scale algorithm to be used.</p>
-<p><strong><code>ADst</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlSurface</span></code>
+<p><strong><code>ADst</code></strong>: <a href="./"><code>TSdlSurface</code></a>
 : The blit target surface.</p>
-<p><strong><code>ADstRect</code></strong>: <code class="language-delphi highlight"><span class="n">PSdlRect</span></code>
+<p><strong><code>ADstRect</code></strong>: <a href="../../types/PSdlRect/"><code>PSdlRect</code></a>
 : The target rectangle in the destination surface, or nil to fill the entire surface.</p>
 <h4 id="see-also_14">See Also</h4>
 <ul>
@@ -3061,13 +3061,13 @@
 <h4 id="exceptions_16">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_10">Parameters</h4>
-<p><strong><code>ASrcRect</code></strong>: <code class="language-delphi highlight"><span class="n">PSdlRect</span></code>
+<p><strong><code>ASrcRect</code></strong>: <a href="../../types/PSdlRect/"><code>PSdlRect</code></a>
 : The rectangle to be copied, or nil to copy the entire surface.</p>
-<p><strong><code>ADst</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlSurface</span></code>
+<p><strong><code>ADst</code></strong>: <a href="./"><code>TSdlSurface</code></a>
 : The blit target surface.</p>
-<p><strong><code>ADstRect</code></strong>: <code class="language-delphi highlight"><span class="n">PSdlRect</span></code>
+<p><strong><code>ADstRect</code></strong>: <a href="../../types/PSdlRect/"><code>PSdlRect</code></a>
 : The rectangle representing the X and Y position in the destination surface, or nil to fill the entire destination surface.</p>
-<p><strong><code>AScaleMode</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlScaleMode</span></code>
+<p><strong><code>AScaleMode</code></strong>: <a href="../../types/TSdlScaleMode/"><code>TSdlScaleMode</code></a>
 : The scale mode to be used.</p>
 <h4 id="see-also_15">See Also</h4>
 <ul>
@@ -3081,13 +3081,13 @@
 <p>This is a semi-private function and it performs low-level surface blitting, assuming the input rectangles have already been clipped. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">BlitScaledUnchecked</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ASrcRect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRect</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ADst</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSurface</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ADstRect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRect</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AScaleMode</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlScaleMode</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_11">Parameters</h4>
-<p><strong><code>ASrcRect</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlRect</span></code>
+<p><strong><code>ASrcRect</code></strong>: <a href="../TSdlRect/"><code>TSdlRect</code></a>
 : The rectangle to be copied.</p>
-<p><strong><code>ADst</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlSurface</span></code>
+<p><strong><code>ADst</code></strong>: <a href="./"><code>TSdlSurface</code></a>
 : The blit target surface.</p>
-<p><strong><code>ADstRect</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlRect</span></code>
+<p><strong><code>ADstRect</code></strong>: <a href="../TSdlRect/"><code>TSdlRect</code></a>
 : The target rectangle in the destination surface.</p>
-<p><strong><code>AScaleMode</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlScaleMode</span></code>
+<p><strong><code>AScaleMode</code></strong>: <a href="../../types/TSdlScaleMode/"><code>TSdlScaleMode</code></a>
 : the SDL_ScaleMode to be used.</p>
 <h4 id="see-also_16">See Also</h4>
 <ul>
@@ -3103,15 +3103,15 @@
 <h4 id="exceptions_17">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_12">Parameters</h4>
-<p><strong><code>ASrcRect</code></strong>: <code class="language-delphi highlight"><span class="n">PSdlRect</span></code>
+<p><strong><code>ASrcRect</code></strong>: <a href="../../types/PSdlRect/"><code>PSdlRect</code></a>
 : The rectangle to be copied, or nil to copy the entire surface.</p>
 <p><strong><code>AScale</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>
 : The scale used to transform ASrcRect into the destination rectangle, e.g. a 32x32 texture with a scale of 2 would fill 64x64 tiles.</p>
-<p><strong><code>AScaleMode</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlScaleMode</span></code>
+<p><strong><code>AScaleMode</code></strong>: <a href="../../types/TSdlScaleMode/"><code>TSdlScaleMode</code></a>
 : Scale algorithm to be used.</p>
-<p><strong><code>ADst</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlSurface</span></code>
+<p><strong><code>ADst</code></strong>: <a href="./"><code>TSdlSurface</code></a>
 : The blit target surface.</p>
-<p><strong><code>ADstRect</code></strong>: <code class="language-delphi highlight"><span class="n">PSdlRect</span></code>
+<p><strong><code>ADstRect</code></strong>: <a href="../../types/PSdlRect/"><code>PSdlRect</code></a>
 : The rectangle representing the X and Y position in the destination surface, or nil to fill the entire destination surface.</p>
 <h4 id="see-also_17">See Also</h4>
 <ul>
@@ -3127,11 +3127,11 @@
 <h4 id="exceptions_18">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_13">Parameters</h4>
-<p><strong><code>ASrcRect</code></strong>: <code class="language-delphi highlight"><span class="n">PSdlRect</span></code>
+<p><strong><code>ASrcRect</code></strong>: <a href="../../types/PSdlRect/"><code>PSdlRect</code></a>
 : The rectangle to be copied, or nil to copy the entire surface.</p>
-<p><strong><code>ADst</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlSurface</span></code>
+<p><strong><code>ADst</code></strong>: <a href="./"><code>TSdlSurface</code></a>
 : The blit target surface.</p>
-<p><strong><code>ADstRect</code></strong>: <code class="language-delphi highlight"><span class="n">PSdlRect</span></code>
+<p><strong><code>ADstRect</code></strong>: <a href="../../types/PSdlRect/"><code>PSdlRect</code></a>
 : The target rectangle in the destination surface, or nil to fill the entire surface.</p>
 <h4 id="see-also_18">See Also</h4>
 <ul>
@@ -3147,11 +3147,11 @@
 <h4 id="exceptions_19">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_14">Parameters</h4>
-<p><strong><code>ASrcRect</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlRect</span></code>
+<p><strong><code>ASrcRect</code></strong>: <a href="../TSdlRect/"><code>TSdlRect</code></a>
 : The rectangle to be copied.</p>
-<p><strong><code>ADst</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlSurface</span></code>
+<p><strong><code>ADst</code></strong>: <a href="./"><code>TSdlSurface</code></a>
 : The blit target surface.</p>
-<p><strong><code>ADstRect</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlRect</span></code>
+<p><strong><code>ADstRect</code></strong>: <a href="../TSdlRect/"><code>TSdlRect</code></a>
 : The target rectangle in the destination surface.</p>
 <h4 id="see-also_19">See Also</h4>
 <ul>
@@ -3168,7 +3168,7 @@
 <h4 id="exceptions_20">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_15">Parameters</h4>
-<p><strong><code>AColor</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlColorF</span></code>
+<p><strong><code>AColor</code></strong>: <a href="../TSdlColorF/"><code>TSdlColorF</code></a>
 : The color.</p>
 <h4 id="see-also_20">See Also</h4>
 <ul>
@@ -3204,16 +3204,16 @@
 <h4 id="exceptions_22">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_17">Parameters</h4>
-<p><strong><code>AFormat</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlPixelFormat</span></code>
+<p><strong><code>AFormat</code></strong>: <a href="../../types/TSdlPixelFormat/"><code>TSdlPixelFormat</code></a>
 : The new pixel format.</p>
-<p><strong><code>APalette</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlPalette</span></code>
+<p><strong><code>APalette</code></strong>: <a href="../TSdlPalette/"><code>TSdlPalette</code></a>
 : A palette to use for indexed formats.</p>
-<p><strong><code>AColorspace</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlColorspace</span></code>
+<p><strong><code>AColorspace</code></strong>: <a href="../../types/TSdlColorspace/"><code>TSdlColorspace</code></a>
 : The new colorspace.</p>
-<p><strong><code>AProps</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlProperties</span></code>
+<p><strong><code>AProps</code></strong>: <a href="../../../Neslib.Sdl3.Basics/classes/TSdlProperties/"><code>TSdlProperties</code></a>
 : Additional color properties.</p>
 <h4 id="returns_3">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlSurface</span></code></p>
+<p><a href="./"><code>TSdlSurface</code></a></p>
 <hr />
 <h3 id="Convert_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Convert(TSdlPixelFormat, TSdlColorspace)</h3>
 <p>Copy the existing surface to a new surface of the specified format and colorspace.</p>
@@ -3223,12 +3223,12 @@
 <h4 id="exceptions_23">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_18">Parameters</h4>
-<p><strong><code>AFormat</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlPixelFormat</span></code>
+<p><strong><code>AFormat</code></strong>: <a href="../../types/TSdlPixelFormat/"><code>TSdlPixelFormat</code></a>
 : The new pixel format.</p>
-<p><strong><code>AColorspace</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlColorspace</span></code>
+<p><strong><code>AColorspace</code></strong>: <a href="../../types/TSdlColorspace/"><code>TSdlColorspace</code></a>
 : The new colorspace.</p>
 <h4 id="returns_4">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlSurface</span></code></p>
+<p><a href="./"><code>TSdlSurface</code></a></p>
 <hr />
 <h3 id="Convert_2"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Convert(TSdlPixelFormat)</h3>
 <p>Copy the surface to a new surface of the specified format.</p>
@@ -3238,10 +3238,10 @@
 <h4 id="exceptions_24">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_19">Parameters</h4>
-<p><strong><code>AFormat</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlPixelFormat</span></code>
+<p><strong><code>AFormat</code></strong>: <a href="../../types/TSdlPixelFormat/"><code>TSdlPixelFormat</code></a>
 : The new pixel format.</p>
 <h4 id="returns_5">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlSurface</span></code>: Thne new SDL surface.</p>
+<p><a href="./"><code>TSdlSurface</code></a>: Thne new SDL surface.</p>
 <hr />
 <h3 id="CreatePalette"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> CreatePalette</h3>
 <p>Create a palette and associate it with this surface.</p>
@@ -3252,7 +3252,7 @@
 <h4 id="exceptions_25">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure (e.g. if the surface didn't have an index format).</p>
 <h4 id="returns_6">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlPalette</span></code>: A new palette.</p>
+<p><a href="../TSdlPalette/"><code>TSdlPalette</code></a>: A new palette.</p>
 <hr />
 <h3 id="DisableClipping"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> DisableClipping</h3>
 <p>Disables clipping. Set the ClipRect property to enable clipping again. </p>
@@ -3270,7 +3270,7 @@
 <h4 id="exceptions_26">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="returns_7">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlSurface</span></code>: A copy of the surface.</p>
+<p><a href="./"><code>TSdlSurface</code></a>: A copy of the surface.</p>
 <h4 id="see-also_23">See Also</h4>
 <ul>
 <li><a href="./#Free">Free</a></li>
@@ -3300,7 +3300,7 @@
 <h4 id="exceptions_28">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_21">Parameters</h4>
-<p><strong><code>ARect</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlRect</span></code>
+<p><strong><code>ARect</code></strong>: <a href="../TSdlRect/"><code>TSdlRect</code></a>
 : The rectangle to fill.</p>
 <p><strong><code>AColor</code></strong>: <code class="language-delphi highlight"><span class="kt">Cardinal</span></code>
 : The color to fill with.</p>
@@ -3317,13 +3317,13 @@
 <h4 id="exceptions_29">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_22">Parameters</h4>
-<p><strong><code>ARects</code></strong>: <code class="language-delphi highlight"><span class="k">array</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">TSdlRect</span></code>
+<p><strong><code>ARects</code></strong>: <a href="../TSdlRect/"><code>array of TSdlRect</code></a>
 : An array rectangles to fill.</p>
 <p><strong><code>AColor</code></strong>: <code class="language-delphi highlight"><span class="kt">Cardinal</span></code>
 : The color to fill with.</p>
 <h4 id="see-also_26">See Also</h4>
 <ul>
-<li>SDL_FillRect</li>
+<li><a href="./#FillRect">FillRect</a></li>
 </ul>
 <hr />
 <h3 id="FillRects_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> FillRects(TArray&lt;TSdlRect&gt;, Cardinal)</h3>
@@ -3340,7 +3340,7 @@
 : The color to fill with.</p>
 <h4 id="see-also_27">See Also</h4>
 <ul>
-<li>SDL_FillRect</li>
+<li><a href="./#FillRect">FillRect</a></li>
 </ul>
 <hr />
 <h3 id="Flip"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Flip(TSdlFlipMode)</h3>
@@ -3349,7 +3349,7 @@
 <h4 id="exceptions_31">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_24">Parameters</h4>
-<p><strong><code>AFlip</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlFlipMode</span></code>
+<p><strong><code>AFlip</code></strong>: <a href="../../types/TSdlFlipMode/"><code>TSdlFlipMode</code></a>
 : The direction(s) to flip.</p>
 <hr />
 <h3 id="Free"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Free</h3>
@@ -3428,7 +3428,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">RemoveAlternateImages</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="see-also_31">See Also</h4>
 <ul>
-<li>AddlternateImage</li>
+<li><a href="./#AddAlternateImage">AddAlternateImage</a></li>
 <li><a href="./#Images">Images</a></li>
 <li><a href="./#HasAlternateImages">HasAlternateImages</a></li>
 </ul>
@@ -3454,7 +3454,7 @@
 <h4 id="exceptions_35">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_29">Parameters</h4>
-<p><strong><code>ADst</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlIOStream</span></code>
+<p><strong><code>ADst</code></strong>: <a href="../../../Neslib.Sdl3.IO/classes/TSdlIOStream/"><code>TSdlIOStream</code></a>
 : A data stream to save to.</p>
 <p><strong><code>ACloseIO</code></strong>: <code class="language-delphi highlight"><span class="kt">Boolean</span></code>
 : If true, calls ADst.Close before returning, even in the case of an error.</p>
@@ -3474,10 +3474,10 @@
 : The width of the new surface.</p>
 <p><strong><code>AHeight</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The height of the new surface.</p>
-<p><strong><code>AScaleMode</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlScaleMode</span></code>
+<p><strong><code>AScaleMode</code></strong>: <a href="../../types/TSdlScaleMode/"><code>TSdlScaleMode</code></a>
 : The scale mode to be used.</p>
 <h4 id="returns_10">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlSurface</span></code></p>
+<p><a href="./"><code>TSdlSurface</code></a></p>
 <h4 id="see-also_34">See Also</h4>
 <ul>
 <li><a href="./#Free">Free</a></li>

@@ -2035,7 +2035,7 @@
 <p>The active cursor.</p>
 <p>Allows you to set the currently active cursor to the specified one. If the cursor is currently visible, the change will be immediately represented on the display. You can set this properyt to nil to force cursor redraw, if this is desired for any reason. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">property</span><span class="w"> </span><span class="py">Active</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlCursor</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetActive</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetActive</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlCursor</span></code></p>
+<p><strong>Type: </strong><a href="./"><code>TSdlCursor</code></a></p>
 <h4 id="exceptions">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="remarks_1">Remarks</h4>
@@ -2045,7 +2045,7 @@
 <p>The default cursor.</p>
 <p>You do not have to call Free on this cursor, but it is safe to do so. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">property</span><span class="w"> </span><span class="py">Default</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlCursor</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetDefault</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlCursor</span></code></p>
+<p><strong>Type: </strong><a href="./"><code>TSdlCursor</code></a></p>
 <h4 id="exceptions_1">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="remarks_2">Remarks</h4>
@@ -2071,7 +2071,7 @@
 <p>Create a system cursor. </p>
 <p><code class="language-delphi highlight"><span class="k">constructor</span><span class="w"> </span><span class="nf">Create</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ASystemCursor</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSystemCursor</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
 <h4 id="parameters">Parameters</h4>
-<p><strong><code>ASystemCursor</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlSystemCursor</span></code>
+<p><strong><code>ASystemCursor</code></strong>: <a href="../../types/TSdlSystemCursor/"><code>TSdlSystemCursor</code></a>
 : The TSdlSystemCursor enum value.</p>
 <h4 id="exceptions_3">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
@@ -2087,7 +2087,7 @@
 <p>If this constructor is passed a surface with alternate representations, the surface will be interpreted as the content to be used for 100% display scale, and the alternate representations will be used for high DPI situations. For example, if the original surface is 32x32, then on a 2x macOS display or 200% display scale on Windows, a 64x64 version of the image will be used, if available. If a matching version of the image isn't available, the closest larger size image will be downscaled to the appropriate size and be used instead, if available. Otherwise, the closest smaller image will be upscaled and be used instead. </p>
 <p><code class="language-delphi highlight"><span class="k">constructor</span><span class="w"> </span><span class="nf">Create</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ASurface</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSurface</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AHotX</span><span class="o">,</span><span class="w"> </span><span class="w">  </span><span class="n">AHotY</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
 <h4 id="parameters_1">Parameters</h4>
-<p><strong><code>ASurface</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlSurface</span></code>
+<p><strong><code>ASurface</code></strong>: <a href="../../../Neslib.Sdl3.Video/classes/TSdlSurface/"><code>TSdlSurface</code></a>
 : An SDL surface representing the cursor image.</p>
 <p><strong><code>AHotX</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The X position of the cursor hot spot.</p>
@@ -2146,7 +2146,7 @@
 <p>Used to compare against <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlCursor</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_3">Parameters</h4>
-<p><strong><code>ALeft</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlCursor</span></code></p>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlCursor</code></a></p>
 <p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
@@ -2157,13 +2157,13 @@
 <h4 id="parameters_4">Parameters</h4>
 <p><strong><code>AValue</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns_1">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlCursor</span></code></p>
+<p><a href="./"><code>TSdlCursor</code></a></p>
 <hr />
 <h3 id="NotEqual"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlCursor, Pointer)</h3>
 <p>Used to compare against <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlCursor</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_5">Parameters</h4>
-<p><strong><code>ALeft</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlCursor</span></code></p>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlCursor</code></a></p>
 <p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns_2">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
@@ -2200,7 +2200,7 @@
 <h4 id="see-also_6">See Also</h4>
 <ul>
 <li><a href="./#IsVisible">IsVisible</a></li>
-<li>HideCursor</li>
+<li><a href="./#Hide">Hide</a></li>
 </ul>
 <h4 id="remarks_9">Remarks</h4>
 <p>This method should only be called on the main thread. </p>

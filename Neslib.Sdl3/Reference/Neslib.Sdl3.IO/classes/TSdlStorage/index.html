@@ -1819,7 +1819,7 @@
 <p>Used to compare against <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlStorage</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters">Parameters</h4>
-<p><strong><code>ALeft</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlStorage</span></code></p>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlStorage</code></a></p>
 <p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
@@ -1830,13 +1830,13 @@
 <h4 id="parameters_1">Parameters</h4>
 <p><strong><code>AValue</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns_1">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlStorage</span></code></p>
+<p><a href="./"><code>TSdlStorage</code></a></p>
 <hr />
 <h3 id="NotEqual"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlStorage, Pointer)</h3>
 <p>Used to compare against <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlStorage</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_2">Parameters</h4>
-<p><strong><code>ALeft</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlStorage</span></code></p>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlStorage</code></a></p>
 <p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns_2">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
@@ -1884,7 +1884,7 @@
 <p><strong><code>APath</code></strong>: <code class="language-delphi highlight"><span class="k">String</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;&#39;</span></code>
 : (Optional) path of the directory to enumerate, or empty (default) for the root.</p>
 <h4 id="returns_3">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TArray</span></code>: An array of all entries in this directory.</p>
+<p><code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlDirectoryEntry</span><span class="o">&gt;</span></code>: An array of all entries in this directory.</p>
 <h4 id="see-also_3">See Also</h4>
 <ul>
 <li><a href="./#IsReady">IsReady</a></li>
@@ -1928,7 +1928,7 @@
 <p><strong><code>APath</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
 : The path to query.</p>
 <h4 id="returns_5">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlPathInfo</span></code>: Information about the path.</p>
+<p><a href="../TSdlPathInfo/"><code>TSdlPathInfo</code></a>: Information about the path.</p>
 <h4 id="see-also_6">See Also</h4>
 <ul>
 <li><a href="./#IsReady">IsReady</a></li>
@@ -1949,7 +1949,7 @@
 <p><strong><code>ACaseInsensitive</code></strong>: <code class="language-delphi highlight"><span class="kt">Boolean</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">False</span></code>
 : (Optional) flag whether pattern matching is case-insensitive (default False, meaning case-sensitive).</p>
 <h4 id="returns_6">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TArray</span></code>: An array of strings.</p>
+<p><code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="k">String</span><span class="o">&gt;</span></code>: An array of strings.</p>
 <h4 id="remarks">Remarks</h4>
 <p>It is safe to call this method from any thread, assuming the storage object is thread-safe. </p>
 <hr />
@@ -1960,12 +1960,12 @@
 <h4 id="exceptions_7">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_9">Parameters</h4>
-<p><strong><code>AInterface</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlStorageInterface</span></code>
+<p><strong><code>AInterface</code></strong>: <a href="../TSdlStorageInterface/"><code>TSdlStorageInterface</code></a>
 : The interface that implements this storage, initialized using Init.</p>
 <p><strong><code>AUserData</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code>
 : The pointer that will be passed to the interface functions.</p>
 <h4 id="returns_7">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlStorage</span></code></p>
+<p><a href="./"><code>TSdlStorage</code></a></p>
 <h4 id="see-also_7">See Also</h4>
 <ul>
 <li><a href="./#Free">Free</a></li>
@@ -1989,7 +1989,7 @@
 <p><strong><code>APath</code></strong>: <code class="language-delphi highlight"><span class="k">String</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;&#39;</span></code>
 : (Optional) base path prepended to all storage paths.</p>
 <h4 id="returns_8">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlStorage</span></code></p>
+<p><a href="./"><code>TSdlStorage</code></a></p>
 <h4 id="see-also_8">See Also</h4>
 <ul>
 <li><a href="./#Free">Free</a></li>
@@ -2009,10 +2009,10 @@
 <h4 id="parameters_11">Parameters</h4>
 <p><strong><code>AOverride</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
 : A path to override the backend's default title root.</p>
-<p><strong><code>AProps</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlProperties</span></code>
+<p><strong><code>AProps</code></strong>: <a href="../../../Neslib.Sdl3.Basics/classes/TSdlProperties/"><code>TSdlProperties</code></a>
 : A property list that may contain backend-specific information.</p>
 <h4 id="returns_9">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlStorage</span></code></p>
+<p><a href="./"><code>TSdlStorage</code></a></p>
 <h4 id="see-also_9">See Also</h4>
 <ul>
 <li><a href="./#Free">Free</a></li>
@@ -2030,7 +2030,7 @@
 <p><strong><code>AOverride</code></strong>: <code class="language-delphi highlight"><span class="k">String</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;&#39;</span></code>
 : (Optional) path to override the backend's default title root.</p>
 <h4 id="returns_10">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlStorage</span></code></p>
+<p><a href="./"><code>TSdlStorage</code></a></p>
 <h4 id="see-also_10">See Also</h4>
 <ul>
 <li><a href="./#Free">Free</a></li>
@@ -2050,15 +2050,15 @@
 : The name of your organization.</p>
 <p><strong><code>AApp</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
 : The name of your application.</p>
-<p><strong><code>AProps</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlProperties</span></code>
+<p><strong><code>AProps</code></strong>: <a href="../../../Neslib.Sdl3.Basics/classes/TSdlProperties/"><code>TSdlProperties</code></a>
 : A property list that may contain backend-specific information.</p>
 <h4 id="returns_11">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlStorage</span></code></p>
+<p><a href="./"><code>TSdlStorage</code></a></p>
 <h4 id="see-also_11">See Also</h4>
 <ul>
 <li><a href="./#Free">Free</a></li>
 <li><a href="./#GetFileSize">GetFileSize</a></li>
-<li>OpenSystem</li>
+<li><a href="./#OpenTitle_0">OpenTitle</a></li>
 <li><a href="./#ReadFile_0">ReadFile</a></li>
 <li><a href="./#SpaceRemaining">SpaceRemaining</a></li>
 <li><a href="./#IsReady">IsReady</a></li>
@@ -2077,12 +2077,12 @@
 <p><strong><code>AApp</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
 : The name of your application.</p>
 <h4 id="returns_12">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlStorage</span></code></p>
+<p><a href="./"><code>TSdlStorage</code></a></p>
 <h4 id="see-also_12">See Also</h4>
 <ul>
 <li><a href="./#Free">Free</a></li>
 <li><a href="./#GetFileSize">GetFileSize</a></li>
-<li>OpenSystem</li>
+<li><a href="./#OpenTitle_0">OpenTitle</a></li>
 <li><a href="./#ReadFile_0">ReadFile</a></li>
 <li><a href="./#SpaceRemaining">SpaceRemaining</a></li>
 <li><a href="./#IsReady">IsReady</a></li>

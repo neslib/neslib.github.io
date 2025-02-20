@@ -1914,7 +1914,7 @@
 <td>Determine whether the CPU has AVX2 features.</td>
 </tr>
 <tr>
-<td><a href="#HasAvx512FSse">HasAvx512FSse</a> <span class="twemoji" title="Class property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg></span></td>
+<td><a href="#HasAvx512F">HasAvx512F</a> <span class="twemoji" title="Class property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg></span></td>
 <td>Determine whether the CPU has AVX-512F (foundation) features.</td>
 </tr>
 <tr>
@@ -2005,7 +2005,7 @@
 <h4 id="see-also_1">See Also</h4>
 <ul>
 <li><a href="./#HasAvx2">HasAvx2</a></li>
-<li>HasAvx512F</li>
+<li><a href="./#HasAvx512F">HasAvx512F</a></li>
 </ul>
 <h4 id="remarks_3">Remarks</h4>
 <p>It is safe to use this property from any thread. </p>
@@ -2018,15 +2018,15 @@
 <h4 id="see-also_2">See Also</h4>
 <ul>
 <li><a href="./#HasAvx">HasAvx</a></li>
-<li>HasAvx512F</li>
+<li><a href="./#HasAvx512F">HasAvx512F</a></li>
 </ul>
 <h4 id="remarks_4">Remarks</h4>
 <p>It is safe to use this property from any thread. </p>
 <hr />
-<h3 id="HasAvx512FSse"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span>  <span class="twemoji" title="Class property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg></span> HasAvx512FSse</h3>
+<h3 id="HasAvx512F"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span>  <span class="twemoji" title="Class property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg></span> HasAvx512F</h3>
 <p>Determine whether the CPU has AVX-512F (foundation) features.</p>
 <p>This always returns False on CPUs that aren't using Intel instruction sets. </p>
-<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">property</span><span class="w"> </span><span class="py">HasAvx512FSse</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetHasAvx512FSse</span></code></p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">property</span><span class="w"> </span><span class="py">HasAvx512F</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetHasAvx512F</span></code></p>
 <p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
 <h4 id="see-also_3">See Also</h4>
 <ul>

@@ -2649,7 +2649,7 @@
 <p>Used to compare against <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuComputePass</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters">Parameters</h4>
-<p><strong><code>ALeft</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuComputePass</span></code></p>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlGpuComputePass</code></a></p>
 <p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
@@ -2660,13 +2660,13 @@
 <h4 id="parameters_1">Parameters</h4>
 <p><strong><code>AValue</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns_1">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlGpuComputePass</span></code></p>
+<p><a href="./"><code>TSdlGpuComputePass</code></a></p>
 <hr />
 <h3 id="NotEqual"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlGpuComputePass, Pointer)</h3>
 <p>Used to compare against <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuComputePass</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_2">Parameters</h4>
-<p><strong><code>ALeft</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuComputePass</span></code></p>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlGpuComputePass</code></a></p>
 <p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns_2">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
@@ -2676,7 +2676,7 @@
 <p>Binds a compute pipeline on a command buffer for use in compute dispatch. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">BindPipeline</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AComputePipeline</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuComputePipeline</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_3">Parameters</h4>
-<p><strong><code>AComputePipeline</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuComputePipeline</span></code>
+<p><strong><code>AComputePipeline</code></strong>: <a href="../TSdlGpuComputePipeline/"><code>TSdlGpuComputePipeline</code></a>
 : A compute pipeline to bind.</p>
 <hr />
 <h3 id="BindSamplers"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> BindSamplers(Integer, TArray&lt;TSdlGpuTextureSamplerBinding&gt;)</h3>
@@ -2715,7 +2715,7 @@
 <p>A VERY IMPORTANT NOTE If you dispatch multiple times in a compute pass, and the dispatches write to the same resource region as each other, there is no guarantee of which order the writes will occur. If the write order matters, you MUST end the compute pass and begin another one. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Dispatch</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ABuffer</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuBuffer</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AOffset</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_7">Parameters</h4>
-<p><strong><code>ABuffer</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuBuffer</span></code>
+<p><strong><code>ABuffer</code></strong>: <a href="../TSdlGpuBuffer/"><code>TSdlGpuBuffer</code></a>
 : A buffer containing dispatch parameters.</p>
 <p><strong><code>AOffset</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The offset to start reading from the dispatch buffer.</p>

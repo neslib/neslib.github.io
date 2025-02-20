@@ -1759,14 +1759,14 @@
 <p>A custom log output function, or nil to use the default log function.</p>
 <p>Note that using a custom log output function can impact performance, especially when a lot of messages are logged (for example, when using a log log priority). </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">property</span><span class="w"> </span><span class="py">CustomOutputFunction</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlLogOutputFunction</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">FCustomOutputFunction</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetCustomOutputFunction</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlLogOutputFunction</span></code></p>
+<p><strong>Type: </strong><a href="../../types/TSdlLogOutputFunction/"><code>TSdlLogOutputFunction</code></a></p>
 <h4 id="remarks">Remarks</h4>
 <p>It is safe to use this property from any thread. </p>
 <hr />
 <h3 id="Priorities"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span>  <span class="twemoji" title="Class property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg></span> Priorities</h3>
 <p>The priorities of log categories. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">property</span><span class="w"> </span><span class="py">Priorities</span><span class="p">[</span><span class="k">const</span><span class="w"> </span><span class="n">ACategory</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlLogCategory</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlLogPriority</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetPriority</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetPriority</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlLogPriority</span></code></p>
+<p><strong>Type: </strong><a href="../../types/TSdlLogPriority/"><code>TSdlLogPriority</code></a></p>
 <h4 id="see-also">See Also</h4>
 <ul>
 <li><a href="./#ResetPriorities">ResetPriorities</a></li>
@@ -1787,7 +1787,7 @@
 : The message</p>
 <p><strong><code>AArgs</code></strong>: <code class="language-delphi highlight"><span class="k">array</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="k">const</span></code>
 : Additional arguments matching the format specifiers.</p>
-<p><strong><code>ACategory</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlLogCategory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TSdlLogCategory</span><span class="o">.</span><span class="n">Application</span></code>
+<p><strong><code>ACategory</code></strong>: <a href="../../types/TSdlLogCategory/"><code>TSdlLogCategory = TSdlLogCategory.Application</code></a>
 : (Optional) category. Defaults to Application.</p>
 <h4 id="remarks_2">Remarks</h4>
 <p>It is safe to call this method from any thread. </p>
@@ -1798,7 +1798,7 @@
 <h4 id="parameters_1">Parameters</h4>
 <p><strong><code>AMessage</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
 : The message</p>
-<p><strong><code>ACategory</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlLogCategory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TSdlLogCategory</span><span class="o">.</span><span class="n">Application</span></code>
+<p><strong><code>ACategory</code></strong>: <a href="../../types/TSdlLogCategory/"><code>TSdlLogCategory = TSdlLogCategory.Application</code></a>
 : (Optional) category. Defaults to Application.</p>
 <h4 id="remarks_3">Remarks</h4>
 <p>It is safe to call this method from any thread. </p>
@@ -1811,7 +1811,7 @@
 : The message</p>
 <p><strong><code>AArgs</code></strong>: <code class="language-delphi highlight"><span class="k">array</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="k">const</span></code>
 : Additional arguments matching the format specifiers.</p>
-<p><strong><code>ACategory</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlLogCategory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TSdlLogCategory</span><span class="o">.</span><span class="n">Application</span></code>
+<p><strong><code>ACategory</code></strong>: <a href="../../types/TSdlLogCategory/"><code>TSdlLogCategory = TSdlLogCategory.Application</code></a>
 : (Optional) category. Defaults to Application.</p>
 <h4 id="remarks_4">Remarks</h4>
 <p>It is safe to call this method from any thread. </p>
@@ -1822,7 +1822,7 @@
 <h4 id="parameters_3">Parameters</h4>
 <p><strong><code>AMessage</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
 : The message</p>
-<p><strong><code>ACategory</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlLogCategory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TSdlLogCategory</span><span class="o">.</span><span class="n">Application</span></code>
+<p><strong><code>ACategory</code></strong>: <a href="../../types/TSdlLogCategory/"><code>TSdlLogCategory = TSdlLogCategory.Application</code></a>
 : (Optional) category. Defaults to Application.</p>
 <h4 id="remarks_5">Remarks</h4>
 <p>It is safe to call this method from any thread. </p>
@@ -1835,7 +1835,7 @@
 : The message</p>
 <p><strong><code>AArgs</code></strong>: <code class="language-delphi highlight"><span class="k">array</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="k">const</span></code>
 : Additional arguments matching the format specifiers.</p>
-<p><strong><code>ACategory</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlLogCategory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TSdlLogCategory</span><span class="o">.</span><span class="n">Application</span></code>
+<p><strong><code>ACategory</code></strong>: <a href="../../types/TSdlLogCategory/"><code>TSdlLogCategory = TSdlLogCategory.Application</code></a>
 : (Optional) category. Defaults to Application.</p>
 <h4 id="remarks_6">Remarks</h4>
 <p>It is safe to call this method from any thread. </p>
@@ -1846,7 +1846,7 @@
 <h4 id="parameters_5">Parameters</h4>
 <p><strong><code>AMessage</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
 : The message</p>
-<p><strong><code>ACategory</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlLogCategory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TSdlLogCategory</span><span class="o">.</span><span class="n">Application</span></code>
+<p><strong><code>ACategory</code></strong>: <a href="../../types/TSdlLogCategory/"><code>TSdlLogCategory = TSdlLogCategory.Application</code></a>
 : (Optional) category. Defaults to Application.</p>
 <h4 id="remarks_7">Remarks</h4>
 <p>It is safe to call this method from any thread. </p>
@@ -1859,7 +1859,7 @@
 : The message with format specifiers.</p>
 <p><strong><code>AArgs</code></strong>: <code class="language-delphi highlight"><span class="k">array</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="k">const</span></code>
 : Additional arguments matching the format specifiers.</p>
-<p><strong><code>ACategory</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlLogCategory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TSdlLogCategory</span><span class="o">.</span><span class="n">Application</span></code>
+<p><strong><code>ACategory</code></strong>: <a href="../../types/TSdlLogCategory/"><code>TSdlLogCategory = TSdlLogCategory.Application</code></a>
 : (Optional) category. Defaults to Application.</p>
 <h4 id="remarks_8">Remarks</h4>
 <p>It is safe to call this method from any thread. </p>
@@ -1870,7 +1870,7 @@
 <h4 id="parameters_7">Parameters</h4>
 <p><strong><code>AMessage</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
 : The message</p>
-<p><strong><code>ACategory</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlLogCategory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TSdlLogCategory</span><span class="o">.</span><span class="n">Application</span></code>
+<p><strong><code>ACategory</code></strong>: <a href="../../types/TSdlLogCategory/"><code>TSdlLogCategory = TSdlLogCategory.Application</code></a>
 : (Optional) category. Defaults to Application.</p>
 <h4 id="remarks_9">Remarks</h4>
 <p>It is safe to call this method from any thread. </p>
@@ -1879,9 +1879,9 @@
 <p>Log a message with the specified category and priority. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">procedure</span><span class="w"> </span><span class="nf">Message</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ACategory</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlLogCategory</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">APriority</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlLogPriority</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AMessage</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AArgs</span><span class="o">:</span><span class="w"> </span><span class="k">array</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="k">const</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_8">Parameters</h4>
-<p><strong><code>ACategory</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlLogCategory</span></code>
+<p><strong><code>ACategory</code></strong>: <a href="../../types/TSdlLogCategory/"><code>TSdlLogCategory</code></a>
 : The category of the message.</p>
-<p><strong><code>APriority</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlLogPriority</span></code>
+<p><strong><code>APriority</code></strong>: <a href="../../types/TSdlLogPriority/"><code>TSdlLogPriority</code></a>
 : The priority of the message.</p>
 <p><strong><code>AMessage</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
 : The message</p>
@@ -1894,9 +1894,9 @@
 <p>Log a message with the specified category and priority. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">procedure</span><span class="w"> </span><span class="nf">Message</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ACategory</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlLogCategory</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">APriority</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlLogPriority</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AMessage</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_9">Parameters</h4>
-<p><strong><code>ACategory</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlLogCategory</span></code>
+<p><strong><code>ACategory</code></strong>: <a href="../../types/TSdlLogCategory/"><code>TSdlLogCategory</code></a>
 : The category of the message.</p>
-<p><strong><code>APriority</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlLogPriority</span></code>
+<p><strong><code>APriority</code></strong>: <a href="../../types/TSdlLogPriority/"><code>TSdlLogPriority</code></a>
 : The priority of the message.</p>
 <p><strong><code>AMessage</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
 : The message</p>
@@ -1919,7 +1919,7 @@
 <p>Set the priority of all log categories. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">procedure</span><span class="w"> </span><span class="nf">SetAllPriorities</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APriority</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlLogPriority</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_10">Parameters</h4>
-<p><strong><code>APriority</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlLogPriority</span></code>
+<p><strong><code>APriority</code></strong>: <a href="../../types/TSdlLogPriority/"><code>TSdlLogPriority</code></a>
 : The TSdlLogPriority to assign.</p>
 <h4 id="see-also_2">See Also</h4>
 <ul>
@@ -1936,7 +1936,7 @@
 <h4 id="exceptions">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_11">Parameters</h4>
-<p><strong><code>APriority</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlLogPriority</span></code>
+<p><strong><code>APriority</code></strong>: <a href="../../types/TSdlLogPriority/"><code>TSdlLogPriority</code></a>
 : The TSdlLogPriority to modify.</p>
 <p><strong><code>APrefix</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
 : The prefix to use for that log priority, or an empty string to use no prefix.</p>
@@ -1956,7 +1956,7 @@
 : The message</p>
 <p><strong><code>AArgs</code></strong>: <code class="language-delphi highlight"><span class="k">array</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="k">const</span></code>
 : Additional arguments matching the format specifiers.</p>
-<p><strong><code>ACategory</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlLogCategory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TSdlLogCategory</span><span class="o">.</span><span class="n">Application</span></code>
+<p><strong><code>ACategory</code></strong>: <a href="../../types/TSdlLogCategory/"><code>TSdlLogCategory = TSdlLogCategory.Application</code></a>
 : (Optional) category. Defaults to Application.</p>
 <h4 id="remarks_15">Remarks</h4>
 <p>It is safe to call this method from any thread. </p>
@@ -1967,7 +1967,7 @@
 <h4 id="parameters_13">Parameters</h4>
 <p><strong><code>AMessage</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
 : The message</p>
-<p><strong><code>ACategory</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlLogCategory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TSdlLogCategory</span><span class="o">.</span><span class="n">Application</span></code>
+<p><strong><code>ACategory</code></strong>: <a href="../../types/TSdlLogCategory/"><code>TSdlLogCategory = TSdlLogCategory.Application</code></a>
 : (Optional) category. Defaults to Application.</p>
 <h4 id="remarks_16">Remarks</h4>
 <p>It is safe to call this method from any thread. </p>
@@ -1980,7 +1980,7 @@
 : The message</p>
 <p><strong><code>AArgs</code></strong>: <code class="language-delphi highlight"><span class="k">array</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="k">const</span></code>
 : Additional arguments matching the format specifiers.</p>
-<p><strong><code>ACategory</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlLogCategory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TSdlLogCategory</span><span class="o">.</span><span class="n">Application</span></code>
+<p><strong><code>ACategory</code></strong>: <a href="../../types/TSdlLogCategory/"><code>TSdlLogCategory = TSdlLogCategory.Application</code></a>
 : (Optional) category. Defaults to Application.</p>
 <h4 id="remarks_17">Remarks</h4>
 <p>It is safe to call this method from any thread. </p>
@@ -1991,7 +1991,7 @@
 <h4 id="parameters_15">Parameters</h4>
 <p><strong><code>AMessage</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
 : The message</p>
-<p><strong><code>ACategory</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlLogCategory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TSdlLogCategory</span><span class="o">.</span><span class="n">Application</span></code>
+<p><strong><code>ACategory</code></strong>: <a href="../../types/TSdlLogCategory/"><code>TSdlLogCategory = TSdlLogCategory.Application</code></a>
 : (Optional) category. Defaults to Application.</p>
 <h4 id="remarks_18">Remarks</h4>
 <p>It is safe to call this method from any thread. </p>
@@ -2004,7 +2004,7 @@
 : The message</p>
 <p><strong><code>AArgs</code></strong>: <code class="language-delphi highlight"><span class="k">array</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="k">const</span></code>
 : Additional arguments matching the format specifiers.</p>
-<p><strong><code>ACategory</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlLogCategory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TSdlLogCategory</span><span class="o">.</span><span class="n">Application</span></code>
+<p><strong><code>ACategory</code></strong>: <a href="../../types/TSdlLogCategory/"><code>TSdlLogCategory = TSdlLogCategory.Application</code></a>
 : (Optional) category. Defaults to Application.</p>
 <h4 id="remarks_19">Remarks</h4>
 <p>It is safe to call this method from any thread. </p>
@@ -2015,7 +2015,7 @@
 <h4 id="parameters_17">Parameters</h4>
 <p><strong><code>AMessage</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
 : The message</p>
-<p><strong><code>ACategory</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlLogCategory</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TSdlLogCategory</span><span class="o">.</span><span class="n">Application</span></code>
+<p><strong><code>ACategory</code></strong>: <a href="../../types/TSdlLogCategory/"><code>TSdlLogCategory = TSdlLogCategory.Application</code></a>
 : (Optional) category. Defaults to Application.</p>
 <h4 id="remarks_20">Remarks</h4>
 <p>It is safe to call this method from any thread. </p>

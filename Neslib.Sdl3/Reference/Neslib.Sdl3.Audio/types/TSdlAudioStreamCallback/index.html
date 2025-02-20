@@ -1430,7 +1430,7 @@
 <h4 id="parameters">Parameters</h4>
 <p><strong><code>AUserData</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code>
 : An opaque pointer provided by the app for their personal use.</p>
-<p><strong><code>AStream</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlAudioStream</span></code>
+<p><strong><code>AStream</code></strong>: <a href="../../classes/TSdlAudioStream/"><code>TSdlAudioStream</code></a>
 : The SDL audio stream associated with this callback.</p>
 <p><strong><code>AAdditionalAmount</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The amount of data, in bytes, that is needed right now.</p>
@@ -1438,8 +1438,8 @@
 : The total amount of data requested, in bytes, that is requested or available.</p>
 <h2 id="see-also">See Also</h2>
 <ul>
-<li>SDL_SetAudioStreamGetCallback</li>
-<li>SDL_SetAudioStreamPutCallback</li>
+<li><a href="../../classes/TSdlAudioStream/#SetGetCallback">TSdlAudioStream.SetGetCallback</a></li>
+<li><a href="../../classes/TSdlAudioStream/#SetPutCallback">TSdlAudioStream.SetPutCallback</a></li>
 </ul>
 <h2 id="remarks">Remarks</h2>
 <p>This callback may run from any thread, so if you need to protect shared data, you should use TSdlAudioStream.Lock to serialize access; this lock will be held before your callback is called, so your callback does not need to manage the lock explicitly. </p>

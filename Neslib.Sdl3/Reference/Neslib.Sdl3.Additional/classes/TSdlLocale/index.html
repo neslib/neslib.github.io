@@ -1924,8 +1924,8 @@
 <p>The returned list of locales are in the order of the user's preference. For example, a German citizen that is fluent in US English and knows enough Japanese to navigate around Tokyo might have a list like: [ {'de', ''}, {'en', 'US'}, {'jp', ''} ]. Someone from England might prefer British English (where "color" is spelled "colour", etc), but will settle for anything like it: [ {'en', 'GB'}, {'en', ''} ].</p>
 <p>This property returns an empty array when the platform does not supply this information at all.</p>
 <p>This might be a "slow" call that has to query the operating system. It's best to ask for this once and save the results. However, this list can change, usually because the user has changed a system preference outside of your program; SDL will send an TSdlEventKind.LocaleChanged event in this case, if possible, and you can call this function again to get an updated copy of preferred locales. </p>
-<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">property</span><span class="w"> </span><span class="py">PreferredLocales</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetPreferredLocales</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TArray</span></code></p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">property</span><span class="w"> </span><span class="py">PreferredLocales</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlLocale</span><span class="o">&gt;</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetPreferredLocales</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlLocale</span><span class="o">&gt;</span></code></p>
 <hr />
 
 

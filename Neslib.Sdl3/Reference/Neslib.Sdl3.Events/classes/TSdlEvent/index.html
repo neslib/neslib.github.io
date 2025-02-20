@@ -2254,7 +2254,8 @@
 
 
 <h1 id="tsdlevent">TSdlEvent</h1>
-<p>A variant record that contains records for the different event types. The TSdlEvent record is the core of all event handling in SDL. TSdlEvent is a variant record of all event records used in SDL. Using it is a simple matter of knowing which event kind corresponds to which property. The table below lists these relationships.</p>
+<p>A variant record that contains records for the different event types.</p>
+<p>The TSdlEvent record is the core of all event handling in SDL. TSdlEvent is a variant record of all event records used in SDL. Using it is a simple matter of knowing which event kind corresponds to which property. The table below lists these relationships.</p>
 <table>
 <thead>
 <tr>
@@ -2320,16 +2321,6 @@
 <td>MouseWheel</td>
 </tr>
 <tr>
-<td>JoystickAdded/Removed/</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>UpdateComplete</td>
-<td>TSdlJoyDeviceEvent</td>
-<td>JoyDevice</td>
-</tr>
-<tr>
 <td>JoystickAxisMotion</td>
 <td>TSdlJoyAxisEvent</td>
 <td>JoyAxis</td>
@@ -2355,19 +2346,9 @@
 <td>JoyBattery</td>
 </tr>
 <tr>
-<td>GamepadAdded/Removed/</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>Remapped/UpdateComplete</td>
-<td></td>
-<td></td>
-</tr>
-<tr>
-<td>SteamHandleUpdated</td>
-<td>TSdlGamepadDeviceEvent</td>
-<td>GamepadDevice</td>
+<td>Joystick* (others)</td>
+<td>TSdlJoyDeviceEvent</td>
+<td>JoyDevice</td>
 </tr>
 <tr>
 <td>GamepadAxisMotion</td>
@@ -2388,6 +2369,11 @@
 <td>GamepadSensorUpdate</td>
 <td>TSdlGamepadSensorEvent</td>
 <td>GamepadSensor</td>
+</tr>
+<tr>
+<td>GamepadAdded* (others)</td>
+<td>TSdlGamepadDeviceEvent</td>
+<td>GamepadDevice</td>
 </tr>
 <tr>
 <td>AudioDevice*</td>
@@ -2656,62 +2642,62 @@
 <h3 id="Audio"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Audio</h3>
 <p>Audio device event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">Audio</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioDeviceEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlAudioDeviceEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlAudioDeviceEvent/"><code>TSdlAudioDeviceEvent</code></a></p>
 <hr />
 <h3 id="Camera"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Camera</h3>
 <p>Camera device event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">Camera</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlCameraDeviceEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlCameraDeviceEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlCameraDeviceEvent/"><code>TSdlCameraDeviceEvent</code></a></p>
 <hr />
 <h3 id="Clipboard"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Clipboard</h3>
 <p>Clipboard event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">Clipboard</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlClipboardEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlClipboardEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlClipboardEvent/"><code>TSdlClipboardEvent</code></a></p>
 <hr />
 <h3 id="Common"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Common</h3>
 <p>Common event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">Common</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlCommonEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlCommonEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlCommonEvent/"><code>TSdlCommonEvent</code></a></p>
 <hr />
 <h3 id="Display"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Display</h3>
 <p>Display event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">Display</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlDisplayEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlDisplayEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlDisplayEvent/"><code>TSdlDisplayEvent</code></a></p>
 <hr />
 <h3 id="Drop"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Drop</h3>
 <p>Drag and drop event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">Drop</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlDropEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlDropEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlDropEvent/"><code>TSdlDropEvent</code></a></p>
 <hr />
 <h3 id="Finger"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Finger</h3>
 <p>Touch finger event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">Finger</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTouchFingerEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlTouchFingerEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlTouchFingerEvent/"><code>TSdlTouchFingerEvent</code></a></p>
 <hr />
 <h3 id="GamepadAxis"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> GamepadAxis</h3>
 <p>Gamepad axis event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">GamepadAxis</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGamepadAxisEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlGamepadAxisEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlGamepadAxisEvent/"><code>TSdlGamepadAxisEvent</code></a></p>
 <hr />
 <h3 id="GamepadButton"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> GamepadButton</h3>
 <p>Gamepad button event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">GamepadButton</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGamepadButtonEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlGamepadButtonEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlGamepadButtonEvent/"><code>TSdlGamepadButtonEvent</code></a></p>
 <hr />
 <h3 id="GamepadDevice"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> GamepadDevice</h3>
 <p>Gamepad device event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">GamepadDevice</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGamepadDeviceEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlGamepadDeviceEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlGamepadDeviceEvent/"><code>TSdlGamepadDeviceEvent</code></a></p>
 <hr />
 <h3 id="GamepadSensor"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> GamepadSensor</h3>
 <p>Gamepad sensor event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">GamepadSensor</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGamepadSensorEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlGamepadSensorEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlGamepadSensorEvent/"><code>TSdlGamepadSensorEvent</code></a></p>
 <hr />
 <h3 id="GamepadTouch"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> GamepadTouch</h3>
 <p>Gamepad touchpad event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">GamepadTouch</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGamepadTouchpadEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlGamepadTouchpadEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlGamepadTouchpadEvent/"><code>TSdlGamepadTouchpadEvent</code></a></p>
 <hr />
 <h3 id="Handle"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Handle</h3>
 <p>Handle to underlying C event record</p>
@@ -2721,132 +2707,132 @@
 <h3 id="JoyAxis"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> JoyAxis</h3>
 <p>Joystick axis event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">JoyAxis</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlJoyAxisEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlJoyAxisEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlJoyAxisEvent/"><code>TSdlJoyAxisEvent</code></a></p>
 <hr />
 <h3 id="JoyBall"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> JoyBall</h3>
 <p>Joystick ball event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">JoyBall</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlJoyBallEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlJoyBallEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlJoyBallEvent/"><code>TSdlJoyBallEvent</code></a></p>
 <hr />
 <h3 id="JoyBattery"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> JoyBattery</h3>
 <p>Joystick battery event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">JoyBattery</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlJoyBatteryEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlJoyBatteryEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlJoyBatteryEvent/"><code>TSdlJoyBatteryEvent</code></a></p>
 <hr />
 <h3 id="JoyButton"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> JoyButton</h3>
 <p>Joystick button event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">JoyButton</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlJoyButtonEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlJoyButtonEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlJoyButtonEvent/"><code>TSdlJoyButtonEvent</code></a></p>
 <hr />
 <h3 id="JoyDevice"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> JoyDevice</h3>
 <p>Joystick device change event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">JoyDevice</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlJoyDeviceEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlJoyDeviceEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlJoyDeviceEvent/"><code>TSdlJoyDeviceEvent</code></a></p>
 <hr />
 <h3 id="JoyHat"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> JoyHat</h3>
 <p>Joystick hat event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">JoyHat</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlJoyHatEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlJoyHatEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlJoyHatEvent/"><code>TSdlJoyHatEvent</code></a></p>
 <hr />
 <h3 id="Key"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Key</h3>
 <p>Keyboard event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">Key</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlKeyboardEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlKeyboardEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlKeyboardEvent/"><code>TSdlKeyboardEvent</code></a></p>
 <hr />
 <h3 id="KeyboardDevice"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> KeyboardDevice</h3>
 <p>Keyboard device change event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">KeyboardDevice</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlKeyboardDeviceEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlKeyboardDeviceEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlKeyboardDeviceEvent/"><code>TSdlKeyboardDeviceEvent</code></a></p>
 <hr />
 <h3 id="Kind"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Kind</h3>
 <p>Event kind, shared with all events</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">Kind</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlEventKind</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlEventKind</span></code></p>
+<p><strong>Type: </strong><a href="../../types/TSdlEventKind/"><code>TSdlEventKind</code></a></p>
 <hr />
 <h3 id="MouseButton"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> MouseButton</h3>
 <p>Mouse button event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">MouseButton</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlMouseButtonEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlMouseButtonEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlMouseButtonEvent/"><code>TSdlMouseButtonEvent</code></a></p>
 <hr />
 <h3 id="MouseDevice"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> MouseDevice</h3>
 <p>Mouse device change event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">MouseDevice</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlMouseDeviceEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlMouseDeviceEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlMouseDeviceEvent/"><code>TSdlMouseDeviceEvent</code></a></p>
 <hr />
 <h3 id="MouseMotion"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> MouseMotion</h3>
 <p>Mouse motion event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">MouseMotion</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlMouseMotionEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlMouseMotionEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlMouseMotionEvent/"><code>TSdlMouseMotionEvent</code></a></p>
 <hr />
 <h3 id="MouseWheel"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> MouseWheel</h3>
 <p>Mouse wheel event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">MouseWheel</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlMouseWheelEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlMouseWheelEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlMouseWheelEvent/"><code>TSdlMouseWheelEvent</code></a></p>
 <hr />
 <h3 id="PenAxis"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> PenAxis</h3>
 <p>Pen axis event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">PenAxis</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPenAxisEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlPenAxisEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlPenAxisEvent/"><code>TSdlPenAxisEvent</code></a></p>
 <hr />
 <h3 id="PenButton"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> PenButton</h3>
 <p>Pen button event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">PenButton</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPenButtonEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlPenButtonEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlPenButtonEvent/"><code>TSdlPenButtonEvent</code></a></p>
 <hr />
 <h3 id="PenMotion"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> PenMotion</h3>
 <p>Pen motion event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">PenMotion</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPenMotionEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlPenMotionEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlPenMotionEvent/"><code>TSdlPenMotionEvent</code></a></p>
 <hr />
 <h3 id="PenProximity"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> PenProximity</h3>
 <p>Pen proximity event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">PenProximity</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPenProximityEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlPenProximityEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlPenProximityEvent/"><code>TSdlPenProximityEvent</code></a></p>
 <hr />
 <h3 id="PenTouch"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> PenTouch</h3>
 <p>Pen tip touching event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">PenTouch</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPenTouchEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlPenTouchEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlPenTouchEvent/"><code>TSdlPenTouchEvent</code></a></p>
 <hr />
 <h3 id="Quit"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Quit</h3>
 <p>Quit request event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">Quit</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlQuitEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlQuitEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlQuitEvent/"><code>TSdlQuitEvent</code></a></p>
 <hr />
 <h3 id="Render"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Render</h3>
 <p>Render event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">Render</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRenderEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlRenderEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlRenderEvent/"><code>TSdlRenderEvent</code></a></p>
 <hr />
 <h3 id="Sensor"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Sensor</h3>
 <p>Sensor event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">Sensor</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSensorEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlSensorEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlSensorEvent/"><code>TSdlSensorEvent</code></a></p>
 <hr />
 <h3 id="TextCandidates"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> TextCandidates</h3>
 <p>Text editing candidates event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">TextCandidates</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTextEditingCandidatesEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlTextEditingCandidatesEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlTextEditingCandidatesEvent/"><code>TSdlTextEditingCandidatesEvent</code></a></p>
 <hr />
 <h3 id="TextEdit"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> TextEdit</h3>
 <p>Text editing event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">TextEdit</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTextEditingEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlTextEditingEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlTextEditingEvent/"><code>TSdlTextEditingEvent</code></a></p>
 <hr />
 <h3 id="TextInput"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> TextInput</h3>
 <p>Text editing candidates event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">TextInput</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTextInputEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlTextInputEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlTextInputEvent/"><code>TSdlTextInputEvent</code></a></p>
 <hr />
 <h3 id="User"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> User</h3>
 <p>Custom event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">User</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlUserEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlUserEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlUserEvent/"><code>TSdlUserEvent</code></a></p>
 <hr />
 <h3 id="Window"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Window</h3>
 <p>Window event data</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">Window</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlWindowEvent</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlWindowEvent</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlWindowEvent/"><code>TSdlWindowEvent</code></a></p>
 <hr />
 <h2 id="method-descriptions">Method Descriptions</h2>
 <h3 id="ConvertToRenderCoordinates"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> ConvertToRenderCoordinates(TSdlRenderer)</h3>
@@ -2866,7 +2852,7 @@
 <h4 id="exceptions">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters">Parameters</h4>
-<p><strong><code>ARenderer</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlRenderer</span></code>
+<p><strong><code>ARenderer</code></strong>: <a href="../../../Neslib.Sdl3.Video/classes/TSdlRenderer/"><code>TSdlRenderer</code></a>
 : The rendering context.</p>
 <h4 id="see-also">See Also</h4>
 <ul>

@@ -2622,12 +2622,12 @@
 <h3 id="Default"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span>  <span class="twemoji" title="Class property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg></span> Default</h3>
 <p>The default GPU driver. This driver does not have a name. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">property</span><span class="w"> </span><span class="py">Default</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuDriver</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetDefault</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlGpuDriver</span></code></p>
+<p><strong>Type: </strong><a href="./"><code>TSdlGpuDriver</code></a></p>
 <hr />
 <h3 id="Drivers"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span>  <span class="twemoji" title="Class property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg></span> Drivers</h3>
 <p>The GPU drivers compiled into SDL. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">property</span><span class="w"> </span><span class="py">Drivers</span><span class="p">[</span><span class="k">const</span><span class="w"> </span><span class="n">AIndex</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuDriver</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetDriver</span><span class="o">;</span><span class="w"> </span><span class="kp">default</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlGpuDriver</span></code></p>
+<p><strong>Type: </strong><a href="./"><code>TSdlGpuDriver</code></a></p>
 <h4 id="see-also_1">See Also</h4>
 <ul>
 <li><a href="./#Count">Count</a></li>
@@ -2652,24 +2652,24 @@
 <h4 id="exceptions">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters">Parameters</h4>
-<p><strong><code>AFormats</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuShaderFormats</span></code>
+<p><strong><code>AFormats</code></strong>: <a href="../../types/TSdlGpuShaderFormats/"><code>TSdlGpuShaderFormats</code></a>
 : Which shader formats the app is able to provide.</p>
 <p><strong><code>ADebugMode</code></strong>: <code class="language-delphi highlight"><span class="kt">Boolean</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">False</span><span class="cm">{$ENDIF}</span></code>
 : (Optional) True to enable debug mode properties and validations. If not given, this will be True in when the app is compiled in DEBUG mode, or False otherwise</p>
 <h4 id="returns">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlGpuDevice</span></code></p>
+<p><a href="../TSdlGpuDevice/"><code>TSdlGpuDevice</code></a></p>
 <h4 id="see-also_3">See Also</h4>
 <ul>
-<li>TSdlGpuDevice.ShaderFormats</li>
+<li><a href="../TSdlGpuDevice/#Formats">TSdlGpuDevice.Formats</a></li>
 <li><a href="../TSdlGpuDevice/#Driver">TSdlGpuDevice.Driver</a></li>
-<li>SupportsFormats</li>
+<li><a href="./#SupportsFormats">TSdlGpuDriver.SupportsFormats</a></li>
 </ul>
 <hr />
 <h3 id="SupportsFormats"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> SupportsFormats(TSdlGpuShaderFormats)</h3>
 <p>Checks for GPU runtime support. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">SupportsFormats</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFormats</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuShaderFormats</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_1">Parameters</h4>
-<p><strong><code>AFormats</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuShaderFormats</span></code>
+<p><strong><code>AFormats</code></strong>: <a href="../../types/TSdlGpuShaderFormats/"><code>TSdlGpuShaderFormats</code></a>
 : Which shader formats the app is able to provide.</p>
 <h4 id="returns_1">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True if supported, False otherwise.</p>
@@ -2682,7 +2682,7 @@
 <p>Checks for GPU runtime support. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="nf">SupportsProperties</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AProps</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlProperties</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_2">Parameters</h4>
-<p><strong><code>AProps</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlProperties</span></code>
+<p><strong><code>AProps</code></strong>: <a href="../../../Neslib.Sdl3.Basics/classes/TSdlProperties/"><code>TSdlProperties</code></a>
 : The properties to use.</p>
 <h4 id="returns_2">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True if supported, False otherwise.</p>

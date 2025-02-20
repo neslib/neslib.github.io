@@ -1765,7 +1765,7 @@
 <p>This reports the audio device that an audio stream is currently bound to.</p>
 <p>If not bound, or invalid, this returns zero, which is not a valid device ID. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Device</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioDevice</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetDevice</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlAudioDevice</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlAudioDevice/"><code>TSdlAudioDevice</code></a></p>
 <h4 id="see-also_1">See Also</h4>
 <ul>
 <li><a href="../TSdlAudioDevice/#Bind_0">TSdlAudioDevice.Bind</a></li>
@@ -1807,8 +1807,8 @@
 <p>Audio streams default to no remapping applied. Passing a nil channel map is legal, and turns off remapping.</p>
 <p>If the length of the array is not equal to the current number of channels in the audio stream's format, this will fail. This is a safety measure to make sure a race condition hasn't changed the format while this call is setting the channel map.</p>
 <p>Unlike attempting to change the stream's format, the input channel map on a stream bound to a recording device is permitted to change at any time; any data added to the stream from the device after this call will have the new mapping, but previously-added data will still have the prior mapping. </p>
-<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">InputChannelMap</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetInputChannelMap</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetInputChannelMap</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TArray</span></code></p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">InputChannelMap</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="kt">Integer</span><span class="o">&gt;</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetInputChannelMap</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetInputChannelMap</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="kt">Integer</span><span class="o">&gt;</span></code></p>
 <h4 id="remarks_4">Remarks</h4>
 <p>It is safe to use this property from any thread </p>
 <hr />
@@ -1839,15 +1839,15 @@
 <p>Audio streams default to no remapping applied. Passing a nil channel map is legal, and turns off remapping.</p>
 <p>If the length of the array is not equal to the current number of channels in the audio stream's format, this will fail. This is a safety measure to make sure a race condition hasn't changed the format while this call is setting the channel map.</p>
 <p>Unlike attempting to change the stream's format, the output channel map on a stream bound to a recording device is permitted to change at any time; any data added to the stream after this call will have the new mapping, but previously-added data will still have the prior mapping. When the channel map doesn't match the hardware's channel layout, SDL will convert the data before feeding it to the device for playback. </p>
-<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">OutputChannelMap</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetOutputChannelMap</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetOutputChannelMap</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TArray</span></code></p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">OutputChannelMap</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="kt">Integer</span><span class="o">&gt;</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetOutputChannelMap</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetOutputChannelMap</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="kt">Integer</span><span class="o">&gt;</span></code></p>
 <h4 id="remarks_6">Remarks</h4>
 <p>It is safe to use this property from any thread </p>
 <hr />
 <h3 id="Properties"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Properties</h3>
 <p>The properties associated with an audio stream. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Properties</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlProperties</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetProperties</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlProperties</span></code></p>
+<p><strong>Type: </strong><a href="../../../Neslib.Sdl3.Basics/classes/TSdlProperties/"><code>TSdlProperties</code></a></p>
 <h4 id="exceptions_4">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="remarks_7">Remarks</h4>
@@ -1885,11 +1885,11 @@
 <p>Destroying the returned stream with Free will also close the audio device associated with this stream. </p>
 <p><code class="language-delphi highlight"><span class="k">constructor</span><span class="w"> </span><span class="nf">Create</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ADeviceID</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioDeviceID</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ASpec</span><span class="o">:</span><span class="w"> </span><span class="n">PSdlAudioSpec</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nil</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ACallback</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioStreamCallback</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nil</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AUserData</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nil</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
 <h4 id="parameters">Parameters</h4>
-<p><strong><code>ADeviceID</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlAudioDeviceID</span></code>
+<p><strong><code>ADeviceID</code></strong>: <a href="../TSdlAudioDeviceID/"><code>TSdlAudioDeviceID</code></a>
 : An audio device to open, or TSdlAudioDeviceID.DefaultPlaybackDevice or TSdlAudioDeviceID.DefaultRecordingDevice.</p>
-<p><strong><code>ASpec</code></strong>: <code class="language-delphi highlight"><span class="n">PSdlAudioSpec</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nil</span></code>
+<p><strong><code>ASpec</code></strong>: <a href="../../types/PSdlAudioSpec/"><code>PSdlAudioSpec = nil</code></a>
 : (Optional) Audio stream's data format. Can be nil.</p>
-<p><strong><code>ACallback</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlAudioStreamCallback</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nil</span></code>
+<p><strong><code>ACallback</code></strong>: <a href="../../types/TSdlAudioStreamCallback/"><code>TSdlAudioStreamCallback = nil</code></a>
 : (Optional) Callback where the app will provide new data for playback, or receive new data for recording. Can be nil, in which case the app will need to call PutData or GetData as necessary.</p>
 <p><strong><code>AUserData</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nil</span></code>
 : (Optional) App-controlled pointer passed to callback. Can be nil. Ignored if callback is nil.</p>
@@ -1897,7 +1897,7 @@
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="see-also_4">See Also</h4>
 <ul>
-<li>Resume</li>
+<li><a href="./#Resume">TSdlAudioStream.Resume</a></li>
 </ul>
 <h4 id="remarks_9">Remarks</h4>
 <p>It is safe to call this constructor from any thread </p>
@@ -1906,9 +1906,9 @@
 <p>Create a new audio stream. </p>
 <p><code class="language-delphi highlight"><span class="k">constructor</span><span class="w"> </span><span class="nf">Create</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ASrcSpec</span><span class="o">,</span><span class="w"> </span><span class="n">ADstSpec</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioSpec</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
 <h4 id="parameters_1">Parameters</h4>
-<p><strong><code>ASrcSpec</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlAudioSpec</span></code>
+<p><strong><code>ASrcSpec</code></strong>: <a href="../TSdlAudioSpec/"><code>TSdlAudioSpec</code></a>
 : The format details of the input audio.</p>
-<p><strong><code>ADstSpec</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlAudioSpec</span></code>
+<p><strong><code>ADstSpec</code></strong>: <a href="../TSdlAudioSpec/"><code>TSdlAudioSpec</code></a>
 : The format details of the output audio.</p>
 <h4 id="exceptions_7">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
@@ -1929,7 +1929,7 @@
 <p>Create a new audio stream. </p>
 <p><code class="language-delphi highlight"><span class="k">constructor</span><span class="w"> </span><span class="nf">Create</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ASpec</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioSpec</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
 <h4 id="parameters_2">Parameters</h4>
-<p><strong><code>ASpec</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlAudioSpec</span></code>
+<p><strong><code>ASpec</code></strong>: <a href="../TSdlAudioSpec/"><code>TSdlAudioSpec</code></a>
 : The format details of the (input) audio.</p>
 <h4 id="exceptions_8">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
@@ -1951,7 +1951,7 @@
 <p>Used to compare against <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioStream</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_3">Parameters</h4>
-<p><strong><code>ALeft</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlAudioStream</span></code></p>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlAudioStream</code></a></p>
 <p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
@@ -1962,13 +1962,13 @@
 <h4 id="parameters_4">Parameters</h4>
 <p><strong><code>AValue</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns_1">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlAudioStream</span></code></p>
+<p><a href="./"><code>TSdlAudioStream</code></a></p>
 <hr />
 <h3 id="NotEqual"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlAudioStream, Pointer)</h3>
 <p>Used to compare against <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioStream</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_5">Parameters</h4>
-<p><strong><code>ALeft</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlAudioStream</span></code></p>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlAudioStream</code></a></p>
 <p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns_2">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
@@ -2044,9 +2044,9 @@
 <h4 id="exceptions_12">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_7">Parameters</h4>
-<p><strong><code>ASrcSpec</code></strong>: <code class="language-delphi highlight"><span class="n">PSdlAudioSpec</span></code>
+<p><strong><code>ASrcSpec</code></strong>: <a href="../../types/PSdlAudioSpec/"><code>PSdlAudioSpec</code></a>
 : Where to store the input audio format, or nil if not needed.</p>
-<p><strong><code>ADstSpec</code></strong>: <code class="language-delphi highlight"><span class="n">PSdlAudioSpec</span></code>
+<p><strong><code>ADstSpec</code></strong>: <a href="../../types/PSdlAudioSpec/"><code>PSdlAudioSpec</code></a>
 : Where to store the output audio format, or nil if not needed.</p>
 <h4 id="see-also_11">See Also</h4>
 <ul>
@@ -2127,9 +2127,9 @@
 <h4 id="exceptions_17">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_9">Parameters</h4>
-<p><strong><code>ASrcSpec</code></strong>: <code class="language-delphi highlight"><span class="n">PSdlAudioSpec</span></code>
+<p><strong><code>ASrcSpec</code></strong>: <a href="../../types/PSdlAudioSpec/"><code>PSdlAudioSpec</code></a>
 : The new format of the audio input or nil to leave it unchanged.</p>
-<p><strong><code>ADstSpec</code></strong>: <code class="language-delphi highlight"><span class="n">PSdlAudioSpec</span></code>
+<p><strong><code>ADstSpec</code></strong>: <a href="../../types/PSdlAudioSpec/"><code>PSdlAudioSpec</code></a>
 : The new format of the audio output or nil to leave it unchanged.</p>
 <h4 id="see-also_16">See Also</h4>
 <ul>
@@ -2152,7 +2152,7 @@
 <h4 id="exceptions_18">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_10">Parameters</h4>
-<p><strong><code>ACallback</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlAudioStreamCallback</span></code>
+<p><strong><code>ACallback</code></strong>: <a href="../../types/TSdlAudioStreamCallback/"><code>TSdlAudioStreamCallback</code></a>
 : The new callback function to call when data is requested from the stream.</p>
 <p><strong><code>AUserData</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code>
 : An opaque pointer provided to the callback for its own personal use.</p>
@@ -2177,7 +2177,7 @@
 <h4 id="exceptions_19">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_11">Parameters</h4>
-<p><strong><code>ACallback</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlAudioStreamCallback</span></code>
+<p><strong><code>ACallback</code></strong>: <a href="../../types/TSdlAudioStreamCallback/"><code>TSdlAudioStreamCallback</code></a>
 : The new callback function to call when data is added to the stream.</p>
 <p><strong><code>AUserData</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code>
 : an opaque pointer provided to the callback for its own personal use.</p>

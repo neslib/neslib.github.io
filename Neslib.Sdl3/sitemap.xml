@@ -2,2034 +2,2034 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/APIByCategory/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/APIByCategory/Neslib.Sdl3.Additional/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/APIByCategory/Neslib.Sdl3.Audio/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/APIByCategory/Neslib.Sdl3.Basics/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/APIByCategory/Neslib.Sdl3.Events/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/APIByCategory/Neslib.Sdl3.Gpu/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/APIByCategory/Neslib.Sdl3.Haptic/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/APIByCategory/Neslib.Sdl3.IO/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/APIByCategory/Neslib.Sdl3.Input/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/APIByCategory/Neslib.Sdl3.Time/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/APIByCategory/Neslib.Sdl3.Video/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/APIByCategory/Neslib.Sdl3/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Misc/KeyboardBestPractices/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3/classes/TSdlApp/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3/routines/RunApp/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3/types/TSdlAppClass/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3/types/TSdlAppResult/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/classes/TSdlClipboard/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/classes/TSdlCpu/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/classes/TSdlDialog/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/classes/TSdlDialogFileFilter/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/classes/TSdlEnvironment/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/classes/TSdlLocale/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/classes/TSdlMemoryManager/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/classes/TSdlMessageBoxButtonData/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/classes/TSdlMessageBoxColor/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/classes/TSdlMessageBoxColorScheme/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/classes/TSdlMessageBoxData/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/classes/TSdlProcess/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/classes/TSdlTray/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/classes/TSdlTrayEntry/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/classes/TSdlTrayMenu/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/constants/SDL_CACHELINE_SIZE/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/constants/SDL_SINGLE_EPSILON/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/interfaces/ISdlClipboardDataProvider/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/routines/SdlAlignedAlloc/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/routines/SdlAlignedFree/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/routines/SdlCAlloc/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/routines/SdlCrc16/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/routines/SdlCrc32/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/routines/SdlFillChar4/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/routines/SdlFree/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/routines/SdlGetDirect3D9AdapterIndex/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/routines/SdlGetDxgiOutputInfo/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/routines/SdlGetPowerInfo/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/routines/SdlGetSandbox/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/routines/SdlIsTV/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/routines/SdlIsTablet/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/routines/SdlMAlloc/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/routines/SdlMurmur3/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/routines/SdlNumAllocations/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/routines/SdlOpenUrl/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/routines/SdlRealloc/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/routines/SdlShowMessageBox/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/routines/SdlShowSimpleMessageBox_0/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/routines/SdlShowSimpleMessageBox_1/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/types/PSdlMessageBoxButtonData/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/types/PSdlMessageBoxColorScheme/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/types/TSdlCAllocFunc/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/types/TSdlDialogFileCallback/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/types/TSdlFreeFunc/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/types/TSdlMAllocFunc/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/types/TSdlMessageBoxButtonFlag/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/types/TSdlMessageBoxButtonFlags/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/types/TSdlMessageBoxColorType/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/types/TSdlMessageBoxFlag/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/types/TSdlMessageBoxFlags/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/types/TSdlPowerState/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/types/TSdlProcessIO/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/types/TSdlReallocFunc/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/types/TSdlSandbox/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/types/TSdlTrayCallback/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/types/TSdlTrayEntryFlag/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Additional/types/TSdlTrayEntryFlags/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Audio/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Audio/classes/TSdlAudioBuffer/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Audio/classes/TSdlAudioDevice/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Audio/classes/TSdlAudioDeviceID/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Audio/classes/TSdlAudioDriver/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Audio/classes/TSdlAudioSpec/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Audio/classes/TSdlAudioStream/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Audio/types/PSdlAudioSpec/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Audio/types/TSdlAudioFormat/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Audio/types/TSdlAudioPostmixCallback/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Audio/types/TSdlAudioStreamCallback/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/classes/ESdlError/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/classes/TSdlHints/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/classes/TSdlLog/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/classes/TSdlProperties/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/classes/TSdlProperty/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/classes/TSdlVersion/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/routines/SdlCheck_0/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/routines/SdlCheck_1/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/routines/SdlCheck_2/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/routines/SdlFailed_0/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/routines/SdlFailed_1/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/routines/SdlFailed_2/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/routines/SdlGetAppMetadata/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/routines/SdlInit/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/routines/SdlInitSubSystem/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/routines/SdlIsMainThread/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/routines/SdlQuit/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/routines/SdlQuitSubSystem/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/routines/SdlRunOnMainThread/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/routines/SdlSetAppMetadata_0/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/routines/SdlSetAppMetadata_1/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/routines/SdlSucceeded_0/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/routines/SdlSucceeded_1/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/routines/SdlSucceeded_2/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/routines/SdlWasInit/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/types/TSdlEnumeratePropertiesCallback/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/types/TSdlHintCallback/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/types/TSdlHintPriority/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/types/TSdlInitFlag/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/types/TSdlInitFlags/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/types/TSdlLogCategory/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/types/TSdlLogOutputFunction/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/types/TSdlLogPriority/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/types/TSdlMainThreadCallback/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/types/TSdlPropertyCleanupCallback/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Basics/types/TSdlPropertyType/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlAudioDeviceEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlCameraDeviceEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlClipboardEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlCommonEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlDisplayEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlDropEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlEvents/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlGamepadAxisEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlGamepadButtonEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlGamepadDeviceEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlGamepadSensorEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlGamepadTouchpadEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlJoyAxisEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlJoyBallEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlJoyBatteryEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlJoyButtonEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlJoyDeviceEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlJoyHatEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlKeyboardDeviceEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlKeyboardEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlMouseButtonEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlMouseDeviceEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlMouseMotionEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlMouseWheelEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlPenAxisEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlPenButtonEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlPenMotionEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlPenProximityEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlPenTouchEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlQuitEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlRenderEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlSensorEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlTextEditingCandidatesEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlTextEditingEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlTextInputEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlTouchFingerEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlUserEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/classes/TSdlWindowEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/types/PSdlEvent/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/types/TSdlEventAction/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/types/TSdlEventFilter/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Events/types/TSdlEventKind/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuBlitInfo/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuBlitRegion/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuBuffer/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuBufferBinding/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuBufferCreateInfo/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuBufferLocation/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuBufferRegion/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuColorTargetBlendState/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuColorTargetDescription/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuColorTargetInfo/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuCommandBuffer/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuComputePass/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuComputePipeline/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuComputePipelineCreateInfo/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuCopyPass/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuDepthStencilState/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuDepthStencilTargetInfo/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuDevice/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuDriver/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuFence/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuGraphicsPipeline/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuGraphicsPipelineCreateInfo/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuGraphicsPipelineTargetInfo/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuIndexedIndirectDrawCommand/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuIndirectDispatchCommand/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuIndirectDrawCommand/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuMultisampleState/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuRasterizerState/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuRenderPass/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuSampler/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuSamplerCreateInfo/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuShader/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuShaderCreateInfo/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuStencilOpState/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuStorageBufferReadWriteBinding/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuStorageTextureReadWriteBinding/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuTexture/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuTextureCreateInfo/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuTextureLocation/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuTextureRegion/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuTextureSamplerBinding/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuTextureTransferInfo/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuTransferBuffer/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuTransferBufferCreateInfo/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuTransferBufferLocation/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuVertexAttribute/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuVertexBufferDescription/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuVertexInputState/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuViewport/</loc>
-         <lastmod>2025-02-19</lastmod>
-    </url>
-    <url>
-         <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/PSDL_GPUGraphicsPipelineCreateInfo/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/PSdlGpuBlitRegion/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/PSdlGpuColorTargetBlendState/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/PSdlGpuDepthStencilState/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
+    </url>
+    <url>
+         <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/PSdlGpuGraphicsPipelineCreateInfo/</loc>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/PSdlGpuMultisampleState/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/PSdlGpuRasterizerState/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/PSdlGpuStencilOpState/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuBlendFactor/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuBlendOp/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuBufferUsageFlag/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuBufferUsageFlags/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuColorComponentFlag/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuColorComponentFlags/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuCompareOp/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuCubeMapFace/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuCullMode/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuFillMode/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuFilter/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuFrontFace/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuIndexElementSize/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuLoadOp/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuPresentMode/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuPrimitiveType/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuSampleCount/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuSamplerAddressMode/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuSamplerMipmapMode/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuShaderFormat/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuShaderFormats/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuShaderStage/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuStencilOp/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuStoreOp/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuSwapchainComposition/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuTextureFormat/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuTextureKind/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuTextureUsageFlag/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuTextureUsageFlags/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuTransferBufferUsage/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuVertexElementFormat/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Gpu/types/TSdlGpuVertexInputRate/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Haptic/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Haptic/classes/TSdlHaptic/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Haptic/classes/TSdlHapticCondition/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Haptic/classes/TSdlHapticConstant/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Haptic/classes/TSdlHapticCustom/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Haptic/classes/TSdlHapticDirection/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Haptic/classes/TSdlHapticEffect/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Haptic/classes/TSdlHapticID/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Haptic/classes/TSdlHapticLeftRight/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Haptic/classes/TSdlHapticPeriodic/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Haptic/classes/TSdlHapticRamp/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Haptic/constants/SDL_HAPTIC_INFINITY/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Haptic/routines/SdlIsJoystickHaptic/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Haptic/routines/SdlIsMouseHaptic/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Haptic/types/PSdlHapticDirection/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Haptic/types/TSdlHapticDirectionKind/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Haptic/types/TSdlHapticEffectID/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Haptic/types/TSdlHapticFeature/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Haptic/types/TSdlHapticFeatures/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Haptic/types/TSdlHapticKind/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.IO/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.IO/classes/TSdlAsyncIO/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.IO/classes/TSdlAsyncIOOutcome/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.IO/classes/TSdlAsyncIOQueue/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.IO/classes/TSdlDirectoryEntry/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.IO/classes/TSdlIOStream/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.IO/classes/TSdlIOStreamInterface/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.IO/classes/TSdlPathInfo/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.IO/classes/TSdlStorage/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.IO/classes/TSdlStorageInterface/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.IO/routines/SdlLoadAsync/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.IO/routines/SdlLoad_0/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.IO/routines/SdlLoad_1/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.IO/routines/SdlSave/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.IO/types/TSdlAsyncIOResult/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.IO/types/TSdlAsyncIOTaskKind/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.IO/types/TSdlIOStatus/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.IO/types/TSdlIOWhence/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.IO/types/TSdlPathKind/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/classes/TSdlCursor/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/classes/TSdlFinger/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/classes/TSdlGamepad/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/classes/TSdlGamepadBinding/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/classes/TSdlGamepadID/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/classes/TSdlJoystick/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/classes/TSdlJoystickID/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/classes/TSdlKeyboard/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/classes/TSdlKeyboardState/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/classes/TSdlMouse/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/classes/TSdlSensor/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/classes/TSdlSensorID/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/classes/TSdlTouch/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/classes/TSdlVirtualJoystickDesc/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/classes/TSdlVirtualJoystickSensorDesc/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/classes/TSdlVirtualJoystickTouchpadDesc/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/constants/SDL_JOYSTICK_AXIS_MAX/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/constants/SDL_JOYSTICK_AXIS_MIN/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/constants/SDL_STANDARD_GRAVITY/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlBasicGamepadAxis/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlBasicGamepadButton/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlFingerID/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlGamepadAxes/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlGamepadAxis/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlGamepadBindingType/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlGamepadButton/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlGamepadButtonLabel/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlGamepadButtons/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlGamepadConnectionState/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlGamepadKind/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlHat/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlJoystickConnectionState/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlJoystickKind/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlKeyMod/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlKeyMods/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlKeycode/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlMouseButton/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlMouseButtons/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlMouseWheelDirection/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlPenAxis/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlPenID/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlPenInputFlag/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlPenInputFlags/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlScancode/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlSensorKind/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlSystemCursor/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlTouchDeviceType/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlVirtualJoystickCleanup/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlVirtualJoystickRumble/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlVirtualJoystickRumbleTriggers/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlVirtualJoystickSendEffect/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlVirtualJoystickSetLed/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlVirtualJoystickSetPlayerIndex/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlVirtualJoystickSetSensorsEnabled/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Input/types/TSdlVirtualJoystickUpdate/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Time/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Time/constants/SDL_MS_PER_SECOND/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Time/constants/SDL_NS_PER_MS/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Time/constants/SDL_NS_PER_SECOND/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Time/constants/SDL_NS_PER_US/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Time/constants/SDL_US_PER_SECOND/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Time/routines/SdlAddTimer/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Time/routines/SdlAddTimerNS/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Time/routines/SdlDelay/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Time/routines/SdlDelayNS/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Time/routines/SdlDelayPrecise/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Time/routines/SdlGetPerformanceCounter/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Time/routines/SdlGetPerformanceFrequency/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Time/routines/SdlGetTicks/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Time/routines/SdlMSToNS/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Time/routines/SdlNSToMS/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Time/routines/SdlNSToSeconds/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Time/routines/SdlNSToUS/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Time/routines/SdlRemoveTimer/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Time/routines/SdlSecondsToNS/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Time/routines/SdlUSToNS/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Time/types/TSdlTimerCallback/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Time/types/TSdlTimerID/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Time/types/TSdlTimerNSCallback/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/classes/TSdlCamera/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/classes/TSdlCameraDriver/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/classes/TSdlCameraID/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/classes/TSdlCameraSpec/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/classes/TSdlColor/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/classes/TSdlColorF/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/classes/TSdlDisplay/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/classes/TSdlDisplayMode/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/classes/TSdlEgl/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/classes/TSdlEglConfig/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/classes/TSdlEglDisplay/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/classes/TSdlEglSurface/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/classes/TSdlGL/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/classes/TSdlGLContext/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/classes/TSdlMetalView/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/classes/TSdlPalette/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/classes/TSdlPixelFormatDetails/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/classes/TSdlPoint/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/classes/TSdlPointF/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/classes/TSdlRect/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/classes/TSdlRectF/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/classes/TSdlRenderer/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/classes/TSdlScreenSaver/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/classes/TSdlSize/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/classes/TSdlSizeF/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/classes/TSdlSurface/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/classes/TSdlTexture/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/classes/TSdlVertex/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/classes/TSdlVideoDriver/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/classes/TSdlWindow/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/constants/SDL_ALPHA_OPAQUE/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/constants/SDL_ALPHA_OPAQUE_FLOAT/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/constants/SDL_ALPHA_TRANSPARENT/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/constants/SDL_ALPHA_TRANSPARENT_FLOAT/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/constants/SDL_DEBUG_TEXT_FONT_CHARACTER_SIZE/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/constants/SDL_NO_COLOR_KEY/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/constants/SDL_SOFTWARE_RENDERER/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/routines/PremultiplyAlpha/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/routines/SdlColor/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/routines/SdlColorF/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/routines/SdlConvert_0/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/routines/SdlConvert_1/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/routines/SdlConvert_2/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/routines/SdlPointF_0/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/routines/SdlPointF_1/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/routines/SdlPointF_2/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/routines/SdlPointF_3/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/routines/SdlPoint_0/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/routines/SdlPoint_1/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/routines/SdlRectF_0/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/routines/SdlRectF_1/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/routines/SdlRectF_2/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/routines/SdlRectF_3/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/routines/SdlRect_0/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/routines/SdlRect_1/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/routines/SdlSize/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/routines/SdlSizeF_0/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/routines/SdlSizeF_1/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/routines/SdlVulkanCreateSurface/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/routines/SdlVulkanDestroySurface/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/routines/SdlVulkanGetInstanceExtensions/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/routines/SdlVulkanGetPresentationSupport/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/routines/SdlVulkanGetVkGetInstanceProcAddr/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/routines/SdlVulkanLoadLibrary/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/routines/SdlVulkanUnloadLibrary/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/PSdlColor/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/PSdlColorF/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/PSdlDisplayMode/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/PSdlPoint/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/PSdlPointF/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/PSdlRect/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/PSdlRectF/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/PSdlSize/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/PSdlSizeF/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/PSdlVertex/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/PVkAllocationCallbacks/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlArrayOrder/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlBitmapOrder/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlBlendFactor/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlBlendMode/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlBlendOperation/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlCameraPermissionState/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlCameraPosition/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlCapitalization/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlChromaLocation/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlColorPrimaries/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlColorRange/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlColorType/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlColorspace/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlDisplayID/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlDisplayOrientation/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlEglAttrib/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlEglAttribArrayCallback/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlEglInt/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlEglIntArrayCallback/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlFlashOperation/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlFlipMode/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlFlipModes/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlGLAttr/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlGLContextFlag/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlGLContextFlags/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlGLContextReleaseFlag/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlGLContextReleaseFlags/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlGLContextResetNotification/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlGLProfile/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlHitTestCallback/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlHitTestResult/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlIndexType/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlMatrixCoefficients/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlPackedLayout/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlPackedOrder/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlPixelFormat/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlPixelType/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlRendererLogicalPresentation/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlRendererVsync/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlScaleMode/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlSurfaceFlag/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlSurfaceFlags/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlSystemTheme/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlTextInputType/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlTextureAccess/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlTransferCharacteristics/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlWindowFlag/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlWindowFlags/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlWindowID/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlWindowPos/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/TSdlWindowSurfaceVsync/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/VkInstance/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/VkPhysicalDevice/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
     <url>
          <loc>https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Video/types/VkSurfaceKHR/</loc>
-         <lastmod>2025-02-19</lastmod>
+         <lastmod>2025-02-20</lastmod>
     </url>
 </urlset>

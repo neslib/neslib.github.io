@@ -2483,7 +2483,7 @@
 <hr />
 <h3 id="Format"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Format</h3>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Format</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPixelFormat</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetFormat</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlPixelFormat</span></code></p>
+<p><strong>Type: </strong><a href="../../types/TSdlPixelFormat/"><code>TSdlPixelFormat</code></a></p>
 <hr />
 <h3 id="GBits"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> GBits</h3>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">GBits</span><span class="o">:</span><span class="w"> </span><span class="kt">Byte</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nc">FHandle</span><span class="o">.</span><span class="nf">Gbits</span></code></p>
@@ -2514,7 +2514,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">GetRgb</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APixel</span><span class="o">:</span><span class="w"> </span><span class="kt">Cardinal</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">APalette</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPalette</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="n">out</span><span class="w"> </span><span class="n">AR</span><span class="o">,</span><span class="w"> </span><span class="n">AG</span><span class="o">,</span><span class="w"> </span><span class="n">AB</span><span class="o">:</span><span class="w"> </span><span class="kt">Byte</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters">Parameters</h4>
 <p><strong><code>APixel</code></strong>: <code class="language-delphi highlight"><span class="kt">Cardinal</span></code></p>
-<p><strong><code>APalette</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlPalette</span></code></p>
+<p><strong><code>APalette</code></strong>: <a href="../TSdlPalette/"><code>TSdlPalette</code></a></p>
 <p><strong><code>AR</code></strong>: <code class="language-delphi highlight"><span class="kt">Byte</span></code></p>
 <p><strong><code>AG</code></strong>: <code class="language-delphi highlight"><span class="kt">Byte</span></code></p>
 <p><strong><code>AB</code></strong>: <code class="language-delphi highlight"><span class="kt">Byte</span></code></p>
@@ -2534,7 +2534,7 @@
 : Is set to the blue component.</p>
 <h4 id="see-also">See Also</h4>
 <ul>
-<li>TSdlPixelFormat.Details</li>
+<li><a href="../../types/TSdlPixelFormat/#Details">TSdlPixelFormat.Details</a></li>
 <li><a href="./#GetRgba_0">GetRgba</a></li>
 <li><a href="./#MapRgb_0">MapRgb</a></li>
 <li><a href="./#MapRgba_0">MapRgba</a></li>
@@ -2546,7 +2546,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">GetRgba</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APixel</span><span class="o">:</span><span class="w"> </span><span class="kt">Cardinal</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">APalette</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPalette</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="n">out</span><span class="w"> </span><span class="n">AR</span><span class="o">,</span><span class="w"> </span><span class="n">AG</span><span class="o">,</span><span class="w"> </span><span class="n">AB</span><span class="o">,</span><span class="w"> </span><span class="n">AA</span><span class="o">:</span><span class="w"> </span><span class="kt">Byte</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_2">Parameters</h4>
 <p><strong><code>APixel</code></strong>: <code class="language-delphi highlight"><span class="kt">Cardinal</span></code></p>
-<p><strong><code>APalette</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlPalette</span></code></p>
+<p><strong><code>APalette</code></strong>: <a href="../TSdlPalette/"><code>TSdlPalette</code></a></p>
 <p><strong><code>AR</code></strong>: <code class="language-delphi highlight"><span class="kt">Byte</span></code></p>
 <p><strong><code>AG</code></strong>: <code class="language-delphi highlight"><span class="kt">Byte</span></code></p>
 <p><strong><code>AB</code></strong>: <code class="language-delphi highlight"><span class="kt">Byte</span></code></p>
@@ -2570,7 +2570,7 @@
 : Is set to the alpha component.</p>
 <h4 id="see-also_1">See Also</h4>
 <ul>
-<li>TSdlPixelFormat.Details</li>
+<li><a href="../../types/TSdlPixelFormat/#Details">TSdlPixelFormat.Details</a></li>
 <li><a href="./#GetRgb_0">GetRgb</a></li>
 <li><a href="./#MapRgb_0">MapRgb</a></li>
 <li><a href="./#MapRgba_0">MapRgba</a></li>
@@ -2581,7 +2581,7 @@
 <h3 id="MapRgb_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> MapRgb(TSdlPalette, Byte, Byte, Byte)</h3>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">MapRgb</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APalette</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPalette</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AR</span><span class="o">,</span><span class="w"> </span><span class="w">  </span><span class="n">AG</span><span class="o">,</span><span class="w"> </span><span class="n">AB</span><span class="o">:</span><span class="w"> </span><span class="kt">Byte</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Cardinal</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_4">Parameters</h4>
-<p><strong><code>APalette</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlPalette</span></code></p>
+<p><strong><code>APalette</code></strong>: <a href="../TSdlPalette/"><code>TSdlPalette</code></a></p>
 <p><strong><code>AR</code></strong>: <code class="language-delphi highlight"><span class="kt">Byte</span></code></p>
 <p><strong><code>AG</code></strong>: <code class="language-delphi highlight"><span class="kt">Byte</span></code></p>
 <p><strong><code>AB</code></strong>: <code class="language-delphi highlight"><span class="kt">Byte</span></code></p>
@@ -2606,7 +2606,7 @@
 <p><code class="language-delphi highlight"><span class="kt">Cardinal</span></code>: A pixel value.</p>
 <h4 id="see-also_2">See Also</h4>
 <ul>
-<li>TSdlPixelFormat.Details</li>
+<li><a href="../../types/TSdlPixelFormat/#Details">TSdlPixelFormat.Details</a></li>
 <li><a href="./#GetRgb_0">GetRgb</a></li>
 <li><a href="./#MapRgba_0">MapRgba</a></li>
 <li><a href="../TSdlSurface/#MapRgb">TSdlSurface.MapRgb</a></li>
@@ -2617,7 +2617,7 @@
 <h3 id="MapRgba_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> MapRgba(TSdlPalette, Byte, Byte, Byte, Byte)</h3>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">MapRgba</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APalette</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPalette</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AR</span><span class="o">,</span><span class="w"> </span><span class="w">  </span><span class="n">AG</span><span class="o">,</span><span class="w"> </span><span class="n">AB</span><span class="o">,</span><span class="w"> </span><span class="n">AA</span><span class="o">:</span><span class="w"> </span><span class="kt">Byte</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Cardinal</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_6">Parameters</h4>
-<p><strong><code>APalette</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlPalette</span></code></p>
+<p><strong><code>APalette</code></strong>: <a href="../TSdlPalette/"><code>TSdlPalette</code></a></p>
 <p><strong><code>AR</code></strong>: <code class="language-delphi highlight"><span class="kt">Byte</span></code></p>
 <p><strong><code>AG</code></strong>: <code class="language-delphi highlight"><span class="kt">Byte</span></code></p>
 <p><strong><code>AB</code></strong>: <code class="language-delphi highlight"><span class="kt">Byte</span></code></p>
@@ -2645,7 +2645,7 @@
 <p><code class="language-delphi highlight"><span class="kt">Cardinal</span></code>: A pixel value.</p>
 <h4 id="see-also_3">See Also</h4>
 <ul>
-<li>TSdlPixelFormat.Details</li>
+<li><a href="../../types/TSdlPixelFormat/#Details">TSdlPixelFormat.Details</a></li>
 <li><a href="./#GetRgba_0">GetRgba</a></li>
 <li><a href="./#MapRgb_0">MapRgb</a></li>
 <li><a href="../TSdlSurface/#MapRgba">TSdlSurface.MapRgba</a></li>

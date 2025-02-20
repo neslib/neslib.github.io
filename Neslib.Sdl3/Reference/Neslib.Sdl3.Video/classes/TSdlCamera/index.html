@@ -2457,7 +2457,7 @@
 <p>Note that this might not be the native format of the hardware, as SDL might be converting to this format behind the scenes.</p>
 <p>If the system is waiting for the user to approve access to the camera, as some platforms require, this will raise an error, but this isn't necessarily a fatal error; you should either wait for an TSdlEventKind.CameraDeviceApproved (or TSdlEventKind.CameraDeviceDenied) event, or poll PermissionState occasionally. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Format</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlCameraSpec</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetFormat</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlCameraSpec</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlCameraSpec/"><code>TSdlCameraSpec</code></a></p>
 <h4 id="exceptions">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="see-also">See Also</h4>
@@ -2470,7 +2470,7 @@
 <h3 id="ID"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> ID</h3>
 <p>The instance ID of this opened camera. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">ID</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlCameraID</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetID</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlCameraID</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlCameraID/"><code>TSdlCameraID</code></a></p>
 <h4 id="exceptions_1">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="see-also_1">See Also</h4>
@@ -2487,7 +2487,7 @@
 <p>Instead of polling with this property, you can wait for a TSdlEventKind.CameraDeviceApproved (or TSdlEventKind.CameraDeviceDenied) event in the standard SDL event loop, which is guaranteed to be sent once when permission to use the camera is decided.</p>
 <p>If a camera is declined, there's nothing to be done but call Close to dispose of it. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">PermissionState</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlCameraPermissionState</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetPermissionState</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlCameraPermissionState</span></code></p>
+<p><strong>Type: </strong><a href="../../types/TSdlCameraPermissionState/"><code>TSdlCameraPermissionState</code></a></p>
 <h4 id="see-also_2">See Also</h4>
 <ul>
 <li><a href="./#Open_0">Open</a></li>
@@ -2499,7 +2499,7 @@
 <h3 id="Properties"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Properties</h3>
 <p>The properties associated with the opened camera. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Properties</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlProperties</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetProperties</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlProperties</span></code></p>
+<p><strong>Type: </strong><a href="../../../Neslib.Sdl3.Basics/classes/TSdlProperties/"><code>TSdlProperties</code></a></p>
 <h4 id="exceptions_2">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="remarks_3">Remarks</h4>
@@ -2510,7 +2510,7 @@
 <p>Used to compare against <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlCamera</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters">Parameters</h4>
-<p><strong><code>ALeft</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlCamera</span></code></p>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlCamera</code></a></p>
 <p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
@@ -2521,13 +2521,13 @@
 <h4 id="parameters_1">Parameters</h4>
 <p><strong><code>AValue</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns_1">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlCamera</span></code></p>
+<p><a href="./"><code>TSdlCamera</code></a></p>
 <hr />
 <h3 id="NotEqual"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlCamera, Pointer)</h3>
 <p>Used to compare against <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlCamera</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_2">Parameters</h4>
-<p><strong><code>ALeft</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlCamera</span></code></p>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlCamera</code></a></p>
 <p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns_2">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
@@ -2546,7 +2546,7 @@
 <p><strong><code>ATimestampNS</code></strong>: <code class="language-delphi highlight"><span class="n">UInt64</span></code>
 : Is set to the frame's timestamp.</p>
 <h4 id="returns_3">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlSurface</span></code>: A new frame of video on success, nil if none is currently available.</p>
+<p><a href="../TSdlSurface/"><code>TSdlSurface</code></a>: A new frame of video on success, nil if none is currently available.</p>
 <h4 id="see-also_3">See Also</h4>
 <ul>
 <li><a href="./#ReleaseFrame">ReleaseFrame</a></li>
@@ -2574,15 +2574,15 @@
 <h4 id="exceptions_3">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_4">Parameters</h4>
-<p><strong><code>AInstanceID</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlCameraID</span></code>
+<p><strong><code>AInstanceID</code></strong>: <a href="../TSdlCameraID/"><code>TSdlCameraID</code></a>
 : The camera device instance ID.</p>
-<p><strong><code>ASpec</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlCameraSpec</span></code>
+<p><strong><code>ASpec</code></strong>: <a href="../TSdlCameraSpec/"><code>TSdlCameraSpec</code></a>
 : The desired format for data the device will provide.</p>
 <h4 id="returns_4">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlCamera</span></code>: The opened camera.</p>
+<p><a href="./"><code>TSdlCamera</code></a>: The opened camera.</p>
 <h4 id="see-also_5">See Also</h4>
 <ul>
-<li>TSdlCameraID.GetCameras</li>
+<li><a href="../TSdlCameraID/#Cameras">TSdlCameraID.Cameras</a></li>
 <li><a href="./#Format">Format</a></li>
 </ul>
 <h4 id="remarks_6">Remarks</h4>
@@ -2598,13 +2598,13 @@
 <h4 id="exceptions_4">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_5">Parameters</h4>
-<p><strong><code>AInstanceID</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlCameraID</span></code>
+<p><strong><code>AInstanceID</code></strong>: <a href="../TSdlCameraID/"><code>TSdlCameraID</code></a>
 : The camera device instance ID.</p>
 <h4 id="returns_5">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlCamera</span></code>: The opened camera.</p>
+<p><a href="./"><code>TSdlCamera</code></a>: The opened camera.</p>
 <h4 id="see-also_6">See Also</h4>
 <ul>
-<li>TSdlCameraID.GetCameras</li>
+<li><a href="../TSdlCameraID/#Cameras">TSdlCameraID.Cameras</a></li>
 <li><a href="./#Format">Format</a></li>
 </ul>
 <h4 id="remarks_7">Remarks</h4>
@@ -2618,7 +2618,7 @@
 <p>The app should not use the surface again after calling this function; assume the surface is freed and the pointer is invalid. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">ReleaseFrame</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFrame</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSurface</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_6">Parameters</h4>
-<p><strong><code>AFrame</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlSurface</span></code>
+<p><strong><code>AFrame</code></strong>: <a href="../TSdlSurface/"><code>TSdlSurface</code></a>
 : The video frame surface to release.</p>
 <h4 id="see-also_7">See Also</h4>
 <ul>

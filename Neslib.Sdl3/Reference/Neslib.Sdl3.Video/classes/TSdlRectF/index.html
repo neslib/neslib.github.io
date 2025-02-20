@@ -2641,7 +2641,7 @@
 <p>Create from a TSdlRect. </p>
 <p><code class="language-delphi highlight"><span class="k">constructor</span><span class="w"> </span><span class="nf">Create</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ARect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRect</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
 <h4 id="parameters_2">Parameters</h4>
-<p><strong><code>ARect</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlRect</span></code>
+<p><strong><code>ARect</code></strong>: <a href="../TSdlRect/"><code>TSdlRect</code></a>
 : The TSdlRect.</p>
 <h4 id="remarks_2">Remarks</h4>
 <p>It is safe to call this constructor from any thread. </p>
@@ -2667,8 +2667,8 @@
 <p>Rectangles are considered equal if each of their X, Y, W and Ht are within SDL_SINGLE_EPSILON of each other. This is often a reasonable way to compare two floating point rectangles and deal with the slight precision variations in floating point calculations that tend to pop up. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">,</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRectF</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_4">Parameters</h4>
-<p><strong><code>ALeft</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlRectF</span></code></p>
-<p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlRectF</span></code></p>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlRectF</code></a></p>
+<p><strong><code>ARight</code></strong>: <a href="./"><code>TSdlRectF</code></a></p>
 <h4 id="returns">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
 <h4 id="remarks_4">Remarks</h4>
@@ -2679,8 +2679,8 @@
 <p>Rectangles are considered equal if each of their X, Y, W and Ht are within SDL_SINGLE_EPSILON of each other. This is often a reasonable way to compare two floating point rectangles and deal with the slight precision variations in floating point calculations that tend to pop up. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">,</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRectF</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_5">Parameters</h4>
-<p><strong><code>ALeft</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlRectF</span></code></p>
-<p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlRectF</span></code></p>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlRectF</code></a></p>
+<p><strong><code>ARight</code></strong>: <a href="./"><code>TSdlRectF</code></a></p>
 <h4 id="returns_1">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
 <h4 id="remarks_5">Remarks</h4>
@@ -2694,7 +2694,7 @@
 <p>a point is considered part of a rectangle if <code>app</code>'s x and y coordinates are &gt;= to the rectangle's top left corner, and &gt;<param>The point to test.</param><returns>True if <code>AP</code> is contained by this rectangle, False otherwise.</returns><remarks>It is safe to call this method from any thread. </remarks></p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">ContainsPoint</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AP</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPointF</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_6">Parameters</h4>
-<p><strong><code>AP</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlPointF</span></code></p>
+<p><strong><code>AP</code></strong>: <a href="../TSdlPointF/"><code>TSdlPointF</code></a></p>
 <h4 id="returns_2">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
 <hr />
@@ -2703,7 +2703,7 @@
 <p>Rectangles are considered equal if each of their X, Y, W and H are within <code>AEpsilon</code> of each other. If you don't know what value to use for <code>AEpsilon</code>, you should call use the '=' operator. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">Equals</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AOther</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRectF</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AEpsilon</span><span class="o">:</span><span class="w"> </span><span class="kt">Single</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_7">Parameters</h4>
-<p><strong><code>AOther</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlRectF</span></code>
+<p><strong><code>AOther</code></strong>: <a href="./"><code>TSdlRectF</code></a>
 : The other rectangle to test.</p>
 <p><strong><code>AEpsilon</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>
 : The epsilon value for comparison.</p>
@@ -2734,7 +2734,7 @@
 <p>Initialize from a TSdlRect. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Init</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ARect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRect</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_10">Parameters</h4>
-<p><strong><code>ARect</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlRect</span></code>
+<p><strong><code>ARect</code></strong>: <a href="../TSdlRect/"><code>TSdlRect</code></a>
 : The TSdlRect.</p>
 <h4 id="remarks_9">Remarks</h4>
 <p>It is safe to call this method from any thread. </p>
@@ -2759,9 +2759,9 @@
 <p>If <code>AClip</code> is not nil then only points inside of the clipping rectangle are considered. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">InitFromEnclosingPoints</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APoints</span><span class="o">:</span><span class="w"> </span><span class="k">array</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">TSdlPointF</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AClip</span><span class="o">:</span><span class="w"> </span><span class="n">PSdlRectF</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nil</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
 <h4 id="parameters_12">Parameters</h4>
-<p><strong><code>APoints</code></strong>: <code class="language-delphi highlight"><span class="k">array</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">TSdlPointF</span></code>
+<p><strong><code>APoints</code></strong>: <a href="../TSdlPointF/"><code>array of TSdlPointF</code></a>
 : An array of points to be enclosed.</p>
-<p><strong><code>AClip</code></strong>: <code class="language-delphi highlight"><span class="n">PSdlRectF</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nil</span></code>
+<p><strong><code>AClip</code></strong>: <a href="../../types/PSdlRectF/"><code>PSdlRectF = nil</code></a>
 : (Optional) rect used for clipping or nil to enclose all points.</p>
 <h4 id="returns_4">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True if any points were enclosed or False if all the points were outside of the clipping rectangle.</p>
@@ -2773,7 +2773,7 @@
 <h4 id="parameters_13">Parameters</h4>
 <p><strong><code>APoints</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlPointF</span><span class="o">&gt;</span></code>
 : An array of points to be enclosed.</p>
-<p><strong><code>AClip</code></strong>: <code class="language-delphi highlight"><span class="n">PSdlRectF</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nil</span></code>
+<p><strong><code>AClip</code></strong>: <a href="../../types/PSdlRectF/"><code>PSdlRectF = nil</code></a>
 : (Optional) rect used for clipping or nil to enclose all points.</p>
 <h4 id="returns_5">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True if any points were enclosed or False if all the points were outside of the clipping rectangle.</p>
@@ -2782,9 +2782,9 @@
 <p>Calculate the intersection of two rectangles. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">Intersection</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AOther</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRectF</span><span class="o">;</span><span class="w"> </span><span class="n">out</span><span class="w"> </span><span class="n">AIntersection</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRectF</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_14">Parameters</h4>
-<p><strong><code>AOther</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlRectF</span></code>
+<p><strong><code>AOther</code></strong>: <a href="./"><code>TSdlRectF</code></a>
 : The other rectangle.</p>
-<p><strong><code>AIntersection</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlRectF</span></code>
+<p><strong><code>AIntersection</code></strong>: <a href="./"><code>TSdlRectF</code></a>
 : Is set to the intersection of this rectangle and AOther.</p>
 <h4 id="returns_6">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True if there is an intersection, False otherwise.</p>
@@ -2797,7 +2797,7 @@
 <p>Determine whether two rectangles intersect. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">Intersects</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AOther</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRectF</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_15">Parameters</h4>
-<p><strong><code>AOther</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlRectF</span></code>
+<p><strong><code>AOther</code></strong>: <a href="./"><code>TSdlRectF</code></a>
 : The other rectangle.</p>
 <h4 id="returns_7">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True if there is an intersection, False otherwise.</p>
@@ -2813,9 +2813,9 @@
 <p>This function is used to clip a line segment to a rectangle. A line segment contained entirely within the rectangle or that does not intersect will remain unchanged. A line segment that crosses the rectangle at either or both ends will be clipped to the boundary of the rectangle and the new coordinates saved in <code>AP1</code> and/or <code>AP2</code> as necessary. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">LineIntersection</span><span class="p">(</span><span class="k">var</span><span class="w"> </span><span class="n">AP1</span><span class="o">,</span><span class="w"> </span><span class="n">AP2</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPointF</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_16">Parameters</h4>
-<p><strong><code>AP1</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlPointF</span></code>
+<p><strong><code>AP1</code></strong>: <a href="../TSdlPointF/"><code>TSdlPointF</code></a>
 : The starting point of the line.</p>
-<p><strong><code>AP2</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlPointF</span></code>
+<p><strong><code>AP2</code></strong>: <a href="../TSdlPointF/"><code>TSdlPointF</code></a>
 : The ending point of the line.</p>
 <h4 id="returns_8">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True if there is an intersection, False otherwise.</p>
@@ -2840,9 +2840,9 @@
 <p>Calculate the union of two rectangles. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Union</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AOther</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRectF</span><span class="o">;</span><span class="w"> </span><span class="n">out</span><span class="w"> </span><span class="n">AUnion</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRectF</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_18">Parameters</h4>
-<p><strong><code>AOther</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlRectF</span></code>
+<p><strong><code>AOther</code></strong>: <a href="./"><code>TSdlRectF</code></a>
 : The other rectangle.</p>
-<p><strong><code>AUnion</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlRectF</span></code>
+<p><strong><code>AUnion</code></strong>: <a href="./"><code>TSdlRectF</code></a>
 : Is set to the union this rectangle and AOther.</p>
 <hr />
 

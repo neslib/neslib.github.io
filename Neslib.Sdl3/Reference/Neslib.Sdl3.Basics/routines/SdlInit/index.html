@@ -1827,24 +1827,22 @@
 <li><code>TSdlInitFlag.Camera</code>: camera subsystem; automatically initializes the events subsystem</li>
 </ul>
 <p>Subsystem initialization is ref-counted, you must call QuitSubSystem for each InitSubSystem to correctly shutdown a subsystem manually (or call Quit to force shutdown). If a subsystem is already loaded then this call will increase the ref-count and return.</p>
-<p>Consider reporting some basic metadata about your application before calling Init, using either SetAppMetadata or SetAppMetadataProperty. </p>
+<p>Consider reporting some basic metadata about your application before calling Init, using SdlSetAppMetadata. </p>
 <h2 id="definition">Definition</h2>
 <p>Unit: <a href="../../">Neslib.Sdl3.Basics</a></p>
 <div class="language-delphi highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">procedure</span><span class="w"> </span><span class="nf">SdlInit</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFlags</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlInitFlags</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span>
 </span></code></pre></div>
 <h4 id="parameters">Parameters</h4>
-<p><strong><code>AFlags</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlInitFlags</span></code>
+<p><strong><code>AFlags</code></strong>: <a href="../../types/TSdlInitFlags/"><code>TSdlInitFlags</code></a>
 : Subsystem initialization flags.</p>
 <h4 id="exceptions">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h2 id="see-also">See Also</h2>
 <ul>
-<li>SetAppMetadata</li>
-<li>SetAppMetadataProperty</li>
-<li>InitSubSystem</li>
-<li>Quit</li>
-<li>SetMainReady</li>
-<li>Initialized</li>
+<li><a href="../SdlSetAppMetadata_1/">SdlSetAppMetadata</a></li>
+<li><a href="../SdlInitSubSystem/">SdlInitSubSystem</a></li>
+<li><a href="../SdlQuit/">SdlQuit</a></li>
+<li><a href="../SdlWasInit/">SdlWasInit</a></li>
 </ul>
 
 

@@ -2571,13 +2571,13 @@
 <h2 id="property-descriptions">Property Descriptions</h2>
 <h3 id="ColorTargetDescriptions"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> ColorTargetDescriptions</h3>
 <p>An array of color target descriptions. </p>
-<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">ColorTargetDescriptions</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">FColorTargetDescriptions</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetColorTargetDescriptions</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TArray</span></code></p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">ColorTargetDescriptions</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuColorTargetDescription</span><span class="o">&gt;</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">FColorTargetDescriptions</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetColorTargetDescriptions</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuColorTargetDescription</span><span class="o">&gt;</span></code></p>
 <hr />
 <h3 id="DepthStencilFormat"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> DepthStencilFormat</h3>
 <p>The pixel format of the depth-stencil target. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">DepthStencilFormat</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuTextureFormat</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetDepthStencilFormat</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetDepthStencilFormat</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlGpuTextureFormat</span></code></p>
+<p><strong>Type: </strong><a href="../../types/TSdlGpuTextureFormat/"><code>TSdlGpuTextureFormat</code></a></p>
 <hr />
 <h3 id="HasDepthStencilTarget"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> HasDepthStencilTarget</h3>
 <p>True specifies that the pipeline uses a depth-stencil target. </p>

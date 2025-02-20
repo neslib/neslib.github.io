@@ -1971,18 +1971,18 @@
 <h2 id="field-descriptions">Field Descriptions</h2>
 <h3 id="Buttons"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span> Buttons</h3>
 <p>Array of buttons </p>
-<p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">Buttons</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TArray</span></code></p>
+<p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">Buttons</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlMessageBoxButtonData</span><span class="o">&gt;</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlMessageBoxButtonData</span><span class="o">&gt;</span></code></p>
 <hr />
 <h3 id="ColorScheme"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span> ColorScheme</h3>
 <p>Pointer ta TSdlMessageBoxColorScheme. Can be nil to use system settings </p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">ColorScheme</span><span class="o">:</span><span class="w"> </span><span class="n">PSdlMessageBoxColorScheme</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">PSdlMessageBoxColorScheme</span></code></p>
+<p><strong>Type: </strong><a href="../../types/PSdlMessageBoxColorScheme/"><code>PSdlMessageBoxColorScheme</code></a></p>
 <hr />
 <h3 id="Flags"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span> Flags</h3>
 <p>Message box flags </p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">Flags</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlMessageBoxFlags</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlMessageBoxFlags</span></code></p>
+<p><strong>Type: </strong><a href="../../types/TSdlMessageBoxFlags/"><code>TSdlMessageBoxFlags</code></a></p>
 <hr />
 <h3 id="Text"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span> Text</h3>
 <p>Message text </p>
@@ -1997,14 +1997,14 @@
 <h3 id="Window"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span> Window</h3>
 <p>Parent window, can be nil </p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">Window</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlWindow</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlWindow</span></code></p>
+<p><strong>Type: </strong><a href="../../../Neslib.Sdl3.Video/classes/TSdlWindow/"><code>TSdlWindow</code></a></p>
 <hr />
 <h2 id="constructor-descriptions">Constructor Descriptions</h2>
 <h3 id="Create"><span class="twemoji" title="Constructor"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23 12-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68z"/></svg></span> <code class="language-delphi highlight"><span class="n">Create</span></code></h3>
 <p>Creates a messages box color. </p>
 <p><code class="language-delphi highlight"><span class="k">constructor</span><span class="w"> </span><span class="nf">Create</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFlags</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlMessageBoxFlags</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ATitle</span><span class="o">,</span><span class="w"> </span><span class="n">AMessage</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="p">)</span></code></p>
 <h4 id="parameters">Parameters</h4>
-<p><strong><code>AFlags</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlMessageBoxFlags</span></code>
+<p><strong><code>AFlags</code></strong>: <a href="../../types/TSdlMessageBoxFlags/"><code>TSdlMessageBoxFlags</code></a>
 : Message box flags.</p>
 <p><strong><code>ATitle</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
 : The title.</p>

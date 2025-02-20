@@ -1016,6 +1016,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    <span class="md-ellipsis">
+      See Also
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#fields" class="md-nav__link">
     <span class="md-ellipsis">
       Fields
@@ -1615,6 +1624,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    <span class="md-ellipsis">
+      See Also
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#fields" class="md-nav__link">
     <span class="md-ellipsis">
       Fields
@@ -1658,63 +1676,53 @@
 <p>Button triggers may not be supported on all devices, it is advised to not use them if possible. Buttons start at index 1 instead of index 0 like the joystick.</p>
 <p>If both AttackLength and FadeLevel are 0, the envelope is not used, otherwise both values are used.</p>
 <p>Common parts:</p>
-<p>``` // Replay - All effects have this Length: Cardinal;   // Duration of effect (ms). Delay: Word;        // Delay before starting effect.</p>
-<p>// Trigger - All effects have this Button: Word;       // Button that triggers effect. Interval: Word;     // How soon before effect can be triggered again.</p>
-<p>// Envelope - All effects except condition effects have this AttackLength: Word; // Duration of the attack (ms). AttackLevel: Word;  // Level at the start of the attack. FadeLength: Word;   // Duration of the fade out (ms). FadeLevel: Word;    // Level at the end of the fade. ```</p>
+<div class="language-delphi highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="w">  </span><span class="c1">// Replay - All effects have this</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="w">  </span><span class="nb">Length</span><span class="o">:</span><span class="w"> </span><span class="kt">Cardinal</span><span class="o">;</span><span class="w">   </span><span class="c1">// Duration of effect (ms).</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="w">  </span><span class="n">Delay</span><span class="o">:</span><span class="w"> </span><span class="kt">Word</span><span class="o">;</span><span class="w">        </span><span class="c1">// Delay before starting effect.</span>
+</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
+</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a><span class="w">  </span><span class="c1">// Trigger - All effects have this</span>
+</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a><span class="w">  </span><span class="n">Button</span><span class="o">:</span><span class="w"> </span><span class="kt">Word</span><span class="o">;</span><span class="w">       </span><span class="c1">// Button that triggers effect.</span>
+</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a><span class="w">  </span><span class="n">Interval</span><span class="o">:</span><span class="w"> </span><span class="kt">Word</span><span class="o">;</span><span class="w">     </span><span class="c1">// How soon before effect can be triggered again.</span>
+</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
+</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a><span class="w">  </span><span class="c1">// Envelope - All effects except condition effects have this</span>
+</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a><span class="w">  </span><span class="n">AttackLength</span><span class="o">:</span><span class="w"> </span><span class="kt">Word</span><span class="o">;</span><span class="w"> </span><span class="c1">// Duration of the attack (ms).</span>
+</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a><span class="w">  </span><span class="n">AttackLevel</span><span class="o">:</span><span class="w"> </span><span class="kt">Word</span><span class="o">;</span><span class="w">  </span><span class="c1">// Level at the start of the attack.</span>
+</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a><span class="w">  </span><span class="n">FadeLength</span><span class="o">:</span><span class="w"> </span><span class="kt">Word</span><span class="o">;</span><span class="w">   </span><span class="c1">// Duration of the fade out (ms).</span>
+</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a><span class="w">  </span><span class="n">FadeLevel</span><span class="o">:</span><span class="w"> </span><span class="kt">Word</span><span class="o">;</span><span class="w">    </span><span class="c1">// Level at the end of the fade.</span>
+</span></code></pre></div>
 <p>Here we have an example of a constant effect evolution in time:</p>
-<p>``` Strength ^
-|
-|    effect level --&gt;  <strong><em>_</em></strong><strong><em>_</em></strong>___
-|                     /                 \
-|                    /                   \
-|                   /                     \
-|                  /                       \
-| attack_level --&gt; |                        \
-|                  |                        |  &lt;the generic template for any haptic effect.</p>
-<p>all values max at 32767 ($7fff). signed values also can be negative. time values unless specified otherwise are in milliseconds.</p>
-<p>you can also pass sdl_haptic_infinity to length instead of a 0-32767 value. neither delay, interval, attacklength nor fadelength support sdl_haptic_infinity. fade will also not be used since effect never ends.</p>
-<p>additionally, the tsdlhaptickind.ramp effect does not support a duration of sdl_haptic_infinity.</p>
-<p>button triggers may not be supported on all devices, it is advised to not use them if possible. buttons start at index 1 instead of index 0 like the joystick.</p>
-<p>if both attacklength and fadelevel are 0, the envelope is not used, otherwise both values are used.</p>
-<p>common parts:</p>
-<p>``` // replay - all effects have this length: cardinal;   // duration of effect (ms). delay: word;        // delay before starting effect.</p>
-<p>// trigger - all effects have this button: word;       // button that triggers effect. interval: word;     // how soon before effect can be triggered again.</p>
-<p>// envelope - all effects except condition effects have this attacklength: word; // duration of the attack (ms). attacklevel: word;  // level at the start of the attack. fadelength: word;   // duration of the fade out (ms). fadelevel: word;    // level at the end of the fade. ```</p>
-<p>here we have an example of a constant effect evolution in time:</p>
-<p>``` strength ^
-|
-|    effect level --&gt;  <strong><em>_</em></strong><strong><em>_</em></strong>___
-|                     /                 \
-|                    /                   \
-|                   /                     \
-|                  /                       \
-| attack_level --&gt; |                        \
-|                  |                        |  &gt;| +--------------------------------------------------&gt; Time [--]                 [---] attack_length        fade_length</p>
-<p>[------------------][-----------------------] delay               length ```</p>
-<p>Note either the attack_level or the fade_level may be above the actual effect level. &lt;/the generic template for any haptic effect.</p>
-<p>all values max at 32767 ($7fff). signed values also can be negative. time values unless specified otherwise are in milliseconds.</p>
-<p>you can also pass sdl_haptic_infinity to length instead of a 0-32767 value. neither delay, interval, attacklength nor fadelength support sdl_haptic_infinity. fade will also not be used since effect never ends.</p>
-<p>additionally, the tsdlhaptickind.ramp effect does not support a duration of sdl_haptic_infinity.</p>
-<p>button triggers may not be supported on all devices, it is advised to not use them if possible. buttons start at index 1 instead of index 0 like the joystick.</p>
-<p>if both attacklength and fadelevel are 0, the envelope is not used, otherwise both values are used.</p>
-<p>common parts:</p>
-<p>``` // replay - all effects have this length: cardinal;   // duration of effect (ms). delay: word;        // delay before starting effect.</p>
-<p>// trigger - all effects have this button: word;       // button that triggers effect. interval: word;     // how soon before effect can be triggered again.</p>
-<p>// envelope - all effects except condition effects have this attacklength: word; // duration of the attack (ms). attacklevel: word;  // level at the start of the attack. fadelength: word;   // duration of the fade out (ms). fadelevel: word;    // level at the end of the fade. ```</p>
-<p>here we have an example of a constant effect evolution in time:</p>
-<p>``` strength ^
-|
-|    effect level --&gt;  <strong><em>_</em></strong><strong><em>_</em></strong>___
-|                     /                 \
-|                    /                   \
-|                   /                     \
-|                  /                       \
-| attack_level --&gt; |                        \
-|                  |                        |  &gt;<seealso/><seealso/><seealso/><seealso/><seealso/><seealso/></p>
+<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>  Strength
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>  ^
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>  |
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>  |    effect level --&gt;  _________________
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>  |                     /                 \
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>  |                    /                   \
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>  |                   /                     \
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>  |                  /                       \
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>  | attack_level --&gt; |                        \
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a>  |                  |                        |  ˂---  fade_level
+</span><span id="__span-1-11"><a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>  |
+</span><span id="__span-1-12"><a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>  +--------------------------------------------------&gt; Time
+</span><span id="__span-1-13"><a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a>                     [--]                 [---]
+</span><span id="__span-1-14"><a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>                     attack_length        fade_length
+</span><span id="__span-1-15"><a id="__codelineno-1-15" name="__codelineno-1-15" href="#__codelineno-1-15"></a>
+</span><span id="__span-1-16"><a id="__codelineno-1-16" name="__codelineno-1-16" href="#__codelineno-1-16"></a>  [------------------][-----------------------]
+</span><span id="__span-1-17"><a id="__codelineno-1-17" name="__codelineno-1-17" href="#__codelineno-1-17"></a>  delay               length
+</span></code></pre></div>
+<p>Note either the attack_level or the fade_level may be above the actual effect level. </p>
 <h2 id="definition">Definition</h2>
 <p>Unit: <a href="../../">Neslib.Sdl3.Haptic</a></p>
-<div class="language-delphi highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">type</span><span class="w"> </span><span class="n">TSdlHapticEffect</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">record</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="k">end</span><span class="o">;</span>
+<div class="language-delphi highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">type</span><span class="w"> </span><span class="n">TSdlHapticEffect</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">record</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="k">end</span><span class="o">;</span>
 </span></code></pre></div>
+<h2 id="see-also">See Also</h2>
+<ul>
+<li><a href="../TSdlHapticConstant/">TSdlHapticConstant</a></li>
+<li><a href="../TSdlHapticPeriodic/">TSdlHapticPeriodic</a></li>
+<li><a href="../TSdlHapticCondition/">TSdlHapticCondition</a></li>
+<li><a href="../TSdlHapticRamp/">TSdlHapticRamp</a></li>
+<li><a href="../TSdlHapticLeftRight/">TSdlHapticLeftRight</a></li>
+<li><a href="../TSdlHapticCustom/">TSdlHapticCustom</a></li>
+</ul>
 <h2 id="fields">Fields</h2>
 <table>
 <thead>
@@ -1758,37 +1766,37 @@
 <h3 id="Condition"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Condition</h3>
 <p>Condition effect.</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">Condition</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlHapticCondition</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlHapticCondition</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlHapticCondition/"><code>TSdlHapticCondition</code></a></p>
 <hr />
 <h3 id="Constant"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Constant</h3>
 <p>Constant effect.</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">Constant</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlHapticConstant</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlHapticConstant</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlHapticConstant/"><code>TSdlHapticConstant</code></a></p>
 <hr />
 <h3 id="Custom"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Custom</h3>
 <p>Custom effect.</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">Custom</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlHapticCustom</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlHapticCustom</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlHapticCustom/"><code>TSdlHapticCustom</code></a></p>
 <hr />
 <h3 id="Kind"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Kind</h3>
 <p>Effect type, shared with all effects.</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">Kind</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlHapticKind</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlHapticKind</span></code></p>
+<p><strong>Type: </strong><a href="../../types/TSdlHapticKind/"><code>TSdlHapticKind</code></a></p>
 <hr />
 <h3 id="LeftRight"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> LeftRight</h3>
 <p>Left/Right effect.</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">LeftRight</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlHapticLeftRight</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlHapticLeftRight</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlHapticLeftRight/"><code>TSdlHapticLeftRight</code></a></p>
 <hr />
 <h3 id="Periodic"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Periodic</h3>
 <p>Periodic effect.</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">Periodic</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlHapticPeriodic</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlHapticPeriodic</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlHapticPeriodic/"><code>TSdlHapticPeriodic</code></a></p>
 <hr />
 <h3 id="Ramp"><span class="twemoji" title="Field"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2M9 7v10h2v-4h3v-2h-3V9h4V7z"/></svg></span>  <span class="twemoji" title="In variant part"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m9 7 2 10h2l2-10h-2l-1 5-1-5zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Ramp</h3>
 <p>Ramp effect.</p>
 <p><code class="language-delphi highlight"><span class="k">var</span><span class="w"> </span><span class="n">Ramp</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlHapticRamp</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlHapticRamp</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlHapticRamp/"><code>TSdlHapticRamp</code></a></p>
 <hr />
 
 

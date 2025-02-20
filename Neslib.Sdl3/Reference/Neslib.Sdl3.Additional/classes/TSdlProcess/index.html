@@ -2096,7 +2096,7 @@
 <p>The process must have been created with APipeStdIO set to True, or with <code>TSdlProperty.ProcessCreateStdIn</code> set to <code>TSdlProcessStdIO.App</code>.</p>
 <p>Writing to this stream can return less data than expected if the process hasn't read its input. It may be blocked waiting for its output to be read, if so you may need to use Output and read the output in parallel with writing input. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Input</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlIOStream</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetInput</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlIOStream</span></code></p>
+<p><strong>Type: </strong><a href="../../../Neslib.Sdl3.IO/classes/TSdlIOStream/"><code>TSdlIOStream</code></a></p>
 <h4 id="exceptions">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="see-also">See Also</h4>
@@ -2111,7 +2111,7 @@
 <p>The process must have been created with APipeStdIO set to True, or with <code>TSdlProperty.ProcessCreateStdOut</code> set to <code>TSdlProcessStdIO.App</code>.</p>
 <p>Reading from this stream can return 0 with TSdlIOStream.Status returning TSdlIOStatus.NotReady if no output is available yet. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Output</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlIOStream</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetOutput</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlIOStream</span></code></p>
+<p><strong>Type: </strong><a href="../../../Neslib.Sdl3.IO/classes/TSdlIOStream/"><code>TSdlIOStream</code></a></p>
 <h4 id="exceptions_1">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="see-also_1">See Also</h4>
@@ -2132,7 +2132,7 @@
 <li><code>TSdlProperty.ProcessBackground</code>: True if the process is running in the background. </li>
 </ul>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Properties</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlProperties</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetProperties</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlProperties</span></code></p>
+<p><strong>Type: </strong><a href="../../../Neslib.Sdl3.Basics/classes/TSdlProperties/"><code>TSdlProperties</code></a></p>
 <h4 id="exceptions_2">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="remarks_2">Remarks</h4>
@@ -2157,7 +2157,7 @@
 <p>On POSIX platforms, wait() and waitpid(-1, ...) should not be called, and SIGCHLD should not be ignored or handled because those would prevent SDL from properly tracking the lifetime of the underlying process. You should use Wait instead. </p>
 <p><code class="language-delphi highlight"><span class="k">constructor</span><span class="w"> </span><span class="nf">Create</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AProps</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlProperties</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
 <h4 id="parameters">Parameters</h4>
-<p><strong><code>AProps</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlProperties</span></code>
+<p><strong><code>AProps</code></strong>: <a href="../../../Neslib.Sdl3.Basics/classes/TSdlProperties/"><code>TSdlProperties</code></a>
 : The properties to use.</p>
 <h4 id="exceptions_3">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
@@ -2207,7 +2207,7 @@
 <p>Used to compare against <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlProcess</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_2">Parameters</h4>
-<p><strong><code>ALeft</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlProcess</span></code></p>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlProcess</code></a></p>
 <p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
@@ -2218,13 +2218,13 @@
 <h4 id="parameters_3">Parameters</h4>
 <p><strong><code>AValue</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns_1">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlProcess</span></code></p>
+<p><a href="./"><code>TSdlProcess</code></a></p>
 <hr />
 <h3 id="NotEqual"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlProcess, Pointer)</h3>
 <p>Used to compare against <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlProcess</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_4">Parameters</h4>
-<p><strong><code>ALeft</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlProcess</span></code></p>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlProcess</code></a></p>
 <p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns_2">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>

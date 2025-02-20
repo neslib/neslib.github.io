@@ -1619,7 +1619,7 @@
 <h3 id="Spec"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Spec</h3>
 <p>Specifies the format of the audio in the buffer. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Spec</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioSpec</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">FSpec</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">TSdlAudioSpec</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlAudioSpec/"><code>TSdlAudioSpec</code></a></p>
 <hr />
 <h2 id="constructor-descriptions">Constructor Descriptions</h2>
 <h3 id="Create_0"><span class="twemoji" title="Constructor"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23 12-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68z"/></svg></span> <code class="language-delphi highlight"><span class="n">Create</span></code></h3>
@@ -1629,13 +1629,13 @@
 <p>When the application is done with this buffer, it should call Free to dispose of it. </p>
 <p><code class="language-delphi highlight"><span class="k">constructor</span><span class="w"> </span><span class="nf">Create</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFormat</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioFormat</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ANumChannels</span><span class="o">,</span><span class="w"> </span><span class="n">AFreq</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ASrc</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioBuffer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
 <h4 id="parameters">Parameters</h4>
-<p><strong><code>AFormat</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlAudioFormat</span></code>
+<p><strong><code>AFormat</code></strong>: <a href="../../types/TSdlAudioFormat/"><code>TSdlAudioFormat</code></a>
 : The format of the audio in this buffer.</p>
 <p><strong><code>ANumChannels</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The number of audio channels for this buffer.</p>
 <p><strong><code>AFreq</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The sample frequency in Hz for this buffer.</p>
-<p><strong><code>ASrc</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlAudioBuffer</span></code>
+<p><strong><code>ASrc</code></strong>: <a href="./"><code>TSdlAudioBuffer</code></a>
 : The input audio buffer that will be converted.</p>
 <h4 id="exceptions">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
@@ -1647,7 +1647,7 @@
 <p>When the application is done with this buffer, it should call Free to dispose of it. </p>
 <p><code class="language-delphi highlight"><span class="k">constructor</span><span class="w"> </span><span class="nf">Create</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFormat</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioFormat</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ASize</span><span class="o">,</span><span class="w"> </span><span class="n">ANumChannels</span><span class="o">,</span><span class="w"> </span><span class="n">AFreq</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
 <h4 id="parameters_1">Parameters</h4>
-<p><strong><code>AFormat</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlAudioFormat</span></code>
+<p><strong><code>AFormat</code></strong>: <a href="../../types/TSdlAudioFormat/"><code>TSdlAudioFormat</code></a>
 : The format of the audio in the buffer.</p>
 <p><strong><code>ASize</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The size in bytes of the buffer to create.</p>
@@ -1688,7 +1688,7 @@
 <p>When the application is done with this buffer, it should call Free to dispose of it. </p>
 <p><code class="language-delphi highlight"><span class="k">constructor</span><span class="w"> </span><span class="nf">CreateFromWav</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ASrc</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlIOStream</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ACloseIO</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
 <h4 id="parameters_3">Parameters</h4>
-<p><strong><code>ASrc</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlIOStream</span></code>
+<p><strong><code>ASrc</code></strong>: <a href="../../../Neslib.Sdl3.IO/classes/TSdlIOStream/"><code>TSdlIOStream</code></a>
 : The data source for the WAVE data.</p>
 <p><strong><code>ACloseIO</code></strong>: <code class="language-delphi highlight"><span class="kt">Boolean</span></code>
 : If True, calls TSdlIOStream.Close on <code>ASrc</code> before returning, even in the case of an error.</p>
@@ -1717,7 +1717,7 @@
 <h4 id="exceptions_3">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_4">Parameters</h4>
-<p><strong><code>ASrc</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlAudioBuffer</span></code>
+<p><strong><code>ASrc</code></strong>: <a href="./"><code>TSdlAudioBuffer</code></a>
 : The source audio buffer to be mixed.</p>
 <p><strong><code>ASize</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span></code>
 : (Optional) size in bytes of the audio buffers. If 0 (the default), it will use the minimum size of the 2 buffers.</p>

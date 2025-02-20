@@ -2584,8 +2584,8 @@
 <h2 id="see-also">See Also</h2>
 <ul>
 <li><a href="../TSdlGpuDevice/#AcquireCommandBuffer">TSdlGpuDevice.AcquireCommandBuffer</a></li>
-<li>Submit</li>
-<li>SubmitAndAcquireFence</li>
+<li><a href="./#Submit">TSdlGpuCommandBuffer.Submit</a></li>
+<li><a href="./#SubmitAndAcquireFence">TSdlGpuCommandBuffer.SubmitAndAcquireFence</a></li>
 </ul>
 <h2 id="operators">Operators</h2>
 <table>
@@ -2706,7 +2706,7 @@
 <p>Used to compare against <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuCommandBuffer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters">Parameters</h4>
-<p><strong><code>ALeft</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuCommandBuffer</span></code></p>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlGpuCommandBuffer</code></a></p>
 <p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
@@ -2717,13 +2717,13 @@
 <h4 id="parameters_1">Parameters</h4>
 <p><strong><code>AValue</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns_1">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlGpuCommandBuffer</span></code></p>
+<p><a href="./"><code>TSdlGpuCommandBuffer</code></a></p>
 <hr />
 <h3 id="NotEqual"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlGpuCommandBuffer, Pointer)</h3>
 <p>Used to compare against <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuCommandBuffer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_2">Parameters</h4>
-<p><strong><code>ALeft</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuCommandBuffer</span></code></p>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlGpuCommandBuffer</code></a></p>
 <p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
 <h4 id="returns_2">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
@@ -2739,9 +2739,9 @@
 <h4 id="exceptions">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_3">Parameters</h4>
-<p><strong><code>AWindow</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlWindow</span></code>
+<p><strong><code>AWindow</code></strong>: <a href="../../../Neslib.Sdl3.Video/classes/TSdlWindow/"><code>TSdlWindow</code></a>
 : A window that has been claimed.</p>
-<p><strong><code>ASwapchainTexture</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuTexture</span></code>
+<p><strong><code>ASwapchainTexture</code></strong>: <a href="../TSdlGpuTexture/"><code>TSdlGpuTexture</code></a>
 : Will be set to a swapchain texture.</p>
 <p><strong><code>ASwapchainTextureWidth</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : Will be set to the swapchain texture width.</p>
@@ -2772,7 +2772,7 @@
 <p><strong><code>AStorageBufferBindings</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuStorageBufferReadWriteBinding</span><span class="o">&gt;</span></code>
 : An array of writeable storage buffer binding records.</p>
 <h4 id="returns_3">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlGpuComputePass</span></code>: A compute pass.</p>
+<p><a href="../TSdlGpuComputePass/"><code>TSdlGpuComputePass</code></a>: A compute pass.</p>
 <h4 id="see-also_2">See Also</h4>
 <ul>
 <li><a href="../TSdlGpuComputePass/#Finish">TSdlGpuComputePass.Finish</a></li>
@@ -2783,7 +2783,7 @@
 <p>All operations related to copying to or from buffers or textures take place inside a copy pass. You must not begin another copy pass, or a render pass or compute pass before ending the copy pass. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">BeginCopyPass</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuCopyPass</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="returns_4">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlGpuCopyPass</span></code>: A copy pass.</p>
+<p><a href="../TSdlGpuCopyPass/"><code>TSdlGpuCopyPass</code></a>: A copy pass.</p>
 <hr />
 <h3 id="BeginRenderPass_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> BeginRenderPass(TArray&lt;TSdlGpuColorTargetInfo&gt;, TSdlGpuDepthStencilTargetInfo)</h3>
 <p>Begins a render pass on a command buffer.</p>
@@ -2792,10 +2792,10 @@
 <h4 id="parameters_5">Parameters</h4>
 <p><strong><code>AColorTargetInfos</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuColorTargetInfo</span><span class="o">&gt;</span></code>
 : An array of texture subresources with corresponding clear values and load/store ops.</p>
-<p><strong><code>ADepthStencilTargetInfo</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuDepthStencilTargetInfo</span></code>
+<p><strong><code>ADepthStencilTargetInfo</code></strong>: <a href="../TSdlGpuDepthStencilTargetInfo/"><code>TSdlGpuDepthStencilTargetInfo</code></a>
 : Texture subresource with corresponding clear value and load/store ops, may be nil.</p>
 <h4 id="returns_5">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlGpuRenderPass</span></code>: A render pass.</p>
+<p><a href="../TSdlGpuRenderPass/"><code>TSdlGpuRenderPass</code></a>: A render pass.</p>
 <h4 id="see-also_3">See Also</h4>
 <ul>
 <li><a href="../TSdlGpuRenderPass/#Finish">TSdlGpuRenderPass.Finish</a></li>
@@ -2809,7 +2809,7 @@
 <p><strong><code>AColorTargetInfos</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuColorTargetInfo</span><span class="o">&gt;</span></code>
 : An array of texture subresources with corresponding clear values and load/store ops.</p>
 <h4 id="returns_6">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlGpuRenderPass</span></code>: A render pass.</p>
+<p><a href="../TSdlGpuRenderPass/"><code>TSdlGpuRenderPass</code></a>: A render pass.</p>
 <h4 id="see-also_4">See Also</h4>
 <ul>
 <li><a href="../TSdlGpuRenderPass/#Finish">TSdlGpuRenderPass.Finish</a></li>
@@ -2820,7 +2820,7 @@
 <p>This function must not be called inside of any pass. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Blit</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AInfo</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuBlitInfo</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_7">Parameters</h4>
-<p><strong><code>AInfo</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuBlitInfo</span></code>
+<p><strong><code>AInfo</code></strong>: <a href="../TSdlGpuBlitInfo/"><code>TSdlGpuBlitInfo</code></a>
 : The blit info struct containing the blit parameters.</p>
 <hr />
 <h3 id="Cancel"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Cancel</h3>
@@ -2844,7 +2844,7 @@
 <p>This function must not be called inside of any pass. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">GenerateMipmaps</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ATexture</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuTexture</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_8">Parameters</h4>
-<p><strong><code>ATexture</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuTexture</span></code>
+<p><strong><code>ATexture</code></strong>: <a href="../TSdlGpuTexture/"><code>TSdlGpuTexture</code></a>
 : A texture with more than 1 mip level.</p>
 <hr />
 <h3 id="InsertDebugLabel"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> InsertDebugLabel(String)</h3>
@@ -2968,14 +2968,14 @@
 <h4 id="exceptions_3">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="returns_7">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlGpuFence</span></code>: A fence associated with the command buffer.</p>
+<p><a href="../TSdlGpuFence/"><code>TSdlGpuFence</code></a>: A fence associated with the command buffer.</p>
 <h4 id="see-also_9">See Also</h4>
 <ul>
 <li><a href="../TSdlGpuDevice/#AcquireCommandBuffer">TSdlGpuDevice.AcquireCommandBuffer</a></li>
 <li><a href="./#WaitAndAcquireSwapchainTexture">WaitAndAcquireSwapchainTexture</a></li>
 <li><a href="./#AcquireSwapchainTexture">AcquireSwapchainTexture</a></li>
 <li><a href="./#Submit">Submit</a></li>
-<li>TSdlGpuFence.Release</li>
+<li><a href="../TSdlGpuDevice/#ReleaseFence">TSdlGpuDevice.ReleaseFence</a></li>
 </ul>
 <hr />
 <h3 id="WaitAndAcquireSwapchainTexture"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> WaitAndAcquireSwapchainTexture(TSdlWindow, TSdlGpuTexture, Integer, Integer)</h3>
@@ -2987,9 +2987,9 @@
 <h4 id="exceptions_4">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_17">Parameters</h4>
-<p><strong><code>AWindow</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlWindow</span></code>
+<p><strong><code>AWindow</code></strong>: <a href="../../../Neslib.Sdl3.Video/classes/TSdlWindow/"><code>TSdlWindow</code></a>
 : A window that has been claimed.</p>
-<p><strong><code>ASwapchainTexture</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlGpuTexture</span></code>
+<p><strong><code>ASwapchainTexture</code></strong>: <a href="../TSdlGpuTexture/"><code>TSdlGpuTexture</code></a>
 : Is set to a swapchain texture.</p>
 <p><strong><code>ASwapchainTextureWidth</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : Is set to the swapchain texture width.</p>

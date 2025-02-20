@@ -3073,7 +3073,7 @@
 </span></code></pre></div>
 <h2 id="see-also">See Also</h2>
 <ul>
-<li>TSdlBlendMode.Compose</li>
+<li><a href="./#Compose">TSdlBlendMode.Compose</a></li>
 </ul>
 <h2 id="enumeration-values">Enumeration Values</h2>
 <h3 id="none-sdl_blendmode_none"><code class="language-delphi highlight"><span class="n">None</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_BLENDMODE_NONE</span></code></h3>
@@ -3120,7 +3120,9 @@
 <p>The properties TSdlRenderer.DrawBlendMode and TSdlTexture.BlendMode accept the TSdlBlendMode returned by this function if the renderer supports it.</p>
 <p>A blend mode controls how the pixels from a drawing operation (source) get combined with the pixels from the render target (destination). First, the components of the source and destination pixels get multiplied with their blend factors. Then, the blend operation takes the two products and calculates the result that will get stored in the render target.</p>
 <p>Expressed in pseudocode, it would look like this:</p>
-<p><code>DstRgb := ColorOperation(SrcRgb * SrcColorFactor, DstRgb * DstColorFactor); DstA := AlphaOperation(SrcA * SrcAlphaFactor, DstA * DstAlphaFactor);</code></p>
+<div class="language-delphi highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="w">  </span><span class="n">DstRgb</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">ColorOperation</span><span class="p">(</span><span class="n">SrcRgb</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">SrcColorFactor</span><span class="o">,</span><span class="w"> </span><span class="n">DstRgb</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">DstColorFactor</span><span class="p">)</span><span class="o">;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="n">DstA</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">AlphaOperation</span><span class="p">(</span><span class="n">SrcA</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">SrcAlphaFactor</span><span class="o">,</span><span class="w"> </span><span class="n">DstA</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">DstAlphaFactor</span><span class="p">)</span><span class="o">;</span>
+</span></code></pre></div>
 <p>Where the functions <code>ColorOperation(Src, Dst)</code> and <code>AlphaOperation(Src, Dst)</code> can return one of the following:</p>
 <ul>
 <li><code>Src + Dst</code></li>
@@ -3143,24 +3145,24 @@
 <p>Some renderers do not provide an alpha component for the default render target. The <code>TSdlBlendFactor.DstAlpha</code> and <code>TSdlBlendFactor.OneMinusDstAlpha</code> factors do not have an effect in this case. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="nf">Compose</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ASrcColorFactor</span><span class="o">,</span><span class="w"> </span><span class="n">ADstColorFactor</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlBlendFactor</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AColorOperation</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlBlendOperation</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ASrcAlphaFactor</span><span class="o">,</span><span class="w"> </span><span class="w">  </span><span class="n">ADstAlphaFactor</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlBlendFactor</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AAlphaOperation</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlBlendOperation</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlBlendMode</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters">Parameters</h4>
-<p><strong><code>ASrcColorFactor</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlBlendFactor</span></code>
+<p><strong><code>ASrcColorFactor</code></strong>: <a href="../TSdlBlendFactor/"><code>TSdlBlendFactor</code></a>
 : The blend factor applied to the red, green, and blue components of the source pixels.</p>
-<p><strong><code>ADstColorFactor</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlBlendFactor</span></code>
+<p><strong><code>ADstColorFactor</code></strong>: <a href="../TSdlBlendFactor/"><code>TSdlBlendFactor</code></a>
 : The blend factor applied to the red, green, and blue components of the destination pixels.</p>
-<p><strong><code>AColorOperation</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlBlendOperation</span></code>
+<p><strong><code>AColorOperation</code></strong>: <a href="../TSdlBlendOperation/"><code>TSdlBlendOperation</code></a>
 : The blend operation used to combine the red, green, and blue components of the source and destination pixels.</p>
-<p><strong><code>ASrcAlphaFactor</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlBlendFactor</span></code>
+<p><strong><code>ASrcAlphaFactor</code></strong>: <a href="../TSdlBlendFactor/"><code>TSdlBlendFactor</code></a>
 : The blend factor applied to the alpha component of the source pixels.</p>
-<p><strong><code>ADstAlphaFactor</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlBlendFactor</span></code>
+<p><strong><code>ADstAlphaFactor</code></strong>: <a href="../TSdlBlendFactor/"><code>TSdlBlendFactor</code></a>
 : The blend factor applied to the alpha component of the destination pixels.</p>
-<p><strong><code>AAlphaOperation</code></strong>: <code class="language-delphi highlight"><span class="n">TSdlBlendOperation</span></code>
+<p><strong><code>AAlphaOperation</code></strong>: <a href="../TSdlBlendOperation/"><code>TSdlBlendOperation</code></a>
 : The blend operation used to combine the alpha component of the source and destination pixels.</p>
 <h4 id="returns">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">TSdlBlendMode</span></code>: A TSdlBlendMode that represents the chosen factors and operations.</p>
+<p><a href="./"><code>TSdlBlendMode</code></a>: A TSdlBlendMode that represents the chosen factors and operations.</p>
 <h4 id="see-also_1">See Also</h4>
 <ul>
-<li>TSdlRenderer.DrawDrawBlendMode</li>
-<li>TSdlTesture.BlendMode</li>
+<li><a href="../../classes/TSdlRenderer/#DrawBlendMode">TSdlRenderer.DrawBlendMode</a></li>
+<li><a href="../../classes/TSdlTexture/#BlendMode">TSdlTexture.BlendMode</a></li>
 </ul>
 <h4 id="remarks">Remarks</h4>
 <p>It is safe to call this method from any thread. </p>
