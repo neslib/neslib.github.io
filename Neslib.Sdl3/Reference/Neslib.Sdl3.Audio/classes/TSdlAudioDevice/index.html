@@ -410,6 +410,8 @@
       
         
       
+        
+      
     
     
       
@@ -1156,6 +1158,59 @@
       
         
       
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Image/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Image
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
         
       
     
@@ -1573,7 +1628,11 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#Equal">Equal</a></td>
+<td><a href="#Equal_0">Equal(TSdlAudioDevice, TSdlAudioDevice)</a></td>
+<td>Used to compare against another TSdlAudioDevice.</td>
+</tr>
+<tr>
+<td><a href="#Equal_1">Equal(TSdlAudioDevice, Cardinal)</a></td>
 <td>Used to compare against <code>0</code>.</td>
 </tr>
 <tr>
@@ -1581,7 +1640,11 @@
 <td>Used to set the value to <code>0</code>.</td>
 </tr>
 <tr>
-<td><a href="#NotEqual">NotEqual</a></td>
+<td><a href="#NotEqual_0">NotEqual(TSdlAudioDevice, TSdlAudioDevice)</a></td>
+<td>Used to compare against another TSdlAudioDevice.</td>
+</tr>
+<tr>
+<td><a href="#NotEqual_1">NotEqual(TSdlAudioDevice, Cardinal)</a></td>
 <td>Used to compare against <code>0</code>.</td>
 </tr>
 </tbody>
@@ -1695,30 +1758,48 @@
 <p>It is safe to use this property from any thread </p>
 <hr />
 <h2 id="operator-descriptions">Operator Descriptions</h2>
-<h3 id="Equal"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Equal(TSdlAudioDevice, Cardinal)</h3>
-<p>Used to compare against <code>0</code>. </p>
-<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioDevice</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Cardinal</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h3 id="Equal_0"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Equal(TSdlAudioDevice, TSdlAudioDevice)</h3>
+<p>Used to compare against another TSdlAudioDevice. </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">,</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioDevice</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters">Parameters</h4>
 <p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlAudioDevice</code></a></p>
-<p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Cardinal</span></code></p>
+<p><strong><code>ARight</code></strong>: <a href="./"><code>TSdlAudioDevice</code></a></p>
 <h4 id="returns">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<hr />
+<h3 id="Equal_1"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Equal(TSdlAudioDevice, Cardinal)</h3>
+<p>Used to compare against <code>0</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioDevice</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Cardinal</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h4 id="parameters_1">Parameters</h4>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlAudioDevice</code></a></p>
+<p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Cardinal</span></code></p>
+<h4 id="returns_1">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
 <hr />
 <h3 id="Implicit"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Implicit(Cardinal)</h3>
 <p>Used to set the value to <code>0</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Implicit</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AValue</span><span class="o">:</span><span class="w"> </span><span class="kt">Cardinal</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioDevice</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
-<h4 id="parameters_1">Parameters</h4>
+<h4 id="parameters_2">Parameters</h4>
 <p><strong><code>AValue</code></strong>: <code class="language-delphi highlight"><span class="kt">Cardinal</span></code></p>
-<h4 id="returns_1">Returns</h4>
+<h4 id="returns_2">Returns</h4>
 <p><a href="./"><code>TSdlAudioDevice</code></a></p>
 <hr />
-<h3 id="NotEqual"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlAudioDevice, Cardinal)</h3>
+<h3 id="NotEqual_0"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlAudioDevice, TSdlAudioDevice)</h3>
+<p>Used to compare against another TSdlAudioDevice. </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">,</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioDevice</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h4 id="parameters_3">Parameters</h4>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlAudioDevice</code></a></p>
+<p><strong><code>ARight</code></strong>: <a href="./"><code>TSdlAudioDevice</code></a></p>
+<h4 id="returns_3">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<hr />
+<h3 id="NotEqual_1"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlAudioDevice, Cardinal)</h3>
 <p>Used to compare against <code>0</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioDevice</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Cardinal</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
-<h4 id="parameters_2">Parameters</h4>
+<h4 id="parameters_4">Parameters</h4>
 <p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlAudioDevice</code></a></p>
 <p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Cardinal</span></code></p>
-<h4 id="returns_2">Returns</h4>
+<h4 id="returns_4">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
 <hr />
 <h2 id="method-descriptions">Method Descriptions</h2>
@@ -1728,7 +1809,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Bind</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AStream</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioStream</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_2">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_3">Parameters</h4>
+<h4 id="parameters_5">Parameters</h4>
 <p><strong><code>AStream</code></strong>: <a href="../TSdlAudioStream/"><code>TSdlAudioStream</code></a>
 : The audio stream to bind to a device.</p>
 <h4 id="see-also_2">See Also</h4>
@@ -1748,7 +1829,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Bind</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AStreams</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlAudioStream</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_3">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_4">Parameters</h4>
+<h4 id="parameters_6">Parameters</h4>
 <p><strong><code>AStreams</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlAudioStream</span><span class="o">&gt;</span></code>
 : The array of audio streams to bind.</p>
 <h4 id="see-also_3">See Also</h4>
@@ -1779,10 +1860,10 @@
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">GetFormat</span><span class="p">(</span><span class="n">out</span><span class="w"> </span><span class="n">ASpec</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioSpec</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_4">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_5">Parameters</h4>
+<h4 id="parameters_7">Parameters</h4>
 <p><strong><code>ASpec</code></strong>: <a href="../TSdlAudioSpec/"><code>TSdlAudioSpec</code></a>
 : Will be filled with device details.</p>
-<h4 id="returns_3">Returns</h4>
+<h4 id="returns_5">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Integer</span></code>: The device buffer size, in sample frames.</p>
 <h4 id="remarks_7">Remarks</h4>
 <p>It is safe to call this method from any thread </p>
@@ -1794,10 +1875,10 @@
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="nf">Open</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ADevice</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioDevice</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioDevice</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="exceptions_5">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_6">Parameters</h4>
+<h4 id="parameters_8">Parameters</h4>
 <p><strong><code>ADevice</code></strong>: <a href="./"><code>TSdlAudioDevice</code></a>
 : The previously opened device.</p>
-<h4 id="returns_4">Returns</h4>
+<h4 id="returns_6">Returns</h4>
 <p><a href="./"><code>TSdlAudioDevice</code></a>: The audio device.</p>
 <h4 id="see-also_5">See Also</h4>
 <ul>
@@ -1818,12 +1899,12 @@
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="nf">Open</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ADeviceID</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioDeviceID</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ASpec</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioSpec</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioDevice</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="exceptions_6">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_7">Parameters</h4>
+<h4 id="parameters_9">Parameters</h4>
 <p><strong><code>ADeviceID</code></strong>: <a href="../TSdlAudioDeviceID/"><code>TSdlAudioDeviceID</code></a>
 : The device instance id to open, or TSdlAudioDeviceID.DefaultPlaybackDevice or TSdlAudioDeviceID.DefaultRecordingDevice for the most reasonable default device.</p>
 <p><strong><code>ASpec</code></strong>: <a href="../TSdlAudioSpec/"><code>TSdlAudioSpec</code></a>
 : The requested device configuration.</p>
-<h4 id="returns_5">Returns</h4>
+<h4 id="returns_7">Returns</h4>
 <p><a href="./"><code>TSdlAudioDevice</code></a>: The audio device.</p>
 <h4 id="see-also_6">See Also</h4>
 <ul>
@@ -1844,10 +1925,10 @@
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="nf">Open</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ADeviceID</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioDeviceID</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioDevice</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="exceptions_7">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_8">Parameters</h4>
+<h4 id="parameters_10">Parameters</h4>
 <p><strong><code>ADeviceID</code></strong>: <a href="../TSdlAudioDeviceID/"><code>TSdlAudioDeviceID</code></a>
 : The device instance id to open, or TSdlAudioDeviceID.DefaultPlaybackDevice or TSdlAudioDeviceID.DefaultRecordingDevice for the most reasonable default device.</p>
-<h4 id="returns_6">Returns</h4>
+<h4 id="returns_8">Returns</h4>
 <p><a href="./"><code>TSdlAudioDevice</code></a>: The audio device.</p>
 <h4 id="see-also_7">See Also</h4>
 <ul>
@@ -1902,7 +1983,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetPostmixCallback</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ACallback</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioPostmixCallback</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AUserData</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_10">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_9">Parameters</h4>
+<h4 id="parameters_11">Parameters</h4>
 <p><strong><code>ACallback</code></strong>: <a href="../../types/TSdlAudioPostmixCallback/"><code>TSdlAudioPostmixCallback</code></a>
 : A callback function to be called. Can be nil.</p>
 <p><strong><code>AUserData</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code>
@@ -1914,7 +1995,7 @@
 <p>Unbind a single audio stream from its audio device.</p>
 <p>This is a convenience method, equivalent to calling the other overload with an array containing 1 stream. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">procedure</span><span class="w"> </span><span class="nf">Unbind</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AStream</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlAudioStream</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
-<h4 id="parameters_10">Parameters</h4>
+<h4 id="parameters_12">Parameters</h4>
 <p><strong><code>AStream</code></strong>: <a href="../TSdlAudioStream/"><code>TSdlAudioStream</code></a>
 : The audio stream to unbind.</p>
 <h4 id="see-also_10">See Also</h4>
@@ -1929,7 +2010,7 @@
 <p>The streams being unbound do not all have to be on the same device. All streams on the same device will be unbound atomically (data will stop flowing through all unbound streams on the same device at the same time).</p>
 <p>Unbinding a stream that isn't bound to a device is a legal no-op. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">procedure</span><span class="w"> </span><span class="nf">Unbind</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AStreams</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlAudioStream</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
-<h4 id="parameters_11">Parameters</h4>
+<h4 id="parameters_13">Parameters</h4>
 <p><strong><code>AStreams</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlAudioStream</span><span class="o">&gt;</span></code>
 : An array of audio streams to unbind.</p>
 <h4 id="see-also_11">See Also</h4>

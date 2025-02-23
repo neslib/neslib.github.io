@@ -410,6 +410,8 @@
       
         
       
+        
+      
     
     
       
@@ -1348,6 +1350,59 @@
       
         
       
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Image/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Image
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
         
       
     
@@ -1777,7 +1832,11 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#Equal">Equal</a></td>
+<td><a href="#Equal_0">Equal(TSdlHaptic, TSdlHaptic)</a></td>
+<td>Used to compare against another TSdlHaptic.</td>
+</tr>
+<tr>
+<td><a href="#Equal_1">Equal(TSdlHaptic, Pointer)</a></td>
 <td>Used to compare against <code>nil</code>.</td>
 </tr>
 <tr>
@@ -1785,7 +1844,11 @@
 <td>Used to set the value to <code>nil</code>.</td>
 </tr>
 <tr>
-<td><a href="#NotEqual">NotEqual</a></td>
+<td><a href="#NotEqual_0">NotEqual(TSdlHaptic, TSdlHaptic)</a></td>
+<td>Used to compare against another TSdlHaptic.</td>
+</tr>
+<tr>
+<td><a href="#NotEqual_1">NotEqual(TSdlHaptic, Pointer)</a></td>
 <td>Used to compare against <code>nil</code>.</td>
 </tr>
 </tbody>
@@ -1954,30 +2017,48 @@
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <hr />
 <h2 id="operator-descriptions">Operator Descriptions</h2>
-<h3 id="Equal"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Equal(TSdlHaptic, Pointer)</h3>
-<p>Used to compare against <code>nil</code>. </p>
-<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlHaptic</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h3 id="Equal_0"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Equal(TSdlHaptic, TSdlHaptic)</h3>
+<p>Used to compare against another TSdlHaptic. </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">,</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlHaptic</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters">Parameters</h4>
 <p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlHaptic</code></a></p>
-<p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
+<p><strong><code>ARight</code></strong>: <a href="./"><code>TSdlHaptic</code></a></p>
 <h4 id="returns">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<hr />
+<h3 id="Equal_1"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Equal(TSdlHaptic, Pointer)</h3>
+<p>Used to compare against <code>nil</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlHaptic</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h4 id="parameters_1">Parameters</h4>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlHaptic</code></a></p>
+<p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
+<h4 id="returns_1">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
 <hr />
 <h3 id="Implicit"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Implicit(Pointer)</h3>
 <p>Used to set the value to <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Implicit</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AValue</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlHaptic</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
-<h4 id="parameters_1">Parameters</h4>
+<h4 id="parameters_2">Parameters</h4>
 <p><strong><code>AValue</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
-<h4 id="returns_1">Returns</h4>
+<h4 id="returns_2">Returns</h4>
 <p><a href="./"><code>TSdlHaptic</code></a></p>
 <hr />
-<h3 id="NotEqual"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlHaptic, Pointer)</h3>
+<h3 id="NotEqual_0"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlHaptic, TSdlHaptic)</h3>
+<p>Used to compare against another TSdlHaptic. </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">,</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlHaptic</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h4 id="parameters_3">Parameters</h4>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlHaptic</code></a></p>
+<p><strong><code>ARight</code></strong>: <a href="./"><code>TSdlHaptic</code></a></p>
+<h4 id="returns_3">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<hr />
+<h3 id="NotEqual_1"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlHaptic, Pointer)</h3>
 <p>Used to compare against <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlHaptic</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
-<h4 id="parameters_2">Parameters</h4>
+<h4 id="parameters_4">Parameters</h4>
 <p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlHaptic</code></a></p>
 <p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
-<h4 id="returns_2">Returns</h4>
+<h4 id="returns_4">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
 <hr />
 <h2 id="method-descriptions">Method Descriptions</h2>
@@ -1996,10 +2077,10 @@
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">CreateEffect</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AEffect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlHapticEffect</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlHapticEffectID</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_5">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_3">Parameters</h4>
+<h4 id="parameters_5">Parameters</h4>
 <p><strong><code>AEffect</code></strong>: <a href="../TSdlHapticEffect/"><code>TSdlHapticEffect</code></a>
 : A TSdlHapticEffect record containing the properties of the effect to create.</p>
-<h4 id="returns_3">Returns</h4>
+<h4 id="returns_5">Returns</h4>
 <p><a href="../../types/TSdlHapticEffectID/"><code>TSdlHapticEffectID</code></a>: The effect ID.</p>
 <h4 id="see-also_6">See Also</h4>
 <ul>
@@ -2012,7 +2093,7 @@
 <p>Destroy a haptic effect on this device.</p>
 <p>This will stop the effect if it's running. Effects are automatically destroyed when the device is closed. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">FreeEffect</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AEffect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlHapticEffectID</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="parameters_4">Parameters</h4>
+<h4 id="parameters_6">Parameters</h4>
 <p><strong><code>AEffect</code></strong>: <a href="../../types/TSdlHapticEffectID/"><code>TSdlHapticEffectID</code></a>
 : The ID of the haptic effect to destroy.</p>
 <h4 id="see-also_7">See Also</h4>
@@ -2025,20 +2106,20 @@
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="nf">From</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AInstanceID</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlHapticID</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlHaptic</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="exceptions_6">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure (eg. if it hasn't been opened yet).</p>
-<h4 id="parameters_5">Parameters</h4>
+<h4 id="parameters_7">Parameters</h4>
 <p><strong><code>AInstanceID</code></strong>: <a href="../TSdlHapticID/"><code>TSdlHapticID</code></a>
 : The instance ID to get the haptic device for.</p>
-<h4 id="returns_4">Returns</h4>
+<h4 id="returns_6">Returns</h4>
 <p><a href="./"><code>TSdlHaptic</code></a></p>
 <hr />
 <h3 id="GetEffectStatus"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> GetEffectStatus(TSdlHapticEffectID)</h3>
 <p>Get the status of the current effect on this haptic device.</p>
 <p>Device must support the TSdlHapticFeature.Status feature. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">GetEffectStatus</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AEffect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlHapticEffectID</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="parameters_6">Parameters</h4>
+<h4 id="parameters_8">Parameters</h4>
 <p><strong><code>AEffect</code></strong>: <a href="../../types/TSdlHapticEffectID/"><code>TSdlHapticEffectID</code></a>
 : The ID of the haptic effect to query its status.</p>
-<h4 id="returns_5">Returns</h4>
+<h4 id="returns_7">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True if it is playing, False if it isn't playing or haptic status isn't supported.</p>
 <h4 id="see-also_8">See Also</h4>
 <ul>
@@ -2060,10 +2141,10 @@
 <h3 id="IsEffectSupported"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> IsEffectSupported(TSdlHapticEffect)</h3>
 <p>Check to see if an effect is supported by the haptic device. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">IsEffectSupported</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AEffect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlHapticEffect</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="parameters_7">Parameters</h4>
+<h4 id="parameters_9">Parameters</h4>
 <p><strong><code>AEffect</code></strong>: <a href="../TSdlHapticEffect/"><code>TSdlHapticEffect</code></a>
 : The desired effect to query.</p>
-<h4 id="returns_6">Returns</h4>
+<h4 id="returns_8">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True if the effect is supported or False if it isn't.</p>
 <h4 id="see-also_10">See Also</h4>
 <ul>
@@ -2077,10 +2158,10 @@
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="nf">Open</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AInstanceID</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlHapticID</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlHaptic</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="exceptions_8">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_8">Parameters</h4>
+<h4 id="parameters_10">Parameters</h4>
 <p><strong><code>AInstanceID</code></strong>: <a href="../TSdlHapticID/"><code>TSdlHapticID</code></a>
 : The haptic device instance ID.</p>
-<h4 id="returns_7">Returns</h4>
+<h4 id="returns_9">Returns</h4>
 <p><a href="./"><code>TSdlHaptic</code></a>: The haptic device.</p>
 <h4 id="see-also_11">See Also</h4>
 <ul>
@@ -2098,10 +2179,10 @@
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="nf">OpenFromJoystick</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AJoystick</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlJoystick</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlHaptic</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="exceptions_9">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_9">Parameters</h4>
+<h4 id="parameters_11">Parameters</h4>
 <p><strong><code>AJoystick</code></strong>: <a href="../../../Neslib.Sdl3.Input/classes/TSdlJoystick/"><code>TSdlJoystick</code></a>
 : The joystick to create a haptic device from.</p>
-<h4 id="returns_8">Returns</h4>
+<h4 id="returns_10">Returns</h4>
 <p><a href="./"><code>TSdlHaptic</code></a>: The haptic device.</p>
 <h4 id="see-also_12">See Also</h4>
 <ul>
@@ -2114,7 +2195,7 @@
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="nf">OpenFromMouse</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlHaptic</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="exceptions_10">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="returns_9">Returns</h4>
+<h4 id="returns_11">Returns</h4>
 <p><a href="./"><code>TSdlHaptic</code></a>: The haptic device.</p>
 <h4 id="see-also_13">See Also</h4>
 <ul>
@@ -2139,7 +2220,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">PlayRumble</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AStrength</span><span class="o">:</span><span class="w"> </span><span class="kt">Single</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ALengthMs</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_12">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_10">Parameters</h4>
+<h4 id="parameters_12">Parameters</h4>
 <p><strong><code>AStrength</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>
 : Strength of the rumble to play as a 0-1 float value.</p>
 <p><strong><code>ALengthMs</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
@@ -2167,7 +2248,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">RunEffect</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AEffect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlHapticEffectID</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AIterations</span><span class="o">:</span><span class="w"> </span><span class="kt">Cardinal</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_14">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_11">Parameters</h4>
+<h4 id="parameters_13">Parameters</h4>
 <p><strong><code>AEffect</code></strong>: <a href="../../types/TSdlHapticEffectID/"><code>TSdlHapticEffectID</code></a>
 : The ID of the haptic effect to run.</p>
 <p><strong><code>AIterations</code></strong>: <code class="language-delphi highlight"><span class="kt">Cardinal</span></code>
@@ -2186,7 +2267,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetAutoCenter</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AAutoCenter</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_15">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_12">Parameters</h4>
+<h4 id="parameters_14">Parameters</h4>
 <p><strong><code>AAutoCenter</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : Value to set autocenter to (0-100).</p>
 <h4 id="see-also_18">See Also</h4>
@@ -2201,7 +2282,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetGain</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AGain</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_16">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_13">Parameters</h4>
+<h4 id="parameters_15">Parameters</h4>
 <p><strong><code>AGain</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : Value to set the gain to, should be between 0 and 100.</p>
 <h4 id="see-also_19">See Also</h4>
@@ -2214,7 +2295,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">StopEffect</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AEffect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlHapticEffectID</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_17">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_14">Parameters</h4>
+<h4 id="parameters_16">Parameters</h4>
 <p><strong><code>AEffect</code></strong>: <a href="../../types/TSdlHapticEffectID/"><code>TSdlHapticEffectID</code></a>
 : The ID of the haptic effect to stop.</p>
 <h4 id="see-also_20">See Also</h4>
@@ -2248,7 +2329,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">UpdateEffect</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AEffect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlHapticEffectID</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AData</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlHapticEffect</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_19">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_15">Parameters</h4>
+<h4 id="parameters_17">Parameters</h4>
 <p><strong><code>AEffect</code></strong>: <a href="../../types/TSdlHapticEffectID/"><code>TSdlHapticEffectID</code></a>
 : The identifier of the effect to update.</p>
 <p><strong><code>AData</code></strong>: <a href="../TSdlHapticEffect/"><code>TSdlHapticEffect</code></a>

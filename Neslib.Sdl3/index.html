@@ -421,6 +421,8 @@
       
         
       
+        
+      
     
     
       
@@ -519,6 +521,8 @@
   
     
     
+      
+        
       
         
       
@@ -681,7 +685,7 @@
 
 
 <h1 id="neslibsdl3">Neslib.Sdl3</h1>
-<p>Delphi bindings and OOP-like wrappers for <a href="https://libsdl.org/index.php">SDL3</a>.</p>
+<p>Delphi bindings and OOP-like wrappers for <a href="https://libsdl.org/index.php">SDL3</a> and its satellite libraries <a href="https://github.com/libsdl-org/SDL_image">SDL_image</a>, SDL_ttf (coming soon), SDL_mixer (coming soon), SDL_net (coming soon) and SDL_rtf (coming soon).</p>
 <h2 id="supported-platforms">Supported Platforms</h2>
 <p>Neslib.Sdl3 is supported on these platforms:</p>
 <ul>
@@ -707,10 +711,10 @@
 <h2 id="platform-specifics">Platform Specifics</h2>
 <p>Some platforms require some additional setup.</p>
 <h3 id="windows">Windows</h3>
-<p>There are no additional requirements other than deploying the 32-bit or 64-bit version of SDL3.dll with your application.</p>
+<p>There are no additional requirements other than deploying the 32-bit or 64-bit version of SDL3.dll with your application. For the SDL satellite libraries, you must deploy the corresponding DLL's as well.</p>
 <h3 id="macos">macOS</h3>
 <p>Only Intel macOS is currently supported (since I don't have an ARM Mac to test on).</p>
-<p>You don't need to deploy any files. The SDL library is linked into the application.</p>
+<p>You don't need to deploy any files. The SDL library, as well as its satellite libraries, are linked into the application.</p>
 <p>You may need to add the following frameworks to the SDK manager if you haven't done so already:</p>
 <ul>
 <li>AudioToolbox</li>
@@ -731,7 +735,7 @@
 </ul>
 <h3 id="ios">iOS</h3>
 <p>Only deploying to an actual iOS device is supported. The simulator is not supported since it is not supported by the underlying SDL library.</p>
-<p>You don't need to deploy any files. The SDL library is linked into the application.</p>
+<p>You don't need to deploy any files. The SDL library, as well as its satellite libraries, are linked into the application.</p>
 <p>You may need to add the following frameworks to the SDK manager if you haven't sone so already (see above under macOS for instructions on how to add them):</p>
 <ul>
 <li>CoreHaptics</li>
@@ -739,7 +743,7 @@
 <li>GameController</li>
 </ul>
 <h3 id="android">Android</h3>
-<p>You don't need to deploy any files. The SDL library is linked into the application.</p>
+<p>You don't need to deploy any files. The SDL library, as well as its satellite libraries, are linked into the application.</p>
 <p>You need to add the "sdl3.jar" Java archive to your applications though (for both 32-bit and 64-bit build):</p>
 <ul>
 <li>In the project window, open the "Android 32-bit" or ("Android 64-bit") target.</li>

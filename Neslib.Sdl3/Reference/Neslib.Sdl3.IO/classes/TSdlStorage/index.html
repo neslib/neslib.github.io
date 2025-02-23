@@ -410,6 +410,8 @@
       
         
       
+        
+      
     
     
       
@@ -793,6 +795,59 @@
       
         
       
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Image/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Image
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
         
       
     
@@ -864,7 +919,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9" checked>
         
           
           
@@ -880,14 +935,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2_9" id="__nav_2_9_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_8">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_9_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_9">
             <span class="md-nav__icon md-icon"></span>
             Neslib.Sdl3.IO
           </label>
@@ -936,10 +991,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_9_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2_8_2" id="__nav_2_8_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_9_2" id="__nav_2_9_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -950,8 +1005,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_8_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_8_2">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_9_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_9_2">
             <span class="md-nav__icon md-icon"></span>
             Classes & Records
           </label>
@@ -1689,7 +1744,11 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#Equal">Equal</a></td>
+<td><a href="#Equal_0">Equal(TSdlStorage, TSdlStorage)</a></td>
+<td>Used to compare against another TSdlStorage.</td>
+</tr>
+<tr>
+<td><a href="#Equal_1">Equal(TSdlStorage, Pointer)</a></td>
 <td>Used to compare against <code>nil</code>.</td>
 </tr>
 <tr>
@@ -1697,7 +1756,11 @@
 <td>Used to set the value to <code>nil</code>.</td>
 </tr>
 <tr>
-<td><a href="#NotEqual">NotEqual</a></td>
+<td><a href="#NotEqual_0">NotEqual(TSdlStorage, TSdlStorage)</a></td>
+<td>Used to compare against another TSdlStorage.</td>
+</tr>
+<tr>
+<td><a href="#NotEqual_1">NotEqual(TSdlStorage, Pointer)</a></td>
 <td>Used to compare against <code>nil</code>.</td>
 </tr>
 </tbody>
@@ -1815,30 +1878,48 @@
 </ul>
 <hr />
 <h2 id="operator-descriptions">Operator Descriptions</h2>
-<h3 id="Equal"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Equal(TSdlStorage, Pointer)</h3>
-<p>Used to compare against <code>nil</code>. </p>
-<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlStorage</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h3 id="Equal_0"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Equal(TSdlStorage, TSdlStorage)</h3>
+<p>Used to compare against another TSdlStorage. </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">,</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlStorage</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters">Parameters</h4>
 <p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlStorage</code></a></p>
-<p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
+<p><strong><code>ARight</code></strong>: <a href="./"><code>TSdlStorage</code></a></p>
 <h4 id="returns">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<hr />
+<h3 id="Equal_1"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Equal(TSdlStorage, Pointer)</h3>
+<p>Used to compare against <code>nil</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlStorage</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h4 id="parameters_1">Parameters</h4>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlStorage</code></a></p>
+<p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
+<h4 id="returns_1">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
 <hr />
 <h3 id="Implicit"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Implicit(Pointer)</h3>
 <p>Used to set the value to <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Implicit</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AValue</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlStorage</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
-<h4 id="parameters_1">Parameters</h4>
+<h4 id="parameters_2">Parameters</h4>
 <p><strong><code>AValue</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
-<h4 id="returns_1">Returns</h4>
+<h4 id="returns_2">Returns</h4>
 <p><a href="./"><code>TSdlStorage</code></a></p>
 <hr />
-<h3 id="NotEqual"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlStorage, Pointer)</h3>
+<h3 id="NotEqual_0"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlStorage, TSdlStorage)</h3>
+<p>Used to compare against another TSdlStorage. </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">,</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlStorage</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h4 id="parameters_3">Parameters</h4>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlStorage</code></a></p>
+<p><strong><code>ARight</code></strong>: <a href="./"><code>TSdlStorage</code></a></p>
+<h4 id="returns_3">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<hr />
+<h3 id="NotEqual_1"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlStorage, Pointer)</h3>
 <p>Used to compare against <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlStorage</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
-<h4 id="parameters_2">Parameters</h4>
+<h4 id="parameters_4">Parameters</h4>
 <p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlStorage</code></a></p>
 <p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
-<h4 id="returns_2">Returns</h4>
+<h4 id="returns_4">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
 <hr />
 <h2 id="method-descriptions">Method Descriptions</h2>
@@ -1851,7 +1932,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">CopyFile</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AOldPath</span><span class="o">,</span><span class="w"> </span><span class="n">ANewPath</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_3">Parameters</h4>
+<h4 id="parameters_5">Parameters</h4>
 <p><strong><code>AOldPath</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
 : The old path.</p>
 <p><strong><code>ANewPath</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
@@ -1866,7 +1947,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">CreateDirectory</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APath</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_1">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_4">Parameters</h4>
+<h4 id="parameters_6">Parameters</h4>
 <p><strong><code>APath</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
 : The path of the directory to create.</p>
 <h4 id="see-also_2">See Also</h4>
@@ -1880,10 +1961,10 @@
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">EnumerateDirectory</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APath</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;&#39;</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlDirectoryEntry</span><span class="o">&gt;</span></code></p>
 <h4 id="exceptions_2">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_5">Parameters</h4>
+<h4 id="parameters_7">Parameters</h4>
 <p><strong><code>APath</code></strong>: <code class="language-delphi highlight"><span class="k">String</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;&#39;</span></code>
 : (Optional) path of the directory to enumerate, or empty (default) for the root.</p>
-<h4 id="returns_3">Returns</h4>
+<h4 id="returns_5">Returns</h4>
 <p><code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlDirectoryEntry</span><span class="o">&gt;</span></code>: An array of all entries in this directory.</p>
 <h4 id="see-also_3">See Also</h4>
 <ul>
@@ -1908,10 +1989,10 @@
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">GetFileSize</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APath</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Int64</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_4">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_6">Parameters</h4>
+<h4 id="parameters_8">Parameters</h4>
 <p><strong><code>APath</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
 : The relative path of the file to query.</p>
-<h4 id="returns_4">Returns</h4>
+<h4 id="returns_6">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Int64</span></code>: The file's length.</p>
 <h4 id="see-also_5">See Also</h4>
 <ul>
@@ -1924,10 +2005,10 @@
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">GetPathInfo</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APath</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPathInfo</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_5">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure (e.g. when the file does not exist).</p>
-<h4 id="parameters_7">Parameters</h4>
+<h4 id="parameters_9">Parameters</h4>
 <p><strong><code>APath</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
 : The path to query.</p>
-<h4 id="returns_5">Returns</h4>
+<h4 id="returns_7">Returns</h4>
 <p><a href="../TSdlPathInfo/"><code>TSdlPathInfo</code></a>: Information about the path.</p>
 <h4 id="see-also_6">See Also</h4>
 <ul>
@@ -1941,14 +2022,14 @@
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">GlobDirectory</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APath</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;&#39;</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">APattern</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;&#39;</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ACaseInsensitive</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">False</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="k">String</span><span class="o">&gt;</span></code></p>
 <h4 id="exceptions_6">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_8">Parameters</h4>
+<h4 id="parameters_10">Parameters</h4>
 <p><strong><code>APath</code></strong>: <code class="language-delphi highlight"><span class="k">String</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;&#39;</span></code>
 : (Optional) path of the directory to enumerate, or empty (default) for the root.</p>
 <p><strong><code>APattern</code></strong>: <code class="language-delphi highlight"><span class="k">String</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;&#39;</span></code>
 : (Optional) pattern that files in the directory must match, or empty to include all results.</p>
 <p><strong><code>ACaseInsensitive</code></strong>: <code class="language-delphi highlight"><span class="kt">Boolean</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">False</span></code>
 : (Optional) flag whether pattern matching is case-insensitive (default False, meaning case-sensitive).</p>
-<h4 id="returns_6">Returns</h4>
+<h4 id="returns_8">Returns</h4>
 <p><code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="k">String</span><span class="o">&gt;</span></code>: An array of strings.</p>
 <h4 id="remarks">Remarks</h4>
 <p>It is safe to call this method from any thread, assuming the storage object is thread-safe. </p>
@@ -1959,12 +2040,12 @@
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="nf">OpenCustom</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AInterface</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlStorageInterface</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AUserData</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlStorage</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="exceptions_7">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_9">Parameters</h4>
+<h4 id="parameters_11">Parameters</h4>
 <p><strong><code>AInterface</code></strong>: <a href="../TSdlStorageInterface/"><code>TSdlStorageInterface</code></a>
 : The interface that implements this storage, initialized using Init.</p>
 <p><strong><code>AUserData</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code>
 : The pointer that will be passed to the interface functions.</p>
-<h4 id="returns_7">Returns</h4>
+<h4 id="returns_9">Returns</h4>
 <p><a href="./"><code>TSdlStorage</code></a></p>
 <h4 id="see-also_7">See Also</h4>
 <ul>
@@ -1985,10 +2066,10 @@
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="nf">OpenFile</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APath</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;&#39;</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlStorage</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="exceptions_8">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_10">Parameters</h4>
+<h4 id="parameters_12">Parameters</h4>
 <p><strong><code>APath</code></strong>: <code class="language-delphi highlight"><span class="k">String</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;&#39;</span></code>
 : (Optional) base path prepended to all storage paths.</p>
-<h4 id="returns_8">Returns</h4>
+<h4 id="returns_10">Returns</h4>
 <p><a href="./"><code>TSdlStorage</code></a></p>
 <h4 id="see-also_8">See Also</h4>
 <ul>
@@ -2006,12 +2087,12 @@
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="nf">OpenTitle</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AOverride</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AProps</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlProperties</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlStorage</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="exceptions_9">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_11">Parameters</h4>
+<h4 id="parameters_13">Parameters</h4>
 <p><strong><code>AOverride</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
 : A path to override the backend's default title root.</p>
 <p><strong><code>AProps</code></strong>: <a href="../../../Neslib.Sdl3.Basics/classes/TSdlProperties/"><code>TSdlProperties</code></a>
 : A property list that may contain backend-specific information.</p>
-<h4 id="returns_9">Returns</h4>
+<h4 id="returns_11">Returns</h4>
 <p><a href="./"><code>TSdlStorage</code></a></p>
 <h4 id="see-also_9">See Also</h4>
 <ul>
@@ -2026,10 +2107,10 @@
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="nf">OpenTitle</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AOverride</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;&#39;</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlStorage</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="exceptions_10">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_12">Parameters</h4>
+<h4 id="parameters_14">Parameters</h4>
 <p><strong><code>AOverride</code></strong>: <code class="language-delphi highlight"><span class="k">String</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&#39;&#39;</span></code>
 : (Optional) path to override the backend's default title root.</p>
-<h4 id="returns_10">Returns</h4>
+<h4 id="returns_12">Returns</h4>
 <p><a href="./"><code>TSdlStorage</code></a></p>
 <h4 id="see-also_10">See Also</h4>
 <ul>
@@ -2045,14 +2126,14 @@
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="nf">OpenUser</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AOrg</span><span class="o">,</span><span class="w"> </span><span class="n">AApp</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AProps</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlProperties</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlStorage</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="exceptions_11">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_13">Parameters</h4>
+<h4 id="parameters_15">Parameters</h4>
 <p><strong><code>AOrg</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
 : The name of your organization.</p>
 <p><strong><code>AApp</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
 : The name of your application.</p>
 <p><strong><code>AProps</code></strong>: <a href="../../../Neslib.Sdl3.Basics/classes/TSdlProperties/"><code>TSdlProperties</code></a>
 : A property list that may contain backend-specific information.</p>
-<h4 id="returns_11">Returns</h4>
+<h4 id="returns_13">Returns</h4>
 <p><a href="./"><code>TSdlStorage</code></a></p>
 <h4 id="see-also_11">See Also</h4>
 <ul>
@@ -2071,12 +2152,12 @@
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="nf">OpenUser</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AOrg</span><span class="o">,</span><span class="w"> </span><span class="n">AApp</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlStorage</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="exceptions_12">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_14">Parameters</h4>
+<h4 id="parameters_16">Parameters</h4>
 <p><strong><code>AOrg</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
 : The name of your organization.</p>
 <p><strong><code>AApp</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
 : The name of your application.</p>
-<h4 id="returns_12">Returns</h4>
+<h4 id="returns_14">Returns</h4>
 <p><a href="./"><code>TSdlStorage</code></a></p>
 <h4 id="see-also_12">See Also</h4>
 <ul>
@@ -2092,10 +2173,10 @@
 <h3 id="PathExists"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> PathExists(String)</h3>
 <p>Checks whether a path in the storage container exists. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">PathExists</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APath</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="parameters_15">Parameters</h4>
+<h4 id="parameters_17">Parameters</h4>
 <p><strong><code>APath</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
 : The path to query.</p>
-<h4 id="returns_13">Returns</h4>
+<h4 id="returns_15">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True if the path exists, False otherwise.</p>
 <h4 id="see-also_13">See Also</h4>
 <ul>
@@ -2108,7 +2189,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">ReadFile</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APath</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="o">;</span><span class="w"> </span><span class="k">var</span><span class="w"> </span><span class="n">ADestination</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ALength</span><span class="o">:</span><span class="w"> </span><span class="kt">Int64</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_13">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_16">Parameters</h4>
+<h4 id="parameters_18">Parameters</h4>
 <p><strong><code>APath</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
 : The relative path of the file to read.</p>
 <p><strong><code>ADestination</code></strong>: 
@@ -2127,10 +2208,10 @@
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">ReadFile</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APath</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TBytes</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
 <h4 id="exceptions_14">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_17">Parameters</h4>
+<h4 id="parameters_19">Parameters</h4>
 <p><strong><code>APath</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
 : The relative path of the file to read.</p>
-<h4 id="returns_14">Returns</h4>
+<h4 id="returns_16">Returns</h4>
 <p><code class="language-delphi highlight"><span class="n">TBytes</span></code>: The file's content.</p>
 <h4 id="see-also_15">See Also</h4>
 <ul>
@@ -2144,7 +2225,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">RemovePath</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APath</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_15">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_18">Parameters</h4>
+<h4 id="parameters_20">Parameters</h4>
 <p><strong><code>APath</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
 : The path of the file or directory to remove.</p>
 <h4 id="see-also_16">See Also</h4>
@@ -2157,7 +2238,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">RenamePath</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AOldPath</span><span class="o">,</span><span class="w"> </span><span class="n">ANewPath</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_16">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_19">Parameters</h4>
+<h4 id="parameters_21">Parameters</h4>
 <p><strong><code>AOldPath</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
 : The old path.</p>
 <p><strong><code>ANewPath</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
@@ -2172,7 +2253,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">WriteFile</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APath</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ASource</span><span class="o">:</span><span class="w"> </span><span class="n">TBytes</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_17">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_20">Parameters</h4>
+<h4 id="parameters_22">Parameters</h4>
 <p><strong><code>APath</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
 : The relative path of the file to write.</p>
 <p><strong><code>ASource</code></strong>: <code class="language-delphi highlight"><span class="n">TBytes</span></code>
@@ -2189,7 +2270,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">WriteFile</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APath</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ASource</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ALength</span><span class="o">:</span><span class="w"> </span><span class="kt">Int64</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_18">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_21">Parameters</h4>
+<h4 id="parameters_23">Parameters</h4>
 <p><strong><code>APath</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
 : The relative path of the file to write.</p>
 <p><strong><code>ASource</code></strong>: 

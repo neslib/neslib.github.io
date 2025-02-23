@@ -410,6 +410,8 @@
       
         
       
+        
+      
     
     
       
@@ -2206,6 +2208,59 @@
       
         
       
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Image/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Image
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
         
       
     
@@ -2592,7 +2647,11 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#Equal">Equal</a></td>
+<td><a href="#Equal_0">Equal(TSdlGpuRenderPass, TSdlGpuRenderPass)</a></td>
+<td>Used to compare against another TSdlGpuRenderPass.</td>
+</tr>
+<tr>
+<td><a href="#Equal_1">Equal(TSdlGpuRenderPass, Pointer)</a></td>
 <td>Used to compare against <code>nil</code>.</td>
 </tr>
 <tr>
@@ -2600,7 +2659,11 @@
 <td>Used to set the value to <code>nil</code>.</td>
 </tr>
 <tr>
-<td><a href="#NotEqual">NotEqual</a></td>
+<td><a href="#NotEqual_0">NotEqual(TSdlGpuRenderPass, TSdlGpuRenderPass)</a></td>
+<td>Used to compare against another TSdlGpuRenderPass.</td>
+</tr>
+<tr>
+<td><a href="#NotEqual_1">NotEqual(TSdlGpuRenderPass, Pointer)</a></td>
 <td>Used to compare against <code>nil</code>.</td>
 </tr>
 </tbody>
@@ -2689,30 +2752,48 @@
 </tbody>
 </table>
 <h2 id="operator-descriptions">Operator Descriptions</h2>
-<h3 id="Equal"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Equal(TSdlGpuRenderPass, Pointer)</h3>
-<p>Used to compare against <code>nil</code>. </p>
-<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuRenderPass</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h3 id="Equal_0"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Equal(TSdlGpuRenderPass, TSdlGpuRenderPass)</h3>
+<p>Used to compare against another TSdlGpuRenderPass. </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">,</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuRenderPass</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters">Parameters</h4>
 <p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlGpuRenderPass</code></a></p>
-<p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
+<p><strong><code>ARight</code></strong>: <a href="./"><code>TSdlGpuRenderPass</code></a></p>
 <h4 id="returns">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<hr />
+<h3 id="Equal_1"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Equal(TSdlGpuRenderPass, Pointer)</h3>
+<p>Used to compare against <code>nil</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuRenderPass</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h4 id="parameters_1">Parameters</h4>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlGpuRenderPass</code></a></p>
+<p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
+<h4 id="returns_1">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
 <hr />
 <h3 id="Implicit"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Implicit(Pointer)</h3>
 <p>Used to set the value to <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Implicit</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AValue</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuRenderPass</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
-<h4 id="parameters_1">Parameters</h4>
+<h4 id="parameters_2">Parameters</h4>
 <p><strong><code>AValue</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
-<h4 id="returns_1">Returns</h4>
+<h4 id="returns_2">Returns</h4>
 <p><a href="./"><code>TSdlGpuRenderPass</code></a></p>
 <hr />
-<h3 id="NotEqual"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlGpuRenderPass, Pointer)</h3>
+<h3 id="NotEqual_0"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlGpuRenderPass, TSdlGpuRenderPass)</h3>
+<p>Used to compare against another TSdlGpuRenderPass. </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">,</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuRenderPass</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h4 id="parameters_3">Parameters</h4>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlGpuRenderPass</code></a></p>
+<p><strong><code>ARight</code></strong>: <a href="./"><code>TSdlGpuRenderPass</code></a></p>
+<h4 id="returns_3">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<hr />
+<h3 id="NotEqual_1"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlGpuRenderPass, Pointer)</h3>
 <p>Used to compare against <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuRenderPass</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
-<h4 id="parameters_2">Parameters</h4>
+<h4 id="parameters_4">Parameters</h4>
 <p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlGpuRenderPass</code></a></p>
 <p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
-<h4 id="returns_2">Returns</h4>
+<h4 id="returns_4">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
 <hr />
 <h2 id="method-descriptions">Method Descriptions</h2>
@@ -2721,7 +2802,7 @@
 <p>The textures must have been created with TSdlGpuTextureUsage.Sampler.</p>
 <p>Be sure your shader is set up according to the requirements documented TSdlGpuShader. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">BindFragmentSamplers</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFirstSlot</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ATextureSamplerBindings</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuTextureSamplerBinding</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="parameters_3">Parameters</h4>
+<h4 id="parameters_5">Parameters</h4>
 <p><strong><code>AFirstSlot</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The fragment sampler slot to begin binding from.</p>
 <p><strong><code>ATextureSamplerBindings</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuTextureSamplerBinding</span><span class="o">&gt;</span></code>
@@ -2736,7 +2817,7 @@
 <p>These buffers must have been created with TSdlGpuBufferUsage.GraphicsStorageRead.</p>
 <p>Be sure your shader is set up according to the requirements documented TSdlGpuShader. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">BindFragmentStorageBuffers</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFirstSlot</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AStorageBuffers</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuBuffer</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="parameters_4">Parameters</h4>
+<h4 id="parameters_6">Parameters</h4>
 <p><strong><code>AFirstSlot</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The fragment storage buffer slot to begin binding from.</p>
 <p><strong><code>AStorageBuffers</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuBuffer</span><span class="o">&gt;</span></code>
@@ -2751,7 +2832,7 @@
 <p>These textures must have been created with TSdlGpuTextureUsage.GraphicsStorageRead.</p>
 <p>Be sure your shader is set up according to the requirements documented TSdlGpuShader. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">BindFragmentStorageTextures</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFirstSlot</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AStorageTextures</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuTexture</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="parameters_5">Parameters</h4>
+<h4 id="parameters_7">Parameters</h4>
 <p><strong><code>AFirstSlot</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The fragment storage texture slot to begin binding from.</p>
 <p><strong><code>AStorageTextures</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuTexture</span><span class="o">&gt;</span></code>
@@ -2764,7 +2845,7 @@
 <h3 id="BindIndexBuffer"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> BindIndexBuffer(TSdlGpuBufferBinding, TSdlGpuIndexElementSize)</h3>
 <p>Binds an index buffer on a command buffer for use with subsequent draw calls. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">BindIndexBuffer</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ABinding</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuBufferBinding</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AIndexElementSize</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuIndexElementSize</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="parameters_6">Parameters</h4>
+<h4 id="parameters_8">Parameters</h4>
 <p><strong><code>ABinding</code></strong>: <a href="../TSdlGpuBufferBinding/"><code>TSdlGpuBufferBinding</code></a>
 : A record containing an index buffer and offset.</p>
 <p><strong><code>AIndexElementSize</code></strong>: <a href="../../types/TSdlGpuIndexElementSize/"><code>TSdlGpuIndexElementSize</code></a>
@@ -2774,14 +2855,14 @@
 <p>Binds a graphics pipeline on a render pass to be used in rendering.</p>
 <p>A graphics pipeline must be bound before making any draw calls. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">BindPipeline</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AGraphicsPipeline</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuGraphicsPipeline</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="parameters_7">Parameters</h4>
+<h4 id="parameters_9">Parameters</h4>
 <p><strong><code>AGraphicsPipeline</code></strong>: <a href="../TSdlGpuGraphicsPipeline/"><code>TSdlGpuGraphicsPipeline</code></a>
 : The graphics pipeline to bind.</p>
 <hr />
 <h3 id="BindVertexBuffers"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> BindVertexBuffers(Integer, TArray&lt;TSdlGpuBufferBinding&gt;)</h3>
 <p>Binds vertex buffers on a command buffer for use with subsequent draw calls. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">BindVertexBuffers</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFirstSlot</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ABindings</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuBufferBinding</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="parameters_8">Parameters</h4>
+<h4 id="parameters_10">Parameters</h4>
 <p><strong><code>AFirstSlot</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The vertex buffer slot to begin binding from.</p>
 <p><strong><code>ABindings</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuBufferBinding</span><span class="o">&gt;</span></code>
@@ -2792,7 +2873,7 @@
 <p>The textures must have been created with TSdlGpuTextureUsage.Sampler.</p>
 <p>Be sure your shader is set up according to the requirements documented TSdlGpuShader. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">BindVertexSamplers</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFirstSlot</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ATextureSamplerBindings</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuTextureSamplerBinding</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="parameters_9">Parameters</h4>
+<h4 id="parameters_11">Parameters</h4>
 <p><strong><code>AFirstSlot</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The vertex sampler slot to begin binding from.</p>
 <p><strong><code>ATextureSamplerBindings</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuTextureSamplerBinding</span><span class="o">&gt;</span></code>
@@ -2807,7 +2888,7 @@
 <p>These buffers must have been created with TSdlGpuBufferUsage.GraphicsStorageRead.</p>
 <p>Be sure your shader is set up according to the requirements documented TSdlGpuShader. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">BindVertexStorageBuffers</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFirstSlot</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AStorageBuffers</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuBuffer</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="parameters_10">Parameters</h4>
+<h4 id="parameters_12">Parameters</h4>
 <p><strong><code>AFirstSlot</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The vertex storage buffer slot to begin binding from.</p>
 <p><strong><code>AStorageBuffers</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuBuffer</span><span class="o">&gt;</span></code>
@@ -2822,7 +2903,7 @@
 <p>These textures must have been created with TSdlGpuTextureUsage.GraphicsStorageRead.</p>
 <p>Be sure your shader is set up according to the requirements documented TSdlGpuShader. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">BindVertexStorageTextures</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFirstSlot</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AStorageTextures</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuTexture</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="parameters_11">Parameters</h4>
+<h4 id="parameters_13">Parameters</h4>
 <p><strong><code>AFirstSlot</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The vertex storage texture slot to begin binding from.</p>
 <p><strong><code>AStorageTextures</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlGpuTexture</span><span class="o">&gt;</span></code>
@@ -2836,7 +2917,7 @@
 <p>Draws data using bound graphics state with an index buffer enabled and with draw parameters set from a buffer.</p>
 <p>The buffer must consist of tightly-packed draw parameter sets that each match the layout of TSdlGpuIndexedIndirectDrawCommand. You must not call this method before binding a graphics pipeline. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawIndexedPrimitives</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ABuffer</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuBuffer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AOffset</span><span class="o">,</span><span class="w"> </span><span class="n">ADrawCount</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="parameters_12">Parameters</h4>
+<h4 id="parameters_14">Parameters</h4>
 <p><strong><code>ABuffer</code></strong>: <a href="../TSdlGpuBuffer/"><code>TSdlGpuBuffer</code></a>
 : A buffer containing draw parameters.</p>
 <p><strong><code>AOffset</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
@@ -2851,7 +2932,7 @@
 <p>You must not call this method before binding a graphics pipeline.</p>
 <p>Note that the <code>AFirstVertex</code> and <code>AFirstInstance</code> parameters are NOT compatible with built-in vertex/instance ID variables in shaders (for example, SV_VertexID); GPU APIs and shader languages do not define these built-in variables consistently, so if your shader depends on them, the only way to keep behavior consistent and portable is to always pass 0 for the correlating parameter in the draw calls. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawIndexedPrimitives</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ANumIndices</span><span class="o">,</span><span class="w"> </span><span class="w">  </span><span class="n">ANumInstances</span><span class="o">,</span><span class="w"> </span><span class="n">AFirstIndex</span><span class="o">,</span><span class="w"> </span><span class="n">AVertexOffset</span><span class="o">,</span><span class="w"> </span><span class="n">AFirstInstance</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="parameters_13">Parameters</h4>
+<h4 id="parameters_15">Parameters</h4>
 <p><strong><code>ANumIndices</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The number of indices to draw per instance.</p>
 <p><strong><code>ANumInstances</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
@@ -2867,7 +2948,7 @@
 <p>Draws data using bound graphics state and with draw parameters set from a buffer.</p>
 <p>The buffer must consist of tightly-packed draw parameter sets that each match the layout of TSdlGpuIndirectDrawCommand. You must not call this method before binding a graphics pipeline. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawPrimitives</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ABuffer</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuBuffer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AOffset</span><span class="o">,</span><span class="w"> </span><span class="n">ADrawCount</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="parameters_14">Parameters</h4>
+<h4 id="parameters_16">Parameters</h4>
 <p><strong><code>ABuffer</code></strong>: <a href="../TSdlGpuBuffer/"><code>TSdlGpuBuffer</code></a>
 : A buffer containing draw parameters.</p>
 <p><strong><code>AOffset</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
@@ -2880,7 +2961,7 @@
 <p>You must not call this method before binding a graphics pipeline.</p>
 <p>Note that the <code>AFirstVertex</code> and <code>AFirstInstance</code> parameters are NOT compatible with built-in vertex/instance ID variables in shaders (for example, SV_VertexID); GPU APIs and shader languages do not define these built-in variables consistently, so if your shader depends on them, the only way to keep behavior consistent and portable is to always pass 0 for the correlating parameter in the draw calls. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawPrimitives</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ANumVertices</span><span class="o">,</span><span class="w"> </span><span class="n">ANumInstances</span><span class="o">,</span><span class="w"> </span><span class="w">  </span><span class="n">AFirstVertex</span><span class="o">,</span><span class="w"> </span><span class="n">AFirstInstance</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="parameters_15">Parameters</h4>
+<h4 id="parameters_17">Parameters</h4>
 <p><strong><code>ANumVertices</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The number of vertices to draw.</p>
 <p><strong><code>ANumInstances</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
@@ -2898,7 +2979,7 @@
 <h3 id="SetBlendConstants"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> SetBlendConstants(TSdlColorF)</h3>
 <p>Sets the current blend constants on a command buffer. Used with <code>TSdlGpuBlendFactor.ConstantColor</code> and <code>TSdlGpuBlendFactor.OneMinusConstantColor</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetBlendConstants</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ABlendConstants</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlColorF</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="parameters_16">Parameters</h4>
+<h4 id="parameters_18">Parameters</h4>
 <p><strong><code>ABlendConstants</code></strong>: <a href="../../../Neslib.Sdl3.Video/classes/TSdlColorF/"><code>TSdlColorF</code></a>
 : The blend constant color.</p>
 <h4 id="see-also_7">See Also</h4>
@@ -2909,21 +2990,21 @@
 <h3 id="SetScissor"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> SetScissor(TSdlRect)</h3>
 <p>Sets the current scissor state on a command buffer. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetScissor</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AScissor</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRect</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="parameters_17">Parameters</h4>
+<h4 id="parameters_19">Parameters</h4>
 <p><strong><code>AScissor</code></strong>: <a href="../../../Neslib.Sdl3.Video/classes/TSdlRect/"><code>TSdlRect</code></a>
 : The scissor area to set.</p>
 <hr />
 <h3 id="SetStencilReference"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> SetStencilReference(Byte)</h3>
 <p>Sets the current stencil reference value on a command buffer. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetStencilReference</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AReference</span><span class="o">:</span><span class="w"> </span><span class="kt">Byte</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="parameters_18">Parameters</h4>
+<h4 id="parameters_20">Parameters</h4>
 <p><strong><code>AReference</code></strong>: <code class="language-delphi highlight"><span class="kt">Byte</span></code>
 : The stencil reference value to set.</p>
 <hr />
 <h3 id="SetViewport"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> SetViewport(TSdlGpuViewport)</h3>
 <p>Sets the current viewport state on a command buffer. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetViewport</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AViewport</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuViewport</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="parameters_19">Parameters</h4>
+<h4 id="parameters_21">Parameters</h4>
 <p><strong><code>AViewport</code></strong>: <a href="../TSdlGpuViewport/"><code>TSdlGpuViewport</code></a>
 : The viewport to set.</p>
 <hr />

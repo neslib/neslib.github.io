@@ -410,6 +410,8 @@
       
         
       
+        
+      
     
     
       
@@ -793,6 +795,59 @@
       
         
       
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Image/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Image
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
         
       
     
@@ -976,7 +1031,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_10" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_11" checked>
         
           
           
@@ -992,14 +1047,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_10" id="__nav_2_10_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2_11" id="__nav_2_11_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_10">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_11_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_11">
             <span class="md-nav__icon md-icon"></span>
             Neslib.Sdl3.Video
           </label>
@@ -1090,10 +1145,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_10_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_11_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2_10_2" id="__nav_2_10_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_11_2" id="__nav_2_11_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1104,8 +1159,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_10_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_10_2">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_11_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_11_2">
             <span class="md-nav__icon md-icon"></span>
             Classes & Records
           </label>
@@ -2606,7 +2661,11 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#Equal">Equal</a></td>
+<td><a href="#Equal_0">Equal(TSdlWindow, TSdlWindow)</a></td>
+<td>Used to compare against another TSdlWindow.</td>
+</tr>
+<tr>
+<td><a href="#Equal_1">Equal(TSdlWindow, Pointer)</a></td>
 <td>Used to compare against <code>nil</code>.</td>
 </tr>
 <tr>
@@ -2614,7 +2673,11 @@
 <td>Used to set the value to <code>nil</code>.</td>
 </tr>
 <tr>
-<td><a href="#NotEqual">NotEqual</a></td>
+<td><a href="#NotEqual_0">NotEqual(TSdlWindow, TSdlWindow)</a></td>
+<td>Used to compare against another TSdlWindow.</td>
+</tr>
+<tr>
+<td><a href="#NotEqual_1">NotEqual(TSdlWindow, Pointer)</a></td>
 <td>Used to compare against <code>nil</code>.</td>
 </tr>
 </tbody>
@@ -2991,13 +3054,13 @@
 <hr />
 <h3 id="MaximumSize"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> MaximumSize</h3>
 <p>The maximum size of the window's client area. See GetMaximumSize and SetMaximumSize for more information. </p>
-<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">MaximumSize</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPoint</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetMaximumSizePoint</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetMaximumSizePoint</span></code></p>
-<p><strong>Type: </strong><a href="../TSdlPoint/"><code>TSdlPoint</code></a></p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">MaximumSize</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSize</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetMaximumSizeSize</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetMaximumSizeSize</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlSize/"><code>TSdlSize</code></a></p>
 <hr />
 <h3 id="MinimumSize"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> MinimumSize</h3>
 <p>The minimum size of the window's client area. See GetMinimumSize and SetMinimumSize for more information. </p>
-<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">MinimumSize</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPoint</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetMinimumSizePoint</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetMinimumSizePoint</span></code></p>
-<p><strong>Type: </strong><a href="../TSdlPoint/"><code>TSdlPoint</code></a></p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">MinimumSize</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSize</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetMinimumSizeSize</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetMinimumSizeSize</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlSize/"><code>TSdlSize</code></a></p>
 <hr />
 <h3 id="Modal"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Modal</h3>
 <p>The modal state of the window.</p>
@@ -3177,8 +3240,8 @@
 <hr />
 <h3 id="Size"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Size</h3>
 <p>The size of the window. See SetSize and GetSize for more information. </p>
-<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Size</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPoint</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetSizePoint</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetSizePoint</span></code></p>
-<p><strong>Type: </strong><a href="../TSdlPoint/"><code>TSdlPoint</code></a></p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Size</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSize</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetSizeSize</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetSizeSize</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlSize/"><code>TSdlSize</code></a></p>
 <h4 id="exceptions_24">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="remarks_28">Remarks</h4>
@@ -3186,8 +3249,8 @@
 <hr />
 <h3 id="SizeInPixels"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> SizeInPixels</h3>
 <p>The size of the window in pixels. See GetSizeInPixels for more information. </p>
-<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">SizeInPixels</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPoint</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetSizeInPixelsPoint</span></code></p>
-<p><strong>Type: </strong><a href="../TSdlPoint/"><code>TSdlPoint</code></a></p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">SizeInPixels</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSize</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetSizeInPixelsSize</span></code></p>
+<p><strong>Type: </strong><a href="../TSdlSize/"><code>TSdlSize</code></a></p>
 <h4 id="exceptions_25">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="remarks_29">Remarks</h4>
@@ -3423,30 +3486,48 @@
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">destructor</span><span class="w"> </span><span class="nf">Destroy</span></code></p>
 <hr />
 <h2 id="operator-descriptions">Operator Descriptions</h2>
-<h3 id="Equal"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Equal(TSdlWindow, Pointer)</h3>
-<p>Used to compare against <code>nil</code>. </p>
-<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlWindow</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h3 id="Equal_0"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Equal(TSdlWindow, TSdlWindow)</h3>
+<p>Used to compare against another TSdlWindow. </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">,</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlWindow</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_3">Parameters</h4>
 <p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlWindow</code></a></p>
-<p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
+<p><strong><code>ARight</code></strong>: <a href="./"><code>TSdlWindow</code></a></p>
 <h4 id="returns">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<hr />
+<h3 id="Equal_1"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Equal(TSdlWindow, Pointer)</h3>
+<p>Used to compare against <code>nil</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlWindow</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h4 id="parameters_4">Parameters</h4>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlWindow</code></a></p>
+<p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
+<h4 id="returns_1">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
 <hr />
 <h3 id="Implicit"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Implicit(Pointer)</h3>
 <p>Used to set the value to <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Implicit</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AValue</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlWindow</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
-<h4 id="parameters_4">Parameters</h4>
+<h4 id="parameters_5">Parameters</h4>
 <p><strong><code>AValue</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
-<h4 id="returns_1">Returns</h4>
+<h4 id="returns_2">Returns</h4>
 <p><a href="./"><code>TSdlWindow</code></a></p>
 <hr />
-<h3 id="NotEqual"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlWindow, Pointer)</h3>
+<h3 id="NotEqual_0"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlWindow, TSdlWindow)</h3>
+<p>Used to compare against another TSdlWindow. </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">,</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlWindow</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h4 id="parameters_6">Parameters</h4>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlWindow</code></a></p>
+<p><strong><code>ARight</code></strong>: <a href="./"><code>TSdlWindow</code></a></p>
+<h4 id="returns_3">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<hr />
+<h3 id="NotEqual_1"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlWindow, Pointer)</h3>
 <p>Used to compare against <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlWindow</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
-<h4 id="parameters_5">Parameters</h4>
+<h4 id="parameters_7">Parameters</h4>
 <p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlWindow</code></a></p>
 <p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
-<h4 id="returns_2">Returns</h4>
+<h4 id="returns_4">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
 <hr />
 <h2 id="method-descriptions">Method Descriptions</h2>
@@ -3469,7 +3550,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">ClearTextInputArea</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ACursor</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_33">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_6">Parameters</h4>
+<h4 id="parameters_8">Parameters</h4>
 <p><strong><code>ACursor</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The offset of the current cursor location relative to left position of the window, in window coordinates.</p>
 <h4 id="see-also_22">See Also</h4>
@@ -3486,7 +3567,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Flash</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AOperation</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlFlashOperation</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_34">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_7">Parameters</h4>
+<h4 id="parameters_9">Parameters</h4>
 <p><strong><code>AOperation</code></strong>: <a href="../../types/TSdlFlashOperation/"><code>TSdlFlashOperation</code></a>
 : The operation to perform.</p>
 <h4 id="remarks_41">Remarks</h4>
@@ -3519,10 +3600,10 @@
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="nf">FromID</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AId</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlWindowID</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlWindow</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="exceptions_36">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure or if the window does not exist.</p>
-<h4 id="parameters_8">Parameters</h4>
+<h4 id="parameters_10">Parameters</h4>
 <p><strong><code>AId</code></strong>: <a href="../../types/TSdlWindowID/"><code>TSdlWindowID</code></a>
 : The ID of the window.</p>
-<h4 id="returns_3">Returns</h4>
+<h4 id="returns_5">Returns</h4>
 <p><a href="./"><code>TSdlWindow</code></a>: The window associated with <code>AId</code>.</p>
 <h4 id="see-also_24">See Also</h4>
 <ul>
@@ -3536,7 +3617,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">GetAspectRatio</span><span class="p">(</span><span class="n">out</span><span class="w"> </span><span class="n">AMinAspect</span><span class="o">,</span><span class="w"> </span><span class="n">AMaxAspect</span><span class="o">:</span><span class="w"> </span><span class="kt">Single</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_37">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_9">Parameters</h4>
+<h4 id="parameters_11">Parameters</h4>
 <p><strong><code>AMinAspect</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>
 : Is set to the minimum aspect ratio of the window.</p>
 <p><strong><code>AMaxAspect</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>
@@ -3554,7 +3635,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">GetBordersSize</span><span class="p">(</span><span class="n">out</span><span class="w"> </span><span class="n">ATop</span><span class="o">,</span><span class="w"> </span><span class="n">ALeft</span><span class="o">,</span><span class="w"> </span><span class="n">ABottom</span><span class="o">,</span><span class="w"> </span><span class="w">  </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_38">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_10">Parameters</h4>
+<h4 id="parameters_12">Parameters</h4>
 <p><strong><code>ATop</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : Set to the size of the top border.</p>
 <p><strong><code>ALeft</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
@@ -3575,7 +3656,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">GetMaximumSize</span><span class="p">(</span><span class="n">out</span><span class="w"> </span><span class="n">AMaxW</span><span class="o">,</span><span class="w"> </span><span class="n">AMaxH</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_39">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_11">Parameters</h4>
+<h4 id="parameters_13">Parameters</h4>
 <p><strong><code>AMaxW</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code></p>
 <p><strong><code>AMaxH</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code></p>
 <h4 id="see-also_27">See Also</h4>
@@ -3591,7 +3672,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">GetMinimumSize</span><span class="p">(</span><span class="n">out</span><span class="w"> </span><span class="n">AMinW</span><span class="o">,</span><span class="w"> </span><span class="n">AMinH</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_40">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_12">Parameters</h4>
+<h4 id="parameters_14">Parameters</h4>
 <p><strong><code>AMinW</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : Is set to the minimum width of the window.</p>
 <p><strong><code>AMinH</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
@@ -3610,7 +3691,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">GetPosition</span><span class="p">(</span><span class="n">out</span><span class="w"> </span><span class="n">AX</span><span class="o">,</span><span class="w"> </span><span class="n">AY</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlWindowPos</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_41">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_13">Parameters</h4>
+<h4 id="parameters_15">Parameters</h4>
 <p><strong><code>AX</code></strong>: <a href="../../types/TSdlWindowPos/"><code>TSdlWindowPos</code></a>
 : Set to the X position of the window.</p>
 <p><strong><code>AY</code></strong>: <a href="../../types/TSdlWindowPos/"><code>TSdlWindowPos</code></a>
@@ -3628,7 +3709,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">GetSize</span><span class="p">(</span><span class="n">out</span><span class="w"> </span><span class="n">AW</span><span class="o">,</span><span class="w"> </span><span class="n">AH</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_42">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_14">Parameters</h4>
+<h4 id="parameters_16">Parameters</h4>
 <p><strong><code>AW</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : Is set to the width of the window.</p>
 <p><strong><code>AH</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
@@ -3647,7 +3728,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">GetSizeInPixels</span><span class="p">(</span><span class="n">out</span><span class="w"> </span><span class="n">AW</span><span class="o">,</span><span class="w"> </span><span class="n">AH</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_43">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_15">Parameters</h4>
+<h4 id="parameters_17">Parameters</h4>
 <p><strong><code>AW</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : Is set to the width in pixels.</p>
 <p><strong><code>AH</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
@@ -3666,7 +3747,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">GetTextInputArea</span><span class="p">(</span><span class="n">out</span><span class="w"> </span><span class="n">ARect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRect</span><span class="o">;</span><span class="w"> </span><span class="n">out</span><span class="w"> </span><span class="n">ACursor</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_44">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_16">Parameters</h4>
+<h4 id="parameters_18">Parameters</h4>
 <p><strong><code>ARect</code></strong>: <a href="../TSdlRect/"><code>TSdlRect</code></a>
 : Is set to the text input area.</p>
 <p><strong><code>ACursor</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
@@ -3760,7 +3841,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetAspectRatio</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AMinAspect</span><span class="o">,</span><span class="w"> </span><span class="n">AMaxAspect</span><span class="o">:</span><span class="w"> </span><span class="kt">Single</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_50">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_17">Parameters</h4>
+<h4 id="parameters_19">Parameters</h4>
 <p><strong><code>AMinAspect</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>
 : The minimum aspect ratio of the window, or 0.0 for no limit.</p>
 <p><strong><code>AMaxAspect</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>
@@ -3782,10 +3863,10 @@
 <p>Platforms that don't support this functionality will return False unconditionally, even if you're attempting to disable hit-testing.</p>
 <p>Your callback may fire at any time, and its firing does not indicate any specific behavior (for example, on Windows, this certainly might fire when the OS is deciding whether to drag your window, but it fires for lots of other reasons, too, some unrelated to anything you probably care about <em>and when the mouse isn't actually at the location it is testing</em>). Since this can fire at any time, you should try to keep your callback efficient, devoid of allocations, etc. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">SetHitTestCallback</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ACallback</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlHitTestCallback</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span></code></p>
-<h4 id="parameters_18">Parameters</h4>
+<h4 id="parameters_20">Parameters</h4>
 <p><strong><code>ACallback</code></strong>: <a href="../../types/TSdlHitTestCallback/"><code>TSdlHitTestCallback</code></a>
 : The function to call when doing a hit-test.</p>
-<h4 id="returns_4">Returns</h4>
+<h4 id="returns_6">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True on success or False on failure (eg. when the platform does not support hit-testing.</p>
 <h4 id="remarks_59">Remarks</h4>
 <p>This method should only be called on the main thread. </p>
@@ -3795,7 +3876,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetMaximumSize</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AMaxW</span><span class="o">,</span><span class="w"> </span><span class="n">AMaxH</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_51">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_19">Parameters</h4>
+<h4 id="parameters_21">Parameters</h4>
 <p><strong><code>AMaxW</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The maximum width of the window, or 0 for no limit.</p>
 <p><strong><code>AMaxH</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
@@ -3813,7 +3894,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetMinimumSize</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AMinW</span><span class="o">,</span><span class="w"> </span><span class="n">AMinH</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_52">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_20">Parameters</h4>
+<h4 id="parameters_22">Parameters</h4>
 <p><strong><code>AMinW</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The minimum width of the window, or 0 for no limit.</p>
 <p><strong><code>AMinH</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
@@ -3833,7 +3914,7 @@
 <p>On some windowing systems this request is asynchronous and the new coordinates may not have have been applied immediately upon the return of this function. If an immediate change is required, call Sync to block until the changes have taken effect.</p>
 <p>When the window position changes, an TSdlEventKind.WindowMoved event will be emitted with the window's new coordinates. Note that the new coordinates may not match the exact coordinates requested, as some windowing systems can restrict the position of the window in certain scenarios (e.g. constraining the position so the window is always within desktop bounds). Additionally, as this is just a request, it can be denied by the windowing system. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetPosition</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AX</span><span class="o">,</span><span class="w"> </span><span class="n">AY</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlWindowPos</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="parameters_21">Parameters</h4>
+<h4 id="parameters_23">Parameters</h4>
 <p><strong><code>AX</code></strong>: <a href="../../types/TSdlWindowPos/"><code>TSdlWindowPos</code></a>
 : The X coordinate of the window, or <code>TSdlWindowPos.Centered</code> <param>The Y coordinate of the window, or <code>TSdlWindowPos.Centered</code> <exception>Raised on failure.</exception><seealso/><seealso/><remarks>This method should only be called on the main thread. </remarks></param></p>
 <p><strong><code>AY</code></strong>: <a href="../../types/TSdlWindowPos/"><code>TSdlWindowPos</code></a></p>
@@ -3845,12 +3926,12 @@
 <p>On some windowing systems, this request is asynchronous and the new window size may not have have been applied immediately upon the return of this function. If an immediate change is required, call Sync to block until the changes have taken effect.</p>
 <p>When the window size changes, an TSdlEventKind.WindowResized event will be emitted with the new window dimensions. Note that the new dimensions may not match the exact size requested, as some windowing systems can restrict the window size in certain scenarios (e.g. constraining the size of the content area to remain within the usable desktop bounds). Additionally, as this is just a request, it can be denied by the windowing system. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">SetSize</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AW</span><span class="o">,</span><span class="w"> </span><span class="n">AH</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="parameters_22">Parameters</h4>
+<h4 id="parameters_24">Parameters</h4>
 <p><strong><code>AW</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The width of the window, must be &gt; 0.</p>
 <p><strong><code>AH</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The height of the window, must be &gt; 0.</p>
-<h4 id="returns_5">Returns</h4>
+<h4 id="returns_7">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True on success, False on failure.</p>
 <h4 id="see-also_40">See Also</h4>
 <ul>
@@ -3867,7 +3948,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetTextInputArea</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ARect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRect</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ACursor</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_53">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_23">Parameters</h4>
+<h4 id="parameters_25">Parameters</h4>
 <p><strong><code>ARect</code></strong>: <a href="../TSdlRect/"><code>TSdlRect</code></a>
 : The text input area, in window coordinates.</p>
 <p><strong><code>ACursor</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
@@ -3901,7 +3982,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">ShowSystemMenu</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AX</span><span class="o">,</span><span class="w"> </span><span class="n">AY</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_55">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_24">Parameters</h4>
+<h4 id="parameters_26">Parameters</h4>
 <p><strong><code>AX</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The X coordinate of the menu, relative to the origin (top-left) of the client area.</p>
 <p><strong><code>AY</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
@@ -3928,7 +4009,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">StartTextInput</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AProps</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlProperties</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_56">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_25">Parameters</h4>
+<h4 id="parameters_27">Parameters</h4>
 <p><strong><code>AProps</code></strong>: <a href="../../../Neslib.Sdl3.Basics/classes/TSdlProperties/"><code>TSdlProperties</code></a>
 : The properties to use.</p>
 <h4 id="see-also_43">See Also</h4>
@@ -3975,7 +4056,7 @@
 <p>On asynchronous windowing systems, this acts as a synchronization barrier for pending window state. It will attempt to wait until any pending window state has been applied and is guaranteed to return within finite time. Note that for how long it can potentially block depends on the underlying window system, as window state changes may involve somewhat lengthy animations that must complete before the window is in its final requested state.</p>
 <p>On windowing systems where changes are immediate, this does nothing. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">Sync</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="returns_6">Returns</h4>
+<h4 id="returns_8">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True on success or False if the operation timed out before the window was in the requested state.</p>
 <h4 id="see-also_46">See Also</h4>
 <ul>
@@ -3997,7 +4078,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">UpdateSurface</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ARects</span><span class="o">:</span><span class="w"> </span><span class="k">array</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">TSdlRect</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
 <h4 id="exceptions_59">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_26">Parameters</h4>
+<h4 id="parameters_28">Parameters</h4>
 <p><strong><code>ARects</code></strong>: <a href="../TSdlRect/"><code>array of TSdlRect</code></a>
 : An array of TSdlRect records representing areas of the surface to copy, in pixels.</p>
 <h4 id="see-also_47">See Also</h4>
@@ -4014,7 +4095,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">UpdateSurface</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ARects</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlRect</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_60">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_27">Parameters</h4>
+<h4 id="parameters_29">Parameters</h4>
 <p><strong><code>ARects</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlRect</span><span class="o">&gt;</span></code>
 : An array of TSdlRect records representing areas of the surface to copy, in pixels.</p>
 <h4 id="see-also_48">See Also</h4>
@@ -4042,7 +4123,7 @@
 <p>This method generates a mouse motion event if relative mode is not enabled. If relative mode is enabled, you can force mouse events for the warp by setting the TSdlHints.MouseRelativeWarpMotion hint.</p>
 <p>Note that this function will appear to succeed, but not actually move the mouse when used over Microsoft Remote Desktop. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">WarpMouse</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APosition</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPointF</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="parameters_28">Parameters</h4>
+<h4 id="parameters_30">Parameters</h4>
 <p><strong><code>APosition</code></strong>: <a href="../TSdlPointF/"><code>TSdlPointF</code></a>
 : The coordinate within the window.</p>
 <h4 id="see-also_50">See Also</h4>
@@ -4057,7 +4138,7 @@
 <p>This method generates a mouse motion event if relative mode is not enabled. If relative mode is enabled, you can force mouse events for the warp by setting the TSdlHints.MouseRelativeWarpMotion hint.</p>
 <p>Note that this function will appear to succeed, but not actually move the mouse when used over Microsoft Remote Desktop. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">WarpMouse</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AX</span><span class="o">,</span><span class="w"> </span><span class="n">AY</span><span class="o">:</span><span class="w"> </span><span class="kt">Single</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="parameters_29">Parameters</h4>
+<h4 id="parameters_31">Parameters</h4>
 <p><strong><code>AX</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>
 : The X coordinate within the window.</p>
 <p><strong><code>AY</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>

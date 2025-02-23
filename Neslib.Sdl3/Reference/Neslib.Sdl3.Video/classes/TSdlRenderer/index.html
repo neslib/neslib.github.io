@@ -410,6 +410,8 @@
       
         
       
+        
+      
     
     
       
@@ -793,6 +795,59 @@
       
         
       
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Image/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Image
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
         
       
     
@@ -976,7 +1031,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_10" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_11" checked>
         
           
           
@@ -992,14 +1047,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_10" id="__nav_2_10_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2_11" id="__nav_2_11_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_10_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_10">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_11_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_11">
             <span class="md-nav__icon md-icon"></span>
             Neslib.Sdl3.Video
           </label>
@@ -1090,10 +1145,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_10_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_11_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2_10_2" id="__nav_2_10_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_11_2" id="__nav_2_11_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1104,8 +1159,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_10_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_10_2">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_11_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_11_2">
             <span class="md-nav__icon md-icon"></span>
             Classes & Records
           </label>
@@ -2542,7 +2597,11 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#Equal">Equal</a></td>
+<td><a href="#Equal_0">Equal(TSdlRenderer, TSdlRenderer)</a></td>
+<td>Used to compare against another TSdlRenderer.</td>
+</tr>
+<tr>
+<td><a href="#Equal_1">Equal(TSdlRenderer, Pointer)</a></td>
 <td>Used to compare against <code>nil</code>.</td>
 </tr>
 <tr>
@@ -2550,7 +2609,11 @@
 <td>Used to set the value to <code>nil</code>.</td>
 </tr>
 <tr>
-<td><a href="#NotEqual">NotEqual</a></td>
+<td><a href="#NotEqual_0">NotEqual(TSdlRenderer, TSdlRenderer)</a></td>
+<td>Used to compare against another TSdlRenderer.</td>
+</tr>
+<tr>
+<td><a href="#NotEqual_1">NotEqual(TSdlRenderer, Pointer)</a></td>
 <td>Used to compare against <code>nil</code>.</td>
 </tr>
 </tbody>
@@ -2659,6 +2722,10 @@
 <tr>
 <td><a href="#DrawTexture_1">DrawTexture(TSdlTexture, TSdlRectF)</a></td>
 <td>Copy the texture to the current rendering target at subpixel precision.</td>
+</tr>
+<tr>
+<td><a href="#DrawTexture_2">DrawTexture(TSdlTexture)</a></td>
+<td>Copy the texture to fill the entire current rendering target.</td>
 </tr>
 <tr>
 <td><a href="#DrawTexture9Grid_0">DrawTexture9Grid(TSdlTexture, TSdlRectF, Single, Single, Single, Single, Single, TSdlRectF)</a></td>
@@ -3176,30 +3243,48 @@
 <p>This constructor should only be called on the main thread. </p>
 <hr />
 <h2 id="operator-descriptions">Operator Descriptions</h2>
-<h3 id="Equal"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Equal(TSdlRenderer, Pointer)</h3>
-<p>Used to compare against <code>nil</code>. </p>
-<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRenderer</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h3 id="Equal_0"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Equal(TSdlRenderer, TSdlRenderer)</h3>
+<p>Used to compare against another TSdlRenderer. </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">,</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRenderer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters_4">Parameters</h4>
 <p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlRenderer</code></a></p>
-<p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
+<p><strong><code>ARight</code></strong>: <a href="./"><code>TSdlRenderer</code></a></p>
 <h4 id="returns">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<hr />
+<h3 id="Equal_1"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Equal(TSdlRenderer, Pointer)</h3>
+<p>Used to compare against <code>nil</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRenderer</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h4 id="parameters_5">Parameters</h4>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlRenderer</code></a></p>
+<p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
+<h4 id="returns_1">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
 <hr />
 <h3 id="Implicit"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Implicit(Pointer)</h3>
 <p>Used to set the value to <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Implicit</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AValue</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRenderer</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
-<h4 id="parameters_5">Parameters</h4>
+<h4 id="parameters_6">Parameters</h4>
 <p><strong><code>AValue</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
-<h4 id="returns_1">Returns</h4>
+<h4 id="returns_2">Returns</h4>
 <p><a href="./"><code>TSdlRenderer</code></a></p>
 <hr />
-<h3 id="NotEqual"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlRenderer, Pointer)</h3>
+<h3 id="NotEqual_0"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlRenderer, TSdlRenderer)</h3>
+<p>Used to compare against another TSdlRenderer. </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">,</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRenderer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h4 id="parameters_7">Parameters</h4>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlRenderer</code></a></p>
+<p><strong><code>ARight</code></strong>: <a href="./"><code>TSdlRenderer</code></a></p>
+<h4 id="returns_3">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<hr />
+<h3 id="NotEqual_1"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlRenderer, Pointer)</h3>
 <p>Used to compare against <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRenderer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
-<h4 id="parameters_6">Parameters</h4>
+<h4 id="parameters_8">Parameters</h4>
 <p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlRenderer</code></a></p>
 <p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
-<h4 id="returns_2">Returns</h4>
+<h4 id="returns_4">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
 <hr />
 <h2 id="method-descriptions">Method Descriptions</h2>
@@ -3210,7 +3295,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">AddVulkanSemaphores</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AWaitStageMask</span><span class="o">:</span><span class="w"> </span><span class="n">UInt32</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AWaitSemaphore</span><span class="o">,</span><span class="w"> </span><span class="n">ASignalSemaphore</span><span class="o">:</span><span class="w"> </span><span class="kt">Int64</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_21">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_7">Parameters</h4>
+<h4 id="parameters_9">Parameters</h4>
 <p><strong><code>AWaitStageMask</code></strong>: <code class="language-delphi highlight"><span class="n">UInt32</span></code>
 : The VkPipelineStageFlags for the wait.</p>
 <p><strong><code>AWaitSemaphore</code></strong>: <code class="language-delphi highlight"><span class="kt">Int64</span></code>
@@ -3284,10 +3369,10 @@
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">CreateTexture</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AProps</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlProperties</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTexture</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_23">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_8">Parameters</h4>
+<h4 id="parameters_10">Parameters</h4>
 <p><strong><code>AProps</code></strong>: <a href="../../../Neslib.Sdl3.Basics/classes/TSdlProperties/"><code>TSdlProperties</code></a>
 : The properties to use.</p>
-<h4 id="returns_3">Returns</h4>
+<h4 id="returns_5">Returns</h4>
 <p><a href="../TSdlTexture/"><code>TSdlTexture</code></a></p>
 <h4 id="see-also_18">See Also</h4>
 <ul>
@@ -3306,10 +3391,10 @@
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">CreateTexture</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ASurface</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSurface</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTexture</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_24">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_9">Parameters</h4>
+<h4 id="parameters_11">Parameters</h4>
 <p><strong><code>ASurface</code></strong>: <a href="../TSdlSurface/"><code>TSdlSurface</code></a>
 : The surface containing pixel data used to fill the texture.</p>
-<h4 id="returns_4">Returns</h4>
+<h4 id="returns_6">Returns</h4>
 <p><a href="../TSdlTexture/"><code>TSdlTexture</code></a></p>
 <h4 id="see-also_19">See Also</h4>
 <ul>
@@ -3324,7 +3409,7 @@
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">CreateTexture</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFormat</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPixelFormat</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AAccess</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTextureAccess</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AW</span><span class="o">,</span><span class="w"> </span><span class="n">AH</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTexture</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_25">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_10">Parameters</h4>
+<h4 id="parameters_12">Parameters</h4>
 <p><strong><code>AFormat</code></strong>: <a href="../../types/TSdlPixelFormat/"><code>TSdlPixelFormat</code></a>
 : The pixel format.</p>
 <p><strong><code>AAccess</code></strong>: <a href="../../types/TSdlTextureAccess/"><code>TSdlTextureAccess</code></a>
@@ -3333,7 +3418,7 @@
 : The width of the texture in pixels.</p>
 <p><strong><code>AH</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The height of the texture in pixels.</p>
-<h4 id="returns_5">Returns</h4>
+<h4 id="returns_7">Returns</h4>
 <p><a href="../TSdlTexture/"><code>TSdlTexture</code></a></p>
 <h4 id="see-also_20">See Also</h4>
 <ul>
@@ -3360,7 +3445,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawDebugText</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APosition</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPointF</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AString</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_26">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_11">Parameters</h4>
+<h4 id="parameters_13">Parameters</h4>
 <p><strong><code>APosition</code></strong>: <a href="../TSdlPointF/"><code>TSdlPointF</code></a>
 : The top-left corner of the text will draw. will draw.</p>
 <p><strong><code>AString</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code></p>
@@ -3387,7 +3472,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawDebugText</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AX</span><span class="o">,</span><span class="w"> </span><span class="n">AY</span><span class="o">:</span><span class="w"> </span><span class="kt">Single</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AString</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_27">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_12">Parameters</h4>
+<h4 id="parameters_14">Parameters</h4>
 <p><strong><code>AX</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>
 : The X coordinate where the top-left corner of the text will draw.</p>
 <p><strong><code>AY</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>
@@ -3405,7 +3490,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawGeometry</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ATexture</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTexture</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AXY</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlPointF</span><span class="o">&gt;;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AXYStride</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AColor</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlColorF</span><span class="o">&gt;;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AColorStride</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AUV</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlPointF</span><span class="o">&gt;;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AUVStride</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AIndices</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nil</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ANumIndices</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AIndexType</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlIndexType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TSdlIndexType</span><span class="o">.</span><span class="kt">Word</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_28">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_13">Parameters</h4>
+<h4 id="parameters_15">Parameters</h4>
 <p><strong><code>ATexture</code></strong>: <a href="../TSdlTexture/"><code>TSdlTexture</code></a>
 : The texture to use.</p>
 <p><strong><code>AXY</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlPointF</span><span class="o">&gt;</span></code>
@@ -3434,7 +3519,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawGeometry</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AXY</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlPointF</span><span class="o">&gt;;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AXYStride</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AColor</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlColorF</span><span class="o">&gt;;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AColorStride</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AUV</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlPointF</span><span class="o">&gt;;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AUVStride</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AIndices</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nil</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ANumIndices</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AIndexType</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlIndexType</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TSdlIndexType</span><span class="o">.</span><span class="kt">Word</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_29">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_14">Parameters</h4>
+<h4 id="parameters_16">Parameters</h4>
 <p><strong><code>AXY</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlPointF</span><span class="o">&gt;</span></code>
 : Vertex positions.</p>
 <p><strong><code>AXYStride</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
@@ -3461,7 +3546,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawGeometry</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ATexture</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTexture</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AVertices</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlVertex</span><span class="o">&gt;;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AIndices</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="kt">Integer</span><span class="o">&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nil</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_30">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_15">Parameters</h4>
+<h4 id="parameters_17">Parameters</h4>
 <p><strong><code>ATexture</code></strong>: <a href="../TSdlTexture/"><code>TSdlTexture</code></a>
 : Texture to use.</p>
 <p><strong><code>AVertices</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlVertex</span><span class="o">&gt;</span></code>
@@ -3476,7 +3561,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawGeometry</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AVertices</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlVertex</span><span class="o">&gt;;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AIndices</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="kt">Integer</span><span class="o">&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nil</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_31">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_16">Parameters</h4>
+<h4 id="parameters_18">Parameters</h4>
 <p><strong><code>AVertices</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlVertex</span><span class="o">&gt;</span></code>
 : The vertices.</p>
 <p><strong><code>AIndices</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="kt">Integer</span><span class="o">&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nil</span></code>
@@ -3489,7 +3574,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawLine</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AP1</span><span class="o">,</span><span class="w"> </span><span class="n">AP2</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPointF</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_32">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_17">Parameters</h4>
+<h4 id="parameters_19">Parameters</h4>
 <p><strong><code>AP1</code></strong>: <a href="../TSdlPointF/"><code>TSdlPointF</code></a>
 : The start point.</p>
 <p><strong><code>AP2</code></strong>: <a href="../TSdlPointF/"><code>TSdlPointF</code></a>
@@ -3506,7 +3591,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawLine</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AX1</span><span class="o">,</span><span class="w"> </span><span class="n">AY1</span><span class="o">,</span><span class="w"> </span><span class="n">AX2</span><span class="o">,</span><span class="w"> </span><span class="n">AY2</span><span class="o">:</span><span class="w"> </span><span class="kt">Single</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_33">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_18">Parameters</h4>
+<h4 id="parameters_20">Parameters</h4>
 <p><strong><code>AX1</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>
 : The X coordinate of the start point.</p>
 <p><strong><code>AY1</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>
@@ -3527,7 +3612,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawLines</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APoints</span><span class="o">:</span><span class="w"> </span><span class="k">array</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">TSdlPointF</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
 <h4 id="exceptions_34">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_19">Parameters</h4>
+<h4 id="parameters_21">Parameters</h4>
 <p><strong><code>APoints</code></strong>: <a href="../TSdlPointF/"><code>array of TSdlPointF</code></a>
 : The points along the lines.</p>
 <h4 id="see-also_25">See Also</h4>
@@ -3542,7 +3627,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawLines</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APoints</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlPointF</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_35">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_20">Parameters</h4>
+<h4 id="parameters_22">Parameters</h4>
 <p><strong><code>APoints</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlPointF</span><span class="o">&gt;</span></code>
 : The points along the lines.</p>
 <h4 id="see-also_26">See Also</h4>
@@ -3557,7 +3642,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawPoint</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APoint</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPointF</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_36">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_21">Parameters</h4>
+<h4 id="parameters_23">Parameters</h4>
 <p><strong><code>APoint</code></strong>: <a href="../TSdlPointF/"><code>TSdlPointF</code></a></p>
 <h4 id="see-also_27">See Also</h4>
 <ul>
@@ -3571,7 +3656,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawPoint</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AX</span><span class="o">,</span><span class="w"> </span><span class="n">AY</span><span class="o">:</span><span class="w"> </span><span class="kt">Single</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_37">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_22">Parameters</h4>
+<h4 id="parameters_24">Parameters</h4>
 <p><strong><code>AX</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>
 : The X coordinate of the point.</p>
 <p><strong><code>AY</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>
@@ -3588,7 +3673,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawPoints</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APoints</span><span class="o">:</span><span class="w"> </span><span class="k">array</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">TSdlPointF</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
 <h4 id="exceptions_38">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_23">Parameters</h4>
+<h4 id="parameters_25">Parameters</h4>
 <p><strong><code>APoints</code></strong>: <a href="../TSdlPointF/"><code>array of TSdlPointF</code></a>
 : The points to draw.</p>
 <h4 id="see-also_29">See Also</h4>
@@ -3603,7 +3688,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawPoints</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APoints</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlPointF</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_39">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_24">Parameters</h4>
+<h4 id="parameters_26">Parameters</h4>
 <p><strong><code>APoints</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlPointF</span><span class="o">&gt;</span></code>
 : The points to draw.</p>
 <h4 id="see-also_30">See Also</h4>
@@ -3618,7 +3703,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawRect</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ARect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRectF</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_40">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_25">Parameters</h4>
+<h4 id="parameters_27">Parameters</h4>
 <p><strong><code>ARect</code></strong>: <a href="../TSdlRectF/"><code>TSdlRectF</code></a>
 : The destination rectangle.</p>
 <h4 id="see-also_31">See Also</h4>
@@ -3633,7 +3718,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawRects</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ARects</span><span class="o">:</span><span class="w"> </span><span class="k">array</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">TSdlRectF</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
 <h4 id="exceptions_41">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_26">Parameters</h4>
+<h4 id="parameters_28">Parameters</h4>
 <p><strong><code>ARects</code></strong>: <a href="../TSdlRectF/"><code>array of TSdlRectF</code></a>
 : Array of destination rectangles.</p>
 <h4 id="see-also_32">See Also</h4>
@@ -3648,7 +3733,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawRects</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ARects</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlRectF</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_42">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_27">Parameters</h4>
+<h4 id="parameters_29">Parameters</h4>
 <p><strong><code>ARects</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlRectF</span><span class="o">&gt;</span></code>
 : Array of destination rectangles.</p>
 <h4 id="see-also_33">See Also</h4>
@@ -3663,7 +3748,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawTexture</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ATexture</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTexture</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ASrcRect</span><span class="o">,</span><span class="w"> </span><span class="n">ADstRect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRectF</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_43">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_28">Parameters</h4>
+<h4 id="parameters_30">Parameters</h4>
 <p><strong><code>ATexture</code></strong>: <a href="../TSdlTexture/"><code>TSdlTexture</code></a>
 : The source texture.</p>
 <p><strong><code>ASrcRect</code></strong>: <a href="../TSdlRectF/"><code>TSdlRectF</code></a>
@@ -3683,7 +3768,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawTexture</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ATexture</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTexture</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ADstRect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRectF</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_44">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_29">Parameters</h4>
+<h4 id="parameters_31">Parameters</h4>
 <p><strong><code>ATexture</code></strong>: <a href="../TSdlTexture/"><code>TSdlTexture</code></a>
 : The source texture.</p>
 <p><strong><code>ADstRect</code></strong>: <a href="../TSdlRectF/"><code>TSdlRectF</code></a>
@@ -3696,13 +3781,29 @@
 <h4 id="remarks_49">Remarks</h4>
 <p>This method should only be called on the main thread. </p>
 <hr />
+<h3 id="DrawTexture_2"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> DrawTexture(TSdlTexture)</h3>
+<p>Copy the texture to fill the entire current rendering target. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawTexture</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ATexture</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTexture</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_45">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_32">Parameters</h4>
+<p><strong><code>ATexture</code></strong>: <a href="../TSdlTexture/"><code>TSdlTexture</code></a>
+: The source texture.</p>
+<h4 id="see-also_36">See Also</h4>
+<ul>
+<li><a href="./#DrawTextureRotated_0">DrawTextureRotated</a></li>
+<li><a href="./#DrawTextureTiled_0">DrawTextureTiled</a></li>
+</ul>
+<h4 id="remarks_50">Remarks</h4>
+<p>This method should only be called on the main thread. </p>
+<hr />
 <h3 id="DrawTexture9Grid_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> DrawTexture9Grid(TSdlTexture, TSdlRectF, Single, Single, Single, Single, Single, TSdlRectF)</h3>
 <p>Perform a scaled copy using the 9-grid algorithm to the current rendering target at subpixel precision.</p>
 <p>The pixels in the texture are split into a 3x3 grid, using the different corner sizes for each corner, and the sides and center making up the remaining pixels. The corners are then scaled using <code>AScale</code> and fit into the corners of the destination rectangle. The sides and center are then stretched into place to cover the remaining destination rectangle. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawTexture9Grid</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ATexture</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTexture</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ASrcRect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRectF</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ALeftWidth</span><span class="o">,</span><span class="w"> </span><span class="n">ARightWidth</span><span class="o">,</span><span class="w"> </span><span class="w">  </span><span class="n">ATopHeight</span><span class="o">,</span><span class="w"> </span><span class="n">ABottomHeight</span><span class="o">,</span><span class="w"> </span><span class="n">AScale</span><span class="o">:</span><span class="w"> </span><span class="kt">Single</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ADstRect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRectF</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_45">Exceptions</h4>
+<h4 id="exceptions_46">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_30">Parameters</h4>
+<h4 id="parameters_33">Parameters</h4>
 <p><strong><code>ATexture</code></strong>: <a href="../TSdlTexture/"><code>TSdlTexture</code></a>
 : The source texture.</p>
 <p><strong><code>ASrcRect</code></strong>: <a href="../TSdlRectF/"><code>TSdlRectF</code></a>
@@ -3719,20 +3820,20 @@
 : The scale used to transform the corner of <code>ASrcRect</code> into the corner of <code>ADstRect</code>, or 0.0 for an unscaled copy.</p>
 <p><strong><code>ADstRect</code></strong>: <a href="../TSdlRectF/"><code>TSdlRectF</code></a>
 : The destination rectangle.</p>
-<h4 id="see-also_36">See Also</h4>
+<h4 id="see-also_37">See Also</h4>
 <ul>
 <li><a href="./#DrawTexture_0">DrawTexture</a></li>
 </ul>
-<h4 id="remarks_50">Remarks</h4>
+<h4 id="remarks_51">Remarks</h4>
 <p>This method should only be called on the main thread. </p>
 <hr />
 <h3 id="DrawTexture9Grid_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> DrawTexture9Grid(TSdlTexture, Single, Single, Single, Single, Single, TSdlRectF)</h3>
 <p>Perform a scaled copy using the 9-grid algorithm to the current rendering target at subpixel precision.</p>
 <p>The pixels in the texture are split into a 3x3 grid, using the different corner sizes for each corner, and the sides and center making up the remaining pixels. The corners are then scaled using <code>AScale</code> and fit into the corners of the destination rectangle. The sides and center are then stretched into place to cover the remaining destination rectangle. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawTexture9Grid</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ATexture</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTexture</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ALeftWidth</span><span class="o">,</span><span class="w"> </span><span class="n">ARightWidth</span><span class="o">,</span><span class="w"> </span><span class="n">ATopHeight</span><span class="o">,</span><span class="w"> </span><span class="n">ABottomHeight</span><span class="o">,</span><span class="w"> </span><span class="w">  </span><span class="n">AScale</span><span class="o">:</span><span class="w"> </span><span class="kt">Single</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ADstRect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRectF</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_46">Exceptions</h4>
+<h4 id="exceptions_47">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_31">Parameters</h4>
+<h4 id="parameters_34">Parameters</h4>
 <p><strong><code>ATexture</code></strong>: <a href="../TSdlTexture/"><code>TSdlTexture</code></a>
 : The source texture.</p>
 <p><strong><code>ALeftWidth</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>
@@ -3747,29 +3848,6 @@
 : The scale used to transform the corner of the texture rectangle into the corner of <code>ADstRect</code>, or 0.0 for an unscaled copy.</p>
 <p><strong><code>ADstRect</code></strong>: <a href="../TSdlRectF/"><code>TSdlRectF</code></a>
 : The destination rectangle.</p>
-<h4 id="see-also_37">See Also</h4>
-<ul>
-<li><a href="./#DrawTexture_0">DrawTexture</a></li>
-</ul>
-<h4 id="remarks_51">Remarks</h4>
-<p>This method should only be called on the main thread. </p>
-<hr />
-<h3 id="DrawTextureAffine_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> DrawTextureAffine(TSdlTexture, TSdlRectF, TSdlPointF, TSdlPointF, TSdlPointF)</h3>
-<p>Copy a portion of the source texture to the current rendering target, with affine transform, at subpixel precision. </p>
-<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawTextureAffine</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ATexture</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTexture</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ASrcRect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRectF</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AOrigin</span><span class="o">,</span><span class="w"> </span><span class="n">ARight</span><span class="o">,</span><span class="w"> </span><span class="n">ADown</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPointF</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_47">Exceptions</h4>
-<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_32">Parameters</h4>
-<p><strong><code>ATexture</code></strong>: <a href="../TSdlTexture/"><code>TSdlTexture</code></a>
-: The source texture.</p>
-<p><strong><code>ASrcRect</code></strong>: <a href="../TSdlRectF/"><code>TSdlRectF</code></a>
-: The source rectangle.</p>
-<p><strong><code>AOrigin</code></strong>: <a href="../TSdlPointF/"><code>TSdlPointF</code></a>
-: Where the top-left corner of ASrcRect should be mapped to.</p>
-<p><strong><code>ARight</code></strong>: <a href="../TSdlPointF/"><code>TSdlPointF</code></a>
-: Where the top-right corner of ASrcRect should be mapped to.</p>
-<p><strong><code>ADown</code></strong>: <a href="../TSdlPointF/"><code>TSdlPointF</code></a>
-: Where the bottom-left corner of srcrect should be mapped to, or NULL for the rendering target's.</p>
 <h4 id="see-also_38">See Also</h4>
 <ul>
 <li><a href="./#DrawTexture_0">DrawTexture</a></li>
@@ -3777,14 +3855,16 @@
 <h4 id="remarks_52">Remarks</h4>
 <p>This method should only be called on the main thread. </p>
 <hr />
-<h3 id="DrawTextureAffine_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> DrawTextureAffine(TSdlTexture, TSdlPointF, TSdlPointF, TSdlPointF)</h3>
-<p>Copy the source texture to the current rendering target, with affine transform, at subpixel precision. </p>
-<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawTextureAffine</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ATexture</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTexture</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AOrigin</span><span class="o">,</span><span class="w"> </span><span class="n">ARight</span><span class="o">,</span><span class="w"> </span><span class="n">ADown</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPointF</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h3 id="DrawTextureAffine_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> DrawTextureAffine(TSdlTexture, TSdlRectF, TSdlPointF, TSdlPointF, TSdlPointF)</h3>
+<p>Copy a portion of the source texture to the current rendering target, with affine transform, at subpixel precision. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawTextureAffine</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ATexture</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTexture</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ASrcRect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRectF</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AOrigin</span><span class="o">,</span><span class="w"> </span><span class="n">ARight</span><span class="o">,</span><span class="w"> </span><span class="n">ADown</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPointF</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_48">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_33">Parameters</h4>
+<h4 id="parameters_35">Parameters</h4>
 <p><strong><code>ATexture</code></strong>: <a href="../TSdlTexture/"><code>TSdlTexture</code></a>
 : The source texture.</p>
+<p><strong><code>ASrcRect</code></strong>: <a href="../TSdlRectF/"><code>TSdlRectF</code></a>
+: The source rectangle.</p>
 <p><strong><code>AOrigin</code></strong>: <a href="../TSdlPointF/"><code>TSdlPointF</code></a>
 : Where the top-left corner of ASrcRect should be mapped to.</p>
 <p><strong><code>ARight</code></strong>: <a href="../TSdlPointF/"><code>TSdlPointF</code></a>
@@ -3798,12 +3878,33 @@
 <h4 id="remarks_53">Remarks</h4>
 <p>This method should only be called on the main thread. </p>
 <hr />
+<h3 id="DrawTextureAffine_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> DrawTextureAffine(TSdlTexture, TSdlPointF, TSdlPointF, TSdlPointF)</h3>
+<p>Copy the source texture to the current rendering target, with affine transform, at subpixel precision. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawTextureAffine</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ATexture</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTexture</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AOrigin</span><span class="o">,</span><span class="w"> </span><span class="n">ARight</span><span class="o">,</span><span class="w"> </span><span class="n">ADown</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPointF</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_49">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_36">Parameters</h4>
+<p><strong><code>ATexture</code></strong>: <a href="../TSdlTexture/"><code>TSdlTexture</code></a>
+: The source texture.</p>
+<p><strong><code>AOrigin</code></strong>: <a href="../TSdlPointF/"><code>TSdlPointF</code></a>
+: Where the top-left corner of ASrcRect should be mapped to.</p>
+<p><strong><code>ARight</code></strong>: <a href="../TSdlPointF/"><code>TSdlPointF</code></a>
+: Where the top-right corner of ASrcRect should be mapped to.</p>
+<p><strong><code>ADown</code></strong>: <a href="../TSdlPointF/"><code>TSdlPointF</code></a>
+: Where the bottom-left corner of srcrect should be mapped to, or NULL for the rendering target's.</p>
+<h4 id="see-also_40">See Also</h4>
+<ul>
+<li><a href="./#DrawTexture_0">DrawTexture</a></li>
+</ul>
+<h4 id="remarks_54">Remarks</h4>
+<p>This method should only be called on the main thread. </p>
+<hr />
 <h3 id="DrawTextureRotated_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> DrawTextureRotated(TSdlTexture, TSdlRectF, TSdlRectF, Double, TSdlPointF, TSdlFlipModes)</h3>
 <p>Copy a portion of the source texture to the current rendering target, with rotation and flipping, at subpixel precision.</p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawTextureRotated</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ATexture</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTexture</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ASrcRect</span><span class="o">,</span><span class="w"> </span><span class="n">ADstRect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRectF</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AAngle</span><span class="o">:</span><span class="w"> </span><span class="kt">Double</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ACenter</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPointF</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AFlip</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlFlipModes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[])</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_49">Exceptions</h4>
+<h4 id="exceptions_50">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_34">Parameters</h4>
+<h4 id="parameters_37">Parameters</h4>
 <p><strong><code>ATexture</code></strong>: <a href="../TSdlTexture/"><code>TSdlTexture</code></a>
 : The source texture.</p>
 <p><strong><code>ASrcRect</code></strong>: <a href="../TSdlRectF/"><code>TSdlRectF</code></a>
@@ -3814,29 +3915,6 @@
 : An angle in degrees that indicates the rotation that will be applied to ADstRect, rotating it in a clockwise direction.</p>
 <p><strong><code>ACenter</code></strong>: <a href="../TSdlPointF/"><code>TSdlPointF</code></a>
 : The point around which ADstRect will be rotated.</p>
-<p><strong><code>AFlip</code></strong>: <a href="../../types/TSdlFlipModes/"><code>TSdlFlipModes = []</code></a>
-: (Optional) flipping actions that should be performed on the texture. Defaults to [] (none).</p>
-<h4 id="see-also_40">See Also</h4>
-<ul>
-<li><a href="./#DrawTexture_0">DrawTexture</a></li>
-</ul>
-<h4 id="remarks_54">Remarks</h4>
-<p>This method should only be called on the main thread. </p>
-<hr />
-<h3 id="DrawTextureRotated_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> DrawTextureRotated(TSdlTexture, TSdlRectF, TSdlRectF, Double, TSdlFlipModes)</h3>
-<p>Copy a portion of the source texture to the current rendering target, with rotation and flipping, at subpixel precision. </p>
-<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawTextureRotated</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ATexture</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTexture</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ASrcRect</span><span class="o">,</span><span class="w"> </span><span class="n">ADstRect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRectF</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AAngle</span><span class="o">:</span><span class="w"> </span><span class="kt">Double</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AFlip</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlFlipModes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[])</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_50">Exceptions</h4>
-<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_35">Parameters</h4>
-<p><strong><code>ATexture</code></strong>: <a href="../TSdlTexture/"><code>TSdlTexture</code></a>
-: The source texture.</p>
-<p><strong><code>ASrcRect</code></strong>: <a href="../TSdlRectF/"><code>TSdlRectF</code></a>
-: The source rectangle.</p>
-<p><strong><code>ADstRect</code></strong>: <a href="../TSdlRectF/"><code>TSdlRectF</code></a>
-: The destination rectangle.</p>
-<p><strong><code>AAngle</code></strong>: <code class="language-delphi highlight"><span class="kt">Double</span></code>
-: An angle in degrees that indicates the rotation that will be applied around the center of ADstRect, rotating it in a clockwise direction.</p>
 <p><strong><code>AFlip</code></strong>: <a href="../../types/TSdlFlipModes/"><code>TSdlFlipModes = []</code></a>
 : (Optional) flipping actions that should be performed on the texture. Defaults to [] (none).</p>
 <h4 id="see-also_41">See Also</h4>
@@ -3846,12 +3924,35 @@
 <h4 id="remarks_55">Remarks</h4>
 <p>This method should only be called on the main thread. </p>
 <hr />
+<h3 id="DrawTextureRotated_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> DrawTextureRotated(TSdlTexture, TSdlRectF, TSdlRectF, Double, TSdlFlipModes)</h3>
+<p>Copy a portion of the source texture to the current rendering target, with rotation and flipping, at subpixel precision. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawTextureRotated</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ATexture</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTexture</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ASrcRect</span><span class="o">,</span><span class="w"> </span><span class="n">ADstRect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRectF</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AAngle</span><span class="o">:</span><span class="w"> </span><span class="kt">Double</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AFlip</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlFlipModes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[])</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_51">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_38">Parameters</h4>
+<p><strong><code>ATexture</code></strong>: <a href="../TSdlTexture/"><code>TSdlTexture</code></a>
+: The source texture.</p>
+<p><strong><code>ASrcRect</code></strong>: <a href="../TSdlRectF/"><code>TSdlRectF</code></a>
+: The source rectangle.</p>
+<p><strong><code>ADstRect</code></strong>: <a href="../TSdlRectF/"><code>TSdlRectF</code></a>
+: The destination rectangle.</p>
+<p><strong><code>AAngle</code></strong>: <code class="language-delphi highlight"><span class="kt">Double</span></code>
+: An angle in degrees that indicates the rotation that will be applied around the center of ADstRect, rotating it in a clockwise direction.</p>
+<p><strong><code>AFlip</code></strong>: <a href="../../types/TSdlFlipModes/"><code>TSdlFlipModes = []</code></a>
+: (Optional) flipping actions that should be performed on the texture. Defaults to [] (none).</p>
+<h4 id="see-also_42">See Also</h4>
+<ul>
+<li><a href="./#DrawTexture_0">DrawTexture</a></li>
+</ul>
+<h4 id="remarks_56">Remarks</h4>
+<p>This method should only be called on the main thread. </p>
+<hr />
 <h3 id="DrawTextureRotated_2"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> DrawTextureRotated(TSdlTexture, TSdlRectF, Double, TSdlPointF, TSdlFlipModes)</h3>
 <p>Copy the source texture to the current rendering target, with rotation and flipping, at subpixel precision.</p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawTextureRotated</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ATexture</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTexture</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ADstRect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRectF</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AAngle</span><span class="o">:</span><span class="w"> </span><span class="kt">Double</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ACenter</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPointF</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AFlip</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlFlipModes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[])</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_51">Exceptions</h4>
+<h4 id="exceptions_52">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_36">Parameters</h4>
+<h4 id="parameters_39">Parameters</h4>
 <p><strong><code>ATexture</code></strong>: <a href="../TSdlTexture/"><code>TSdlTexture</code></a>
 : The source texture.</p>
 <p><strong><code>ADstRect</code></strong>: <a href="../TSdlRectF/"><code>TSdlRectF</code></a>
@@ -3862,19 +3963,19 @@
 : The point around which ADstRect will be rotated.</p>
 <p><strong><code>AFlip</code></strong>: <a href="../../types/TSdlFlipModes/"><code>TSdlFlipModes = []</code></a>
 : (Optional) flipping actions that should be performed on the texture. Defaults to [] (none).</p>
-<h4 id="see-also_42">See Also</h4>
+<h4 id="see-also_43">See Also</h4>
 <ul>
 <li><a href="./#DrawTexture_0">DrawTexture</a></li>
 </ul>
-<h4 id="remarks_56">Remarks</h4>
+<h4 id="remarks_57">Remarks</h4>
 <p>This method should only be called on the main thread. </p>
 <hr />
 <h3 id="DrawTextureRotated_3"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> DrawTextureRotated(TSdlTexture, TSdlRectF, Double, TSdlFlipModes)</h3>
 <p>Copy the source texture to the current rendering target, with rotation and flipping, at subpixel precision. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawTextureRotated</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ATexture</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTexture</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ADstRect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRectF</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AAngle</span><span class="o">:</span><span class="w"> </span><span class="kt">Double</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AFlip</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlFlipModes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">[])</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_52">Exceptions</h4>
+<h4 id="exceptions_53">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_37">Parameters</h4>
+<h4 id="parameters_40">Parameters</h4>
 <p><strong><code>ATexture</code></strong>: <a href="../TSdlTexture/"><code>TSdlTexture</code></a>
 : The source texture.</p>
 <p><strong><code>ADstRect</code></strong>: <a href="../TSdlRectF/"><code>TSdlRectF</code></a>
@@ -3883,28 +3984,6 @@
 : An angle in degrees that indicates the rotation that will be applied around the center of ADstRect, rotating it in a clockwise direction.</p>
 <p><strong><code>AFlip</code></strong>: <a href="../../types/TSdlFlipModes/"><code>TSdlFlipModes = []</code></a>
 : (Optional) flipping actions that should be performed on the texture. Defaults to [] (none).</p>
-<h4 id="see-also_43">See Also</h4>
-<ul>
-<li><a href="./#DrawTexture_0">DrawTexture</a></li>
-</ul>
-<h4 id="remarks_57">Remarks</h4>
-<p>This method should only be called on the main thread. </p>
-<hr />
-<h3 id="DrawTextureTiled_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> DrawTextureTiled(TSdlTexture, TSdlRectF, Single, TSdlRectF)</h3>
-<p>Tile a portion of the texture to the current rendering target at subpixel precision.</p>
-<p>The pixels in <code>ASrcRect</code> will be repeated as many times as needed to completely fill <code>ADstRect</code>. </p>
-<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawTextureTiled</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ATexture</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTexture</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ASrcRect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRectF</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AScale</span><span class="o">:</span><span class="w"> </span><span class="kt">Single</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ADstRect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRectF</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_53">Exceptions</h4>
-<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_38">Parameters</h4>
-<p><strong><code>ATexture</code></strong>: <a href="../TSdlTexture/"><code>TSdlTexture</code></a>
-: The source texture.</p>
-<p><strong><code>ASrcRect</code></strong>: <a href="../TSdlRectF/"><code>TSdlRectF</code></a>
-: The source rectangle.</p>
-<p><strong><code>AScale</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>
-: The scale used to transform srcrect into the destination rectangle, e.g. a 32x32 texture with a scale of 2 would fill 64x64 tiles.</p>
-<p><strong><code>ADstRect</code></strong>: <a href="../TSdlRectF/"><code>TSdlRectF</code></a>
-: The destination rectangle.</p>
 <h4 id="see-also_44">See Also</h4>
 <ul>
 <li><a href="./#DrawTexture_0">DrawTexture</a></li>
@@ -3912,15 +3991,17 @@
 <h4 id="remarks_58">Remarks</h4>
 <p>This method should only be called on the main thread. </p>
 <hr />
-<h3 id="DrawTextureTiled_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> DrawTextureTiled(TSdlTexture, Single, TSdlRectF)</h3>
-<p>Tile the texture to the current rendering target at subpixel precision.</p>
-<p>The pixels in the texture will be repeated as many times as needed to completely fill <code>ADstRect</code>. </p>
-<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawTextureTiled</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ATexture</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTexture</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AScale</span><span class="o">:</span><span class="w"> </span><span class="kt">Single</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ADstRect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRectF</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h3 id="DrawTextureTiled_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> DrawTextureTiled(TSdlTexture, TSdlRectF, Single, TSdlRectF)</h3>
+<p>Tile a portion of the texture to the current rendering target at subpixel precision.</p>
+<p>The pixels in <code>ASrcRect</code> will be repeated as many times as needed to completely fill <code>ADstRect</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawTextureTiled</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ATexture</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTexture</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ASrcRect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRectF</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AScale</span><span class="o">:</span><span class="w"> </span><span class="kt">Single</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ADstRect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRectF</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_54">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_39">Parameters</h4>
+<h4 id="parameters_41">Parameters</h4>
 <p><strong><code>ATexture</code></strong>: <a href="../TSdlTexture/"><code>TSdlTexture</code></a>
 : The source texture.</p>
+<p><strong><code>ASrcRect</code></strong>: <a href="../TSdlRectF/"><code>TSdlRectF</code></a>
+: The source rectangle.</p>
 <p><strong><code>AScale</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>
 : The scale used to transform srcrect into the destination rectangle, e.g. a 32x32 texture with a scale of 2 would fill 64x64 tiles.</p>
 <p><strong><code>ADstRect</code></strong>: <a href="../TSdlRectF/"><code>TSdlRectF</code></a>
@@ -3932,49 +4013,69 @@
 <h4 id="remarks_59">Remarks</h4>
 <p>This method should only be called on the main thread. </p>
 <hr />
-<h3 id="FillRect"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> FillRect(TSdlRectF)</h3>
-<p>Fill a rectangle on the current rendering target with the drawing color at subpixel precision. </p>
-<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">FillRect</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ARect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRectF</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h3 id="DrawTextureTiled_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> DrawTextureTiled(TSdlTexture, Single, TSdlRectF)</h3>
+<p>Tile the texture to the current rendering target at subpixel precision.</p>
+<p>The pixels in the texture will be repeated as many times as needed to completely fill <code>ADstRect</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">DrawTextureTiled</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ATexture</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTexture</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AScale</span><span class="o">:</span><span class="w"> </span><span class="kt">Single</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ADstRect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRectF</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_55">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_40">Parameters</h4>
-<p><strong><code>ARect</code></strong>: <a href="../TSdlRectF/"><code>TSdlRectF</code></a>
+<h4 id="parameters_42">Parameters</h4>
+<p><strong><code>ATexture</code></strong>: <a href="../TSdlTexture/"><code>TSdlTexture</code></a>
+: The source texture.</p>
+<p><strong><code>AScale</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>
+: The scale used to transform srcrect into the destination rectangle, e.g. a 32x32 texture with a scale of 2 would fill 64x64 tiles.</p>
+<p><strong><code>ADstRect</code></strong>: <a href="../TSdlRectF/"><code>TSdlRectF</code></a>
 : The destination rectangle.</p>
 <h4 id="see-also_46">See Also</h4>
 <ul>
-<li><a href="./#FillRects_0">FillRects</a></li>
+<li><a href="./#DrawTexture_0">DrawTexture</a></li>
 </ul>
 <h4 id="remarks_60">Remarks</h4>
+<p>This method should only be called on the main thread. </p>
+<hr />
+<h3 id="FillRect"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> FillRect(TSdlRectF)</h3>
+<p>Fill a rectangle on the current rendering target with the drawing color at subpixel precision. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">FillRect</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ARect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRectF</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_56">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_43">Parameters</h4>
+<p><strong><code>ARect</code></strong>: <a href="../TSdlRectF/"><code>TSdlRectF</code></a>
+: The destination rectangle.</p>
+<h4 id="see-also_47">See Also</h4>
+<ul>
+<li><a href="./#FillRects_0">FillRects</a></li>
+</ul>
+<h4 id="remarks_61">Remarks</h4>
 <p>This method should only be called on the main thread. </p>
 <hr />
 <h3 id="FillRects_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> FillRects(TSdlRectF[])</h3>
 <p>Fill some number of rectangles on the current rendering target with the drawing color at subpixel precision. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">FillRects</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ARects</span><span class="o">:</span><span class="w"> </span><span class="k">array</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">TSdlRectF</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
-<h4 id="exceptions_56">Exceptions</h4>
-<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_41">Parameters</h4>
-<p><strong><code>ARects</code></strong>: <a href="../TSdlRectF/"><code>array of TSdlRectF</code></a>
-: Array of destination rectangles.</p>
-<h4 id="see-also_47">See Also</h4>
-<ul>
-<li><a href="./#FillRect">FillRect</a></li>
-</ul>
-<h4 id="remarks_61">Remarks</h4>
-<p>This method should only be called on the main thread. </p>
-<hr />
-<h3 id="FillRects_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> FillRects(TArray&lt;TSdlRectF&gt;)</h3>
-<p>Fill some number of rectangles on the current rendering target with the drawing color at subpixel precision. </p>
-<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">FillRects</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ARects</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlRectF</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_57">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_42">Parameters</h4>
-<p><strong><code>ARects</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlRectF</span><span class="o">&gt;</span></code>
+<h4 id="parameters_44">Parameters</h4>
+<p><strong><code>ARects</code></strong>: <a href="../TSdlRectF/"><code>array of TSdlRectF</code></a>
 : Array of destination rectangles.</p>
 <h4 id="see-also_48">See Also</h4>
 <ul>
 <li><a href="./#FillRect">FillRect</a></li>
 </ul>
 <h4 id="remarks_62">Remarks</h4>
+<p>This method should only be called on the main thread. </p>
+<hr />
+<h3 id="FillRects_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> FillRects(TArray&lt;TSdlRectF&gt;)</h3>
+<p>Fill some number of rectangles on the current rendering target with the drawing color at subpixel precision. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">FillRects</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ARects</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlRectF</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_58">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_45">Parameters</h4>
+<p><strong><code>ARects</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">TSdlRectF</span><span class="o">&gt;</span></code>
+: Array of destination rectangles.</p>
+<h4 id="see-also_49">See Also</h4>
+<ul>
+<li><a href="./#FillRect">FillRect</a></li>
+</ul>
+<h4 id="remarks_63">Remarks</h4>
 <p>This method should only be called on the main thread. </p>
 <hr />
 <h3 id="Flush"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Flush</h3>
@@ -3985,49 +4086,49 @@
 <p>This call makes SDL flush any pending rendering work it was queueing up to do later in a single batch, and marks any internal cached state as invalid, so it'll prepare all its state again later, from scratch.</p>
 <p>This means you do not need to save state in your rendering code to protect the SDL renderer. However, there lots of arbitrary pieces of Direct3D and OpenGL state that can confuse things; you should use your best judgment and be prepared to make changes if specific state needs to be protected. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Flush</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_58">Exceptions</h4>
+<h4 id="exceptions_59">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="remarks_63">Remarks</h4>
+<h4 id="remarks_64">Remarks</h4>
 <p>This method should only be called on the main thread. </p>
 <hr />
 <h3 id="ForWindow"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span>  <span class="twemoji" title="Class method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg></span> ForWindow(TSdlWindow)</h3>
 <p>Get the renderer associated with a window. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="nf">ForWindow</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AWindow</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlWindow</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRenderer</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
-<h4 id="exceptions_59">Exceptions</h4>
+<h4 id="exceptions_60">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_43">Parameters</h4>
+<h4 id="parameters_46">Parameters</h4>
 <p><strong><code>AWindow</code></strong>: <a href="../TSdlWindow/"><code>TSdlWindow</code></a>
 : The window to query.</p>
-<h4 id="returns_6">Returns</h4>
+<h4 id="returns_8">Returns</h4>
 <p><a href="./"><code>TSdlRenderer</code></a>: The rendering context.</p>
-<h4 id="remarks_64">Remarks</h4>
+<h4 id="remarks_65">Remarks</h4>
 <p>It is safe to call this method from any thread. </p>
 <hr />
 <h3 id="Free"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Free</h3>
 <p>Destroy the rendering context for a window and free all associated textures.</p>
 <p>This should be called before destroying the associated window. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Free</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="remarks_65">Remarks</h4>
+<h4 id="remarks_66">Remarks</h4>
 <p>This method should only be called on the main thread. </p>
 <hr />
 <h3 id="GetLogicalPresentation"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> GetLogicalPresentation(Integer, Integer, TSdlRendererLogicalPresentation)</h3>
 <p>Get device independent resolution and presentation mode for rendering.</p>
 <p>This method gets the width and height of the logical rendering output, or the output size in pixels if a logical resolution is not enabled. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">GetLogicalPresentation</span><span class="p">(</span><span class="n">out</span><span class="w"> </span><span class="n">AW</span><span class="o">,</span><span class="w"> </span><span class="n">AH</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="n">out</span><span class="w"> </span><span class="n">AMode</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRendererLogicalPresentation</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_60">Exceptions</h4>
+<h4 id="exceptions_61">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_44">Parameters</h4>
+<h4 id="parameters_47">Parameters</h4>
 <p><strong><code>AW</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : Set to the width.</p>
 <p><strong><code>AH</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : Set to the height.</p>
 <p><strong><code>AMode</code></strong>: <a href="../../types/TSdlRendererLogicalPresentation/"><code>TSdlRendererLogicalPresentation</code></a>
 : Set to the presentation.</p>
-<h4 id="see-also_49">See Also</h4>
+<h4 id="see-also_50">See Also</h4>
 <ul>
 <li><a href="./#SetLogicalPresentation">SetLogicalPresentation</a></li>
 </ul>
-<h4 id="remarks_66">Remarks</h4>
+<h4 id="remarks_67">Remarks</h4>
 <p>This method should only be called on the main thread. </p>
 <hr />
 <h3 id="Present"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Present</h3>
@@ -4037,9 +4138,9 @@
 <p>The backbuffer should be considered invalidated after each present; do not assume that previous contents will exist between frames. You are strongly encouraged to call Clear to initialize the backbuffer before starting each new frame's drawing, even if you plan to overwrite every pixel.</p>
 <p>Please note, that in case of rendering to a texture - there is <strong>no need</strong> to call <code>Present</code> after drawing needed objects to a texture, and should not be done; you are only required to change back the rendering target to default via <code>RenderTarget := nil</code> afterwards, as textures by themselves do not have a concept of backbuffers. Calling Present while rendering to a texture will still update the screen with any current drawing that has been done <em>to the window itself</em>. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Present</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_61">Exceptions</h4>
+<h4 id="exceptions_62">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="see-also_50">See Also</h4>
+<h4 id="see-also_51">See Also</h4>
 <ul>
 <li><a href="./#Clear">Clear</a></li>
 <li><a href="./#FillRect">FillRect</a></li>
@@ -4055,7 +4156,7 @@
 <li><a href="./#DrawColor">DrawColor</a></li>
 <li><a href="./#DrawColorFloat">DrawColorFloat</a></li>
 </ul>
-<h4 id="remarks_67">Remarks</h4>
+<h4 id="remarks_68">Remarks</h4>
 <p>This methodn should only be called on the main thread. </p>
 <hr />
 <h3 id="ReadPixels_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> ReadPixels(TSdlRect)</h3>
@@ -4063,14 +4164,14 @@
 <p>The returned surface should be freed.</p>
 <p><strong>WARNING</strong>: This is a very slow operation, and should not be used frequently. If you're using this on the main rendering target, it should be called after rendering and before Present. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">ReadPixels</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ARect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRect</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSurface</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_62">Exceptions</h4>
+<h4 id="exceptions_63">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_45">Parameters</h4>
+<h4 id="parameters_48">Parameters</h4>
 <p><strong><code>ARect</code></strong>: <a href="../TSdlRect/"><code>TSdlRect</code></a>
 : The area to read in pixels relative to the to current viewport.</p>
-<h4 id="returns_7">Returns</h4>
+<h4 id="returns_9">Returns</h4>
 <p><a href="../TSdlSurface/"><code>TSdlSurface</code></a>: A new SDL surface</p>
-<h4 id="remarks_68">Remarks</h4>
+<h4 id="remarks_69">Remarks</h4>
 <p>This method should only be called on the main thread. </p>
 <hr />
 <h3 id="ReadPixels_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> ReadPixels</h3>
@@ -4078,11 +4179,11 @@
 <p>The returned surface should be freed.</p>
 <p><strong>WARNING</strong>: This is a very slow operation, and should not be used frequently. If you're using this on the main rendering target, it should be called after rendering and before Present. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">ReadPixels</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSurface</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_63">Exceptions</h4>
+<h4 id="exceptions_64">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="returns_8">Returns</h4>
+<h4 id="returns_10">Returns</h4>
 <p><a href="../TSdlSurface/"><code>TSdlSurface</code></a>: A new SDL surface</p>
-<h4 id="remarks_69">Remarks</h4>
+<h4 id="remarks_70">Remarks</h4>
 <p>This method should only be called on the main thread. </p>
 <hr />
 <h3 id="RenderCoordinatesFromWindow"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> RenderCoordinatesFromWindow(Single, Single)</h3>
@@ -4095,21 +4196,21 @@
 <li>The viewport (Viewport) </li>
 </ul>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">RenderCoordinatesFromWindow</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AWindowX</span><span class="o">,</span><span class="w"> </span><span class="w">  </span><span class="n">AWindowY</span><span class="o">:</span><span class="w"> </span><span class="kt">Single</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPointF</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_64">Exceptions</h4>
+<h4 id="exceptions_65">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_46">Parameters</h4>
+<h4 id="parameters_49">Parameters</h4>
 <p><strong><code>AWindowX</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>
 : The X coordinate in window coordinates.</p>
 <p><strong><code>AWindowY</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>
 : The Y coordinate in window coordinates.</p>
-<h4 id="returns_9">Returns</h4>
+<h4 id="returns_11">Returns</h4>
 <p><a href="../TSdlPointF/"><code>TSdlPointF</code></a>: The coordinates in render coordinates.</p>
-<h4 id="see-also_51">See Also</h4>
+<h4 id="see-also_52">See Also</h4>
 <ul>
 <li><a href="./#SetLogicalPresentation">SetLogicalPresentation</a></li>
 <li><a href="./#Scale">Scale</a></li>
 </ul>
-<h4 id="remarks_70">Remarks</h4>
+<h4 id="remarks_71">Remarks</h4>
 <p>This method should only be called on the main thread. </p>
 <hr />
 <h3 id="RenderCoordinatesToWindow"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> RenderCoordinatesToWindow(Single, Single)</h3>
@@ -4122,44 +4223,44 @@
 <li>The viewport (Viewport) </li>
 </ul>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">RenderCoordinatesToWindow</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AX</span><span class="o">,</span><span class="w"> </span><span class="n">AY</span><span class="o">:</span><span class="w"> </span><span class="kt">Single</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPointF</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_65">Exceptions</h4>
+<h4 id="exceptions_66">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_47">Parameters</h4>
+<h4 id="parameters_50">Parameters</h4>
 <p><strong><code>AX</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>
 : The X coordinate in render coordinates.</p>
 <p><strong><code>AY</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>
 : The Y coordinate in render coordinates.</p>
-<h4 id="returns_10">Returns</h4>
+<h4 id="returns_12">Returns</h4>
 <p><a href="../TSdlPointF/"><code>TSdlPointF</code></a>: The coordinates in window coordinates.</p>
-<h4 id="see-also_52">See Also</h4>
+<h4 id="see-also_53">See Also</h4>
 <ul>
 <li><a href="./#SetLogicalPresentation">SetLogicalPresentation</a></li>
 <li><a href="./#Scale">Scale</a></li>
 <li><a href="./#Viewport">Viewport</a></li>
 </ul>
-<h4 id="remarks_71">Remarks</h4>
+<h4 id="remarks_72">Remarks</h4>
 <p>This method should only be called on the main thread. </p>
 <hr />
 <h3 id="ResetViewport"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> ResetViewport</h3>
 <p>Set the viewport to the entire target. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">ResetViewport</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_66">Exceptions</h4>
+<h4 id="exceptions_67">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="see-also_53">See Also</h4>
+<h4 id="see-also_54">See Also</h4>
 <ul>
 <li><a href="./#Viewport">Viewport</a></li>
 <li><a href="./#IsViewportSet">IsViewportSet</a></li>
 </ul>
-<h4 id="remarks_72">Remarks</h4>
+<h4 id="remarks_73">Remarks</h4>
 <p>This method should only be called on the main thread. </p>
 <hr />
 <h3 id="SetDrawColor"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> SetDrawColor(Byte, Byte, Byte, Byte)</h3>
 <p>Set the (integer) color used for drawing operations.</p>
 <p>Set the color for drawing or filling rectangles, lines, and points, and for Clear. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetDrawColor</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AR</span><span class="o">,</span><span class="w"> </span><span class="n">AG</span><span class="o">,</span><span class="w"> </span><span class="n">AB</span><span class="o">:</span><span class="w"> </span><span class="kt">Byte</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AA</span><span class="o">:</span><span class="w"> </span><span class="kt">Byte</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_ALPHA_OPAQUE</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_67">Exceptions</h4>
+<h4 id="exceptions_68">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_48">Parameters</h4>
+<h4 id="parameters_51">Parameters</h4>
 <p><strong><code>AR</code></strong>: <code class="language-delphi highlight"><span class="kt">Byte</span></code>
 : The red value used to draw on the rendering target.</p>
 <p><strong><code>AG</code></strong>: <code class="language-delphi highlight"><span class="kt">Byte</span></code>
@@ -4168,21 +4269,21 @@
 : The blue value used to draw on the rendering target.</p>
 <p><strong><code>AA</code></strong>: <code class="language-delphi highlight"><span class="kt">Byte</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_ALPHA_OPAQUE</span></code>
 : (Optional)Aalpha value used to draw on the rendering target; Defaults to <code>SDL_ALPHA_OPAQUE</code> (255). Use DrawBlendMode to specify how the alpha channel is used.</p>
-<h4 id="see-also_54">See Also</h4>
+<h4 id="see-also_55">See Also</h4>
 <ul>
 <li><a href="./#DrawColor">DrawColor</a></li>
 <li><a href="./#DrawColorFloat">DrawColorFloat</a></li>
 </ul>
-<h4 id="remarks_73">Remarks</h4>
+<h4 id="remarks_74">Remarks</h4>
 <p>This method should only be called on the main thread. </p>
 <hr />
 <h3 id="SetDrawColorFloat"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> SetDrawColorFloat(Single, Single, Single, Single)</h3>
 <p>Set the (floating-point) color used for drawing operations.</p>
 <p>Set the color for drawing or filling rectangles, lines, and points, and for Clear. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetDrawColorFloat</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AR</span><span class="o">,</span><span class="w"> </span><span class="n">AG</span><span class="o">,</span><span class="w"> </span><span class="n">AB</span><span class="o">:</span><span class="w"> </span><span class="kt">Single</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AA</span><span class="o">:</span><span class="w"> </span><span class="kt">Single</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_ALPHA_OPAQUE_FLOAT</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_68">Exceptions</h4>
+<h4 id="exceptions_69">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_49">Parameters</h4>
+<h4 id="parameters_52">Parameters</h4>
 <p><strong><code>AR</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>
 : The red value used to draw on the rendering target.</p>
 <p><strong><code>AG</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>
@@ -4191,12 +4292,12 @@
 : The blue value used to draw on the rendering target.</p>
 <p><strong><code>AA</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_ALPHA_OPAQUE_FLOAT</span></code>
 : (Optional)Aalpha value used to draw on the rendering target; Defaults to <code>SDL_ALPHA_OPAQUE_FLOAT</code> (1.0). Use DrawBlendMode to specify how the alpha channel is used.</p>
-<h4 id="see-also_55">See Also</h4>
+<h4 id="see-also_56">See Also</h4>
 <ul>
 <li><a href="./#DrawColor">DrawColor</a></li>
 <li><a href="./#DrawColorFloat">DrawColorFloat</a></li>
 </ul>
-<h4 id="remarks_74">Remarks</h4>
+<h4 id="remarks_75">Remarks</h4>
 <p>This method should only be called on the main thread. </p>
 <hr />
 <h3 id="SetLogicalPresentation"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> SetLogicalPresentation(Integer, Integer, TSdlRendererLogicalPresentation)</h3>
@@ -4207,22 +4308,22 @@
 <p>Letterboxing will only happen if logical presentation is enabled during Present; be sure to reenable it first if you were using it.</p>
 <p>You can convert coordinates in an event into rendering coordinates using TSdlEvent.ConvertToRenderCoordinates. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetLogicalPresentation</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AW</span><span class="o">,</span><span class="w"> </span><span class="n">AH</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AMode</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRendererLogicalPresentation</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="exceptions_69">Exceptions</h4>
+<h4 id="exceptions_70">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_50">Parameters</h4>
+<h4 id="parameters_53">Parameters</h4>
 <p><strong><code>AW</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The width of the logical resolution.</p>
 <p><strong><code>AH</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The height of the logical resolution.</p>
 <p><strong><code>AMode</code></strong>: <a href="../../types/TSdlRendererLogicalPresentation/"><code>TSdlRendererLogicalPresentation</code></a>
 : The presentation mode used.</p>
-<h4 id="see-also_56">See Also</h4>
+<h4 id="see-also_57">See Also</h4>
 <ul>
 <li><a href="../../../Neslib.Sdl3.Events/classes/TSdlEvent/#ConvertToRenderCoordinates">TSdlEvent.ConvertToRenderCoordinates</a></li>
 <li><a href="./#GetLogicalPresentation">GetLogicalPresentation</a></li>
 <li><a href="./#LogicalPresentationRect">LogicalPresentationRect</a></li>
 </ul>
-<h4 id="remarks_75">Remarks</h4>
+<h4 id="remarks_76">Remarks</h4>
 <p>This method should only be called on the main thread. </p>
 <hr />
 

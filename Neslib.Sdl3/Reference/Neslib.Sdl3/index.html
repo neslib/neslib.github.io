@@ -410,6 +410,8 @@
       
         
       
+        
+      
     
     
       
@@ -793,6 +795,59 @@
       
         
       
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../Neslib.Sdl3.Image/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Image
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
         
       
     
@@ -1031,7 +1086,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_11" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_12" checked>
         
           
           
@@ -1047,14 +1102,14 @@
             </a>
             
               
-              <label class="md-nav__link md-nav__link--active" for="__nav_2_11" id="__nav_2_11_label" tabindex="0">
+              <label class="md-nav__link md-nav__link--active" for="__nav_2_12" id="__nav_2_12_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_11_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_11">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_12_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_12">
             <span class="md-nav__icon md-icon"></span>
             Neslib.Sdl3
           </label>
@@ -1292,9 +1347,6 @@
 
 
 <h1 id="neslibsdl3">Neslib.Sdl3</h1>
-<p>Lightweight, very low-overhead, type-safe, object-oriented wrapper for SDL3.</p>
-<p>Wraps most of SDL into a class library (but using records instead of classes to reduce overhead). However, some functionality is not wrapped, in particular functionality that is not applicable to Delphi, or that the Delphi RTL already provides.</p>
-<p>In addition, errors are forwarded to the virtual TSdlApp.HandleError method (from the thread that caused the error). Be default, this method raises an exception of type ESdlError, but you can override to perform some other action, such as logging it instead. However, if you choose to not raise an exception, then the flow of execution will not be interrupted and you will have to use TSdlApp.HasError and TSdlApp.ErrorMessage to check for errors. Also, when the construction of an object (eg. a Texture, Window, Audio stream etc.) fails, and an exception is <em>not</em> raised, then you will have to check if the object is not nil before using it. </p>
 <h2 id="classes-records">Classes &amp; Records</h2>
 <table>
 <thead>

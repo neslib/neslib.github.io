@@ -410,6 +410,8 @@
       
         
       
+        
+      
     
     
       
@@ -780,6 +782,59 @@
                 
   
   
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Image/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Image
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -809,7 +864,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8" checked>
         
           
           
@@ -825,14 +880,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_7" id="__nav_2_7_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2_8" id="__nav_2_8_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_7_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_7">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_8_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_8">
             <span class="md-nav__icon md-icon"></span>
             Neslib.Sdl3.Input
           </label>
@@ -895,10 +950,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_7_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_8_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2_7_2" id="__nav_2_7_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_8_2" id="__nav_2_8_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -909,8 +964,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_7_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_7_2">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_8_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_8_2">
             <span class="md-nav__icon md-icon"></span>
             Classes & Records
           </label>
@@ -1371,6 +1426,8 @@
   
     
     
+      
+        
       
         
       
@@ -1923,7 +1980,7 @@
 <td>Whether a joystick is currently connected.</td>
 </tr>
 <tr>
-<td><a href="#Hat">Hat</a></td>
+<td><a href="#Hats">Hats</a></td>
 <td>The current state of a POV hat on the joystick.</td>
 </tr>
 <tr>
@@ -2002,7 +2059,11 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#Equal">Equal</a></td>
+<td><a href="#Equal_0">Equal(TSdlJoystick, TSdlJoystick)</a></td>
+<td>Used to compare against another TSdlJoystick.</td>
+</tr>
+<tr>
+<td><a href="#Equal_1">Equal(TSdlJoystick, Pointer)</a></td>
 <td>Used to compare against <code>nil</code>.</td>
 </tr>
 <tr>
@@ -2010,7 +2071,11 @@
 <td>Used to set the value to <code>nil</code>.</td>
 </tr>
 <tr>
-<td><a href="#NotEqual">NotEqual</a></td>
+<td><a href="#NotEqual_0">NotEqual(TSdlJoystick, TSdlJoystick)</a></td>
+<td>Used to compare against another TSdlJoystick.</td>
+</tr>
+<tr>
+<td><a href="#NotEqual_1">NotEqual(TSdlJoystick, Pointer)</a></td>
 <td>Used to compare against <code>nil</code>.</td>
 </tr>
 </tbody>
@@ -2186,10 +2251,10 @@
 <li><a href="./#Joysticks">Joysticks</a></li>
 </ul>
 <hr />
-<h3 id="Hat"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Hat</h3>
+<h3 id="Hats"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Hats</h3>
 <p>The current state of a POV hat on the joystick. </p>
-<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Hat</span><span class="p">[</span><span class="k">const</span><span class="w"> </span><span class="n">AHat</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlHat</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetHat</span></code></p>
-<p><strong>Type: </strong><a href="../../types/TSdlHat/"><code>TSdlHat</code></a></p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Hats</span><span class="p">[</span><span class="k">const</span><span class="w"> </span><span class="n">AHat</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlHats</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetHats</span></code></p>
+<p><strong>Type: </strong><a href="../../types/TSdlHats/"><code>TSdlHats</code></a></p>
 <h4 id="see-also_6">See Also</h4>
 <ul>
 <li><a href="./#NumHats">NumHats</a></li>
@@ -2290,7 +2355,7 @@
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="see-also_13">See Also</h4>
 <ul>
-<li><a href="./#Hat">Hat</a></li>
+<li><a href="./#Hats">Hats</a></li>
 <li><a href="./#NumAxes">NumAxes</a></li>
 <li><a href="./#NumBalls">NumBalls</a></li>
 <li><a href="./#NumButtons">NumButtons</a></li>
@@ -2370,30 +2435,48 @@
 </ul>
 <hr />
 <h2 id="operator-descriptions">Operator Descriptions</h2>
-<h3 id="Equal"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Equal(TSdlJoystick, Pointer)</h3>
-<p>Used to compare against <code>nil</code>. </p>
-<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlJoystick</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h3 id="Equal_0"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Equal(TSdlJoystick, TSdlJoystick)</h3>
+<p>Used to compare against another TSdlJoystick. </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">,</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlJoystick</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="parameters">Parameters</h4>
 <p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlJoystick</code></a></p>
-<p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
+<p><strong><code>ARight</code></strong>: <a href="./"><code>TSdlJoystick</code></a></p>
 <h4 id="returns">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<hr />
+<h3 id="Equal_1"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Equal(TSdlJoystick, Pointer)</h3>
+<p>Used to compare against <code>nil</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlJoystick</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h4 id="parameters_1">Parameters</h4>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlJoystick</code></a></p>
+<p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
+<h4 id="returns_1">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
 <hr />
 <h3 id="Implicit"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Implicit(Pointer)</h3>
 <p>Used to set the value to <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Implicit</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AValue</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlJoystick</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
-<h4 id="parameters_1">Parameters</h4>
+<h4 id="parameters_2">Parameters</h4>
 <p><strong><code>AValue</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
-<h4 id="returns_1">Returns</h4>
+<h4 id="returns_2">Returns</h4>
 <p><a href="./"><code>TSdlJoystick</code></a></p>
 <hr />
-<h3 id="NotEqual"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlJoystick, Pointer)</h3>
+<h3 id="NotEqual_0"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlJoystick, TSdlJoystick)</h3>
+<p>Used to compare against another TSdlJoystick. </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">,</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlJoystick</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h4 id="parameters_3">Parameters</h4>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlJoystick</code></a></p>
+<p><strong><code>ARight</code></strong>: <a href="./"><code>TSdlJoystick</code></a></p>
+<h4 id="returns_3">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<hr />
+<h3 id="NotEqual_1"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlJoystick, Pointer)</h3>
 <p>Used to compare against <code>nil</code>. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlJoystick</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
-<h4 id="parameters_2">Parameters</h4>
+<h4 id="parameters_4">Parameters</h4>
 <p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlJoystick</code></a></p>
 <p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
-<h4 id="returns_2">Returns</h4>
+<h4 id="returns_4">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
 <hr />
 <h2 id="method-descriptions">Method Descriptions</h2>
@@ -2402,12 +2485,12 @@
 <p>The state is a value ranging from -32768 to 32767.</p>
 <p>The axis indices start at index 0. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">AxisInitialState</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AAxis</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="n">out</span><span class="w"> </span><span class="n">AState</span><span class="o">:</span><span class="w"> </span><span class="kt">Smallint</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="parameters_3">Parameters</h4>
+<h4 id="parameters_5">Parameters</h4>
 <p><strong><code>AAxis</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The axis to query; the axis indices start at index 0.</p>
 <p><strong><code>AState</code></strong>: <code class="language-delphi highlight"><span class="kt">Smallint</span></code>
 : Upon return, the initial value is supplied here.</p>
-<h4 id="returns_3">Returns</h4>
+<h4 id="returns_5">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True if this axis has any initial value, or False if not.</p>
 <hr />
 <h3 id="Close"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Close</h3>
@@ -2425,10 +2508,10 @@
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="nf">FromGamepad</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AGamepad</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGamepad</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlJoystick</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="exceptions_10">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_4">Parameters</h4>
+<h4 id="parameters_6">Parameters</h4>
 <p><strong><code>AGamepad</code></strong>: <a href="../TSdlGamepad/"><code>TSdlGamepad</code></a>
 : The gamepad object that you want to get a joystick from.</p>
-<h4 id="returns_4">Returns</h4>
+<h4 id="returns_6">Returns</h4>
 <p><a href="./"><code>TSdlJoystick</code></a></p>
 <hr />
 <h3 id="FromID"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span>  <span class="twemoji" title="Class method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg></span> FromID(TSdlJoystickID)</h3>
@@ -2436,10 +2519,10 @@
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="nf">FromID</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AInstanceID</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlJoystickID</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlJoystick</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="exceptions_11">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure (eg. when the joystick hasn't been opened).</p>
-<h4 id="parameters_5">Parameters</h4>
+<h4 id="parameters_7">Parameters</h4>
 <p><strong><code>AInstanceID</code></strong>: <a href="../TSdlJoystickID/"><code>TSdlJoystickID</code></a>
 : The instance ID to get the joystick for.</p>
-<h4 id="returns_5">Returns</h4>
+<h4 id="returns_7">Returns</h4>
 <p><a href="./"><code>TSdlJoystick</code></a>: The opened joystick.</p>
 <hr />
 <h3 id="FromPlayerIndex"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span>  <span class="twemoji" title="Class method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg></span> FromPlayerIndex(Integer)</h3>
@@ -2447,10 +2530,10 @@
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="nf">FromPlayerIndex</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APlayerIndex</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlJoystick</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="exceptions_12">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_6">Parameters</h4>
+<h4 id="parameters_8">Parameters</h4>
 <p><strong><code>APlayerIndex</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The player index to get the joystick for.</p>
-<h4 id="returns_6">Returns</h4>
+<h4 id="returns_8">Returns</h4>
 <p><a href="./"><code>TSdlJoystick</code></a>: The opened joystick.</p>
 <h4 id="see-also_20">See Also</h4>
 <ul>
@@ -2463,16 +2546,16 @@
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">GetPowerInfo</span><span class="p">(</span><span class="n">out</span><span class="w"> </span><span class="n">APercent</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPowerState</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_13">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_7">Parameters</h4>
+<h4 id="parameters_9">Parameters</h4>
 <p><strong><code>APercent</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : Set to the percentage of battery life left, between 0 and 100. Will be set to  -1 if we can't determine a value or there is no battery.</p>
-<h4 id="returns_7">Returns</h4>
+<h4 id="returns_9">Returns</h4>
 <p><a href="../../../Neslib.Sdl3.Additional/types/TSdlPowerState/"><code>TSdlPowerState</code></a>: The current battery state.</p>
 <hr />
 <h3 id="GuidInfo"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span>  <span class="twemoji" title="Class method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg></span> GuidInfo(TGuid, Word, Word, Word, Word)</h3>
 <p>Get the device information encoded in a joystick GUID structure. </p>
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">procedure</span><span class="w"> </span><span class="nf">GuidInfo</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AGuid</span><span class="o">:</span><span class="w"> </span><span class="n">TGuid</span><span class="o">;</span><span class="w"> </span><span class="n">out</span><span class="w"> </span><span class="n">AVendor</span><span class="o">,</span><span class="w"> </span><span class="w">  </span><span class="n">AProduct</span><span class="o">,</span><span class="w"> </span><span class="n">AVersion</span><span class="o">,</span><span class="w"> </span><span class="n">ACrc16</span><span class="o">:</span><span class="w"> </span><span class="kt">Word</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
-<h4 id="parameters_8">Parameters</h4>
+<h4 id="parameters_10">Parameters</h4>
 <p><strong><code>AGuid</code></strong>: <code class="language-delphi highlight"><span class="n">TGuid</span></code>
 : The GUID you wish to get info about.</p>
 <p><strong><code>AVendor</code></strong>: <code class="language-delphi highlight"><span class="kt">Word</span></code>
@@ -2500,9 +2583,9 @@
 <p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="nf">Open</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AInstanceID</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlJoystickID</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlJoystick</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
 <h4 id="exceptions_14">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_9">Parameters</h4>
+<h4 id="parameters_11">Parameters</h4>
 <p><strong><code>AInstanceID</code></strong>: <a href="../TSdlJoystickID/"><code>TSdlJoystickID</code></a></p>
-<h4 id="returns_8">Returns</h4>
+<h4 id="returns_10">Returns</h4>
 <p><a href="./"><code>TSdlJoystick</code></a>: The opened joystick.</p>
 <h4 id="see-also_22">See Also</h4>
 <ul>
@@ -2514,14 +2597,14 @@
 <p>Each call to this method cancels any previous rumble effect, and calling it with 0 intensity stops any rumbling.</p>
 <p>This method requires you to process SDL events or call Update to update rumble state. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">Rumble</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALowFrequencyRumble</span><span class="o">,</span><span class="w"> </span><span class="n">AHighFrequencyRumble</span><span class="o">:</span><span class="w"> </span><span class="kt">Word</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ADurationMs</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="parameters_10">Parameters</h4>
+<h4 id="parameters_12">Parameters</h4>
 <p><strong><code>ALowFrequencyRumble</code></strong>: <code class="language-delphi highlight"><span class="kt">Word</span></code>
 : The intensity of the low frequency (left) rumble motor, from 0 to $FFFF.</p>
 <p><strong><code>AHighFrequencyRumble</code></strong>: <code class="language-delphi highlight"><span class="kt">Word</span></code>
 : The intensity of the high frequency (right) rumble motor, from 0 to $FFFF.</p>
 <p><strong><code>ADurationMs</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The duration of the rumble effect, in milliseconds.</p>
-<h4 id="returns_9">Returns</h4>
+<h4 id="returns_11">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True, or False if rumble isn't supported on this joystick.</p>
 <hr />
 <h3 id="RumbleTriggers"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> RumbleTriggers(Word, Word, Integer)</h3>
@@ -2530,13 +2613,13 @@
 <p>Note that this is rumbling of the <em>triggers</em> and not the game controller as a whole. This is currently only supported on Xbox One controllers. If you want the (more common) whole-controller rumble, Rumble instead.</p>
 <p>This method requires you to process SDL events or call Update to update rumble state. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">RumbleTriggers</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeftRumble</span><span class="o">,</span><span class="w"> </span><span class="n">ARightRumble</span><span class="o">:</span><span class="w"> </span><span class="kt">Word</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ADurationMs</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="parameters_11">Parameters</h4>
+<h4 id="parameters_13">Parameters</h4>
 <p><strong><code>ALeftRumble</code></strong>: <code class="language-delphi highlight"><span class="kt">Word</span></code>
 : The intensity of the left trigger rumble motor, from 0 to $FFFF.</p>
 <p><strong><code>ARightRumble</code></strong>: <code class="language-delphi highlight"><span class="kt">Word</span></code>
 : The intensity of the right trigger rumble motor, <param>The duration of the rumble effect, in milliseconds.</param><returns>True, or False if rumble isn't supported on this joystick.</returns><seealso/></p>
 <p><strong><code>ADurationMs</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code></p>
-<h4 id="returns_10">Returns</h4>
+<h4 id="returns_12">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
 <hr />
 <h3 id="SendEffect"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> SendEffect(TBytes)</h3>
@@ -2544,7 +2627,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SendEffect</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AData</span><span class="o">:</span><span class="w"> </span><span class="n">TBytes</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_15">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_12">Parameters</h4>
+<h4 id="parameters_14">Parameters</h4>
 <p><strong><code>AData</code></strong>: <code class="language-delphi highlight"><span class="n">TBytes</span></code>
 : The data to send to the joystick.</p>
 <hr />
@@ -2555,7 +2638,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetLed</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ARed</span><span class="o">,</span><span class="w"> </span><span class="n">AGreen</span><span class="o">,</span><span class="w"> </span><span class="n">ABlue</span><span class="o">:</span><span class="w"> </span><span class="kt">Byte</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_16">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_13">Parameters</h4>
+<h4 id="parameters_15">Parameters</h4>
 <p><strong><code>ARed</code></strong>: <code class="language-delphi highlight"><span class="kt">Byte</span></code>
 : The intensity of the red LED.</p>
 <p><strong><code>AGreen</code></strong>: <code class="language-delphi highlight"><span class="kt">Byte</span></code>
@@ -2570,7 +2653,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetVirtualAxis</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AAxis</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AValue</span><span class="o">:</span><span class="w"> </span><span class="kt">Smallint</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_17">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_14">Parameters</h4>
+<h4 id="parameters_16">Parameters</h4>
 <p><strong><code>AAxis</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The index of the axis on the virtual joystick to update.</p>
 <p><strong><code>AValue</code></strong>: <code class="language-delphi highlight"><span class="kt">Smallint</span></code>
@@ -2582,7 +2665,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetVirtualBall</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ABall</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AXRel</span><span class="o">,</span><span class="w"> </span><span class="w">  </span><span class="n">AYRel</span><span class="o">:</span><span class="w"> </span><span class="kt">Smallint</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_18">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_15">Parameters</h4>
+<h4 id="parameters_17">Parameters</h4>
 <p><strong><code>ABall</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The index of the ball on the virtual joystick to update.</p>
 <p><strong><code>AXRel</code></strong>: <code class="language-delphi highlight"><span class="kt">Smallint</span></code>
@@ -2596,7 +2679,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetVirtualButton</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AButton</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AIsDown</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_19">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_16">Parameters</h4>
+<h4 id="parameters_18">Parameters</h4>
 <p><strong><code>AButton</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The index of the button on the virtual joystick to update.</p>
 <p><strong><code>AIsDown</code></strong>: <code class="language-delphi highlight"><span class="kt">Boolean</span></code>
@@ -2608,7 +2691,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetVirtualHat</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AHat</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AValue</span><span class="o">:</span><span class="w"> </span><span class="kt">Byte</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_20">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_17">Parameters</h4>
+<h4 id="parameters_19">Parameters</h4>
 <p><strong><code>AHat</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The index of the hat on the virtual joystick to update.</p>
 <p><strong><code>AValue</code></strong>: <code class="language-delphi highlight"><span class="kt">Byte</span></code>
@@ -2620,7 +2703,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetVirtualSensorData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AKind</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSensorKind</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ATimestamp</span><span class="o">:</span><span class="w"> </span><span class="kt">Int64</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AData</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="kt">Single</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_21">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_18">Parameters</h4>
+<h4 id="parameters_20">Parameters</h4>
 <p><strong><code>AKind</code></strong>: <a href="../../types/TSdlSensorKind/"><code>TSdlSensorKind</code></a>
 : The type of the sensor on the virtual joystick to update.</p>
 <p><strong><code>ATimestamp</code></strong>: <code class="language-delphi highlight"><span class="kt">Int64</span></code>
@@ -2634,7 +2717,7 @@
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetVirtualTouchpad</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ATouchpad</span><span class="o">,</span><span class="w"> </span><span class="n">AFinger</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AIsDown</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AX</span><span class="o">,</span><span class="w"> </span><span class="n">AY</span><span class="o">,</span><span class="w"> </span><span class="n">APressure</span><span class="o">:</span><span class="w"> </span><span class="kt">Single</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_22">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
-<h4 id="parameters_19">Parameters</h4>
+<h4 id="parameters_21">Parameters</h4>
 <p><strong><code>ATouchpad</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
 : The index of the touchpad on the virtual joystick to update.</p>
 <p><strong><code>AFinger</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
