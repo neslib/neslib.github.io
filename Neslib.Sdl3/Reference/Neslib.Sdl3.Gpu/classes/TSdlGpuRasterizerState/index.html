@@ -412,6 +412,8 @@
       
         
       
+        
+      
     
     
       
@@ -2428,6 +2430,63 @@
         
   
   
+    <a href="../../../Neslib.Sdl3.Ttf/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Ttf
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
     <a href="../../../Neslib.Sdl3.Video/" class="md-nav__link">
       
   
@@ -2592,7 +2651,7 @@
 
 <h1 id="tsdlgpurasterizerstate">TSdlGpuRasterizerState</h1>
 <p>A record specifying the parameters of the graphics pipeline rasterizer state.</p>
-<p>NOTE: Some backend APIs (D3D11/12) will enable depth clamping even if enable_depth_clip is true. If you rely on this clamp+clip behavior, consider enabling depth clip and then manually clamping depth in your fragment shaders on Metal and Vulkan. </p>
+<p>Note that TSdlGpuFillMode.Line is not supported on many Android devices. For those devices, the fill mode will automatically fall back to Fill. Also note that the D3D12 driver will enable depth clamping even if DepthClipEnabled is True. If you need this clamp+clip behavior, consider enabling depth clip and then manually clamping depth in your fragment shaders on Metal and Vulkan. </p>
 <h2 id="definition">Definition</h2>
 <p>Unit: <a href="../../">Neslib.Sdl3.Gpu</a></p>
 <div class="language-delphi highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">type</span><span class="w"> </span><span class="n">TSdlGpuRasterizerState</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">record</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="k">end</span><span class="o">;</span>

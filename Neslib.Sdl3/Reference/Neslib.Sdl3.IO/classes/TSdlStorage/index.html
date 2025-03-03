@@ -412,6 +412,8 @@
       
         
       
+        
+      
     
     
       
@@ -1520,6 +1522,63 @@
         
   
   
+    <a href="../../../Neslib.Sdl3.Ttf/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Ttf
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
     <a href="../../../Neslib.Sdl3.Video/" class="md-nav__link">
       
   
@@ -1863,7 +1922,7 @@
 <h2 id="property-descriptions">Property Descriptions</h2>
 <h3 id="IsReady"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> IsReady</h3>
 <p>Whether the storage container is ready to use.</p>
-<p>This property should be checked at regular intervals until it returns True - however, it is not recommended to spinwait on this call, as the backend may depend on a synchronous message loop. </p>
+<p>This property should be checked at regular intervals until it returns True - however, it is not recommended to spinwait on this call, as the backend may depend on a synchronous message loop. You might instead poll this in your game's main loop while processing events and drawing a loading screen. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">IsReady</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetIsReady</span></code></p>
 <p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
 <hr />

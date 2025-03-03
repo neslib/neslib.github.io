@@ -1,0 +1,2941 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/neslib/Neslib.Sdl3/Reference/Neslib.Sdl3.Ttf/classes/TSdlTtfFont/">
+      
+      
+        <link rel="prev" href="../../">
+      
+      
+        <link rel="next" href="../TSdlTtfGpuAtlasDrawSequence/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.48">
+    
+    
+      
+        <title>TSdlTtfFont - Neslib.Sdl3</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tsdlttffont" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="Neslib.Sdl3" class="md-header__button md-logo" aria-label="Neslib.Sdl3" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Neslib.Sdl3
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              TSdlTtfFont
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/neslib/Neslib.Sdl3" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Neslib.Sdl3
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../.." class="md-tabs__link">
+          
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../Neslib.Sdl3.Additional/" class="md-tabs__link">
+          
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="Neslib.Sdl3" class="md-nav__button md-logo" aria-label="Neslib.Sdl3" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Neslib.Sdl3
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/neslib/Neslib.Sdl3" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    Neslib.Sdl3
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../.." class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Additional/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Additional
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Audio/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Audio
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Basics/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Basics
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Events/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Events
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Gpu/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Gpu
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Haptic/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Haptic
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Image/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Image
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Input/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Input
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.IO/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.IO
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Time/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Time
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_11" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Ttf
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_11" id="__nav_2_11_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_11_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_11">
+            <span class="md-nav__icon md-icon"></span>
+            Neslib.Sdl3.Ttf
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_11_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_11_2" id="__nav_2_11_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Classes & Records
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_11_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_11_2">
+            <span class="md-nav__icon md-icon"></span>
+            Classes & Records
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    TSdlTtfFont
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    TSdlTtfFont
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constructors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operators
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#property-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Property Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructor-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constructor Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operator-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operator Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#method-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlTtfGpuAtlasDrawSequence/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlTtfGpuAtlasDrawSequence
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlTtfGpuTextEngine/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlTtfGpuTextEngine
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlTtfProperty/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlTtfProperty
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlTtfRendererTextEngine/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlTtfRendererTextEngine
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlTtfSubString/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlTtfSubString
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlTtfSurfaceTextEngine/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlTtfSurfaceTextEngine
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlTtfText/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlTtfText
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSdlTtfTextEngine/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TSdlTtfTextEngine
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../types/TSdlTtfDirection/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Types
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../routines/SdlTtfGetFreeTypeVersion/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Routines
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../constants/SDL_TTF_MAJOR_VERSION/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Constants
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Video/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Video
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constructors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operators
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#property-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Property Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructor-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constructor Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operator-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operator Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#method-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="tsdlttffont">TSdlTtfFont</h1>
+<p>A TTF Font. </p>
+<h2 id="definition">Definition</h2>
+<p>Unit: <a href="../../">Neslib.Sdl3.Ttf</a></p>
+<div class="language-delphi highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">type</span><span class="w"> </span><span class="n">TSdlTtfFont</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">record</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="k">end</span><span class="o">;</span>
+</span></code></pre></div>
+<h2 id="properties">Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Ascent">Ascent</a></td>
+<td>The offset from the baseline to the top of a font.</td>
+</tr>
+<tr>
+<td><a href="#Descent">Descent</a></td>
+<td>The offset from the baseline to the bottom of a font.</td>
+</tr>
+<tr>
+<td><a href="#Direction">Direction</a></td>
+<td>The direction to be used for text shaping by the font.</td>
+</tr>
+<tr>
+<td><a href="#FamilyName">FamilyName</a></td>
+<td>The font's family name.</td>
+</tr>
+<tr>
+<td><a href="#Generation">Generation</a></td>
+<td>The font generation.</td>
+</tr>
+<tr>
+<td><a href="#Height">Height</a></td>
+<td>The total height of a font.</td>
+</tr>
+<tr>
+<td><a href="#Hinting">Hinting</a></td>
+<td>The font's current hinter setting.</td>
+</tr>
+<tr>
+<td><a href="#IsFixedWidth">IsFixedWidth</a></td>
+<td>Whether the font is fixed-width.</td>
+</tr>
+<tr>
+<td><a href="#IsKerningEnabled">IsKerningEnabled</a></td>
+<td>Whether kerning is enabled for the font.</td>
+</tr>
+<tr>
+<td><a href="#IsScalable">IsScalable</a></td>
+<td>Query whether a font is scalable or not.</td>
+</tr>
+<tr>
+<td><a href="#IsSdfEnabled">IsSdfEnabled</a></td>
+<td>Whether Signed Distance Field rendering for the font is enabled.</td>
+</tr>
+<tr>
+<td><a href="#Language">Language</a></td>
+<td>The language to be used for text shaping by the font, as a BCP47 language code. Set to an empty string to reset the value.</td>
+</tr>
+<tr>
+<td><a href="#LineSkip">LineSkip</a></td>
+<td>The spacing between lines of text for a font.</td>
+</tr>
+<tr>
+<td><a href="#NumFaces">NumFaces</a></td>
+<td>The number of faces of the font.</td>
+</tr>
+<tr>
+<td><a href="#Outline">Outline</a></td>
+<td>The font's current outline.</td>
+</tr>
+<tr>
+<td><a href="#Properties">Properties</a></td>
+<td>The properties associated with the font.</td>
+</tr>
+<tr>
+<td><a href="#Script">Script</a></td>
+<td>The script to be used for text shaping by the font. This is an <a href="https://unicode.org/iso15924/iso15924-codes.html">ISO 15924 code</a>.</td>
+</tr>
+<tr>
+<td><a href="#Size">Size</a></td>
+<td>The font's size in points.</td>
+</tr>
+<tr>
+<td><a href="#Style">Style</a></td>
+<td>The font's current style.</td>
+</tr>
+<tr>
+<td><a href="#StyleName">StyleName</a></td>
+<td>The font's style name.</td>
+</tr>
+<tr>
+<td><a href="#WrapAlignment">WrapAlignment</a></td>
+<td>The font's current wrap alignment option.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="constructors">Constructors</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Create_0">Create(TSdlProperties)</a></td>
+<td>Create a font with the specified properties.</td>
+</tr>
+<tr>
+<td><a href="#Create_1">Create(TSdlIOStream, Boolean, Single)</a></td>
+<td>Create a font from a TSdlIOStream, using a specified point size.</td>
+</tr>
+<tr>
+<td><a href="#Create_2">Create(String, Single)</a></td>
+<td>Create a font from a file, using a specified point size.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="operators">Operators</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Equal_0">Equal(TSdlTtfFont, TSdlTtfFont)</a></td>
+<td>Used to compare against another TSdlTtfFont.</td>
+</tr>
+<tr>
+<td><a href="#Equal_1">Equal(TSdlTtfFont, Pointer)</a></td>
+<td>Used to compare against <code>nil</code>.</td>
+</tr>
+<tr>
+<td><a href="#Implicit">Implicit</a></td>
+<td>Used to set the value to <code>nil</code>.</td>
+</tr>
+<tr>
+<td><a href="#NotEqual_0">NotEqual(TSdlTtfFont, TSdlTtfFont)</a></td>
+<td>Used to compare against another TSdlTtfFont.</td>
+</tr>
+<tr>
+<td><a href="#NotEqual_1">NotEqual(TSdlTtfFont, Pointer)</a></td>
+<td>Used to compare against <code>nil</code>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="methods">Methods</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#AddFallback">AddFallback</a></td>
+<td>Add a fallback font.</td>
+</tr>
+<tr>
+<td><a href="#ClearFallbacks">ClearFallbacks</a></td>
+<td>Remove all fallback fonts.</td>
+</tr>
+<tr>
+<td><a href="#Clone">Clone</a></td>
+<td>Create a copy of this font.</td>
+</tr>
+<tr>
+<td><a href="#Free">Free</a></td>
+<td>Disposes of the font.</td>
+</tr>
+<tr>
+<td><a href="#GetDpi">GetDpi</a></td>
+<td>Get font target resolutions, in dots per inch.</td>
+</tr>
+<tr>
+<td><a href="#GetGlyphImage_0">GetGlyphImage(UCS4Char, TSdlTtfImageType)</a></td>
+<td>Get the pixel image for a Unicode codepoint.</td>
+</tr>
+<tr>
+<td><a href="#GetGlyphImage_1">GetGlyphImage(UCS4Char)</a></td>
+<td>Get the pixel image for a Unicode codepoint.</td>
+</tr>
+<tr>
+<td><a href="#GetGlyphImageForIndex_0">GetGlyphImageForIndex(Integer, TSdlTtfImageType)</a></td>
+<td>Get the pixel image for a character index.</td>
+</tr>
+<tr>
+<td><a href="#GetGlyphImageForIndex_1">GetGlyphImageForIndex(Integer)</a></td>
+<td>Get the pixel image for a character index.</td>
+</tr>
+<tr>
+<td><a href="#GetGlyphKerning">GetGlyphKerning</a></td>
+<td>Query the kerning size between the glyphs of two Unicode codepoints.</td>
+</tr>
+<tr>
+<td><a href="#GetGlyphMetrics">GetGlyphMetrics</a></td>
+<td>Query the metrics (dimensions) of a font's glyph for a Unicode codepoint.</td>
+</tr>
+<tr>
+<td><a href="#GetTextSize_0">GetTextSize(String, Integer)</a></td>
+<td>Calculate the dimensions of a rendered string of Unicode text.</td>
+</tr>
+<tr>
+<td><a href="#GetTextSize_1">GetTextSize(String)</a></td>
+<td>Calculate the dimensions of a rendered string of Unicode text.</td>
+</tr>
+<tr>
+<td><a href="#HasGlyph">HasGlyph</a></td>
+<td>Check whether a glyph is provided by the font for a Unicode codepoint.</td>
+</tr>
+<tr>
+<td><a href="#MeasureText_0">MeasureText(String, Integer, Integer)</a></td>
+<td>Calculate how much of a Unicode string will fit in a given width.</td>
+</tr>
+<tr>
+<td><a href="#MeasureText_1">MeasureText(String, Integer)</a></td>
+<td>Calculate how much of a Unicode string will fit in a given width.</td>
+</tr>
+<tr>
+<td><a href="#RemoveFallback">RemoveFallback</a></td>
+<td>Remove a fallback font.</td>
+</tr>
+<tr>
+<td><a href="#RenderGlyph_0">RenderGlyph(UCS4Char, TSdlTtfRenderMode, TSdlColor, TSdlColor)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RenderGlyph_1">RenderGlyph(UCS4Char, TSdlTtfRenderMode, TSdlColor)</a></td>
+<td>Render a single 32-bit codepoint a new surface.</td>
+</tr>
+<tr>
+<td><a href="#RenderText_0">RenderText(String, TSdlTtfRenderMode, TSdlColor, TSdlColor, Integer)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#RenderText_1">RenderText(String, TSdlTtfRenderMode, TSdlColor, Integer)</a></td>
+<td>Render Unicode text to a new surface, optionally wrapping the text.</td>
+</tr>
+<tr>
+<td><a href="#SetSizeDpi">SetSizeDpi</a></td>
+<td>Set font size dynamically with target resolutions, in dots per inch.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="property-descriptions">Property Descriptions</h2>
+<h3 id="Ascent"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Ascent</h3>
+<p>The offset from the baseline to the top of a font.</p>
+<p>This is a positive value, relative to the baseline. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Ascent</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetAscent</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Integer</span></code></p>
+<h4 id="remarks">Remarks</h4>
+<p>It is safe to use this property from any thread. </p>
+<hr />
+<h3 id="Descent"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Descent</h3>
+<p>The offset from the baseline to the bottom of a font.</p>
+<p>This is a negative value, relative to the baseline. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Descent</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetDescent</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Integer</span></code></p>
+<h4 id="remarks_1">Remarks</h4>
+<p>It is safe to use this property from any thread. </p>
+<hr />
+<h3 id="Direction"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Direction</h3>
+<p>The direction to be used for text shaping by the font.</p>
+<p>This function only supports left-to-right text shaping if SDL_ttf was not built with HarfBuzz support.</p>
+<p>This updates any TSdlTtfText objects using this font.</p>
+<p>Returns TSdlTtfDirection.Invalid if it hasn't been set. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Direction</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTtfDirection</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetDirection</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetDirection</span></code></p>
+<p><strong>Type: </strong><a href="../../types/TSdlTtfDirection/"><code>TSdlTtfDirection</code></a></p>
+<h4 id="exceptions">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="remarks_2">Remarks</h4>
+<p>This property should be used on the thread that created the font. </p>
+<hr />
+<h3 id="FamilyName"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> FamilyName</h3>
+<p>The font's family name.</p>
+<p>This string is dictated by the contents of the font file. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">FamilyName</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetFamilyName</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="k">String</span></code></p>
+<h4 id="remarks_3">Remarks</h4>
+<p>It is safe to use this property from any thread. </p>
+<hr />
+<h3 id="Generation"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Generation</h3>
+<p>The font generation.</p>
+<p>The generation is incremented each time font properties change that require rebuilding glyphs, such as style, size, etc. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Generation</span><span class="o">:</span><span class="w"> </span><span class="kt">Cardinal</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetGeneration</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Cardinal</span></code></p>
+<h4 id="exceptions_1">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="remarks_4">Remarks</h4>
+<p>This property should be used on the thread that created the font. </p>
+<hr />
+<h3 id="Height"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Height</h3>
+<p>The total height of a font.</p>
+<p>This is usually equal to point size. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Height</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetHeight</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Integer</span></code></p>
+<h4 id="remarks_5">Remarks</h4>
+<p>It is safe to use this property from any thread. </p>
+<hr />
+<h3 id="Hinting"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Hinting</h3>
+<p>The font's current hinter setting.</p>
+<p>This updates any TSdlTtfText objects using this font, and clears already-generated glyphs, if any, from the cache. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Hinting</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTtfHinting</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetHinting</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetHinting</span></code></p>
+<p><strong>Type: </strong><a href="../../types/TSdlTtfHinting/"><code>TSdlTtfHinting</code></a></p>
+<h4 id="remarks_6">Remarks</h4>
+<p>This property should be used on the thread that created the font. </p>
+<hr />
+<h3 id="IsFixedWidth"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> IsFixedWidth</h3>
+<p>Whether the font is fixed-width.</p>
+<p>A "fixed-width" font means all glyphs are the same width across; a lowercase 'i' will be the same size across as a capital 'W', for example. This is common for terminals and text editors, and other apps that treat text as a grid. Most other things (WYSIWYG word processors, web pages, etc) are more likely to not be fixed-width in most cases. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">IsFixedWidth</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetIsFixedWidth</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<h4 id="remarks_7">Remarks</h4>
+<p>It is safe to use this property from any thread. </p>
+<hr />
+<h3 id="IsKerningEnabled"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> IsKerningEnabled</h3>
+<p>Whether kerning is enabled for the font.</p>
+<p>Newly-opened fonts default to allowing kerning. This is generally a good policy unless you have a strong reason to disable it, as it tends to produce better rendering (with kerning disabled, some fonts might render the word <code>kerning</code> as something that looks like <code>keming</code> for example).</p>
+<p>This updates any TSdlTtfText objects using this font. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">IsKerningEnabled</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetIsKerningEnabled</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetIsKerningEnabled</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<h4 id="remarks_8">Remarks</h4>
+<p>This property should be used on the thread that created the font. </p>
+<hr />
+<h3 id="IsScalable"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> IsScalable</h3>
+<p>Query whether a font is scalable or not.</p>
+<p>Scalability lets us distinguish between outline and bitmap fonts. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">IsScalable</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetIsScalable</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<h4 id="see-also">See Also</h4>
+<ul>
+<li><a href="./#IsSdfEnabled">IsSdfEnabled</a></li>
+</ul>
+<h4 id="remarks_9">Remarks</h4>
+<p>It is safe to use this property from any thread. </p>
+<hr />
+<h3 id="IsSdfEnabled"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> IsSdfEnabled</h3>
+<p>Whether Signed Distance Field rendering for the font is enabled.</p>
+<p>SDF is a technique that helps fonts look sharp even when scaling and rotating, and requires special shader support for display.</p>
+<p>This works with Blended APIs, and generates the raw signed distance values in the alpha channel of the resulting texture.</p>
+<p>This updates any TSdlTtfText objects using this font, and clears already-generated glyphs, if any, from the cache. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">IsSdfEnabled</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetIsSdfEnabled</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetIsSdfEnabled</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<h4 id="exceptions_2">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="remarks_10">Remarks</h4>
+<p>This property should be used on the thread that created the font. </p>
+<hr />
+<h3 id="Language"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Language</h3>
+<p>The language to be used for text shaping by the font, as a BCP47 language code. Set to an empty string to reset the value.</p>
+<p>This method fails if SDL_ttf isn't built with HarfBuzz support.</p>
+<p>This updates any TTF_Text objects using this font. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Language</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetLanguage</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="k">String</span></code></p>
+<h4 id="exceptions_3">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="remarks_11">Remarks</h4>
+<p>This property should be used on the thread that created the font. </p>
+<hr />
+<h3 id="LineSkip"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> LineSkip</h3>
+<p>The spacing between lines of text for a font.</p>
+<p>This updates any TSdlTtfText objects using this font. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">LineSkip</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetLineSkip</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetLineSkip</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Integer</span></code></p>
+<h4 id="remarks_12">Remarks</h4>
+<p>This property should be used on the thread that created the font. </p>
+<hr />
+<h3 id="NumFaces"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NumFaces</h3>
+<p>The number of faces of the font. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">NumFaces</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetNumFaces</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Integer</span></code></p>
+<h4 id="remarks_13">Remarks</h4>
+<p>It is safe to use this property from any thread. </p>
+<hr />
+<h3 id="Outline"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Outline</h3>
+<p>The font's current outline.</p>
+<p>This uses the font properties <code>TSdlTtfProperty.FontOutlineLineCap</code>, <code>TSdlTtfProperty.FontOutlineLineJoin</code>, and <code>TSdlTtfProperty.FontOutlineMiterLimit</code> when setting the font outline.</p>
+<p>This updates any TSdlTtfText objects using this font, and clears already-generated glyphs, if any, from the cache.</p>
+<p>Set to 0 to use the default value. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Outline</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetOutline</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetOutline</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Integer</span></code></p>
+<h4 id="exceptions_4">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="remarks_14">Remarks</h4>
+<p>This property should be used on the thread that created the font. </p>
+<hr />
+<h3 id="Properties"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Properties</h3>
+<p>The properties associated with the font.</p>
+<p>The following read-write properties are provided by SDL:</p>
+<ul>
+<li><code>TSdlTtfProperty.FontOutlineLineCap</code>: The TSdlTtfLineCap value used when setting the font outline, defaults to <code>TSdlTtfLineCap.Round</code>.</li>
+<li><code>TSdlTtfProperty.FontOutlineLineJoin</code>: The TSdlTtfLineJoin value used when setting the font outline, defaults to <code>TSdlTtfLineJoin.Round</code>.</li>
+<li><code>TSdlTtfProperty.FontMiterLimit</code>: The miter limit used when setting the font outline, defaults to 0. This is a 16.16 integer fixed point value, meaning should should divide by 65,536 to get the floating- point equivalent. </li>
+</ul>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Properties</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlProperties</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetProperties</span></code></p>
+<p><strong>Type: </strong><a href="../../../Neslib.Sdl3.Basics/classes/TSdlProperties/"><code>TSdlProperties</code></a></p>
+<h4 id="exceptions_5">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="remarks_15">Remarks</h4>
+<p>It is safe to use this property from any thread. </p>
+<hr />
+<h3 id="Script"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Script</h3>
+<p>The script to be used for text shaping by the font. This is an <a href="https://unicode.org/iso15924/iso15924-codes.html">ISO 15924 code</a>.</p>
+<p>This method fails if SDL_ttf isn't built with HarfBuzz support. Returns 0 if a script hasn't been set.</p>
+<p>This updates any TSdlTtfText objects using this font. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Script</span><span class="o">:</span><span class="w"> </span><span class="kt">Cardinal</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetScript</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetScript</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Cardinal</span></code></p>
+<h4 id="exceptions_6">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="see-also_1">See Also</h4>
+<ul>
+<li><a href="../../routines/SdlTtfStringToTag/">SdlTtfStringToTag</a></li>
+<li><a href="../../routines/SdlTtfTagToString/">SdlTtfTagToString</a></li>
+</ul>
+<h4 id="remarks_16">Remarks</h4>
+<p>This property should be used on the thread that created the font. </p>
+<hr />
+<h3 id="Size"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Size</h3>
+<p>The font's size in points.</p>
+<p>Changing this updates any TSdlTtfText objects using this font, and clears already-generated glyphs, if any, from the cache. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Size</span><span class="o">:</span><span class="w"> </span><span class="kt">Single</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetSize</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetSize</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Single</span></code></p>
+<h4 id="exceptions_7">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="see-also_2">See Also</h4>
+<ul>
+<li><a href="./#GetDpi">GetDpi</a></li>
+<li><a href="./#SetSizeDpi">SetSizeDpi</a></li>
+</ul>
+<h4 id="remarks_17">Remarks</h4>
+<p>This property should be used on the thread that created the font. </p>
+<hr />
+<h3 id="Style"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Style</h3>
+<p>The font's current style.</p>
+<p>Setting this updates any TSdlTtfText objects using this font, and clears already-generated glyphs, if any, from the cache. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Style</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTtfFontStyles</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetStyle</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetStyle</span></code></p>
+<p><strong>Type: </strong><a href="../../types/TSdlTtfFontStyles/"><code>TSdlTtfFontStyles</code></a></p>
+<h4 id="remarks_18">Remarks</h4>
+<p>This property should be used on the thread that created the font. </p>
+<hr />
+<h3 id="StyleName"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> StyleName</h3>
+<p>The font's style name.</p>
+<p>This string is dictated by the contents of the font file. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">StyleName</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetStyleName</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="k">String</span></code></p>
+<h4 id="remarks_19">Remarks</h4>
+<p>It is safe to use this property from any thread. </p>
+<hr />
+<h3 id="WrapAlignment"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> WrapAlignment</h3>
+<p>The font's current wrap alignment option.</p>
+<p>This updates any TSdlTtfText objects using this font. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">WrapAlignment</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTtfHorizontalAlignment</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetWrapAlignment</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetWrapAlignment</span></code></p>
+<p><strong>Type: </strong><a href="../../types/TSdlTtfHorizontalAlignment/"><code>TSdlTtfHorizontalAlignment</code></a></p>
+<h4 id="remarks_20">Remarks</h4>
+<p>This property should be used on the thread that created the font. </p>
+<hr />
+<h2 id="constructor-descriptions">Constructor Descriptions</h2>
+<h3 id="Create_0"><span class="twemoji" title="Constructor"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23 12-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68z"/></svg></span> <code class="language-delphi highlight"><span class="n">Create</span></code></h3>
+<p>Create a font with the specified properties.</p>
+<p>These are the supported properties:</p>
+<ul>
+<li><code>TSdlTtfProperty.FontCreateFilename</code>: the font file to open, if a TSdlIOStream isn't being used. This is required if <code>TSdlTtfProperty.FontCreateIOStream</code> and <code>TSdlTtfProperty.FontCreateExistingFont</code> aren't set.</li>
+<li><code>TSdlTtfProperty.FontCreateIOStream</code>: a TSdlIOStream containing the font to be opened. This should not be closed until the font is closed. This is required if <code>TSdlTtfProperty.FontCreateFilename</code> and <code>TSdlTtfProperty.FontCreateExistingFont</code> aren't set.</li>
+<li><code>TSdlTtfProperty.FontCreateIOStreamOffset</code>: the offset in the iostream for the beginning of the font, defaults to 0.</li>
+<li><code>TSdlTtfProperty.FontCreateIOStreamAutoClose</code>: True if closing the font should also close the associated TSdlIOStream.</li>
+<li><code>TSdlTtfProperty.FontCreateSize</code>: the point size of the font. Some .fon fonts will have several sizes embedded in the file, so the point size becomes the index of choosing which size. If the value is too high, the last indexed size will be the default.</li>
+<li><code>TSdlTtfProperty.FontCreateFace</code>: the face index of the font, if the font contains multiple font faces.</li>
+<li><code>TSdlTtfProperty.FontCreateHorizontalDpi</code>: the horizontal DPI to use for font rendering, defaults to <code>TSdlTtfProperty.FontCreateVerticalDpi</code> if set, or 72 otherwise.</li>
+<li><code>TSdlTtfProperty.FontCreateVerticalDpi</code>: the vertical DPI to use for font rendering, defaults to <code>TSdlTtfProperty.FontCreateHorizontalDpi</code> if set, or 72 otherwise.</li>
+<li><code>TSdlTtfProperty.FontCreateExistingFont</code>: an optional TSdlTtfFont that, if set, will be used as the font data source and the initial size and style of the new font. </li>
+</ul>
+<p><code class="language-delphi highlight"><span class="k">constructor</span><span class="w"> </span><span class="nf">Create</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AProps</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlProperties</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
+<h4 id="parameters">Parameters</h4>
+<p><strong><code>AProps</code></strong>: <a href="../../../Neslib.Sdl3.Basics/classes/TSdlProperties/"><code>TSdlProperties</code></a>
+: The properties to use.</p>
+<h4 id="exceptions_8">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="see-also_3">See Also</h4>
+<ul>
+<li><a href="./#Free">Free</a></li>
+</ul>
+<h4 id="remarks_21">Remarks</h4>
+<p>It is safe to call this constructor from any thread. </p>
+<hr />
+<h3 id="Create_1"><span class="twemoji" title="Constructor"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23 12-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68z"/></svg></span> <code class="language-delphi highlight"><span class="n">Create</span></code></h3>
+<p>Create a font from a TSdlIOStream, using a specified point size.</p>
+<p>Some .fon fonts will have several sizes embedded in the file, so the point size becomes the index of choosing which size. If the value is too high, the last indexed size will be the default.</p>
+<p>If <code>ACloseIO</code> is True, <code>ASrc</code> will be automatically closed once the font is freed. Otherwise you should close <code>ASrc</code> yourself after freeing the font. The stream <em>must</em> stay alive while the font is in use.</p>
+<p>When done with the font, use Free to dispose of it. </p>
+<p><code class="language-delphi highlight"><span class="k">constructor</span><span class="w"> </span><span class="nf">Create</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ASrc</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlIOStream</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ACloseIO</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">APtSize</span><span class="o">:</span><span class="w"> </span><span class="kt">Single</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
+<h4 id="parameters_1">Parameters</h4>
+<p><strong><code>ASrc</code></strong>: <a href="../../../Neslib.Sdl3.IO/classes/TSdlIOStream/"><code>TSdlIOStream</code></a>
+: A TSdlIOStream to provide a font file's data.</p>
+<p><strong><code>ACloseIO</code></strong>: <code class="language-delphi highlight"><span class="kt">Boolean</span></code>
+: True to close <code>ASrc</code> when the font is freed, False to leave it open.</p>
+<p><strong><code>APtSize</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>
+: Point size to use for the newly-opened font.</p>
+<h4 id="exceptions_9">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="see-also_4">See Also</h4>
+<ul>
+<li><a href="./#Free">Free</a></li>
+</ul>
+<h4 id="remarks_22">Remarks</h4>
+<p>It is safe to call this constructor from any thread. </p>
+<hr />
+<h3 id="Create_2"><span class="twemoji" title="Constructor"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23 12-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68z"/></svg></span> <code class="language-delphi highlight"><span class="n">Create</span></code></h3>
+<p>Create a font from a file, using a specified point size.</p>
+<p>Some .fon fonts will have several sizes embedded in the file, so the point size becomes the index of choosing which size. If the value is too high, the last indexed size will be the default.</p>
+<p>When done with the font, use Free to dispose of it. </p>
+<p><code class="language-delphi highlight"><span class="k">constructor</span><span class="w"> </span><span class="nf">Create</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFile</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">APtSize</span><span class="o">:</span><span class="w"> </span><span class="kt">Single</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
+<h4 id="parameters_2">Parameters</h4>
+<p><strong><code>AFile</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
+: Path to font file.</p>
+<p><strong><code>APtSize</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>
+: Point size to use for the newly-opened font.</p>
+<h4 id="exceptions_10">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="see-also_5">See Also</h4>
+<ul>
+<li><a href="./#Free">Free</a></li>
+</ul>
+<h4 id="remarks_23">Remarks</h4>
+<p>It is safe to call this constructor from any thread. </p>
+<hr />
+<h2 id="operator-descriptions">Operator Descriptions</h2>
+<h3 id="Equal_0"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Equal(TSdlTtfFont, TSdlTtfFont)</h3>
+<p>Used to compare against another TSdlTtfFont. </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">,</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTtfFont</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h4 id="parameters_3">Parameters</h4>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlTtfFont</code></a></p>
+<p><strong><code>ARight</code></strong>: <a href="./"><code>TSdlTtfFont</code></a></p>
+<h4 id="returns">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<hr />
+<h3 id="Equal_1"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Equal(TSdlTtfFont, Pointer)</h3>
+<p>Used to compare against <code>nil</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTtfFont</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h4 id="parameters_4">Parameters</h4>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlTtfFont</code></a></p>
+<p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
+<h4 id="returns_1">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<hr />
+<h3 id="Implicit"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Implicit(Pointer)</h3>
+<p>Used to set the value to <code>nil</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Implicit</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AValue</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTtfFont</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h4 id="parameters_5">Parameters</h4>
+<p><strong><code>AValue</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
+<h4 id="returns_2">Returns</h4>
+<p><a href="./"><code>TSdlTtfFont</code></a></p>
+<hr />
+<h3 id="NotEqual_0"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlTtfFont, TSdlTtfFont)</h3>
+<p>Used to compare against another TSdlTtfFont. </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">,</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTtfFont</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h4 id="parameters_6">Parameters</h4>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlTtfFont</code></a></p>
+<p><strong><code>ARight</code></strong>: <a href="./"><code>TSdlTtfFont</code></a></p>
+<h4 id="returns_3">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<hr />
+<h3 id="NotEqual_1"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TSdlTtfFont, Pointer)</h3>
+<p>Used to compare against <code>nil</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTtfFont</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h4 id="parameters_7">Parameters</h4>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TSdlTtfFont</code></a></p>
+<p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
+<h4 id="returns_4">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<hr />
+<h2 id="method-descriptions">Method Descriptions</h2>
+<h3 id="AddFallback"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> AddFallback(TSdlTtfFont)</h3>
+<p>Add a fallback font.</p>
+<p>Add a font that will be used for glyphs that are not in this font. The fallback font should have the same size and style as this font.</p>
+<p>If there are multiple fallback fonts, they are used in the order added.</p>
+<p>This updates any TSdlTtfText objects using this font. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">AddFallback</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFallback</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTtfFont</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_11">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_8">Parameters</h4>
+<p><strong><code>AFallback</code></strong>: <a href="./"><code>TSdlTtfFont</code></a>
+: The font to add as a fallback.</p>
+<h4 id="see-also_6">See Also</h4>
+<ul>
+<li><a href="./#ClearFallbacks">ClearFallbacks</a></li>
+<li><a href="./#RemoveFallback">RemoveFallback</a></li>
+</ul>
+<h4 id="remarks_24">Remarks</h4>
+<p>This method should be called on the thread that created both fonts. </p>
+<hr />
+<h3 id="ClearFallbacks"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> ClearFallbacks</h3>
+<p>Remove all fallback fonts.</p>
+<p>This updates any TSdlTtfText objects using this font. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">ClearFallbacks</span></code></p>
+<h4 id="see-also_7">See Also</h4>
+<ul>
+<li><a href="./#AddFallback">AddFallback</a></li>
+<li><a href="./#RemoveFallback">RemoveFallback</a></li>
+</ul>
+<h4 id="remarks_25">Remarks</h4>
+<p>This method should be called on the thread that created the font. </p>
+<hr />
+<h3 id="Clone"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Clone</h3>
+<p>Create a copy of this font.</p>
+<p>The copy will be distinct from the original, but will share the font file and have the same size and style as the original.</p>
+<p>When done with the returned font, use Free to dispose of it. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">Clone</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTtfFont</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_12">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="returns_5">Returns</h4>
+<p><a href="./"><code>TSdlTtfFont</code></a></p>
+<h4 id="see-also_8">See Also</h4>
+<ul>
+<li><a href="./#Free">Free</a></li>
+</ul>
+<h4 id="remarks_26">Remarks</h4>
+<p>This method should be called on the thread that created the original font. </p>
+<hr />
+<h3 id="Free"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Free</h3>
+<p>Disposes of the font.</p>
+<p>Call this when done with a font. This method will free any resources associated with it. It is safe to call this function on nil.</p>
+<p>The font is not valid after being passed to this method. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Free</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="remarks_27">Remarks</h4>
+<p>This method should not be called while any other thread is using the font. </p>
+<hr />
+<h3 id="GetDpi"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> GetDpi(Integer, Integer)</h3>
+<p>Get font target resolutions, in dots per inch. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">GetDpi</span><span class="p">(</span><span class="n">out</span><span class="w"> </span><span class="n">AHDpi</span><span class="o">,</span><span class="w"> </span><span class="n">AVDpi</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_13">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_9">Parameters</h4>
+<p><strong><code>AHDpi</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
+: Set to the target horizontal DPI.</p>
+<p><strong><code>AVDpi</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
+: Set to the target vertical DPI.</p>
+<h4 id="see-also_9">See Also</h4>
+<ul>
+<li><a href="./#Size">Size</a></li>
+</ul>
+<hr />
+<h3 id="GetGlyphImage_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> GetGlyphImage(UCS4Char, TSdlTtfImageType)</h3>
+<p>Get the pixel image for a Unicode codepoint. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">GetGlyphImage</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ACodepoint</span><span class="o">:</span><span class="w"> </span><span class="n">UCS4Char</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="n">out</span><span class="w"> </span><span class="n">AImageType</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTtfImageType</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSurface</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_14">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_10">Parameters</h4>
+<p><strong><code>ACodepoint</code></strong>: <code class="language-delphi highlight"><span class="n">UCS4Char</span></code>
+: The codepoint to check.</p>
+<p><strong><code>AImageType</code></strong>: <a href="../../types/TSdlTtfImageType/"><code>TSdlTtfImageType</code></a>
+: Is set to the glyph image type.</p>
+<h4 id="returns_6">Returns</h4>
+<p><a href="../../../Neslib.Sdl3.Video/classes/TSdlSurface/"><code>TSdlSurface</code></a>: A TSdlSurface containing the glyph.</p>
+<h4 id="remarks_28">Remarks</h4>
+<p>This method should be called on the thread that created the font. </p>
+<hr />
+<h3 id="GetGlyphImage_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> GetGlyphImage(UCS4Char)</h3>
+<p>Get the pixel image for a Unicode codepoint. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">GetGlyphImage</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ACodepoint</span><span class="o">:</span><span class="w"> </span><span class="n">UCS4Char</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSurface</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_15">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_11">Parameters</h4>
+<p><strong><code>ACodepoint</code></strong>: <code class="language-delphi highlight"><span class="n">UCS4Char</span></code>
+: The codepoint to check.</p>
+<h4 id="returns_7">Returns</h4>
+<p><a href="../../../Neslib.Sdl3.Video/classes/TSdlSurface/"><code>TSdlSurface</code></a>: A TSdlSurface containing the glyph.</p>
+<h4 id="remarks_29">Remarks</h4>
+<p>This method should be called on the thread that created the font. </p>
+<hr />
+<h3 id="GetGlyphImageForIndex_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> GetGlyphImageForIndex(Integer, TSdlTtfImageType)</h3>
+<p>Get the pixel image for a character index.</p>
+<p>This is useful for text engine implementations, which can call this with the <code>GlyphIndex</code> in a TSdlTtfCopyOperation. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">GetGlyphImageForIndex</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AGlyphIndex</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="n">out</span><span class="w"> </span><span class="n">AImageType</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTtfImageType</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSurface</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_16">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_12">Parameters</h4>
+<p><strong><code>AGlyphIndex</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
+: The index of the glyph to return.</p>
+<p><strong><code>AImageType</code></strong>: <a href="../../types/TSdlTtfImageType/"><code>TSdlTtfImageType</code></a>
+: Is set to the glyph image type.</p>
+<h4 id="returns_8">Returns</h4>
+<p><a href="../../../Neslib.Sdl3.Video/classes/TSdlSurface/"><code>TSdlSurface</code></a>: A TSdlSurface containing the glyph.</p>
+<h4 id="remarks_30">Remarks</h4>
+<p>This method should be called on the thread that created the font. </p>
+<hr />
+<h3 id="GetGlyphImageForIndex_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> GetGlyphImageForIndex(Integer)</h3>
+<p>Get the pixel image for a character index.</p>
+<p>This is useful for text engine implementations, which can call this with the <code>GlyphIndex</code> in a TSdlTtfCopyOperation. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">GetGlyphImageForIndex</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AGlyphIndex</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSurface</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_17">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_13">Parameters</h4>
+<p><strong><code>AGlyphIndex</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
+: The index of the glyph to return.</p>
+<h4 id="returns_9">Returns</h4>
+<p><a href="../../../Neslib.Sdl3.Video/classes/TSdlSurface/"><code>TSdlSurface</code></a>: A TSdlSurface containing the glyph.</p>
+<h4 id="remarks_31">Remarks</h4>
+<p>This method should be called on the thread that created the font. </p>
+<hr />
+<h3 id="GetGlyphKerning"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> GetGlyphKerning(UCS4Char, UCS4Char)</h3>
+<p>Query the kerning size between the glyphs of two Unicode codepoints. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">GetGlyphKerning</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APrevious</span><span class="o">,</span><span class="w"> </span><span class="n">ACurrent</span><span class="o">:</span><span class="w"> </span><span class="n">UCS4Char</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_18">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_14">Parameters</h4>
+<p><strong><code>APrevious</code></strong>: <code class="language-delphi highlight"><span class="n">UCS4Char</span></code>
+: The previous codepoint.</p>
+<p><strong><code>ACurrent</code></strong>: <code class="language-delphi highlight"><span class="n">UCS4Char</span></code>
+: The current codepoint.</p>
+<h4 id="returns_10">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Integer</span></code>: The kerning size between the two glyphs, in pixels.</p>
+<h4 id="remarks_32">Remarks</h4>
+<p>This method should be called on the thread that created the font. </p>
+<hr />
+<h3 id="GetGlyphMetrics"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> GetGlyphMetrics(UCS4Char, Integer, Integer, Integer, Integer, Integer)</h3>
+<p>Query the metrics (dimensions) of a font's glyph for a Unicode codepoint.</p>
+<p>To understand what these metrics mean, here is a useful link:</p>
+<p>https://freetype.sourceforge.net/freetype2/docs/tutorial/step2.html </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">GetGlyphMetrics</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ACodepoint</span><span class="o">:</span><span class="w"> </span><span class="n">UCS4Char</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="n">out</span><span class="w"> </span><span class="n">AMinX</span><span class="o">,</span><span class="w"> </span><span class="n">AMaxX</span><span class="o">,</span><span class="w"> </span><span class="n">AMinY</span><span class="o">,</span><span class="w"> </span><span class="n">AMaxY</span><span class="o">,</span><span class="w"> </span><span class="n">AAdvance</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="parameters_15">Parameters</h4>
+<p><strong><code>ACodepoint</code></strong>: <code class="language-delphi highlight"><span class="n">UCS4Char</span></code>
+: The codepoint to check.</p>
+<p><strong><code>AMinX</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
+: Is set to the minimum x coordinate of the glyph from the left edge of its bounding box. This value may be negative.</p>
+<p><strong><code>AMaxX</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
+: Is set to the maximum x coordinate of the glyph from the left edge of its bounding box.</p>
+<p><strong><code>AMinY</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
+: Is set to the minimum y coordinate of the glyph from <param>Is set to the maximum y coordinate of the glyph from the bottom edge of its bounding box.</param><param>Is set to the distance to the next glyph from the left edge of this glyph's bounding box.</param><exception>Raised on failure.</exception><remarks>This method should be called on the thread that created the font. </remarks></p>
+<p><strong><code>AMaxY</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code></p>
+<p><strong><code>AAdvance</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code></p>
+<hr />
+<h3 id="GetTextSize_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> GetTextSize(String, Integer)</h3>
+<p>Calculate the dimensions of a rendered string of Unicode text.</p>
+<p>This will report the width and height, in pixels, of the space that the specified string will take to fully render.</p>
+<p>Text is wrapped to multiple lines on line endings and on word boundaries if it extends beyond <code>AWrapWidth</code> in pixels.</p>
+<p>If AWrapWidth is 0, this function will only wrap on newline characters. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">GetTextSize</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AText</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AWrapWidth</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSize</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_19">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_16">Parameters</h4>
+<p><strong><code>AText</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
+: Text to calculate.</p>
+<p><strong><code>AWrapWidth</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
+: The maximum width or 0 to wrap on newline characters.</p>
+<h4 id="returns_11">Returns</h4>
+<p><a href="../../../Neslib.Sdl3.Video/classes/TSdlSize/"><code>TSdlSize</code></a>: The size in pixels.</p>
+<h4 id="remarks_33">Remarks</h4>
+<p>This method should be called on the thread that created the font. </p>
+<hr />
+<h3 id="GetTextSize_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> GetTextSize(String)</h3>
+<p>Calculate the dimensions of a rendered string of Unicode text.</p>
+<p>This will report the width and height, in pixels, of the space that the specified string will take to fully render. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">GetTextSize</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AText</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSize</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_20">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_17">Parameters</h4>
+<p><strong><code>AText</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
+: Text to calculate</p>
+<h4 id="returns_12">Returns</h4>
+<p><a href="../../../Neslib.Sdl3.Video/classes/TSdlSize/"><code>TSdlSize</code></a>: The size in pixels.</p>
+<h4 id="remarks_34">Remarks</h4>
+<p>This method should be called on the thread that created the font. </p>
+<hr />
+<h3 id="HasGlyph"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> HasGlyph(UCS4Char)</h3>
+<p>Check whether a glyph is provided by the font for a Unicode codepoint. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">HasGlyph</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ACodepoint</span><span class="o">:</span><span class="w"> </span><span class="n">UCS4Char</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="parameters_18">Parameters</h4>
+<p><strong><code>ACodepoint</code></strong>: <code class="language-delphi highlight"><span class="n">UCS4Char</span></code>
+: The codepoint to check.</p>
+<h4 id="returns_13">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True if the font provides a glyph for this character, False if not.</p>
+<h4 id="remarks_35">Remarks</h4>
+<p>This method should be called on the thread that created the font. </p>
+<hr />
+<h3 id="MeasureText_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> MeasureText(String, Integer, Integer)</h3>
+<p>Calculate how much of a Unicode string will fit in a given width.</p>
+<p>This reports the number of characters that can be rendered before reaching <code>AMaxWidth</code>.</p>
+<p>This does not need to render the string to do this calculation. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">MeasureText</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AText</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AMaxWidth</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="n">out</span><span class="w"> </span><span class="n">AMeasuredWidth</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
+<h4 id="exceptions_21">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_19">Parameters</h4>
+<p><strong><code>AText</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
+: Text to calculate.</p>
+<p><strong><code>AMaxWidth</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
+: Maximum width, in pixels, available for the string, or 0 for unbounded width.</p>
+<p><strong><code>AMeasuredWidth</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
+: Is set to the width, in pixels, of the string that will fit.</p>
+<h4 id="returns_14">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Integer</span></code>: The length of the string that will fit.</p>
+<h4 id="remarks_36">Remarks</h4>
+<p>This method should be called on the thread that created the font. </p>
+<hr />
+<h3 id="MeasureText_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> MeasureText(String, Integer)</h3>
+<p>Calculate how much of a Unicode string will fit in a given width.</p>
+<p>This reports the number of characters that can be rendered before reaching <code>AMaxWidth</code>.</p>
+<p>This does not need to render the string to do this calculation. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">MeasureText</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AText</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AMaxWidth</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
+<h4 id="exceptions_22">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_20">Parameters</h4>
+<p><strong><code>AText</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code>
+: Text to calculate.</p>
+<p><strong><code>AMaxWidth</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span></code>
+: (Optional) maximum width, in pixels, available for the string, or 0 (default) for unbounded width.</p>
+<h4 id="returns_15">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Integer</span></code>: The length of the string that will fit.</p>
+<h4 id="remarks_37">Remarks</h4>
+<p>This method should be called on the thread that created the font. </p>
+<hr />
+<h3 id="RemoveFallback"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> RemoveFallback(TSdlTtfFont)</h3>
+<p>Remove a fallback font.</p>
+<p>This updates any TSdlTtfText objects using this font. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">RemoveFallback</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AFallback</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTtfFont</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="parameters_21">Parameters</h4>
+<p><strong><code>AFallback</code></strong>: <a href="./"><code>TSdlTtfFont</code></a>
+: The font to remove as a fallback.</p>
+<h4 id="see-also_10">See Also</h4>
+<ul>
+<li><a href="./#AddFallback">AddFallback</a></li>
+<li><a href="./#ClearFallbacks">ClearFallbacks</a></li>
+</ul>
+<h4 id="remarks_38">Remarks</h4>
+<p>This method should be called on the thread that created both fonts. </p>
+<hr />
+<h3 id="RenderGlyph_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> RenderGlyph(UCS4Char, TSdlTtfRenderMode, TSdlColor, TSdlColor)</h3>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">RenderGlyph</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ACodepoint</span><span class="o">:</span><span class="w"> </span><span class="n">UCS4Char</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AMode</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTtfRenderMode</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AForegroundColor</span><span class="o">,</span><span class="w"> </span><span class="n">ABackgroundColor</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlColor</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSurface</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
+<h4 id="parameters_22">Parameters</h4>
+<p><strong><code>ACodepoint</code></strong>: <code class="language-delphi highlight"><span class="n">UCS4Char</span></code></p>
+<p><strong><code>AMode</code></strong>: <a href="../../types/TSdlTtfRenderMode/"><code>TSdlTtfRenderMode</code></a></p>
+<p><strong><code>AForegroundColor</code></strong>: <a href="../../../Neslib.Sdl3.Video/classes/TSdlColor/"><code>TSdlColor</code></a></p>
+<p><strong><code>ABackgroundColor</code></strong>: <a href="../../../Neslib.Sdl3.Video/classes/TSdlColor/"><code>TSdlColor</code></a></p>
+<h4 id="returns_16">Returns</h4>
+<p><a href="../../../Neslib.Sdl3.Video/classes/TSdlSurface/"><code>TSdlSurface</code></a></p>
+<hr />
+<h3 id="RenderGlyph_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> RenderGlyph(UCS4Char, TSdlTtfRenderMode, TSdlColor)</h3>
+<p>Render a single 32-bit codepoint a new surface.</p>
+<p>This method will allocate a new 8-bit or 32-bit surface, depending on AMode:</p>
+<ul>
+<li>TSdlTtfRenderMode.Fast: creates an 8-bit palettized surface where palette index 0 is transparent, and palette index 1 is set to the given AForegroundColor. ABackgroundColor is not used. * TSdlTtfRenderMode.AntiAliasedPalette: creates an 8-bit palettized surface where palette index 0 is set to the given ABackgroundColor and the remainder of the palette contains a color gradient/ramp that goes from ABackgroundColor to AForegroundColor. * TSdlTtfRenderMode.AntiAliasedAlpha: creates a 32-bit ARGB surface where the Alpha values are used for anti-aliasing. ABackgroundColor is not used. * TSdlTtfRenderMode.Subpixel: creates a 32-bit ARGB surface that used both alpha-blending and subpixel blending with ABackgroundColor to create sharp looking text for LCD displays.</li>
+</ul>
+<p>The glyph is rendered without any padding or centering in the X direction, and aligned normally in the Y direction. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">RenderGlyph</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ACodepoint</span><span class="o">:</span><span class="w"> </span><span class="n">UCS4Char</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AMode</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTtfRenderMode</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AForegroundColor</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlColor</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSurface</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_23">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_23">Parameters</h4>
+<p><strong><code>ACodepoint</code></strong>: <code class="language-delphi highlight"><span class="n">UCS4Char</span></code>
+: The Unicode codepoint of the character to render.</p>
+<p><strong><code>AMode</code></strong>: <a href="../../types/TSdlTtfRenderMode/"><code>TSdlTtfRenderMode</code></a>
+: The render mode.</p>
+<p><strong><code>AForegroundColor</code></strong>: <a href="../../../Neslib.Sdl3.Video/classes/TSdlColor/"><code>TSdlColor</code></a>
+: The foreground color for the text.</p>
+<h4 id="returns_17">Returns</h4>
+<p><a href="../../../Neslib.Sdl3.Video/classes/TSdlSurface/"><code>TSdlSurface</code></a>: A new surface.</p>
+<h4 id="remarks_39">Remarks</h4>
+<p>This method should be called on the thread that created the font. </p>
+<hr />
+<h3 id="RenderText_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> RenderText(String, TSdlTtfRenderMode, TSdlColor, TSdlColor, Integer)</h3>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">RenderText</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AText</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AMode</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTtfRenderMode</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AForegroundColor</span><span class="o">,</span><span class="w"> </span><span class="n">ABackgroundColor</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlColor</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AWrapLength</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSurface</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
+<h4 id="parameters_24">Parameters</h4>
+<p><strong><code>AText</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code></p>
+<p><strong><code>AMode</code></strong>: <a href="../../types/TSdlTtfRenderMode/"><code>TSdlTtfRenderMode</code></a></p>
+<p><strong><code>AForegroundColor</code></strong>: <a href="../../../Neslib.Sdl3.Video/classes/TSdlColor/"><code>TSdlColor</code></a></p>
+<p><strong><code>ABackgroundColor</code></strong>: <a href="../../../Neslib.Sdl3.Video/classes/TSdlColor/"><code>TSdlColor</code></a></p>
+<p><strong><code>AWrapLength</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="mi">1</span></code></p>
+<h4 id="returns_18">Returns</h4>
+<p><a href="../../../Neslib.Sdl3.Video/classes/TSdlSurface/"><code>TSdlSurface</code></a></p>
+<hr />
+<h3 id="RenderText_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> RenderText(String, TSdlTtfRenderMode, TSdlColor, Integer)</h3>
+<p>Render Unicode text to a new surface, optionally wrapping the text.</p>
+<p>This method will allocate a new 8-bit or 32-bit surface, depending on AMode:</p>
+<ul>
+<li>TSdlTtfRenderMode.Fast: creates an 8-bit palettized surface where palette index 0 is transparent, and palette index 1 is set to the given AForegroundColor. ABackgroundColor is not used. * TSdlTtfRenderMode.AntiAliasedPalette: creates an 8-bit palettized surface where palette index 0 is set to the given ABackgroundColor and the remainder of the palette contains a color gradient/ramp that goes from ABackgroundColor to AForegroundColor. * TSdlTtfRenderMode.AntiAliasedAlpha: creates a 32-bit ARGB surface where the Alpha values are used for anti-aliasing. ABackgroundColor is not used. * TSdlTtfRenderMode.Subpixel: creates a 32-bit ARGB surface that used both alpha-blending and subpixel blending with ABackgroundColor to create sharp looking text for LCD displays.</li>
+</ul>
+<p>You can optionally wrap the text based on the <code>AWrapLength</code> parameter:</p>
+<ul>
+<li>If <code>AWrapLength</code> &lt;render unicode text to a new surface, optionally wrapping the text.</li>
+</ul>
+<p>this method will allocate a new 8-bit or 32-bit surface, depending on amode:</p>
+<ul>
+<li>tsdlttfrendermode.fast: creates an 8-bit palettized surface where palette index 0 is transparent, and palette index 1 is set to the given aforegroundcolor. abackgroundcolor is not used. * tsdlttfrendermode.antialiasedpalette: creates an 8-bit palettized surface where palette index 0 is set to the given abackgroundcolor and the remainder of the palette contains a color gradient/ramp that goes from abackgroundcolor to aforegroundcolor. * tsdlttfrendermode.antialiasedalpha: creates a 32-bit argb surface where the alpha values are used for anti-aliasing. abackgroundcolor is not used. * tsdlttfrendermode.subpixel: creates a 32-bit argb surface that used both alpha-blending and subpixel blending with abackgroundcolor to create sharp looking text for lcd displays.</li>
+</ul>
+<p>you can optionally wrap the text based on the <code>awraplength</code> parameter:</p>
+<ul>
+<li>if <code>awraplength</code> &gt;(default), then text will not be wrapped (not even on newline characters). You'll get a surface with a single line of text, as long as the string requires. * If <code>AWrapLength</code> = 0, then text will only be wrapped on newline characters. * If <code>AWrapLength</code> &gt; 0, then text will be wrapped on newline characters and on word boundaries if it extends beyond <code>AWrapLength</code> in pixels. &lt;/render unicode text to a new surface, optionally wrapping the text.</li>
+</ul>
+<p>this method will allocate a new 8-bit or 32-bit surface, depending on amode:</p>
+<ul>
+<li>tsdlttfrendermode.fast: creates an 8-bit palettized surface where palette index 0 is transparent, and palette index 1 is set to the given aforegroundcolor. abackgroundcolor is not used. * tsdlttfrendermode.antialiasedpalette: creates an 8-bit palettized surface where palette index 0 is set to the given abackgroundcolor and the remainder of the palette contains a color gradient/ramp that goes from abackgroundcolor to aforegroundcolor. * tsdlttfrendermode.antialiasedalpha: creates a 32-bit argb surface where the alpha values are used for anti-aliasing. abackgroundcolor is not used. * tsdlttfrendermode.subpixel: creates a 32-bit argb surface that used both alpha-blending and subpixel blending with abackgroundcolor to create sharp looking text for lcd displays.</li>
+</ul>
+<p>you can optionally wrap the text based on the <code>awraplength</code> parameter:</p>
+<ul>
+<li>if <code>awraplength</code> &gt;<param>Text to render.</param><param>The render mode.</param><param>The foreground color for the text.</param><param>(Optional) background color for the text. Is only used (and must be specified) for TSdlTtfRenderMode.AntiAliasedPalette and TSdlTtfRenderMode.Subpixel.</param><param>(Optional) maximum width of the text surface.</param><returns>A new surface.</returns><exception>Raised on failure.</exception><remarks>This method should be called on the thread that created the font. </remarks></li>
+</ul>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">RenderText</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AText</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AMode</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTtfRenderMode</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AForegroundColor</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlColor</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AWrapLength</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="mi">1</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSurface</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="parameters_25">Parameters</h4>
+<p><strong><code>AText</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code></p>
+<p><strong><code>AMode</code></strong>: <a href="../../types/TSdlTtfRenderMode/"><code>TSdlTtfRenderMode</code></a></p>
+<p><strong><code>AForegroundColor</code></strong>: <a href="../../../Neslib.Sdl3.Video/classes/TSdlColor/"><code>TSdlColor</code></a></p>
+<p><strong><code>AWrapLength</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="mi">1</span></code></p>
+<h4 id="returns_19">Returns</h4>
+<p><a href="../../../Neslib.Sdl3.Video/classes/TSdlSurface/"><code>TSdlSurface</code></a></p>
+<hr />
+<h3 id="SetSizeDpi"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> SetSizeDpi(Single, Integer, Integer)</h3>
+<p>Set font size dynamically with target resolutions, in dots per inch.</p>
+<p>This updates any TSdlTtdText objects using this font, and clears already-generated glyphs, if any, from the cache. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetSizeDpi</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APtSize</span><span class="o">:</span><span class="w"> </span><span class="kt">Single</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AHDpi</span><span class="o">,</span><span class="w"> </span><span class="w">  </span><span class="n">AVDpi</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_24">Exceptions</h4>
+<p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_26">Parameters</h4>
+<p><strong><code>APtSize</code></strong>: <code class="language-delphi highlight"><span class="kt">Single</span></code>
+: the new point size.</p>
+<p><strong><code>AHDpi</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
+: The target horizontal DPI.</p>
+<p><strong><code>AVDpi</code></strong>: <code class="language-delphi highlight"><span class="kt">Integer</span></code>
+: The target vertical DPI.</p>
+<h4 id="see-also_11">See Also</h4>
+<ul>
+<li><a href="./#Size">Size</a></li>
+<li><a href="./#GetDpi">GetDPI</a></li>
+</ul>
+<h4 id="remarks_40">Remarks</h4>
+<p>This method should be called on the thread that created the font. </p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Neslib.Sdl3.Ttf">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Neslib.Sdl3.Ttf
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../TSdlTtfGpuAtlasDrawSequence/" class="md-footer__link md-footer__link--next" aria-label="Next: TSdlTtfGpuAtlasDrawSequence">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                TSdlTtfGpuAtlasDrawSequence
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Erik van Bilsen
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/neslib/Neslib.Sdl3" target="_blank" rel="noopener" title="GitHub neslib" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://blog.grijjy.com/author/erikvanbilsen/" target="_blank" rel="noopener" title="Blog" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="m61.7 169.4 101.5 278C92.2 413 43.3 340.2 43.3 256c0-30.9 6.6-60.1 18.4-86.6m337.9 75.9c0-26.3-9.4-44.5-17.5-58.7-10.8-17.5-20.9-32.4-20.9-49.9 0-19.6 14.8-37.8 35.7-37.8.9 0 1.8.1 2.8.2-37.9-34.7-88.3-55.9-143.7-55.9-74.3 0-139.7 38.1-177.8 95.9 5 .2 9.7.3 13.7.3 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l77.5 230.4L249.8 247l-33.1-90.8c-11.5-.7-22.3-2-22.3-2-11.5-.7-10.1-18.2 1.3-17.5 0 0 35.1 2.7 56 2.7 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l76.9 228.7 21.2-70.9c9-29.4 16-50.5 16-68.7m-139.9 29.3-63.8 185.5c19.1 5.6 39.2 8.7 60.1 8.7 24.8 0 48.5-4.3 70.6-12.1-.6-.9-1.1-1.9-1.5-2.9zm183-120.7c.9 6.8 1.4 14 1.4 21.9 0 21.6-4 45.8-16.2 76.2l-65 187.9C426.2 403 468.7 334.5 468.7 256c0-37-9.4-71.8-26-102.1M504 256c0 136.8-111.3 248-248 248C119.2 504 8 392.7 8 256 8 119.2 119.2 8 256 8c136.7 0 248 111.2 248 248m-11.4 0c0-130.5-106.2-236.6-236.6-236.6C125.5 19.4 19.4 125.5 19.4 256S125.6 492.6 256 492.6c130.5 0 236.6-106.1 236.6-236.6"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.code.copy", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.prune", "navigation.top", "navigation.footer", "navigation.indexes", "search.suggest", "search.share"], "search": "../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>

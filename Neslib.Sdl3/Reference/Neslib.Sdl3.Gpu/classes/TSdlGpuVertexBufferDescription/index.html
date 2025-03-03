@@ -412,6 +412,8 @@
       
         
       
+        
+      
     
     
       
@@ -2428,6 +2430,63 @@
         
   
   
+    <a href="../../../Neslib.Sdl3.Ttf/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Ttf
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
     <a href="../../../Neslib.Sdl3.Video/" class="md-nav__link">
       
   
@@ -2601,7 +2660,7 @@
 <h2 id="see-also">See Also</h2>
 <ul>
 <li><a href="../TSdlGpuVertexAttribute/">TSdlGpuVertexAttribute</a></li>
-<li><a href="../TSdlGpuVertexInputState/">TSdlGpuVertexInputState</a></li>
+<li><a href="../../types/TSdlGpuVertexInputRate/">TSdlGpuVertexInputRate</a></li>
 </ul>
 <h2 id="properties">Properties</h2>
 <table>
@@ -2615,10 +2674,6 @@
 <tr>
 <td><a href="#InputRate">InputRate</a></td>
 <td>Whether attribute addressing is a function of the vertex index or instance index.</td>
-</tr>
-<tr>
-<td><a href="#InstanceStepRate">InstanceStepRate</a></td>
-<td>The number of instances to draw using the same per-instance data before advancing in the instance buffer by one element. Ignored unless input_rate is SDL_GPU_VERTEXINPUTRATE_INSTANCE</td>
 </tr>
 <tr>
 <td><a href="#Pitch">Pitch</a></td>
@@ -2635,11 +2690,6 @@
 <p>Whether attribute addressing is a function of the vertex index or instance index. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">InputRate</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlGpuVertexInputRate</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetInputRate</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetInputRate</span></code></p>
 <p><strong>Type: </strong><a href="../../types/TSdlGpuVertexInputRate/"><code>TSdlGpuVertexInputRate</code></a></p>
-<hr />
-<h3 id="InstanceStepRate"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> InstanceStepRate</h3>
-<p>The number of instances to draw using the same per-instance data before advancing in the instance buffer by one element. Ignored unless input_rate is SDL_GPU_VERTEXINPUTRATE_INSTANCE </p>
-<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">InstanceStepRate</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nc">FHandle</span><span class="o">.</span><span class="nf">instance_step_rate</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nc">FHandle</span><span class="o">.</span><span class="nf">instance_step_rate</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Integer</span></code></p>
 <hr />
 <h3 id="Pitch"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Pitch</h3>
 <p>The byte pitch between consecutive elements of the vertex buffer. </p>

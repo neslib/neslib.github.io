@@ -412,6 +412,8 @@
       
         
       
+        
+      
     
     
       
@@ -1511,6 +1513,63 @@
         
   
   
+    <a href="../../../Neslib.Sdl3.Ttf/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Ttf
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
     <a href="../../../Neslib.Sdl3.Video/" class="md-nav__link">
       
   
@@ -2000,6 +2059,10 @@
 <tr>
 <td><a href="#JoystickGameInput">JoystickGameInput</a></td>
 <td>A variable controlling whether GameInput should be used for controller handling on Windows.</td>
+</tr>
+<tr>
+<td><a href="#JoystickHapticAxes">JoystickHapticAxes</a></td>
+<td>A variable containing a list of devices and their desired number of haptic (force feedback) enabled axis.</td>
 </tr>
 <tr>
 <td><a href="#JoystickHidApi">JoystickHidApi</a></td>
@@ -3362,6 +3425,15 @@
 <p>The default is '1' on GDK platforms, and '0' otherwise.</p>
 <p>This hint should be set before SDL is initialized. </p>
 <p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">JoystickGameInput</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_HINT_JOYSTICK_GAMEINPUT</span></code></p>
+<hr />
+<h3 id="JoystickHapticAxes"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> JoystickHapticAxes</h3>
+<p>A variable containing a list of devices and their desired number of haptic (force feedback) enabled axis.</p>
+<p>The format of the string is a comma separated list of USB VID/PID pairs in hexadecimal form plus the number of desired axes, e.g.</p>
+<p><code>0xAAAA/0xBBBB/1,0xCCCC/0xDDDD/3</code></p>
+<p>This hint supports a "wildcard" device that will set the number of haptic axes on all initialized haptic devices which were not defined explicitly in this hint.</p>
+<p><code>0xFFFF/0xFFFF/1</code></p>
+<p>This hint should be set before a controller is opened. The number of haptic axes won't exceed the number of real axes found on the device. </p>
+<p><code class="language-delphi highlight"><span class="k">const</span><span class="w"> </span><span class="n">JoystickHapticAxes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">SDL_HINT_JOYSTICK_HAPTIC_AXES</span></code></p>
 <hr />
 <h3 id="JoystickHidApi"><span class="twemoji" title="Constant"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2m-1 5a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2v-1h-2v1h-2V9h2v1h2V9a2 2 0 0 0-2-2z"/></svg></span> JoystickHidApi</h3>
 <p>A variable controlling whether the HIDAPI joystick drivers should be used.</p>

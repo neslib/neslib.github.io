@@ -427,6 +427,8 @@
       
         
       
+        
+      
     
     
       
@@ -807,6 +809,27 @@
 
               
             
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Neslib.Sdl3.Ttf/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Ttf
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
           </ul>
         </nav>
       
@@ -877,6 +900,8 @@
   
     
     
+      
+        
       
         
       
@@ -1039,11 +1064,11 @@
 <p>The GPU API offers a cross-platform way for apps to talk to modern graphics hardware. It offers both 3D graphics and compute support, in the style of Metal, Vulkan, and Direct3D 12.</p>
 <p>A basic workflow might be something like this:</p>
 <p>The app creates a <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuDevice/">TSdlGpuDevice</a> and assigns it to a window with <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuDevice/#ClaimWindow">TSdlGpuDevice.ClaimWindow</a>--although strictly speaking you can render offscreen entirely, perhaps for image processing, and not use a window at all.</p>
-<p>Next the app prepares static data (things that are created once and used over and over). For example:</p>
+<p>Next, the app prepares static data (things that are created once and used over and over). For example:</p>
 <ul>
 <li>Shaders (programs that run on the GPU): use <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuShader/">TSdlGpuShader</a>.</li>
-<li>Vertex buffers (arrays of geometry data) and other data rendering will need: use <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuCopyPass/#UploadToBuffer">TSdlGpuCopyPass.UploadToBuffer</a>.</li>
-<li>Textures (images): use <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuCopyPass/#UploadToTexture">TSdlGpuCopyPass.UploadToTexture</a>.</li>
+<li>Vertex buffers (arrays of geometry data) and other rendering data: use  <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuBuffer/">TSdlGpuBuffer</a> and <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuCopyPass/#UploadToBuffer">TSdlGpuCopyPass.UploadToBuffer</a>.</li>
+<li>Textures (images): use <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuTexture/">TSdlGpuTexture</a> and <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuCopyPass/#UploadToTexture">TSdlGpuCopyPass.UploadToTexture</a>.</li>
 <li>Samplers (how textures should be read from): use <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuSampler/">TSdlGpuSampler</a>.</li>
 <li>Render pipelines (precalculated rendering state): use <a href="../../Reference/Neslib.Sdl3.Gpu/classes/TSdlGpuGraphicsPipeline/">TSdlGpuGraphicsPipeline</a>.</li>
 </ul>

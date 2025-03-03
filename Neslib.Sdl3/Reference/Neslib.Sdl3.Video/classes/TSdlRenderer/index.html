@@ -412,6 +412,8 @@
       
         
       
+        
+      
     
     
       
@@ -1000,6 +1002,63 @@
                 
   
   
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../Neslib.Sdl3.Ttf/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Neslib.Sdl3.Ttf
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
     
   
   
@@ -1031,7 +1090,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_11" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_12" checked>
         
           
           
@@ -1047,14 +1106,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_2_11" id="__nav_2_11_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_2_12" id="__nav_2_12_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_11_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_11">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_12_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_12">
             <span class="md-nav__icon md-icon"></span>
             Neslib.Sdl3.Video
           </label>
@@ -1145,10 +1204,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_11_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_12_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_2_11_2" id="__nav_2_11_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_2_12_2" id="__nav_2_12_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1159,8 +1218,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_11_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_2_11_2">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_12_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_12_2">
             <span class="md-nav__icon md-icon"></span>
             Classes & Records
           </label>
@@ -2504,7 +2563,7 @@
 </tr>
 <tr>
 <td><a href="#IsClipEnabled">IsClipEnabled</a></td>
-<td>Whether clipping is enabled on the given renderer.</td>
+<td>Whether clipping is enabled on the given render target.</td>
 </tr>
 <tr>
 <td><a href="#IsViewportSet">IsViewportSet</a></td>
@@ -2829,14 +2888,15 @@
 </tr>
 <tr>
 <td><a href="#SetLogicalPresentation">SetLogicalPresentation</a></td>
-<td>Set a device independent resolution and presentation mode for rendering.</td>
+<td>Set a device-independent resolution and presentation mode for rendering.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="property-descriptions">Property Descriptions</h2>
 <h3 id="ClipRect"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> ClipRect</h3>
 <p>The clip rectangle for rendering on the specified target, relative to the viewport (or an empty rectangle if clipping is disabled).</p>
-<p>To disable clipping, set IsClipEnabled to False. </p>
+<p>To disable clipping, set IsClipEnabled to False.</p>
+<p>Each render target has its own clip rectangle. This property applies to the current render target. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">ClipRect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRect</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetClipRect</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetClipRect</span></code></p>
 <p><strong>Type: </strong><a href="../TSdlRect/"><code>TSdlRect</code></a></p>
 <h4 id="exceptions">Exceptions</h4>
@@ -2861,7 +2921,8 @@
 <hr />
 <h3 id="CurrentOutputSize"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> CurrentOutputSize</h3>
 <p>The current output size in pixels of a rendering context.</p>
-<p>If a rendering target is active, this will return the size of the rendering target in pixels, otherwise if a logical size is set, it will return the logical size, otherwise it will return the value of OutputSize. </p>
+<p>If a rendering target is active, this will return the size of the rendering target in pixels, otherwise return the value of OutputSize.</p>
+<p>Rendering target or not, the output will be adjusted by the current logical presentation state, dictated by SetLogicalPresentation. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">CurrentOutputSize</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSize</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetCurrentOutputSize</span></code></p>
 <p><strong>Type: </strong><a href="../TSdlSize/"><code>TSdlSize</code></a></p>
 <h4 id="exceptions_2">Exceptions</h4>
@@ -2938,7 +2999,8 @@
 <p>It is safe to use this property from any thread. </p>
 <hr />
 <h3 id="IsClipEnabled"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> IsClipEnabled</h3>
-<p>Whether clipping is enabled on the given renderer.</p>
+<p>Whether clipping is enabled on the given render target.</p>
+<p>Each render target has its own clip rectangle. This property checks the cliprect for the current render target.</p>
 <p>Set this property to False to disable clipping. To enable clipping, set the ClipRect property. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">IsClipEnabled</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetIsClipEnabled</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetIsClipEnabled</span></code></p>
 <p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
@@ -2953,7 +3015,8 @@
 <hr />
 <h3 id="IsViewportSet"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> IsViewportSet</h3>
 <p>Whether an explicit rectangle was set as the viewport.</p>
-<p>This is useful if you're saving and restoring the viewport and want to know whether you should restore a specific rectangle or reset the viewport. Note that the viewport is always reset when changing rendering targets. </p>
+<p>This is useful if you're saving and restoring the viewport and want to know whether you should restore a specific rectangle or reset the viewport. Note that the viewport is always reset when changing rendering targets.</p>
+<p>Each render target has its own viewport. This property checks the viewport for the current render target. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">IsViewportSet</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetIsViewportSet</span></code></p>
 <p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
 <h4 id="see-also_7">See Also</h4>
@@ -2966,7 +3029,8 @@
 <hr />
 <h3 id="LogicalPresentationRect"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> LogicalPresentationRect</h3>
 <p>Get the final presentation rectangle for rendering.</p>
-<p>This property returns the calculated rectangle used for logical presentation, based on the presentation mode and output size. If logical presentation is disabled, it will fill the rectangle with the output size, in pixels. </p>
+<p>This property returns the calculated rectangle used for logical presentation, based on the presentation mode and output size. If logical presentation is disabled, it will fill the rectangle with the output size, in pixels.</p>
+<p>Each render target has its own logical presentation state. This function gets the rectangle for the current render target. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">LogicalPresentationRect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRect</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetLogicalPresentationRect</span></code></p>
 <p><strong>Type: </strong><a href="../TSdlRect/"><code>TSdlRect</code></a></p>
 <h4 id="exceptions_7">Exceptions</h4>
@@ -3015,7 +3079,8 @@
 <hr />
 <h3 id="OutputSize"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> OutputSize</h3>
 <p>The output size in pixels of a rendering context.</p>
-<p>This returns the true output size in pixels, ignoring any render targets or logical size and presentation. </p>
+<p>This returns the true output size in pixels, ignoring any render targets or logical size and presentation.</p>
+<p>For the output size of the current rendering target, with logical size adjustments, use CurrentOutputSize instead. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">OutputSize</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSize</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetOutputSize</span></code></p>
 <p><strong>Type: </strong><a href="../TSdlSize/"><code>TSdlSize</code></a></p>
 <h4 id="exceptions_9">Exceptions</h4>
@@ -3091,7 +3156,8 @@
 <h3 id="Scale"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Scale</h3>
 <p>The drawing scale for rendering on the current target.</p>
 <p>The drawing coordinates are scaled by the X/Y scaling factors before they are used by the renderer. This allows resolution independent drawing with a single coordinate system.</p>
-<p>If this results in scaling or subpixel drawing by the rendering backend, it will be handled using the appropriate quality hints. For best results use integer scaling factors. </p>
+<p>If this results in scaling or subpixel drawing by the rendering backend, it will be handled using the appropriate quality hints. For best results use integer scaling factors.</p>
+<p>Each render target has its own scale. This property applies to the current render target. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Scale</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlPointF</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetScale</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetScale</span></code></p>
 <p><strong>Type: </strong><a href="../TSdlPointF/"><code>TSdlPointF</code></a></p>
 <h4 id="exceptions_12">Exceptions</h4>
@@ -3101,7 +3167,8 @@
 <hr />
 <h3 id="Target"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Target</h3>
 <p>The current rendering target.</p>
-<p>The default render target is the window for which the renderer was created. To stop rendering to a texture and render to the window again, set this property to a nil <code>texture</code>. </p>
+<p>The default render target is the window for which the renderer was created. To stop rendering to a texture and render to the window again, set this property to a nil <code>texture</code>.</p>
+<p>Viewport, cliprect, scale, and logical presentation are unique to each render target. Functions and properties for these states apply to the current render target set by this function, and those states persist on each target when the current render target changes. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Target</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlTexture</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetTarget</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetTarget</span></code></p>
 <p><strong>Type: </strong><a href="../TSdlTexture/"><code>TSdlTexture</code></a></p>
 <h4 id="exceptions_13">Exceptions</h4>
@@ -3113,6 +3180,7 @@
 <p>The drawing area for rendering on the current target.</p>
 <p>Drawing will clip to this area (separately from any clipping done with ClipRect), and the top left of the area will become coordinate (0, 0) for future drawing commands.</p>
 <p>The area's width and height must be &gt;= 0.</p>
+<p>Each render target has its own viewport. This property applies to the current render target.</p>
 <p>Call ResetViewport to set the viewport to the entire target. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Viewport</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRect</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetViewport</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetViewport</span></code></p>
 <p><strong>Type: </strong><a href="../TSdlRect/"><code>TSdlRect</code></a></p>
@@ -4113,7 +4181,8 @@
 <hr />
 <h3 id="GetLogicalPresentation"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> GetLogicalPresentation(Integer, Integer, TSdlRendererLogicalPresentation)</h3>
 <p>Get device independent resolution and presentation mode for rendering.</p>
-<p>This method gets the width and height of the logical rendering output, or the output size in pixels if a logical resolution is not enabled. </p>
+<p>This method gets the width and height of the logical rendering output, or the output size in pixels if a logical resolution is not enabled.</p>
+<p>Each render target has its own logical presentation state. This method gets the state for the current render target. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">GetLogicalPresentation</span><span class="p">(</span><span class="n">out</span><span class="w"> </span><span class="n">AW</span><span class="o">,</span><span class="w"> </span><span class="n">AH</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="n">out</span><span class="w"> </span><span class="n">AMode</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRendererLogicalPresentation</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_61">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
@@ -4161,14 +4230,14 @@
 <hr />
 <h3 id="ReadPixels_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> ReadPixels(TSdlRect)</h3>
 <p>Read pixels from the current rendering target.</p>
-<p>The returned surface should be freed.</p>
-<p><strong>WARNING</strong>: This is a very slow operation, and should not be used frequently. If you're using this on the main rendering target, it should be called after rendering and before Present. </p>
+<p>The returned surface contains pixels inside the desired area clipped to the current viewport, and should be freed.</p>
+<p>Note that this returns the actual pixels on the screen, so if you are using logical presentation you should use LogicalPresentationRect to get the area containing your content. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">ReadPixels</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ARect</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRect</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSurface</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_63">Exceptions</h4>
 <p><strong><code>ESdlError</code>: </strong>Raised on failure.</p>
 <h4 id="parameters_48">Parameters</h4>
 <p><strong><code>ARect</code></strong>: <a href="../TSdlRect/"><code>TSdlRect</code></a>
-: The area to read in pixels relative to the to current viewport.</p>
+: The area to read, which will be clipped to the current viewport.</p>
 <h4 id="returns_9">Returns</h4>
 <p><a href="../TSdlSurface/"><code>TSdlSurface</code></a>: A new SDL surface</p>
 <h4 id="remarks_69">Remarks</h4>
@@ -4176,7 +4245,8 @@
 <hr />
 <h3 id="ReadPixels_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> ReadPixels</h3>
 <p>Read pixels from the entire viewport of the current rendering target.</p>
-<p>The returned surface should be freed.</p>
+<p>The returned surface contains pixels inside the desired area clipped to the current viewport, and should be freed.</p>
+<p>Note that this returns the actual pixels on the screen, so if you are using logical presentation you should use LogicalPresentationRect to get the area containing your content.</p>
 <p><strong>WARNING</strong>: This is a very slow operation, and should not be used frequently. If you're using this on the main rendering target, it should be called after rendering and before Present. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">ReadPixels</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlSurface</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_64">Exceptions</h4>
@@ -4301,11 +4371,12 @@
 <p>This method should only be called on the main thread. </p>
 <hr />
 <h3 id="SetLogicalPresentation"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> SetLogicalPresentation(Integer, Integer, TSdlRendererLogicalPresentation)</h3>
-<p>Set a device independent resolution and presentation mode for rendering.</p>
-<p>This method sets the width and height of the logical rendering output. The renderer will act as if the window is always the requested dimensions, scaling to the actual window resolution as necessary.</p>
+<p>Set a device-independent resolution and presentation mode for rendering.</p>
+<p>This method sets the width and height of the logical rendering output. The renderer will act as if the current render target is always the requested dimensions, scaling to the actual resolution as necessary.</p>
 <p>This can be useful for games that expect a fixed size, but would like to scale the output to whatever is available, regardless of how a user resizes a window, or if the display is high DPI.</p>
-<p>You can disable logical coordinates by setting the mode to TSdlLogicalPresentation.Disabled, and in that case you get the full pixel resolution of the output window; it is safe to toggle logical presentation during the rendering of a frame: perhaps most of the rendering is done to specific dimensions but to make fonts look sharp, the app turns off logical presentation while drawing text.</p>
-<p>Letterboxing will only happen if logical presentation is enabled during Present; be sure to reenable it first if you were using it.</p>
+<p>Logical presentation can be used with both render target textures and the renderer's window; the state is unique to each render target, and this function sets the state for the current render target. It might be useful to draw to a texture that matches the window dimensions with logical presentation enabled, and then draw that texture across the entire window with logical presentation disabled. Be careful not to render both with logical presentation enabled, however, as this could produce double-letterboxing, etc.</p>
+<p>You can disable logical coordinates by setting the mode to TSdlLogicalPresentation.Disabled, and in that case you get the full pixel resolution of the render target; it is safe to toggle logical presentation during the rendering of a frame: perhaps most of the rendering is done to specific dimensions but to make fonts look sharp, the app turns off logical presentation while drawing text, for example.</p>
+<p>For the renderer's window, letterboxing is drawn into the framebuffer if logical presentation is enabled during Present; be sure to reenable it before presenting if you were toggling it, otherwise the letterbox areas might have artifacts from previous frames (or artifacts from external overlays, etc). Letterboxing is never drawn into texture render targets; be sure to call Clear before drawing into the texture so the letterboxing areas are cleared, if appropriate.</p>
 <p>You can convert coordinates in an event into rendering coordinates using TSdlEvent.ConvertToRenderCoordinates. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetLogicalPresentation</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AW</span><span class="o">,</span><span class="w"> </span><span class="n">AH</span><span class="o">:</span><span class="w"> </span><span class="kt">Integer</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AMode</span><span class="o">:</span><span class="w"> </span><span class="n">TSdlRendererLogicalPresentation</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="exceptions_70">Exceptions</h4>
