@@ -1,0 +1,4371 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/neslib/DelphiBlend2D/Reference/Blend2D/classes/TBLArray_1/">
+      
+      
+        <link rel="prev" href="../TBLArc/">
+      
+      
+        <link rel="next" href="../P/">
+      
+      
+      <link rel="icon" href="../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.48">
+    
+    
+      
+        <title>TBLArray<T> - DelphiBlend2D</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../../../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#tblarrayt" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../.." title="DelphiBlend2D" class="md-header__button md-logo" aria-label="DelphiBlend2D" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DelphiBlend2D
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              TBLArray&lt;T>
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/neslib/DelphiBlend2D" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    DelphiBlend2D
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../../.." class="md-tabs__link">
+          
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../" class="md-tabs__link">
+          
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../.." title="DelphiBlend2D" class="md-nav__button md-logo" aria-label="DelphiBlend2D" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    DelphiBlend2D
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/neslib/DelphiBlend2D" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    DelphiBlend2D
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../../.." class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    Blend2D
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Blend2D
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_1_2" id="__nav_2_1_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    Classes & Records
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_1_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            Classes & Records
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../EBlend2DError/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    EBlend2DError
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLApproximationOptions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLApproximationOptions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLArc/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLArc
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  <span class="md-ellipsis">
+    TBLArray&lt;T>
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    TBLArray&lt;T>
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remarks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remarks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nested-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nested Types
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constructors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operators
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#property-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Property Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructor-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constructor Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operator-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operator Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#method-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../P/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLArray&lt;T>.P
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLArrayView_1/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLArrayView&lt;T>
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../P/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLArray&lt;T>.P
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLBitArray/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLBitArray
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLBox/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLBox
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLBoxI/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLBoxI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLCircle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLCircle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLConicGradientValues/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLConicGradientValues
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLContext/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLContext
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLContextCookie/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLContextCookie
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLContextCreateInfo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLContextCreateInfo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLContextHints/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLContextHints
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLEllipse/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLEllipse
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLFile/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLFile
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLFileInfo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLFileInfo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLFileSystem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLFileSystem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLFont/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLFont
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLFontData/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLFontData
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLFontDesignMetrics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLFontDesignMetrics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLFontFace/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLFontFace
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLFontFaceInfo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLFontFaceInfo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLFontFeatureItem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLFontFeatureItem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLFontFeatureSettings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLFontFeatureSettings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLFontFeatureSettingsView/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLFontFeatureSettingsView
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLFontManager/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLFontManager
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLFontMatrix/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLFontMatrix
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLFontMetrics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLFontMetrics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLFontPanose/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLFontPanose
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TDecorative/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLFontPanose.TDecorative
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TScript/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLFontPanose.TScript
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TSymbol/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLFontPanose.TSymbol
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TText/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLFontPanose.TText
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLFontQueryProperties/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLFontQueryProperties
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLFontTable/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLFontTable
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLFontUnicodeCoverage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLFontUnicodeCoverage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLFontVariationItem/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLFontVariationItem
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLFontVariationSettings/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLFontVariationSettings
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLFontVariationSettingsView/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLFontVariationSettingsView
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLFormatInfo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLFormatInfo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLGlyphBuffer/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLGlyphBuffer
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLGlyphInfo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLGlyphInfo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLGlyphMappingState/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLGlyphMappingState
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLGlyphPlacement/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLGlyphPlacement
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLGlyphRun/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLGlyphRun
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLGlyphRunIterator/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLGlyphRunIterator
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLGradient/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLGradient
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLGradientStop/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLGradientStop
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLImage/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLImage
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLImageCodec/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLImageCodec
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLImageData/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLImageData
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLImageDecoder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLImageDecoder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLImageEncoder/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLImageEncoder
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLImageInfo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLImageInfo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLLine/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLLine
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLLinearGradientValues/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLLinearGradientValues
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLMatrix2D/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLMatrix2D
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLObjectCore/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLObjectCore
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLPath/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLPath
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLPathView/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLPathView
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLPattern/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLPattern
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLPixelConverter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLPixelConverter
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLPixelConverterOptions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLPixelConverterOptions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLPoint/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLPoint
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLPointI/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLPointI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLRadialGradientValues/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLRadialGradientValues
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLRandom/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLRandom
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLRange/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLRange
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLRect/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLRect
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLRectI/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLRectI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLRgba/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLRgba
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLRgba32/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLRgba32
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLRgba64/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLRgba64
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLRoundRect/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLRoundRect
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLRuntime/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLRuntime
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLRuntimeBuildInfo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLRuntimeBuildInfo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLRuntimeLimits/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLRuntimeLimits
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLRuntimeResourceInfo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLRuntimeResourceInfo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLRuntimeSystemInfo/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLRuntimeSystemInfo
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLSize/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLSize
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLSizeI/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLSizeI
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLString/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLString
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLStrokeOptions/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLStrokeOptions
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLTextMetrics/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLTextMetrics
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLTriangle/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLTriangle
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../TBLVar/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    TBLVar
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../types/PBLApproximationOptions/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Types
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../routines/BLAbs_0/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Routines
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    <span class="md-ellipsis">
+      Definition
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#remarks" class="md-nav__link">
+    <span class="md-ellipsis">
+      Remarks
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#nested-types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Nested Types
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constructors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operators" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operators
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    <span class="md-ellipsis">
+      Methods
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#property-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Property Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructor-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constructor Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#operator-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Operator Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#method-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Method Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="tblarrayt">TBLArray&lt;T&gt;</h1>
+<p>Generic array container. </p>
+<h2 id="definition">Definition</h2>
+<p>Unit: <a href="../../">Blend2D</a></p>
+<div class="language-delphi highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="k">type</span><span class="w"> </span><span class="n">TBLArray</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">record</span><span class="w"> </span><span class="o">...</span><span class="w"> </span><span class="k">end</span><span class="o">;</span>
+</span></code></pre></div>
+<h3 id="type-parameters">Type Parameters</h3>
+<p><strong><code>T</code></strong>: </p>
+<h2 id="remarks">Remarks</h2>
+<p><code>T</code> must be of one of the following types:</p>
+<ul>
+<li>A signed or unsigned 8-, 16-, 32- or 64-bit integer.</li>
+<li>Enumerated types.</li>
+<li>A 32- or 64-bit floating-point value (Single or Double).</li>
+<li>An unmanaged record that does not contain any [weak] references. So the record cannot contain reference-counted values like Strings, Interfaces or dynamic arrays. Also, only small records of certain sizes (32 bytes or less) bytes are supported.</li>
+</ul>
+<p>These conditions are checked with an assertion. </p>
+<h2 id="nested-types">Nested Types</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="../P/">P</a></td>
+<td>A pointer to type <code>T</code>.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="properties">Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Capacity">Capacity</a></td>
+<td>The capacity of the array (number of items).</td>
+</tr>
+<tr>
+<td><a href="#Data">Data</a></td>
+<td>Pointer to the array data.</td>
+</tr>
+<tr>
+<td><a href="#IsEmpty">IsEmpty</a></td>
+<td>Whether the array is empty.</td>
+</tr>
+<tr>
+<td><a href="#Items">Items</a></td>
+<td>The items in the array.</td>
+</tr>
+<tr>
+<td><a href="#Refs">Refs</a></td>
+<td>References to the items in the array.</td>
+</tr>
+<tr>
+<td><a href="#Size">Size</a></td>
+<td>The size of the array (number of items).</td>
+</tr>
+</tbody>
+</table>
+<h2 id="constructors">Constructors</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Assign">Assign</a></td>
+<td>Copy constructor.</td>
+</tr>
+<tr>
+<td><a href="#Create">Create</a> <span class="twemoji" title="Class constructor"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg></span></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="#Finalize">Finalize</a></td>
+<td>Destroys the path.</td>
+</tr>
+<tr>
+<td><a href="#Initialize">Initialize</a></td>
+<td>Creates a default constructed array.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="operators">Operators</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Equal_0">Equal(TBLArray&lt;T&gt;, TBLArray&lt;T&gt;)</a></td>
+<td>Returns True if two arrays are equal (have the same contents).</td>
+</tr>
+<tr>
+<td><a href="#Equal_1">Equal(TBLArray&lt;T&gt;, Pointer)</a></td>
+<td>Used to compare against <code>nil</code> (empty array).</td>
+</tr>
+<tr>
+<td><a href="#NotEqual_0">NotEqual(TBLArray&lt;T&gt;, TBLArray&lt;T&gt;)</a></td>
+<td>Returns True if two arrays are not equal (do not have the same contents).</td>
+</tr>
+<tr>
+<td><a href="#NotEqual_1">NotEqual(TBLArray&lt;T&gt;, Pointer)</a></td>
+<td>Used to compare against <code>nil</code> (empty array).</td>
+</tr>
+</tbody>
+</table>
+<h2 id="methods">Methods</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Append_0">Append(T[])</a></td>
+<td>Appends a number of items items passed in <code>AItems</code> to the array.</td>
+</tr>
+<tr>
+<td><a href="#Append_1">Append(T)</a></td>
+<td>Appends <code>AItem</code> to the array.</td>
+</tr>
+<tr>
+<td><a href="#AppendData_0">AppendData(P, NativeInt)</a></td>
+<td>Appends <code>AItems</code> to the array of length <code>ASize</code>.</td>
+</tr>
+<tr>
+<td><a href="#AppendData_1">AppendData(TBLArrayView&lt;T&gt;)</a></td>
+<td>Appends items to the array of the given array <code>AView</code>.</td>
+</tr>
+<tr>
+<td><a href="#Assign">Assign</a></td>
+<td>Replaces the content of the array with the items passed in <code>AItems</code>.</td>
+</tr>
+<tr>
+<td><a href="#AssignData_0">AssignData(P, NativeInt)</a></td>
+<td>Replaces the content of the array <code>AItems</code> of length <code>ASize</code>.</td>
+</tr>
+<tr>
+<td><a href="#AssignData_1">AssignData(TBLArrayView&lt;T&gt;)</a></td>
+<td>Replaces the content of the array by items in the passed array <code>AView</code>.</td>
+</tr>
+<tr>
+<td><a href="#AssignDeep">AssignDeep</a></td>
+<td>Copy assignment, but creates a deep copy of the <code>AOther</code> array instead of weak copy.</td>
+</tr>
+<tr>
+<td><a href="#AssignExternalData">AssignExternalData</a></td>
+<td>Assign an external buffer to the array, which would replace the existing content.</td>
+</tr>
+<tr>
+<td><a href="#At">At</a></td>
+<td>Returns the array item at the given <code>AIndex</code>.</td>
+</tr>
+<tr>
+<td><a href="#Clear">Clear</a></td>
+<td>Clears the content of the array.</td>
+</tr>
+<tr>
+<td><a href="#Equals">Equals</a></td>
+<td>Returns whether the content of this array and <code>AOther</code> matches.</td>
+</tr>
+<tr>
+<td><a href="#First">First</a></td>
+<td>Returns a reference to the first item.</td>
+</tr>
+<tr>
+<td><a href="#IndexOf_0">IndexOf(T, NativeInt)</a></td>
+<td>Returns the index at which a given <code>AItem</code> can be found in the array starting from <code>AFromIndex</code>, or -1 if not found.</td>
+</tr>
+<tr>
+<td><a href="#IndexOf_1">IndexOf(T)</a></td>
+<td>Returns the first index at which a given <code>AItem</code> can be found in the array, or -1 if not found.</td>
+</tr>
+<tr>
+<td><a href="#Insert_0">Insert(NativeInt, T[])</a></td>
+<td>Inserts a number of items passed in <code>AItems</code> at the given <code>AIndex</code>.</td>
+</tr>
+<tr>
+<td><a href="#Insert_1">Insert(NativeInt, T)</a></td>
+<td>Inserts <code>AItem</code> at the given <code>AIndex</code>.</td>
+</tr>
+<tr>
+<td><a href="#InsertData_0">InsertData(NativeInt, P, NativeInt)</a></td>
+<td>Prepends <code>AItems</code> to the array of length <code>ASize</code> at the given <code>AIndex</code>.</td>
+</tr>
+<tr>
+<td><a href="#InsertData_1">InsertData(NativeInt, TBLArrayView&lt;T&gt;)</a></td>
+<td>Inserts items to the array of the given array <code>AView</code> at the given <code>AIndex</code>.</td>
+</tr>
+<tr>
+<td><a href="#InsertOp">InsertOp</a></td>
+<td>Insert operation, the semantics is similar to <code>ModifyOp</code>, however, ASize items are inserted at the given <code>AIndex</code> instead of assigned or appended.</td>
+</tr>
+<tr>
+<td><a href="#Last">Last</a></td>
+<td>Returns a reference to the last item.</td>
+</tr>
+<tr>
+<td><a href="#LastIndexOf_0">LastIndexOf(T, NativeInt)</a></td>
+<td>Returns the index at which a given <code>AItem</code> can be found in the array starting from <code>AFromIndex</code> and ending at 0, or -1 if not present.</td>
+</tr>
+<tr>
+<td><a href="#LastIndexOf_1">LastIndexOf(T)</a></td>
+<td>Returns the last index at which a given <code>AItem</code> can be found in the array, or -1 if not present.</td>
+</tr>
+<tr>
+<td><a href="#MakeMutable">MakeMutable</a></td>
+<td>Makes the array mutable by possibly creating a deep copy of the data if it's either read-only or shared with another array. Returns a pointer to the beginning of mutable data in <code>dataOut</code>.</td>
+</tr>
+<tr>
+<td><a href="#Modify">Modify</a></td>
+<td>Similar to <code>ModifyOp</code>, but the items to assign/append to the array are given after the <code>AOp</code> argument.</td>
+</tr>
+<tr>
+<td><a href="#ModifyOp">ModifyOp</a></td>
+<td>Modify operation is similar to <code>MakeMutable</code>, however, the <code>AOp</code> argument specifies the desired array operation, and <code>ASize</code> specified the number of items to assign or append. Returns a pointer to the first item to be either assigned or appended and it points to an uninitialized memory.</td>
+</tr>
+<tr>
+<td><a href="#Prepend_0">Prepend(T[])</a></td>
+<td>Prepends a number of items passed in <code>AItems</code> to the array.</td>
+</tr>
+<tr>
+<td><a href="#Prepend_1">Prepend(T)</a></td>
+<td>Prepends <code>AItem</code> to the array.</td>
+</tr>
+<tr>
+<td><a href="#PrependData_0">PrependData(P, NativeInt)</a></td>
+<td>Prepends <code>AItems</code> to the array of length <code>ASize</code>.</td>
+</tr>
+<tr>
+<td><a href="#PrependData_1">PrependData(TBLArrayView&lt;T&gt;)</a></td>
+<td>Prepends items to the array of the given array <code>AView</code>.</td>
+</tr>
+<tr>
+<td><a href="#RefAt">RefAt</a></td>
+<td>Returns a reference to the array item at the given <code>AIndex</code>.</td>
+</tr>
+<tr>
+<td><a href="#Remove_0">Remove(TBLRange)</a></td>
+<td>Removes <code>ARange</code> of items.</td>
+</tr>
+<tr>
+<td><a href="#Remove_1">Remove(NativeInt)</a></td>
+<td>Removes an item at the given <code>Andex</code>.</td>
+</tr>
+<tr>
+<td><a href="#Replace">Replace</a></td>
+<td>Replaces an item at the given <code>AIndex</code> by <code>AItem</code>.</td>
+</tr>
+<tr>
+<td><a href="#ReplaceData_0">ReplaceData(TBLRange, P, NativeInt)</a></td>
+<td>Replaces the given <code>ARange</code> of items by <code>AItems</code> of length <code>ASize</code>.</td>
+</tr>
+<tr>
+<td><a href="#ReplaceData_1">ReplaceData(TBLRange, TBLArrayView&lt;T&gt;)</a></td>
+<td>Replaces the given <code>ARange</code> of items by the given array <code>AView</code>.</td>
+</tr>
+<tr>
+<td><a href="#Reserve">Reserve</a></td>
+<td>Reserves the array capacity to hold at least <code>AMinCapacity</code> items.</td>
+</tr>
+<tr>
+<td><a href="#Reset">Reset</a></td>
+<td>Resets the array into a default constructed state by clearing its content and releasing its memory.</td>
+</tr>
+<tr>
+<td><a href="#Resize">Resize</a></td>
+<td>Resizes the array to <code>ASize</code> items.</td>
+</tr>
+<tr>
+<td><a href="#Shrink">Shrink</a></td>
+<td>Shrinks the capacity of the array to fit its length.</td>
+</tr>
+<tr>
+<td><a href="#Swap">Swap</a></td>
+<td>Swaps the content of this array with the <code>AOther</code> array.</td>
+</tr>
+<tr>
+<td><a href="#ToArray">ToArray</a></td>
+<td>Converts this array to a Delphi `TArray</td>
+</tr>
+<tr>
+<td><a href="#Truncate">Truncate</a></td>
+<td>Truncates the length of the array to maximum <code>AMaxSize</code> items.</td>
+</tr>
+<tr>
+<td><a href="#View">View</a></td>
+<td>Returns the array data as `TBLArrayView</td>
+</tr>
+</tbody>
+</table>
+<h2 id="property-descriptions">Property Descriptions</h2>
+<h3 id="Capacity"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Capacity</h3>
+<p>The capacity of the array (number of items). </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Capacity</span><span class="o">:</span><span class="w"> </span><span class="n">NativeInt</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetCapacity</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">NativeInt</span></code></p>
+<hr />
+<h3 id="Data"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Data</h3>
+<p>Pointer to the array data. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Data</span><span class="o">:</span><span class="w"> </span><span class="n">P</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetData</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">P</span></code></p>
+<hr />
+<h3 id="IsEmpty"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> IsEmpty</h3>
+<p>Whether the array is empty. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">IsEmpty</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetIsEmpty</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<hr />
+<h3 id="Items"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Items</h3>
+<p>The items in the array. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Items</span><span class="p">[</span><span class="k">const</span><span class="w"> </span><span class="n">AIndex</span><span class="o">:</span><span class="w"> </span><span class="n">NativeInt</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">T</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetItem</span><span class="w"> </span><span class="kp">write</span><span class="w"> </span><span class="nf">SetItem</span><span class="o">;</span><span class="w"> </span><span class="kp">default</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">T</span></code></p>
+<h4 id="remarks_1">Remarks</h4>
+<p>This is the same as calling <code>At(AIndex)</code>. The index must be valid, which means it has to be less than the array length. Accessing items out of range is undefined behavior that would be caught by assertions in debug builds. </p>
+<hr />
+<h3 id="Refs"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Refs</h3>
+<p>References to the items in the array. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Refs</span><span class="p">[</span><span class="k">const</span><span class="w"> </span><span class="n">AIndex</span><span class="o">:</span><span class="w"> </span><span class="n">NativeInt</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">P</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetRef</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">P</span></code></p>
+<h4 id="remarks_2">Remarks</h4>
+<p>This is the same as calling <code>RefAt(AIndex)</code>. </p>
+<hr />
+<h3 id="Size"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Size</h3>
+<p>The size of the array (number of items). </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Size</span><span class="o">:</span><span class="w"> </span><span class="n">NativeInt</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetSize</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">NativeInt</span></code></p>
+<hr />
+<h2 id="constructor-descriptions">Constructor Descriptions</h2>
+<h3 id="Assign"><span class="twemoji" title="Constructor"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23 12-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68z"/></svg></span> <code class="language-delphi highlight"><span class="n">Assign</span></code></h3>
+<p>Copy constructor.</p>
+<p>Creates a weak-copy of the <code>ASrc</code> array by increasing it's internal reference counter. This array and <code>ASrc</code> would point to the same data and would be otherwise identical. Any change to <code>ASrc</code> would also affect this array. </p>
+<p><code class="language-delphi highlight"><span class="k">constructor</span><span class="w"> </span><span class="nf">Assign</span><span class="p">(</span><span class="k">var</span><span class="w"> </span><span class="n">ADest</span><span class="o">:</span><span class="w"> </span><span class="n">TBLArray</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ASrc</span><span class="o">:</span><span class="w"> </span><span class="n">TBLArray</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="parameters">Parameters</h4>
+<p><strong><code>ADest</code></strong>: <a href="./"><code>TBLArray&lt;T&gt;</code></a></p>
+<p><strong><code>ASrc</code></strong>: <a href="./"><code>TBLArray&lt;T&gt;</code></a></p>
+<h4 id="exceptions">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<hr />
+<h3 id="Create"><span class="twemoji" title="Constructor"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23 12-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68z"/></svg></span>  <span class="twemoji" title="Class constructor"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg></span> <code class="language-delphi highlight"><span class="n">Create</span></code></h3>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">constructor</span><span class="w"> </span><span class="nf">Create</span></code></p>
+<hr />
+<h3 id="Finalize"><span class="twemoji" title="Destructor"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 4h-3.5l-1-1h-5l-1 1H5v2h14M6 19a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V7H6z"/></svg></span> <code class="language-delphi highlight"><span class="nb">Finalize</span></code></h3>
+<p>Destroys the path. </p>
+<p><code class="language-delphi highlight"><span class="k">destructor</span><span class="w"> </span><span class="nf">Finalize</span><span class="p">(</span><span class="k">var</span><span class="w"> </span><span class="n">ADest</span><span class="o">:</span><span class="w"> </span><span class="n">TBLArray</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">)</span></code></p>
+<h4 id="parameters_1">Parameters</h4>
+<p><strong><code>ADest</code></strong>: <a href="./"><code>TBLArray&lt;T&gt;</code></a></p>
+<h4 id="exceptions_1">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<hr />
+<h3 id="Initialize"><span class="twemoji" title="Constructor"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23 12-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68z"/></svg></span> <code class="language-delphi highlight"><span class="nb">Initialize</span></code></h3>
+<p>Creates a default constructed array. </p>
+<p><code class="language-delphi highlight"><span class="k">constructor</span><span class="w"> </span><span class="nf">Initialize</span><span class="p">(</span><span class="n">out</span><span class="w"> </span><span class="n">ADest</span><span class="o">:</span><span class="w"> </span><span class="n">TBLArray</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">)</span></code></p>
+<h4 id="parameters_2">Parameters</h4>
+<p><strong><code>ADest</code></strong>: <a href="./"><code>TBLArray&lt;T&gt;</code></a></p>
+<h4 id="exceptions_2">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<hr />
+<h2 id="operator-descriptions">Operator Descriptions</h2>
+<h3 id="Equal_0"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Equal(TBLArray, TBLArray)</h3>
+<p>Returns True if two arrays are equal (have the same contents). </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">,</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="n">TBLArray</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h4 id="parameters_3">Parameters</h4>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TBLArray&lt;T&gt;</code></a></p>
+<p><strong><code>ARight</code></strong>: <a href="./"><code>TBLArray&lt;T&gt;</code></a></p>
+<h4 id="returns">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<hr />
+<h3 id="Equal_1"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Equal(TBLArray, Pointer)</h3>
+<p>Used to compare against <code>nil</code> (empty array). </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">Equal</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TBLArray</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h4 id="parameters_4">Parameters</h4>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TBLArray&lt;T&gt;</code></a></p>
+<p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
+<h4 id="returns_1">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<hr />
+<h3 id="NotEqual_0"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TBLArray, TBLArray)</h3>
+<p>Returns True if two arrays are not equal (do not have the same contents). </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">,</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="n">TBLArray</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h4 id="parameters_5">Parameters</h4>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TBLArray&lt;T&gt;</code></a></p>
+<p><strong><code>ARight</code></strong>: <a href="./"><code>TBLArray&lt;T&gt;</code></a></p>
+<h4 id="returns_2">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<hr />
+<h3 id="NotEqual_1"><span class="twemoji" title="Operator"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M11 7a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm0 2h2v6h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NotEqual(TBLArray, Pointer)</h3>
+<p>Used to compare against <code>nil</code> (empty array). </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">operator</span><span class="w"> </span><span class="nf">NotEqual</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ALeft</span><span class="o">:</span><span class="w"> </span><span class="n">TBLArray</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ARight</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h4 id="parameters_6">Parameters</h4>
+<p><strong><code>ALeft</code></strong>: <a href="./"><code>TBLArray&lt;T&gt;</code></a></p>
+<p><strong><code>ARight</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code></p>
+<h4 id="returns_3">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<hr />
+<h2 id="method-descriptions">Method Descriptions</h2>
+<h3 id="Append_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Append(T[])</h3>
+<p>Appends a number of items items passed in <code>AItems</code> to the array. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Append</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AItems</span><span class="o">:</span><span class="w"> </span><span class="k">array</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">T</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
+<h4 id="exceptions_3">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_7">Parameters</h4>
+<p><strong><code>AItems</code></strong>: <code class="language-delphi highlight"><span class="k">array</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">T</span></code></p>
+<h4 id="remarks_3">Remarks</h4>
+<p>The data in <code>AItems</code> cannot point to the same data that the array holds as the function that prepares the append operation has no way to know about the source (it only makes space for new data). It's an undefined behavior in such case. </p>
+<hr />
+<h3 id="Append_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Append(T)</h3>
+<p>Appends <code>AItem</code> to the array. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Append</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AItem</span><span class="o">:</span><span class="w"> </span><span class="n">T</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_4">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_8">Parameters</h4>
+<p><strong><code>AItem</code></strong>: <code class="language-delphi highlight"><span class="n">T</span></code></p>
+<hr />
+<h3 id="AppendData_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> AppendData(P, NativeInt)</h3>
+<p>Appends <code>AItems</code> to the array of length <code>ASize</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">AppendData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AItems</span><span class="o">:</span><span class="w"> </span><span class="n">P</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ASize</span><span class="o">:</span><span class="w"> </span><span class="n">NativeInt</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_5">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_9">Parameters</h4>
+<p><strong><code>AItems</code></strong>: <code class="language-delphi highlight"><span class="n">P</span></code></p>
+<p><strong><code>ASize</code></strong>: <code class="language-delphi highlight"><span class="n">NativeInt</span></code></p>
+<h4 id="remarks_4">Remarks</h4>
+<p>The implementation guarantees that a <code>AItems</code> pointing to the array data itself would work. </p>
+<hr />
+<h3 id="AppendData_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> AppendData(TBLArrayView&lt;T&gt;)</h3>
+<p>Appends items to the array of the given array <code>AView</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">AppendData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AView</span><span class="o">:</span><span class="w"> </span><span class="n">TBLArrayView</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_6">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_10">Parameters</h4>
+<p><strong><code>AView</code></strong>: <a href="../TBLArrayView_1/"><code>TBLArrayView&lt;T&gt;</code></a></p>
+<h4 id="remarks_5">Remarks</h4>
+<p>The implementation guarantees that a <code>AView</code> pointing to the array data itself would work. </p>
+<hr />
+<h3 id="Assign"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Assign(T[])</h3>
+<p>Replaces the content of the array with the items passed in <code>AItems</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Assign</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AItems</span><span class="o">:</span><span class="w"> </span><span class="k">array</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">T</span><span class="p">)</span></code></p>
+<h4 id="exceptions_7">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_11">Parameters</h4>
+<p><strong><code>AItems</code></strong>: <code class="language-delphi highlight"><span class="k">array</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">T</span></code></p>
+<hr />
+<h3 id="AssignData_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> AssignData(P, NativeInt)</h3>
+<p>Replaces the content of the array <code>AItems</code> of length <code>ASize</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">AssignData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AItems</span><span class="o">:</span><span class="w"> </span><span class="n">P</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ASize</span><span class="o">:</span><span class="w"> </span><span class="n">NativeInt</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_8">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_12">Parameters</h4>
+<p><strong><code>AItems</code></strong>: <code class="language-delphi highlight"><span class="n">P</span></code></p>
+<p><strong><code>ASize</code></strong>: <code class="language-delphi highlight"><span class="n">NativeInt</span></code></p>
+<h4 id="remarks_6">Remarks</h4>
+<p>The implementation can handle items pointing to the array's data as well, so it's possible to create a slice of the array if required. </p>
+<hr />
+<h3 id="AssignData_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> AssignData(TBLArrayView&lt;T&gt;)</h3>
+<p>Replaces the content of the array by items in the passed array <code>AView</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">AssignData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AView</span><span class="o">:</span><span class="w"> </span><span class="n">TBLArrayView</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_9">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_13">Parameters</h4>
+<p><strong><code>AView</code></strong>: <a href="../TBLArrayView_1/"><code>TBLArrayView&lt;T&gt;</code></a></p>
+<h4 id="remarks_7">Remarks</h4>
+<p>The implementation can handle <code>AView</code> pointing to the array's data as well, so it's possible to create a slice of the array if required. </p>
+<hr />
+<h3 id="AssignDeep"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> AssignDeep(TBLArray&lt;T&gt;)</h3>
+<p>Copy assignment, but creates a deep copy of the <code>AOther</code> array instead of weak copy. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">AssignDeep</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AOther</span><span class="o">:</span><span class="w"> </span><span class="n">TBLArray</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_10">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_14">Parameters</h4>
+<p><strong><code>AOther</code></strong>: <a href="./"><code>TBLArray&lt;T&gt;</code></a></p>
+<hr />
+<h3 id="AssignExternalData"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> AssignExternalData(P, NativeInt, NativeInt, TBLDataAccessFlags, TBLDestroyExternalDataFunc, Pointer)</h3>
+<p>Assign an external buffer to the array, which would replace the existing content.
+<param>External data buffer to use (cannot be nil).</param><param>Size of the data buffer in items.</param><param>Capacity of the buffer, cannot be zero or smaller than <code>ASize</code>.</param><param>Flags that describe whether the data is read-only or read-write.</param><param>(Optional) function that would be called when the array is destroyed (can be nil if you don't need it).</param><param>(Optional) user data passed to <code>ADestroyFunc</code>.</param></p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">AssignExternalData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AData</span><span class="o">:</span><span class="w"> </span><span class="n">P</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ASize</span><span class="o">,</span><span class="w"> </span><span class="w">  </span><span class="n">ACapacity</span><span class="o">:</span><span class="w"> </span><span class="n">NativeInt</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AAccessFlags</span><span class="o">:</span><span class="w"> </span><span class="n">TBLDataAccessFlags</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ADestroyFunc</span><span class="o">:</span><span class="w"> </span><span class="n">TBLDestroyExternalDataFunc</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nil</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AUserData</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nil</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_11">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_15">Parameters</h4>
+<p><strong><code>AData</code></strong>: <code class="language-delphi highlight"><span class="n">P</span></code></p>
+<p><strong><code>ASize</code></strong>: <code class="language-delphi highlight"><span class="n">NativeInt</span></code></p>
+<p><strong><code>ACapacity</code></strong>: <code class="language-delphi highlight"><span class="n">NativeInt</span></code></p>
+<p><strong><code>AAccessFlags</code></strong>: <a href="../../types/TBLDataAccessFlags/"><code>TBLDataAccessFlags</code></a></p>
+<p><strong><code>ADestroyFunc</code></strong>: <a href="../../types/TBLDestroyExternalDataFunc/"><code>TBLDestroyExternalDataFunc = nil</code></a></p>
+<p><strong><code>AUserData</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nil</span></code></p>
+<hr />
+<h3 id="At"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> At(NativeInt)</h3>
+<p>Returns the array item at the given <code>AIndex</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">At</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AIndex</span><span class="o">:</span><span class="w"> </span><span class="n">NativeInt</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">T</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="parameters_16">Parameters</h4>
+<p><strong><code>AIndex</code></strong>: <code class="language-delphi highlight"><span class="n">NativeInt</span></code></p>
+<h4 id="returns_4">Returns</h4>
+<p><code class="language-delphi highlight"><span class="n">T</span></code></p>
+<h4 id="remarks_8">Remarks</h4>
+<p>The index must be valid, which means it has to be less than the array length. Accessing items out of range is undefined behavior that would be caught by assertions in debug builds. </p>
+<hr />
+<h3 id="Clear"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Clear</h3>
+<p>Clears the content of the array. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Clear</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_12">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<h4 id="remarks_9">Remarks</h4>
+<p>If the array uses a dynamically allocated memory and the instance is mutable the memory won't be released, it will be reused instead. Consider using <code>Reset</code> if you want to release the memory in such case instead. </p>
+<hr />
+<h3 id="Equals"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Equals(TBLArray&lt;T&gt;)</h3>
+<p>Returns whether the content of this array and <code>AOther</code> matches. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">Equals</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AOther</span><span class="o">:</span><span class="w"> </span><span class="n">TBLArray</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="parameters_17">Parameters</h4>
+<p><strong><code>AOther</code></strong>: <a href="./"><code>TBLArray&lt;T&gt;</code></a></p>
+<h4 id="returns_5">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<hr />
+<h3 id="First"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> First</h3>
+<p>Returns a reference to the first item. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">First</span><span class="o">:</span><span class="w"> </span><span class="n">P</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="returns_6">Returns</h4>
+<p><code class="language-delphi highlight"><span class="n">P</span></code></p>
+<h4 id="remarks_10">Remarks</h4>
+<p>The array must have at least one item otherwise calling <code>First</code> would point to the end of the array, which is not initialized, and such reference would be invalid. Debug builds would catch this condition with an assertion. </p>
+<hr />
+<h3 id="IndexOf_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> IndexOf(T, NativeInt)</h3>
+<p>Returns the index at which a given <code>AItem</code> can be found in the array starting from <code>AFromIndex</code>, or -1 if not found. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">IndexOf</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AItem</span><span class="o">:</span><span class="w"> </span><span class="n">T</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AFromIndex</span><span class="o">:</span><span class="w"> </span><span class="n">NativeInt</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">NativeInt</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
+<h4 id="parameters_18">Parameters</h4>
+<p><strong><code>AItem</code></strong>: <code class="language-delphi highlight"><span class="n">T</span></code></p>
+<p><strong><code>AFromIndex</code></strong>: <code class="language-delphi highlight"><span class="n">NativeInt</span></code></p>
+<h4 id="returns_7">Returns</h4>
+<p><code class="language-delphi highlight"><span class="n">NativeInt</span></code></p>
+<hr />
+<h3 id="IndexOf_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> IndexOf(T)</h3>
+<p>Returns the first index at which a given <code>AItem</code> can be found in the array, or -1 if not found. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">IndexOf</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AItem</span><span class="o">:</span><span class="w"> </span><span class="n">T</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">NativeInt</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="parameters_19">Parameters</h4>
+<p><strong><code>AItem</code></strong>: <code class="language-delphi highlight"><span class="n">T</span></code></p>
+<h4 id="returns_8">Returns</h4>
+<p><code class="language-delphi highlight"><span class="n">NativeInt</span></code></p>
+<hr />
+<h3 id="Insert_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Insert(NativeInt, T[])</h3>
+<p>Inserts a number of items passed in <code>AItems</code> at the given <code>AIndex</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Insert</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AIndex</span><span class="o">:</span><span class="w"> </span><span class="n">NativeInt</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AItems</span><span class="o">:</span><span class="w"> </span><span class="k">array</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">T</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
+<h4 id="exceptions_13">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_20">Parameters</h4>
+<p><strong><code>AIndex</code></strong>: <code class="language-delphi highlight"><span class="n">NativeInt</span></code></p>
+<p><strong><code>AItems</code></strong>: <code class="language-delphi highlight"><span class="k">array</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">T</span></code></p>
+<h4 id="remarks_11">Remarks</h4>
+<p>The data in <code>AItems</code> cannot point to the same data that the array holds as the function that prepares the insert operation has no way to know about the source (it only makes space for new data). It's an undefined behavior in such case. </p>
+<hr />
+<h3 id="Insert_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Insert(NativeInt, T)</h3>
+<p>Inserts <code>AItem</code> at the given <code>AIndex</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Insert</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AIndex</span><span class="o">:</span><span class="w"> </span><span class="n">NativeInt</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AItem</span><span class="o">:</span><span class="w"> </span><span class="n">T</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
+<h4 id="exceptions_14">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_21">Parameters</h4>
+<p><strong><code>AIndex</code></strong>: <code class="language-delphi highlight"><span class="n">NativeInt</span></code></p>
+<p><strong><code>AItem</code></strong>: <code class="language-delphi highlight"><span class="n">T</span></code></p>
+<hr />
+<h3 id="InsertData_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> InsertData(NativeInt, P, NativeInt)</h3>
+<p>Prepends <code>AItems</code> to the array of length <code>ASize</code> at the given <code>AIndex</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">InsertData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AIndex</span><span class="o">:</span><span class="w"> </span><span class="n">NativeInt</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AItems</span><span class="o">:</span><span class="w"> </span><span class="n">P</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ASize</span><span class="o">:</span><span class="w"> </span><span class="n">NativeInt</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_15">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_22">Parameters</h4>
+<p><strong><code>AIndex</code></strong>: <code class="language-delphi highlight"><span class="n">NativeInt</span></code></p>
+<p><strong><code>AItems</code></strong>: <code class="language-delphi highlight"><span class="n">P</span></code></p>
+<p><strong><code>ASize</code></strong>: <code class="language-delphi highlight"><span class="n">NativeInt</span></code></p>
+<h4 id="remarks_12">Remarks</h4>
+<p>The implementation guarantees that a <code>AItems</code> pointing to the array data itself would work. </p>
+<hr />
+<h3 id="InsertData_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> InsertData(NativeInt, TBLArrayView&lt;T&gt;)</h3>
+<p>Inserts items to the array of the given array <code>AView</code> at the given <code>AIndex</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">InsertData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AIndex</span><span class="o">:</span><span class="w"> </span><span class="n">NativeInt</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AView</span><span class="o">:</span><span class="w"> </span><span class="n">TBLArrayView</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_16">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_23">Parameters</h4>
+<p><strong><code>AIndex</code></strong>: <code class="language-delphi highlight"><span class="n">NativeInt</span></code></p>
+<p><strong><code>AView</code></strong>: <a href="../TBLArrayView_1/"><code>TBLArrayView&lt;T&gt;</code></a></p>
+<h4 id="remarks_13">Remarks</h4>
+<p>The implementation guarantees that a <code>AView</code> pointing to the array data itself would work. </p>
+<hr />
+<h3 id="InsertOp"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> InsertOp(NativeInt, NativeInt)</h3>
+<p>Insert operation, the semantics is similar to <code>ModifyOp</code>, however, ASize items are inserted at the given <code>AIndex</code> instead of assigned or appended.</p>
+<p>The caller is responsible for initializing the returned data. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">InsertOp</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AIndex</span><span class="o">,</span><span class="w"> </span><span class="n">ASize</span><span class="o">:</span><span class="w"> </span><span class="n">NativeInt</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">P</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_17">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_24">Parameters</h4>
+<p><strong><code>AIndex</code></strong>: <code class="language-delphi highlight"><span class="n">NativeInt</span></code></p>
+<p><strong><code>ASize</code></strong>: <code class="language-delphi highlight"><span class="n">NativeInt</span></code></p>
+<h4 id="returns_9">Returns</h4>
+<p><code class="language-delphi highlight"><span class="n">P</span></code></p>
+<hr />
+<h3 id="Last"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Last</h3>
+<p>Returns a reference to the last item. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">Last</span><span class="o">:</span><span class="w"> </span><span class="n">P</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="returns_10">Returns</h4>
+<p><code class="language-delphi highlight"><span class="n">P</span></code></p>
+<h4 id="remarks_14">Remarks</h4>
+<p>The array must have at least one item otherwise calling <code>Last</code> would point to the end of the array, which is not initialized, and such reference would be invalid. Debug builds would catch this condition with an assertion. </p>
+<hr />
+<h3 id="LastIndexOf_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> LastIndexOf(T, NativeInt)</h3>
+<p>Returns the index at which a given <code>AItem</code> can be found in the array starting from <code>AFromIndex</code> and ending at 0, or -1 if not present. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">LastIndexOf</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AItem</span><span class="o">:</span><span class="w"> </span><span class="n">T</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AFromIndex</span><span class="o">:</span><span class="w"> </span><span class="n">NativeInt</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">NativeInt</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
+<h4 id="parameters_25">Parameters</h4>
+<p><strong><code>AItem</code></strong>: <code class="language-delphi highlight"><span class="n">T</span></code></p>
+<p><strong><code>AFromIndex</code></strong>: <code class="language-delphi highlight"><span class="n">NativeInt</span></code></p>
+<h4 id="returns_11">Returns</h4>
+<p><code class="language-delphi highlight"><span class="n">NativeInt</span></code></p>
+<hr />
+<h3 id="LastIndexOf_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> LastIndexOf(T)</h3>
+<p>Returns the last index at which a given <code>AItem</code> can be found in the array, or -1 if not present. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">LastIndexOf</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AItem</span><span class="o">:</span><span class="w"> </span><span class="n">T</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">NativeInt</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="parameters_26">Parameters</h4>
+<p><strong><code>AItem</code></strong>: <code class="language-delphi highlight"><span class="n">T</span></code></p>
+<h4 id="returns_12">Returns</h4>
+<p><code class="language-delphi highlight"><span class="n">NativeInt</span></code></p>
+<hr />
+<h3 id="MakeMutable"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> MakeMutable</h3>
+<p>Makes the array mutable by possibly creating a deep copy of the data if it's either read-only or shared with another array. Returns a pointer to the beginning of mutable data in <code>dataOut</code>.</p>
+<div class="language-Delphi highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="w">  </span><span class="k">var</span><span class="w"> </span><span class="n">A</span><span class="o">:</span><span class="w"> </span><span class="n">TBLArray</span><span class="err">&amp;</span><span class="n">lt</span><span class="o">;</span><span class="kt">Byte</span><span class="o">&gt;;</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="w">  </span><span class="n">A</span><span class="o">.</span><span class="n">Append</span><span class="p">([</span><span class="mi">0</span><span class="o">,</span><span class="w"> </span><span class="mi">1</span><span class="o">,</span><span class="w"> </span><span class="mi">2</span><span class="o">,</span><span class="w"> </span><span class="mi">3</span><span class="o">,</span><span class="w"> </span><span class="mi">4</span><span class="o">,</span><span class="w"> </span><span class="mi">5</span><span class="o">,</span><span class="w"> </span><span class="mi">6</span><span class="o">,</span><span class="w"> </span><span class="mi">7</span><span class="p">])</span><span class="o">;</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="w">  </span><span class="k">var</span><span class="w"> </span><span class="n">Data</span><span class="w"> </span><span class="o">:=</span><span class="w"> </span><span class="n">A</span><span class="o">.</span><span class="n">MakeMutable</span><span class="o">;</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="w">  </span><span class="c1">// Data is a mutable pointer to array content of 8 items.</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="w">  </span><span class="n">Data</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">100</span><span class="o">;</span>
+</span><span id="__span-1-8"><a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>
+</span><span id="__span-1-9"><a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a><span class="w">  </span><span class="c1">// Calling array member functions could invalidate Data.</span>
+</span><span id="__span-1-10"><a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="w">  </span><span class="n">A</span><span class="o">.</span><span class="n">Append</span><span class="p">(</span><span class="mi">9</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="c1">// You shouldn&#39;t use Data afterwards.</span>
+</span></code></pre></div>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">MakeMutable</span><span class="o">:</span><span class="w"> </span><span class="n">P</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_18">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<h4 id="returns_13">Returns</h4>
+<p><code class="language-delphi highlight"><span class="n">P</span></code></p>
+<hr />
+<h3 id="Modify"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Modify(TBLModifyOp, T[])</h3>
+<p>Similar to <code>ModifyOp</code>, but the items to assign/append to the array are given after the <code>AOp</code> argument. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Modify</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AOp</span><span class="o">:</span><span class="w"> </span><span class="n">TBLModifyOp</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AItems</span><span class="o">:</span><span class="w"> </span><span class="k">array</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">T</span><span class="p">)</span></code></p>
+<h4 id="exceptions_19">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_27">Parameters</h4>
+<p><strong><code>AOp</code></strong>: <a href="../../types/TBLModifyOp/"><code>TBLModifyOp</code></a></p>
+<p><strong><code>AItems</code></strong>: <code class="language-delphi highlight"><span class="k">array</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">T</span></code></p>
+<hr />
+<h3 id="ModifyOp"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> ModifyOp(TBLModifyOp, NativeInt)</h3>
+<p>Modify operation is similar to <code>MakeMutable</code>, however, the <code>AOp</code> argument specifies the desired array operation, and <code>ASize</code> specified the number of items to assign or append. Returns a pointer to the first item to be either assigned or appended and it points to an uninitialized memory.</p>
+<p>Please note that assignments mean to wipe out the whole array content and to set the length of the array to <code>ASize</code>. The caller is responsible for initializing the returned data. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">ModifyOp</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AOp</span><span class="o">:</span><span class="w"> </span><span class="n">TBLModifyOp</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ASize</span><span class="o">:</span><span class="w"> </span><span class="n">NativeInt</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">P</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_20">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_28">Parameters</h4>
+<p><strong><code>AOp</code></strong>: <a href="../../types/TBLModifyOp/"><code>TBLModifyOp</code></a></p>
+<p><strong><code>ASize</code></strong>: <code class="language-delphi highlight"><span class="n">NativeInt</span></code></p>
+<h4 id="returns_14">Returns</h4>
+<p><code class="language-delphi highlight"><span class="n">P</span></code></p>
+<hr />
+<h3 id="Prepend_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Prepend(T[])</h3>
+<p>Prepends a number of items passed in <code>AItems</code> to the array. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Prepend</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AItems</span><span class="o">:</span><span class="w"> </span><span class="k">array</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">T</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
+<h4 id="exceptions_21">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_29">Parameters</h4>
+<p><strong><code>AItems</code></strong>: <code class="language-delphi highlight"><span class="k">array</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="n">T</span></code></p>
+<h4 id="remarks_15">Remarks</h4>
+<p>The data in <code>AItems</code> cannot point to the same data that the array holds as the function that prepares the prepend operation has no way to know about the source (it only makes space for new data). It's an undefined behavior in such case. </p>
+<hr />
+<h3 id="Prepend_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Prepend(T)</h3>
+<p>Prepends <code>AItem</code> to the array. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Prepend</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AItem</span><span class="o">:</span><span class="w"> </span><span class="n">T</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_22">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_30">Parameters</h4>
+<p><strong><code>AItem</code></strong>: <code class="language-delphi highlight"><span class="n">T</span></code></p>
+<hr />
+<h3 id="PrependData_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> PrependData(P, NativeInt)</h3>
+<p>Prepends <code>AItems</code> to the array of length <code>ASize</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">PrependData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AItems</span><span class="o">:</span><span class="w"> </span><span class="n">P</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ASize</span><span class="o">:</span><span class="w"> </span><span class="n">NativeInt</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_23">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_31">Parameters</h4>
+<p><strong><code>AItems</code></strong>: <code class="language-delphi highlight"><span class="n">P</span></code></p>
+<p><strong><code>ASize</code></strong>: <code class="language-delphi highlight"><span class="n">NativeInt</span></code></p>
+<h4 id="remarks_16">Remarks</h4>
+<p>The implementation guarantees that a <code>AItems</code> pointing to the array data itself would work. </p>
+<hr />
+<h3 id="PrependData_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> PrependData(TBLArrayView&lt;T&gt;)</h3>
+<p>Prepends items to the array of the given array <code>AView</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">PrependData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AView</span><span class="o">:</span><span class="w"> </span><span class="n">TBLArrayView</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_24">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_32">Parameters</h4>
+<p><strong><code>AView</code></strong>: <a href="../TBLArrayView_1/"><code>TBLArrayView&lt;T&gt;</code></a></p>
+<h4 id="remarks_17">Remarks</h4>
+<p>The implementation guarantees that a <code>AView</code> pointing to the array data itself would work. </p>
+<hr />
+<h3 id="RefAt"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> RefAt(NativeInt)</h3>
+<p>Returns a reference to the array item at the given <code>AIndex</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">RefAt</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AIndex</span><span class="o">:</span><span class="w"> </span><span class="n">NativeInt</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">P</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="parameters_33">Parameters</h4>
+<p><strong><code>AIndex</code></strong>: <code class="language-delphi highlight"><span class="n">NativeInt</span></code></p>
+<h4 id="returns_15">Returns</h4>
+<p><code class="language-delphi highlight"><span class="n">P</span></code></p>
+<h4 id="remarks_18">Remarks</h4>
+<p>The index must be valid, which means it has to be less than the array length. Accessing items out of range is undefined behavior that would be caught by assertions in debug builds. </p>
+<hr />
+<h3 id="Remove_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Remove(TBLRange)</h3>
+<p>Removes <code>ARange</code> of items. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Remove</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ARange</span><span class="o">:</span><span class="w"> </span><span class="n">TBLRange</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_25">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_34">Parameters</h4>
+<p><strong><code>ARange</code></strong>: <a href="../TBLRange/"><code>TBLRange</code></a></p>
+<hr />
+<h3 id="Remove_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Remove(NativeInt)</h3>
+<p>Removes an item at the given <code>Andex</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Remove</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AIndex</span><span class="o">:</span><span class="w"> </span><span class="n">NativeInt</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_26">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_35">Parameters</h4>
+<p><strong><code>AIndex</code></strong>: <code class="language-delphi highlight"><span class="n">NativeInt</span></code></p>
+<hr />
+<h3 id="Replace"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Replace(NativeInt, T)</h3>
+<p>Replaces an item at the given <code>AIndex</code> by <code>AItem</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Replace</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AIndex</span><span class="o">:</span><span class="w"> </span><span class="n">NativeInt</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AItem</span><span class="o">:</span><span class="w"> </span><span class="n">T</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_27">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_36">Parameters</h4>
+<p><strong><code>AIndex</code></strong>: <code class="language-delphi highlight"><span class="n">NativeInt</span></code></p>
+<p><strong><code>AItem</code></strong>: <code class="language-delphi highlight"><span class="n">T</span></code></p>
+<hr />
+<h3 id="ReplaceData_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> ReplaceData(TBLRange, P, NativeInt)</h3>
+<p>Replaces the given <code>ARange</code> of items by <code>AItems</code> of length <code>ASize</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">ReplaceData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ARange</span><span class="o">:</span><span class="w"> </span><span class="n">TBLRange</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AItems</span><span class="o">:</span><span class="w"> </span><span class="n">P</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">ASize</span><span class="o">:</span><span class="w"> </span><span class="n">NativeInt</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_28">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_37">Parameters</h4>
+<p><strong><code>ARange</code></strong>: <a href="../TBLRange/"><code>TBLRange</code></a></p>
+<p><strong><code>AItems</code></strong>: <code class="language-delphi highlight"><span class="n">P</span></code></p>
+<p><strong><code>ASize</code></strong>: <code class="language-delphi highlight"><span class="n">NativeInt</span></code></p>
+<hr />
+<h3 id="ReplaceData_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> ReplaceData(TBLRange, TBLArrayView&lt;T&gt;)</h3>
+<p>Replaces the given <code>ARange</code> of items by the given array <code>AView</code>. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">ReplaceData</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ARange</span><span class="o">:</span><span class="w"> </span><span class="n">TBLRange</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AView</span><span class="o">:</span><span class="w"> </span><span class="n">TBLArrayView</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_29">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_38">Parameters</h4>
+<p><strong><code>ARange</code></strong>: <a href="../TBLRange/"><code>TBLRange</code></a></p>
+<p><strong><code>AView</code></strong>: <a href="../TBLArrayView_1/"><code>TBLArrayView&lt;T&gt;</code></a></p>
+<hr />
+<h3 id="Reserve"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Reserve(NativeInt)</h3>
+<p>Reserves the array capacity to hold at least <code>AMinCapacity</code> items. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Reserve</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AMinCapacity</span><span class="o">:</span><span class="w"> </span><span class="n">NativeInt</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_30">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_39">Parameters</h4>
+<p><strong><code>AMinCapacity</code></strong>: <code class="language-delphi highlight"><span class="n">NativeInt</span></code></p>
+<hr />
+<h3 id="Reset"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Reset</h3>
+<p>Resets the array into a default constructed state by clearing its content and releasing its memory. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Reset</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_31">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<hr />
+<h3 id="Resize"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Resize(NativeInt, T)</h3>
+<p>Resizes the array to <code>ASize</code> items.</p>
+<p>If <code>ASize</code> is greater than the array length then all new items will be initialized by <code>AFill</code> item. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Resize</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ASize</span><span class="o">:</span><span class="w"> </span><span class="n">NativeInt</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AFill</span><span class="o">:</span><span class="w"> </span><span class="n">T</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_32">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_40">Parameters</h4>
+<p><strong><code>ASize</code></strong>: <code class="language-delphi highlight"><span class="n">NativeInt</span></code></p>
+<p><strong><code>AFill</code></strong>: <code class="language-delphi highlight"><span class="n">T</span></code></p>
+<hr />
+<h3 id="Shrink"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Shrink</h3>
+<p>Shrinks the capacity of the array to fit its length.</p>
+<p>Some array operations like <code>Append</code> may grow the array more than necessary to make it faster when such manipulation operations are called consecutively. When you are done with modifications and you know the lifetime of the array won't be short you can use <code>Shrink</code> to fit its memory requirements to the number of items it stores, which could optimize the application's memory requirements. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Shrink</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_33">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<hr />
+<h3 id="Swap"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Swap(TBLArray&lt;T&gt;)</h3>
+<p>Swaps the content of this array with the <code>AOther</code> array. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Swap</span><span class="p">(</span><span class="k">var</span><span class="w"> </span><span class="n">AOther</span><span class="o">:</span><span class="w"> </span><span class="n">TBLArray</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="parameters_41">Parameters</h4>
+<p><strong><code>AOther</code></strong>: <a href="./"><code>TBLArray&lt;T&gt;</code></a></p>
+<hr />
+<h3 id="ToArray"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> ToArray</h3>
+<p>Converts this array to a Delphi <code>TArray&lt;t&gt;</code>. </t></p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">ToArray</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span></code></p>
+<h4 id="returns_16">Returns</h4>
+<p><code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span></code></p>
+<hr />
+<h3 id="Truncate"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Truncate(NativeInt)</h3>
+<p>Truncates the length of the array to maximum <code>AMaxSize</code> items.</p>
+<p>If the length of the array is less than <code>AMaxSize</code> then truncation does nothing. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Truncate</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AMaxSize</span><span class="o">:</span><span class="w"> </span><span class="n">NativeInt</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="exceptions_34">Exceptions</h4>
+<p><strong><code>EBlend2DError</code>: </strong>Raised on failure.</p>
+<h4 id="parameters_42">Parameters</h4>
+<p><strong><code>AMaxSize</code></strong>: <code class="language-delphi highlight"><span class="n">NativeInt</span></code></p>
+<hr />
+<h3 id="View"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> View</h3>
+<p>Returns the array data as <code>TBLArrayView&lt;t&gt;</code>. </t></p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">View</span><span class="o">:</span><span class="w"> </span><span class="n">TBLArrayView</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="returns_17">Returns</h4>
+<p><a href="../TBLArrayView_1/"><code>TBLArrayView&lt;T&gt;</code></a></p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../TBLArc/" class="md-footer__link md-footer__link--prev" aria-label="Previous: TBLArc">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                TBLArc
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../P/" class="md-footer__link md-footer__link--next" aria-label="Next: TBLArray&amp;lt;T&gt;.P">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                TBLArray&lt;T>.P
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Erik van Bilsen
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/neslib/DelphiBlend2D" target="_blank" rel="noopener" title="GitHub neslib" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://blog.grijjy.com/author/erikvanbilsen/" target="_blank" rel="noopener" title="Blog" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="m61.7 169.4 101.5 278C92.2 413 43.3 340.2 43.3 256c0-30.9 6.6-60.1 18.4-86.6m337.9 75.9c0-26.3-9.4-44.5-17.5-58.7-10.8-17.5-20.9-32.4-20.9-49.9 0-19.6 14.8-37.8 35.7-37.8.9 0 1.8.1 2.8.2-37.9-34.7-88.3-55.9-143.7-55.9-74.3 0-139.7 38.1-177.8 95.9 5 .2 9.7.3 13.7.3 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l77.5 230.4L249.8 247l-33.1-90.8c-11.5-.7-22.3-2-22.3-2-11.5-.7-10.1-18.2 1.3-17.5 0 0 35.1 2.7 56 2.7 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l76.9 228.7 21.2-70.9c9-29.4 16-50.5 16-68.7m-139.9 29.3-63.8 185.5c19.1 5.6 39.2 8.7 60.1 8.7 24.8 0 48.5-4.3 70.6-12.1-.6-.9-1.1-1.9-1.5-2.9zm183-120.7c.9 6.8 1.4 14 1.4 21.9 0 21.6-4 45.8-16.2 76.2l-65 187.9C426.2 403 468.7 334.5 468.7 256c0-37-9.4-71.8-26-102.1M504 256c0 136.8-111.3 248-248 248C119.2 504 8 392.7 8 256 8 119.2 119.2 8 256 8c136.7 0 248 111.2 248 248m-11.4 0c0-130.5-106.2-236.6-236.6-236.6C125.5 19.4 19.4 125.5 19.4 256S125.6 492.6 256 492.6c130.5 0 236.6-106.1 236.6-236.6"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.code.copy", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.prune", "navigation.top", "navigation.footer", "navigation.indexes", "search.suggest", "search.share"], "search": "../../../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>

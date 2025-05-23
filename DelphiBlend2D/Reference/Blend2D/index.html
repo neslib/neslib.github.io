@@ -1,0 +1,2699 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://github.com/neslib/DelphiBlend2D/Reference/Blend2D/">
+      
+      
+        <link rel="prev" href="../../MultithreadedRendering/">
+      
+      
+        <link rel="next" href="classes/EBlend2DError/">
+      
+      
+      <link rel="icon" href="../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.5.48">
+    
+    
+      
+        <title>Blend2D - DelphiBlend2D</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.6f8fc17f.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#blend2d" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="DelphiBlend2D" class="md-header__button md-logo" aria-label="DelphiBlend2D" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            DelphiBlend2D
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Blend2D
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m14.3 16-.7-2h-3.2l-.7 2H7.8L11 7h2l3.2 9zM20 8.69V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12zm-9.15 3.96h2.3L12 9z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="indigo"  aria-label="Switch to system preference"  type="radio" name="__palette" id="__palette_2">
+    
+      <label class="md-header__button md-icon" title="Switch to system preference" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12s-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+          <a href="javascript:void(0)" class="md-search__icon md-icon" title="Share" aria-label="Share" data-clipboard data-clipboard-text="" data-md-component="search-share" tabindex="-1">
+            
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M18 16.08c-.76 0-1.44.3-1.96.77L8.91 12.7c.05-.23.09-.46.09-.7s-.04-.47-.09-.7l7.05-4.11c.54.5 1.25.81 2.04.81a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3c0 .24.04.47.09.7L8.04 9.81C7.5 9.31 6.79 9 6 9a3 3 0 0 0-3 3 3 3 0 0 0 3 3c.79 0 1.5-.31 2.04-.81l7.12 4.15c-.05.21-.08.43-.08.66 0 1.61 1.31 2.91 2.92 2.91s2.92-1.3 2.92-2.91A2.92 2.92 0 0 0 18 16.08"/></svg>
+          </a>
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/neslib/DelphiBlend2D" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    DelphiBlend2D
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
+    
+  
+  Home
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+    
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="DelphiBlend2D" class="md-nav__button md-logo" aria-label="DelphiBlend2D" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    DelphiBlend2D
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/neslib/DelphiBlend2D" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81"/></svg>
+  </div>
+  <div class="md-source__repository">
+    DelphiBlend2D
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../.." class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Home
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  <span class="md-ellipsis">
+    Reference
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Reference
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="./" class="md-nav__link md-nav__link--active">
+              
+  
+  <span class="md-ellipsis">
+    Blend2D
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link md-nav__link--active" for="__nav_2_1" id="__nav_2_1_label" tabindex="0">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            Blend2D
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="classes/EBlend2DError/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Classes & Records
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="types/PBLApproximationOptions/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Types
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="routines/BLAbs_0/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Routines
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#classes-records" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes &amp; Records
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#types" class="md-nav__link">
+    <span class="md-ellipsis">
+      Types
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#routines" class="md-nav__link">
+    <span class="md-ellipsis">
+      Routines
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="blend2d">Blend2D</h1>
+<h2 id="classes-records">Classes &amp; Records</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="classes/EBlend2DError/">EBlend2DError</a></td>
+<td>Type of exception that is raised for Blend2D errors. Exceptions are enabled by default, but can be disabled using <code>BLSetErrorHandler</code>.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLApproximationOptions/">TBLApproximationOptions</a></td>
+<td>Options used to describe how geometry is approximated.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLArc/">TBLArc</a></td>
+<td>Arc specified as [CX, CY, RX, RY, Start, Sweep] using <code>Double</code> as a storage type.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLArray_1/">TBLArray&lt;T&gt;</a></td>
+<td>Generic array container.</td>
+</tr>
+<tr>
+<td><a href="classes/P/">TBLArray&lt;T&gt;.P</a></td>
+<td>A pointer to type <code>T</code>.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLArrayView_1/">TBLArrayView&lt;T&gt;</a></td>
+<td>Array view of <code>T</code>.</td>
+</tr>
+<tr>
+<td><a href="classes/P/">TBLArrayView&lt;T&gt;.P</a></td>
+<td>A pointer to type <code>T</code>.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLBitArray/">TBLBitArray</a></td>
+<td>BitArray container.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLBox/">TBLBox</a></td>
+<td>Box specified as [X0, Y0, X1, Y1] using <code>Double</code> as a storage type.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLBoxI/">TBLBoxI</a></td>
+<td>Box specified as [X0, Y0, X1, Y1] using <code>Integer</code> as a storage type.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLCircle/">TBLCircle</a></td>
+<td>Circle specified as [CX, CY, R] using <code>Double</code> as a storage type.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLConicGradientValues/">TBLConicGradientValues</a></td>
+<td>Conic gradient values packed into a structure.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLContext/">TBLContext</a></td>
+<td>Rendering context.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLContextCookie/">TBLContextCookie</a></td>
+<td>Holds an arbitrary 128-bit value (cookie) that can be used to match other cookies. Blend2D uses cookies in places where it allows to "lock" some state that can only be unlocked by a matching cookie. Please don't confuse cookies with a security of any kind, it's just an arbitrary data that must match to proceed with a certain operation.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLContextCreateInfo/">TBLContextCreateInfo</a></td>
+<td>Information that can be used to customize the rendering context.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLContextHints/">TBLContextHints</a></td>
+<td>Rendering context hints.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLEllipse/">TBLEllipse</a></td>
+<td>Ellipse specified as [CX, CY, RX, RY] using <code>Double</code> as a storage type.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLFile/">TBLFile</a></td>
+<td>A thin abstraction over a native OS file IO.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLFileInfo/">TBLFileInfo</a></td>
+<td>File information.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLFileSystem/">TBLFileSystem</a></td>
+<td>File-system utilities.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLFont/">TBLFont</a></td>
+<td>Font.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLFontData/">TBLFontData</a></td>
+<td>Font data.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLFontDesignMetrics/">TBLFontDesignMetrics</a></td>
+<td>Design metrics of a font.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLFontFace/">TBLFontFace</a></td>
+<td>Font face.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLFontFaceInfo/">TBLFontFaceInfo</a></td>
+<td>Information of <code>TBLFontFace</code>.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLFontFeatureItem/">TBLFontFeatureItem</a></td>
+<td>Associates a font feature tag with a value. Tag describes the feature (as provided by the font) and <code>Value</code> describes its value. Some features only allow boolean values 0 and 1 and some allow values up to 65535. Values less than 0 and greater than 65535 are invalid, however, only <code>-1</code> should be used as invalid value in general.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLFontFeatureSettings/">TBLFontFeatureSettings</a></td>
+<td>Font feature settings.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLFontFeatureSettingsView/">TBLFontFeatureSettingsView</a></td>
+<td>A view unifying the representation of an internal storage used by <code>TBLFontFeatureSettings</code>.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLFontManager/">TBLFontManager</a></td>
+<td>Font manager.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLFontMatrix/">TBLFontMatrix</a></td>
+<td>2x2 transformation matrix used by <code>TBLFont</code>. It's similar to <code>TBLMatrix2D</code>, however, it doesn't provide a translation part as it's assumed to be zero.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLFontMetrics/">TBLFontMetrics</a></td>
+<td>Scaled <code>TBLFontDesignMetrics</code> based on font size and other properties.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLFontPanose/">TBLFontPanose</a></td>
+<td>Font PANOSE classification.</td>
+</tr>
+<tr>
+<td><a href="classes/TDecorative/">TBLFontPanose.TDecorative</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="classes/TScript/">TBLFontPanose.TScript</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="classes/TSymbol/">TBLFontPanose.TSymbol</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="classes/TText/">TBLFontPanose.TText</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="classes/TBLFontQueryProperties/">TBLFontQueryProperties</a></td>
+<td>Properties that can be used to query <code>TBLFont</code> and <code>TBLFontFace</code>.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLFontTable/">TBLFontTable</a></td>
+<td>A read only data that represents a font table or its sub-table.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLFontUnicodeCoverage/">TBLFontUnicodeCoverage</a></td>
+<td>Font unicode coverage.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLFontVariationItem/">TBLFontVariationItem</a></td>
+<td>Associates a font variation tag with a value.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLFontVariationSettings/">TBLFontVariationSettings</a></td>
+<td>Font variation settings.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLFontVariationSettingsView/">TBLFontVariationSettingsView</a></td>
+<td>A view unifying the representation of an internal storage used by <code>TBLFontVariationSettings</code>.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLFormatInfo/">TBLFormatInfo</a></td>
+<td>Provides a detailed information about a pixel format. Use <code>Query</code> for information of Blend2D native pixel formats.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLGlyphBuffer/">TBLGlyphBuffer</a></td>
+<td>Glyph buffer.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLGlyphInfo/">TBLGlyphInfo</a></td>
+<td>Contains additional information associated with a glyph used by <code>TBLGlyphBuffer</code>.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLGlyphMappingState/">TBLGlyphMappingState</a></td>
+<td>Character to glyph mapping state.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLGlyphPlacement/">TBLGlyphPlacement</a></td>
+<td>Glyph placement.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLGlyphRun/">TBLGlyphRun</a></td>
+<td>TBLGlyphRun describes a set of consecutive glyphs and their placements.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLGlyphRunIterator/">TBLGlyphRunIterator</a></td>
+<td>A helper to iterate over a <code>TBLGlyphRun</code>.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLGradient/">TBLGradient</a></td>
+<td>Gradient.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLGradientStop/">TBLGradientStop</a></td>
+<td>Defines an <code>Offset</code> and <code>Rgba</code> color that is used by <code>TBLGradient</code> to define a linear transition between colors.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLImage/">TBLImage</a></td>
+<td>2D raster image.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLImageCodec/">TBLImageCodec</a></td>
+<td>Image codec.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLImageData/">TBLImageData</a></td>
+<td>Data that describes a raster image. Used by <code>TBLImage</code>.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLImageDecoder/">TBLImageDecoder</a></td>
+<td>Image decoder.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLImageEncoder/">TBLImageEncoder</a></td>
+<td>Image encoder.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLImageInfo/">TBLImageInfo</a></td>
+<td>Image information provided by image codecs.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLLine/">TBLLine</a></td>
+<td>Line specified as [X0, Y0, X1, Y1] using <code>Double</code> as a storage type.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLLinearGradientValues/">TBLLinearGradientValues</a></td>
+<td>Linear gradient values packed into a structure.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLMatrix2D/">TBLMatrix2D</a></td>
+<td>2D matrix represents an affine transformation matrix that can be used to transform geometry and images.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLObjectCore/">TBLObjectCore</a></td>
+<td>Base "class" used by all Blend2D objects.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLPath/">TBLPath</a></td>
+<td>2D vector path.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLPathView/">TBLPathView</a></td>
+<td>2D vector path view provides pointers to vertex and command data along with their size.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLPattern/">TBLPattern</a></td>
+<td>Pattern.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLPixelConverter/">TBLPixelConverter</a></td>
+<td>Pixel converter.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLPixelConverterOptions/">TBLPixelConverterOptions</a></td>
+<td>Pixel conversion options.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLPoint/">TBLPoint</a></td>
+<td>Point specified as [X, Y] using <code>Double</code> as a storage type.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLPointI/">TBLPointI</a></td>
+<td>Point specified as [X, Y] using <code>Integer</code> as a storage type.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLRadialGradientValues/">TBLRadialGradientValues</a></td>
+<td>Radial gradient values packed into a structure.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLRandom/">TBLRandom</a></td>
+<td>Simple pseudo random number generator based on <code>XORSHIFT+</code>, which has 64-bit seed, 128 bits of state, and full period <code>2^128 - 1</code>.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLRange/">TBLRange</a></td>
+<td>Provides start and end indexes. It has the same semantics as Slices in other programming languages - range is always within [Start, Stop) internal (Start is inclusive, Stop is exclusive). It's used to specify a range of an operation of indexed containers like TBLString, TBLArray, TBLGradient, TBLPath, etc...</td>
+</tr>
+<tr>
+<td><a href="classes/TBLRect/">TBLRect</a></td>
+<td>Rectangle specified as [X, Y, W, H] using <code>Double</code> as a storage type.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLRectI/">TBLRectI</a></td>
+<td>Rectangle specified as [X, Y, W, H] using <code>Integer</code> as a storage type.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLRgba/">TBLRgba</a></td>
+<td>128-bit RGBA color stored as 4 32-bit floating point values in [RGBA] order. This record is compatible with Delphi's <code>TAlphaColorF</code> and can be typecase to and from it.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLRgba32/">TBLRgba32</a></td>
+<td>32-bit RGBA color (8-bit per component) stored as <code>$AARRGGBB</code>. This record is compatible with Delphi's <code>TAlphaColor</code> and <code>TAlphaColorRec</code> and can be typecast to and from these.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLRgba64/">TBLRgba64</a></td>
+<td>64-bit RGBA color (8-bit per component) stored as <code>$AAAARRRRGGGGBBBB</code>.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLRoundRect/">TBLRoundRect</a></td>
+<td>Rounded rectangle specified as [X, Y, W, H, RX, RY] using <code>Double</code> as a storage type.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLRuntime/">TBLRuntime</a></td>
+<td>Interface to access Blend2D runtime.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLRuntimeBuildInfo/">TBLRuntimeBuildInfo</a></td>
+<td>Blend2D build information.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLRuntimeLimits/">TBLRuntimeLimits</a></td>
+<td>Blend2D runtime limits.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLRuntimeResourceInfo/">TBLRuntimeResourceInfo</a></td>
+<td>Provides information about resources allocated by Blend2D.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLRuntimeSystemInfo/">TBLRuntimeSystemInfo</a></td>
+<td>System information queried by the runtime.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLSize/">TBLSize</a></td>
+<td>Size specified as [W, H] using <code>Double</code> as a storage type.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLSizeI/">TBLSizeI</a></td>
+<td>Size specified as [W, H] using <code>Integer</code> as a storage type.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLString/">TBLString</a></td>
+<td>Byte string.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLStrokeOptions/">TBLStrokeOptions</a></td>
+<td>Stroke options.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLTextMetrics/">TBLTextMetrics</a></td>
+<td>Text metrics.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLTriangle/">TBLTriangle</a></td>
+<td>Triangle data specified as [X0, Y0, X1, Y1, X2, Y2] using <code>Double</code> as a storage type.</td>
+</tr>
+<tr>
+<td><a href="classes/TBLVar/">TBLVar</a></td>
+<td>Blend2D variant.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="types">Types</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="types/PBLApproximationOptions/">PBLApproximationOptions</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLArc/">PBLArc</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLBox/">PBLBox</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLBoxI/">PBLBoxI</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLCircle/">PBLCircle</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLConicGradientValues/">PBLConicGradientValues</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLContextCookie/">PBLContextCookie</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLContextCreateInfo/">PBLContextCreateInfo</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLContextHints/">PBLContextHints</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLEllipse/">PBLEllipse</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLFileInfo/">PBLFileInfo</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLFontDesignMetrics/">PBLFontDesignMetrics</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLFontFaceInfo/">PBLFontFaceInfo</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLFontFeatureItem/">PBLFontFeatureItem</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLFontFeatureSettingsView/">PBLFontFeatureSettingsView</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLFontMatrix/">PBLFontMatrix</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLFontMetrics/">PBLFontMetrics</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLFontPanose/">PBLFontPanose</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLFontQueryProperties/">PBLFontQueryProperties</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLFontTable/">PBLFontTable</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLFontUnicodeCoverage/">PBLFontUnicodeCoverage</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLFontVariationItem/">PBLFontVariationItem</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLFontVariationSettingsView/">PBLFontVariationSettingsView</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLFormatInfo/">PBLFormatInfo</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLGlyphId/">PBLGlyphId</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLGlyphInfo/">PBLGlyphInfo</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLGlyphMappingState/">PBLGlyphMappingState</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLGlyphPlacement/">PBLGlyphPlacement</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLGlyphRun/">PBLGlyphRun</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLGradientStop/">PBLGradientStop</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLImageData/">PBLImageData</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLImageInfo/">PBLImageInfo</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLLine/">PBLLine</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLLinearGradientValues/">PBLLinearGradientValues</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLMatrix2D/">PBLMatrix2D</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLPixelConverterOptions/">PBLPixelConverterOptions</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLPoint/">PBLPoint</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLPointI/">PBLPointI</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLRadialGradientValues/">PBLRadialGradientValues</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLRange/">PBLRange</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLRect/">PBLRect</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLRectI/">PBLRectI</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLRgba/">PBLRgba</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLRgba32/">PBLRgba32</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLRgba64/">PBLRgba64</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLRoundRect/">PBLRoundRect</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLRuntimeBuildInfo/">PBLRuntimeBuildInfo</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLRuntimeResourceInfo/">PBLRuntimeResourceInfo</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLRuntimeSystemInfo/">PBLRuntimeSystemInfo</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLSize/">PBLSize</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLSizeI/">PBLSizeI</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLStrokeOptions/">PBLStrokeOptions</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLTextMetrics/">PBLTextMetrics</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PBLTriangle/">PBLTriangle</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/PSize_T/">PSize_T</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/Size_T/">Size_T</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/TBLBooleanOp/">TBLBooleanOp</a></td>
+<td>Boolean operator (between A and B).</td>
+</tr>
+<tr>
+<td><a href="types/TBLByteOrder/">TBLByteOrder</a></td>
+<td>Byte order.</td>
+</tr>
+<tr>
+<td><a href="types/TBLCompOp/">TBLCompOp</a></td>
+<td>Composition &amp; blending operator.</td>
+</tr>
+<tr>
+<td><a href="types/TBLContextCreateFlag/">TBLContextCreateFlag</a></td>
+<td>Rendering context creation flags.</td>
+</tr>
+<tr>
+<td><a href="types/TBLContextCreateFlags/">TBLContextCreateFlags</a></td>
+<td>Rendering context creation flags.</td>
+</tr>
+<tr>
+<td><a href="types/TBLContextErrorFlag/">TBLContextErrorFlag</a></td>
+<td>Error flags that are accumulated during the rendering context lifetime and that can be queried through <code>TBLContext.AccumulatedErrorFlags</code>. The reason why these flags exist is that errors can happen during asynchronous rendering, and there is no way the user can catch these errors.</td>
+</tr>
+<tr>
+<td><a href="types/TBLContextErrorFlags/">TBLContextErrorFlags</a></td>
+<td>Error flags that are accumulated during the rendering context lifetime.</td>
+</tr>
+<tr>
+<td><a href="types/TBLContextFlushFlag/">TBLContextFlushFlag</a></td>
+<td>Rendering context flush flags, used by <code>TBLContext.Flush</code>.</td>
+</tr>
+<tr>
+<td><a href="types/TBLContextFlushFlags/">TBLContextFlushFlags</a></td>
+<td>Rendering context flush flags, used by <code>TBLContext.Flush</code>.</td>
+</tr>
+<tr>
+<td><a href="types/TBLContextHint/">TBLContextHint</a></td>
+<td>Rendering context hint.</td>
+</tr>
+<tr>
+<td><a href="types/TBLContextRenderTextOp/">TBLContextRenderTextOp</a></td>
+<td>The type of a text rendering operation.</td>
+</tr>
+<tr>
+<td><a href="types/TBLContextStyleSlot/">TBLContextStyleSlot</a></td>
+<td>Describes a rendering context style slot - fill or stroke.</td>
+</tr>
+<tr>
+<td><a href="types/TBLContextStyleSwapMode/">TBLContextStyleSwapMode</a></td>
+<td>Specifies the behavior of <code>TBLContext.SwapStyles</code> operation.</td>
+</tr>
+<tr>
+<td><a href="types/TBLContextStyleTransformMode/">TBLContextStyleTransformMode</a></td>
+<td>Specifies how style transformation matrix is combined with the rendering context transformation matrix, used by <code>TBLContext.SetStyle</code> function.</td>
+</tr>
+<tr>
+<td><a href="types/TBLContextType/">TBLContextType</a></td>
+<td>Rendering context type.</td>
+</tr>
+<tr>
+<td><a href="types/TBLDataAccessFlags/">TBLDataAccessFlags</a></td>
+<td>Data access flags.</td>
+</tr>
+<tr>
+<td><a href="types/TBLDataSourceType/">TBLDataSourceType</a></td>
+<td>Data source type.</td>
+</tr>
+<tr>
+<td><a href="types/TBLDataView/">TBLDataView</a></td>
+<td>View of untyped data.</td>
+</tr>
+<tr>
+<td><a href="types/TBLDebugMessageSinkFunc/">TBLDebugMessageSinkFunc</a></td>
+<td>A sink that can be used to debug various parts of Blend2D.</td>
+</tr>
+<tr>
+<td><a href="types/TBLDestroyExternalDataFunc/">TBLDestroyExternalDataFunc</a></td>
+<td>A function callback that is called when an object that holds external data is going to be destroyed. It's often used as a notification that a data passed to a certain object is no longer in use by Blend2D.</td>
+</tr>
+<tr>
+<td><a href="types/TBLErrorHandler/">TBLErrorHandler</a></td>
+<td>Type of procedure that is called when a Blend2D error occurs.</td>
+</tr>
+<tr>
+<td><a href="types/TBLExtendMode/">TBLExtendMode</a></td>
+<td>Extend mode.</td>
+</tr>
+<tr>
+<td><a href="types/TBLFileInfoFlag/">TBLFileInfoFlag</a></td>
+<td>File information flags, used by <code>TBLFileInfo</code>.</td>
+</tr>
+<tr>
+<td><a href="types/TBLFileInfoFlags/">TBLFileInfoFlags</a></td>
+<td>File information flags, used by <code>TBLFileInfo</code>.</td>
+</tr>
+<tr>
+<td><a href="types/TBLFileOpenFlag/">TBLFileOpenFlag</a></td>
+<td>File open flags.</td>
+</tr>
+<tr>
+<td><a href="types/TBLFileOpenFlags/">TBLFileOpenFlags</a></td>
+<td>File open flags.</td>
+</tr>
+<tr>
+<td><a href="types/TBLFileReadFlag/">TBLFileReadFlag</a></td>
+<td>File read flags used by <code>TBLFileSystem.ReadFile</code>.</td>
+</tr>
+<tr>
+<td><a href="types/TBLFileReadFlags/">TBLFileReadFlags</a></td>
+<td>File read flags used by <code>TBLFileSystem.ReadFile</code>.</td>
+</tr>
+<tr>
+<td><a href="types/TBLFileSeekType/">TBLFileSeekType</a></td>
+<td>File seek mode.</td>
+</tr>
+<tr>
+<td><a href="types/TBLFillRule/">TBLFillRule</a></td>
+<td>Fill rule.</td>
+</tr>
+<tr>
+<td><a href="types/TBLFlattenMode/">TBLFlattenMode</a></td>
+<td>Mode that specifies how curves are approximated to line segments.</td>
+</tr>
+<tr>
+<td><a href="types/TBLFontDataFlag/">TBLFontDataFlag</a></td>
+<td>Flags used by `TBLFontData'.</td>
+</tr>
+<tr>
+<td><a href="types/TBLFontDataFlags/">TBLFontDataFlags</a></td>
+<td>Flags used by `TBLFontData'.</td>
+</tr>
+<tr>
+<td><a href="types/TBLFontFaceDiagFlag/">TBLFontFaceDiagFlag</a></td>
+<td>Diagnostic flags offered by <code>TBLFontFace</code>.</td>
+</tr>
+<tr>
+<td><a href="types/TBLFontFaceDiagFlags/">TBLFontFaceDiagFlags</a></td>
+<td>Diagnostic flags offered by <code>TBLFontFace</code>.</td>
+</tr>
+<tr>
+<td><a href="types/TBLFontFaceFlag/">TBLFontFaceFlag</a></td>
+<td>Flags used by <code>TBLFontFace</code></td>
+</tr>
+<tr>
+<td><a href="types/TBLFontFaceFlags/">TBLFontFaceFlags</a></td>
+<td>Flags used by <code>TBLFontFace</code></td>
+</tr>
+<tr>
+<td><a href="types/TBLFontFaceType/">TBLFontFaceType</a></td>
+<td>Type of a font or font face, see <code>TBLFontFace</code>.</td>
+</tr>
+<tr>
+<td><a href="types/TBLFontOutlineType/">TBLFontOutlineType</a></td>
+<td>Format of an outline stored in a font.</td>
+</tr>
+<tr>
+<td><a href="types/TBLFontStretch/">TBLFontStretch</a></td>
+<td>Font stretch.</td>
+</tr>
+<tr>
+<td><a href="types/TBLFontStyle/">TBLFontStyle</a></td>
+<td>Font style.</td>
+</tr>
+<tr>
+<td><a href="types/TBLFontWeight/">TBLFontWeight</a></td>
+<td>Font weight.</td>
+</tr>
+<tr>
+<td><a href="types/TBLFormat/">TBLFormat</a></td>
+<td>Pixel format.</td>
+</tr>
+<tr>
+<td><a href="types/TBLFormatFlag/">TBLFormatFlag</a></td>
+<td>Pixel format flags.</td>
+</tr>
+<tr>
+<td><a href="types/TBLFormatFlags/">TBLFormatFlags</a></td>
+<td>Pixel format flags.</td>
+</tr>
+<tr>
+<td><a href="types/TBLFourBytes/">TBLFourBytes</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="types/TBLGeometryDirection/">TBLGeometryDirection</a></td>
+<td>Direction of a geometry used by geometric primitives and paths.</td>
+</tr>
+<tr>
+<td><a href="types/TBLGeometryType/">TBLGeometryType</a></td>
+<td>Geometry type.</td>
+</tr>
+<tr>
+<td><a href="types/TBLGlyphId/">TBLGlyphId</a></td>
+<td>Glyph id - a 32-bit unsigned integer.</td>
+</tr>
+<tr>
+<td><a href="types/TBLGlyphPlacementType/">TBLGlyphPlacementType</a></td>
+<td>Placement of glyphs stored in a <code>TBLGlyphRun</code>.</td>
+</tr>
+<tr>
+<td><a href="types/TBLGlyphRunFlag/">TBLGlyphRunFlag</a></td>
+<td>Flags used by <code>TBLGlyphRun</code>.</td>
+</tr>
+<tr>
+<td><a href="types/TBLGlyphRunFlags/">TBLGlyphRunFlags</a></td>
+<td>Flags used by <code>TBLGlyphRun</code>.</td>
+</tr>
+<tr>
+<td><a href="types/TBLGradientKind/">TBLGradientKind</a></td>
+<td>Gradient type.</td>
+</tr>
+<tr>
+<td><a href="types/TBLGradientQuality/">TBLGradientQuality</a></td>
+<td>Gradient rendering quality.</td>
+</tr>
+<tr>
+<td><a href="types/TBLGradientValue/">TBLGradientValue</a></td>
+<td>Gradient data index.</td>
+</tr>
+<tr>
+<td><a href="types/TBLHitTest/">TBLHitTest</a></td>
+<td>Hit-test result.</td>
+</tr>
+<tr>
+<td><a href="types/TBLImageCodecFeature/">TBLImageCodecFeature</a></td>
+<td>Image codec feature bits.</td>
+</tr>
+<tr>
+<td><a href="types/TBLImageCodecFeatures/">TBLImageCodecFeatures</a></td>
+<td>Image codec feature bits.</td>
+</tr>
+<tr>
+<td><a href="types/TBLImageInfoFlag/">TBLImageInfoFlag</a></td>
+<td>Flags used by <code>TBLImageInfo</code>.</td>
+</tr>
+<tr>
+<td><a href="types/TBLImageInfoFlags/">TBLImageInfoFlags</a></td>
+<td>Flags used by <code>TBLImageInfo</code>.</td>
+</tr>
+<tr>
+<td><a href="types/TBLImageScaleFilter/">TBLImageScaleFilter</a></td>
+<td>Filter type used by <code>TBLImage.Scale</code>.</td>
+</tr>
+<tr>
+<td><a href="types/TBLModifyOp/">TBLModifyOp</a></td>
+<td>Modification operation applied to Blend2D containers.</td>
+</tr>
+<tr>
+<td><a href="types/TBLObjectType/">TBLObjectType</a></td>
+<td>Object type identifier.</td>
+</tr>
+<tr>
+<td><a href="types/TBLOffsetMode/">TBLOffsetMode</a></td>
+<td>Mode that specifies how to construct offset curves.</td>
+</tr>
+<tr>
+<td><a href="types/TBLOrientation/">TBLOrientation</a></td>
+<td>Orientation.</td>
+</tr>
+<tr>
+<td><a href="types/TBLPathCmd/">TBLPathCmd</a></td>
+<td>Path command.</td>
+</tr>
+<tr>
+<td><a href="types/TBLPathFlag/">TBLPathFlag</a></td>
+<td>Path flags.</td>
+</tr>
+<tr>
+<td><a href="types/TBLPathFlags/">TBLPathFlags</a></td>
+<td>Path flags.</td>
+</tr>
+<tr>
+<td><a href="types/TBLPathReverseMode/">TBLPathReverseMode</a></td>
+<td>Path reversal mode.</td>
+</tr>
+<tr>
+<td><a href="types/TBLPathSinkFunc/">TBLPathSinkFunc</a></td>
+<td>Optional callback that can be used to consume a path data.</td>
+</tr>
+<tr>
+<td><a href="types/TBLPatternQuality/">TBLPatternQuality</a></td>
+<td>Pattern quality.</td>
+</tr>
+<tr>
+<td><a href="types/TBLPixelConverterCreateFlag/">TBLPixelConverterCreateFlag</a></td>
+<td>Flags used by <code>TBLPixelConverter.Make</code> function.</td>
+</tr>
+<tr>
+<td><a href="types/TBLPixelConverterCreateFlags/">TBLPixelConverterCreateFlags</a></td>
+<td>Flags used by <code>TBLPixelConverter.Make</code> function.</td>
+</tr>
+<tr>
+<td><a href="types/TBLRenderingQuality/">TBLRenderingQuality</a></td>
+<td>Rendering quality.</td>
+</tr>
+<tr>
+<td><a href="types/TBLResult/">TBLResult</a></td>
+<td>Blend2D result code.</td>
+</tr>
+<tr>
+<td><a href="types/TBLRuntimeBuildType/">TBLRuntimeBuildType</a></td>
+<td>Blend2D runtime build type.</td>
+</tr>
+<tr>
+<td><a href="types/TBLRuntimeCleanupFlag/">TBLRuntimeCleanupFlag</a></td>
+<td>Runtime cleanup flags that can be used through <code>TBLRuntime.Cleanup</code>.</td>
+</tr>
+<tr>
+<td><a href="types/TBLRuntimeCleanupFlags/">TBLRuntimeCleanupFlags</a></td>
+<td>Runtime cleanup flags that can be used through <code>TBLRuntime.Cleanup</code>.</td>
+</tr>
+<tr>
+<td><a href="types/TBLRuntimeCpuArch/">TBLRuntimeCpuArch</a></td>
+<td>CPU architecture that can be queried by <code>TBLRuntime.QuerySystemInfo</code>.</td>
+</tr>
+<tr>
+<td><a href="types/TBLRuntimeCpuFeature/">TBLRuntimeCpuFeature</a></td>
+<td>CPU features Blend2D supports.</td>
+</tr>
+<tr>
+<td><a href="types/TBLRuntimeCpuFeatures/">TBLRuntimeCpuFeatures</a></td>
+<td>CPU features Blend2D supports.</td>
+</tr>
+<tr>
+<td><a href="types/TBLStringView/">TBLStringView</a></td>
+<td>View of <code>UTF8Char[]</code> data used by TBLString.</td>
+</tr>
+<tr>
+<td><a href="types/TBLStrokeCap/">TBLStrokeCap</a></td>
+<td>A presentation attribute defining the shape to be used at the end of open sub-paths.</td>
+</tr>
+<tr>
+<td><a href="types/TBLStrokeCapPosition/">TBLStrokeCapPosition</a></td>
+<td>Position of a stroke-cap.</td>
+</tr>
+<tr>
+<td><a href="types/TBLStrokeJoin/">TBLStrokeJoin</a></td>
+<td>Stroke join type.</td>
+</tr>
+<tr>
+<td><a href="types/TBLStrokeTransformOrder/">TBLStrokeTransformOrder</a></td>
+<td>Stroke transform order.</td>
+</tr>
+<tr>
+<td><a href="types/TBLTag/">TBLTag</a></td>
+<td>Tag is a 32-bit integer consisting of 4 bytes (or ASCII characters) in the following format:</td>
+</tr>
+<tr>
+<td><a href="types/TBLTextDirection/">TBLTextDirection</a></td>
+<td>Text direction.</td>
+</tr>
+<tr>
+<td><a href="types/TBLTextEncoding/">TBLTextEncoding</a></td>
+<td>Text encoding.</td>
+</tr>
+<tr>
+<td><a href="types/TBLTransformKind/">TBLTransformKind</a></td>
+<td>Transformation matrix type that can be obtained by calling <code>TBLMatrix2D.Kind</code>.</td>
+</tr>
+<tr>
+<td><a href="types/TBLTransformOp/">TBLTransformOp</a></td>
+<td>Transformation matrix operation type.</td>
+</tr>
+<tr>
+<td><a href="types/TBLUniqueId/">TBLUniqueId</a></td>
+<td>Unique identifier that can be used for caching purposes.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="routines">Routines</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="routines/BLAbs_0/">BLAbs(TBLPoint)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLAbs_1/">BLAbs(TBLSize)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLArc/">BLArc</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLBox/">BLBox</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLBoxI/">BLBoxI</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLCircle/">BLCircle</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLClamp/">BLClamp</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLConicGradientValues_0/">BLConicGradientValues(Double, Double, Double, Double)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLConicGradientValues_1/">BLConicGradientValues</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLEllipse_0/">BLEllipse(Double, Double, Double, Double)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLEllipse_1/">BLEllipse(Double, Double, Double)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLGetLastError/">BLGetLastError</a></td>
+<td>Retrieves the last Blend2D error, or <code>TBLResult.Success</code> if there was none.</td>
+</tr>
+<tr>
+<td><a href="routines/BLGradientStop_0/">BLGradientStop(Double, TAlphaColor)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLGradientStop_1/">BLGradientStop(Double, TBLRgba64)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLGradientStop_2/">BLGradientStop(Double, TBLRgba32)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLGradientStop_3/">BLGradientStop</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLLine_0/">BLLine(Double, Double, Double, Double)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLLine_1/">BLLine(TBLPoint, TBLPoint)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLLinearGradientValues_0/">BLLinearGradientValues</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLLinearGradientValues_1/">BLLinearGradientValues(Double, Double, Double, Double)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLMax_0/">BLMax(TBLRgba32, TBLRgba32)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLMax_1/">BLMax(TBLRgba, TBLRgba)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLMax_2/">BLMax(Double, TBLPoint)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLMax_3/">BLMax(TBLPoint, Double)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLMax_4/">BLMax(TBLPoint, TBLPoint)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLMax_5/">BLMax(TBLSize, TBLSize)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLMax_6/">BLMax(TBLRgba64, TBLRgba64)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLMin_0/">BLMin(TBLRgba64, TBLRgba64)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLMin_1/">BLMin(TBLRgba32, TBLRgba32)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLMin_2/">BLMin(TBLRgba, TBLRgba)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLMin_3/">BLMin(TBLPoint, Double)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLMin_4/">BLMin(Double, TBLPoint)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLMin_5/">BLMin(TBLSize, TBLSize)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLMin_6/">BLMin(TBLPoint, TBLPoint)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLPoint/">BLPoint</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLPointI/">BLPointI</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLRadialGradientValues_0/">BLRadialGradientValues</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLRadialGradientValues_1/">BLRadialGradientValues(Double, Double, Double, Double, Double, Double)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLRect/">BLRect</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLRectI/">BLRectI</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLRgba_0/">BLRgba(TBLRgba32)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLRgba_1/">BLRgba(TAlphaColorF)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLRgba_2/">BLRgba(Single, Single, Single, Single)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLRgba_3/">BLRgba(TBLRgba64)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLRgba_4/">BLRgba</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLRgba32_0/">BLRgba32(UInt32)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLRgba32_1/">BLRgba32</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLRgba32_2/">BLRgba32(TAlphaColorRec)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLRgba32_3/">BLRgba32(Byte, Byte, Byte, Byte)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLRgba32_4/">BLRgba32(TBLRgba64)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLRgba64_0/">BLRgba64</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLRgba64_1/">BLRgba64(UInt64)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLRgba64_2/">BLRgba64(Word, Word, Word, Word)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLRgba64_3/">BLRgba64(TBLRgba32)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLRoundRect_0/">BLRoundRect(Double, Double, Double, Double, Double)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLRoundRect_1/">BLRoundRect(TBLRect, Double, Double)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLRoundRect_2/">BLRoundRect(TBLRect, Double)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLRoundRect_3/">BLRoundRect(Double, Double, Double, Double, Double, Double)</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLSetErrorHandler/">BLSetErrorHandler</a></td>
+<td>Sets a Blend2D error handler.</td>
+</tr>
+<tr>
+<td><a href="routines/BLSetExceptionErrorHandler/">BLSetExceptionErrorHandler</a></td>
+<td>Sets the error handler to a procedure that raises an exception when a Blend2D error occurs. This is the default behavior.</td>
+</tr>
+<tr>
+<td><a href="routines/BLSetGetLastErrorHandler/">BLSetGetLastErrorHandler</a></td>
+<td>Sets the error handler to a procedure that sets a global error variable when a Blend2D error occurs. You can then use <code>BLGetLastError</code> to retrieve this error code.</td>
+</tr>
+<tr>
+<td><a href="routines/BLSize/">BLSize</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLSizeI/">BLSizeI</a></td>
+<td></td>
+</tr>
+<tr>
+<td><a href="routines/BLTriangle/">BLTriangle</a></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../../MultithreadedRendering/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Multithreaded Rendering">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Multithreaded Rendering
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="classes/EBlend2DError/" class="md-footer__link md-footer__link--next" aria-label="Next: EBlend2DError">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                EBlend2DError
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+    <div class="md-copyright__highlight">
+      Copyright &copy; 2025 Erik van Bilsen
+    </div>
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+        <div class="md-social">
+  
+    
+    
+    
+    
+    <a href="https://github.com/neslib/DelphiBlend2D" target="_blank" rel="noopener" title="GitHub neslib" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8M97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+    </a>
+  
+    
+    
+    
+    
+    <a href="https://blog.grijjy.com/author/erikvanbilsen/" target="_blank" rel="noopener" title="Blog" class="md-social__link">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 6.7.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="m61.7 169.4 101.5 278C92.2 413 43.3 340.2 43.3 256c0-30.9 6.6-60.1 18.4-86.6m337.9 75.9c0-26.3-9.4-44.5-17.5-58.7-10.8-17.5-20.9-32.4-20.9-49.9 0-19.6 14.8-37.8 35.7-37.8.9 0 1.8.1 2.8.2-37.9-34.7-88.3-55.9-143.7-55.9-74.3 0-139.7 38.1-177.8 95.9 5 .2 9.7.3 13.7.3 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l77.5 230.4L249.8 247l-33.1-90.8c-11.5-.7-22.3-2-22.3-2-11.5-.7-10.1-18.2 1.3-17.5 0 0 35.1 2.7 56 2.7 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l76.9 228.7 21.2-70.9c9-29.4 16-50.5 16-68.7m-139.9 29.3-63.8 185.5c19.1 5.6 39.2 8.7 60.1 8.7 24.8 0 48.5-4.3 70.6-12.1-.6-.9-1.1-1.9-1.5-2.9zm183-120.7c.9 6.8 1.4 14 1.4 21.9 0 21.6-4 45.8-16.2 76.2l-65 187.9C426.2 403 468.7 334.5 468.7 256c0-37-9.4-71.8-26-102.1M504 256c0 136.8-111.3 248-248 248C119.2 504 8 392.7 8 256 8 119.2 119.2 8 256 8c136.7 0 248 111.2 248 248m-11.4 0c0-130.5-106.2-236.6-236.6-236.6C125.5 19.4 19.4 125.5 19.4 256S125.6 492.6 256 492.6c130.5 0 236.6-106.1 236.6-236.6"/></svg>
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+      <div class="md-progress" data-md-component="progress" role="progressbar"></div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.code.copy", "navigation.instant", "navigation.instant.progress", "navigation.tabs", "navigation.prune", "navigation.top", "navigation.footer", "navigation.indexes", "search.suggest", "search.share"], "search": "../../assets/javascripts/workers/search.6ce7567c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.83f73b43.min.js"></script>
+      
+    
+  </body>
+</html>
