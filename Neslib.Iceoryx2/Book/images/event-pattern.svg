@@ -1,0 +1,53 @@
+<svg viewBox="0 0 560 296" role="img" aria-label="Event communication model" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .ev-box   { fill: var(--ix-surface, #141d2d); stroke: var(--ix-box-line, #6b7d8c); stroke-width: 1.5; }
+    .ev-port  { fill: rgba(45,212,232,0.10); stroke: var(--ix-ice, #2dd4e8); stroke-width: 1; }
+    .ev-svc   { fill: rgba(45,212,232,0.10); stroke: var(--ix-ice, #2dd4e8); stroke-width: 1.5; }
+    .ev-title { font-family: var(--font-stack, sans-serif); font-weight: 600; font-size: 12px; fill: var(--ix-text, #eaf3f7); }
+    .ev-port-t{ font-family: var(--font-stack, sans-serif); font-weight: 600; font-size: 10px; fill: var(--ix-text, #eaf3f7); }
+    .ev-sub   { font-family: var(--font-stack, sans-serif); font-size: 9px; fill: var(--ix-muted, #bccbd6); }
+    .ev-svc-t { font-family: var(--font-stack, sans-serif); font-weight: 600; font-size: 13px; fill: var(--ix-text, #eaf3f7); }
+    .ev-svc-s { font-family: var(--font-stack, sans-serif); font-size: 9.5px; fill: var(--ix-muted, #bccbd6); }
+    .ev-flow  { stroke: var(--ix-muted, #bccbd6); stroke-width: 2; fill: none; }
+    .ev-label { font-family: var(--font-stack, sans-serif); font-size: 9.5px; fill: var(--ix-muted, #bccbd6); }
+  </style>
+  <defs>
+    <marker id="ev-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse" overflow="visible">
+      <path d="M1,1 L9,5 L1,9 Z" fill="var(--ix-muted, #bccbd6)"/>
+    </marker>
+  </defs>
+
+  <!-- Notifier -->
+  <rect class="ev-box" x="44" y="102" width="140" height="96" rx="12"/>
+  <text class="ev-title" x="114" y="128" text-anchor="middle">Participant</text>
+  <rect class="ev-port" x="58" y="144" width="112" height="40" rx="8"/>
+  <text class="ev-port-t" x="114" y="161" text-anchor="middle">Notifier Port</text>
+  <text class="ev-sub" x="114" y="176" text-anchor="middle">Send events</text>
+
+  <!-- Service -->
+  <circle class="ev-svc" cx="280" cy="150" r="48"/>
+  <text class="ev-svc-t" x="280" y="146" text-anchor="middle">Service</text>
+  <text class="ev-svc-s" x="280" y="164" text-anchor="middle">/sensor_fusion</text>
+
+  <!-- Listener 1 -->
+  <rect class="ev-box" x="376" y="32" width="140" height="96" rx="12"/>
+  <text class="ev-title" x="446" y="58" text-anchor="middle">Participant</text>
+  <rect class="ev-port" x="390" y="74" width="112" height="40" rx="8"/>
+  <text class="ev-port-t" x="446" y="91" text-anchor="middle">Listener Port</text>
+  <text class="ev-sub" x="446" y="106" text-anchor="middle">Receive events</text>
+
+  <!-- Listener 2 -->
+  <rect class="ev-box" x="376" y="172" width="140" height="96" rx="12"/>
+  <text class="ev-title" x="446" y="198" text-anchor="middle">Participant</text>
+  <rect class="ev-port" x="390" y="214" width="112" height="40" rx="8"/>
+  <text class="ev-port-t" x="446" y="231" text-anchor="middle">Listener Port</text>
+  <text class="ev-sub" x="446" y="246" text-anchor="middle">Receive events</text>
+
+  <!-- Flow -->
+  <line class="ev-flow" x1="190" y1="150" x2="224" y2="150" marker-end="url(#ev-arrow)"/>
+  <text class="ev-label" x="207" y="141" text-anchor="middle">notify</text>
+  <line class="ev-flow" x1="325" y1="117" x2="370" y2="83" marker-end="url(#ev-arrow)"/>
+  <text class="ev-label" x="344" y="76" text-anchor="middle">wake up</text>
+  <line class="ev-flow" x1="325" y1="183" x2="370" y2="217" marker-end="url(#ev-arrow)"/>
+  <text class="ev-label" x="344" y="230" text-anchor="middle">wake up</text>
+</svg>

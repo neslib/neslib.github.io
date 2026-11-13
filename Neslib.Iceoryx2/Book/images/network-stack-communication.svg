@@ -1,0 +1,98 @@
+<svg viewBox="0 0 600 500" role="img" aria-label="Participants communicating over the network stack" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .ns-phys    { fill: var(--ix-bg-2, #080d16); stroke: var(--ix-line, rgba(150,200,230,0.16)); stroke-width: 1; }
+    .ns-priv    { fill: var(--ix-surface, #141d2d); stroke: var(--ix-muted-2, #6b7d8c); stroke-width: 1; stroke-dasharray: 5 3; }
+    .ns-kernel  { fill: var(--ix-surface-2, #1b2740); stroke: var(--ix-line, rgba(150,200,230,0.16)); stroke-width: 1; }
+    .ns-box     { fill: var(--ix-surface, #141d2d); stroke: var(--ix-box-line, #6b7d8c); stroke-width: 1.5; }
+    .ns-bar-o   { fill: rgba(45,212,232,0.18); stroke: var(--ix-ice, #2dd4e8); stroke-width: 1; }
+    .ns-bar-c   { fill: rgba(91,141,239,0.18); stroke: var(--ix-blue, #5b8def); stroke-width: 1; }
+    .ns-phys-t  { font-family: var(--font-stack, sans-serif); font-weight: 600; font-size: 12px; fill: var(--ix-muted, #bccbd6); }
+    .ns-priv-t  { font-family: var(--font-stack, sans-serif); font-size: 9px; fill: var(--ix-muted, #bccbd6); }
+    .ns-kernel-t{ font-family: var(--font-stack, sans-serif); font-weight: 600; font-size: 10px; fill: var(--ix-text, #eaf3f7); }
+    .ns-bar-t   { font-family: var(--font-stack, sans-serif); font-size: 8px; fill: var(--ix-text, #eaf3f7); }
+    .ns-name    { font-family: var(--font-stack, sans-serif); font-weight: 600; font-size: 10px; fill: var(--ix-text, #eaf3f7); }
+    .ns-label   { font-family: var(--font-stack, sans-serif); font-size: 9px; fill: var(--ix-muted, #bccbd6); }
+    .ns-total   { font-family: var(--font-stack, sans-serif); font-weight: 600; font-size: 12px; fill: var(--ix-text, #eaf3f7); }
+    .ns-flow    { stroke: var(--ix-muted, #bccbd6); stroke-width: 2; fill: none; }
+  </style>
+  <defs>
+    <marker id="ns-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse" overflow="visible">
+      <path d="M1,1 L9,5 L1,9 Z" fill="var(--ix-muted, #bccbd6)"/>
+    </marker>
+  </defs>
+
+  <!-- Physical memory -->
+  <rect class="ns-phys" x="188" y="14" width="224" height="451" rx="12"/>
+  <text class="ns-phys-t" x="300" y="34" text-anchor="middle">Physical Memory</text>
+
+  <!-- Publisher buffer -->
+  <rect class="ns-priv" x="218" y="48" width="164" height="74" rx="8"/>
+  <text class="ns-priv-t" x="300" y="64" text-anchor="middle">Participant Memory</text>
+  <rect class="ns-bar-o" x="230" y="72" width="140" height="16" rx="3"/>
+  <text class="ns-bar-t" x="300" y="83" text-anchor="middle">Original Data (100 MB)</text>
+  <rect class="ns-bar-c" x="230" y="94" width="140" height="16" rx="3"/>
+  <text class="ns-bar-t" x="300" y="105" text-anchor="middle">Serialized Data (~100 MB)</text>
+
+  <!-- Network stack -->
+  <rect class="ns-kernel" x="218" y="136" width="164" height="51" rx="8"/>
+  <text class="ns-kernel-t" x="300" y="152" text-anchor="middle">Network Stack</text>
+  <rect class="ns-bar-c" x="230" y="160" width="140" height="16" rx="3"/>
+  <text class="ns-bar-t" x="300" y="171" text-anchor="middle">Buffered Data (~100 MB)</text>
+
+  <!-- Subscriber buffers -->
+  <rect class="ns-priv" x="218" y="201" width="164" height="74" rx="8"/>
+  <text class="ns-priv-t" x="300" y="217" text-anchor="middle">Participant Memory</text>
+  <rect class="ns-bar-c" x="230" y="225" width="140" height="16" rx="3"/>
+  <text class="ns-bar-t" x="300" y="236" text-anchor="middle">Received Data (~100 MB)</text>
+  <rect class="ns-bar-c" x="230" y="247" width="140" height="16" rx="3"/>
+  <text class="ns-bar-t" x="300" y="258" text-anchor="middle">Deserialized Data (100 MB)</text>
+
+  <rect class="ns-priv" x="218" y="289" width="164" height="74" rx="8"/>
+  <text class="ns-priv-t" x="300" y="305" text-anchor="middle">Participant Memory</text>
+  <rect class="ns-bar-c" x="230" y="313" width="140" height="16" rx="3"/>
+  <text class="ns-bar-t" x="300" y="324" text-anchor="middle">Received Data (~100 MB)</text>
+  <rect class="ns-bar-c" x="230" y="335" width="140" height="16" rx="3"/>
+  <text class="ns-bar-t" x="300" y="346" text-anchor="middle">Deserialized Data (100 MB)</text>
+
+  <rect class="ns-priv" x="218" y="377" width="164" height="74" rx="8"/>
+  <text class="ns-priv-t" x="300" y="393" text-anchor="middle">Participant Memory</text>
+  <rect class="ns-bar-c" x="230" y="401" width="140" height="16" rx="3"/>
+  <text class="ns-bar-t" x="300" y="412" text-anchor="middle">Received Data (~100 MB)</text>
+  <rect class="ns-bar-c" x="230" y="423" width="140" height="16" rx="3"/>
+  <text class="ns-bar-t" x="300" y="434" text-anchor="middle">Deserialized Data (100 MB)</text>
+
+  <!-- Publisher -->
+  <rect class="ns-box" x="48" y="67" width="92" height="36" rx="10"/>
+  <text class="ns-name" x="94" y="89" text-anchor="middle">Participant</text>
+
+  <!-- Subscribers -->
+  <rect class="ns-box" x="460" y="220" width="92" height="36" rx="10"/>
+  <text class="ns-name" x="506" y="242" text-anchor="middle">Participant</text>
+  <rect class="ns-box" x="460" y="308" width="92" height="36" rx="10"/>
+  <text class="ns-name" x="506" y="330" text-anchor="middle">Participant</text>
+  <rect class="ns-box" x="460" y="396" width="92" height="36" rx="10"/>
+  <text class="ns-name" x="506" y="418" text-anchor="middle">Participant</text>
+
+  <!-- Flow -->
+  <line class="ns-flow" x1="140" y1="85" x2="216" y2="85" marker-end="url(#ns-arrow)"/>
+  <text class="ns-label" x="178" y="79" text-anchor="middle">write</text>
+  <line class="ns-flow" x1="300" y1="124" x2="300" y2="134" marker-end="url(#ns-arrow)"/>
+  <text class="ns-label" x="314" y="132" text-anchor="start">copy</text>
+
+  <!-- branch bus -->
+  <line class="ns-flow" x1="218" y1="161" x2="198" y2="161"/>
+  <line class="ns-flow" x1="198" y1="161" x2="198" y2="414"/>
+  <line class="ns-flow" x1="198" y1="238" x2="216" y2="238" marker-end="url(#ns-arrow)"/>
+  <line class="ns-flow" x1="198" y1="326" x2="216" y2="326" marker-end="url(#ns-arrow)"/>
+  <line class="ns-flow" x1="198" y1="414" x2="216" y2="414" marker-end="url(#ns-arrow)"/>
+  <text class="ns-label" x="178" y="291" text-anchor="end">copy</text>
+
+  <!-- reads -->
+  <line class="ns-flow" x1="384" y1="238" x2="458" y2="238" marker-end="url(#ns-arrow)"/>
+  <line class="ns-flow" x1="384" y1="326" x2="458" y2="326" marker-end="url(#ns-arrow)"/>
+  <line class="ns-flow" x1="384" y1="414" x2="458" y2="414" marker-end="url(#ns-arrow)"/>
+  <text class="ns-label" x="421" y="232" text-anchor="middle">read</text>
+
+  <!-- Total -->
+  <text class="ns-total" x="300" y="485" text-anchor="middle">Total Memory: ~900 MB</text>
+</svg>

@@ -1,0 +1,82 @@
+<svg viewBox="12 52 778 184" role="img" aria-label="Links extending iceoryx2 across iceoryx2 systems" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .gt-host   { fill: none; stroke: var(--ix-muted-2, #6b7d8c); stroke-width: 1; stroke-dasharray: 5 3; }
+    .gt-host-t { font-family: var(--font-stack, sans-serif); font-weight: 600; font-size: 13px; fill: var(--ix-text, #eaf3f7); }
+    .gt-part   { fill: var(--ix-surface, #141d2d); stroke: var(--ix-box-line, #6b7d8c); stroke-width: 1.5; }
+    .gt-part-t { font-family: var(--font-stack, sans-serif); font-weight: 600; font-size: 10px; fill: var(--ix-text, #eaf3f7); }
+    .gt-comp   { fill: rgba(91,141,239,0.14); stroke: var(--ix-blue, #5b8def); stroke-width: 1.25; }
+    .gt-comp-t { font-family: var(--font-stack, sans-serif); font-weight: 600; font-size: 10px; fill: var(--ix-blue, #5b8def); }
+    .gt-comp-s { font-family: var(--font-stack, sans-serif); font-weight: 600; font-size: 8px; fill: var(--ix-blue, #5b8def); opacity: 0.8; }
+    .gt-smr    { fill: rgba(45,212,232,0.10); stroke: var(--ix-ice, #2dd4e8); stroke-width: 1.5; }
+    .gt-smr-t  { font-family: var(--font-stack, sans-serif); font-weight: 600; font-size: 11px; fill: var(--ix-text, #eaf3f7); }
+    .gt-app    { fill: var(--ix-surface-2, #1b2740); stroke: var(--ix-line, rgba(150,200,230,0.16)); stroke-width: 1; }
+    .gt-app-t  { font-family: var(--font-stack, sans-serif); font-weight: 600; font-size: 10px; fill: var(--ix-muted, #bccbd6); }
+    .gt-mw     { fill: rgba(188,203,214,0.08); stroke: var(--ix-muted, #bccbd6); stroke-width: 1.25; }
+    .gt-mw-t   { font-family: var(--font-stack, sans-serif); font-weight: 600; font-size: 11px; fill: var(--ix-muted, #bccbd6); }
+    .gt-edge-t { font-family: var(--font-stack, sans-serif); font-style: italic; font-size: 10px; fill: var(--ix-muted, #bccbd6); }
+    .gt-flow   { stroke: var(--ix-muted, #bccbd6); stroke-width: 1.5; fill: none; }
+    .gt-flow-2 { stroke: var(--ix-muted, #bccbd6); stroke-width: 2; fill: none; }
+  </style>
+  <defs>
+    <marker id="gt-arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto-start-reverse" markerUnits="userSpaceOnUse" overflow="visible">
+      <path d="M1,1 L8,4.5 L1,8 Z" fill="var(--ix-muted, #bccbd6)"/>
+    </marker>
+  </defs>
+
+  <!-- Another middleware -->
+  <rect class="gt-host" x="20" y="60" width="160" height="168" rx="12"/>
+  <text class="gt-host-t" x="34" y="81">Another Middleware</text>
+  <text class="gt-edge-t" x="34" y="96">e.g. ROS 2, DDS, MQTT</text>
+  <rect class="gt-app" x="49" y="106" width="66" height="24" rx="5"/>
+  <text class="gt-app-t" x="82" y="122" text-anchor="middle">Participant</text>
+  <rect class="gt-app" x="121" y="106" width="30" height="24" rx="5"/>
+  <text class="gt-app-t" x="136" y="122" text-anchor="middle">…</text>
+  <rect class="gt-mw" x="34" y="154" width="132" height="58" rx="8"/>
+  <text class="gt-mw-t" x="100" y="187" text-anchor="middle">Transport</text>
+  <line class="gt-flow" x1="82" y1="133" x2="82" y2="151" marker-start="url(#gt-arrow)" marker-end="url(#gt-arrow)"/>
+  <line class="gt-flow" x1="136" y1="133" x2="136" y2="151" marker-start="url(#gt-arrow)" marker-end="url(#gt-arrow)"/>
+
+  <!-- iceoryx2 system A -->
+  <rect class="gt-host" x="224" y="60" width="298" height="168" rx="12"/>
+  <text class="gt-host-t" x="238" y="81">iceoryx2 System A</text>
+  <rect class="gt-part" x="322" y="106" width="66" height="24" rx="5"/>
+  <text class="gt-part-t" x="355" y="122" text-anchor="middle">Participant</text>
+  <rect class="gt-part" x="394" y="106" width="30" height="24" rx="5"/>
+  <text class="gt-part-t" x="409" y="122" text-anchor="middle">…</text>
+  <rect class="gt-comp" x="238" y="165" width="64" height="36" rx="5"/>
+  <text class="gt-comp-s" x="270" y="180" text-anchor="middle">Link</text>
+  <text class="gt-comp-t" x="270" y="193" text-anchor="middle">Gateway</text>
+  <rect class="gt-smr" x="320" y="154" width="106" height="58" rx="8"/>
+  <text class="gt-smr-t" x="373" y="187" text-anchor="middle">Shared Memory</text>
+  <rect class="gt-comp" x="444" y="165" width="64" height="36" rx="5"/>
+  <text class="gt-comp-s" x="476" y="180" text-anchor="middle">Link</text>
+  <text class="gt-comp-t" x="476" y="193" text-anchor="middle">Tunnel</text>
+  <line class="gt-flow" x1="355" y1="133" x2="355" y2="151" marker-start="url(#gt-arrow)" marker-end="url(#gt-arrow)"/>
+  <line class="gt-flow" x1="409" y1="133" x2="409" y2="151" marker-start="url(#gt-arrow)" marker-end="url(#gt-arrow)"/>
+  <line class="gt-flow" x1="303" y1="183" x2="319" y2="183" marker-start="url(#gt-arrow)" marker-end="url(#gt-arrow)"/>
+  <line class="gt-flow" x1="443" y1="183" x2="427" y2="183" marker-start="url(#gt-arrow)" marker-end="url(#gt-arrow)"/>
+
+  <!-- iceoryx2 system B -->
+  <rect class="gt-host" x="566" y="60" width="216" height="168" rx="12"/>
+  <text class="gt-host-t" x="580" y="81">iceoryx2 System B</text>
+  <rect class="gt-part" x="664" y="106" width="66" height="24" rx="5"/>
+  <text class="gt-part-t" x="697" y="122" text-anchor="middle">Participant</text>
+  <rect class="gt-part" x="736" y="106" width="30" height="24" rx="5"/>
+  <text class="gt-part-t" x="751" y="122" text-anchor="middle">…</text>
+  <rect class="gt-comp" x="580" y="165" width="64" height="36" rx="5"/>
+  <text class="gt-comp-s" x="612" y="180" text-anchor="middle">Link</text>
+  <text class="gt-comp-t" x="612" y="193" text-anchor="middle">Tunnel</text>
+  <rect class="gt-smr" x="662" y="154" width="106" height="58" rx="8"/>
+  <text class="gt-smr-t" x="715" y="187" text-anchor="middle">Shared Memory</text>
+  <line class="gt-flow" x1="697" y1="133" x2="697" y2="151" marker-start="url(#gt-arrow)" marker-end="url(#gt-arrow)"/>
+  <line class="gt-flow" x1="751" y1="133" x2="751" y2="151" marker-start="url(#gt-arrow)" marker-end="url(#gt-arrow)"/>
+  <line class="gt-flow" x1="645" y1="183" x2="661" y2="183" marker-start="url(#gt-arrow)" marker-end="url(#gt-arrow)"/>
+
+  <!-- Gateway <-> another middleware, over an adapter -->
+  <line class="gt-flow-2" x1="234" y1="183" x2="170" y2="183" marker-start="url(#gt-arrow)" marker-end="url(#gt-arrow)"/>
+  <text class="gt-edge-t" x="202" y="171" text-anchor="middle">adapter</text>
+
+  <!-- Tunnel A <-> Tunnel B, over a carrier -->
+  <line class="gt-flow-2" x1="512" y1="183" x2="576" y2="183" marker-start="url(#gt-arrow)" marker-end="url(#gt-arrow)"/>
+  <text class="gt-edge-t" x="544" y="171" text-anchor="middle">carrier</text>
+</svg>

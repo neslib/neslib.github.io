@@ -1,0 +1,49 @@
+<svg viewBox="0 0 640 470" role="img" aria-label="Layered architecture of iceoryx2" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .ix-arch-box { fill: var(--ix-surface, #141d2d); stroke: var(--ix-box-line, #6b7d8c); stroke-width: 1.5; }
+    .ix-arch-os  { fill: var(--ix-surface-2, #1b2740); stroke: var(--ix-line, rgba(150,200,230,0.16)); stroke-width: 1; }
+    .ix-arch-code{ fill: var(--ix-code-bg, #0a111c); stroke: var(--ix-line, rgba(150,200,230,0.16)); stroke-width: 1; }
+    .ix-arch-t   { font-family: var(--font-stack--monospace, monospace); font-weight: 600; font-size: 12px; fill: var(--ix-text, #eaf3f7); }
+    .ix-arch-os-t{ font-family: var(--font-stack, sans-serif); font-weight: 600; font-size: 13px; fill: var(--ix-muted, #bccbd6); }
+    .ix-arch-s   { font-family: var(--font-stack, sans-serif); font-size: 11px; fill: var(--ix-text, #eaf3f7); }
+  </style>
+
+  <rect class="ix-arch-box" x="40" y="28" width="176" height="60" rx="10"/>
+  <rect class="ix-arch-code" x="52" y="39" width="134" height="20" rx="5"/>
+  <text class="ix-arch-t" x="58" y="53">iceoryx2-services</text>
+  <text class="ix-arch-s" x="58" y="72">Ready-made services</text>
+
+  <rect class="ix-arch-box" x="232" y="28" width="176" height="60" rx="10"/>
+  <rect class="ix-arch-code" x="244" y="39" width="106" height="20" rx="5"/>
+  <text class="ix-arch-t" x="250" y="53">iceoryx2-link</text>
+  <text class="ix-arch-s" x="250" y="72">Gateways • Tunnels</text>
+
+  <rect class="ix-arch-box" x="424" y="28" width="176" height="60" rx="10"/>
+  <rect class="ix-arch-code" x="436" y="39" width="134" height="20" rx="5"/>
+  <text class="ix-arch-t" x="442" y="53">iceoryx2-userland</text>
+  <text class="ix-arch-s" x="442" y="72">Toolkit • Record &amp; replay</text>
+
+  <rect class="ix-arch-box" x="40" y="102" width="560" height="60" rx="10"/>
+  <rect class="ix-arch-code" x="52" y="113" width="70" height="20" rx="5"/>
+  <text class="ix-arch-t" x="58" y="127">iceoryx2</text>
+  <text class="ix-arch-s" x="58" y="146">User API • Services • Ports • Execution control</text>
+
+  <rect class="ix-arch-box" x="40" y="176" width="560" height="60" rx="10"/>
+  <rect class="ix-arch-code" x="52" y="187" width="98" height="20" rx="5"/>
+  <text class="ix-arch-t" x="58" y="201">iceoryx2-cal</text>
+  <text class="ix-arch-s" x="58" y="220">Concepts • Storage • Channels • Events</text>
+
+  <rect class="ix-arch-box" x="40" y="250" width="560" height="60" rx="10"/>
+  <rect class="ix-arch-code" x="52" y="261" width="91" height="20" rx="5"/>
+  <text class="ix-arch-t" x="58" y="275">iceoryx2-bb</text>
+  <text class="ix-arch-s" x="58" y="294">Building blocks • Algorithms • Containers • Utilities</text>
+
+  <rect class="ix-arch-box" x="40" y="324" width="560" height="60" rx="10"/>
+  <rect class="ix-arch-code" x="52" y="335" width="98" height="20" rx="5"/>
+  <text class="ix-arch-t" x="58" y="349">iceoryx2-pal</text>
+  <text class="ix-arch-s" x="58" y="368">Platform abstraction • POSIX • OS-specific APIs</text>
+
+  <rect class="ix-arch-os" x="40" y="398" width="560" height="60" rx="10"/>
+  <text class="ix-arch-os-t" x="58" y="423">Operating System</text>
+  <text class="ix-arch-s" x="58" y="442">Linux • QNX • Windows • Hardware abstraction • etc</text>
+</svg>

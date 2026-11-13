@@ -1,0 +1,49 @@
+<svg viewBox="0 0 600 140" role="img" aria-label="Request-response communication model" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .rr-box    { fill: var(--ix-surface, #141d2d); stroke: var(--ix-box-line, #6b7d8c); stroke-width: 1.5; }
+    .rr-port   { fill: rgba(45,212,232,0.10); stroke: var(--ix-ice, #2dd4e8); stroke-width: 1; }
+    .rr-svc    { fill: rgba(45,212,232,0.10); stroke: var(--ix-ice, #2dd4e8); stroke-width: 1.5; }
+    .rr-title  { font-family: var(--font-stack, sans-serif); font-weight: 600; font-size: 12px; fill: var(--ix-text, #eaf3f7); }
+    .rr-port-t { font-family: var(--font-stack, sans-serif); font-weight: 600; font-size: 10px; fill: var(--ix-text, #eaf3f7); }
+    .rr-sub    { font-family: var(--font-stack, sans-serif); font-size: 9px; fill: var(--ix-muted, #bccbd6); }
+    .rr-svc-t  { font-family: var(--font-stack, sans-serif); font-weight: 600; font-size: 13px; fill: var(--ix-text, #eaf3f7); }
+    .rr-svc-s  { font-family: var(--font-stack, sans-serif); font-size: 9.5px; fill: var(--ix-muted, #bccbd6); }
+    .rr-label  { font-family: var(--font-stack, sans-serif); font-size: 9.5px; fill: var(--ix-muted, #bccbd6); }
+    .rr-flow   { stroke: var(--ix-muted, #bccbd6); stroke-width: 2; fill: none; }
+    .rr-flow-d { stroke: var(--ix-muted, #bccbd6); stroke-width: 2; fill: none; stroke-dasharray: 5 4; }
+  </style>
+  <defs>
+    <marker id="rr-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse" overflow="visible">
+      <path d="M1,1 L9,5 L1,9 Z" fill="var(--ix-muted, #bccbd6)"/>
+    </marker>
+  </defs>
+
+  <!-- Client -->
+  <rect class="rr-box" x="30" y="24" width="130" height="96" rx="12"/>
+  <text class="rr-title" x="95" y="50" text-anchor="middle">Participant</text>
+  <rect class="rr-port" x="44" y="66" width="102" height="40" rx="8"/>
+  <text class="rr-port-t" x="95" y="83" text-anchor="middle">Client Port</text>
+  <text class="rr-sub" x="95" y="98" text-anchor="middle">Make requests</text>
+
+  <!-- Service -->
+  <circle class="rr-svc" cx="300" cy="72" r="46"/>
+  <text class="rr-svc-t" x="300" y="68" text-anchor="middle">Service</text>
+  <text class="rr-svc-s" x="300" y="86" text-anchor="middle">/calculation</text>
+
+  <!-- Server -->
+  <rect class="rr-box" x="440" y="24" width="130" height="96" rx="12"/>
+  <text class="rr-title" x="505" y="50" text-anchor="middle">Participant</text>
+  <rect class="rr-port" x="454" y="66" width="102" height="40" rx="8"/>
+  <text class="rr-port-t" x="505" y="83" text-anchor="middle">Server Port</text>
+  <text class="rr-sub" x="505" y="98" text-anchor="middle">Respond to requests</text>
+
+  <!-- Request lane (solid, →) -->
+  <line class="rr-flow" x1="166" y1="56" x2="251" y2="56" marker-end="url(#rr-arrow)"/>
+  <line class="rr-flow" x1="349" y1="56" x2="434" y2="56" marker-end="url(#rr-arrow)"/>
+  <text class="rr-label" x="393" y="44" text-anchor="middle">Request</text>
+
+  <!-- Streaming response lane (dashed, ←) -->
+  <line class="rr-flow-d" x1="434" y1="88" x2="349" y2="88" marker-end="url(#rr-arrow)"/>
+  <line class="rr-flow-d" x1="251" y1="88" x2="166" y2="88" marker-end="url(#rr-arrow)"/>
+  <text class="rr-label" x="391" y="106" text-anchor="middle">Streaming Responses</text>
+</svg>

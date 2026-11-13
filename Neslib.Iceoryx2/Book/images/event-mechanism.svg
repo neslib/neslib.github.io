@@ -1,0 +1,81 @@
+<svg viewBox="0 0 600 414" role="img" aria-label="Events over native sleep and wake-up mechanisms" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .ev-box     { fill: var(--ix-surface, #141d2d); stroke: var(--ix-box-line, #6b7d8c); stroke-width: 1.5; }
+    .ev-box-s   { fill: var(--ix-surface, #141d2d); stroke: var(--ix-muted, #bccbd6); stroke-width: 1; stroke-dasharray: 5 3; }
+    .ev-port    { fill: rgba(45,212,232,0.10); stroke: var(--ix-ice, #2dd4e8); stroke-width: 1; }
+    .ev-title   { font-family: var(--font-stack, sans-serif); font-weight: 600; font-size: 12px; fill: var(--ix-text, #eaf3f7); }
+    .ev-port-t  { font-family: var(--font-stack, sans-serif); font-weight: 600; font-size: 10px; fill: var(--ix-text, #eaf3f7); }
+    .ev-region  { fill: rgba(45,212,232,0.10); stroke: var(--ix-ice, #2dd4e8); stroke-width: 1.5; }
+    .ev-chip    { fill: var(--ix-surface-2, #1b2740); stroke: var(--ix-line, rgba(150,200,230,0.16)); stroke-width: 1; }
+    .ev-region-t{ font-family: var(--font-stack, sans-serif); font-weight: 600; font-size: 12px; fill: var(--ix-text, #eaf3f7); }
+    .ev-chip-t  { font-family: var(--font-stack, sans-serif); font-size: 8.5px; fill: var(--ix-muted, #bccbd6); }
+    .ev-state   { font-family: var(--font-stack, sans-serif); font-size: 9px; fill: var(--ix-muted, #bccbd6); }
+    .ev-state-a { font-family: var(--font-stack, sans-serif); font-size: 9px; fill: var(--ix-text, #eaf3f7); }
+    .ev-label   { font-family: var(--font-stack, sans-serif); font-size: 9.5px; fill: var(--ix-muted, #bccbd6); }
+    .ev-flow    { stroke: var(--ix-muted, #bccbd6); stroke-width: 2; fill: none; }
+  </style>
+  <defs>
+    <marker id="evm-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse" overflow="visible">
+      <path d="M1,1 L9,5 L1,9 Z" fill="var(--ix-muted, #bccbd6)"/>
+    </marker>
+  </defs>
+
+  <!-- Notifier -->
+  <rect class="ev-box" x="235" y="20" width="130" height="86" rx="12"/>
+  <text class="ev-title" x="300" y="46" text-anchor="middle">Participant</text>
+  <rect class="ev-port" x="249" y="62" width="102" height="30" rx="8"/>
+  <text class="ev-port-t" x="300" y="81" text-anchor="middle">Notifier Port</text>
+
+  <!-- notify -->
+  <line class="ev-flow" x1="300" y1="110" x2="300" y2="146" marker-end="url(#evm-arrow)"/>
+  <text class="ev-label" x="314" y="132">notify</text>
+
+  <!-- Event service -->
+  <rect class="ev-region" x="40" y="150" width="520" height="92" rx="12"/>
+  <text class="ev-region-t" x="300" y="178" text-anchor="middle">Event Service</text>
+  <rect class="ev-chip" x="66"  y="196" width="70"  height="28" rx="6"/>
+  <text class="ev-chip-t" x="101" y="213" text-anchor="middle">Semaphore</text>
+  <rect class="ev-chip" x="150" y="196" width="54"  height="28" rx="6"/>
+  <text class="ev-chip-t" x="177" y="213" text-anchor="middle">Socket</text>
+  <rect class="ev-chip" x="218" y="196" width="110" height="28" rx="6"/>
+  <text class="ev-chip-t" x="273" y="213" text-anchor="middle">Condition Variable</text>
+  <rect class="ev-chip" x="342" y="196" width="64"  height="28" rx="6"/>
+  <text class="ev-chip-t" x="374" y="213" text-anchor="middle">Interrupt</text>
+  <rect class="ev-chip" x="420" y="196" width="70"  height="28" rx="6"/>
+  <text class="ev-chip-t" x="455" y="213" text-anchor="middle">CudaEvent</text>
+  <rect class="ev-chip" x="504" y="196" width="30"  height="28" rx="6"/>
+  <text class="ev-chip-t" x="519" y="213" text-anchor="middle">…</text>
+
+  <!-- wake-up arrows -->
+  <line class="ev-flow" x1="95" y1="246" x2="95" y2="294" marker-end="url(#evm-arrow)"/>
+  <text class="ev-label" x="110" y="274" text-anchor="start">wake up</text>
+  <line class="ev-flow" x1="300" y1="246" x2="300" y2="294" marker-end="url(#evm-arrow)"/>
+  <text class="ev-label" x="312" y="274" text-anchor="start">id</text>
+  <line class="ev-flow" x1="505" y1="246" x2="505" y2="294" marker-end="url(#evm-arrow)"/>
+  <text class="ev-label" x="490" y="274" text-anchor="end">wake up</text>
+
+  <!-- Listener 1 (sleeping) -->
+  <g opacity="0.55">
+    <rect class="ev-box-s" x="30" y="300" width="130" height="86" rx="12"/>
+    <text class="ev-title" x="95" y="326" text-anchor="middle">Participant</text>
+    <rect class="ev-port" x="44" y="342" width="102" height="30" rx="8"/>
+    <text class="ev-port-t" x="95" y="361" text-anchor="middle">Listener Port</text>
+  </g>
+  <text class="ev-state" x="95" y="402" text-anchor="middle">sleeping</text>
+
+  <!-- Listener 2 (active) -->
+  <rect class="ev-box" x="235" y="300" width="130" height="86" rx="12"/>
+  <text class="ev-title" x="300" y="326" text-anchor="middle">Participant</text>
+  <rect class="ev-port" x="249" y="342" width="102" height="30" rx="8"/>
+  <text class="ev-port-t" x="300" y="361" text-anchor="middle">Listener Port</text>
+  <text class="ev-state-a" x="300" y="402" text-anchor="middle">active</text>
+
+  <!-- Listener 3 (sleeping) -->
+  <g opacity="0.55">
+    <rect class="ev-box-s" x="440" y="300" width="130" height="86" rx="12"/>
+    <text class="ev-title" x="505" y="326" text-anchor="middle">Participant</text>
+    <rect class="ev-port" x="454" y="342" width="102" height="30" rx="8"/>
+    <text class="ev-port-t" x="505" y="361" text-anchor="middle">Listener Port</text>
+  </g>
+  <text class="ev-state" x="505" y="402" text-anchor="middle">sleeping</text>
+</svg>

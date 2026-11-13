@@ -1,0 +1,117 @@
+<svg viewBox="0 42 736 312" role="img" aria-label="Event multiplexing via waitset" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .ex-src     { fill: var(--ix-surface, #141d2d); stroke: var(--ix-line, rgba(150,200,230,0.16)); stroke-width: 1; }
+    .ex-port    { fill: rgba(45,212,232,0.10); stroke: var(--ix-ice, #2dd4e8); stroke-width: 1; }
+    .ex-d       { fill: none; stroke: var(--ix-muted-2, #6b7d8c); stroke-width: 1.2; stroke-dasharray: 6 3.5; }
+    .ex-thread  { fill: none; stroke: var(--ix-muted-2, #6b7d8c); stroke-width: 1.2; stroke-dasharray: 6 3.5; }
+    .ex-waitset { fill: rgba(45,212,232,0.10); stroke: var(--ix-ice, #2dd4e8); stroke-width: 1.5; }
+    .ex-seg     { fill: var(--ix-surface, #141d2d); stroke: var(--ix-muted-2, #6b7d8c); stroke-width: 1.2; stroke-dasharray: 6 3.5; }
+    .ex-chip    { fill: var(--ix-surface-2, #1b2740); stroke: var(--ix-line, rgba(150,200,230,0.16)); stroke-width: 1; }
+    .ex-evt     { fill: var(--ix-ice, #2dd4e8); }
+    .ex-evt2    { fill: var(--ix-blue, #5b8def); }
+    .ex-empty   { fill: none; stroke: var(--ix-muted-2, #6b7d8c); stroke-width: 1.2; stroke-dasharray: 3.5 2.4; }
+    .ex-active  { fill: var(--ix-surface, #141d2d); stroke: var(--ix-ice, #2dd4e8); stroke-width: 1.5; }
+    .ex-diamond { fill: var(--ix-surface, #141d2d); stroke: var(--ix-line, rgba(150,200,230,0.16)); stroke-width: 1; }
+    .ex-t       { font-family: var(--font-stack, sans-serif); font-weight: 600; font-size: 13px; fill: var(--ix-text, #eaf3f7); }
+    .ex-bt      { font-family: var(--font-stack, sans-serif); font-weight: 600; font-size: 11px; fill: var(--ix-text, #eaf3f7); }
+    .ex-bt-i    { font-family: var(--font-stack, sans-serif); font-weight: 600; font-size: 11px; fill: var(--ix-text, #eaf3f7); }
+    .ex-sub     { font-family: var(--font-stack, sans-serif); font-size: 9px; fill: var(--ix-muted, #bccbd6); }
+    .ex-lbl     { font-family: var(--font-stack, sans-serif); font-size: 9px; fill: var(--ix-muted, #bccbd6); }
+    .ex-chip-t  { font-family: var(--font-stack, sans-serif); font-size: 9px; fill: var(--ix-muted, #bccbd6); }
+    .ex-cell-t  { font-family: var(--font-stack, sans-serif); font-size: 9px; fill: var(--ix-muted, #bccbd6); }
+    .ex-flow    { stroke: var(--ix-muted, #bccbd6); stroke-width: 2; fill: none; }
+    .ex-flow-d  { stroke: var(--ix-muted-2, #6b7d8c); stroke-width: 1.75; fill: none; stroke-dasharray: 4.7 3.5; }
+  </style>
+  <defs>
+    <marker id="ex-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse" overflow="visible">
+      <path d="M1,1 L9,5 L1,9 Z" fill="var(--ix-muted, #bccbd6)"/>
+    </marker>
+    <marker id="ex-arrow-d" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto" markerUnits="userSpaceOnUse" overflow="visible">
+      <path d="M1,1 L8,4.5 L1,8 Z" fill="var(--ix-muted-2, #6b7d8c)"/>
+    </marker>
+  </defs>
+
+  <!-- Worker thread boundary -->
+  <rect class="ex-thread" x="128" y="50" width="606" height="296" rx="14"/>
+  <text class="ex-t" x="431" y="76" text-anchor="middle">Worker Thread</text>
+
+  <!-- Event sources -->
+  <rect class="ex-port" x="4" y="100" width="104" height="52" rx="9"/>
+  <text class="ex-bt-i" x="56" y="122" text-anchor="middle">Interval Timer</text>
+  <text class="ex-sub" x="56" y="137" text-anchor="middle">10 ms · TICK!</text>
+
+  <rect class="ex-port" x="4" y="160" width="104" height="52" rx="9"/>
+  <text class="ex-bt-i" x="56" y="182" text-anchor="middle">Listener Port</text>
+  <text class="ex-sub" x="56" y="197" text-anchor="middle">/sensors · NEW DATA</text>
+
+  <g opacity="0.55">
+    <rect class="ex-d" x="4" y="220" width="104" height="52" rx="9"/>
+    <text class="ex-bt" x="56" y="242" text-anchor="middle">File Descriptor</text>
+    <text class="ex-sub" x="56" y="257" text-anchor="middle">fd: 7 · waiting</text>
+    <rect class="ex-d" x="4" y="280" width="104" height="52" rx="9"/>
+    <text class="ex-bt" x="56" y="302" text-anchor="middle">Deadline Timer</text>
+    <text class="ex-sub" x="56" y="317" text-anchor="middle">500 ms · pending</text>
+  </g>
+
+  <!-- Event flows to waitset -->
+  <line class="ex-flow" x1="112" y1="126" x2="184" y2="126" marker-end="url(#ex-arrow)"/>
+  <line class="ex-flow" x1="112" y1="186" x2="184" y2="186" marker-end="url(#ex-arrow)"/>
+
+  <!-- Waitset -->
+  <rect class="ex-waitset" x="190" y="96" width="276" height="228" rx="12"/>
+  <text class="ex-t" x="328" y="120" text-anchor="middle">Waitset</text>
+
+  <rect class="ex-seg" x="206" y="144" width="244" height="86" rx="6"/>
+  <text class="ex-lbl" x="328" y="162" text-anchor="middle">Event Queue</text>
+  <rect class="ex-evt"   x="218" y="180" width="58" height="20" rx="3"/>
+  <rect class="ex-evt"   x="282" y="180" width="58" height="20" rx="3"/>
+  <rect class="ex-empty" x="346" y="180" width="44" height="20" rx="3"/>
+  <rect class="ex-empty" x="396" y="180" width="44" height="20" rx="3"/>
+  <text class="ex-cell-t" x="247" y="216" text-anchor="middle">Timer</text>
+  <text class="ex-cell-t" x="311" y="216" text-anchor="middle">Data</text>
+  <text class="ex-cell-t" x="396" y="216" text-anchor="middle">empty slots</text>
+
+  <rect class="ex-chip" x="206" y="250" width="54" height="24" rx="5"/>
+  <text class="ex-chip-t" x="233" y="266" text-anchor="middle">select</text>
+  <rect class="ex-chip" x="264" y="250" width="48" height="24" rx="5"/>
+  <text class="ex-chip-t" x="288" y="266" text-anchor="middle">epoll</text>
+  <rect class="ex-chip" x="316" y="250" width="40" height="24" rx="5"/>
+  <text class="ex-chip-t" x="336" y="266" text-anchor="middle">poll</text>
+  <rect class="ex-chip" x="360" y="250" width="90" height="24" rx="5"/>
+  <text class="ex-chip-t" x="405" y="266" text-anchor="middle">WSAPoll …</text>
+  <rect class="ex-chip" x="206" y="284" width="60" height="24" rx="5"/>
+  <text class="ex-chip-t" x="236" y="300" text-anchor="middle">inotify</text>
+  <rect class="ex-chip" x="270" y="284" width="60" height="24" rx="5"/>
+  <text class="ex-chip-t" x="300" y="300" text-anchor="middle">kqueue</text>
+  <rect class="ex-chip" x="334" y="284" width="116" height="24" rx="5"/>
+  <text class="ex-chip-t" x="392" y="300" text-anchor="middle">platform specific</text>
+
+  <!-- wake-up signal -->
+  <line class="ex-flow" x1="466" y1="128" x2="552" y2="128" marker-end="url(#ex-arrow)"/>
+  <text class="ex-lbl" x="509" y="121" text-anchor="middle">wake up</text>
+
+  <!-- Thread state machine -->
+  <rect class="ex-d" x="556" y="108" width="120" height="46" rx="8"/>
+  <text class="ex-bt" x="616" y="128" text-anchor="middle">BLOCKED</text>
+  <text class="ex-sub" x="616" y="143" text-anchor="middle">waitset.wait()</text>
+
+  <rect class="ex-active" x="556" y="190" width="120" height="46" rx="8"/>
+  <text class="ex-bt" x="616" y="210" text-anchor="middle">ACTIVE</text>
+  <text class="ex-sub" x="616" y="225" text-anchor="middle">process events</text>
+
+  <polygon class="ex-diamond" points="616,266 648,294 616,322 584,294"/>
+  <text class="ex-sub" x="616" y="291" text-anchor="middle">more</text>
+  <text class="ex-sub" x="616" y="301" text-anchor="middle">events?</text>
+
+  <!-- transitions -->
+  <line class="ex-flow" x1="616" y1="156" x2="616" y2="188" marker-end="url(#ex-arrow)"/>
+  <text class="ex-lbl" x="632" y="176" text-anchor="start">wake</text>
+  <line class="ex-flow" x1="616" y1="236" x2="616" y2="264" marker-end="url(#ex-arrow)"/>
+  <text class="ex-lbl" x="632" y="254" text-anchor="start">done</text>
+  <!-- yes: loop back to ACTIVE -->
+  <path class="ex-flow" d="M648,294 H706 V213 H678" marker-end="url(#ex-arrow)"/>
+  <text class="ex-lbl" x="712" y="256" text-anchor="start">yes</text>
+  <!-- no: back to BLOCKED -->
+  <path class="ex-flow-d" d="M584,294 H536 V146 H554" marker-end="url(#ex-arrow-d)"/>
+  <text class="ex-lbl" x="530" y="220" text-anchor="end">no</text>
+</svg>

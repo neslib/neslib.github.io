@@ -1,0 +1,40 @@
+<svg viewBox="10 52 560 296" role="img" aria-label="Service-oriented communication graph" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .so-svc   { fill: rgba(45,212,232,0.10); stroke: var(--ix-ice, #2dd4e8); stroke-width: 1.5; }
+    .so-svc-t { font-family: var(--font-stack, sans-serif); font-weight: 600; font-size: 12px; fill: var(--ix-text, #eaf3f7); }
+    .so-box   { fill: var(--ix-surface, #141d2d); stroke: var(--ix-box-line, #6b7d8c); stroke-width: 1.5; }
+    .so-name  { font-family: var(--font-stack, sans-serif); font-weight: 600; font-size: 9px; fill: var(--ix-text, #eaf3f7); }
+    .so-flow  { stroke: var(--ix-muted, #bccbd6); stroke-width: 2; fill: none; }
+  </style>
+  <defs>
+    <marker id="so-arrow" markerWidth="10" markerHeight="10" refX="8" refY="5" orient="auto" markerUnits="userSpaceOnUse" overflow="visible">
+      <path d="M1,1 L9,5 L1,9 Z" fill="var(--ix-muted, #bccbd6)"/>
+    </marker>
+  </defs>
+
+  <!-- Services -->
+  <circle class="so-svc" cx="210" cy="130" r="36"/>
+  <text class="so-svc-t" x="210" y="134" text-anchor="middle">Service A</text>
+  <circle class="so-svc" cx="440" cy="210" r="36"/>
+  <text class="so-svc-t" x="440" y="214" text-anchor="middle">Service B</text>
+
+  <!-- Participants -->
+  <rect class="so-box" x="38" y="77" width="84" height="26" rx="8"/>
+  <text class="so-name" x="80" y="93" text-anchor="middle">Participant A</text>
+  <rect class="so-box" x="328" y="67" width="84" height="26" rx="8"/>
+  <text class="so-name" x="370" y="83" text-anchor="middle">Participant B</text>
+  <rect class="so-box" x="48" y="197" width="84" height="26" rx="8"/>
+  <text class="so-name" x="90" y="213" text-anchor="middle">Participant D</text>
+  <rect class="so-box" x="258" y="197" width="84" height="26" rx="8"/>
+  <text class="so-name" x="300" y="213" text-anchor="middle">Participant C</text>
+  <rect class="so-box" x="468" y="297" width="84" height="26" rx="8"/>
+  <text class="so-name" x="510" y="313" text-anchor="middle">Participant E</text>
+
+  <!-- Communication graph -->
+  <line class="so-flow" x1="125" y1="104" x2="170" y2="118" marker-end="url(#so-arrow)"/>
+  <line class="so-flow" x1="250" y1="118" x2="323" y2="91" marker-end="url(#so-arrow)"/>
+  <line class="so-flow" x1="175" y1="153" x2="112" y2="192" marker-end="url(#so-arrow)"/>
+  <line class="so-flow" x1="241" y1="158" x2="283" y2="193" marker-end="url(#so-arrow)"/>
+  <line class="so-flow" x1="348" y1="210" x2="398" y2="210" marker-end="url(#so-arrow)"/>
+  <line class="so-flow" x1="462" y1="243" x2="494" y2="291" marker-end="url(#so-arrow)"/>
+</svg>

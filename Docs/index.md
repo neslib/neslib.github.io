@@ -10,6 +10,14 @@ Delphi bindings and OOP-like wrappers for [SDL3](https://libsdl.org/index.php)
 
 **Documentation**: [https://neslib.github.io/Neslib.Sdl3](https://neslib.github.io/Neslib.Sdl3)
 
+## Neslib.Iceoryx2
+
+Delphi bindings and OOP-like wrappers for [Iceoryx2](https://iceoryx.io/)
+
+**Repository**: [https://github.com/neslib/neslib.iceoryx2](https://github.com/neslib/neslib.iceoryx2)
+
+**Documentation**: [https://neslib.github.io/Neslib.iceoryx2](https://neslib.github.io/Neslib.Iceoryx2)
+
 ## DelphiBlend2D
 
 Delphi bindings and framework for [Blend2D](https://blend2d.com/)
