@@ -442,6 +442,14 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
     
     
       
@@ -535,8 +543,6 @@
   
     
     
-      
-        
       
         
       
@@ -766,55 +772,6 @@
           
         
       
-    
-    
-      
-      
-    
-    
-      
-        
-        
-      
-    
-    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
-      
-        
-  
-  
-    <a href="../../../Neslib.Iceoryx2.Internal/" class="md-nav__link">
-      
-  
-  <span class="md-ellipsis">
-    Neslib.Iceoryx2.Internal
-  </span>
-  
-
-      
-        <span class="md-nav__icon md-icon"></span>
-      
-    </a>
-  
-
-      
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    
-    
-      
-        
-          
-        
-      
         
       
         
@@ -939,7 +896,7 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6" checked>
         
           
           
@@ -955,14 +912,14 @@
             </a>
             
               
-              <label class="md-nav__link " for="__nav_4_7" id="__nav_4_7_label" tabindex="0">
+              <label class="md-nav__link " for="__nav_4_6" id="__nav_4_6_label" tabindex="0">
                 <span class="md-nav__icon md-icon"></span>
               </label>
             
           </div>
         
-        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_7_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4_7">
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_4_6_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_6">
             <span class="md-nav__icon md-icon"></span>
             Neslib.Iceoryx2.RequestResponse
           </label>
@@ -1203,10 +1160,10 @@
       
         
         
-        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_7_2" checked>
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4_6_2" checked>
         
           
-          <label class="md-nav__link" for="__nav_4_7_2" id="__nav_4_7_2_label" tabindex="0">
+          <label class="md-nav__link" for="__nav_4_6_2" id="__nav_4_6_2_label" tabindex="0">
             
   
   <span class="md-ellipsis">
@@ -1217,8 +1174,8 @@
             <span class="md-nav__icon md-icon"></span>
           </label>
         
-        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_7_2_label" aria-expanded="true">
-          <label class="md-nav__title" for="__nav_4_7_2">
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_4_6_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_4_6_2">
             <span class="md-nav__icon md-icon"></span>
             Classes & Records
           </label>
@@ -4148,6 +4105,10 @@
 <td>Returns a reference to the payload slice of the received TRequestMut.</td>
 </tr>
 <tr>
+<td><a href="#Release">Release</a></td>
+<td>Manually releases the request.</td>
+</tr>
+<tr>
 <td><a href="#SendCopy">SendCopy</a></td>
 <td>Sends a copy of the provided data to the <code>PendingResponse</code> of the corresponding client. This is not a zero-copy API. Use TActiveRequest.LoanUninit instead.</td>
 </tr>
@@ -4275,6 +4236,10 @@
 <h4 id="remarks_5">Remarks</h4>
 <p>Can only be used when TRequestPayload is a slice (TSlice<t>). This is checked with an assertion. Otherwise use Payload instead.</p>
 <p>The type parameter <code>T</code> <em>must</em> be the element type of the slice. E.g. if <code>TRequestPayload = TSlice&lt;word&gt;</code>, then <code>T</code> must be <code>Word</code>. This is checked with an assertion. </word></t></p>
+<hr />
+<h3 id="Release"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Release</h3>
+<p>Manually releases the request. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Release</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <hr />
 <h3 id="SendCopy"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> SendCopy(TResponsePayload)</h3>
 <p>Sends a copy of the provided data to the <code>PendingResponse</code> of the corresponding client. This is not a zero-copy API. Use TActiveRequest.LoanUninit instead. </p>

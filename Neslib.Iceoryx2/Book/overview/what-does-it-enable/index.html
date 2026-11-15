@@ -442,6 +442,14 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
     
     
       
@@ -680,6 +688,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#predictable-execution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Predictable Execution
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-path-toward-mission-critical-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      A Path Toward Mission-Critical Deployment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Further Reading
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -728,6 +763,8 @@
     
       
         
+          
+        
       
         
       
@@ -749,7 +786,7 @@
         
   
   
-    <a href="../../GettingStarted/index.md" class="md-nav__link">
+    <a href="../../getting-started/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -764,6 +801,198 @@
   
 
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../fundamentals/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Fundamentals
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../tutorials/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../how-to/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    How To
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -832,8 +1061,6 @@
   
     
     
-      
-        
       
         
       
@@ -930,6 +1157,33 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#predictable-execution" class="md-nav__link">
+    <span class="md-ellipsis">
+      Predictable Execution
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#a-path-toward-mission-critical-deployment" class="md-nav__link">
+    <span class="md-ellipsis">
+      A Path Toward Mission-Critical Deployment
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Further Reading
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -950,78 +1204,38 @@
 
 <h1 id="what-does-it-enable">What Does It Enable?</h1>
 <h2 id="low-latency-and-more-compute-for-the-workload">Low Latency and More Compute for the Workload</h2>
-<p>By avoiding payload copies in the local data path, <code>iceoryx2</code> minimizes the
-CPU time and memory bandwidth spent on communication. At the same time,
-message-delivery latency remains low and independent of payload size.</p>
-<p>This results in sub-microsecond message-delivery latency, even for large
-payloads, while leaving more of the available compute resources for the
-algorithms and application logic that actually process the data.</p>
-<p>```{inline-svg} /images/latency.svg
-:alt: iceoryx2 message-delivery latency</p>
-<p>Message-delivery latency with increasing payload size
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>For data-intensive systems, this allows larger workloads to run on the same
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>hardware and helps scale applications from powerful development machines to
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>more resource-constrained embedded targets.
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>## Predictable Execution
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>Fast communication alone is not enough for real-time systems. Communication
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>also needs to be predictable and avoid unexpected background activity that
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>interferes with application execution.
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>`iceoryx2` has no background threads, no system calls in the data-delivery
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>path, and no central broker. Message delivery therefore does not depend on
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>hidden middleware activity or additional scheduling decisions.
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>Together with the separation of data flow and control flow, this gives
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>applications explicit control over when threads wake up, when data is
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>consumed, and where execution takes place.
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>The result is stable low latency with minimal jitter and communication
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>behavior that is easier to reason about under real-time constraints.
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>## A Path Toward Mission-Critical Deployment
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>
-</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>`iceoryx2` is designed for demanding embedded environments where predictable
-</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>resource usage and explicit control over system behavior matter.
-</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>
-</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>It supports `no_std` environments and avoids heap allocations during runtime.
-</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>Communication resources are bounded and configurable, while the decentralized
-</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>architecture avoids a central component that all communication depends on.
-</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>
-</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>These properties make `iceoryx2` a suitable communication foundation for
-</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>systems with real-time, robustness, and resource constraints.
-</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>
-</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>They do not make a complete system safe or certified by themselves. But
-</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>starting with a data plane designed for these constraints helps avoid
-</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>replacing a fundamental part of the architecture when moving from prototype
-</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>to production.
-</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>
-</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>## Further Reading
-</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>
-</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>````{grid} 1 1 2 3
-</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>:gutter: 2
-</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a>
-</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a>```{grid-item-card} Fundamentals: Execution Control
-</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a>:link: /fundamentals/execution-control
-</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a>:link-type: doc
-</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a>:shadow: none
-</span><span id="__span-0-48"><a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a>
-</span><span id="__span-0-49"><a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a>Learn how `iceoryx2` keeps execution under application control.
-</span></code></pre></div></p>
-<p>```{grid-item-card} iceoryx2 Performance Benchmarks
-<img alt="🔗" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f517.svg" title=":link:" /> https://github.com/eclipse-iceoryx/iceoryx2#performance
-:link-type: url
-:shadow: none</p>
-<p>Explore the message-delivery latency characteristics of <code>iceoryx2</code>.
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>```{grid-item-card} no_std Builds
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>:link: https://github.com/eclipse-iceoryx/iceoryx2/tree/main/doc
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>:link-type: url
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>:shadow: none
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>Learn how `iceoryx2` can be built for `no_std` environments.
-</span></code></pre></div></p>
-<p>````</p>
+<p>By avoiding payload copies in the local data path, <code>iceoryx2</code> minimizes the CPU time and memory bandwidth spent on communication. At the same time, message-delivery latency remains low and independent of payload size.</p>
+<p>This results in sub-microsecond message-delivery latency, even for large payloads, while leaving more of the available compute resources for the algorithms and application logic that actually process the data.</p>
+<p><img alt="iceoryx2 message-delivery latency" src="../../images/latency.svg" /></p>
+<figure>
+<figcaption>Message-delivery latency with increasing payload size</figcaption>
+</figure>
+<p>For data-intensive systems, this allows larger workloads to run on the same hardware and helps scale applications from powerful development machines to more resource-constrained embedded targets.</p>
+<h2 id="predictable-execution">Predictable Execution</h2>
+<p>Fast communication alone is not enough for real-time systems. Communication also needs to be predictable and avoid unexpected background activity that interferes with application execution.</p>
+<p><code>iceoryx2</code> has no background threads, no system calls in the data-delivery path, and no central broker. Message delivery therefore does not depend on hidden middleware activity or additional scheduling decisions.</p>
+<p>Together with the separation of data flow and control flow, this gives applications explicit control over when threads wake up, when data is consumed, and where execution takes place.</p>
+<p>The result is stable low latency with minimal jitter and communication behavior that is easier to reason about under real-time constraints.</p>
+<h2 id="a-path-toward-mission-critical-deployment">A Path Toward Mission-Critical Deployment</h2>
+<p><code>iceoryx2</code> is designed for demanding embedded environments where predictable resource usage and explicit control over system behavior matter.</p>
+<p>It supports <code>no_std</code> environments and avoids heap allocations during runtime. Communication resources are bounded and configurable, while the decentralized architecture avoids a central component that all communication depends on.</p>
+<p>These properties make <code>iceoryx2</code> a suitable communication foundation for systems with real-time, robustness, and resource constraints.</p>
+<p>They do not make a complete system safe or certified by themselves. But starting with a data plane designed for these constraints helps avoid replacing a fundamental part of the architecture when moving from prototype to production.</p>
+<h2 id="further-reading">Further Reading</h2>
+<div class="grid cards">
+<ul>
+<li>
+<p><a href="../../fundamentals/execution-control/"><strong>Fundamentals: Execution Control</strong></a></p>
+<hr />
+<p>Learn how <code>iceoryx2</code> keeps execution under application control..</p>
+</li>
+<li>
+<p><a href="https://github.com/eclipse-iceoryx/iceoryx2#performance"><strong>iceoryx2 Performance Benchmarks</strong></a></p>
+<hr />
+<p>Explore the message-delivery latency characteristics of <code>iceoryx2</code>.</p>
+</li>
+</ul>
+</div>
 
 
 

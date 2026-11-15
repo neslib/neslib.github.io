@@ -442,6 +442,14 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
     
     
       
@@ -746,6 +754,8 @@
     
       
         
+          
+        
       
         
       
@@ -767,7 +777,7 @@
         
   
   
-    <a href="../../GettingStarted/index.md" class="md-nav__link">
+    <a href="../../getting-started/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -782,6 +792,198 @@
   
 
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../fundamentals/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Fundamentals
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../tutorials/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../how-to/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    How To
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -850,8 +1052,6 @@
   
     
     
-      
-        
       
         
       
@@ -992,6 +1192,9 @@
 <p>For inter-process communication (IPC) on the same system, <code>iceoryx2</code> uses <strong>true zero-copy communication based on shared memory</strong>.</p>
 <p>Instead of copying a payload from one process to another, the producer writes the data directly into shared memory that can be accessed by the consumers. When the data is published, only references to this memory are exchanged. This keeps data-delivery latency independent of payload size and allows high-volume local data exchange to scale efficiently.</p>
 <p><img alt="True Zero-Copy Communication" src="../../images/zero-copy-data-flow.svg" /></p>
+<figure>
+<figcaption>True Zero-Copy Communication</figcaption>
+</figure>
 <p><code>iceoryx2</code> takes care of the communication infrastructure around this mechanism, including discovery, message delivery, memory ownership, and synchronization.</p>
 <h3 id="messaging-patterns">Messaging Patterns</h3>
 <p>In data-intensive systems such as physical AI, communication and execution need to be orchestrated together. <code>iceoryx2</code> separates <strong>data flow from control flow</strong> and supports a variety of <a href="../../fundamentals/messaging-patterns/">messaging patterns</a>, including publish-subscribe, request-response, events, and a shared-memory blackboard.</p>

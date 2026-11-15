@@ -442,6 +442,14 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
     
     
       
@@ -668,6 +676,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Further Reading
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -737,6 +754,8 @@
     
       
         
+          
+        
       
         
       
@@ -758,7 +777,7 @@
         
   
   
-    <a href="../../GettingStarted/index.md" class="md-nav__link">
+    <a href="../../getting-started/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -773,6 +792,198 @@
   
 
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../fundamentals/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Fundamentals
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../tutorials/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../how-to/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    How To
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -841,8 +1052,6 @@
   
     
     
-      
-        
       
         
       
@@ -948,6 +1157,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Further Reading
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -968,101 +1186,54 @@
 
 <h1 id="how-does-it-fit">How Does It Fit?</h1>
 <h2 id="common-approaches-to-local-communication">Common Approaches to Local Communication</h2>
-<p>There are many ways to exchange data between software components on the same
-machine. Common approaches range from basic operating-system mechanisms to
-network communication protocols, feature-rich communication middleware, and
-larger software frameworks.</p>
+<p>There are many ways to exchange data between software components on the same machine. Common approaches range from basic operating-system mechanisms to network communication protocols, feature-rich communication middleware, and larger software frameworks.</p>
 <p>Each approach comes with different strengths and trade-offs.</p>
 <h3 id="operating-system-mechanisms">Operating-System Mechanisms</h3>
-<p>Operating systems provide inter-process communication (IPC) mechanisms such
-as sockets, pipes, or message queues that give applications a high degree of
-control over communication.</p>
-<p>Building directly on these mechanisms, however, often means writing repeated
-and error-prone boilerplate code or developing and maintaining additional
-abstraction layers.</p>
-<p>This can be a good fit for simple systems, but effort and complexity grow as
-the number of components and communication requirements increase. Adding
-shared memory later as a performance optimization can increase this
-complexity further.</p>
+<p>Operating systems provide inter-process communication (IPC) mechanisms such as sockets, pipes, or message queues that give applications a high degree of control over communication.</p>
+<p>Building directly on these mechanisms, however, often means writing repeated and error-prone boilerplate code or developing and maintaining additional abstraction layers.</p>
+<p>This can be a good fit for simple systems, but effort and complexity grow as the number of components and communication requirements increase. Adding shared memory later as a performance optimization can increase this complexity further.</p>
 <h3 id="network-communication-protocols">Network Communication Protocols</h3>
-<p>Network protocols are designed to exchange data between machines and provide
-features such as addressing, connection management, serialization, and
-interoperability across networks.</p>
-<p>These properties are valuable for distributed systems. For high-volume
-communication between processes on the same machine, however, moving every
-payload through the network stack introduces overhead that is not required
-for local data exchange.</p>
-<p>As message sizes or message rates increase, this overhead can lead to higher
-CPU utilization, increasing latency, and less predictable timing.</p>
+<p>Network protocols are designed to exchange data between machines and provide features such as addressing, connection management, serialization, and interoperability across networks.</p>
+<p>These properties are valuable for distributed systems. For high-volume communication between processes on the same machine, however, moving every payload through the network stack introduces overhead that is not required for local data exchange.</p>
+<p>As message sizes or message rates increase, this overhead can lead to higher CPU utilization, increasing latency, and less predictable timing.</p>
 <h3 id="communication-middleware">Communication Middleware</h3>
-<p>Communication middleware can provide standardized APIs, service discovery,
-IDLs, quality-of-service settings, and network communication as part of one
-integrated solution.</p>
-<p>This can be a good choice when these concepts match the architecture of the
-system. Many such solutions also provide shared-memory transports to improve
-local IPC performance.</p>
-<p>The trade-off is that the architecture can become coupled to that
-middleware's data model, communication semantics, network protocol, and
-execution concepts.</p>
+<p>Communication middleware can provide standardized APIs, service discovery, IDLs, quality-of-service settings, and network communication as part of one integrated solution.</p>
+<p>This can be a good choice when these concepts match the architecture of the system. Many such solutions also provide shared-memory transports to improve local IPC performance.</p>
+<p>The trade-off is that the architecture can become coupled to that middleware's data model, communication semantics, network protocol, and execution concepts.</p>
 <h3 id="larger-frameworks">Larger Frameworks</h3>
-<p>Larger frameworks go beyond communication and may also define application
-lifecycle, execution, diagnostics, tooling, and other parts of the software
-architecture.</p>
-<p>This can significantly accelerate development when the framework matches the
-intended system.</p>
-<p>At the same time, adopting a framework means adopting its architectural
-decisions and usually creates stronger coupling to its specific ecosystem.</p>
+<p>Larger frameworks go beyond communication and may also define application lifecycle, execution, diagnostics, tooling, and other parts of the software architecture.</p>
+<p>This can significantly accelerate development when the framework matches the intended system.</p>
+<p>At the same time, adopting a framework means adopting its architectural decisions and usually creates stronger coupling to its specific ecosystem.</p>
 <h2 id="a-flexible-foundation-for-your-architecture">A Flexible Foundation for Your Architecture</h2>
-<p>The approaches above either leave much of the communication infrastructure
-to the application, optimize primarily for distributed communication, or
-provide more functionality at the cost of stronger architectural coupling.
-<code>iceoryx2</code> is designed to provide the hard parts of efficient and
-deterministic local data movement while leaving the surrounding architecture
-open.</p>
-<p>This makes <code>iceoryx2</code> useful in two architectural roles.</p>
-<p>It can be integrated into existing communication stacks or frameworks as the
-zero-copy data plane, for example to optimize communication between processes
-without replacing the higher-level concepts already in use.</p>
-<p>It can also serve as the foundation for custom communication architectures.
-The IDLs, network protocols, and other technologies that best fit the use case
-can be selected independently, while <code>iceoryx2</code> handles the architecturally
-important task of efficient and deterministic local data movement.</p>
-<p>```{inline-svg} /images/full-stack-layers.svg
-:alt: iceoryx2 in different software architectures</p>
-<p>iceoryx2 as a Flexible Zero-Copy Data Plane
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>`iceoryx2` itself provides flexible mechanisms and extension points for
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>integrating external data models and IDLs, as well as gateways and tunnels
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>for connecting the local data plane to different network protocols.
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>This allows `iceoryx2` to optimize an existing stack or serve as a building
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>block for a custom architecture without imposing a framework or ecosystem.
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>## Further Reading
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>````{grid} 1 1 2 3
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>:gutter: 2
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>```{grid-item-card} Fundamentals: Communication Model
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>:link: /fundamentals/communication-model
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>:link-type: doc
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>:shadow: none
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>Learn more about the communication model behind `iceoryx2`.
-</span></code></pre></div></p>
-<p>```{grid-item-card} Fundamentals: Layered Architecture
-<img alt="🔗" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f517.svg" title=":link:" /> /fundamentals/layered-architecture
-:link-type: doc
-:shadow: none</p>
-<p>Learn more about the layers of <code>iceoryx2</code>.
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>```{grid-item-card} Links: Tunnels and Gateways
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>:link: /fundamentals/links
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>:link-type: doc
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>:shadow: none
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>Learn how the local `iceoryx2` data plane can connect to other communication
-</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a>technologies and networks.
-</span></code></pre></div></p>
-<p>````</p>
+<p>The approaches above either leave much of the communication infrastructure to the application, optimize primarily for distributed communication, or provide more functionality at the cost of stronger architectural coupling. <code>iceoryx2</code> is designed to provide the hard parts of efficient and deterministic local data movement while leaving the surrounding architecture open.</p>
+<p>This makes <code>iceoryx2</code> useful in two architectural roles. It can be integrated into existing communication stacks or frameworks as the zero-copy data plane, for example to optimize communication between processes without replacing the higher-level concepts already in use.</p>
+<p>It can also serve as the foundation for custom communication architectures. The IDLs, network protocols, and other technologies that best fit the use case can be selected independently, while <code>iceoryx2</code> handles the architecturally important task of efficient and deterministic local data movement.</p>
+<p><img alt="iceoryx2 in different software architectures" src="../../images/full-stack-layers.svg" /></p>
+<figure>
+<figcaption>iceoryx2 as a Flexible Zero-Copy Data Plane</figcaption>
+</figure>
+<p><code>iceoryx2</code> itself provides flexible mechanisms and extension points for integrating external data models and IDLs, as well as gateways and tunnels for connecting the local data plane to different network protocols.</p>
+<p>This allows <code>iceoryx2</code> to optimize an existing stack or serve as a building block for a custom architecture without imposing a framework or ecosystem.</p>
+<h2 id="further-reading">Further Reading</h2>
+<div class="grid cards">
+<ul>
+<li>
+<p><a href="../../fundamentals/communication-model/"><strong>Fundamentals:  Communication Model</strong></a></p>
+<hr />
+<p>Learn more about the communication model behind <code>iceoryx2</code>.</p>
+</li>
+<li>
+<p><a href="../../fundamentals/layered-architecture/"><strong>Fundamentals: Layered Architecture</strong></a></p>
+<hr />
+<p>Learn more about the layers of <code>iceoryx2</code>.</p>
+</li>
+<li>
+<p><a href="../../fundamentals/links/"><strong>Links: Tunnels and Gateways</strong></a></p>
+<hr />
+<p>Learn how the local <code>iceoryx2</code> data plane can connect to other communication technologies and networks.</p>
+</li>
+</ul>
+</div>
 
 
 

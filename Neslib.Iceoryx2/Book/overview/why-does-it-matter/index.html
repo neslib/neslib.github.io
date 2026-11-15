@@ -442,6 +442,14 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
     
     
       
@@ -638,6 +646,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#data-movement-is-an-architectural-concern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Movement Is an Architectural Concern
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Further Reading
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -728,6 +754,8 @@
     
       
         
+          
+        
       
         
       
@@ -749,7 +777,7 @@
         
   
   
-    <a href="../../GettingStarted/index.md" class="md-nav__link">
+    <a href="../../getting-started/" class="md-nav__link">
       
   
   <span class="md-ellipsis">
@@ -764,6 +792,198 @@
   
 
       
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../fundamentals/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Fundamentals
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../tutorials/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    Tutorials
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+      
+        
+        
+      
+    
+    <li class="md-nav__item md-nav__item--pruned md-nav__item--nested">
+      
+        
+  
+  
+    <a href="../../how-to/" class="md-nav__link">
+      
+  
+  <span class="md-ellipsis">
+    How To
+  </span>
+  
+
+      
+        <span class="md-nav__icon md-icon"></span>
+      
+    </a>
+  
+
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../glossary/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Glossary
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -832,8 +1052,6 @@
   
     
     
-      
-        
       
         
       
@@ -930,6 +1148,24 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#data-movement-is-an-architectural-concern" class="md-nav__link">
+    <span class="md-ellipsis">
+      Data Movement Is an Architectural Concern
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#further-reading" class="md-nav__link">
+    <span class="md-ellipsis">
+      Further Reading
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -950,99 +1186,59 @@
 
 <h1 id="why-does-it-matter">Why Does It Matter?</h1>
 <h2 id="data-movement-is-part-of-the-workload">Data Movement Is Part of the Workload</h2>
-<p>Modern data-intensive systems are built from many software components that
-continuously exchange data.</p>
-<p>A camera frame may pass through perception, recording, and visualization.
-A robot may combine data from cameras, LiDAR, IMU, and joint sensors. Each
-processing step consumes data, produces new data, and passes it on.</p>
-<p>As these systems grow, the cost of moving data between components can become
-a significant part of the overall workload.</p>
-<p>This is especially relevant for physical AI and other embedded systems,
-where large data volumes have to be processed with limited CPU and within
-strict latency bounds.</p>
+<p>Modern data-intensive systems are built from many software components that continuously exchange data.</p>
+<p>A camera frame may pass through perception, recording, and visualization. A robot may combine data from cameras, LiDAR, IMU, and joint sensors. Each processing step consumes data, produces new data, and passes it on.</p>
+<p>As these systems grow, the cost of moving data between components can become a significant part of the overall workload.</p>
+<p>This is especially relevant for physical AI and other embedded systems, where large data volumes have to be processed with limited CPU and within strict latency bounds.</p>
 <h3 id="large-payloads-make-copies-expensive">Large Payloads Make Copies Expensive</h3>
-<p>On POSIX systems, processes operate in separate virtual address spaces.
-Moving data from one process to another therefore usually requires help from
-the operating system or a communication middleware.</p>
-<p>Depending on the communication mechanism, a single transfer can involve
-serialization and deserialization, multiple data copies, system calls,
-user-kernel transitions, and context switches.</p>
-<p>```{inline-svg} /images/posix-comm.svg
-:alt: POSIX IPC</p>
-<p>Typical Inter-Process Communication on POSIX
-<div class="language-text highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>For small messages, this overhead can be negligible. For large sensor
-</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>payloads, it scales with the amount of data being transferred.
-</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>
-</span><span id="__span-0-4"><a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>For example, consider an automated-driving system with several
-</span><span id="__span-0-5"><a id="__codelineno-0-5" name="__codelineno-0-5" href="#__codelineno-0-5"></a>high-resolution cameras producing several GB/s of sensor data. If this data
-</span><span id="__span-0-6"><a id="__codelineno-0-6" name="__codelineno-0-6" href="#__codelineno-0-6"></a>is copied multiple times while moving through the system, CPU time and
-</span><span id="__span-0-7"><a id="__codelineno-0-7" name="__codelineno-0-7" href="#__codelineno-0-7"></a>memory bandwidth are spent on transporting data instead of processing it.
-</span><span id="__span-0-8"><a id="__codelineno-0-8" name="__codelineno-0-8" href="#__codelineno-0-8"></a>
-</span><span id="__span-0-9"><a id="__codelineno-0-9" name="__codelineno-0-9" href="#__codelineno-0-9"></a>The result is:
-</span><span id="__span-0-10"><a id="__codelineno-0-10" name="__codelineno-0-10" href="#__codelineno-0-10"></a>
-</span><span id="__span-0-11"><a id="__codelineno-0-11" name="__codelineno-0-11" href="#__codelineno-0-11"></a>* higher CPU utilization
-</span><span id="__span-0-12"><a id="__codelineno-0-12" name="__codelineno-0-12" href="#__codelineno-0-12"></a>* increasing communication latency
-</span><span id="__span-0-13"><a id="__codelineno-0-13" name="__codelineno-0-13" href="#__codelineno-0-13"></a>* additional memory-bandwidth pressure
-</span><span id="__span-0-14"><a id="__codelineno-0-14" name="__codelineno-0-14" href="#__codelineno-0-14"></a>* less compute available for the actual workload
-</span><span id="__span-0-15"><a id="__codelineno-0-15" name="__codelineno-0-15" href="#__codelineno-0-15"></a>
-</span><span id="__span-0-16"><a id="__codelineno-0-16" name="__codelineno-0-16" href="#__codelineno-0-16"></a>### Message Rate Matters Too
-</span><span id="__span-0-17"><a id="__codelineno-0-17" name="__codelineno-0-17" href="#__codelineno-0-17"></a>
-</span><span id="__span-0-18"><a id="__codelineno-0-18" name="__codelineno-0-18" href="#__codelineno-0-18"></a>Payload size is only one dimension of communication overhead.
-</span><span id="__span-0-19"><a id="__codelineno-0-19" name="__codelineno-0-19" href="#__codelineno-0-19"></a>
-</span><span id="__span-0-20"><a id="__codelineno-0-20" name="__codelineno-0-20" href="#__codelineno-0-20"></a>Modern systems can also exchange thousands of smaller messages every second.
-</span><span id="__span-0-21"><a id="__codelineno-0-21" name="__codelineno-0-21" href="#__codelineno-0-21"></a>If handling each message requires operating-system calls, context switches,
-</span><span id="__span-0-22"><a id="__codelineno-0-22" name="__codelineno-0-22" href="#__codelineno-0-22"></a>involvement of middleware threads, or per-message callbacks, the accumulated
-</span><span id="__span-0-23"><a id="__codelineno-0-23" name="__codelineno-0-23" href="#__codelineno-0-23"></a>scheduling overhead can become significant.
-</span><span id="__span-0-24"><a id="__codelineno-0-24" name="__codelineno-0-24" href="#__codelineno-0-24"></a>
-</span><span id="__span-0-25"><a id="__codelineno-0-25" name="__codelineno-0-25" href="#__codelineno-0-25"></a>This is particularly problematic for real-time systems. Background activity
-</span><span id="__span-0-26"><a id="__codelineno-0-26" name="__codelineno-0-26" href="#__codelineno-0-26"></a>and additional context switches not only consume CPU time, but can also
-</span><span id="__span-0-27"><a id="__codelineno-0-27" name="__codelineno-0-27" href="#__codelineno-0-27"></a>introduce latency variation and make execution harder to predict.
-</span><span id="__span-0-28"><a id="__codelineno-0-28" name="__codelineno-0-28" href="#__codelineno-0-28"></a>
-</span><span id="__span-0-29"><a id="__codelineno-0-29" name="__codelineno-0-29" href="#__codelineno-0-29"></a>A communication mechanism therefore needs to scale in two directions:
-</span><span id="__span-0-30"><a id="__codelineno-0-30" name="__codelineno-0-30" href="#__codelineno-0-30"></a>
-</span><span id="__span-0-31"><a id="__codelineno-0-31" name="__codelineno-0-31" href="#__codelineno-0-31"></a>* with the **size of the data** being exchanged
-</span><span id="__span-0-32"><a id="__codelineno-0-32" name="__codelineno-0-32" href="#__codelineno-0-32"></a>* with the **number of interactions** between software components
-</span><span id="__span-0-33"><a id="__codelineno-0-33" name="__codelineno-0-33" href="#__codelineno-0-33"></a>
-</span><span id="__span-0-34"><a id="__codelineno-0-34" name="__codelineno-0-34" href="#__codelineno-0-34"></a>## Data Movement Is an Architectural Concern
-</span><span id="__span-0-35"><a id="__codelineno-0-35" name="__codelineno-0-35" href="#__codelineno-0-35"></a>
-</span><span id="__span-0-36"><a id="__codelineno-0-36" name="__codelineno-0-36" href="#__codelineno-0-36"></a>When communication overhead is small, the mechanism used to move data
-</span><span id="__span-0-37"><a id="__codelineno-0-37" name="__codelineno-0-37" href="#__codelineno-0-37"></a>between software components may appear to be an implementation detail.
-</span><span id="__span-0-38"><a id="__codelineno-0-38" name="__codelineno-0-38" href="#__codelineno-0-38"></a>
-</span><span id="__span-0-39"><a id="__codelineno-0-39" name="__codelineno-0-39" href="#__codelineno-0-39"></a>In data-intensive systems, it is not.
-</span><span id="__span-0-40"><a id="__codelineno-0-40" name="__codelineno-0-40" href="#__codelineno-0-40"></a>
-</span><span id="__span-0-41"><a id="__codelineno-0-41" name="__codelineno-0-41" href="#__codelineno-0-41"></a>The way data is moved affects CPU utilization, latency, determinism, and how
-</span><span id="__span-0-42"><a id="__codelineno-0-42" name="__codelineno-0-42" href="#__codelineno-0-42"></a>well the system scales as workloads grow. This makes the data movement layer
-</span><span id="__span-0-43"><a id="__codelineno-0-43" name="__codelineno-0-43" href="#__codelineno-0-43"></a>an architectural decision rather than just a transport detail.
-</span><span id="__span-0-44"><a id="__codelineno-0-44" name="__codelineno-0-44" href="#__codelineno-0-44"></a>
-</span><span id="__span-0-45"><a id="__codelineno-0-45" name="__codelineno-0-45" href="#__codelineno-0-45"></a>`iceoryx2` addresses this problem with a zero-copy data plane designed for
-</span><span id="__span-0-46"><a id="__codelineno-0-46" name="__codelineno-0-46" href="#__codelineno-0-46"></a>efficient and deterministic data movement.
-</span><span id="__span-0-47"><a id="__codelineno-0-47" name="__codelineno-0-47" href="#__codelineno-0-47"></a>
-</span><span id="__span-0-48"><a id="__codelineno-0-48" name="__codelineno-0-48" href="#__codelineno-0-48"></a>## Further Reading
-</span><span id="__span-0-49"><a id="__codelineno-0-49" name="__codelineno-0-49" href="#__codelineno-0-49"></a>
-</span><span id="__span-0-50"><a id="__codelineno-0-50" name="__codelineno-0-50" href="#__codelineno-0-50"></a>````{grid} 1 1 2 3
-</span><span id="__span-0-51"><a id="__codelineno-0-51" name="__codelineno-0-51" href="#__codelineno-0-51"></a>:gutter: 2
-</span><span id="__span-0-52"><a id="__codelineno-0-52" name="__codelineno-0-52" href="#__codelineno-0-52"></a>
-</span><span id="__span-0-53"><a id="__codelineno-0-53" name="__codelineno-0-53" href="#__codelineno-0-53"></a>```{grid-item-card} Fundamentals: Shared Memory
-</span><span id="__span-0-54"><a id="__codelineno-0-54" name="__codelineno-0-54" href="#__codelineno-0-54"></a>:link: /fundamentals/shared-memory
-</span><span id="__span-0-55"><a id="__codelineno-0-55" name="__codelineno-0-55" href="#__codelineno-0-55"></a>:link-type: doc
-</span><span id="__span-0-56"><a id="__codelineno-0-56" name="__codelineno-0-56" href="#__codelineno-0-56"></a>:shadow: none
-</span><span id="__span-0-57"><a id="__codelineno-0-57" name="__codelineno-0-57" href="#__codelineno-0-57"></a>
-</span><span id="__span-0-58"><a id="__codelineno-0-58" name="__codelineno-0-58" href="#__codelineno-0-58"></a>Understand the mechanism that eliminates payload copies.
-</span></code></pre></div></p>
-<p>```{grid-item-card} Fundamentals: Execution Control
-<img alt="🔗" class="twemoji" src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f517.svg" title=":link:" /> /fundamentals/execution-control
-:link-type: doc
-:shadow: none</p>
-<p>Understand how <code>iceoryx2</code> avoids forcing communication and execution
-together.
-<div class="language-text highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>```{grid-item-card} iceoryx2 Performance Benchmarks
-</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>:link: https://github.com/eclipse-iceoryx/iceoryx2#performance
-</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>:link-type: url
-</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a>:shadow: none
-</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>
-</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>See the resulting latency characteristics.
-</span></code></pre></div></p>
-<p>````</p>
+<p>On POSIX systems, processes operate in separate virtual address spaces. Moving data from one process to another therefore usually requires help from the operating system or a communication middleware.</p>
+<p>Depending on the communication mechanism, a single transfer can involve serialization and deserialization, multiple data copies, system calls, user-kernel transitions, and context switches.</p>
+<p><img alt="POSIX IPC" src="../../images/posix-comm.svg" /></p>
+<figure>
+<figcaption>Typical Inter-Process Communication on POSIX</figcaption>
+</figure>
+<p>For small messages, this overhead can be negligible. For large sensor payloads, it scales with the amount of data being transferred.</p>
+<p>For example, consider an automated-driving system with several high-resolution cameras producing several GB/s of sensor data. If this data is copied multiple times while moving through the system, CPU time and memory bandwidth are spent on transporting data instead of processing it.</p>
+<p>The result is:</p>
+<ul>
+<li>higher CPU utilization</li>
+<li>increasing communication latency</li>
+<li>additional memory-bandwidth pressure</li>
+<li>less compute available for the actual workload</li>
+</ul>
+<h3 id="message-rate-matters-too">Message Rate Matters Too</h3>
+<p>Payload size is only one dimension of communication overhead.</p>
+<p>Modern systems can also exchange thousands of smaller messages every second. If handling each message requires operating-system calls, context switches, involvement of middleware threads, or per-message callbacks, the accumulated scheduling overhead can become significant.</p>
+<p>This is particularly problematic for real-time systems. Background activity and additional context switches not only consume CPU time, but can also introduce latency variation and make execution harder to predict.</p>
+<p>A communication mechanism therefore needs to scale in two directions:</p>
+<ul>
+<li>with the <strong>size of the data</strong> being exchanged</li>
+<li>with the <strong>number of interactions</strong> between software components</li>
+</ul>
+<h2 id="data-movement-is-an-architectural-concern">Data Movement Is an Architectural Concern</h2>
+<p>When communication overhead is small, the mechanism used to move data between software components may appear to be an implementation detail. In data-intensive systems, it is not.</p>
+<p>The way data is moved affects CPU utilization, latency, determinism, and how well the system scales as workloads grow. This makes the data movement layer an architectural decision rather than just a transport detail.</p>
+<p><code>iceoryx2</code> addresses this problem with a zero-copy data plane designed for efficient and deterministic data movement.</p>
+<h2 id="further-reading">Further Reading</h2>
+<div class="grid cards">
+<ul>
+<li>
+<p><a href="../../fundamentals/shared-memory/"><strong>Fundamentals: Shared Memory</strong></a></p>
+<hr />
+<p>Understand the mechanism that eliminates payload copies.</p>
+</li>
+<li>
+<p><a href="../../fundamentals/execution-control/"><strong>Fundamentals: Execution Control</strong></a></p>
+<hr />
+<p>Understand how <code>iceoryx2</code> avoids forcing communication and execution together.</p>
+</li>
+<li>
+<p><a href="https://github.com/eclipse-iceoryx/iceoryx2#performance"><strong>iceoryx2 Performance Benchmarksl</strong></a></p>
+<hr />
+<p>See the resulting latency characteristics.</p>
+</li>
+</ul>
+</div>
 
 
 

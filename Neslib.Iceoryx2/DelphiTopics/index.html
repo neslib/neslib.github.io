@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://github.com/neslib/Neslib.Iceoryx2/DelphiTopics/">
       
       
-        <link rel="prev" href="../Book/overview/where-is-it-going/">
+        <link rel="prev" href="../Book/glossary/">
       
       
         <link rel="next" href="../Reference/Neslib.Iceoryx2.Blackboard/">
@@ -440,6 +440,14 @@
       
         
       
+        
+      
+        
+      
+        
+      
+        
+      
     
     
       
@@ -567,8 +575,6 @@
       
         
       
-        
-      
     
     
       
@@ -653,6 +659,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#static-strings-and-vectors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Static Strings and Vectors
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -695,7 +710,34 @@
 <h2 id="memory-management">Memory Management</h2>
 <p>All Iceoryx2 "classes" are wrapped inside Delphi records. Almost all memory management is automatic: any Iceoryx2 "objects" you create are released automatically when those objects go out of scope. This is accomplished through the use of Custom Managed Records.</p>
 <p>Most of the time, you can treat this records as classes: they have methods and properties like regular classes do. You can also check against <code>nil</code> to see of the record is assigned, like you would with regular objects.</p>
-<p>There are a couple of situations, most notably when using TWaitSetGuard, where you need to release the object manually before any dependent objects go out of scope. In those cases, you should call the <code>Release</code> method (eg. <a href="../Reference/Neslib.Iceoryx2.WaitSet/classes/TWaitSetGuard/#Release"><code>TWaitSetGuard.Release</code></a>).</p>
+<p>There are a couple of situations, most notably when using <code>TWaitSetGuard</code>, where you need to release the object manually before any dependent objects go out of scope. In those cases, you should call the <code>Release</code> method (eg. <a href="../Reference/Neslib.Iceoryx2.WaitSet/classes/TWaitSetGuard/#Release"><code>TWaitSetGuard.Release</code></a>).</p>
+<h2 id="static-strings-and-vectors">Static Strings and Vectors</h2>
+<p>You cannot communicate Delphi strings or dynamic arrays across processes since these types are basically pointers to dynamically allocated memory. Instead, you can use the <code>TStaticString&lt;&gt;</code> and <code>TStaticVector&lt;&gt;</code> types from the Neslib.Iceoryx2.Containers unit.</p>
+<p>The <code>TStaticString&lt;&gt;</code> and <code>TStaticVector&lt;&gt;</code> types are compatible across Delphi, C++ and Rust, and any other language binding that follows the original Rust specification. However, using them in Delphi is a bit more complicated since Delphi doesn't support "generic value parameters". For example, unlike C++ and Rust, in Delphi you <em>cannot</em> declare a static string like this:</p>
+<div class="language-pascal highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="k">var</span><span class="w"> </span><span class="n">Name</span><span class="o">:</span><span class="w"> </span><span class="n">TStaticString</span><span class="o">&lt;</span><span class="mi">256</span><span class="o">&gt;;</span>
+</span></code></pre></div>
+<p>Instead you need to define a storage type that is 256 bytes in size:</p>
+<div class="language-pascal highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="k">type</span>
+</span><span id="__span-3-2"><a id="__codelineno-3-2" name="__codelineno-3-2" href="#__codelineno-3-2"></a><span class="w">  </span><span class="n">TNameStorage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">array</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="o">..</span><span class="mi">255</span><span class="p">]</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="kt">Byte</span><span class="o">;</span>
+</span><span id="__span-3-3"><a id="__codelineno-3-3" name="__codelineno-3-3" href="#__codelineno-3-3"></a>
+</span><span id="__span-3-4"><a id="__codelineno-3-4" name="__codelineno-3-4" href="#__codelineno-3-4"></a><span class="k">var</span><span class="w"> </span><span class="n">Name</span><span class="o">:</span><span class="w"> </span><span class="n">TStaticString</span><span class="o">&lt;</span><span class="n">TNameStorage</span><span class="o">&gt;;</span><span class="w">  </span>
+</span></code></pre></div>
+<p>Or use one of the pre-defined storage types like <code>T256Bytes</code>.</p>
+<p>For <code>TStaticVector&lt;&gt;</code>, the storage specifies the number of bytes, <em>not</em> the number of elements in the vector. So if you want to create a static vector that can hold at most 8 values of type <code>Double</code>, than you need 64 bytes of storage since a <code>Double</code> is 8 bytes in size:</p>
+<div class="language-pascal highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">type</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a><span class="w">  </span><span class="n">TRow</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">TStaticVector</span><span class="o">&lt;</span><span class="kt">Double</span><span class="o">,</span><span class="w"> </span><span class="n">T64Bytes</span><span class="o">&gt;;</span>
+</span></code></pre></div>
+<p>Declaring a two dimensional vector (eg. a nested vector or matrix) gets a bit more complicated since you need know how much storage you need for a single row in the matrix. You <em>cannot</em> just multiple the number of rows by the number of columns by the size of each element, since <code>TStaticVector&lt;&gt;</code> itself also adds some overhead. So you need to declare a data type for the storage of the matrix first:</p>
+<div class="language-pascal highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">type</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a><span class="w">  </span><span class="n">TMatrixStorage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">array</span><span class="w"> </span><span class="p">[</span><span class="mi">0</span><span class="o">..</span><span class="p">(</span><span class="mi">8</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="nb">SizeOf</span><span class="p">(</span><span class="n">TRow</span><span class="p">))</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span><span class="p">]</span><span class="w"> </span><span class="k">of</span><span class="w"> </span><span class="kt">Byte</span><span class="o">;</span>
+</span></code></pre></div>
+<blockquote>
+<p>You <em>cannot</em> declare <code>TRow</code> and <code>TMatrixStorage</code> in the same <code>type</code> section. Doing so will result in a compilation error.</p>
+</blockquote>
+<p>And then you can declare a matrix like this:</p>
+<div class="language-pascal highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">var</span><span class="w"> </span><span class="n">SomeMatrix</span><span class="o">:</span><span class="w"> </span><span class="n">TStaticVector</span><span class="o">&lt;</span><span class="n">TRow</span><span class="o">,</span><span class="w"> </span><span class="n">TMatrixStorage</span><span class="o">&gt;;</span>
+</span></code></pre></div>
+<p>If you don't define the storage types correctly, then you will get an "Incompatible Types" error when trying to communicate with a service written in a language other than Delphi.</p>
 
 
 
@@ -731,7 +773,7 @@
       <nav class="md-footer__inner md-grid" aria-label="Footer" >
         
           
-          <a href="../Book/overview/where-is-it-going/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Where Is It Going?">
+          <a href="../Book/glossary/" class="md-footer__link md-footer__link--prev" aria-label="Previous: Glossary">
             <div class="md-footer__button md-icon">
               
               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
@@ -741,7 +783,7 @@
                 Previous
               </span>
               <div class="md-ellipsis">
-                Where Is It Going?
+                Glossary
               </div>
             </div>
           </a>
