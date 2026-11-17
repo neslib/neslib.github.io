@@ -4017,12 +4017,20 @@
 <td>Returns True when a TServer has sent a TResponse, otherwise False.</td>
 </tr>
 <tr>
+<td><a href="#Header">Header</a></td>
+<td>Returns a reference to the iceoryx2 internal TRequestHeader of the corresponding TRequestMut</td>
+</tr>
+<tr>
 <td><a href="#IsConnected">IsConnected</a></td>
 <td>Returns True until the TActiveRequest goes out of scope on the TServer's side indicating that the TServer will no longer send TResponse's. It also returns False when there are no TServer's.</td>
 </tr>
 <tr>
 <td><a href="#ServerConnectionCount">ServerConnectionCount</a></td>
 <td>Returns how many TServer's received the corresponding TRequestMut initially.</td>
+</tr>
+<tr>
+<td><a href="#UserHeader">UserHeader</a></td>
+<td>Returns a reference to the user defined request header of the corresponding TRequestMut</td>
 </tr>
 </tbody>
 </table>
@@ -4078,10 +4086,6 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#Header">Header</a></td>
-<td>Returns a reference to the iceoryx2 internal TRequestHeader of the corresponding TRequestMut</td>
-</tr>
-<tr>
 <td><a href="#Payload">Payload</a></td>
 <td>Returns a reference to the request payload of the corresponding TRequestMut</td>
 </tr>
@@ -4097,10 +4101,6 @@
 <td><a href="#SetDisconnectHint">SetDisconnectHint</a></td>
 <td>Marks the connection state that the TClient wants to gracefully disconnect. When the TServer reads this, it can send the last TResponse and drop the corresponding TActiveRequest to terminate the connection ensuring that no TResponse is lost on the TClient side.</td>
 </tr>
-<tr>
-<td><a href="#UserHeader">UserHeader</a></td>
-<td>Returns a reference to the user defined request header of the corresponding TRequestMut</td>
-</tr>
 </tbody>
 </table>
 <h2 id="property-descriptions">Property Descriptions</h2>
@@ -4113,6 +4113,11 @@
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">HasResponse</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetHasResponse</span></code></p>
 <p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
 <hr />
+<h3 id="Header"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Header</h3>
+<p>Returns a reference to the iceoryx2 internal TRequestHeader of the corresponding TRequestMut </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Header</span><span class="o">:</span><span class="w"> </span><span class="n">TRequestHeader</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetHeader</span></code></p>
+<p><strong>Type: </strong><a href="../TRequestHeader/"><code>TRequestHeader</code></a></p>
+<hr />
 <h3 id="IsConnected"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> IsConnected</h3>
 <p>Returns True until the TActiveRequest goes out of scope on the TServer's side indicating that the TServer will no longer send TResponse's. It also returns False when there are no TServer's. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">IsConnected</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetIsConnected</span></code></p>
@@ -4122,6 +4127,13 @@
 <p>Returns how many TServer's received the corresponding TRequestMut initially. <summary/></p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">ServerConnectionCount</span><span class="o">:</span><span class="w"> </span><span class="n">NativeInt</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetServerConnectionCount</span></code></p>
 <p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">NativeInt</span></code></p>
+<hr />
+<h3 id="UserHeader"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> UserHeader</h3>
+<p>Returns a reference to the user defined request header of the corresponding TRequestMut </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">UserHeader</span><span class="o">:</span><span class="w"> </span><span class="n">PRequestUserHeader</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetUserHeader</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">PRequestUserHeader</span></code></p>
+<h4 id="remarks">Remarks</h4>
+<p>Cannot be used when there is no TRequestUserHeader (that is, when TRequestUserHeader=Void). This is checked with an assertion. </p>
 <hr />
 <h2 id="constructor-descriptions">Constructor Descriptions</h2>
 <h3 id="Assign"><span class="twemoji" title="Constructor"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23 12-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68z"/></svg></span> <code class="language-delphi highlight"><span class="n">Assign</span></code></h3>
@@ -4154,18 +4166,12 @@
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
 <hr />
 <h2 id="method-descriptions">Method Descriptions</h2>
-<h3 id="Header"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Header</h3>
-<p>Returns a reference to the iceoryx2 internal TRequestHeader of the corresponding TRequestMut </p>
-<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">Header</span><span class="o">:</span><span class="w"> </span><span class="n">TRequestHeader</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="returns_2">Returns</h4>
-<p><a href="../TRequestHeader/"><code>TRequestHeader</code></a></p>
-<hr />
 <h3 id="Payload"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Payload</h3>
 <p>Returns a reference to the request payload of the corresponding TRequestMut </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">Payload</span><span class="o">:</span><span class="w"> </span><span class="n">PRequestPayload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="returns_3">Returns</h4>
+<h4 id="returns_2">Returns</h4>
 <p><code class="language-delphi highlight"><span class="n">PRequestPayload</span></code></p>
-<h4 id="remarks">Remarks</h4>
+<h4 id="remarks_1">Remarks</h4>
 <p>Cannot be used when TRequestPayload is a slice (TSlice<t>). This is checked with an assertion. Otherwise use PayloadSlice instead. </t></p>
 <hr />
 <h3 id="PayloadSlice`1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> PayloadSlice&lt;T&gt;</h3>
@@ -4173,29 +4179,21 @@
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">PayloadSlice</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;:</span><span class="w"> </span><span class="n">TSlice</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="type-parameters_1">Type Parameters</h4>
 <p><strong><code>T</code></strong>: </p>
-<h4 id="returns_4">Returns</h4>
+<h4 id="returns_3">Returns</h4>
 <p><a href="../../../Neslib.Iceoryx2.Containers/classes/TSlice_1/"><code>TSlice&lt;T&gt;</code></a></p>
-<h4 id="remarks_1">Remarks</h4>
+<h4 id="remarks_2">Remarks</h4>
 <p>Can only be used when TRequestPayload is a slice (TSlice<t>). This is checked with an assertion. Otherwise use Payload instead</p>
 <p>The type parameter <code>T</code> <em>must</em> be the element type of the slice. E.g. if <code>TRequestPayload = TSlice&lt;word&gt;</code>, then <code>T</code> must be <code>Word</code>. This is checked with an assertion. </word></t></p>
 <hr />
 <h3 id="Receive"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Receive</h3>
 <p>Receives a TResponse from one of the servers that received the TRequestMut. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">Receive</span><span class="o">:</span><span class="w"> </span><span class="n">TResult</span><span class="o">&lt;</span><span class="n">TResponse</span><span class="o">&lt;</span><span class="n">TRespPayl</span><span class="o">&gt;,</span><span class="w"> </span><span class="n">TReceiveError</span><span class="o">&gt;;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="returns_5">Returns</h4>
+<h4 id="returns_4">Returns</h4>
 <p><a href="../../../Neslib.Iceoryx2.System/classes/TResult_2/"><code>TResult&lt;TResponse&lt;TRespPayl&gt;, TReceiveError&gt;</code></a></p>
 <hr />
 <h3 id="SetDisconnectHint"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> SetDisconnectHint</h3>
 <p>Marks the connection state that the TClient wants to gracefully disconnect. When the TServer reads this, it can send the last TResponse and drop the corresponding TActiveRequest to terminate the connection ensuring that no TResponse is lost on the TClient side. </p>
 <p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">SetDisconnectHint</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<hr />
-<h3 id="UserHeader"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> UserHeader</h3>
-<p>Returns a reference to the user defined request header of the corresponding TRequestMut </p>
-<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">UserHeader</span><span class="o">:</span><span class="w"> </span><span class="n">PRequestUserHeader</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="returns_6">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">PRequestUserHeader</span></code></p>
-<h4 id="remarks_2">Remarks</h4>
-<p>Cannot be used when there is no TRequestUserHeader (that is, when TRequestUserHeader=Void). This is checked with an assertion. </p>
 <hr />
 
 

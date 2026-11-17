@@ -1650,6 +1650,10 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#Count">Count</a></td>
+<td>Returns the number of elements in the slice.</td>
+</tr>
+<tr>
 <td><a href="#Data">Data</a></td>
 <td>Returns a pointer to the underlying data of the slice.</td>
 </tr>
@@ -1660,10 +1664,6 @@
 <tr>
 <td><a href="#NumberOfBytes">NumberOfBytes</a></td>
 <td>Returns the total number of bytes occupied by the slice, rounded up to the nearest alignment boundary.</td>
-</tr>
-<tr>
-<td><a href="#NumberOfElements">NumberOfElements</a></td>
-<td>Returns the number of elements in the slice.</td>
 </tr>
 <tr>
 <td><a href="#Refs">Refs</a></td>
@@ -1696,12 +1696,21 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#GetEnumerator">GetEnumerator</a></td>
+<td>Returns an enumerator to iterate the slice.</td>
+</tr>
+<tr>
 <td><a href="#Init">Init</a></td>
 <td>Constructs a Slice object.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="property-descriptions">Property Descriptions</h2>
+<h3 id="Count"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Count</h3>
+<p>Returns the number of elements in the slice. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Count</span><span class="o">:</span><span class="w"> </span><span class="kt">Int64</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">FCount</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Int64</span></code></p>
+<hr />
 <h3 id="Data"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Data</h3>
 <p>Returns a pointer to the underlying data of the slice. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Data</span><span class="o">:</span><span class="w"> </span><span class="n">P</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">FData</span></code></p>
@@ -1719,11 +1728,6 @@
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">NumberOfBytes</span><span class="o">:</span><span class="w"> </span><span class="kt">Int64</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetNumberOfBytes</span></code></p>
 <p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Int64</span></code></p>
 <hr />
-<h3 id="NumberOfElements"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> NumberOfElements</h3>
-<p>Returns the number of elements in the slice. </p>
-<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">NumberOfElements</span><span class="o">:</span><span class="w"> </span><span class="kt">Int64</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">FNumberOfElements</span></code></p>
-<p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Int64</span></code></p>
-<hr />
 <h3 id="Refs"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Refs</h3>
 <p>Returns a reference to the element at the specified index. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Refs</span><span class="p">[</span><span class="k">const</span><span class="w"> </span><span class="n">AIndex</span><span class="o">:</span><span class="w"> </span><span class="kt">Int64</span><span class="p">]</span><span class="o">:</span><span class="w"> </span><span class="n">P</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetRef</span></code></p>
@@ -1734,23 +1738,29 @@
 <h2 id="constructor-descriptions">Constructor Descriptions</h2>
 <h3 id="Create"><span class="twemoji" title="Constructor"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23 12-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68z"/></svg></span> <code class="language-delphi highlight"><span class="n">Create</span></code></h3>
 <p>Constructs a Slice object. </p>
-<p><code class="language-delphi highlight"><span class="k">constructor</span><span class="w"> </span><span class="nf">Create</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AData</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ANumberOfElements</span><span class="o">:</span><span class="w"> </span><span class="kt">Int64</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AIsMutable</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="p">)</span></code></p>
+<p><code class="language-delphi highlight"><span class="k">constructor</span><span class="w"> </span><span class="nf">Create</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AData</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ACount</span><span class="o">:</span><span class="w"> </span><span class="kt">Int64</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AIsMutable</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="p">)</span></code></p>
 <h4 id="parameters">Parameters</h4>
 <p><strong><code>AData</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code>
 : Pointer to the beginning of the data.</p>
-<p><strong><code>ANumberOfElements</code></strong>: <code class="language-delphi highlight"><span class="kt">Int64</span></code>
+<p><strong><code>ACount</code></strong>: <code class="language-delphi highlight"><span class="kt">Int64</span></code>
 : The number of elements in the slice..</p>
 <p><strong><code>AIsMutable</code></strong>: <code class="language-delphi highlight"><span class="kt">Boolean</span></code>
 : Whether the slice is mutable, meaning whether the elements in the slice can be changed. When False, changing elements in the slice raises an assertion.</p>
 <hr />
 <h2 id="method-descriptions">Method Descriptions</h2>
+<h3 id="GetEnumerator"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> GetEnumerator</h3>
+<p>Returns an enumerator to iterate the slice. <summary/></p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">GetEnumerator</span><span class="o">:</span><span class="w"> </span><span class="n">TEnumerator</span></code></p>
+<h4 id="returns">Returns</h4>
+<p><code class="language-delphi highlight"><span class="n">TEnumerator</span></code></p>
+<hr />
 <h3 id="Init"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Init(Pointer, Int64, Boolean)</h3>
 <p>Constructs a Slice object. </p>
-<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Init</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AData</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ANumberOfElements</span><span class="o">:</span><span class="w"> </span><span class="kt">Int64</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AIsMutable</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Init</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AData</span><span class="o">:</span><span class="w"> </span><span class="kt">Pointer</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ACount</span><span class="o">:</span><span class="w"> </span><span class="kt">Int64</span><span class="o">;</span><span class="w"> </span><span class="w">  </span><span class="k">const</span><span class="w"> </span><span class="n">AIsMutable</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_1">Parameters</h4>
 <p><strong><code>AData</code></strong>: <code class="language-delphi highlight"><span class="kt">Pointer</span></code>
 : Pointer to the beginning of the data.</p>
-<p><strong><code>ANumberOfElements</code></strong>: <code class="language-delphi highlight"><span class="kt">Int64</span></code>
+<p><strong><code>ACount</code></strong>: <code class="language-delphi highlight"><span class="kt">Int64</span></code>
 : The number of elements in the slice..</p>
 <p><strong><code>AIsMutable</code></strong>: <code class="language-delphi highlight"><span class="kt">Boolean</span></code>
 : Whether the slice is mutable, meaning whether the elements in the slice can be changed. When False, changing elements in the slice raises an assertion.</p>

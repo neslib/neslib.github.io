@@ -4011,6 +4011,26 @@
 <td><a href="#Handle">Handle</a></td>
 <td></td>
 </tr>
+<tr>
+<td><a href="#HasDisconnectHint">HasDisconnectHint</a></td>
+<td>Returns True if the TClient wants to gracefully disconnect. This allows the TServer to send its last response and then drop the TActiveRequest to signal the client that no more TResponseMut's will be sent.</td>
+</tr>
+<tr>
+<td><a href="#Header">Header</a></td>
+<td>Returns the TRequestHeader of the received TRequestMut.</td>
+</tr>
+<tr>
+<td><a href="#IsConnected">IsConnected</a></td>
+<td>Returns True until the TPendingResponse goes out of scope on the TClient side indicating that the client no longer receives the TResponseMut.</td>
+</tr>
+<tr>
+<td><a href="#Origin">Origin</a></td>
+<td>Returns the TUniqueClientId of the TClient</td>
+</tr>
+<tr>
+<td><a href="#UserHeader">UserHeader</a></td>
+<td>Returns a reference to the user header of the received TRequestMut.</td>
+</tr>
 </tbody>
 </table>
 <h2 id="constructors">Constructors</h2>
@@ -4065,18 +4085,6 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#HasDisconnectHint">HasDisconnectHint</a></td>
-<td>Returns True if the TClient wants to gracefully disconnect. This allows the TServer to send its last response and then drop the TActiveRequest to signal the client that no more TResponseMut's will be sent.</td>
-</tr>
-<tr>
-<td><a href="#Header">Header</a></td>
-<td>Returns the TRequestHeader of the received TRequestMut.</td>
-</tr>
-<tr>
-<td><a href="#IsConnected">IsConnected</a></td>
-<td>Returns True until the TPendingResponse goes out of scope on the TClient side indicating that the client no longer receives the TResponseMut.</td>
-</tr>
-<tr>
 <td><a href="#Loan">Loan</a></td>
 <td>Loans default initialized memory for a TResponseMut where the user can write its payload to.</td>
 </tr>
@@ -4091,10 +4099,6 @@
 <tr>
 <td><a href="#LoanUninit">LoanUninit</a></td>
 <td>Loans uninitialized memory for a TResponseMutUninit where the user can write its payload to.</td>
-</tr>
-<tr>
-<td><a href="#Origin">Origin</a></td>
-<td>Returns the TUniqueClientId of the TClient</td>
 </tr>
 <tr>
 <td><a href="#Payload">Payload</a></td>
@@ -4116,16 +4120,39 @@
 <td><a href="#SendSliceCopy">SendSliceCopy</a></td>
 <td>Sends a copy of the provided data to the <code>PendingResponse</code> of the corresponding client. This is not a zero-copy API. Use TActiveRequest.LoanSliceUninit instead.</td>
 </tr>
-<tr>
-<td><a href="#UserHeader">UserHeader</a></td>
-<td>Returns a reference to the user header of the received TRequestMut.</td>
-</tr>
 </tbody>
 </table>
 <h2 id="property-descriptions">Property Descriptions</h2>
 <h3 id="Handle"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Handle</h3>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Handle</span><span class="o">:</span><span class="w"> </span><span class="kt">THandle</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetHandle</span></code></p>
 <p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">THandle</span></code></p>
+<hr />
+<h3 id="HasDisconnectHint"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> HasDisconnectHint</h3>
+<p>Returns True if the TClient wants to gracefully disconnect. This allows the TServer to send its last response and then drop the TActiveRequest to signal the client that no more TResponseMut's will be sent. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">HasDisconnectHint</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetHasDisconnectHint</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<hr />
+<h3 id="Header"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Header</h3>
+<p>Returns the TRequestHeader of the received TRequestMut. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Header</span><span class="o">:</span><span class="w"> </span><span class="n">TRequestHeader</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetHeader</span></code></p>
+<p><strong>Type: </strong><a href="../TRequestHeader/"><code>TRequestHeader</code></a></p>
+<hr />
+<h3 id="IsConnected"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> IsConnected</h3>
+<p>Returns True until the TPendingResponse goes out of scope on the TClient side indicating that the client no longer receives the TResponseMut. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">IsConnected</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetIsConnected</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<hr />
+<h3 id="Origin"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Origin</h3>
+<p>Returns the TUniqueClientId of the TClient </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Origin</span><span class="o">:</span><span class="w"> </span><span class="n">TUniqueClientId</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetOrigin</span></code></p>
+<p><strong>Type: </strong><a href="../TUniqueClientId/"><code>TUniqueClientId</code></a></p>
+<hr />
+<h3 id="UserHeader"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> UserHeader</h3>
+<p>Returns a reference to the user header of the received TRequestMut. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">UserHeader</span><span class="o">:</span><span class="w"> </span><span class="n">PRequestUserHeader</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetUserHeader</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="n">PRequestUserHeader</span></code></p>
+<h4 id="remarks">Remarks</h4>
+<p>Cannot be used when there is no TRequestUserHeader (that is, when TRequestUserHeader=Void). This is checked with an assertion. </p>
 <hr />
 <h2 id="constructor-descriptions">Constructor Descriptions</h2>
 <h3 id="Assign"><span class="twemoji" title="Constructor"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23 12-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68z"/></svg></span> <code class="language-delphi highlight"><span class="n">Assign</span></code></h3>
@@ -4158,30 +4185,12 @@
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
 <hr />
 <h2 id="method-descriptions">Method Descriptions</h2>
-<h3 id="HasDisconnectHint"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> HasDisconnectHint</h3>
-<p>Returns True if the TClient wants to gracefully disconnect. This allows the TServer to send its last response and then drop the TActiveRequest to signal the client that no more TResponseMut's will be sent. </p>
-<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">HasDisconnectHint</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="returns_2">Returns</h4>
-<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
-<hr />
-<h3 id="Header"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Header</h3>
-<p>Returns the TRequestHeader of the received TRequestMut. </p>
-<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">Header</span><span class="o">:</span><span class="w"> </span><span class="n">TRequestHeader</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="returns_3">Returns</h4>
-<p><a href="../TRequestHeader/"><code>TRequestHeader</code></a></p>
-<hr />
-<h3 id="IsConnected"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> IsConnected</h3>
-<p>Returns True until the TPendingResponse goes out of scope on the TClient side indicating that the client no longer receives the TResponseMut. </p>
-<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">IsConnected</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="returns_4">Returns</h4>
-<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
-<hr />
 <h3 id="Loan"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Loan</h3>
 <p>Loans default initialized memory for a TResponseMut where the user can write its payload to. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">Loan</span><span class="o">:</span><span class="w"> </span><span class="n">TResult</span><span class="o">&lt;</span><span class="n">TResponseMut</span><span class="o">&lt;</span><span class="n">TRespPayl</span><span class="o">&gt;,</span><span class="w"> </span><span class="n">TLoanError</span><span class="o">&gt;;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="returns_5">Returns</h4>
+<h4 id="returns_2">Returns</h4>
 <p><a href="../../../Neslib.Iceoryx2.System/classes/TResult_2/"><code>TResult&lt;TResponseMut&lt;TRespPayl&gt;, TLoanError&gt;</code></a></p>
-<h4 id="remarks">Remarks</h4>
+<h4 id="remarks_1">Remarks</h4>
 <p>Cannot be used when TResponsePayload is a slice (TSlice<t>). This is checked with an assertion. Otherwise use LoanSlice instead. </t></p>
 <hr />
 <h3 id="LoanSlice"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> LoanSlice(UInt64)</h3>
@@ -4189,9 +4198,9 @@
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">LoanSlice</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ANumerOfElements</span><span class="o">:</span><span class="w"> </span><span class="n">UInt64</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TResult</span><span class="o">&lt;</span><span class="n">TResponseMut</span><span class="o">&lt;</span><span class="n">TRespPayl</span><span class="o">&gt;,</span><span class="w"> </span><span class="n">TLoanError</span><span class="o">&gt;;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_3">Parameters</h4>
 <p><strong><code>ANumerOfElements</code></strong>: <code class="language-delphi highlight"><span class="n">UInt64</span></code></p>
-<h4 id="returns_6">Returns</h4>
+<h4 id="returns_3">Returns</h4>
 <p><a href="../../../Neslib.Iceoryx2.System/classes/TResult_2/"><code>TResult&lt;TResponseMut&lt;TRespPayl&gt;, TLoanError&gt;</code></a></p>
-<h4 id="remarks_1">Remarks</h4>
+<h4 id="remarks_2">Remarks</h4>
 <p>Can only be used when TResponsePayload is a slice (TSlice<t>). This is checked with an assertion. Otherwise use Loan instead. </t></p>
 <hr />
 <h3 id="LoanSliceUninit"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> LoanSliceUninit(UInt64)</h3>
@@ -4199,31 +4208,25 @@
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">LoanSliceUninit</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ANumerOfElements</span><span class="o">:</span><span class="w"> </span><span class="n">UInt64</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TResult</span><span class="o">&lt;</span><span class="n">TResponseMutUninit</span><span class="o">&lt;</span><span class="n">TRespPayl</span><span class="o">&gt;,</span><span class="w"> </span><span class="n">TLoanError</span><span class="o">&gt;;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_4">Parameters</h4>
 <p><strong><code>ANumerOfElements</code></strong>: <code class="language-delphi highlight"><span class="n">UInt64</span></code></p>
-<h4 id="returns_7">Returns</h4>
+<h4 id="returns_4">Returns</h4>
 <p><a href="../../../Neslib.Iceoryx2.System/classes/TResult_2/"><code>TResult&lt;TResponseMutUninit&lt;TRespPayl&gt;, TLoanError&gt;</code></a></p>
-<h4 id="remarks_2">Remarks</h4>
+<h4 id="remarks_3">Remarks</h4>
 <p>Can only be used when TResponsePayload is a slice (TSlice<t>). This is checked with an assertion. Otherwise use LoanUnit instead. </t></p>
 <hr />
 <h3 id="LoanUninit"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> LoanUninit</h3>
 <p>Loans uninitialized memory for a TResponseMutUninit where the user can write its payload to. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">LoanUninit</span><span class="o">:</span><span class="w"> </span><span class="n">TResult</span><span class="o">&lt;</span><span class="n">TResponseMutUninit</span><span class="o">&lt;</span><span class="n">TRespPayl</span><span class="o">&gt;,</span><span class="w"> </span><span class="n">TLoanError</span><span class="o">&gt;;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="returns_8">Returns</h4>
+<h4 id="returns_5">Returns</h4>
 <p><a href="../../../Neslib.Iceoryx2.System/classes/TResult_2/"><code>TResult&lt;TResponseMutUninit&lt;TRespPayl&gt;, TLoanError&gt;</code></a></p>
-<h4 id="remarks_3">Remarks</h4>
+<h4 id="remarks_4">Remarks</h4>
 <p>Cannot be used when TResponsePayload is a slice (TSlice<t>). This is checked with an assertion. Otherwise use LoanSliceUnit instead. </t></p>
-<hr />
-<h3 id="Origin"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Origin</h3>
-<p>Returns the TUniqueClientId of the TClient </p>
-<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">Origin</span><span class="o">:</span><span class="w"> </span><span class="n">TUniqueClientId</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="returns_9">Returns</h4>
-<p><a href="../TUniqueClientId/"><code>TUniqueClientId</code></a></p>
 <hr />
 <h3 id="Payload"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Payload</h3>
 <p>Returns a reference to the payload of the received TRequestMut. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">Payload</span><span class="o">:</span><span class="w"> </span><span class="n">PRequestPayload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="returns_10">Returns</h4>
+<h4 id="returns_6">Returns</h4>
 <p><code class="language-delphi highlight"><span class="n">PRequestPayload</span></code></p>
-<h4 id="remarks_4">Remarks</h4>
+<h4 id="remarks_5">Remarks</h4>
 <p>Cannot be used when TRequestPayload is a slice (TSlice<t>). This is checked with an assertion. Otherwise use PayloadSlice instead. </t></p>
 <hr />
 <h3 id="PayloadSlice`1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> PayloadSlice&lt;T&gt;</h3>
@@ -4231,9 +4234,9 @@
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">PayloadSlice</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;:</span><span class="w"> </span><span class="n">TSlice</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="type-parameters_1">Type Parameters</h4>
 <p><strong><code>T</code></strong>: </p>
-<h4 id="returns_11">Returns</h4>
+<h4 id="returns_7">Returns</h4>
 <p><a href="../../../Neslib.Iceoryx2.Containers/classes/TSlice_1/"><code>TSlice&lt;T&gt;</code></a></p>
-<h4 id="remarks_5">Remarks</h4>
+<h4 id="remarks_6">Remarks</h4>
 <p>Can only be used when TRequestPayload is a slice (TSlice<t>). This is checked with an assertion. Otherwise use Payload instead.</p>
 <p>The type parameter <code>T</code> <em>must</em> be the element type of the slice. E.g. if <code>TRequestPayload = TSlice&lt;word&gt;</code>, then <code>T</code> must be <code>Word</code>. This is checked with an assertion. </word></t></p>
 <hr />
@@ -4246,9 +4249,9 @@
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">SendCopy</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APayload</span><span class="o">:</span><span class="w"> </span><span class="n">TResponsePayload</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TResult</span><span class="o">&lt;</span><span class="n">Void</span><span class="o">,</span><span class="w"> </span><span class="n">TSendError</span><span class="o">&gt;;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_5">Parameters</h4>
 <p><strong><code>APayload</code></strong>: <code class="language-delphi highlight"><span class="n">TResponsePayload</span></code></p>
-<h4 id="returns_12">Returns</h4>
+<h4 id="returns_8">Returns</h4>
 <p><a href="../../../Neslib.Iceoryx2.System/classes/TResult_2/"><code>TResult&lt;Void, TSendError&gt;</code></a></p>
-<h4 id="remarks_6">Remarks</h4>
+<h4 id="remarks_7">Remarks</h4>
 <p>Cannot be used when TResponsePayload is a slice (TSlice<t>). This is checked with an assertion. Otherwise use SendSliceCopy instead. </t></p>
 <hr />
 <h3 id="SendSliceCopy"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> SendSliceCopy(TResponsePayload)</h3>
@@ -4256,18 +4259,10 @@
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">SendSliceCopy</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APayload</span><span class="o">:</span><span class="w"> </span><span class="n">TResponsePayload</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TResult</span><span class="o">&lt;</span><span class="n">Void</span><span class="o">,</span><span class="w"> </span><span class="n">TSendError</span><span class="o">&gt;;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_6">Parameters</h4>
 <p><strong><code>APayload</code></strong>: <code class="language-delphi highlight"><span class="n">TResponsePayload</span></code></p>
-<h4 id="returns_13">Returns</h4>
+<h4 id="returns_9">Returns</h4>
 <p><a href="../../../Neslib.Iceoryx2.System/classes/TResult_2/"><code>TResult&lt;Void, TSendError&gt;</code></a></p>
-<h4 id="remarks_7">Remarks</h4>
-<p>Can only be used when TResponsePayload is a slice (TSlice<t>). This is checked with an assertion. Otherwise use LoanUnit instead. </t></p>
-<hr />
-<h3 id="UserHeader"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> UserHeader</h3>
-<p>Returns a reference to the user header of the received TRequestMut. </p>
-<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">UserHeader</span><span class="o">:</span><span class="w"> </span><span class="n">PRequestUserHeader</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="returns_14">Returns</h4>
-<p><code class="language-delphi highlight"><span class="n">PRequestUserHeader</span></code></p>
 <h4 id="remarks_8">Remarks</h4>
-<p>Cannot be used when there is no TRequestUserHeader (that is, when TRequestUserHeader=Void). This is checked with an assertion. </p>
+<p>Can only be used when TResponsePayload is a slice (TSlice<t>). This is checked with an assertion. Otherwise use LoanUnit instead. </t></p>
 <hr />
 
 

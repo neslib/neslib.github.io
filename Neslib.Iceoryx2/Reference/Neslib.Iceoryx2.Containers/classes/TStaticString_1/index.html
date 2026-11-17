@@ -882,9 +882,45 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constructors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#methods" class="md-nav__link">
     <span class="md-ellipsis">
       Methods
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#property-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Property Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructor-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constructor Descriptions
     </span>
   </a>
   
@@ -1509,9 +1545,45 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Properties
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constructors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#methods" class="md-nav__link">
     <span class="md-ellipsis">
       Methods
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#property-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Property Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructor-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constructor Descriptions
     </span>
   </a>
   
@@ -1557,6 +1629,48 @@
 <h2 id="remarks">Remarks</h2>
 <p>The NUL code point (U+0000) is not allowed anywhere in the string.</p>
 <p>The layout of this record is compatible with its C++ and Rust counterparts, so it can be used for cross-language communication. </p>
+<h2 id="properties">Properties</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Capacity">Capacity</a></td>
+<td>Maximum length of the string in number of UTF-8 characters (excluding the NUL terminator)</td>
+</tr>
+<tr>
+<td><a href="#Empty">Empty</a></td>
+<td>Whether the string is empty</td>
+</tr>
+<tr>
+<td><a href="#Length">Length</a></td>
+<td>Length of the string in number of UTF-8 characters</td>
+</tr>
+</tbody>
+</table>
+<h2 id="constructors">Constructors</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Create">Create</a></td>
+<td>Constructs a static string from a Unicode string.</td>
+</tr>
+<tr>
+<td><a href="#CreateUtf8">CreateUtf8</a></td>
+<td>Constructs a static string from a UTF8String.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="methods">Methods</h2>
 <table>
 <thead>
@@ -1588,21 +1702,52 @@
 </tr>
 </tbody>
 </table>
+<h2 id="property-descriptions">Property Descriptions</h2>
+<h3 id="Capacity"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Capacity</h3>
+<p>Maximum length of the string in number of UTF-8 characters (excluding the NUL terminator) </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Capacity</span><span class="o">:</span><span class="w"> </span><span class="kt">Int64</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetCapacity</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Int64</span></code></p>
+<hr />
+<h3 id="Empty"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Empty</h3>
+<p>Whether the string is empty </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Empty</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetEmpty</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<hr />
+<h3 id="Length"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Length</h3>
+<p>Length of the string in number of UTF-8 characters </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Length</span><span class="o">:</span><span class="w"> </span><span class="kt">Int64</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">FSize</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Int64</span></code></p>
+<hr />
+<h2 id="constructor-descriptions">Constructor Descriptions</h2>
+<h3 id="Create"><span class="twemoji" title="Constructor"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23 12-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68z"/></svg></span> <code class="language-delphi highlight"><span class="n">Create</span></code></h3>
+<p>Constructs a static string from a Unicode string. </p>
+<p><code class="language-delphi highlight"><span class="k">constructor</span><span class="w"> </span><span class="nf">Create</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AStr</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="p">)</span></code></p>
+<h4 id="parameters">Parameters</h4>
+<p><strong><code>AStr</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code></p>
+<h4 id="remarks_1">Remarks</h4>
+<p>Use InitUtf8 for a more efficient version that bypasses UTF-8 conversion. </p>
+<hr />
+<h3 id="CreateUtf8"><span class="twemoji" title="Constructor"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23 12-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68z"/></svg></span> <code class="language-delphi highlight"><span class="n">CreateUtf8</span></code></h3>
+<p>Constructs a static string from a UTF8String. </p>
+<p><code class="language-delphi highlight"><span class="k">constructor</span><span class="w"> </span><span class="nf">CreateUtf8</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AStr</span><span class="o">:</span><span class="w"> </span><span class="n">UTF8String</span><span class="p">)</span></code></p>
+<h4 id="parameters_1">Parameters</h4>
+<p><strong><code>AStr</code></strong>: <code class="language-delphi highlight"><span class="n">UTF8String</span></code></p>
+<hr />
 <h2 id="method-descriptions">Method Descriptions</h2>
 <h3 id="Init"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Init(String)</h3>
 <p>Constructs a static string from a Unicode string. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">Init</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AStr</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span></code></p>
-<h4 id="parameters">Parameters</h4>
+<h4 id="parameters_2">Parameters</h4>
 <p><strong><code>AStr</code></strong>: <code class="language-delphi highlight"><span class="k">String</span></code></p>
 <h4 id="returns">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True if the string fits into this static string (after UTF-8 conversion). False otherwise.</p>
-<h4 id="remarks_1">Remarks</h4>
+<h4 id="remarks_2">Remarks</h4>
 <p>Use InitUtf8 for a more efficient version that bypasses UTF-8 conversion. </p>
 <hr />
 <h3 id="InitUtf8"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> InitUtf8(UTF8String)</h3>
 <p>Constructs a static string from a UTF8String. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">InitUtf8</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AStr</span><span class="o">:</span><span class="w"> </span><span class="n">UTF8String</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span></code></p>
-<h4 id="parameters_1">Parameters</h4>
+<h4 id="parameters_3">Parameters</h4>
 <p><strong><code>AStr</code></strong>: <code class="language-delphi highlight"><span class="n">UTF8String</span></code></p>
 <h4 id="returns_1">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True if the string fits into this static string. False otherwise.</p>
@@ -1618,7 +1763,7 @@
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">ToString</span><span class="o">:</span><span class="w"> </span><span class="k">String</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="returns_3">Returns</h4>
 <p><code class="language-delphi highlight"><span class="k">String</span></code></p>
-<h4 id="remarks_2">Remarks</h4>
+<h4 id="remarks_3">Remarks</h4>
 <p>Use ToStringUtf8 for a more efficient version that bypasses UTF-8 conversion. </p>
 <hr />
 <h3 id="ToStringUtf8"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> ToStringUtf8</h3>

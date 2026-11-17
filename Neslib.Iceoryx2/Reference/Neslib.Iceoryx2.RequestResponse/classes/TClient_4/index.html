@@ -4008,8 +4008,28 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#BackpressureStrategy">BackpressureStrategy</a></td>
+<td>Returns the strategy the TClient follows when a TRequestMut cannot be delivered if the TServer's buffer is full.</td>
+</tr>
+<tr>
 <td><a href="#Handle">Handle</a></td>
 <td></td>
+</tr>
+<tr>
+<td><a href="#Id">Id</a></td>
+<td>Returns the TUniqueClientId of the TClient</td>
+</tr>
+<tr>
+<td><a href="#InitialMaxSliceLen">InitialMaxSliceLen</a></td>
+<td>Returns the maximum number of elements that can be loaned in a slice.</td>
+</tr>
+<tr>
+<td><a href="#MaxActiveRequests">MaxActiveRequests</a></td>
+<td>Returns the maximal active requests a TClient can send.</td>
+</tr>
+<tr>
+<td><a href="#Name">Name</a></td>
+<td>Returns the TPortNameView of the TClient</td>
 </tr>
 </tbody>
 </table>
@@ -4065,18 +4085,6 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#BackpressureStrategy">BackpressureStrategy</a></td>
-<td>Returns the strategy the TClient follows when a TRequestMut cannot be delivered if the TServer's buffer is full.</td>
-</tr>
-<tr>
-<td><a href="#Id">Id</a></td>
-<td>Returns the TUniqueClientId of the TClient</td>
-</tr>
-<tr>
-<td><a href="#InitialMaxSliceLen">InitialMaxSliceLen</a></td>
-<td>Returns the maximum number of elements that can be loaned in a slice.</td>
-</tr>
-<tr>
 <td><a href="#Loan">Loan</a></td>
 <td>Acquires the payload for the request and initializes the underlying memory with default. This can be very expensive when the payload is large, therefore prefer TClient.LoanUninit when possible.</td>
 </tr>
@@ -4093,14 +4101,6 @@
 <td>Acquires a TRequestMutUninit to store payload. This API shall be used by default to avoid unnecessary copies.</td>
 </tr>
 <tr>
-<td><a href="#MaxActiveRequests">MaxActiveRequests</a></td>
-<td>Returns the maximal active requests a TClient can send.</td>
-</tr>
-<tr>
-<td><a href="#Name">Name</a></td>
-<td>Returns the TPortNameView of the TClient</td>
-</tr>
-<tr>
 <td><a href="#SendCopy">SendCopy</a></td>
 <td>Copies the input value into a TRequestMut and sends it. On success it returns a TPendingResponse that can be used to receive a stream of responses from the server.</td>
 </tr>
@@ -4111,9 +4111,36 @@
 </tbody>
 </table>
 <h2 id="property-descriptions">Property Descriptions</h2>
+<h3 id="BackpressureStrategy"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> BackpressureStrategy</h3>
+<p>Returns the strategy the TClient follows when a TRequestMut cannot be delivered if the TServer's buffer is full. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">BackpressureStrategy</span><span class="o">:</span><span class="w"> </span><span class="n">TBackpressureStrategy</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetBackpressureStrategy</span></code></p>
+<p><strong>Type: </strong><a href="../../../Neslib.Iceoryx2.Types/types/TBackpressureStrategy/"><code>TBackpressureStrategy</code></a></p>
+<hr />
 <h3 id="Handle"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Handle</h3>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Handle</span><span class="o">:</span><span class="w"> </span><span class="kt">THandle</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetHandle</span></code></p>
 <p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">THandle</span></code></p>
+<hr />
+<h3 id="Id"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Id</h3>
+<p>Returns the TUniqueClientId of the TClient </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Id</span><span class="o">:</span><span class="w"> </span><span class="n">TUniqueClientId</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetId</span></code></p>
+<p><strong>Type: </strong><a href="../TUniqueClientId/"><code>TUniqueClientId</code></a></p>
+<hr />
+<h3 id="InitialMaxSliceLen"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> InitialMaxSliceLen</h3>
+<p>Returns the maximum number of elements that can be loaned in a slice. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">InitialMaxSliceLen</span><span class="o">:</span><span class="w"> </span><span class="kt">Int64</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetInitialMaxSliceLen</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Int64</span></code></p>
+<h4 id="remarks">Remarks</h4>
+<p>Can only be used when TRequestPayload is a slice (TSlice<t>). This is checked with an assertion. </t></p>
+<hr />
+<h3 id="MaxActiveRequests"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> MaxActiveRequests</h3>
+<p>Returns the maximal active requests a TClient can send. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">MaxActiveRequests</span><span class="o">:</span><span class="w"> </span><span class="kt">Int64</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetMaxActiveRequests</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Int64</span></code></p>
+<hr />
+<h3 id="Name"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Name</h3>
+<p>Returns the TPortNameView of the TClient </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Name</span><span class="o">:</span><span class="w"> </span><span class="n">TPortNameView</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetName</span></code></p>
+<p><strong>Type: </strong><a href="../../../Neslib.Iceoryx2.Types/classes/TPortNameView/"><code>TPortNameView</code></a></p>
 <hr />
 <h2 id="constructor-descriptions">Constructor Descriptions</h2>
 <h3 id="Assign"><span class="twemoji" title="Constructor"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23 12-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68z"/></svg></span> <code class="language-delphi highlight"><span class="n">Assign</span></code></h3>
@@ -4146,30 +4173,10 @@
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
 <hr />
 <h2 id="method-descriptions">Method Descriptions</h2>
-<h3 id="BackpressureStrategy"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> BackpressureStrategy</h3>
-<p>Returns the strategy the TClient follows when a TRequestMut cannot be delivered if the TServer's buffer is full. </p>
-<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">BackpressureStrategy</span><span class="o">:</span><span class="w"> </span><span class="n">TBackpressureStrategy</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="returns_2">Returns</h4>
-<p><a href="../../../Neslib.Iceoryx2.Types/types/TBackpressureStrategy/"><code>TBackpressureStrategy</code></a></p>
-<hr />
-<h3 id="Id"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Id</h3>
-<p>Returns the TUniqueClientId of the TClient </p>
-<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">Id</span><span class="o">:</span><span class="w"> </span><span class="n">TUniqueClientId</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="returns_3">Returns</h4>
-<p><a href="../TUniqueClientId/"><code>TUniqueClientId</code></a></p>
-<hr />
-<h3 id="InitialMaxSliceLen"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> InitialMaxSliceLen</h3>
-<p>Returns the maximum number of elements that can be loaned in a slice. </p>
-<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">InitialMaxSliceLen</span><span class="o">:</span><span class="w"> </span><span class="kt">Int64</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="returns_4">Returns</h4>
-<p><code class="language-delphi highlight"><span class="kt">Int64</span></code></p>
-<h4 id="remarks">Remarks</h4>
-<p>Can only be used when TRequestPayload is a slice (TSlice<t>). This is checked with an assertion. </t></p>
-<hr />
 <h3 id="Loan"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Loan</h3>
 <p>Acquires the payload for the request and initializes the underlying memory with default. This can be very expensive when the payload is large, therefore prefer TClient.LoanUninit when possible. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">Loan</span><span class="o">:</span><span class="w"> </span><span class="n">TResult</span><span class="o">&lt;</span><span class="n">TRequestMut</span><span class="o">&lt;</span><span class="n">TReqPayl</span><span class="o">&gt;,</span><span class="w"> </span><span class="n">TLoanError</span><span class="o">&gt;</span></code></p>
-<h4 id="returns_5">Returns</h4>
+<h4 id="returns_2">Returns</h4>
 <p><a href="../../../Neslib.Iceoryx2.System/classes/TResult_2/"><code>TResult&lt;TRequestMut&lt;TReqPayl&gt;, TLoanError&gt;</code></a></p>
 <h4 id="remarks_1">Remarks</h4>
 <p>Cannot be used when TRequestPayload is a slice (TSlice<t>). This is checked with an assertion. Otherwise use LoanSlice instead. </t></p>
@@ -4179,7 +4186,7 @@
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">LoanSlice</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ANumerOfElements</span><span class="o">:</span><span class="w"> </span><span class="n">UInt64</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TResult</span><span class="o">&lt;</span><span class="n">TRequestMut</span><span class="o">&lt;</span><span class="n">TReqPayl</span><span class="o">&gt;,</span><span class="w"> </span><span class="n">TLoanError</span><span class="o">&gt;</span></code></p>
 <h4 id="parameters_3">Parameters</h4>
 <p><strong><code>ANumerOfElements</code></strong>: <code class="language-delphi highlight"><span class="n">UInt64</span></code></p>
-<h4 id="returns_6">Returns</h4>
+<h4 id="returns_3">Returns</h4>
 <p><a href="../../../Neslib.Iceoryx2.System/classes/TResult_2/"><code>TResult&lt;TRequestMut&lt;TReqPayl&gt;, TLoanError&gt;</code></a></p>
 <hr />
 <h3 id="LoanSliceUninit"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> LoanSliceUninit(UInt64)</h3>
@@ -4187,7 +4194,7 @@
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">LoanSliceUninit</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">ANumerOfElements</span><span class="o">:</span><span class="w"> </span><span class="n">UInt64</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TResult</span><span class="o">&lt;</span><span class="n">TRequestMutUninit</span><span class="o">&lt;</span><span class="n">TReqPayl</span><span class="o">&gt;,</span><span class="w"> </span><span class="n">TLoanError</span><span class="o">&gt;;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_4">Parameters</h4>
 <p><strong><code>ANumerOfElements</code></strong>: <code class="language-delphi highlight"><span class="n">UInt64</span></code></p>
-<h4 id="returns_7">Returns</h4>
+<h4 id="returns_4">Returns</h4>
 <p><a href="../../../Neslib.Iceoryx2.System/classes/TResult_2/"><code>TResult&lt;TRequestMutUninit&lt;TReqPayl&gt;, TLoanError&gt;</code></a></p>
 <h4 id="remarks_2">Remarks</h4>
 <p>Can only be used when TRequestPayload is a slice (TSlice<t>). This is checked with an assertion. Otherwise use LoanUnit instead. </t></p>
@@ -4195,29 +4202,17 @@
 <h3 id="LoanUninit"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> LoanUninit</h3>
 <p>Acquires a TRequestMutUninit to store payload. This API shall be used by default to avoid unnecessary copies. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">LoanUninit</span><span class="o">:</span><span class="w"> </span><span class="n">TResult</span><span class="o">&lt;</span><span class="n">TRequestMutUninit</span><span class="o">&lt;</span><span class="n">TReqPayl</span><span class="o">&gt;,</span><span class="w"> </span><span class="n">TLoanError</span><span class="o">&gt;;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="returns_8">Returns</h4>
+<h4 id="returns_5">Returns</h4>
 <p><a href="../../../Neslib.Iceoryx2.System/classes/TResult_2/"><code>TResult&lt;TRequestMutUninit&lt;TReqPayl&gt;, TLoanError&gt;</code></a></p>
 <h4 id="remarks_3">Remarks</h4>
 <p>Cannot be used when TRequestPayload is a slice (TSlice<t>). This is checked with an assertion. Otherwise use LoanSliceUnit instead. </t></p>
-<hr />
-<h3 id="MaxActiveRequests"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> MaxActiveRequests</h3>
-<p>Returns the maximal active requests a TClient can send. </p>
-<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">MaxActiveRequests</span><span class="o">:</span><span class="w"> </span><span class="kt">Int64</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="returns_9">Returns</h4>
-<p><code class="language-delphi highlight"><span class="kt">Int64</span></code></p>
-<hr />
-<h3 id="Name"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Name</h3>
-<p>Returns the TPortNameView of the TClient </p>
-<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="kp">Name</span><span class="o">:</span><span class="w"> </span><span class="nf">TPortNameView</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
-<h4 id="returns_10">Returns</h4>
-<p><a href="../../../Neslib.Iceoryx2.Types/classes/TPortNameView/"><code>TPortNameView</code></a></p>
 <hr />
 <h3 id="SendCopy"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> SendCopy(TRequestPayload)</h3>
 <p>Copies the input value into a TRequestMut and sends it. On success it returns a TPendingResponse that can be used to receive a stream of responses from the server. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">SendCopy</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APayload</span><span class="o">:</span><span class="w"> </span><span class="n">TRequestPayload</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TResult</span><span class="o">&lt;</span><span class="n">TPendingResponse</span><span class="o">&lt;</span><span class="n">TReqPayl</span><span class="o">&gt;,</span><span class="w"> </span><span class="n">TRequestSendError</span><span class="o">&gt;;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_5">Parameters</h4>
 <p><strong><code>APayload</code></strong>: <code class="language-delphi highlight"><span class="n">TRequestPayload</span></code></p>
-<h4 id="returns_11">Returns</h4>
+<h4 id="returns_6">Returns</h4>
 <p><a href="../../../Neslib.Iceoryx2.System/classes/TResult_2/"><code>TResult&lt;TPendingResponse&lt;TReqPayl&gt;, TRequestSendError&gt;</code></a></p>
 <h4 id="remarks_4">Remarks</h4>
 <p>Cannot be used when TRequestPayload is a slice (TSlice<t>). This is checked with an assertion. Otherwise use SendSliceCopy instead. </t></p>
@@ -4227,7 +4222,7 @@
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">SendSliceCopy</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">APayload</span><span class="o">:</span><span class="w"> </span><span class="n">TRequestPayload</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="n">TResult</span><span class="o">&lt;</span><span class="n">TPendingResponse</span><span class="o">&lt;</span><span class="n">TReqPayl</span><span class="o">&gt;,</span><span class="w"> </span><span class="n">TRequestSendError</span><span class="o">&gt;;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <h4 id="parameters_6">Parameters</h4>
 <p><strong><code>APayload</code></strong>: <code class="language-delphi highlight"><span class="n">TRequestPayload</span></code></p>
-<h4 id="returns_12">Returns</h4>
+<h4 id="returns_7">Returns</h4>
 <p><a href="../../../Neslib.Iceoryx2.System/classes/TResult_2/"><code>TResult&lt;TPendingResponse&lt;TReqPayl&gt;, TRequestSendError&gt;</code></a></p>
 <h4 id="remarks_5">Remarks</h4>
 <p>Can only be used when TRequestPayload is a slice (TSlice<t>). This is checked with an assertion. Otherwise use SendCopy instead. </t></p>

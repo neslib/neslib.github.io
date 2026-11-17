@@ -921,6 +921,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constructors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#methods" class="md-nav__link">
     <span class="md-ellipsis">
       Methods
@@ -933,6 +942,15 @@
   <a href="#property-descriptions" class="md-nav__link">
     <span class="md-ellipsis">
       Property Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructor-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constructor Descriptions
     </span>
   </a>
   
@@ -1554,6 +1572,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#constructors" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constructors
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#methods" class="md-nav__link">
     <span class="md-ellipsis">
       Methods
@@ -1566,6 +1593,15 @@
   <a href="#property-descriptions" class="md-nav__link">
     <span class="md-ellipsis">
       Property Descriptions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#constructor-descriptions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Constructor Descriptions
     </span>
   </a>
   
@@ -1634,8 +1670,16 @@
 </thead>
 <tbody>
 <tr>
+<td><a href="#Capacity">Capacity</a></td>
+<td>Retrieves the capacity (maximum number of items) in the vector.</td>
+</tr>
+<tr>
 <td><a href="#Count">Count</a></td>
 <td>Retrieves the number of items in the vector.</td>
+</tr>
+<tr>
+<td><a href="#Empty">Empty</a></td>
+<td>Checks whether the vector is currently empty.</td>
 </tr>
 <tr>
 <td><a href="#Items">Items</a></td>
@@ -1644,6 +1688,21 @@
 <tr>
 <td><a href="#Refs">Refs</a></td>
 <td>Gets a reference to an item in the vector.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="constructors">Constructors</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#Create">Create</a></td>
+<td>Initializes the vector from a dynamic array by copying at most Capacity items from AItems to this vector.</td>
 </tr>
 </tbody>
 </table>
@@ -1657,8 +1716,20 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="#Init">Init</a></td>
-<td>Initializes the vector. This <em>must</em> be called before performing any other operations.</td>
+<td><a href="#Clear">Clear</a></td>
+<td>Clears all elements from the vector. After this operation, the vector will be empty.</td>
+</tr>
+<tr>
+<td><a href="#Create">Create</a> <span class="twemoji" title="Class method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg></span></td>
+<td>Initializes the vector. This <em>must</em> be called before performing any other operations (unless you use another constructor or Init method).</td>
+</tr>
+<tr>
+<td><a href="#Init_0">Init(TArray&lt;T&gt;)</a></td>
+<td>Initializes the vector from a dynamic array by copying at most Capacity items from AItems to this vector.</td>
+</tr>
+<tr>
+<td><a href="#Init_1">Init</a></td>
+<td>Initializes the vector. This <em>must</em> be called before performing any other operations (unless you use another constructor or Init method).</td>
 </tr>
 <tr>
 <td><a href="#ToString">ToString</a></td>
@@ -1668,13 +1739,31 @@
 <td><a href="#TryAdd">TryAdd</a></td>
 <td>Attempts to insert a single AValue at the back of the vector. This function will copy the input value into place.</td>
 </tr>
+<tr>
+<td><a href="#TryDelete">TryDelete</a></td>
+<td>Attempts to erase the element at the specified AIndex.</td>
+</tr>
+<tr>
+<td><a href="#TryInsert">TryInsert</a></td>
+<td>Attempts to insert a single AValue at AIndex.</td>
+</tr>
 </tbody>
 </table>
 <h2 id="property-descriptions">Property Descriptions</h2>
+<h3 id="Capacity"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Capacity</h3>
+<p>Retrieves the capacity (maximum number of items) in the vector. </p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Capacity</span><span class="o">:</span><span class="w"> </span><span class="kt">Int64</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetCapacity</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Int64</span></code></p>
+<hr />
 <h3 id="Count"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Count</h3>
 <p>Retrieves the number of items in the vector. </p>
 <p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Count</span><span class="o">:</span><span class="w"> </span><span class="kt">Int64</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">FSize</span></code></p>
 <p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Int64</span></code></p>
+<hr />
+<h3 id="Empty"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Empty</h3>
+<p>Checks whether the vector is currently empty. <summary/></p>
+<p><code class="language-delphi highlight"><span class="k">property</span><span class="w"> </span><span class="py">Empty</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span><span class="w"> </span><span class="kp">read</span><span class="w"> </span><span class="nf">GetEmpty</span></code></p>
+<p><strong>Type: </strong><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
 <hr />
 <h3 id="Items"><span class="twemoji" title="Property"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7v10h2v-4h2a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2zm2 2h2v2h-2zm1-7a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Items</h3>
 <p>Gets or sets an item in the vector. </p>
@@ -1690,24 +1779,64 @@
 <h4 id="remarks_2">Remarks</h4>
 <p>AIndex must be between 0 and Count-1. This is checked with an assertion. </p>
 <hr />
+<h2 id="constructor-descriptions">Constructor Descriptions</h2>
+<h3 id="Create"><span class="twemoji" title="Constructor"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m23 12-2.44-2.78.34-3.68-3.61-.82-1.89-3.18L12 3 8.6 1.54 6.71 4.72l-3.61.81.34 3.68L1 12l2.44 2.78-.34 3.69 3.61.82 1.89 3.18L12 21l3.4 1.46 1.89-3.18 3.61-.82-.34-3.68z"/></svg></span> <code class="language-delphi highlight"><span class="n">Create</span></code></h3>
+<p>Initializes the vector from a dynamic array by copying at most Capacity items from AItems to this vector. </p>
+<p><code class="language-delphi highlight"><span class="k">constructor</span><span class="w"> </span><span class="nf">Create</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AItems</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span></code></p>
+<h4 id="parameters">Parameters</h4>
+<p><strong><code>AItems</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span></code></p>
+<hr />
 <h2 id="method-descriptions">Method Descriptions</h2>
-<h3 id="Init"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Init</h3>
-<p>Initializes the vector. This <em>must</em> be called before performing any other operations. </p>
-<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Init</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h3 id="Clear"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Clear</h3>
+<p>Clears all elements from the vector. After this operation, the vector will be empty. <summary/></p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Clear</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<hr />
+<h3 id="Create"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span>  <span class="twemoji" title="Class method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21 16.5c0 .38-.21.71-.53.88l-7.9 4.44c-.16.12-.36.18-.57.18s-.41-.06-.57-.18l-7.9-4.44A.99.99 0 0 1 3 16.5v-9c0-.38.21-.71.53-.88l7.9-4.44c.16-.12.36-.18.57-.18s.41.06.57.18l7.9 4.44c.32.17.53.5.53.88zM12 4.15 6.04 7.5 12 10.85l5.96-3.35z"/></svg></span> Create</h3>
+<p>Initializes the vector. This <em>must</em> be called before performing any other operations (unless you use another constructor or Init method). </p>
+<p><code class="language-delphi highlight"><span class="k">class</span><span class="w"> </span><span class="k">function</span><span class="w"> </span><span class="nf">Create</span><span class="o">:</span><span class="w"> </span><span class="n">TStaticVector</span><span class="o">&lt;</span><span class="n">T</span><span class="o">,</span><span class="w"> </span><span class="n">TStorage</span><span class="o">&gt;;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span><span class="o">;</span><span class="w"> </span><span class="n">static</span></code></p>
+<h4 id="returns">Returns</h4>
+<p><a href="./"><code>TStaticVector&lt;T, TStorage&gt;</code></a></p>
+<hr />
+<h3 id="Init_0"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Init(TArray&lt;T&gt;)</h3>
+<p>Initializes the vector from a dynamic array by copying at most Capacity items from AItems to this vector. </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Init</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AItems</span><span class="o">:</span><span class="w"> </span><span class="n">TArray</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span><span class="p">)</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
+<h4 id="parameters_1">Parameters</h4>
+<p><strong><code>AItems</code></strong>: <code class="language-delphi highlight"><span class="n">TArray</span><span class="o">&lt;</span><span class="n">T</span><span class="o">&gt;</span></code></p>
+<hr />
+<h3 id="Init_1"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> Init</h3>
+<p>Initializes the vector. This <em>must</em> be called before performing any other operations (unless you use another constructor or Init method). </p>
+<p><code class="language-delphi highlight"><span class="k">procedure</span><span class="w"> </span><span class="nf">Init</span><span class="o">;</span><span class="w"> </span><span class="n">overload</span><span class="o">;</span><span class="w"> </span><span class="k">inline</span></code></p>
 <hr />
 <h3 id="ToString"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> ToString</h3>
 <p>Returns a string-presentation of the vector for debugging purposes </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">ToString</span><span class="o">:</span><span class="w"> </span><span class="k">String</span></code></p>
-<h4 id="returns">Returns</h4>
+<h4 id="returns_1">Returns</h4>
 <p><code class="language-delphi highlight"><span class="k">String</span></code></p>
 <hr />
 <h3 id="TryAdd"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> TryAdd(T)</h3>
 <p>Attempts to insert a single AValue at the back of the vector. This function will copy the input value into place. </p>
 <p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">TryAdd</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AValue</span><span class="o">:</span><span class="w"> </span><span class="n">T</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span></code></p>
-<h4 id="parameters">Parameters</h4>
+<h4 id="parameters_2">Parameters</h4>
 <p><strong><code>AValue</code></strong>: <code class="language-delphi highlight"><span class="n">T</span></code></p>
-<h4 id="returns_1">Returns</h4>
+<h4 id="returns_2">Returns</h4>
 <p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True on success, False if there is no room left.</p>
+<hr />
+<h3 id="TryDelete"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> TryDelete(Int64)</h3>
+<p>Attempts to erase the element at the specified AIndex. <summary><returns>True on success, False if AIndex is not the index of an existing element.</returns></summary></p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">TryDelete</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AIndex</span><span class="o">:</span><span class="w"> </span><span class="kt">Int64</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span></code></p>
+<h4 id="parameters_3">Parameters</h4>
+<p><strong><code>AIndex</code></strong>: <code class="language-delphi highlight"><span class="kt">Int64</span></code></p>
+<h4 id="returns_3">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code></p>
+<hr />
+<h3 id="TryInsert"><span class="twemoji" title="Method"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9 7a2 2 0 0 0-2 2v8h2V9h2v7h2V9h2v8h2V9a2 2 0 0 0-2-2zm3-5a10 10 0 0 1 10 10 10 10 0 0 1-10 10A10 10 0 0 1 2 12 10 10 0 0 1 12 2"/></svg></span> TryInsert(Int64, T)</h3>
+<p>Attempts to insert a single AValue at AIndex. </p>
+<p><code class="language-delphi highlight"><span class="k">function</span><span class="w"> </span><span class="nf">TryInsert</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">AIndex</span><span class="o">:</span><span class="w"> </span><span class="kt">Int64</span><span class="o">;</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">AValue</span><span class="o">:</span><span class="w"> </span><span class="n">T</span><span class="p">)</span><span class="o">:</span><span class="w"> </span><span class="kt">Boolean</span></code></p>
+<h4 id="parameters_4">Parameters</h4>
+<p><strong><code>AIndex</code></strong>: <code class="language-delphi highlight"><span class="kt">Int64</span></code></p>
+<p><strong><code>AValue</code></strong>: <code class="language-delphi highlight"><span class="n">T</span></code></p>
+<h4 id="returns_4">Returns</h4>
+<p><code class="language-delphi highlight"><span class="kt">Boolean</span></code>: True on success, False if AIndex is greater than the current size of the vector.</p>
 <hr />
 
 
